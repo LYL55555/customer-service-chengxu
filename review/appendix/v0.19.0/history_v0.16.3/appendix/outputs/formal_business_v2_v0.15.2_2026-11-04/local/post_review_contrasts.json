@@ -1,0 +1,139 @@
+{
+  "model_requests": 0,
+  "results": [
+    {
+      "probe": "original_pass",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "error_codes": [],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "only_policy_reference",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "missing_aftersales_case_reference"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "no_assessment_only_policy",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "source_reference",
+        "state_reference",
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "customer_report",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "missing_authoritative_check",
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "other_customer",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "missing_authoritative_check",
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "other_product",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "missing_authoritative_check",
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "other_case",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "missing_authoritative_check",
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "wrong_evaluated_amount",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "wrong_evaluated_period",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "wrong_candidate_amount",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "wrong_candidate_period",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "wrong_candidate_day_unit",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    },
+    {
+      "probe": "not_started_claims_started",
+      "phase": "actual_validate_review_result_not_only_generation_inspection",
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "error_codes": [
+        "unsupported_aftersales_case_fact"
+      ],
+      "modified_copies_not_new_model_output": true
+    }
+  ]
+}

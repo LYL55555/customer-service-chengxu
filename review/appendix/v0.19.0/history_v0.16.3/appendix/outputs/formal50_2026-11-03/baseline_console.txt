@@ -1,0 +1,68 @@
+F01 success  messages 3 requests 2
+F02 success  messages 3 requests 4
+F03 error quality_review messages 3 requests 6
+F04 success  messages 3 requests 8
+F05 success  messages 3 requests 10
+F06 success  messages 3 requests 12
+F07 success  messages 3 requests 14
+F08 success  messages 3 requests 16
+F09 error invalid_review messages 3 requests 18
+F10 success  messages 3 requests 20
+F11 error invalid_review messages 3 requests 22
+F12 success  messages 3 requests 24
+F13 error policy_check messages 3 requests 25
+F14 error invalid_output messages 0 requests 26
+F15 success  messages 3 requests 28
+F16 success  messages 3 requests 30
+F17 success  messages 3 requests 32
+F18 error policy_check messages 3 requests 33
+F19 error quality_review messages 3 requests 35
+F20 success  messages 3 requests 37
+F21 success  messages 3 requests 39
+F22 error invalid_review messages 3 requests 41
+F23 success  messages 3 requests 43
+F24 error invalid_review messages 3 requests 45
+F25 error invalid_review messages 3 requests 47
+F26 success  messages 3 requests 49
+F27 success  messages 3 requests 51
+F28 success  messages 3 requests 53
+F29 success  messages 3 requests 55
+F30 success  messages 3 requests 57
+F31 success  messages 3 requests 59
+F32 success  messages 3 requests 61
+F33 success  messages 3 requests 63
+F34 success  messages 3 requests 65
+F35 error invalid_review messages 3 requests 67
+F36 success  messages 3 requests 69
+F37 success  messages 3 requests 71
+F38 success  messages 3 requests 73
+F39 error invalid_review messages 3 requests 75
+F40 success  messages 3 requests 77
+F41 error invalid_review messages 3 requests 79
+F42 error policy_check messages 3 requests 80
+F43 success  messages 3 requests 82
+F44 error invalid_review messages 3 requests 84
+F45 error invalid_review messages 3 requests 86
+F46 success  messages 3 requests 88
+F47 error policy_check messages 3 requests 89
+F48 success  messages 3 requests 91
+F49 error invalid_review messages 3 requests 93
+F50 error invalid_review messages 3 requests 95
+{
+  "kind": "first-real-result-single-frozen-version",
+  "app_version": "0.12.0",
+  "freeze_sha256": "14127385d079a088c7ac26231089a3688c09692677ae5160f635e4cc89c4c31e",
+  "case_sha256": "1f1f37d70a1102d45eedeacc834f3539e223c652866ee0035560a5817358a243",
+  "started_at": "2026-11-03T17:52:40.593713+00:00",
+  "automatic_retries": 0,
+  "formal_50": true,
+  "actual_model_requests": 95,
+  "total_tokens": 2083295,
+  "finished_at": "2026-11-03T17:58:26.429737+00:00",
+  "source_hashes_unchanged": true,
+  "completed": true,
+  "status_counts": {
+    "success": 31,
+    "error": 19
+  }
+}

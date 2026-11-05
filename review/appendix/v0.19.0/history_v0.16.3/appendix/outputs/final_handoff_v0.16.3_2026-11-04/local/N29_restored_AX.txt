@@ -1,0 +1,20 @@
+Browser tab: 14, Title: "澄序 · 顾问话术助手", URL: "http://127.0.0.1:8765/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 51-52
++			67 container revision-panel
++				68 button (expanded) 调整回复 · 有未提交草稿, Secondary Actions: Collapse
++					69 text 调整回复 · 有未提交草稿
++				70 container revision-form
++					71 text 继续调整表达
++					72 pop up button (collapsed, settable) Description: 修改范围, Value: 仅调整第2条, ID: target, Secondary Actions: Expand
++						73 menu
++							74 调整整组
++							75 仅调整第1条
++							76 (selected) 仅调整第2条
++							77 仅调整第3条
++					78 button 简短一点
++					79 button 更温暖一点
++					80 text entry area (settable) 继续调整表达, Value: 收尾检查草稿：只调整第2条，其他候选保留。, ID: revision
++					81 text 修改会保存为新一轮，原结果保留。
++					82 button 调整表达 ↗, ID: revise
+The focused UI element is 68 button (expanded) 调整回复 · 有未提交草稿, Secondary Actions: Collapse

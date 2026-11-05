@@ -1,0 +1,1991 @@
+{
+  "scope": "0.13.6原49组147条全文逐条AI编辑审查；不是模型复测、真人研究或官方验收分数",
+  "source": "../OUTPUTS.json",
+  "no_cloud_calls": true,
+  "original_texts_modified": false,
+  "labels": {
+    "keep": "保留",
+    "polish": "少量润色",
+    "rewrite": "应改",
+    "unsafe": "事实或服务含义需修正"
+  },
+  "counts": {
+    "keep": 52,
+    "polish": 34,
+    "rewrite": 49,
+    "unsafe": 12
+  },
+  "cases": [
+    {
+      "case_id": "F01",
+      "title": "简短生日祝福",
+      "scenario": "生日及节日问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户许女士，顾问已确认本次为生日问候，具体发送日期未提供。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "每条尽量一到两句。"
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "许女士，生日快乐，祝您新的一岁顺心自在。",
+          "sha256": "cb348465f152fd1884439f17c371cc757f78830f5a58df6830c0037da9e52399",
+          "action": "keep",
+          "finding": "简短、自然，直接完成生日祝福，没有硬加推销或收尾任务"
+        },
+        {
+          "index": 2,
+          "original": "许女士，生日快乐。愿这一年里日常轻松顺意，喜欢的事都能慢慢做成。",
+          "sha256": "0bb244696c72eb15d88bca02d8484c9c2d3cdbc497aad0a45a1d144870190681",
+          "action": "keep",
+          "finding": "祝愿稍展开，仍像可发送的微信；不需要为区别再加行动"
+        },
+        {
+          "index": 3,
+          "original": "许女士，生日快乐，祝您健康、开心，往后的日子都过得舒心。",
+          "sha256": "e04f6735f2220ea2e261118fae61b9a5d271fd858872c98051aab91107fb8526",
+          "action": "keep",
+          "finding": "健康、开心、舒心均为普通祝愿，不是客户经历断言"
+        }
+      ]
+    },
+    {
+      "case_id": "F02",
+      "title": "客户不喜欢昵称",
+      "scenario": "生日及节日问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户沈先生，已确认生日问候，客户偏好直接称沈先生，不用亲昵称呼。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "沈先生，生日快乐。祝您新的一年顺利、舒心。",
+          "sha256": "70ef46639ff72757508e0a93d68a482e0b8893bb529a0794e8a0c5fe934ab250",
+          "action": "keep",
+          "finding": "称呼和简洁程度合适"
+        },
+        {
+          "index": 2,
+          "original": "沈先生，生日快乐！愿这一年里想做的事都慢慢有进展，日常也过得轻松愉快。",
+          "sha256": "9671e7a051942f015faef97e284f8315b47f27e422093a35ca5c84fbfd03c04b",
+          "action": "keep",
+          "finding": "稍温暖的祝愿可以保留，未违反不使用昵称的偏好"
+        },
+        {
+          "index": 3,
+          "original": "沈先生，祝您生日快乐，身体健康，岁岁都有好消息。",
+          "sha256": "8063bad27973b9aebdb97137a1bdd1750a4670b7c83ad73e1c1862ad4d9d41d0",
+          "action": "keep",
+          "finding": "普通生日祝愿成立，不为制造差异增加销售内容"
+        }
+      ]
+    },
+    {
+      "case_id": "F03",
+      "title": "中秋而非生日",
+      "scenario": "生日及节日问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户顾女士，仅知道称呼。",
+        "conversation": "",
+        "related_info": "顾问此次准备中秋节问候，未提供发送日期或家庭资料。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "顾女士，中秋快乐。愿您和家人平安顺意，团圆自在。",
+          "sha256": "03371c9c79c584f0f8175c60da81089280f5fe7cc6c7fa30abd737b6e233a6a0",
+          "action": "polish",
+          "finding": "“团圆自在”搭配略生硬，可用“节日安康、事事顺意”。“愿您和家人”是一般祝愿，不应误判为编造具体家庭事实"
+        },
+        {
+          "index": 2,
+          "original": "顾女士，中秋快乐。祝您节日里过得舒心，所愿皆成。",
+          "sha256": "fd023949f72766a5a39b3685559d32886bc5b4634a82281b094a4f9a856a8262",
+          "action": "keep",
+          "finding": "简短中秋祝愿，可保留"
+        },
+        {
+          "index": 3,
+          "original": "顾女士，中秋佳节，愿月色温柔，您也一切安好。中秋快乐。",
+          "sha256": "d46ce25e70c4611a758dc26baee6c7c938b3b97b9a4fe78c6664f14aca006fad",
+          "action": "rewrite",
+          "finding": "前后两次强调中秋，叠加“月色温柔”偏群发贺词。保留一次节日祝福和一句平实祝愿即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F04",
+      "title": "春节节制祝福",
+      "scenario": "生日及节日问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户梁先生，确认春节问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "语气朴素一些，不要像群发广告。"
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "梁先生，春节好，给您拜个年。愿新的一年顺遂平安，阖家安康。",
+          "sha256": "e22d0d4d49aaf00916857f8a6b96b9a4bfa0dade7b520312af16f5bb598585e0",
+          "action": "keep",
+          "finding": "“给您拜个年”符合中文春节微信表达，家庭祝愿不等于编造家庭经历"
+        },
+        {
+          "index": 2,
+          "original": "梁先生，春节快乐。祝您新岁顺心，日子过得从容舒心，家人也都平安喜乐。",
+          "sha256": "29a5f0c098df75bedabc6263c364f99cb0eb8cbd96e11f5f5238e41a5ef1b1c1",
+          "action": "keep",
+          "finding": "稍长但自然；顺心、舒心略重复，非必须阻断的问题"
+        },
+        {
+          "index": 3,
+          "original": "梁先生，春节到了，向您问声好。祝您和家人身体健康、万事顺意。",
+          "sha256": "625408109e1b25a02faf564390a72ce209cf8a9387457efe5815fb4a3e6b4624",
+          "action": "keep",
+          "finding": "任务已确认春节问候，“春节到了”可在相应节日发送；不应因未填精确日期把正常祝福一律判错"
+        }
+      ]
+    },
+    {
+      "case_id": "F05",
+      "title": "已知客户正在旅行",
+      "scenario": "生日及节日问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户赵女士，确认生日问候。客户昨天主动说自己这周在旅行，地点和同行者未知。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "赵女士，生日快乐！愿新的一岁顺心如意，旅途也愉快。",
+          "sha256": "e085b4e4ff7eb93eccff727cc17e78e2d9f6d17ce5a6f8773a74d9b2c31362b1",
+          "action": "keep",
+          "finding": "祝福自然结合已知旅行，没有虚构目的地或同行者"
+        },
+        {
+          "index": 2,
+          "original": "赵女士，祝您生日快乐。听说您这周在外旅行，愿这段行程轻松自在，回来也带着好心情。",
+          "sha256": "f7de4febd4eddda86fb74b2b610f44de173ce15ceb2f03fe66c3fa05ade86f85",
+          "action": "polish",
+          "finding": "客户昨天亲口说过旅行，“听说”使关系显得疏远。可直接接“您这周在旅行，也祝您一路愉快”"
+        },
+        {
+          "index": 3,
+          "original": "赵女士，生日快乐，祝您一切顺遂，想去的地方都能慢慢走遍。",
+          "sha256": "a200530d26e5d2927f96bc8fed5004cd38316935c4862783f113963b486208f8",
+          "action": "keep",
+          "finding": "“想去的地方都能慢慢走遍”是祝愿，可以保留"
+        }
+      ]
+    },
+    {
+      "case_id": "F06",
+      "title": "长期偏好不谈生日日期",
+      "scenario": "生日及节日问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户方女士，顾问确认生日问候；客户以前说不喜欢别人提年龄。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "标题写“不谈生日日期”，实际背景是“不喜欢提年龄”，标题应校正；不因此改变历史输入或原输出",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "方女士，生日快乐。祝您新的一岁事事顺心，平安喜乐。",
+          "sha256": "f49741d1ee3192e759e21324b17a99e8cff4274a927f391b72946af064136f2d",
+          "action": "polish",
+          "finding": "“新的一岁”没有报出年龄，但已知客户不喜欢提年龄，省去这句更体贴；不升级为严重事实错误"
+        },
+        {
+          "index": 2,
+          "original": "方女士，祝您生日快乐。愿这一年身体舒爽、日子从容，身边常有让您开心的小事。",
+          "sha256": "a5ca420efd485be34fa512de05a6b7842127d40c5302cf0e3ba195db790956b2",
+          "action": "rewrite",
+          "finding": "“身体舒爽”不是自然生日祝词，改为“身体健康”或“日子舒心”"
+        },
+        {
+          "index": 3,
+          "original": "方女士，生日快乐。祝您这一年顺顺利利，想做什么都有好心情。",
+          "sha256": "2f4572bcc39891df0ab23121dbaf44d3837ac67c9427be188b096227ab68398a",
+          "action": "keep",
+          "finding": "自然祝愿，没有提具体年龄"
+        }
+      ]
+    },
+    {
+      "case_id": "F07",
+      "title": "接住客户感谢",
+      "scenario": "生日及节日问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户孟女士；当前顾问需回复客户的感谢。",
+        "conversation": "客户：谢谢您还记得，收到生日祝福很开心。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "孟女士，您喜欢就好，祝您新的一岁顺利、开开心心。",
+          "sha256": "5ec5956ec8e7f106a6da16a5cd6e312fc290a457b15fa4f6627e283d0eef34ad",
+          "action": "keep",
+          "finding": "接住客户开心的反馈，简短得体"
+        },
+        {
+          "index": 2,
+          "original": "听到您开心我也很高兴。生日祝福送到就好，祝您这一年都平安顺遂。",
+          "sha256": "9d3984159668329e695a8781389a9974b1d6878795cd47b0eb4dc9cbaabdcde3",
+          "action": "rewrite",
+          "finding": "“生日祝福送到就好”像汇报任务完成，关系表达不自然。用“不客气，您开心就好”即可"
+        },
+        {
+          "index": 3,
+          "original": "孟女士不客气，能赶上给您送上祝福就好，愿您接下来的日子一切都好。",
+          "sha256": "03aa2768488fbfcfdf0feafb449c04034761e6ecda55908ee793bd8354f39f9b",
+          "action": "rewrite",
+          "finding": "“能赶上给您送上祝福就好”制造了不必要的赶时间语境，显得自我感动。简短接谢即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F08",
+      "title": "生日备注更正意向",
+      "scenario": "生日及节日问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户程先生，这是客户刚发来的更正；生日档案尚未实际修改。",
+        "conversation": "客户：我的生日是11月19日，之前写成18日了，麻烦以后按19日记。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "来自AI设计测试集时自行添加的档案更正回归，不是题目或用户要求。此情形现实中可能存在，但只能作为辅助上下文/动作测试，不能充当核心生日问候业务价值示例",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "程先生，收到，以后按11月19日记，谢谢您特意更正。",
+          "sha256": "9692c7ddaeb7f3abbc74b8b6700762a713b523df0e6f6908a9b51d57ae615b09",
+          "action": "polish",
+          "finding": "“按……记”“特意更正”偏记录口吻，可简化为“收到，是11月19日，谢谢您提醒”"
+        },
+        {
+          "index": 2,
+          "original": "程先生，好的，记下是11月19日了，之前的18日就不用管了。我这边会把档案一并改过来。",
+          "sha256": "10887b9c50def9b9b6b9f946795791761d60720f2425abd1643a5c886edb79c8",
+          "action": "rewrite",
+          "finding": "“之前的18日就不用管了”轻慢且多余；“记下”“档案一并改过来”堆叠操作说明。简短确认正确日期即可，不假称已修改数据库"
+        },
+        {
+          "index": 3,
+          "original": "程先生，谢谢您告诉我，之后生日就按11月19日来记。",
+          "sha256": "0005602b4d4fdc65081cf9ef9e1c4ae0fd51b73a0121ce71802fa441b296387f",
+          "action": "polish",
+          "finding": "“之后生日就按……来记”像在给生日另定日期。确认“是11月19日”即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F09",
+      "title": "卡片礼物和卡位",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想给同事送个小礼物，平时只带四张银行卡。随行卡夹多少钱，能装下吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "随行卡夹是2,800元，有4个独立卡位，正好放4张标准银行卡大小的卡片。送平时只带几张卡的同事，这个容量是合适的。",
+          "sha256": "5892dce78534e132c12b944426805a99fdc703ca3bc12f5cbf16153f9654802e",
+          "action": "keep",
+          "finding": "价格、四张卡容量和礼物用途回应完整；用户明确认可这一条，应保留作为正例"
+        },
+        {
+          "index": 2,
+          "original": "随行卡夹2,800元，4个独立卡位，每张卡单独放；平时只带四张银行卡的话，刚好够用。它本身只做卡片收纳，当小礼物比较轻巧。",
+          "sha256": "e8e1b1df8e8945c0e0b9e9d95b666f160e914f66d3e8ddd83cbdcf214168d97e",
+          "action": "rewrite",
+          "finding": "删“它本身只做卡片收纳”。客户已经要送常带四张卡的人，无需主动缩小产品价值；四个独立卡位、携带轻巧已足够"
+        },
+        {
+          "index": 3,
+          "original": "随行卡夹的价格是2,800元，4个独立卡位可以放4张标准银行卡大小的卡片，您说的四张卡能装下。它没有零钱袋，也不适合放手机或护照，作为小礼物主要就是收卡用。",
+          "sha256": "046a6f447c905df47c382e2ae9fda19d14ae0c2c1f19e4a1f74b8618b0571aa6",
+          "action": "rewrite",
+          "finding": "删“没有零钱袋，也不适合放手机或护照”。客户没有这些需求，这些限制与当前购买判断无关；价格、四张卡能装下和小礼物用途即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F10",
+      "title": "零钱需求不能靠卡夹替代",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：随行卡夹能不能放硬币？我想把卡和零钱放一起。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "标题“零钱需求不能靠卡夹替代”预设了负面结论。改为中性的“卡片与硬币收纳咨询”；没有零钱袋不等于物理上禁止放硬币，不能自行扩张成使用禁令",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "随行卡夹没有零钱袋，主要收纳是4个独立卡位，可放4张标准银行卡大小的卡片，所以卡和零钱放在一起这个用法它并不合适。",
+          "sha256": "7920c89ec1102ef12eaf30a60a4abe2417b95be29be46ca7b8d6e774107265b4",
+          "action": "rewrite",
+          "finding": "“无零钱袋、四个卡位”是相关事实；“所以……这个用法它并不合适”越过事实替客户否定用法，应删"
+        },
+        {
+          "index": 2,
+          "original": "这款随行卡夹是没有零钱袋的，4个独立卡位放卡片，硬币没有专门位置。如果您希望卡和零钱一处收纳，它可能不是最合适的选择。",
+          "sha256": "70c76241798715e2140c951f39638e19cf70b9459c617fa535b4cc67de1dc47c",
+          "action": "rewrite",
+          "finding": "“硬币没有专门位置”可说明；不要从没有专门位置直接推成“不是最合适的选择”。是否接受这种收纳方式由客户判断"
+        },
+        {
+          "index": 3,
+          "original": "随行卡夹的容量是4个独立卡位，无零钱袋，也不适合放整叠现金，卡和零钱一起收的话它的结构不太对得上。您要是想找能同时放卡和零钱的款式，我帮您留意一下。",
+          "sha256": "0675351b0d4fd0e208dc86bd0f7849feaefa9a428a5663b355f7a003ad2849c6",
+          "action": "rewrite",
+          "finding": "删未被问到的“整叠现金”和生硬的“结构不太对得上”。保留没有零钱袋的事实；“帮您留意能一起收纳的款式”作为未来帮助可以保留，不暗示已有现货"
+        }
+      ]
+    },
+    {
+      "case_id": "F11",
+      "title": "具体手机尺寸需要核实",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：轻行肩包平时能斜挎吗？我的手机连壳15.8×7.8×1.2厘米。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "“具体手机尺寸需要核实”把检查手段写成任务结论。手机15.8×7.8×1.2、包22×16×7，且目录确认可放普通手机，允许有边界的日常适配判断；不得把这种回答评成S1。临界尺寸、异形物品再针对核实",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "轻行肩包可以斜挎，肩带长度也可以调节。您的手机连壳是15.8×7.8×1.2厘米，包身是22×16×7厘米，按尺寸看放手机是够的；不过手机连壳这类大件，还可以再跟实际包口对一下更稳妥。",
+          "sha256": "e20ab1fc92428a7c56f0ca39ad820fefcc49cf4e4273a9e88de4db09467810cf",
+          "action": "rewrite",
+          "finding": "前半段“可以斜挎”“按尺寸看放手机是够的”可以保留；删后半句将普通带壳手机叫“大件”并再查包口的无谓保留意见"
+        },
+        {
+          "index": 2,
+          "original": "可以斜挎的，肩带长度可调，包口是拉链开合。您手机连壳15.8厘米长、7.8厘米宽，和肩包22×16厘米的包身比，放进去是有余量的。这款适合外出少带东西时用，放手机、钥匙、口红这类随身小物正合适。",
+          "sha256": "ef230bdb3d89b619503bb1d117a1cea23795a0fc24b0281f9f890790d31d34e1",
+          "action": "keep",
+          "finding": "明确回答斜挎及普通带壳手机有余量，可保留。既有手机用途加上明显尺寸余量，足以支持日常判断，不是承诺所有手机都能放"
+        },
+        {
+          "index": 3,
+          "original": "轻行肩包支持肩背也可以斜挎，肩带长度能按身高和习惯调。您给的手机尺寸我记下了，包身外尺寸比手机大不少，但我更想帮您确认放进包口后是否顺手——方便的话到店可以带手机试一下。",
+          "sha256": "96564c93a8be18ea72695c5a546b019012b990a854dbfe053ddcad40b9209faf",
+          "action": "rewrite",
+          "finding": "“但我更想……”以顾问意愿压过客户问题，要求到店试普通手机徒增成本。直接答斜挎和按尺寸可放即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F12",
+      "title": "厚文件夹不同于A4纸",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：我每天带A4纸，还会夹一个很厚的文件夹，日行托特能一起装吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": null,
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "日行托特包是可以放A4纸质资料的。不过厚文件夹能不能一起放，资料里没有给出结论，需要看文件夹的具体尺寸；方便的话把长、宽、厚发我，我帮您一起核对。",
+          "sha256": "840f71b610daef7539f314a87cc68eed914431b26a82be5f4ada53a2b29da87d",
+          "action": "polish",
+          "finding": "厚文件夹确有未知尺寸，询问长宽厚有必要；删“资料里没有给出结论”的内部审核语言"
+        },
+        {
+          "index": 2,
+          "original": "A4纸质资料放进去是没问题的。您说的很厚文件夹，目前还没法凭资料判断能不能一起装，包内尺寸是34 × 28 × 12 cm，您可以先量一下文件夹，我再帮您对一对。",
+          "sha256": "f15cd53b0becc9750e0cd9f56aa8023c717821cd3797bb3da8ba6821e337e68b",
+          "action": "unsafe",
+          "finding": "34×28×12是商品目录尺寸，没有依据改称“包内尺寸”。纠正内外尺寸归属，针对厚文件夹核实一次即可"
+        },
+        {
+          "index": 3,
+          "original": "日行托特的容量是按通勤带资料来做的，A4纸质资料可以放。厚文件夹这一项需要另核对尺寸，您把文件夹的长宽厚告诉我，或者带来门店实际试一下更稳妥。",
+          "sha256": "a88476ee2fca29a113c196df02f26a67b1f2594e0a6f430ef1d8d2e14e06895f",
+          "action": "keep",
+          "finding": "厚文件夹尺寸未给，询问尺寸或提供实物核对选择是合理服务；不能把所有核实都视作防守性写作"
+        }
+      ]
+    },
+    {
+      "case_id": "F13",
+      "title": "两款背法和重量比较",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：轻行肩包和日行托特分别多重？我想知道哪些能斜挎。",
+        "related_info": "",
+        "product_ids": [
+          "P01",
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": null,
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "轻行肩包空包约420 g，日行托特约750 g，两款都是空包自重的约数。背法上，轻行肩包可以肩背或斜挎，肩带长度可调；日行托特目前确认的是肩背。",
+          "sha256": "5f932de42254c6de4090e5f2ce5eb3780f9ae6d688224dfc5a776adb42f15538",
+          "action": "polish",
+          "finding": "重量和背法答得正确；“两款都是……约数”“目前确认的是”属重复审核口吻。保留“空包约420/750克；肩包可斜挎，托特可肩背”即可"
+        },
+        {
+          "index": 2,
+          "original": "轻行肩包约420 g、日行托特约750 g，都是空包重量。能斜挎的是轻行肩包，肩带可调节长度，包口是拉链开合；托特包的尺寸是34 × 28 × 12 cm，更适合放A4资料这类通勤物品。",
+          "sha256": "0d3536070b1e27c047b1966fb802b9cdf7f88df440248d5348cc5a220941e4b0",
+          "action": "rewrite",
+          "finding": "客户只问重量和斜挎，后半段拉链、托特尺寸、A4用途无须全加。围绕两个问题写即可"
+        },
+        {
+          "index": 3,
+          "original": "两者空包分别约420 g和750 g。要斜挎的话，目前轻行肩包符合，肩带可调节；日行托特确认的背法是肩背。如果您平时带的东西不多，轻行肩包会更贴合斜挎的需求。",
+          "sha256": "8b9e95b2445b741e7a29903191b93611a2557a4b27036924124a9547bb79452a",
+          "action": "polish",
+          "finding": "“目前……符合”“确认的背法”偏表格审核。用正常背法表达；根据客户想斜挎给出选择有用，不必增加新的轻装条件"
+        }
+      ]
+    },
+    {
+      "case_id": "F14",
+      "title": "两只卡夹的总额",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：一只随行卡夹2,800对吧？我要两只，一共多少钱？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "对，随行卡夹单只2,800元，两只一共5,600元，没有折扣。",
+          "sha256": "dfc9a7e73ed440d09c7d155cbcb6dea7ddc9726d9264fb63664c80ca922e0ce3",
+          "action": "rewrite",
+          "finding": "删未被问到的“没有折扣”。客户已要两只，只需确认单价与合计"
+        },
+        {
+          "index": 2,
+          "original": "是的，一只2,800元，两只共5,600元。它有两个颜色：墨黑和暖棕，您两只想要同色还是各一只？",
+          "sha256": "7f0cf8ff276545d7689534bad6ee477a3f5281cd63d5cc771bfa02fedec4b015",
+          "action": "keep",
+          "finding": "正确回答5600元后问颜色，是顺着明确购买意向的合理下一步，不属于多余追问"
+        },
+        {
+          "index": 3,
+          "original": "一只2,800元没错，两只就是5,600元。如果需要，我可以再帮您确认一下这两个颜色的库存情况。",
+          "sha256": "adbe41e3a801604ab294c0bfe9400676bff6637765440c7f468dee7b44a560c5",
+          "action": "polish",
+          "finding": "“这两个颜色”在本条里没有先介绍，三选一候选不能借用另一条的内容。若需核库存，应点明颜色；单纯报总额也可结束"
+        }
+      ]
+    },
+    {
+      "case_id": "F15",
+      "title": "低调外观的具体依据",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：不喜欢很明显的大标识，轻行肩包外观是什么感觉？别说那些空泛的高级。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "轻行肩包的标识是小尺寸压印的，没有大面积标识，整体看起来比较简洁。包身是哑光细纹牛皮，光泽低、能看到细小纹理，不是亮面。目录里有墨黑、米白两色。",
+          "sha256": "8520d46dfd2c8a62686ba29c09e4d34aa05165db2aa91df1c948647db5d48ee0",
+          "action": "polish",
+          "finding": "外观信息相关且具体；将“目录里有”改成自然的“有墨黑和米白两色”即可，不引入库存承诺"
+        },
+        {
+          "index": 2,
+          "original": "它的外观偏克制：品牌标识压得很小，不显眼；皮面是哑光的，表面有细纹，不反光。尺寸约22 × 16 × 7 cm，自重约420 g，是随身小包的体量。",
+          "sha256": "09e7d02826cc556a3ba2f096de834312dd0c835d8cde2b12bc31b67b58fbd651",
+          "action": "polish",
+          "finding": "“不反光”比既有“光泽低”说得更满，用“哑光、不亮面”更准确；尺重不是客户外观问题重点，可省。不是严重性能承诺错误"
+        },
+        {
+          "index": 3,
+          "original": "标识只有一小处压印，不会有抢眼的大logo；哑光细纹牛皮让包看起来比较素净低调。如果您主要关心标识不显眼，这款是符合的；我也可以帮您把两个颜色的实拍情况再确认一下。",
+          "sha256": "1d1d93009e920044121c078ade479b846f46c008654ec461f4cea2babe39eaca",
+          "action": "rewrite",
+          "finding": "客户已明确关心小标识，不必再用“如果您主要关心”；“实拍情况再确认”含糊且给普通外观问题添加任务。保留具体外观描述即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F16",
+      "title": "托特材质与内袋",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：日行托特外面和里面是什么材质？钥匙能单独放吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "日行托特包身外面是哑光细纹牛皮，内里是棉布内衬。内侧有一个平口袋，可以单独放钥匙这类小物。",
+          "sha256": "f0275810c7da31f0c163421bfa455502a10c8e03a1481defb985ed7f252fa24f",
+          "action": "keep",
+          "finding": "材质与钥匙收纳两问都答清，直接结束很好"
+        },
+        {
+          "index": 2,
+          "original": "外面是哑光细纹牛皮，皮面光泽低、能看到细小纹理；里面是棉布内衬。包内有一个平口袋，钥匙单独放进去没问题。",
+          "sha256": "5b79520835adba00c07a3b71d539de3def1f4a4233638701f941b73cb303cd66",
+          "action": "keep",
+          "finding": "皮面外观补充与材质相关，表达自然"
+        },
+        {
+          "index": 3,
+          "original": "日行托特外面是哑光细纹牛皮，内衬是棉布。钥匙可以放在内侧的平口袋里。您要是还想了解它的收纳，我可以再和您说说。",
+          "sha256": "d4394b06f729f34ea16e1e6bbf9055ff63db03dfb82b1d4767b4677a111b7e6d",
+          "action": "polish",
+          "finding": "最后“还想了解收纳再和您说说”泛泛，删去也完整。不是所有回答都需要继续接话的尾巴"
+        }
+      ]
+    },
+    {
+      "case_id": "F17",
+      "title": "卡夹不是护照套",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：下个月出差，随行卡夹能当护照夹用吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "随行卡夹不太适合当护照夹用。它有4个独立卡位，可以放4张标准银行卡大小的卡片，但资料里明确不适合放护照，也不能当作包袋替代；出差证件建议另找专门的护照夹。",
+          "sha256": "f3223677d98d63fa09f2944db6012dbe26a52cc0b0177c236418d3a3dacc70e3",
+          "action": "rewrite",
+          "finding": "客户确实问护照，说明放不下是必要回答。删“资料里明确”和完全无关的“不能当包袋替代”，避免把资料边界整段发出"
+        },
+        {
+          "index": 2,
+          "original": "随行卡夹是10 × 7.5 × 0.8 cm，只装4张银行卡大小的卡片，护照放不下，所以当护照夹不合适。出差带证件的话，我建议按护照本身的尺寸另找专门收纳。",
+          "sha256": "cf56b051efd5831d0642e007758b1caa7623322ee69cdb1650cab2dd9214b672",
+          "action": "polish",
+          "finding": "尺寸说明和护照放不下都相关；“只装4张”改成“四个银行卡卡位”，无需再教客户按护照尺寸找收纳"
+        },
+        {
+          "index": 3,
+          "original": "这款卡夹主要收卡片，护照放不进去，出差时当护照夹会不方便。如果您是想小件礼物或自用收卡，它倒合适；证件部分需要另配一个护照夹。",
+          "sha256": "19d06efb6b5a6b2a4d7564a6cd3adf07df6ff74394514717e7307e61c7f78b6b",
+          "action": "rewrite",
+          "finding": "转向“小件礼物或自用收卡”没有回应出差需求，是另开销售话题。答清护照容量即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F18",
+      "title": "肩包与长钱包兼容",
+      "scenario": "商品推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：轻行肩包是拉链吗？长钱包19×10×2.5厘米能放下不？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": null,
+      "task_review": "应测试“已给钱包尺寸的合理适配判断”，而不是预设所有长钱包都必须查门店。接近开口或边缘尺寸时可针对核实；不要把“大件”标签本身当理由",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "是的，轻行肩包是包口拉链开合。长钱包这类大件目录里注明需要核对尺寸，肩包内里实际能放下的情况，我帮您跟门店确认一下。",
+          "sha256": "e632295f11cb3633427eb4c21ef9221df4997e48162f273a168799ae23ec5818",
+          "action": "rewrite",
+          "finding": "19厘米长钱包与22厘米外宽接近，针对开口核实可以有理由；但“目录注明”“实际能放下的情况”像执行检查。说明已有尺寸并直接提出必要核对，不搬内部规则"
+        },
+        {
+          "index": 2,
+          "original": "轻行肩包是拉链开合的。您这个长钱包19×10×2.5厘米属于需要核对尺寸的大件，单看数字我没法保证放得下，您要不方便的话我把尺寸转给门店帮您看看？",
+          "sha256": "78aca88c73f979e1cec2422c51bb08fb298bc1129a6e1acd46c61cd7aa601ce5",
+          "action": "rewrite",
+          "finding": "删“大件”“我没法保证”“您要不方便的话”等繁琐防御。客户已经给了尺寸，不要重复索取或增加许可环节；需要核开口就由顾问去核"
+        },
+        {
+          "index": 3,
+          "original": "包口是拉链的。长钱包能不能放进去得实际核对，您这个尺寸我记下了，我先帮您问一下门店，有结果再回复您。",
+          "sha256": "759103085975617a91f297e7e8e927534835ac6b6e0422a2e8c1ede8f38b2a5b",
+          "action": "keep",
+          "finding": "拉链已答，钱包尺寸已收下，由顾问核实后回复，未要求客户重填。可以保留；这比普通手机更接近包宽，不能机械套用F11或一概要求到店"
+        }
+      ]
+    },
+    {
+      "case_id": "F19",
+      "title": "门店未使用申请退货",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：11月1日在门店买的卡夹没用过，包装标牌小票都在，今天3号想退可以吗？",
+        "related_info": "本例业务日期2026-11-03，购买日2026-11-01，门店购买，未使用、标牌及原包装齐全、有凭证，尚未门店检查。",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "可以的。门店购买后7个自然日内，商品未使用、标牌和原包装齐全、有购买凭证，就可以申请退货或换货；按您11月1日购买、今天11月3日算仍在期限内。最终以门店检查确认为准，您带好卡夹和小票到店就行。",
+          "sha256": "3b9d636a8ecbd81052ca725e1717f42f85b840a65e4943bc4d9558b06f4d9fe0",
+          "action": "polish",
+          "finding": "结论和到店步骤可用，但客户已给齐条件，不必重背整套退换政策。简短确认仍在期限内、可申请、门店核看即可"
+        },
+        {
+          "index": 2,
+          "original": "按您说的情况，符合退货申请条件：门店购买后7个自然日内，未使用、标牌和原包装齐全、有购买凭证即可申请，您这单第7天是11月8日。门店会先检查商品，退款到账时间需要按门店流程确认。",
+          "sha256": "230794b4ccfe3d036a0ad5be5fcdb3cb40cead43aa8d15c0efbd2c36a30cf606",
+          "action": "rewrite",
+          "finding": "答复重复完整条件，又主动讲退款到账时间，客户没有问到账。删政策堆叠和未被问及的免责"
+        },
+        {
+          "index": 3,
+          "original": "可以申请退。您有未使用的卡夹、包装、标牌和小票，按门店购买的规则是可以在7个自然日内办理退货或换货的。到店交给出货同事检查确认即可；如果需要，我也可以先帮您和门店核对接下来的办理安排。",
+          "sha256": "466e8925e8a36b7bf1107a14d3643d68a24c514563dc8ff197148d97e1016299",
+          "action": "rewrite",
+          "finding": "“出货同事”不符合此处门店售后称呼；改“门店同事”。其余也可缩为申请与到店核看，不把退换条款全抄一遍"
+        }
+      ]
+    },
+    {
+      "case_id": "F20",
+      "title": "退换最后一天计数",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：10月27日在店里买的肩包没用，今天11月3日，包装和凭证都齐，还来得及申请换色吗？",
+        "related_info": "虚构业务日期2026-11-03，门店购买日期2026-10-27；未使用、标牌原包装及购买凭证齐全；未检查。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "block",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "来得及。10月27日门店购买的，次日起算第7天是11月3日，今天仍在7个自然日内。您这件未使用、标牌原包装和凭证齐全，按这些信息符合申请换色的条件，最终以门店检查确认为准。您想换哪个颜色？",
+          "sha256": "a06e38ed1804d223b1db6e8035db2897c07c1f5c3fb6dada9c555cde86de7ac6",
+          "action": "keep",
+          "finding": "最后一天的日期计算直接有用，问想换什么颜色也顺任务；略长可压缩，但不是不当防守"
+        },
+        {
+          "index": 2,
+          "original": "可以申请。门店购买的商品自购买次日起算7个自然日内，未使用、标牌及原包装齐全并有凭证即可申请换货；您10月27日买的，今天11月3日正好是第7日。轻行肩包有墨黑和米白两种颜色，具体换哪色和是否需要调货，我先帮您跟门店确认。",
+          "sha256": "3428437d9abd0977093e087ac1220cf3468bc2231bce8eb1f041847c4100ba68",
+          "action": "polish",
+          "finding": "前半段整套政策可缩短；已知未使用和凭证齐全，不必重述。确认今天仍可申请、帮核颜色即可"
+        },
+        {
+          "index": 3,
+          "original": "按您说的日期算，今天还在7天内，未使用且包装凭证齐全，可以提交换色申请。方便的话把购买凭证和包身、标牌的照片发我，我帮您一起提交给门店检查。换色的最终结果以门店确认为准。",
+          "sha256": "e4d7ca48e0a836d69516e4ee4727f27c58c51754f0c09ce292ba0ed7327bef06",
+          "action": "keep",
+          "finding": "照片和凭证是后续申请的合理协助；不能仅因客户说凭证齐全就断言顾问已拿到凭证。门店确认结果的简短说明可保留"
+        }
+      ]
+    },
+    {
+      "case_id": "F21",
+      "title": "渠道未知先核实",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：朋友帮我买的托特，我不清楚哪个渠道，能直接退吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "您好，购买渠道不清楚的话，退换还不能直接确定。方便的话把购买凭证或订单截图发给我，我先帮您核实渠道和后续可按哪种方式处理。",
+          "sha256": "0caf3b99443ce703ec2ee9330874373088a35939f2ad4c1697fa2b3c6750e709",
+          "action": "keep",
+          "finding": "渠道确实未知，索要购买凭证以协助确认是必要资料，不是让顾问档案填满才能回答"
+        },
+        {
+          "index": 2,
+          "original": "目前只支持门店购买场景下的退换：自购买次日起7个自然日内，商品未使用、标牌和原包装齐全，并有购买凭证，可以申请退货或换货，最终由门店检查确认。您这次是朋友代买的，渠道还需要确认，我可以陪您一起理清该找哪里办。",
+          "sha256": "2feeb55fb55ab9962cda01e5d22526bd32c04c691120ab94341c33440f913db0",
+          "action": "unsafe",
+          "finding": "“目前只支持门店购买场景下的退换”把本题只描述门店政策误写成品牌只受理门店退换；这是业务范围错误。后续整段门店条件也不必先发"
+        },
+        {
+          "index": 3,
+          "original": "先别急着寄回。您可以把购买凭证或朋友下单的截图发我，我先帮您确认是哪个渠道买的、是否还在退换期内，再告诉您具体该走哪一步。",
+          "sha256": "ee432edb18f29028f61c5ed23782ab4caac04e4b074a12d66abeef161fbcccab",
+          "action": "rewrite",
+          "finding": "“先别急着寄回”凭空预设客户准备寄件。直接接购买凭证核实渠道即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F22",
+      "title": "网上购买不套门店规则",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "虚构客户，仅知道其描述网上购买，具体平台未知。",
+        "conversation": "客户：我是网上买的，昨天到货，想退掉，是不是也按你们门店七天走？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "您好，七天退换是门店购买的规则，网购渠道不一定相同。您是在哪个平台下的单？我先帮您核实对应的退货流程。",
+          "sha256": "56d83ff140fd1abe0036f63fdb361783f5655fdca05cac2f73c8ada3e5b88343",
+          "action": "keep",
+          "finding": "直接说明需确认网购渠道，问题针对平台，有用且不过度"
+        },
+        {
+          "index": 2,
+          "original": "明白您想退货。门店购买是次日起算7个自然日内、商品未使用且标牌原包装凭证齐全可申请，最终需门店检查确认；您这单是网上买的，具体平台不同，流程要先核实。方便告诉我是哪个平台吗？",
+          "sha256": "f6ea14fa0cc381172c61fb892d2a665ca45addd74af5e8f290503cab1a2612c8",
+          "action": "rewrite",
+          "finding": "明知网上买却先背一大段门店规则，客户读完仍要回答平台。直接核实平台即可"
+        },
+        {
+          "index": 3,
+          "original": "网上渠道的退货不直接按门店七天规则来，需要看平台那边的安排。您把下单平台的名称和订单信息发我，我先帮您核实怎么申请。",
+          "sha256": "183e99068fcd92d93d754bd63f881ff27597bd1c0897e9493457ba84db5366d7",
+          "action": "polish",
+          "finding": "不是说网购肯定没有七天退货，而是不能直接套本项目门店规则。措辞可改“我先确认您购买平台对应的退货流程”；不扩写现实法律结论"
+        }
+      ]
+    },
+    {
+      "case_id": "F23",
+      "title": "卡夹污渍与清洁剂",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹蹭上污渍，家里有清洁剂但不知道成分，直接擦行吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "不建议直接擦。成分不明的清洁剂可能对皮面有影响，酒精和含溶剂的更要避开。可以先在不显眼的小角落点一点试，没有异常再处理污渍；要是污渍比较明显，拍张照片发我，我帮您一起问售后怎么处理更稳妥。",
+          "sha256": "4332bfc88b98f64e687f66487dadc68aeefa5aba432b4203f1d69bb3eb468491",
+          "action": "unsafe",
+          "finding": "“先在不显眼的小角落点一点试，没有异常再处理”实际鼓励自行试用未知清洁剂，与既有保养规则冲突。前面说“不建议直接擦”不能抵消后面的错误建议"
+        },
+        {
+          "index": 2,
+          "original": "家里那瓶清洁剂成分不清楚，先别直接上卡夹。常规做法是避免长时间淋雨，沾水后用干燥软布轻轻吸干、放通风处自然晾干；污渍这块，您方便的话拍张局部照片，我帮您提交给售后看看怎么处理。",
+          "sha256": "693e9265f0f73ce863d235df8bfa14a0853293b6cceeacc02c9d7ecbc0ee60c3",
+          "action": "rewrite",
+          "finding": "问的是污渍与未知清洁剂，回答却搬出淋雨、吸干、晾干等沾水保养表；删无关步骤，针对污渍拍局部图交售后"
+        },
+        {
+          "index": 3,
+          "original": "成分不清的清洁剂，我不建议您直接往卡夹上擦。您先拍张污渍的局部照片，我帮您问一下售后，确认能不能处理、该怎么清洁，再动手会放心一些。",
+          "sha256": "964766cc7e3808a2f9b795b0d7a8fb40c862ceff6712358fdb60f6d08ca72220",
+          "action": "keep",
+          "finding": "直接回应不要用成分未知清洁剂，给出局部照片核实路径，相关且可操作"
+        }
+      ]
+    },
+    {
+      "case_id": "F24",
+      "title": "维修费用和周期均未知",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：肩包拉链有点卡，修一下要多少钱、几天能好？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "您好，拉链卡的情况我记下了。能否修、费用多少和需要几天，都要售后看过实物才能确定，我这边没法先给报价和工期。我可以先帮您把情况和这张肩包一起提交评估。",
+          "sha256": "43d5f97ffb223d28a43ead626f3ba3ffa85a7f8a5c3baf406e481aac0e921882",
+          "action": "unsafe",
+          "finding": "“都要售后看过实物才能确定”擅加必须看实物的固定流程；“这张肩包一起提交”量词及操作含义也不成立。应承接拉链卡顿，收必要照片/情况供评估，不虚构寄送或实物已在顾问手上"
+        },
+        {
+          "index": 2,
+          "original": "收到，肩包拉链发卡这件事我先帮您转给售后查看。维修是否能做、收费和周期都要他们检查后告知，再由您决定要不要处理，我会把结果转给您。",
+          "sha256": "28c4ceffbf14c0f73fa5a24a48246e9038aa3ffd77fe6b1aa4bd0c26f82c5f31",
+          "action": "keep",
+          "finding": "费用、周期确须售后评估，承接后转交并告知结果有用；不是无关免责"
+        },
+        {
+          "index": 3,
+          "original": "肩包拉链卡着用起来确实不方便。麻烦您拍一张拉链部位的近照发我，我连同您说的发卡情况一起提交售后评估；费用和所需时间他们会看过实物后给答复。",
+          "sha256": "9f75c8cd9710c6fec9435dad86593660f72354576773d3ea1ea697605bc5d593",
+          "action": "polish",
+          "finding": "近照是可执行下一步；“他们会看过实物后”不必先定检查方式，改“评估后”即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F25",
+      "title": "客户询问尚未核实的单号",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "虚构客户，本次没有提供已提交记录或售后单号。",
+        "conversation": "客户：上次你们说会帮我提交售后，现在有单号吗？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": null,
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "您好，我先说明一下：我这边这次没有看到已提交的售后单号，所以暂时没法直接报给您。我先帮您核对上次的沟通记录和提交情况，有结果就回复您。",
+          "sha256": "06a859427b083fb4212078949442444ba9cce469b5ff237300041dc2b319a330",
+          "action": "unsafe",
+          "finding": "“我这边这次没有看到已提交单号”仍将本次工具未给业务记录写成顾问现实查询结果。可以直接“我帮您查一下上次提交的单号和进度”，不报告未发生的查询"
+        },
+        {
+          "index": 2,
+          "original": "抱歉让您来问。现在还没有确认到单号，我先去核实上次说的售后是否已经提交、进度到哪里了，核实清楚后告诉您。",
+          "sha256": "b3b8f48e2603f4577767d1ab4f727299b9142c453f5de5983cf4f6ad8d2426a8",
+          "action": "polish",
+          "finding": "核实旧提交和进度是正确动作；“抱歉让您来问”“还没有确认到”略显先行辩解。简洁承接并去查即可，不需虚构已提交"
+        },
+        {
+          "index": 3,
+          "original": "您好，单号我这边暂时还没确认到，需要先核对上次的沟通和提交情况。麻烦您把售后涉及的商品和问题简单说一下，我一起帮您跟进。",
+          "sha256": "a1cd814f8186619efa4f323ab421a024a86fe9a3d26c5a657e57754db5ef6ad1",
+          "action": "unsafe",
+          "finding": "因工具没带旧售后内容就让客户重新说商品和问题，把内部资料缺口转嫁客户。先查已有记录；确实无法定位且有真实核实结果时，才最少补问"
+        }
+      ]
+    },
+    {
+      "case_id": "F26",
+      "title": "购后轻量关怀",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "虚构客户蒋女士，已知两周前在门店买随行卡夹；顾问这次准备问使用是否顺手，没有已知质量问题。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "蒋女士您好，两周前您在门店买的随行卡夹，用起来还顺手吗？4个卡位是否够放您常用的卡片？",
+          "sha256": "fdadf8206131ffb61b7c3972d7e1c78f72f8d880d5734408310b9e6303cde6e7",
+          "action": "keep",
+          "finding": "已知购买记录支撑使用问候，卡位够用与否是具体的购后关怀"
+        },
+        {
+          "index": 2,
+          "original": "蒋女士您好，想问候一下，随行卡夹这两周用着感觉如何？卡位松紧或日常携带上有需要留意的，都可以跟我说。",
+          "sha256": "32dcb579e311b871fa0a7fdeb3b59108cf66d61dca232f61451cf665d08620d8",
+          "action": "polish",
+          "finding": "“卡位松紧……需要留意”容易把无质量问题的问候写成寻找毛病，可改成开放的使用感受；不是禁止询问真实使用问题"
+        },
+        {
+          "index": 3,
+          "original": "蒋女士您好，之前您买的那只随行卡夹，现在用着顺手吗？平时注意避免长时间淋雨，沾到水用干软布轻轻吸干、通风处自然晾干就好。",
+          "sha256": "7f1815cd15be5f1c0311112d04a7153bdb80fe792414d940e5c83982269b6a21",
+          "action": "rewrite",
+          "finding": "主动问候末尾突然插入淋雨和吸干警告，与本次没有已知问题的关怀目标不符。先问使用感受即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F27",
+      "title": "已知沾水不延伸到免费维修",
+      "scenario": "购后关怀",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：托特沾了几滴水，我已用干软布吸干了。接下来怎么办，必须拿去修吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "旧检查要求“不直接保证无需维修”过宽，不能把“一般不必特意送修”的普通安抚也判错。应区分常规轻微沾水处理与绝对保证无损/无须维修",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "几滴水一般不用特意送去维修。您已经用干软布吸干了，接下来把它放在通风处自然晾干就好，暂时不用急着处理。",
+          "sha256": "4b8ecca17b3a025397b556e36abe5b8eb7b99658229a74b53a91f3124c71555f",
+          "action": "keep",
+          "finding": "“几滴水一般不用特意送修”是有边界的常识性安抚，结合既有晾干方法可以保留；不要为了绝对可证明而把普通情况一律转售后"
+        },
+        {
+          "index": 2,
+          "original": "目前看不用维修。吸干后放在通风处自然晾干就行，注意别用吹风机烘干，也别用酒精或不确定成分的清洁剂擦拭。",
+          "sha256": "792f1b67049259dfc09beab1392ea490d0a9b852d0fbf599c379479fc91511c9",
+          "action": "polish",
+          "finding": "自然晾干和不热风烘干与当前沾水有关，可以保留必要提醒；酒精、未知清洁剂不必每次顺带列全。“目前看”可省，工具没有看图"
+        },
+        {
+          "index": 3,
+          "original": "沾几滴水按日常保养处理即可：通风处自然晾干，避免长时间淋雨，也不用送修。晾干后如果皮面还有颜色或质地的明显变化，您拍张局部照片发我，我帮您一起交给售后看看。",
+          "sha256": "778469ce9a425f8976dfdc4df7d34eac91d30227a9f4a90fab2614dfb42d9e05",
+          "action": "polish",
+          "finding": "晾干后如有明显变化再发图是有用条件分支；“避免长时间淋雨”不是当下处理步骤，可删，避免照抄整段保养表"
+        }
+      ]
+    },
+    {
+      "case_id": "F28",
+      "title": "只有已知购买记录",
+      "scenario": "沉睡客户唤回",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户杜女士，八个月前买过随行卡夹，最近未到店；顾问拟轻量问候。无当前来信，无拒收营销记录。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "block",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "杜女士，您好，很久没联系了。之前您在店里带走的随行卡夹，用着还顺手吗？",
+          "sha256": "2bf94602133176ea317a3f70899f59e7f34073c253abf24b973684849da04ab1",
+          "action": "keep",
+          "finding": "结合已购卡夹问是否顺手，正常中文可以发。“很久没联系”如无联系史可轻删，但不应与虚构权益同等判成严重业务错误"
+        },
+        {
+          "index": 2,
+          "original": "杜女士，您好，想着跟您问声好。那只随行卡夹有4个独立卡位，平时放几张常用卡应该挺省手，用下来还合心意吗？",
+          "sha256": "1a3777fda6a20cbbf33a68ceba28f86c17815364d81f5153dfe20c396ff587e8",
+          "action": "rewrite",
+          "finding": "重讲客户已持有卡夹的四个卡位没有关怀价值；“挺省手”用词不自然，改问“用着还顺手吗”即可"
+        },
+        {
+          "index": 3,
+          "original": "杜女士，您好，来问候一下。随行卡夹用着有什么不顺手的地方，或者需要了解保养，随时跟我说。",
+          "sha256": "5cf4bd78ee93ae9409757505b3f5fd8ebbf948247128c38fd7602fe8b830be5b",
+          "action": "keep",
+          "finding": "购后主动提供处理不顺手和保养咨询的入口是合理服务，没有搬出缺点清单；不因出现问题相关词就一律当贬低"
+        }
+      ]
+    },
+    {
+      "case_id": "F29",
+      "title": "偏好短消息",
+      "scenario": "沉睡客户唤回",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户袁先生，半年未到店，以前明确喜欢简短微信。现在没有客户新来信，顾问拟问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "每条最多两句。"
+      },
+      "program_status": "error",
+      "model_verdict": "block",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "袁先生，好久没聊了，最近一切都顺利吧？",
+          "sha256": "d47715786c107dedfc8a04b82f41c0f660ddf50b92290510c89bf9d12172d418",
+          "action": "keep",
+          "finding": "足够简短、自然。“好久没聊”若无记录可省，但属于轻量措辞调整，不是优惠或履约事实风险"
+        },
+        {
+          "index": 2,
+          "original": "袁先生，您好。隔了段时间没联系，想问候一下，最近还好吗？",
+          "sha256": "af6f779d2e8c49a31b81669d5c4beb22a68b17d0d081d89ace58a4104eb4fbf9",
+          "action": "keep",
+          "finding": "简单问候可保留；若不愿预设联系间隔，直接从“最近还好吗”起句即可，不硬拦"
+        },
+        {
+          "index": 3,
+          "original": "袁先生，您好。一直记得您喜欢简短的消息，就不多打扰，祝您一切顺心。",
+          "sha256": "4f4119325a1652e42dc093eb5fe96f580532e1580532c4b1bbd48775245e2ab3",
+          "action": "rewrite",
+          "finding": "“一直记得您喜欢简短的消息，就不多打扰”是在向客户展示自己遵守偏好的过程，反而不自然。直接发简短问候即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F30",
+      "title": "历史活动问题不当新咨询",
+      "scenario": "沉睡客户唤回",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户罗女士；这段聊天来自2025年，没有新的客户来信，本次只想轻量接续关系。",
+        "conversation": "2025-03-12\n客户：周末活动在哪儿？\n顾问：我再发您信息。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "block",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "罗女士您好，好久没联系了。之前您问过的周末活动现在已经结束，近况都还好吗？",
+          "sha256": "5cef517d30284b67f6174d7118ae85e8fcab5b5acd60a2ca7bee5f0a829cb044",
+          "action": "rewrite",
+          "finding": "本次只是接续关系，却重新回复去年活动是否结束；过期问题不该抢占当前任务。直接问候"
+        },
+        {
+          "index": 2,
+          "original": "罗女士您好，想跟您问声好。之前您问的周末活动已经过去一段时间了，如果您之后还有想了解的，随时跟我说就好。",
+          "sha256": "fab787f50d825d52253f47cb5aa03bd610759fd0d76f143e250c7e389b27680c",
+          "action": "rewrite",
+          "finding": "同样无端重提旧活动；旧聊天应帮助理解关系，不等于每次都要回应其中所有问题"
+        },
+        {
+          "index": 3,
+          "original": "罗女士您好，跟您打个招呼。去年您问的周末活动已经结束了，没有别的事，就是想起您，祝您一切顺心。",
+          "sha256": "4ad90842d98b1b9bb5e135f6ca51834ffaa6eb9f932f92638e5989cbda2076bc",
+          "action": "rewrite",
+          "finding": "旧活动说明多余；“没有别的事，就是想起您”刻意解释联系动机，像打扰后的自我辩解。普通问候就够"
+        }
+      ]
+    },
+    {
+      "case_id": "F31",
+      "title": "客户曾希望少发商品内容",
+      "scenario": "沉睡客户唤回",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户钱女士，顾问与其有已知门店购买关系，五个月未到店。过去她说喜欢简单问候，不希望每次都是商品介绍；无全面拒收联系设置。当前无来信。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "needs_review",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "钱女士您好，有段时间没和您联系了，就想简单问候一下，最近都还好吗？",
+          "sha256": "a0960941f8366930fce5202936c1ad47f298716023dc8e5afe5101ff47b2859a",
+          "action": "keep",
+          "finding": "轻量问候符合客户偏好。未到店不能严格推出未联系，开场可省略，但不需把普通问候整体阻断"
+        },
+        {
+          "index": 2,
+          "original": "钱女士您好，好久没聊了，不做商品介绍，只是问声好。之前那只包用得还好吗？",
+          "sha256": "fd34aa08215932c71d922f69bf0b49116f5681e954725267c639b8fa1763c088",
+          "action": "unsafe",
+          "finding": "“之前那只包”没有具体已购包袋依据，背景只说门店购买关系；“不做商品介绍”又是内部要求外露。直接问候，不补产品故事"
+        },
+        {
+          "index": 3,
+          "original": "钱女士您好，今天不聊商品，就想轻轻问一句：最近过得怎么样，用着还顺心吗？",
+          "sha256": "b88956ead8751ef9e8ed74e07de130b7587f0b710f036e302f94e1e4b3750d27",
+          "action": "rewrite",
+          "finding": "“今天不聊商品”“轻轻问一句”刻意自述；“用着”没有对象读着突兀。问近况即可；不必因没有具体型号禁止所有已有购买关系下的使用关怀"
+        }
+      ]
+    },
+    {
+      "case_id": "F32",
+      "title": "称呼未知不装熟",
+      "scenario": "沉睡客户唤回",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户，去年在店里买过轻行肩包，此后无新来信；没有姓名、年龄和家庭资料。当前准备简单问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "block",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "您好，我是澄序的顾问。之前您在我们店里选过轻行肩包，想简单问候一下，最近一切都还顺利吗？",
+          "sha256": "4fa3865b2585904f0b93fe3bcb094ce1a946f6147672f51d873d85eaa7e72dea",
+          "action": "keep",
+          "finding": "未知称呼时自我介绍并联系已知肩包购买，正常可用"
+        },
+        {
+          "index": 2,
+          "original": "您好，好久没联系，想轻轻问一声好。那只轻行肩包用得还顺手吗？有需要了解的地方随时找我。",
+          "sha256": "c2d838bdf0046290b549150e1a8eccea9dc0b659dc67a9b6075fd6500d35ecb6",
+          "action": "polish",
+          "finding": "“轻轻问一声好”有做作感，简化；“好久没联系”无记录可省，不用上升为重大事实违规"
+        },
+        {
+          "index": 3,
+          "original": "您好，我是澄序的顾问，今天只是问候，不打扰您。希望您最近顺心，肩包的使用上有任何问题都可以跟我说。",
+          "sha256": "a583f681c7c489bc18a481cb3f911a3e070b586c5bcd2e75db7250f0447efbfe",
+          "action": "rewrite",
+          "finding": "“今天只是问候，不打扰您”自我解释，正在主动发消息却强调不打扰也显别扭。直接祝愿或问使用情况"
+        }
+      ]
+    },
+    {
+      "case_id": "F33",
+      "title": "已知客户喜欢暖棕但无新商品",
+      "scenario": "沉睡客户唤回",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户彭女士，过去说喜欢暖棕，半年未到店，无本次来信；顾问没有任何新品或活动资料。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "needs_review",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "彭女士您好，许久没联系，想问候一下。之前您提过喜欢暖棕，最近用包还顺手吗？",
+          "sha256": "445ae20cb6841ba9cc86c4971bcd419b160e73aba5d9cb83cadf44e7c8cd6542",
+          "action": "unsafe",
+          "finding": "偏好暖棕不证明买过或正在用包，“最近用包还顺手吗”引入未给的购买使用背景。暖棕偏好也不必为了个性化硬塞进问候"
+        },
+        {
+          "index": 2,
+          "original": "彭女士您好，最近还好吗？想起您之前说偏爱暖棕，特意来问声好，有空聊聊近况就好。",
+          "sha256": "3fad90398f7b6d562ce28d30af8f6eada42bffed781a9f8b9ed05600a19c9cae",
+          "action": "rewrite",
+          "finding": "“想起偏爱暖棕，特意来问好”动机牵强；“有空聊聊近况就好”像给客户安排回复任务。可以简单问候，不强行使用每个偏好字段"
+        },
+        {
+          "index": 3,
+          "original": "彭女士您好，隔了些日子来打个招呼。之前的皮具用得还习惯吗？日常保养上有什么想了解的，随时找我。",
+          "sha256": "cec7604aed4539a75a5a57bda88e42671643ab9ba58543872115ae64a4294244",
+          "action": "unsafe",
+          "finding": "“之前的皮具”同样虚构已购背景。没有购买记录就不要编，直接问好也不需要顾问补一套档案"
+        }
+      ]
+    },
+    {
+      "case_id": "F34",
+      "title": "只问已购使用不追销",
+      "scenario": "沉睡客户唤回",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户唐先生，四个月前买日行托特，现在无新来信；顾问希望只问使用感受，不介绍别的商品。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "不需要预约或到店邀请。"
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "唐先生您好，之前您选的日行托特包，这段时间用着还顺手吗？",
+          "sha256": "b438154d89eb724368ea544f6591d6539f075422da563deeac88ef088b9a9959",
+          "action": "keep",
+          "finding": "自然、简短、有明确已购依据，是关怀正例"
+        },
+        {
+          "index": 2,
+          "original": "唐先生您好，想起您之前买的日行托特包，想问问日常用起来的感受，容量和肩背都还合适吗？",
+          "sha256": "e925bbac275951db7764b413a44603447813819dace0aa8e47be914a18ba73be",
+          "action": "keep",
+          "finding": "容量与肩背的实际使用感受贴近已购托特，提问合理"
+        },
+        {
+          "index": 3,
+          "original": "唐先生您好，问候一下您那只日行托特包，用了这些日子有什么不习惯的地方，也可以跟我说说。",
+          "sha256": "a22945d5627c6b0f906e6fbfcb764052aece68812c696626933d38f5d5cbc309",
+          "action": "keep",
+          "finding": "购后询问不习惯之处是正常服务，不等于列产品缺点。想更轻松可改“用着还习惯吗”，非必须阻断"
+        }
+      ]
+    },
+    {
+      "case_id": "F35",
+      "title": "活动基本邀请",
+      "scenario": "活动邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "虚构客户任女士；允许普通联系，无当前来信。",
+        "conversation": "",
+        "related_info": "虚构活动：日常收纳体验；2026-11-14 14:00—16:00；地点澄序广场8号精品店。活动内容为展示现有三款商品的日常收纳，无折扣赠品；是否有空可询问，未登记席位。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "block",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "任女士您好，11月14日周六14:00—16:00，我们在澄序广场8号精品店有一场日常收纳体验，会展示现有三款商品的日常收纳方式。您那天有空的话，欢迎来看看。",
+          "sha256": "992226e1791f576f79a97dcb3e622945ba79e3eda6bd096238deeb90c59a5c76",
+          "action": "keep",
+          "finding": "日期、地点、活动内容、欢迎来看看，完成了正面的邀请任务"
+        },
+        {
+          "index": 2,
+          "original": "任女士您好，想跟您说个活动：11月14日（周六）下午两点到四点，在澄序广场8号精品店有日常收纳体验，现场会展示现有三款商品平时怎么收纳。不设折扣和赠品，就是看看实际用法，您若有兴趣我可以帮您留个位子。",
+          "sha256": "8a9771a7c60da9b02db0c0df61a3047492a046ac9b0568f0ffc649bddcfdc995",
+          "action": "rewrite",
+          "finding": "删无端强调“不设折扣和赠品，就是看看实际用法”。普通邀请不必先劝退；说清能体验什么即可。未来帮登记不等于已经有席位，是否存在留位流程按活动资料处理"
+        },
+        {
+          "index": 3,
+          "original": "任女士您好，11月14日周六下午14:00—16:00，澄序广场8号精品店有一场日常收纳体验，会展示三款商品在日常使用中的收纳方式。若您方便来，跟我说一声，我再帮您确认安排。",
+          "sha256": "fcddcd16c553e878fc3e8cfe44b37b8d9c1ea398cade384bf1c42257afd32353",
+          "action": "keep",
+          "finding": "活动信息清楚，愿意参加再确认安排是合理未来协助；“下午14:00”可顺手统一一种时间格式"
+        }
+      ]
+    },
+    {
+      "case_id": "F36",
+      "title": "主动索取地址没有问号",
+      "scenario": "活动邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "虚构客户，本次是客户主动咨询；长期不收推广。",
+        "conversation": "客户：麻烦把活动地址发一下，别的不用介绍",
+        "related_info": "虚构活动2026-11-14 14:00—16:00，地址澄序广场8号精品店；无已登记记录。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "您好，活动地址是澄序广场8号精品店。",
+          "sha256": "86d13eba95827adcef30042076813ce7b99787e60736de48ac3141dac384b18c",
+          "action": "keep",
+          "finding": "只发客户明确索要的地址，是最佳正例"
+        },
+        {
+          "index": 2,
+          "original": "活动在澄序广场8号精品店，时间是2026年11月14日（周六）14:00—16:00。",
+          "sha256": "c4ee90934548d5f0fd36cb7b7e52e48d27e70fe1b0e1fa1a66a5519d9ac20073",
+          "action": "rewrite",
+          "finding": "客户明确“别的不用介绍”，仍追加时间，忽略了当前范围。不要用“事实正确”替代“该不该说”"
+        },
+        {
+          "index": 3,
+          "original": "地址是澄序广场8号精品店，11月14日周六14:00—16:00，您按这个地址过去就好。",
+          "sha256": "241b9133883145d521b7581755e892f525ba160a5bdd40427ce3bba59bb9b222",
+          "action": "rewrite",
+          "finding": "额外时间同样越出范围；“按这个地址过去就好”还替客户安排了出行。只给地址"
+        }
+      ]
+    },
+    {
+      "case_id": "F37",
+      "title": "同行须登记未确认",
+      "scenario": "活动邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：我想14号来，可以带一位朋友吗？",
+        "related_info": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店；允许携一位朋友，但需登记后确认；本客户尚未登记。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "block",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "可以带一位朋友。14号（周六）14:00—16:00在澄序广场8号精品店，同行一位需要登记后确认，我先帮您登记您和朋友，确认后回复您。",
+          "sha256": "9279360fd929d89813ff687bf2f1b00c064b8ed9d72964acb75f672ce91468bc",
+          "action": "keep",
+          "finding": "直接回答可带一位朋友并保留登记确认条件，相关且有用。可缩短，但不是无关免责"
+        },
+        {
+          "index": 2,
+          "original": "可以的，一位朋友同行没问题。您说的14号是周六，活动时间是14:00—16:00，地点在澄序广场8号精品店；同行需要登记后才能确认，您方便的话把朋友称呼给我，我一并登记。",
+          "sha256": "1c6bd1e633a717ef400bd614727868bad2be281e7562cc8f9e241b98b0d3eb93",
+          "action": "keep",
+          "finding": "朋友称呼用于登记是顺任务的轻量补充，不是让客户重复已给需求或补完整档案"
+        },
+        {
+          "index": 3,
+          "original": "14号周六这场可以带一位朋友，不过同行名额要登记后确认，目前您这边还没有登记。需要我现在帮您登记您和一位朋友吗？确认好我再跟您说一声。",
+          "sha256": "1844a788b409588f7df46b4549b996c45a4b02b8f8a7bd93feb7f3c98a291b0f",
+          "action": "polish",
+          "finding": "“目前您这边还没有登记”是内部状态播报；客户已表示想来，不必再绕一圈问要不要登记。直接承接后续登记确认"
+        }
+      ]
+    },
+    {
+      "case_id": "F38",
+      "title": "两个日期选周六",
+      "scenario": "活动邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：我周六比较方便，那天几点？",
+        "related_info": "虚构活动两场：2026-11-20（周五）16:00—18:00；2026-11-21（周六）10:00—12:00；均在澄序广场8号精品店，无客户登记。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "周六这场是11月21日10:00—12:00，在澄序广场8号精品店。",
+          "sha256": "aa54e34853d996f24ce362191b67eee4af4a978aa9b6e8a6b45ebab800986fa2",
+          "action": "keep",
+          "finding": "直接给周六对应日期、时段、地点，可用"
+        },
+        {
+          "index": 2,
+          "original": "周六那场在10:00—12:00，地点是澄序广场8号精品店；周五还有一场16:00—18:00，同店。",
+          "sha256": "7642119f0beb00ddd3d57e88e3c6abc72ed8f441c4cef4c15cf9dd17b75a283a",
+          "action": "polish",
+          "finding": "客户已选周六，不必再报周五场次，避免让简单时间答复重新复杂"
+        },
+        {
+          "index": 3,
+          "original": "周六场次是10:00—12:00，澄序广场8号精品店。您如果确定过来，我先帮您登记一下，方便安排。",
+          "sha256": "0582d187f391abce2a4850bf7f8eec4fe7cfeffdbbd281d3bc23235b42c2ba80",
+          "action": "keep",
+          "finding": "先答时间地点，再给可选登记协助，与客户表示周六方便相衔接，可以保留；不是所有后续提议都多余"
+        }
+      ]
+    },
+    {
+      "case_id": "F39",
+      "title": "确认活动没有折扣",
+      "scenario": "活动邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：这个活动去了一定能买到优惠价吗？",
+        "related_info": "虚构活动2026-11-14 14:00—16:00在澄序广场8号精品店，为现有商品收纳展示；没有新增折扣、赠品或购买权益。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "不会的，这次活动没有额外的优惠价。三款商品目前都按目录价格，活动当天也不设折扣、赠品或购买权益。",
+          "sha256": "60d5e334725af1f384048ac4677e0806be4d16106b71fd9a3f001213ac57daec",
+          "action": "polish",
+          "finding": "客户明确问优惠，说明没有优惠价是必要回答；可压缩“折扣、赠品、购买权益”列表，用“活动价格和平时一样”更自然"
+        },
+        {
+          "index": 2,
+          "original": "活动是11月14日（周六）14:00—16:00，在澄序广场8号精品店，内容是现有商品的收纳展示，不会因为到场就有优惠价。价格与平时一致。",
+          "sha256": "92dbc2a5c8dec20ed779586f6110fc2bdbf9d5e041b4a765cc2167a035a4ac14",
+          "action": "rewrite",
+          "finding": "客户问价格优惠，不需重新播报整套时间地址；“不会因为到场就……”也像训诫。直接说明没有优惠价，可正面说活动能体验什么"
+        },
+        {
+          "index": 3,
+          "original": "这次活动只是现有商品的收纳展示，没有新增折扣或其他购买权益，到场也不会拿到优惠价。如果您想了解某个具体款式的价格，我可以直接报给您。",
+          "sha256": "145f337526a62c6b1174700e6be963b3466301ffb47ae02e5f64503bffd67362",
+          "action": "rewrite",
+          "finding": "“只是……展示”“到场也不会拿到”把活动价值主动压低。保留价格事实，改成平实说明活动内容；不要写成对客户预期的否定教育"
+        }
+      ]
+    },
+    {
+      "case_id": "F40",
+      "title": "已有记录仅核对登记",
+      "scenario": "活动邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：上次登记的活动还是周六两点吗？",
+        "related_info": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店。虚构登记记录：该客户已登记1位参加这场活动，没有新增同行登记。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "是的，活动还是周六 11 月 14 日下午两点，地点在澄序广场 8 号精品店，时间是 14:00—16:00。",
+          "sha256": "a4323d05aa5274864115207910e83f09b0567c157698351009bdf8afa588ca5f",
+          "action": "polish",
+          "finding": "“下午两点”与“14:00—16:00”重复，不必双重报时；保留确认结论和必要时间即可"
+        },
+        {
+          "index": 2,
+          "original": "您登记的活动没有变动：2026 年 11 月 14 日（周六）14:00—16:00，澄序广场 8 号精品店。",
+          "sha256": "997004a6953aeed74120786926330d253efc76ee5bc3732261b31ac78a13704a",
+          "action": "keep",
+          "finding": "确认客户已有登记的具体活动信息，符合当前提问"
+        },
+        {
+          "index": 3,
+          "original": "是的，仍是周六两点开始。登记记录里是 1 位参加，时间为 11 月 14 日 14:00—16:00，地点澄序广场 8 号精品店。",
+          "sha256": "8dc05e908bfbeb0a5387d2ed39ff6947586f3af61695c7aa310b0898f16b5381",
+          "action": "polish",
+          "finding": "“登记记录里是1位参加”不是本次问题，删内部记账播报；不用每次把所有可查字段发给客户"
+        }
+      ]
+    },
+    {
+      "case_id": "F41",
+      "title": "想先了解内容再决定",
+      "scenario": "活动邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：先别帮我约，我想知道这个活动具体做什么。",
+        "related_info": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店；展示现有三款商品的收纳方式，可对照日常物品了解尺寸；无新品发布、折扣或赠品。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "好的，先不约。这场在11月14日（周六）14:00—16:00，地点是澄序广场8号精品店，主要是现场展示现有三款商品的收纳方式，可以带自己的日常物品对照着看尺寸。没有新品发布，也没有折扣或赠品。",
+          "sha256": "845f9181d012d2e8f75edb4332dbf006d27cfadc83844e0598648df6ff316cd0",
+          "action": "rewrite",
+          "finding": "客户想先了解内容，先讲体验能做什么；删末尾无关的“没有新品发布，也没有折扣或赠品”。时间地点可后置或省去"
+        },
+        {
+          "index": 2,
+          "original": "明白，先不帮您约。活动内容就是把日行托特包、轻行肩包和随行卡夹这三款现有的收纳方式演示出来，您可以拿平时带的东西对照尺寸看合不合适；时间是11月14日周六14:00—16:00，在澄序广场8号精品店。",
+          "sha256": "a25c8057414e3ea1e336a9fc57c9d6becef3944a50c312d86df45f8fe6e34b63",
+          "action": "polish",
+          "finding": "基本回答了内容且尊重先不约，但“就是把……现有的收纳方式演示出来”生硬，后面时间地点也使重点分散。用日常语言说明对照随身物品看收纳"
+        },
+        {
+          "index": 3,
+          "original": "没问题，不预约。活动在11月14日周六下午2点到4点，澄序广场8号精品店，主要是看三款现有商品的收纳演示，也方便对照日常物品了解尺寸。没有新品、折扣或赠品，您了解清楚后再决定要不要去。",
+          "sha256": "32efdbef09ae3685a7406f950e40b3b7a0d86ac7c2c59ef91504d502d2bfb869",
+          "action": "rewrite",
+          "finding": "删“没有新品、折扣或赠品”和“了解清楚后再决定”的多余指导。客户本来就在了解再决定，不用顾问批准其决策过程"
+        }
+      ]
+    },
+    {
+      "case_id": "F42",
+      "title": "纠正旧活动星期",
+      "scenario": "活动邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "顾问：活动在周五。\n客户：你之前说周五，我看11月14日是周六，麻烦确认一下。",
+        "related_info": "最新已确认虚构活动资料：2026-11-14（周六）14:00—16:00，澄序广场8号精品店。旧顾问星期说错。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "您看得没错，是我之前说错了，抱歉。活动是11月14日周六，14:00—16:00，在澄序广场8号精品店。",
+          "sha256": "9184d83004b651931c7aa632577a48f4be9d6c1d79ab6dc4253ca309af53bb39",
+          "action": "keep",
+          "finding": "确有顾问之前说错的依据，直接承认并更正，必要道歉自然"
+        },
+        {
+          "index": 2,
+          "original": "确实是我说错了，11月14日是周六。已确认的活动时间是当天14:00—16:00，地点在澄序广场8号精品店。",
+          "sha256": "6a7c1cd2bd78de83e287c97451fd84b217d6373581941b531d258e5e4a0ab28e",
+          "action": "keep",
+          "finding": "确认星期并答当前活动安排，可以保留"
+        },
+        {
+          "index": 3,
+          "original": "抱歉给您添了疑问，之前“周五”的说法有误。这场活动安排在2026年11月14日（周六）14:00—16:00，澄序广场8号精品店。",
+          "sha256": "6dcfd50204c6342465b20cc85bddf7cdee24daa2c9f0ec90d50279c797f1ba78",
+          "action": "polish",
+          "finding": "“抱歉给您添了疑问”不是自然中文，改“抱歉，之前星期说错了，是周六……”"
+        }
+      ]
+    },
+    {
+      "case_id": "F43",
+      "title": "卡夹价格和礼物用途",
+      "scenario": "价格异议",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：卡夹2,800是不是有点贵？我只是送个不太夸张的小礼物。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": "pass",
+      "task_review": "原检查写“2800与无折扣”，把知道政策误变成必须主动播报政策。价贵、求折扣、想比较用途应分开判断；旧输入和旧分数保留，新评审另版",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "随行卡夹的价格是2,800元，目前没有折扣。它比较适合您说的这种小礼物场景：外观是哑光细纹牛皮，标识也小，不显夸张；内里是4个独立卡位，可以放4张标准大小的银行卡。",
+          "sha256": "4ff3718c5b222e37c3fe3831bb285380f181c6c631221e0bd15070dd6be68057",
+          "action": "rewrite",
+          "finding": "外观低调、四个卡位与礼物需求相关；客户只是衡量价格，未要求优惠，不必抢先加“目前没有折扣”。测试检查项也不应强制每次价格异议都报无折扣"
+        },
+        {
+          "index": 2,
+          "original": "理解您会拿2,800元来衡量一份小礼物。卡夹本身走的是简洁低调的路线，4个独立卡位放银行卡刚好；不过它只是卡片收纳，没有零钱袋，也放不下手机或护照，如果对方平时习惯带较多东西，可能会觉得用处有限。",
+          "sha256": "9cea609fe4af88b0afb08a42c1e05d6fe93e0ba0bae0555d76d520a6f114294f",
+          "action": "rewrite",
+          "finding": "“只是卡片收纳”“没有零钱袋”“放不下手机或护照”“用处有限”连续主动贬低产品，还假设收礼人要带很多东西。应回到低调外观、卡片收纳与礼物用途"
+        },
+        {
+          "index": 3,
+          "original": "2,800元是随行卡夹的现行价格，目前没有折扣。送不太夸张的小礼物的话，它体积小、标识低调，适合做卡片收纳；您也可以告诉我礼物对象大概的使用习惯，我帮您看看是否合不合适。",
+          "sha256": "cf48f240b57c4b5cb7798e0e240bcdd1ae6c32238eb5dfc874c2e829c5a34876",
+          "action": "polish",
+          "finding": "可问收礼人的使用习惯以帮助选择，但不必先重复“现行价格、无折扣”；“是否合不合适”语病改掉。不是所有提问都要删"
+        }
+      ]
+    },
+    {
+      "case_id": "F44",
+      "title": "预算明确且继续了解肩包",
+      "scenario": "价格异议",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：我预算13,000，轻行肩包12,800在范围内，就是想确认平时少带东西值不值得选。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "12,800元在您的预算内。轻行肩包就是为少带东西的场合设计的：22 × 16 × 7 cm、空包约420 g，可肩背或斜挎，肩带能调长度，包口是拉链开合，普通手机、钥匙、口红这类小物能放下。它放不下A4资料和电脑，所以如果您平时确实只带随身小物，它的定位是合适的；这款目前没有折扣。",
+          "sha256": "7def159782254a51662ca5eda57d9aa36da5640b0d6e5592cf8273f1140d611d",
+          "action": "rewrite",
+          "finding": "客户已经说少带东西且预算匹配，却塞进A4/电脑限制、全规格和无折扣；“如果您平时确实”又怀疑已知需求。用两项相关优点帮助选择即可"
+        },
+        {
+          "index": 2,
+          "original": "在您这个预算和“平时少带东西”的前提下，轻行肩包是对应的选择：肩带可调、拉链开合，随身小物够用。需要提醒的是它放不下A4和电脑，手机连壳或长钱包这类大件建议核对一下尺寸再定。目前这款没有折扣，价格就是12,800元。",
+          "sha256": "39a17a8b8e1d39017e94f03848370a1733ba19ccf9ead1f9f4257114070c5e6e",
+          "action": "rewrite",
+          "finding": "删A4/电脑、手机连壳被叫大件、长钱包核实、无折扣的连续风险清单。客户没有这些需求，不给顾问和客户增加自造任务"
+        },
+        {
+          "index": 3,
+          "original": "按您说的少带东西，轻行肩包合适：可肩背或斜挎、肩带可调，包口拉链开合，手机、钥匙、口红这些小物能放。它装不了A4资料和电脑，所以适合轻装出门，不适合通勤带资料。价格12,800元，目前没有折扣。",
+          "sha256": "8a7d0a0e805744e7116e0df6b72045df4e2e338891dcb751014700f086ba7422",
+          "action": "rewrite",
+          "finding": "删未被问到的A4/电脑及无折扣；“不适合通勤带资料”还把小包的使用场景一刀切。客户轻装通勤同样可以用，不替客户规定场景"
+        }
+      ]
+    },
+    {
+      "case_id": "F45",
+      "title": "旧订单实付不是现价",
+      "scenario": "价格异议",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：我去年这张订单实付10,000，现在轻行肩包为什么报12,800？能按旧价吗？",
+        "related_info": "虚构旧订单仅证明客户声称的历史实付金额，未提供当时优惠原因；当前品牌目录及无折扣规则不变。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "轻行肩包目前的价格是12,800元，三款都没有折扣，旧价这边暂时无法按原金额给您。您提到去年实付10,000元，我可以帮您核实一下当时的订单记录。",
+          "sha256": "f3864743952a79a4b1f4be761d16ec87200cbad755db830ea0e98d1930d15288",
+          "action": "polish",
+          "finding": "客户明确问旧价，说明现价不能按旧价成交相关；“三款都无折扣”跑题，“暂时”可能暗示之后有例外。只说本款当前政策并帮核旧订单"
+        },
+        {
+          "index": 2,
+          "original": "理解您会拿去年的实付来对比。现在轻行肩包标价12,800元，目前没有折扣，也没有办法按旧价成交。去年的那笔订单我可以帮您核实一下具体情况，有结果再回复您。",
+          "sha256": "b7a7832913edbfceeff94cf1d2b12cb2a4c0a395fcd985b0c99387a124b418f5",
+          "action": "keep",
+          "finding": "接住旧实付比较、说明当前标价、提出核实旧单，没有编造涨价原因；可直接保留，成交措辞可更口语"
+        },
+        {
+          "index": 3,
+          "original": "现在这款轻行肩包是12,800元，目前没有折扣，也不能按去年的价格给您。如果您还考虑它，我可以帮您核实去年那笔订单的记录。",
+          "sha256": "c650b2b130e2c1aa8048afbde37334a12992e8d4ffea0f1d09499baf9266abfc",
+          "action": "polish",
+          "finding": "“如果您还考虑它”把仍在询问的客户提前推向离开；去掉这个条件，直接承接核实旧单"
+        }
+      ]
+    },
+    {
+      "case_id": "F46",
+      "title": "分期及免邮权益未知",
+      "scenario": "价格异议",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：随行卡夹价格没问题，有免邮或者免息分期吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "案例“权益未知”、品牌“未设”及“需核实”混用。先澄清业务资料的语义并同步机器依据；不要靠模型自行猜。保留旧设定/旧结果，任何真正业务设定变更单独标版本，不能冒充原有事实",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "随行卡夹目前没有免邮或免息分期的权益，价格就是2,800元。免邮和分期的服务信息我再帮您核实一下，有结果回复您。",
+          "sha256": "c492289dfc189960e1d8b34fcd58f24bee7e1f14b70bcc07d458d2fa4dd38406",
+          "action": "rewrite",
+          "finding": "先断言没有，再说核实，前后状态不一致。品牌表既写“未设”又要求“问到需核实”，案例又标“权益未知”，应先统一业务语义。对当前未知服务直接帮核实，不把未知写成无"
+        },
+        {
+          "index": 2,
+          "original": "谢谢您确认价格没问题。随行卡夹目前没有包邮和免息分期，2,800元是单件含税售价；这两项我再帮您跟门店确认一下具体情况。",
+          "sha256": "f8cfdbcf62f608db92e9c5fd47539993de20092793e7a568c94ff1d209282904",
+          "action": "rewrite",
+          "finding": "同样应消除“确定没有”与“再确认”的冲突。注意“含税售价”在BRAND_RULES第3节明示，旧开发备注把它列成无依据是误判，不能照单修掉或算成幻觉"
+        },
+        {
+          "index": 3,
+          "original": "这款卡夹现在没有免邮，也没有免息分期。您如果方便，我可以帮您问一下门店有没有其他付款方式，再回复您。",
+          "sha256": "999f4802e46da37f37a784e7b380bff639c19366ff8c88fcfcf9b58ce1839060",
+          "action": "rewrite",
+          "finding": "同样先解决服务状态语义；“您如果方便，我可以问门店”无谓征求客户方便与否，核实是顾问该做的事，而且还把免邮问题丢成只问其他付款方式"
+        }
+      ]
+    },
+    {
+      "case_id": "F47",
+      "title": "两款价差不编成本原因",
+      "scenario": "价格异议",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：托特18,800，肩包12,800，差了6,000是因为皮更好吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01",
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "error",
+      "model_verdict": null,
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "两款价格确实是18,800元和12,800元，不过差价不是因为皮更好：它们用的都是哑光细纹牛皮，内衬也都是棉布。价格差主要来自尺寸和容量，托特是34×28×12cm、约750g，能放A4资料；肩包是22×16×7cm、约420g，适合随身小物。至于定价的其他细节，我目前没有可对照的依据。",
+          "sha256": "7c72ff450648261fbf6dfa9be184c89841f91dbc14518c31ede3ec1f972c1acf",
+          "action": "unsafe",
+          "finding": "“差价不是因为皮更好”“主要来自尺寸和容量”都无定价来源；末尾承认无资料不能抵消先前的确定结论。可比较已知用途，不代品牌解释定价"
+        },
+        {
+          "index": 2,
+          "original": "两款并不是皮料等级不同，材质都是哑光细纹牛皮。差6,000元，实际对应的是尺寸和用途：托特更大，可放A4纸质资料、500mL水杯、折叠伞，还带一个内侧平口袋；肩包偏轻便，能肩背或斜挎，放普通手机、钥匙、口红这类小物。如果您告诉我平时主要带什么，我可以帮您看哪款更合适。",
+          "sha256": "a44545c98991784b0971fbae5f5c2335d85b2ec8998e819610f6e449a7abdfba",
+          "action": "unsafe",
+          "finding": "同材质名称不能推出皮料等级相同，也不能推出6000元就对应尺寸用途；删价格因果和等级断言。具体携带需求提问本身可合理，但不掩盖前面的事实错误"
+        },
+        {
+          "index": 3,
+          "original": "皮料这部分我可以先明确：两款都是哑光细纹牛皮，不存在托特用皮更好的情况。价格差体现的是包体大小和收纳：托特装得下A4资料，适合通勤带东西；肩包更小巧，走轻便路线。这个差价的成本构成我没有资料可以细说，但按使用需求挑选会更实在。",
+          "sha256": "04b0b9a92bd105930a78ff46d7544c03c75e12cf5cfa8f9b0a0620ab0c802836",
+          "action": "unsafe",
+          "finding": "“不存在托特用皮更好”及“价格差体现的是……”仍在编质量比较和定价原因；“按需求更实在”又替客户决定该关心什么。回应实际问题，必要时顾问核实定价说明"
+        }
+      ]
+    },
+    {
+      "case_id": "F48",
+      "title": "考虑考虑给空间",
+      "scenario": "价格异议",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "虚构客户当前只表示暂缓，没有新商品问题。",
+        "conversation": "客户：我考虑考虑，晚点再回复您。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "好的，您慢慢考虑，有需要随时找我。",
+          "sha256": "e5c07737412bb452f3eb7c45590d4fe2cf98be51bb341046f974239bbe6a0266",
+          "action": "keep",
+          "finding": "自然给空间、没有继续销售，是结束场景正例"
+        },
+        {
+          "index": 2,
+          "original": "好的，那不打扰您，等您想好了再联系就行。",
+          "sha256": "5c1251b42b20a94dcc59c95f44d1f3532e0e9a9a81139b353086c3535f96d3f6",
+          "action": "polish",
+          "finding": "“等您想好了再联系就行”稍像指挥，可改“有需要随时找我”。这里“不打扰您”是在回应客户暂缓，正常可用，不要列为全局禁词"
+        },
+        {
+          "index": 3,
+          "original": "了解，谢谢您告诉我。轻行肩包的情况您先留着参考，之后有问题随时问我就好。",
+          "sha256": "dff2006e9886efa1d9bdc5e90eb4a808040b1d1915b8f0f41125e8b7bfbecca2",
+          "action": "polish",
+          "finding": "P02是本例已选商品，提肩包不算编造商品；但“先留着参考”还是多余安排。简单确认客户暂缓即可"
+        }
+      ]
+    },
+    {
+      "case_id": "F49",
+      "title": "明确拒绝后的收尾",
+      "scenario": "价格异议",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：我已经决定这次不买了，不用再介绍其他的。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "program_status": "success",
+      "model_verdict": "pass",
+      "task_review": "原业务任务可保留，不按个案添加生成例外",
+      "candidates": [
+        {
+          "index": 1,
+          "original": "好的，我明白，这次就不打扰您了。有需要随时联系我。",
+          "sha256": "9f1f9fce357998ee6b14bbe31717a4862a320d1091f11b117a2ab82f282c659b",
+          "action": "keep",
+          "finding": "明确停止当前推荐，并允许客户未来主动联系，可保留"
+        },
+        {
+          "index": 2,
+          "original": "收到，尊重您的决定。之前聊到的内容您留个印象就好，之后有需要用得上再找我也行。",
+          "sha256": "e92310414d002463ccbae856da86a7c8cb366be455fbff2f064d54c9e6ed9acf",
+          "action": "rewrite",
+          "finding": "客户已明确不买，“留个印象就好”仍在安排其记住销售内容，后半句也别扭。简短确认停止即可"
+        },
+        {
+          "index": 3,
+          "original": "好的，这次就不再多介绍了。谢谢您抽时间了解，祝您一切顺利。",
+          "sha256": "296015532ca15b0019227c84bf595095ffb3399cc86c25a40bb3bf5a8375efcb",
+          "action": "keep",
+          "finding": "顺着“不用介绍”收尾、致谢和祝愿可以发送；不用把所有“这次不介绍”都机械认成内部指令外露"
+        }
+      ]
+    }
+  ],
+  "missing_output": {
+    "case_id": "F50",
+    "reason": "原HTTP402，无输出，不补写、不计入147条"
+  }
+}

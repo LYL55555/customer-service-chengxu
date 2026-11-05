@@ -1,0 +1,331 @@
+{
+  "calls": [
+    {
+      "case_id": "N16",
+      "stage": "generation",
+      "purpose": "验证相关未知边界与有依据的负重回答，允许一次相关试背帮助",
+      "started_at": "2026-11-05T13:46:14.825941+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "2b3ad610ce4194d83fbcec7371b771a29a5ebfbf71159713b2bf688eae3b994a",
+      "request_message_characters": 5012,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:46:18.804958+00:00",
+      "usage": {
+        "prompt_tokens": 3797,
+        "completion_tokens": 518,
+        "total_tokens": 4315,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 3797
+      },
+      "provider_status": null,
+      "provider_response_id": "e41607ce-1bde-4a93-8c08-a0f36aab419f",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N16",
+      "stage": "review",
+      "purpose": "验证相关未知边界与有依据的负重回答，允许一次相关试背帮助",
+      "started_at": "2026-11-05T13:46:18.842121+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "ea9dbf9854613d2d376717f424357fd991604d78302cf2619de55f76a0cce123",
+      "request_message_characters": 62817,
+      "state": "failed",
+      "error_code": "invalid_output",
+      "completed_at": "2026-11-05T13:46:28.643537+00:00",
+      "usage": {
+        "prompt_tokens": 29630,
+        "completion_tokens": 2106,
+        "total_tokens": 31736,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 29630
+      },
+      "provider_status": null,
+      "provider_response_id": "4ce2677c-a7d6-4fe7-9f36-dc72a9b1ff2b",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N39",
+      "stage": "generation",
+      "purpose": "验证三款商品的体验介绍与有效复核结构，不引入报名",
+      "started_at": "2026-11-05T13:46:28.667909+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "ccad4ba0ae70505f3cef9753f3c1296603238461043e571627435bd69a3e0964",
+      "request_message_characters": 2563,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:46:31.680400+00:00",
+      "usage": {
+        "prompt_tokens": 2297,
+        "completion_tokens": 376,
+        "total_tokens": 2673,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1529
+      },
+      "provider_status": null,
+      "provider_response_id": "ce471f84-c345-471e-b916-dcff241d8bcd",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N39",
+      "stage": "review",
+      "purpose": "验证三款商品的体验介绍与有效复核结构，不引入报名",
+      "started_at": "2026-11-05T13:46:31.695838+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "a9821102eb8ac1f81dbe8de88523b8eedac15e92a639f71b85736dcf960e2ebe",
+      "request_message_characters": 60747,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:46:38.474048+00:00",
+      "usage": {
+        "prompt_tokens": 28668,
+        "completion_tokens": 1445,
+        "total_tokens": 30113,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 17020
+      },
+      "provider_status": null,
+      "provider_response_id": "7b515f60-1938-419d-8bfe-5dad59b70d92",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N44",
+      "stage": "generation",
+      "purpose": "验证只答价格和已给用途，不解释定价或新增携带需求",
+      "started_at": "2026-11-05T13:46:38.521633+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "355b1c3872562733d404615eca47be565b608b04dfe3a71791b3ae4557de10d5",
+      "request_message_characters": 2945,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:46:41.569962+00:00",
+      "usage": {
+        "prompt_tokens": 2375,
+        "completion_tokens": 393,
+        "total_tokens": 2768,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1607
+      },
+      "provider_status": null,
+      "provider_response_id": "e53ae993-649b-400c-ba60-d26e1f2b91e4",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N44",
+      "stage": "review",
+      "purpose": "验证只答价格和已给用途，不解释定价或新增携带需求",
+      "started_at": "2026-11-05T13:46:41.590540+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "1c1517140d1915346f658907d76717202fe73912c9fd9d0eab5501915419c897",
+      "request_message_characters": 60638,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:46:48.953245+00:00",
+      "usage": {
+        "prompt_tokens": 28739,
+        "completion_tokens": 1543,
+        "total_tokens": 30282,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 17091
+      },
+      "provider_status": null,
+      "provider_response_id": "7d629510-8e0a-48f9-95b6-dd964079ce53",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N26",
+      "stage": "generation",
+      "purpose": "验证停用/标签/交售后，无据去渍仍拦",
+      "started_at": "2026-11-05T13:46:48.989862+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "6f801fd24af6c4601bfcd35fe4bd01700a365b6d6360f0e4964a7eddb2624acd",
+      "request_message_characters": 3015,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:46:52.491160+00:00",
+      "usage": {
+        "prompt_tokens": 2692,
+        "completion_tokens": 369,
+        "total_tokens": 3061,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1924
+      },
+      "provider_status": null,
+      "provider_response_id": "8aafdde2-857b-4509-91fd-208da2cc1f6c",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N26",
+      "stage": "review",
+      "purpose": "验证停用/标签/交售后，无据去渍仍拦",
+      "started_at": "2026-11-05T13:46:52.507374+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "37b12314ef011fa4fc664fde0d1507b800716a87f0a420212d842a7e6346a8d5",
+      "request_message_characters": 60117,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:46:59.060332+00:00",
+      "usage": {
+        "prompt_tokens": 28302,
+        "completion_tokens": 1212,
+        "total_tokens": 29514,
+        "prompt_tokens_details": {
+          "cached_tokens": 11776
+        },
+        "prompt_cache_hit_tokens": 11776,
+        "prompt_cache_miss_tokens": 16526
+      },
+      "provider_status": null,
+      "provider_response_id": "72fbb7e7-b927-42ac-9d9c-33da66aca0b9",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N21",
+      "stage": "generation",
+      "purpose": "验证已有正文可承接核库存预留，ready三候选而非原资料待补",
+      "started_at": "2026-11-05T13:46:59.092833+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "9d9393248a958f04e631ee4af5a1e6a85b0d58c610cbbb15176bdcbd91505e0f",
+      "request_message_characters": 3170,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:47:01.847837+00:00",
+      "usage": {
+        "prompt_tokens": 2650,
+        "completion_tokens": 315,
+        "total_tokens": 2965,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 2010
+      },
+      "provider_status": null,
+      "provider_response_id": "bfaf5478-732d-4439-b0b9-2705c85957ef",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N21",
+      "stage": "review",
+      "purpose": "验证已有正文可承接核库存预留，ready三候选而非原资料待补",
+      "started_at": "2026-11-05T13:47:01.861711+00:00",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "request_sha256": "73c5da591f5b6449381e3d5f6b64157620dc95e01fb7bb075715ecc44d246e81",
+      "request_message_characters": 60285,
+      "state": "returned",
+      "completed_at": "2026-11-05T13:47:08.730613+00:00",
+      "usage": {
+        "prompt_tokens": 28283,
+        "completion_tokens": 1424,
+        "total_tokens": 29707,
+        "prompt_tokens_details": {
+          "cached_tokens": 11776
+        },
+        "prompt_cache_hit_tokens": 11776,
+        "prompt_cache_miss_tokens": 16507
+      },
+      "provider_status": null,
+      "provider_response_id": "5eb836a3-6b1e-41d0-9193-63a192089d42",
+      "returned_model": "deepseek-flash"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "N16",
+      "initial_run_id": "4c36d123c9c74355a1b38bfcff8de5f1",
+      "run_id": "4c36d123c9c74355a1b38bfcff8de5f1",
+      "initial_record": "raw_runs/4c36d123c9c74355a1b38bfcff8de5f1.json",
+      "record": "raw_runs/4c36d123c9c74355a1b38bfcff8de5f1.json",
+      "initial_status": "error",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核没有返回完整有效结构，原响应保留；未删减、降级或重试。",
+        "retryable": false
+      },
+      "verdict": null,
+      "evaluation_first_review_branch": null,
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N39",
+      "initial_run_id": "5de05675ea8248b1a7533459b226c811",
+      "run_id": "5de05675ea8248b1a7533459b226c811",
+      "initial_record": "raw_runs/5de05675ea8248b1a7533459b226c811.json",
+      "record": "raw_runs/5de05675ea8248b1a7533459b226c811.json",
+      "initial_status": "success",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "evaluation_first_review_branch": null,
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N44",
+      "initial_run_id": "43ada053977f4deab9f6f6cd7139c6e7",
+      "run_id": "43ada053977f4deab9f6f6cd7139c6e7",
+      "initial_record": "raw_runs/43ada053977f4deab9f6f6cd7139c6e7.json",
+      "record": "raw_runs/43ada053977f4deab9f6f6cd7139c6e7.json",
+      "initial_status": "success",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "evaluation_first_review_branch": null,
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N26",
+      "initial_run_id": "6e9a509cd3264942bcfaaae24c661541",
+      "run_id": "6e9a509cd3264942bcfaaae24c661541",
+      "initial_record": "raw_runs/6e9a509cd3264942bcfaaae24c661541.json",
+      "record": "raw_runs/6e9a509cd3264942bcfaaae24c661541.json",
+      "initial_status": "success",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "evaluation_first_review_branch": null,
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N21",
+      "initial_run_id": "cc9dd82c891940eea97e90078571445c",
+      "run_id": "cc9dd82c891940eea97e90078571445c",
+      "initial_record": "raw_runs/cc9dd82c891940eea97e90078571445c.json",
+      "record": "raw_runs/cc9dd82c891940eea97e90078571445c.json",
+      "initial_status": "success",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "evaluation_first_review_branch": null,
+      "generation_count": 1,
+      "review_count": 1
+    }
+  ]
+}

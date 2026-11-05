@@ -1,0 +1,167 @@
+{
+  "app_version": "0.16.2",
+  "production_source_changes": [],
+  "raw_records_unchanged": true,
+  "real_model_calls": 0,
+  "network_attempts": [],
+  "local_tests": {
+    "run": 33,
+    "failures": 0,
+    "errors": 0
+  },
+  "saved_final_replays": [
+    {
+      "source": "N09_offline.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N28_offline.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N12_first_review_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N20_first_review_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N27_first_review_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N32_first_review_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N46_first_review_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N18_writing_first_review_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N24_writing_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N26_writing_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N29_writing_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N42_writing_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N46_writing_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    },
+    {
+      "source": "N48_writing_v0162_final.json",
+      "status": "success",
+      "error": null,
+      "messages_preserved": true,
+      "review_preserved": true
+    }
+  ],
+  "n21_revalidation": {
+    "status": "error",
+    "error": {
+      "code": "quality_review",
+      "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+      "retryable": false
+    },
+    "model_issues": [
+      {
+        "code": "policy_error",
+        "candidate_index": 1,
+        "evidence_span_id": "reply_2.s1",
+        "message": "“周六到店看黑色肩包没问题”在库存与预留未核实前保证到店就能看，与客户“先留一个”的请求及库存政策冲突；应改为只承接核实库存和预留可能。",
+        "source_refs": [
+          {
+            "source_id": "policy.4"
+          },
+          {
+            "source_id": "product.P02.stock"
+          },
+          {
+            "source_id": "chat.t1"
+          }
+        ]
+      }
+    ]
+  },
+  "n39_missing_constant_control": {
+    "valid": true,
+    "verdict": "pass",
+    "scope": "仅内存可行性验证，未实现兼容、未改正式状态或原始复核",
+    "original_fields_missing": [
+      "source_protocol"
+    ],
+    "candidate_messages_unchanged": true,
+    "semantic_review_fields_unchanged": true
+  },
+  "n39_negative_controls": [
+    {
+      "test": "missing_verdict",
+      "rejected": true
+    },
+    {
+      "test": "wrong_protocol",
+      "rejected": true
+    },
+    {
+      "test": "extra_field",
+      "rejected": true
+    },
+    {
+      "test": "missing_candidate_check",
+      "rejected": true
+    }
+  ]
+}

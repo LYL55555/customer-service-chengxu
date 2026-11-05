@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/tonylyu/Documents/ChatGPT/artefact笔试/outputs/final_package_v0.21.1_2026-11-05/clean_source/CHENGXU_Source_v0.21.1/scripts/load_submission_demo.py", line 51, in <module>
+    main()
+  File "/Users/tonylyu/Documents/ChatGPT/artefact笔试/outputs/final_package_v0.21.1_2026-11-05/clean_source/CHENGXU_Source_v0.21.1/scripts/load_submission_demo.py", line 40, in main
+    raise RuntimeError('保存回放的当前校验状态与封装记录不符，已停止；未改候选或改成成功')
+RuntimeError: 保存回放的当前校验状态与封装记录不符，已停止；未改候选或改成成功
+已载入保存结果回放；从当前客户选择“提交回放 · 虚构顾问小林”下的客户，模型调用0
+提交回放已载入，未覆盖已有客户、草稿或回复

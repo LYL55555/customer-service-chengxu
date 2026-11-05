@@ -1,0 +1,57 @@
+{
+  "kind": "seen-case-targeted-reading-not-first-baseline-score",
+  "real_followup_calls": 4,
+  "real_followup_tokens": 91010,
+  "latest_check_model_calls": 0,
+  "results": [
+    {
+      "case_id": "F28",
+      "run_id": "adb672d8bf044d70a4dd836c6f87f498",
+      "raw_sha256": "5ea87cc623a4ab81157a54a428aa34000aea6b809410de365f239f1308664b29",
+      "pipeline_status": "success",
+      "review_verdict": "pass",
+      "developer_hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "developer_note": "没有再编顾问未联系历史；仍略有自我说明和功能重复，不冒充顾问认可",
+      "latest_offline_inspection_version": "0.12.2",
+      "latest_offline_checks": []
+    },
+    {
+      "case_id": "F47",
+      "run_id": "21df634ec6d04cfe98b3aab02a6691ed",
+      "raw_sha256": "b47c105c5146b4af667ba15bc10817b50dc8fe53dffd42e739295abad22c7c35",
+      "pipeline_status": "error",
+      "review_verdict": "pass",
+      "developer_hard_pass": [
+        false,
+        false,
+        false
+      ],
+      "developer_note": "三条仍将材质名称/尺寸推成定价原因，且复核pass漏掉；未重抽，不替换首轮",
+      "latest_offline_inspection_version": "0.12.2",
+      "latest_offline_checks": [
+        {
+          "code": "unsupported_price_cause",
+          "candidate_index": 0,
+          "evidence": "6,000 元的差价主要来自尺寸和用量：托特 34 × 28 × 12 cm、空包约 750 g",
+          "message": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。"
+        },
+        {
+          "code": "unsupported_price_cause",
+          "candidate_index": 1,
+          "evidence": "价格差主要在包的大小和容量：托特更大",
+          "message": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。"
+        },
+        {
+          "code": "unsupported_price_cause",
+          "candidate_index": 2,
+          "evidence": "差价不是皮料等级带来的",
+          "message": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。"
+        }
+      ]
+    }
+  ]
+}

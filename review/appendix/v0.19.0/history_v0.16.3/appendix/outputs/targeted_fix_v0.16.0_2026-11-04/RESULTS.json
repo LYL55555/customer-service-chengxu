@@ -1,0 +1,4539 @@
+{
+  "summary": {
+    "kind": "targeted-fix-not-formal50-rescore",
+    "app_version": "0.16.2",
+    "generation_version": "0.16.1",
+    "final_validator": "0.16.2",
+    "generation_prompt": "1.4.0",
+    "review_prompt": "review-1.3.0",
+    "real_requests": 23,
+    "generations": 9,
+    "reviews": 14,
+    "tokens": 647333,
+    "old_five_first_reviews": {
+      "N12": "success",
+      "N20": "success",
+      "N27": "success",
+      "N32": "success",
+      "N46": "success"
+    },
+    "new_statuses": {
+      "N39": "error",
+      "N18": "success",
+      "N21": "error",
+      "N24": "success",
+      "N26": "success",
+      "N29": "success",
+      "N42": "success",
+      "N46": "success",
+      "N48": "success"
+    },
+    "formal50_unchanged": true,
+    "automatic_retries": 0,
+    "editorial_authority": "AI开发者逐字阅读，非真实顾问研究，不代表用户愿意直接发送"
+  },
+  "cases": [
+    {
+      "case_id": "N09",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想给同事送个小礼物，她平时就带四张银行卡。随行卡夹多少钱？放得下吗？",
+        "related_info": "",
+        "advisor_instruction": "回复她这两个问题。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N09",
+        "conversation_id": "business-v2-chat-N09",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，随行卡夹的价格是2,800元。它有4个独立卡位，可以放4张标准银行卡大小的卡片，带四张卡是够用的。",
+        "随行卡夹2,800元，4个独立卡位正好对应四张标准银行卡，放得下。",
+        "随行卡夹是2,800元。里面是4个独立卡位，能放4张标准银行卡大小的卡片，您同事平时带四张卡正好合适。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户为同事挑选小礼物，已选定随行卡夹，只问价格和能否放四张银行卡；三条需直接答清2,800元与4个独立卡位可放4张标准银行卡。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您好，随行卡夹的价格是2,800元。它有4个独立卡位，可以放4张标准银行卡大小的卡片，带四张卡是够用的。",
+            "answered": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“您好，随行卡夹的价格是2,800元。”直接回答客户所问价格，与目录含税价一致；无称呼用您好符合规则，删掉即漏答价格。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“4个独立卡位，可放4张标准银行卡大小的卡片”是目录容量事实，“带四张卡是够用的”是由已知容量支持的日常判断，不是实测保证；删掉即漏答放不放得下。信息与客户说的四张银行卡对应，无额外收益或追问。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "随行卡夹2,800元，4个独立卡位正好对应四张标准银行卡，放得下。",
+            "answered": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "整句同时给出2,800元与4个独立卡位可放4张标准银行卡，“放得下”属有依据容量判断；简洁完整，无多余尾巴可删。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "随行卡夹是2,800元。里面是4个独立卡位，能放4张标准银行卡大小的卡片，您同事平时带四张卡正好合适。",
+            "answered": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“随行卡夹是2,800元。”回答价格，删掉即漏答。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "卡位与容量为依据，末句“您同事平时带四张卡正好合适”只是把客户自述用途与容量对上，未新增需求或承诺，属任务内落点，可保留；删掉仍基本完整，但不构成需修订的实质问题。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "original_record": "initial_raw_runs/N09_7928cbf823664f37b0332335011c23f0.json",
+      "offline_status": "success",
+      "offline_error": null,
+      "cause": "咨询对象≠购买承诺，原pass离线可复用。",
+      "editorial": "原三条事实正确，均回答2800元和四卡容量。第一、三条重复容量可压缩，第二条最简洁。不再把已选定咨询对象判成成交。"
+    },
+    {
+      "case_id": "N12",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：周末出门就手机钥匙，不想背大包，有合适的吗？",
+        "related_info": "",
+        "advisor_instruction": "给一个适合轻装出门的建议。",
+        "product_ids": []
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N12",
+        "conversation_id": "business-v2-chat-N12",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "按您说的轻装出门，轻行肩包更合适：包身约22 × 16 × 7 cm，日常放手机、钥匙这类随身小物刚好，可肩背也可斜挎，肩带长度能调。日行托特包更大一些，适合要带资料或水杯、伞的时候。",
+        "周末只带手机和钥匙的话，推荐轻行肩包，属于外出少带物品的尺寸，手机、钥匙都能放，拉链开合，肩带可调节，斜挎或肩背都行。轻行肩包价格是12,800元。",
+        "不想背大包的话，可以看轻行肩包，比托特包小一圈，是外出随手带小物的款式，手机、钥匙放进去没问题，肩带能调长度。您更习惯斜挎还是肩背，我可以再帮您对一下。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "policy_check",
+        "message": "日行托特包的carry_modes依据为：肩背；该断言没有同一商品资料支持，未知不能解释成没有。",
+        "retryable": true
+      },
+      "original_review": null,
+      "original_record": "initial_raw_runs/N12_652cd79cb3a64bafb1f1185e5aca8d72.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "missing_original_review",
+        "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+        "retryable": false
+      },
+      "cause": "比较宾语和背法偏好误拦解除，原文只补首次复核。",
+      "editorial": "三条可用；第三条“您更习惯斜挎还是肩背”不是托特可斜挎，但客户没要求选择背法，删掉仍完整，记polish。第二条拉链和报价非必须，可再短些。",
+      "first_review_record": "raw_runs/44314bd1a69247a5b34a4ea192b153a1.json",
+      "first_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户周末轻装出门（只带手机和钥匙）、不想背大包，请顾问推荐一款合适的包。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "按您说的轻装出门，轻行肩包更合适：包身约22 × 16 × 7 cm，日常放手机、钥匙这类随身小物刚好，可肩背也可斜挎，肩带长度能调。日行托特包更大一些，适合要带资料或水杯、伞的时候。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.dimensions_cm",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.carry_modes",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.strap_adjustable",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“按您说的轻装出门，轻行肩包更合适”直接完成轻装推荐；外尺寸22 × 16 × 7 cm、可放手机钥匙、肩背或斜挎、肩带可调，均与P02目录一致，没有把外尺寸冒充内尺寸，也没有承诺所有手机型号；句内信息各自服务当前用途，删任一项都会少一项与客户轻装场景直接相关的答案。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "“日行托特包更大一些，适合要带资料或水杯、伞的时候”事实无误（P01可放A4、500mL水杯、折叠伞），但客户已明确不想背大包，比较性补充对当前判断帮助有限；删去后前一句仍完整回答了轻装问题，可建议顾问视语气省略，不影响整条可用。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "周末只带手机和钥匙的话，推荐轻行肩包，属于外出少带物品的尺寸，手机、钥匙都能放，拉链开合，肩带可调节，斜挎或肩背都行。轻行肩包价格是12,800元。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.closure",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.strap_adjustable",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.carry_modes",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "先复述客户“只带手机和钥匙”的用途再推荐P02，拉起链开合、肩带可调、肩背或斜挎均与目录一致；这些是完成推荐的核心，删掉任一分句都会少答客户实际关心的内容。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "optional_help",
+                "reason": "“轻行肩包价格是12,800元”与product.P02.price一致，客户问“有合适的吗”后自然报价有助于判断，属可选但有用的补充；不是承诺促销或改价，删掉也不误导，保留也不越界。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "不想背大包的话，可以看轻行肩包，比托特包小一圈，是外出随手带小物的款式，手机、钥匙放进去没问题，肩带能调长度。您更习惯斜挎还是肩背，我可以再帮您对一下。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.dimensions_cm",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.dimensions_cm",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.strap_adjustable",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“不想背大包的话，可以看轻行肩包”直接承接客户顾虑；P02外尺寸22×16×7小于P01的34×28×12，说“比托特包小一圈”符合外尺寸对比，并说明可放手机钥匙、肩带可调，未越界承诺入袋实测。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "“您更习惯斜挎还是肩背，我可以再帮您对一下”是一个合法的单一轻量问题，不是错误；但P02肩带可调、两种背法都已说明，客户未要求选背法，追问属可省结尾；删去后前一句仍完整完成推荐，建议顾问按需删短。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "first_review_status": "success"
+    },
+    {
+      "case_id": "N20",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：这款皮看着细细的，是牛皮吗？里面是什么材质？",
+        "related_info": "",
+        "advisor_instruction": "回答材质和内衬。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N20",
+        "conversation_id": "business-v2-chat-N20",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "是牛皮的，这款日行托特包包身是哑光细纹牛皮，所以表面光泽低、能看到细小纹理。里面内衬是棉布。",
+        "是的，包身用哑光细纹牛皮，皮面本身就是细细的纹理。内里是棉布内衬。",
+        "这款的包身是哑光细纹牛皮，皮面偏哑光、纹路细，所以看着是细细的质感；内衬为棉布。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "original_review": null,
+      "original_record": "initial_raw_runs/N20_82bdf19117834ea891d1e500bde92089.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "missing_original_review",
+        "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+        "retryable": false
+      },
+      "cause": "重新计算当前唯一P01，不复用旧空商品列表。",
+      "editorial": "三条明确答牛皮包身、棉布内衬，事实正确。第一、三条略重复，第二条最干净；没有为通过补商品事实。",
+      "first_review_record": "raw_runs/a8f4f11d1b6b4ccfb7e553b0bd4d8490.json",
+      "first_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario",
+          "task.advisor_instruction"
+        ],
+        "current_need": "客户就已选 P01 日行托特包问两点：皮面细细的是不是牛皮、里面是什么材质。顾问只需答出包身材质（哑光细纹牛皮）和内衬（棉布），不必追加卖点、库存、试背或追问。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "是牛皮的，这款日行托特包包身是哑光细纹牛皮，所以表面光泽低、能看到细小纹理。里面内衬是棉布。",
+            "answered": [
+              {
+                "source_id": "product.P01.material",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.lining",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.material",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.lining",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "policy.2",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "核心答案是牛皮、包身哑光细纹牛皮；开头“是牛皮的”与后半“包身是哑光细纹牛皮”重复，可压成“是牛皮，包身用哑光细纹牛皮，表面光泽低、能看到细小纹理。”理由也说明纹路来源（细纹为皮面自身特点），对客户“看着细细的”是有效回应；删掉重复的“这款日行托特包”称呼也不影响理解。属非阻断文字压缩。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "直接回答“里面是什么材质”，依据内衬棉布；删掉就漏答第二个问题。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "是的，包身用哑光细纹牛皮，皮面本身就是细细的纹理。内里是棉布内衬。",
+            "answered": [
+              {
+                "source_id": "product.P01.material",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.lining",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.material",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.lining",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "policy.2",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "先“是的”直接回客户是不是牛皮的，再说哑光细纹牛皮与细纹来自皮面本身，正好对上“看着细细的”的疑虑；事实与目录一致，无多余内容。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "回答内衬为棉布，是第二个问题的核心答案。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "这款的包身是哑光细纹牛皮，皮面偏哑光、纹路细，所以看着是细细的质感；内衬为棉布。",
+            "answered": [
+              {
+                "source_id": "product.P01.material",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.lining",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.material",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.lining",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.2",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "一句内先答牛皮（哑光细纹），并把哑光、纹路细与客户看到的细质感联系起来，再答内衬棉布；覆盖两个问题且略书面但可发，无需删改。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "first_review_status": "success"
+    },
+    {
+      "case_id": "N27",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上次说帮我看拉链的事，有进展了吗？",
+        "related_info": "虚构售后记录CX-1102：轻行肩包拉链问题；门店2026-11-03已收件，目前售后检测中，尚无费用和完成时间结论。",
+        "advisor_instruction": "根据已有售后记录回她。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N27",
+        "conversation_id": "business-v2-chat-N27",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，拉链的事我这边查过了：门店11月3日已经收件，目前还在售后检测中。费用和完成时间暂时还没有结论，一有结果我就跟您说。",
+        "有进展了：您那只轻行肩包门店11月3日已经收到，现在在售后检测。检测结果、是否涉及费用和大概多久，都要等售后给出结论，我这边会替您盯着。",
+        "查到了，肩包11月3日门店已收件，现在处于售后检测环节。目前还不好说费用和完成时间，等检测那边有结论我再联系您。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "policy_check",
+        "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。",
+        "retryable": true
+      },
+      "original_review": null,
+      "original_record": "initial_raw_runs/N27_365c6df8c95e48f3a494a677bc0b5686.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "missing_original_review",
+        "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+        "retryable": false
+      },
+      "cause": "本客户售后收件记录支持物件归属和已知进度；读记录不等于刚做外部查询。",
+      "editorial": "原三条均可依据CX-1102转述11月3日已收件、检测中、费用和时间未定。“我这边查过/查到了”解释为读已有记录，不伪造新查询日志。“替您盯着”是未来协助，不是保证结果。",
+      "first_review_record": "raw_runs/6f2cdf885ce24bc48b2efdfd5ec872f3.json",
+      "first_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "task.advisor_instruction",
+          "materials.related_info"
+        ],
+        "current_need": "客户询问此前托付的轻行肩包拉链售后进展；顾问需依已有售后记录CX-1102告知：门店2026-11-03已收件、目前售后检测中、尚无费用和完成时间结论，不重新索取故障描述，不承诺维修结果或时长。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您好，拉链的事我这边查过了：门店11月3日已经收件，目前还在售后检测中。费用和完成时间暂时还没有结论，一有结果我就跟您说。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“查过了”有当前选用售后记录支撑，门店11月3日已收件、售后检测中均与CX-1102一致，直接回答进展所问；无称呼用“您好”合规。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "费用和完成时间尚无结论是记录明示事实，删掉易让客户以为快要出结果；不承诺工期与费用，未超出维修政策边界。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "有进展了：您那只轻行肩包门店11月3日已经收到，现在在售后检测。检测结果、是否涉及费用和大概多久，都要等售后给出结论，我这边会替您盯着。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "点明“轻行肩包”与本次售后记录CX-1102的商品一致，11月3日收到、售后检测中均与来源相符；“有进展了”对应客户所问进展，未夸大已有结论。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "检测结果、费用、时长均需售后评估并告知，与维修政策一致；结尾“我这边会替您盯着”用词略书面，若想更口语可略作polish，但不影响交付，不涉及承诺已完成动作。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "查到了，肩包11月3日门店已收件，现在处于售后检测环节。目前还不好说费用和完成时间，等检测那边有结论我再联系您。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“查到了”对应已有售后记录，肩包11月3日门店已收件、售后检测环节均与来源一致，回答简洁完整。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "“还不好说费用和完成时间”如实反映尚无结论，未承诺固定周期或免费维修；后续联系属一般承接，未声称已完成动作。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "first_review_status": "success"
+    },
+    {
+      "case_id": "N28",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上周买的肩包还没用，想换成米白，能换吗？",
+        "related_info": "虚构门店订单：2026-11-01购买轻行肩包；本次业务日期2026-11-04。顾问已核对未使用、标牌和原包装齐全、有购买凭证，商品尚待门店检查。",
+        "advisor_instruction": "根据订单和已核对情况回复。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N28",
+        "conversation_id": "business-v2-chat-N28",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，您这只轻行肩包是11月1日在门店购买的，今天是11月4日，还在自购买次日起算的7个自然日内。您已核对过商品未使用、标牌和原包装齐全，也有购买凭证，按现有信息符合换货申请条件。换成米白可以申请，最终要由门店检查确认。",
+        "您好，想换成米白是可以申请的。购买日期是11月1日，按7个自然日的未使用退换条件还在申请范围内；您这边商品未使用、标牌和原包装齐全、购买凭证也有，信息是齐的，最后以门店检查结果为准。",
+        "您好，这只肩包目前符合未使用商品的换货申请条件，米白也在轻行肩包的目录颜色里，可以申请换色。商品送到门店检查确认后即可办理，检查结果出来后我再和您说一声。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "materials.related_info",
+          "task.scenario"
+        ],
+        "current_need": "客户询问上周购买的轻行肩包未使用，能否换成米白色；需依据门店购买日期、7个自然日未使用退换规则及已核对的资料状态，给出换货申请答复。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您好，您这只轻行肩包是11月1日在门店购买的，今天是11月4日，还在自购买次日起算的7个自然日内。您已核对过商品未使用、标牌和原包装齐全，也有购买凭证，按现有信息符合换货申请条件。换成米白可以申请，最终要由门店检查确认。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_1.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_1.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "用11月1日购买、今日11月4日说明仍在次日起算7个自然日内，是判断换货资格的时间依据，删掉则资格结论无支撑。日期与门店购买渠道均由materials.related_info支持，与policy.5第7日为11-08的算例一致。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "judgment",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "列明未使用、标牌原包装齐全、有购买凭证三项条件后说“按现有信息符合换货申请条件”，与policy.5允许的表述一致，不是保证批准。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "直接回应客户想换米白的问题；米白在P02目录颜色内，末尾保留门店检查确认这一必要边界，未承诺立即办理或到账。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "您好，想换成米白是可以申请的。购买日期是11月1日，按7个自然日的未使用退换条件还在申请范围内；您这边商品未使用、标牌和原包装齐全、购买凭证也有，信息是齐的，最后以门店检查结果为准。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "先给结论“可以申请”，直接回应客户“能换吗”，无多余铺垫。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "judgment",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "补充购买日期与三项条件均已核对，支撑“可以申请”；结尾“以门店检查结果为准”是政策要求的必要边界，不是多余免责。表述略书面但意思清楚，可保留。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "您好，这只肩包目前符合未使用商品的换货申请条件，米白也在轻行肩包的目录颜色里，可以申请换色。商品送到门店检查确认后即可办理，检查结果出来后我再和您说一声。",
+            "answered": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "结论加米白为P02目录颜色的依据，完整回应换色可行性与换货条件；未把目录颜色说成现货。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "“商品送到门店检查确认后即可办理”中的“即可办理”略像已确定流程，且“检查结果出来后我再和您说一声”是顾问主动的后续告知安排，属可选收尾；改为“最终需门店检查确认，可以帮您跟进”或直接删去告知句，前句结论仍完整。仅为可省编辑意见，不构成需返工的问题。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "original_record": "initial_raw_runs/N28_ea8e708399f34a1bb0dcf5e00d4e6447.json",
+      "offline_status": "success",
+      "offline_error": null,
+      "cause": "政策、颜色、订单各支持对应断言，原pass离线通过。",
+      "editorial": "程序误拦解决不代表全组无瑕疵：第一条“您已核对过”把顾问核对换成了客户核对，应改主体，原文保留。第二条较可用；第三条“目录颜色”偏内部措辞，可润色。"
+    },
+    {
+      "case_id": "N32",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "孙女士，上次到店看过暖棕款，后来没有继续聊。",
+        "conversation": "",
+        "related_info": "",
+        "advisor_instruction": "简单问候，重新接上联系。",
+        "product_ids": []
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N32",
+        "conversation_id": "business-v2-chat-N32",
+        "profile_revision": 1,
+        "preferences": "喜欢暖棕，交流喜欢简短。",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "孙女士您好，我是澄序的顾问。上次您在店里看过暖棕款，想着跟您打个招呼。最近有需要了解随时找我。",
+        "孙女士您好，好久没联系了。上次看过的那只暖棕款还记得，您若想再看看，跟我说一声就好。",
+        "孙女士您好，打扰一下。上次您看的暖棕款一直有印象，想问问最近还好吗？有想了解的随时联系我。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "original_review": null,
+      "original_record": "initial_raw_runs/N32_6230ec42ce3b4911af483d2a4d31f80a.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "missing_original_review",
+        "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+        "retryable": false
+      },
+      "cause": "历史看过暖棕与当前SKU颜色宣传分开，原三条只补首次复核。",
+      "editorial": "背景已给上次看过暖棕款，不要求另补SKU。原三条没有库存/已购断言；第三条“打扰一下”可省，第一条最平实。",
+      "first_review_record": "raw_runs/c85eaa894f8c4342b64ee3d622e539e7.json",
+      "first_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "task.scenario",
+          "task.advisor_instruction",
+          "background.client_info",
+          "profile.preferences"
+        ],
+        "current_need": "沉睡客户唤回：简单问候，重新接上联系；客户无新来信，无事实咨询需要作答。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "孙女士您好，我是澄序的顾问。上次您在店里看过暖棕款，想着跟您打个招呼。最近有需要了解随时找我。",
+            "answered": [
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "profile.preferences",
+                "candidate_span_id": "reply_1.s3"
+              },
+              {
+                "source_id": "policy.7",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "称呼与自报身份完成重新接话，孙女士来自背景资料，未猜性别或编昵称。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“上次到店看过暖棕款”与background.client_info一致，且没有责问为何没来、没有虚构近况，正是沉睡唤回的轻量接续。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "optional_help",
+                "reason": "短句留出对话口，不含促销或追问，符合客户喜欢简短的偏好；删去后祝福仍在，保留也无推销越界。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "孙女士您好，好久没联系了。上次看过的那只暖棕款还记得，您若想再看看，跟我说一声就好。",
+            "answered": [
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "profile.preferences",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "policy.7",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "“好久没联系了”是对联系间隔的自然说法，未指责客户、未声称具体天数。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "提及的暖棕款来自背景资料的历史看款，不是宣称购买或现货；邀请再看属可选，不带承诺或促销。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "孙女士您好，打扰一下。上次您看的暖棕款一直有印象，想问问最近还好吗？有想了解的随时联系我。",
+            "answered": [
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "policy.2",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "policy.7",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "relationship",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“打扰一下”略客套，与“您好”功能重叠；删去后开场仍完整，属非阻断编辑，不阻断交付。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“上次您看的暖棕款”有背景依据，是历史看款而非购买；“最近还好吗”是日常关心，未编造客户生活事实，符合轻量唤回。"
+              },
+              {
+                "candidate_span_id": "reply_3.s3",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "optional_help",
+                "reason": "一句开放性收尾，无追问清单与销售邀请，保留不构成负担。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "first_review_status": "success"
+    },
+    {
+      "case_id": "N39",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "advisor_instruction": "用容易懂的话介绍内容。",
+        "product_ids": []
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N39",
+        "conversation_id": "business-v2-chat-N39",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "这次活动主要看收纳：现场会演示日行托特包、轻行肩包和随行卡夹怎么装常用物品，比如资料、水杯、手机、卡片这些。不用懂皮具也能看明白，您也可以在时段内自由体验，带上平时用的东西对照着试。11月14日周六14:00—16:00在澄序广场8号精品店，短暂停留即可，不必全程参加。",
+        "活动就是看这三个包怎么用：哪种装通勤资料、哪种适合出门少带东西、卡片怎么分开放。全程是实物演示和自由体验，不讲皮具知识，不懂也没关系。时间是11月14日周六14:00—16:00，地点在澄序广场8号精品店，时段内来一会儿就行。",
+        "“日常收纳小聚”主要演示日行托特包、轻行肩包、随行卡夹的日常收纳方式，现场可以直接上手体验，也可以带自己的日常物品来对照看看合不合适。11月14日周六14:00—16:00在澄序广场8号精品店，中间停留一会儿就可以，不需要全程在场；想带一位朋友也可以，登记时提供称呼就行。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario",
+          "materials.related_info"
+        ],
+        "current_need": "客户询问“日常收纳小聚”活动主要看什么内容，并说明自己不懂皮具，需要说明活动体验内容并给出时间地点等安排。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "这次活动主要看收纳：现场会演示日行托特包、轻行肩包和随行卡夹怎么装常用物品，比如资料、水杯、手机、卡片这些。不用懂皮具也能看明白，您也可以在时段内自由体验，带上平时用的东西对照着试。11月14日周六14:00—16:00在澄序广场8号精品店，短暂停留即可，不必全程参加。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s3"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_1.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_1.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "直接回答“活动主要看些什么”：说明演示三款商品如何收纳常用物品，并列举资料、水杯、手机、卡片，与活动资料“演示三款如何收纳常用物品”及商品容量（P01资料水杯、P02手机、P03卡片）一致，不虚构。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "回应客户“不是很懂皮具”的顾虑，并说明可自由体验、带日常物品对照，均有活动资料支持，非空泛安慰。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "时间、地点、短暂停留无须全程参加均来自活动资料，11月14日为周六有日历依据；属活动任务所需安排，不含虚构资格或稀缺信息。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "活动就是看这三个包怎么用：哪种装通勤资料、哪种适合出门少带东西、卡片怎么分开放。全程是实物演示和自由体验，不讲皮具知识，不懂也没关系。时间是11月14日周六14:00—16:00，地点在澄序广场8号精品店，时段内来一会儿就行。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s3"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_2.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_2.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "以“哪种装通勤资料/适合少带/卡片分开放”概括三款用途，与P01可放A4资料、P02适合少带物品、P03四个独立卡位相符，回答“看些什么”；“卡片分开放”直接对应独立卡位，属结构事实。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "说明实物演示与自由体验，并直接回应“不讲皮具知识、不懂也没关系”，对应客户顾虑与活动资料，不虚构。"
+              },
+              {
+                "candidate_span_id": "reply_2.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "时间、地点、时段内短暂停留均出自活动资料，周六有日历依据；属活动必要安排信息。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "“日常收纳小聚”主要演示日行托特包、轻行肩包、随行卡夹的日常收纳方式，现场可以直接上手体验，也可以带自己的日常物品来对照看看合不合适。11月14日周六14:00—16:00在澄序广场8号精品店，中间停留一会儿就可以，不需要全程在场；想带一位朋友也可以，登记时提供称呼就行。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "点出活动名称、演示三款商品的日常收纳方式、可上手体验、可带日常物品对照，均为活动资料原文内容；虽未单句回“不懂皮具”，但“上手体验、带物品对照”已提供低门槛参与方式，且三条为可选整体，不需每条逐字回应同一句顾虑。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "时间地点停留方式均属活动安排，应保留；但“想带一位朋友也可以，登记时提供称呼就行”是客户未问的可选信息，属可省的相关建议，删去后时间地点和无须全程在场的信息仍完整。此项仅非阻断编辑意见，不构成实质问题。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "original_record": "initial_raw_runs/N39_e62c0ac11be4412a8fe343bf050a6b0d.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "policy_check",
+        "message": "活动资料没有支持这项排除安排；可以介绍已知体验，不能从未提及推成明确不提供。",
+        "retryable": false
+      },
+      "cause": "旧第二条确有无据“不讲皮具知识”，不能随混合来源修复洗掉。",
+      "editorial": "新版去掉该排除事实，但第二条“三款包袋”对卡夹分类仍不精确；第三条突然询同行朋友称呼，没有当前需要，建议删尾句且不应靠它制造区别。复核原响应写pass却缺source_protocol，未采用、整组未交付，未重试；不是供应商严格遵守接口。",
+      "new_record": "raw_runs/5147b0bc64224fa5a14944b9a2a548aa.json",
+      "new_messages": [
+        "不用懂皮具也没关系。11月14日周六14:00—16:00在澄序广场8号精品店有一场“日常收纳小聚”，主要演示日行托特包、轻行肩包和随行卡夹平时怎么装东西，也可以自己上手试，带上您日常随身物品对照着看就行。",
+        "这场活动叫“日常收纳小聚”，11月14日周六14:00—16:00在澄序广场8号精品店，现场会演示三款包袋怎么收常用物品，也欢迎您自己体验。不用全程参加，时段内过来待一会儿也可以。",
+        "活动主要看的是日常收纳：现场演示托特包、肩包和卡夹分别怎么装常用的东西，您可以自由体验，也可以带自己的日常用品来对照着看。时间是11月14日周六14:00—16:00，地点在澄序广场8号精品店，时段内短暂停留也行。如要带一位朋友一起，方便告诉我他的称呼吗？我帮您登记，具体参加安排还要以门店确认为准。"
+      ],
+      "new_initial_record": "raw_runs/5147b0bc64224fa5a14944b9a2a548aa.json",
+      "new_initial_status": "error",
+      "new_initial_error": {
+        "code": "invalid_review",
+        "message": "复核没有返回完整有效结构，原响应保留；未删减、降级或重试。",
+        "retryable": false
+      },
+      "new_status": "error",
+      "new_error": {
+        "code": "missing_original_review",
+        "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+        "retryable": false
+      },
+      "new_copy_allowed": false,
+      "new_review": {
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario",
+          "materials.related_info"
+        ],
+        "current_need": "客户问活动主要看些什么，并说明自己不懂皮具；需用易懂的话讲清活动体验内容，可附已确认的时间地点安排。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "不用懂皮具也没关系。11月14日周六14:00—16:00在澄序广场8号精品店有一场“日常收纳小聚”，主要演示日行托特包、轻行肩包和随行卡夹平时怎么装东西，也可以自己上手试，带上您日常随身物品对照着看就行。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "“不用懂皮具也没关系。”直接接住客户“我不是很懂皮具”的顾虑，是轻量的安抚，不是推销或额外承诺；删掉仍能答清活动内容，但少了对客户这句自述的回应。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "活动名称、11月14日周六14:00—16:00、澄序广场8号精品店、演示三款具体商品如何收纳常用物品、可自由体验与带日常物品对照，均与 materials.related_info 一致，是本轮核心回答；删掉即漏答“活动主要看些什么”。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "这场活动叫“日常收纳小聚”，11月14日周六14:00—16:00在澄序广场8号精品店，现场会演示三款包袋怎么收常用物品，也欢迎您自己体验。不用全程参加，时段内过来待一会儿也可以。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "用“三款包袋”概括演示对象，活动名、时间、地点与可自由体验均来自 materials.related_info，符合“用容易懂的话介绍内容”的顾问任务，删掉即失去核心回答。比 reply_1 详略更简，属自然差异。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "“不用全程参加，时段内过来待一会儿也可以”对应来源“可在时段内短暂停留，无须全程参加”，是对本次安排的有用说明，帮助客户判断参与成本；属可保留的可选信息，不需删除，也不编造资格或席位。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "活动主要看的是日常收纳：现场演示托特包、肩包和卡夹分别怎么装常用的东西，您可以自由体验，也可以带自己的日常用品来对照着看。时间是11月14日周六14:00—16:00，地点在澄序广场8号精品店，时段内短暂停留也行。如要带一位朋友一起，方便告诉我他的称呼吗？我帮您登记，具体参加安排还要以门店确认为准。",
+            "answered": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "先答“日常收纳”再看三款商品如何收纳常用物品，可自由体验与带日常用品对照，与来源一致，正好回应“看些什么、不懂皮具”，无需皮革术语；删掉即漏答核心。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "时间、地点与时段内短暂停留均与 materials.related_info 及日历计算一致；活动邀请场景需给出已确认安排，删掉客户无法判断是否参加。"
+              },
+              {
+                "candidate_span_id": "reply_3.s3",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "客户只问活动内容、未提同行，此句按来源“可带一位朋友，参加人需要提供称呼登记”提前索取朋友称呼，提前为假设的同行做准备；来源并未要求本次必须登记同行，故属可省的可选帮助，建议删去或在确有同行时再问。删后活动内容与时间地点仍完整，不影响三问核心回答，故仅作非阻断润色意见，不阻断交付。"
+              },
+              {
+                "candidate_span_id": "reply_3.s4",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "“我帮您登记”指向未来协助，未声称已完成；“具体参加安排还要以门店确认为准”与来源“参加安排由门店确认”一致，防止客户误以为已确认席位。若保留 s3 则此句必要；若按上条删去 s3，此句也应一并删去以免留下无对象的登记说明，删后仍完整。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "new_review_schema_error": "$ fields",
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    },
+    {
+      "case_id": "N18",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：我那个文件夹挺厚，日行托特装资料会不会挤？",
+        "related_info": "",
+        "advisor_instruction": "先回答已知的，再说还需要什么。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N18",
+        "conversation_id": "business-v2-chat-N18",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "日行托特包能放下A4纸质资料。不过厚文件夹是否放得下，资料里没有给出内尺寸和包口尺寸，单看外尺寸34 × 28 × 12 cm我没法替您确定会不会挤，这点我不想凭估计答复您。",
+        "日行托特包放普通A4资料是够的，加厚文件夹就不好只看外尺寸了。您方便的话，把文件夹的长宽厚告诉我，我帮您对一下。",
+        "日行托特的外尺寸是34 × 28 × 12 cm，放A4纸质资料没有问题；但厚文件夹这块，品牌资料里确实没有内尺寸和包口尺寸，我不能直接说一定不挤。您把文件夹的厚度和尺寸发我，我对着看会更准确。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "needs_review",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户已明确商品为日行托特包，询问较厚的文件夹放入是否会造成挤压；需按目录事实答复：可放A4纸质资料，厚文件夹是否放得下需另核对尺寸，内尺寸与包口未被提供，可据此针对性了解文件夹尺寸或安排实际试放。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "日行托特包能放下A4纸质资料。不过厚文件夹是否放得下，资料里没有给出内尺寸和包口尺寸，单看外尺寸34 × 28 × 12 cm我没法替您确定会不会挤，这点我不想凭估计答复您。",
+            "answered": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.inner_dimensions_cm",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.opening_dimensions_cm",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [
+              {
+                "source_id": "writing.rules"
+              }
+            ],
+            "source_checks": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.dimensions_cm",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.inner_dimensions_cm",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.opening_dimensions_cm",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“能放下A4纸质资料”直接来自目录已确认容量，是客户问“装资料”的基础答复，删掉就失去已知事实部分。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "necessary_limit",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“资料里没给内尺寸和包口尺寸、单看外尺寸不能确定”是有依据的必要边界；但“这点我不想凭估计答复您”属于自述工作方式，客户不需要知道顾问如何汇报，删去仍完整且不误导，仅作非阻断润色。另整条未给出下一步（如请客户提供文件夹尺寸或到店试放），厚文件夹这一核心疑虑只有“不能确定”，可考虑补一句轻量跟进。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "日行托特包放普通A4资料是够的，加厚文件夹就不好只看外尺寸了。您方便的话，把文件夹的长宽厚告诉我，我帮您对一下。",
+            "answered": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "writing.rules",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.dimensions_cm",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "writing.rules",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“普通A4资料够放”是目录已确认事实，“加厚文件夹不好只看外尺寸”呼应使用边界与“厚文件夹需另核对尺寸”，两句都在回答客户核心疑虑，删任一部分都会漏答或失去边界。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "厚文件夹属目录明确需另核对的临界/特殊物品，请客户提供文件夹长宽厚是针对该物品的最小必要信息，且只提一个轻量请求，是让客户得到可用结论的关键步骤，非可选帮助。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "日行托特的外尺寸是34 × 28 × 12 cm，放A4纸质资料没有问题；但厚文件夹这块，品牌资料里确实没有内尺寸和包口尺寸，我不能直接说一定不挤。您把文件夹的厚度和尺寸发我，我对着看会更准确。",
+            "answered": [
+              {
+                "source_id": "product.P01.dimensions_cm",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "writing.rules",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.dimensions_cm",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.inner_dimensions_cm",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.opening_dimensions_cm",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "writing.rules",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "外尺寸34 × 28 × 12 cm与A4可放有目录依据，内尺寸/包口未提供的边界也正确。“品牌资料里确实没有”把内部资料状态告诉客户，可改成“目前没有内尺寸和包口尺寸数据”，语义不变更口语；前半句尺寸数据已足够，属非阻断润色。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "厚文件夹需另核对尺寸，请客户提供文件夹厚度与尺寸是针对性核实的最小必要一步，删掉后客户仍不知如何得到答案，保留。"
+              }
+            ]
+          }
+        },
+        "issues": [
+          {
+            "code": "incomplete_reply",
+            "candidate_index": 0,
+            "evidence_span_id": "reply_1.s2",
+            "message": "三条里只有第一条完全没有给下一步：客户问“会不会挤”，reply_1 只回答“不能确定”，未提示可提供文件夹尺寸或到店试放，厚文件夹这一核心疑虑停留在无结论状态，与另外两条不一致（另两条均给出请客户发尺寸的跟进）。建议补一句轻量跟进，例如请客户把文件夹厚度和尺寸发来帮对一下。",
+            "source_refs": [
+              {
+                "source_id": "product.P01.limitations"
+              },
+              {
+                "source_id": "writing.rules"
+              }
+            ]
+          }
+        ]
+      },
+      "original_record": "initial_raw_runs/N18_f57895d879c84495a6dc9975a3290969.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "cause": "新版先答A4，再问厚文件夹必要长宽厚；首次被“您那个文件夹”误作品牌已购。",
+      "editorial": "对象判断修复后沿用新三条，未重生成，只补此前未调用的首次复核。三条都完成当前问题且无内尺寸/包口自述。第三条“麻烦量一下”较有操作负担，但厚夹尺寸本次确有必要，第二条更自然。旧复核漏答依据引用商品/写作字段，本身不成立；不把它当正确答案。",
+      "new_record": "raw_runs/94192bd7ab064db4adad7648979a35c7.json",
+      "new_messages": [
+        "普通A4资料是能放的。您那个文件夹大概多长、多宽、多厚？我按尺寸帮您看看会不会挤。",
+        "日行托特放A4纸质资料没问题，厚文件夹就得看具体厚度了。方便告诉我文件夹的长宽厚吗？",
+        "A4资料一般都能放进去。如果文件夹比较厚，麻烦您量一下长、宽、厚，我好帮您判断装进去会不会挤。"
+      ],
+      "new_initial_record": "raw_runs/6f32d3b4ad7d43a09fb913102baa7d68.json",
+      "new_initial_status": "error",
+      "new_initial_error": {
+        "code": "policy_check",
+        "message": "没有该商品的购买或使用依据；其他商品的已购记录不能支持这项已购预设。",
+        "retryable": true
+      },
+      "new_status": "success",
+      "new_error": null,
+      "new_copy_allowed": true,
+      "new_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户问日行托特包装厚文件夹里的资料会不会挤；需要先说明已知的A4资料可放，再针对厚文件夹了解长宽厚以便判断。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "普通A4资料是能放的。您那个文件夹大概多长、多宽、多厚？我按尺寸帮您看看会不会挤。",
+            "answered": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“普通A4资料是能放的”对应目录已知A4纸质资料可放，先答已知，删掉就丢了客户所问的基础答案。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "厚文件夹是否放得下须另核对尺寸，问长宽厚正是补必要信息，只问客户自己的物品，不涉内尺寸或包口缺项。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "“我按尺寸帮您看看会不会挤”只是承诺后续判断的可选承接语，删去后“能放A4＋问长宽厚”仍完整；保留也可，属非阻断编辑。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "日行托特放A4纸质资料没问题，厚文件夹就得看具体厚度了。方便告诉我文件夹的长宽厚吗？",
+            "answered": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "前半句是目录明确的A4纸质资料可放；后半句“厚文件夹就得看具体厚度”与“厚文件夹是否放得下需另核对尺寸”一致，是有边界的正常判断，不构成否定商品。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "问文件夹长宽厚是完成厚文件夹判断所需的唯一补充，自然口语，删掉就无法回应“会不会挤”。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "A4资料一般都能放进去。如果文件夹比较厚，麻烦您量一下长、宽、厚，我好帮您判断装进去会不会挤。",
+            "answered": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "表述为通常可放，与目录“可放A4纸质资料”相符，不是绝对保证，也不暗示已知内尺寸。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "在客户已说明“挺厚”的前提下请其量长宽厚，是针对性核实，符合“厚文件夹需另核对尺寸”；措辞略书面但清楚，可不改。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "new_review_schema_error": null,
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    },
+    {
+      "case_id": "N19",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：随行卡夹有零钱袋吗？我想卡和几个硬币一起放。",
+        "related_info": "",
+        "advisor_instruction": "说明它的收纳结构就行。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N19",
+        "conversation_id": "business-v2-chat-N19",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "随行卡夹没有单独零钱袋，它的结构是4个独立卡位，可以放4张标准银行卡大小的卡片。",
+        "您好，随行卡夹是没有单独零钱袋的，里面是4个独立卡位，能放4张标准银行卡大小的卡片。",
+        "这款卡夹没有单独零钱袋，收纳部分是4个独立卡位，可放4张标准银行卡大小的卡片。"
+      ],
+      "original_status": "success",
+      "original_error": null,
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户询问随行卡夹是否有零钱袋，并说明想把卡和几个硬币一起放；只需说明零钱袋结构，不替客户下不能一起放的结论。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "随行卡夹没有单独零钱袋，它的结构是4个独立卡位，可以放4张标准银行卡大小的卡片。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "前半句“没有单独零钱袋”直接回答客户所问；后半句4个独立卡位、可放4张标准银行卡是目录已有结构事实，与卡夹用途相关，并未替客户断定卡和硬币不能一起放，也没有额外索取尺寸或编造收益。整句可保留，删任何一部分都会丢掉核心回答。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "您好，随行卡夹是没有单独零钱袋的，里面是4个独立卡位，能放4张标准银行卡大小的卡片。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“您好”是不知道称呼时的合规开场，语序比第一条更口语；零钱袋否定回答与四卡位容量均为P03目录事实，没有新增收益或限制，保留完整。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "这款卡夹没有单独零钱袋，收纳部分是4个独立卡位，可放4张标准银行卡大小的卡片。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“这款卡夹”指代明确，零钱袋与卡位容量事实与来源一致；无多余追问、免责或到店邀请，简单事实问答下三条功能接近可接受。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "original_record": "initial_raw_runs/N19_3f7272a4aca9495f981ba940a14eb96d.json",
+      "offline_status": "success",
+      "offline_error": null,
+      "cause": "原已交付，保持原三条和原pass，不新增模型调用。",
+      "editorial": "说明四卡位、没有单独零钱袋即可。没有硬币枚数、变形或替客户否定用途；三条功能相近适合简单事实题，不强制追问或卖点。"
+    },
+    {
+      "case_id": "N21",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+        "related_info": "",
+        "advisor_instruction": "接住她的到店意向，帮她安排下一步。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N21",
+        "conversation_id": "business-v2-chat-N21",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "留货我这边没有直接记录可以确认，得先帮您查一下墨黑色的库存和能不能预留。查好我回您，周六您过来就能直接看。",
+        "您好，墨黑色是轻行肩包的目录颜色之一，能不能预留我需要先和门店确认一下。有结果我尽快告诉您，不耽误您周六的安排。",
+        "轻行肩包墨黑色的库存和预留我先帮您问一下门店，确认后回您。周六想看的话，到时可以现场上手试背，看看大小和肩带长度合不合适。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户询问轻行肩包墨黑色能否先预留、表示周六想来看，顾问需说明预留需向门店核实，并回应周六到店的安排；不得声称已留货。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "留货我这边没有直接记录可以确认，得先帮您查一下墨黑色的库存和能不能预留。查好我回您，周六您过来就能直接看。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.stock",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“我这边没有直接记录可以确认”偏内部口径，可压缩成“我这边暂时不能直接确认，得先帮您查墨黑色的库存和能不能预留”；保留核实承诺和不得声称已留货的边界，删掉内部分句后答复仍完整。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "“查好我回您”是回应客户预留请求的必要后续承诺，未声称已执行；“周六您过来就能直接看”衔接客户自己提的周六到店，属相关可选安排，不构成必须到店的强制。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "您好，墨黑色是轻行肩包的目录颜色之一，能不能预留我需要先和门店确认一下。有结果我尽快告诉您，不耽误您周六的安排。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "policy.6",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.stock",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“墨黑色是轻行肩包的目录颜色之一”对应目录色，未被说成现货；“能不能预留需要先和门店确认”正确区分目录色与库存预留，是本题核心答案。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“不耽误您周六的安排”是替客户预判安排的无依据许诺，可删该分句；“有结果我尽快告诉您”保留即可。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "轻行肩包墨黑色的库存和预留我先帮您问一下门店，确认后回您。周六想看的话，到时可以现场上手试背，看看大小和肩带长度合不合适。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.stock",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.strap_adjustable",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "product.P02.carry_modes",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "明确“先帮您问一下门店，确认后回您”，是帮客户核实库存和预留的合规表达，未声称已预留。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "试背属客户已自提的周六到店背景，肩带可调有商品依据，可保留；但“看看大小和肩带长度合不合适”稍显指导性，可简化为“到时可以现场试背看看”，删去后半不影响核心答复。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "original_record": "initial_raw_runs/N21_ebb5d01a3b5b4bc3badc3c8246541e84.json",
+      "offline_status": "success",
+      "offline_error": null,
+      "cause": "周六是客户到店计划，不强要活动来源；真实未核库存保证仍须拦。",
+      "editorial": "新版第一、三条可用；第二条“周六到店看黑色肩包没问题”仍提前保证，整组不交付。新复核正确指出这一实质问题，引用policy.4不精确（该节是价格异议），product.P02.stock确实支持库存未知；应对照policy.3，而不是把每个来源都说成正确。修复来源组合后状态由invalid_review变quality_review，没有改pass。旧第一条“我这边没有直接记录”和周六保证仍留作失败。",
+      "new_record": "raw_runs/890e01fdfd904bdba397e7ccc2874fe2.json",
+      "new_messages": [
+        "好的，我先帮您确认墨黑色轻行肩包的库存和周六能否预留，有结果就回复您。",
+        "收到，周六到店看黑色肩包没问题。我先去核实一下这款的库存和能否预留，确认后再跟您说。",
+        "我先帮您核实黑色轻行肩包现在的库存，以及周六先预留一只是否可行，确认后回复您。"
+      ],
+      "new_initial_record": "raw_runs/890e01fdfd904bdba397e7ccc2874fe2.json",
+      "new_initial_status": "error",
+      "new_initial_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "new_status": "error",
+      "new_error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": false
+      },
+      "new_copy_allowed": false,
+      "new_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "needs_review",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1"
+        ],
+        "current_need": "客户想预留黑色肩包（P02 墨黑），并计划周六到店看；顾问需承接核库存与能否预留，核实后再回复，不能先保证周六有货或已留好。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "好的，我先帮您确认墨黑色轻行肩包的库存和周六能否预留，有结果就回复您。",
+            "answered": [
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.stock",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "整句就是本次任务：把客户口中的“黑色”对应到目录墨黑，同时只承诺去核实库存和周六预留可能性，未声称已留好或周六必有货，符合任务与库存政策。无需增删。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "收到，周六到店看黑色肩包没问题。我先去核实一下这款的库存和能否预留，确认后再跟您说。",
+            "answered": [
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.stock",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "judgment",
+                "action": "revise",
+                "delete_effect": "misleads",
+                "reason": "“周六到店看黑色肩包没问题”在库存未知时承诺到店就能看，客户同时明确要求先留一只；按 policy.4 与任务提示，核库存及能否预留前不能保证周六有货可看。后半句已承接核实，前半句应改为仅确认收到到店意向，如“收到，您想周六来看看，我先帮您确认库存和能否预留”。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "承接核库存与预留并说明确认后回复，未声称已查或已留，是本次任务的必要行动句，保留。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "我先帮您核实黑色轻行肩包现在的库存，以及周六先预留一只是否可行，确认后回复您。",
+            "answered": [
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.colors",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.stock",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "同时处理库存和“周六先预留一只”两个请求，用“是否可行”保留不确定性，未承诺已留好，完整且无多余尾巴，保留。"
+              }
+            ]
+          }
+        },
+        "issues": [
+          {
+            "code": "policy_error",
+            "candidate_index": 1,
+            "evidence_span_id": "reply_2.s1",
+            "message": "“周六到店看黑色肩包没问题”在库存与预留未核实前保证到店就能看，与客户“先留一个”的请求及库存政策冲突；应改为只承接核实库存和预留可能。",
+            "source_refs": [
+              {
+                "source_id": "policy.4"
+              },
+              {
+                "source_id": "product.P02.stock"
+              },
+              {
+                "source_id": "chat.t1"
+              }
+            ]
+          }
+        ]
+      },
+      "new_review_schema_error": null,
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    },
+    {
+      "case_id": "N24",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上周在门店买过日行托特包。",
+        "conversation": "客户：托特这几天背着还不错，里面的小袋子刚好放钥匙。",
+        "related_info": "",
+        "advisor_instruction": "接着她的反馈回一句。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N24",
+        "conversation_id": "business-v2-chat-N24",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "听您说背得舒服就放心了，那个平口袋本来就是可以单独放钥匙这类小物的。后面用着有什么想法随时跟我说。",
+        "谢谢您回来说使用感受，钥匙放在那个内侧平口袋里确实好找。平时注意别长时间淋雨，沾到水用干软布吸干、通风处晾干就好。",
+        "托特能顺手就好，小口袋刚好派上用场。用着哪儿不顺手或者想了解怎么打理，都可以跟我说。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "background.client_info",
+          "task.scenario"
+        ],
+        "current_need": "客户回来说用了几天日行托特包背得不错、内侧小袋刚好放钥匙；顾问做购后关怀，接住使用反馈，可结合已知平口袋事实和已有保养建议回应，不推销。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "听您说背得舒服就放心了，那个平口袋本来就是可以单独放钥匙这类小物的。后面用着有什么想法随时跟我说。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.7",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "前半句接住客户“背着还不错”的使用反馈；后半句“平口袋可以单独放钥匙”与商品已知事实（内侧1个平口袋可单独放钥匙等小物）一致，且正对客户说的小袋放钥匙，没有编造新收益，也没有替客户额外保证什么。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "relationship",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "这句是购后关怀里常见的收尾邀请，语气自然、不推销、不追问，保留也成立；只是“后面用着有什么想法随时跟我说”属于可选帮助，删掉后前一句已完整回应客户反馈，可省但不必阻断。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "谢谢您回来说使用感受，钥匙放在那个内侧平口袋里确实好找。平时注意别长时间淋雨，沾到水用干软布吸干、通风处晾干就好。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "回应客户使用感受与钥匙放小袋的具体反馈，所引平口袋事实有据，不夸大找东西效率。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "保养建议与政策原文一致（避免长时间淋雨；沾水后用干软布轻轻吸干并在通风处晾干），是购后关怀场景可提供的已有保养内容，未承诺防水或永不损坏，删掉会失去有用的购后提示。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "托特能顺手就好，小口袋刚好派上用场。用着哪儿不顺手或者想了解怎么打理，都可以跟我说。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "直接接住客户“背着还不错、小袋放钥匙”的反馈，事实与目录一致，无额外承诺。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "relationship",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "邀请客户反馈不适或询问打理属可选帮助，不追问、不推销，保留完整；删掉后前句仍是完整回应，可省不阻断。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "original_record": "initial_raw_runs/N24_fa5350b006f84b06a3bb5a10792d11ee.json",
+      "offline_status": "success",
+      "offline_error": null,
+      "cause": "新版本不再发保养清单，保留短承接。",
+      "editorial": "第二条最接近随手可发，第一、三条仍解释口袋用途，第一条“不用在包里翻找”可省。复核把这些列polish恰当；不是事实或售后承诺错误。",
+      "new_record": "raw_runs/3c96fe0823594af78de9591ecc6440cf.json",
+      "new_messages": [
+        "用着顺手就好，听您这么说很开心。内侧那个平口袋正好适合单独放钥匙，不用在包里翻找。",
+        "谢谢您回来告诉我。托特背着舒服、小口袋放钥匙又刚好，这就很好。",
+        "听您说用着还不错，我也放心了。那个平口袋本来就是留给钥匙这类小物的，正好合您的用法。"
+      ],
+      "new_initial_record": "raw_runs/3c96fe0823594af78de9591ecc6440cf.json",
+      "new_initial_status": "success",
+      "new_initial_error": null,
+      "new_status": "success",
+      "new_error": null,
+      "new_copy_allowed": true,
+      "new_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario",
+          "task.advisor_instruction",
+          "background.client_info"
+        ],
+        "current_need": "客户反馈日行托特包背着不错、内袋刚好放钥匙，顾问只需简短接住这份正面使用反馈，不追加保养清单、推荐或追问。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "用着顺手就好，听您这么说很开心。内侧那个平口袋正好适合单独放钥匙，不用在包里翻找。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "接住客户“背着还不错”的使用感受，是本次回复的核心；删去就只剩商品介绍，缺少对反馈的回应。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“内侧那个平口袋……不用在包里翻找”复述客户已说的“小袋子刚好放钥匙”，并补出免翻找的收益，属可省的相关补充。建议删去“不用在包里翻找。”，或整句只留“平口袋正好放钥匙，您用着顺手就好”；删后第一句已完整回应好评，不误导。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "谢谢您回来告诉我。托特背着舒服、小口袋放钥匙又刚好，这就很好。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "回应客户主动反馈，礼貌且贴合本次“接着她的反馈回一句”的任务；删去后语气生硬。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "relationship",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“托特背着舒服、小口袋放钥匙又刚好”基本是复述客户原话，与“这就很好”语义重复；建议压缩为“您背得顺手就好”之类一句，删去复述部分后第一句仍完整，不改事实、不误导。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "听您说用着还不错，我也放心了。那个平口袋本来就是留给钥匙这类小物的，正好合您的用法。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.inner_flat_pockets",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "简短接住好评并表达安心，符合购后关怀只需一句的尺度；删去则无对客户感受的回应。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“本来就是留给钥匙这类小物的”“正好合您的用法”与客户已说的“小袋子刚好放钥匙”重复，且略像在解释设计用意。建议删去该句或只保留“平口袋放钥匙确实方便”；删后第一句仍完整回应，不误导。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "new_review_schema_error": null,
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    },
+    {
+      "case_id": "N26",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+        "related_info": "",
+        "advisor_instruction": "给她安全、好操作的处理建议。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N26",
+        "conversation_id": "business-v2-chat-N26",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，家里那瓶清洁剂成分不确定的话，先不要用在卡夹上，也不建议先在角落试。皮面沾到污渍，先用干燥软布轻轻吸一吸、擦一擦，放在通风处自然晾干。",
+        "您好，成分不明的清洁剂不建议自行使用，包括只在一小块试。卡夹是哑光细纹牛皮，日常沾到污渍可以先用干软布轻轻吸干表面，再在通风处自然晾干，避免烘干和酒精擦拭。",
+        "您好，建议先别用家里那瓶清洁剂，成分不清楚的情况下不好判断对皮面的影响。先用干燥的软布轻轻吸掉、擦去表面污渍，再自然晾干就好；如果污渍比较明显或一直没淡，您可以拍张局部照片发我，我帮您看看后续怎么处理。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户卡夹蹭到污渍，问家里的清洁剂能否使用（购后保养咨询）。需明确成分不明清洁剂不建议自行使用（含角落试用），并给出已知保养处理：干软布轻吸、通风自然晾干、避免烘干和酒精擦拭。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您好，家里那瓶清洁剂成分不确定的话，先不要用在卡夹上，也不建议先在角落试。皮面沾到污渍，先用干燥软布轻轻吸一吸、擦一擦，放在通风处自然晾干。",
+            "answered": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "直接回答客户所问：成分不明的清洁剂不建议用，且明确包含角落试用，与policy.5“不建议自行使用成分未知清洁剂，也不建议先在角落试用”一致；删掉即失去对客户问题的答复。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "给出已知保养步骤（干软布轻吸、通风自然晾干），来自policy.5日常保养；是本条可执行的替代处理，删除后客户只剩“不能用”而没有做法。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "您好，成分不明的清洁剂不建议自行使用，包括只在一小块试。卡夹是哑光细纹牛皮，日常沾到污渍可以先用干软布轻轻吸干表面，再在通风处自然晾干，避免烘干和酒精擦拭。",
+            "answered": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "正面回答“家里那瓶清洁剂能用吗”——成分不明不建议自行使用，含小块试用；与policy.5一致，删掉则未答所问。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“卡夹是哑光细纹牛皮”有product.P03.material依据；干软布吸干、自然晾干、避免烘干和酒精擦拭均为policy.5已知保养与禁忌，属必要提醒，删掉会丢掉替代处理与已知禁令。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "您好，建议先别用家里那瓶清洁剂，成分不清楚的情况下不好判断对皮面的影响。先用干燥的软布轻轻吸掉、擦去表面污渍，再自然晾干就好；如果污渍比较明显或一直没淡，您可以拍张局部照片发我，我帮您看看后续怎么处理。",
+            "answered": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "回应客户所问并给出自然原因（成分不清不好判断对皮面的影响），与policy.5“不建议自行使用成分未知清洁剂”一致；删掉即未回答问题。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "前半句给已知保养步骤，是当前处理办法，不可删；后半句“拍局部照片我帮您看看”与policy.5“可建议提供局部照片”一致，是可选后续而非承诺结果，未强加成本，可保留。可视为可略的礼貌延伸，但保留不妨碍独立成立，不构成实质问题。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "original_record": "initial_raw_runs/N26_eef441c2c5c644e0b182d6e1f8bde4a0.json",
+      "offline_status": "success",
+      "offline_error": null,
+      "cause": "新版本问瓶身标签/成分交售后，不把水渍护理套成去渍。",
+      "editorial": "新版第一条直接且可用；第二条必要提醒更详，污渍照片为可选；第三条风险说明对清洁剂问题相关但略长。原文及原pass不改，修材质分段引用后离线交付；policy.5支持处理边界，材质字段只支持皮面，不授权护理动作。旧三条自行擦污渍/晾干仍是处理条件错误。",
+      "new_record": "raw_runs/e87d024563ad43fda052b55249b5d5c0.json",
+      "new_messages": [
+        "家里的清洁剂先别用。方便的话拍一下瓶身标签或成分给我，我帮您转交售后看看这种皮面该怎么处理。",
+        "成分不清楚的清洁剂先别往卡夹上用，也不建议先在角落试。您把清洁剂瓶身的成分拍给我，另外可以再拍一张污渍处的局部照片，我一并对接售后判断。",
+        "先别用那瓶清洁剂，哑光细纹牛皮遇到成分不明的清洁剂容易有风险。发我瓶身标签或成分信息，我帮您问售后合适的处理方式。"
+      ],
+      "new_initial_record": "raw_runs/e87d024563ad43fda052b55249b5d5c0.json",
+      "new_initial_status": "error",
+      "new_initial_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "new_status": "success",
+      "new_error": null,
+      "new_copy_allowed": true,
+      "new_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario",
+          "task.advisor_instruction"
+        ],
+        "current_need": "客户就卡夹蹭到污渍，询问家里那瓶清洁剂能不能用；需要给出安全的处理方向，并说明成分不明时先别自行使用、需带标签交售后判断。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "家里的清洁剂先别用。方便的话拍一下瓶身标签或成分给我，我帮您转交售后看看这种皮面该怎么处理。",
+            "answered": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“家里的清洁剂先别用”直接回答客户能不能用的问题，与“不建议自行使用成分未知的清洁剂”一致；删掉就少了核心安全答复。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "请拍瓶身标签或成分、由顾问转交售后判断，是政策给出的可操作路径；没有要求客户量尺寸、去角落试用或提供无关资料，属必要承接，删掉客户便不知道下一步。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "成分不清楚的清洁剂先别往卡夹上用，也不建议先在角落试。您把清洁剂瓶身的成分拍给我，另外可以再拍一张污渍处的局部照片，我一并对接售后判断。",
+            "answered": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "明确先别用且不角落试用，正是政策对未知清洁剂的边界，也直接回答客户问题；删掉会留下可自行试用空间。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "要成分照片是判断的核心依据，污渍局部照片在售后评估污渍时也合理，均为承接售后而非新增推销；删掉会让后续对接缺少材料。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "先别用那瓶清洁剂，哑光细纹牛皮遇到成分不明的清洁剂容易有风险。发我瓶身标签或成分信息，我帮您问售后合适的处理方式。",
+            "answered": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“先别用”给结论；“哑光细纹牛皮遇到成分不明的清洁剂容易有风险”与卡夹材质（哑光细纹牛皮）及不建议用未知清洁剂的政策相符，属有边界的风险说明，未断言会损坏或保证结果，可保留。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "请提供标签或成分并承诺帮问售后，是完成当前处理所必需的一步，未假称已提交或已查，删掉客户就不知道如何继续。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "new_review_schema_error": null,
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    },
+    {
+      "case_id": "N29",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上个月在门店买过轻行肩包。",
+        "conversation": "客户：这两天总觉得肩包拉链有点卡，会不会坏了？",
+        "related_info": "",
+        "advisor_instruction": "接住她的担心，给个能开始处理的办法。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N29",
+        "conversation_id": "business-v2-chat-N29",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，拉链有点卡不一定就是坏了，先别往卡的方向硬拉。可以看看齿槽里有没有细小杂物或线头，清理后再顺着拉几次试试。如果还是不顺，把卡顿位置拍张照片给我，我帮您看看怎么处理。",
+        "肩包拉链才用了一个月就卡，确实会让人担心。先别涂油、也别用其他清洁剂，避免留下痕迹。您方便的话，拍一段拉合时卡住的视频发我，我先按您这款包帮您核实后续怎么处理。",
+        "收到，先不用急着认定是坏了。拉链卡常见的原因可能是齿槽里进了细屑，也可以留意是不是装得比较满、拉合时有点偏。您可以先空包的情况下试拉一下；如果卡得明显或越来越紧，拍照发给我，我帮您对接售后查看。"
+      ],
+      "original_status": "success",
+      "original_error": null,
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "background.client_info",
+          "task.scenario"
+        ],
+        "current_need": "客户上月在门店买的轻行肩包拉链这两天有点卡，想知道是不是坏了，需要按已购记录回应并给出必要处理方向。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您好，拉链有点卡不一定就是坏了，先别往卡的方向硬拉。可以看看齿槽里有没有细小杂物或线头，清理后再顺着拉几次试试。如果还是不顺，把卡顿位置拍张照片给我，我帮您看看怎么处理。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "直接回应“会不会坏了”，说明卡不一定坏、别硬拉，是必要判断和提醒，保留。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "给出可自查的简单处理（看齿槽杂物、顺向试拉），属于购后关怀的有用建议，未涉及未知清洁剂或绝对承诺。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "说明若仍不顺可拍照片进一步查看，符合政策允许“询问问题表现、建议提供局部照片”；“帮您看看怎么处理”未承诺已提交或修复结果。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "肩包拉链才用了一个月就卡，确实会让人担心。先别涂油、也别用其他清洁剂，避免留下痕迹。您方便的话，拍一段拉合时卡住的视频发我，我先按您这款包帮您核实后续怎么处理。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "relationship",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "“才用了一个月”与背景“上个月买”一致，共情句成立；若追求更简洁可只留“用了一个月就卡，确实会让人担心”，情绪承接本身有价值，属非阻断可省。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "“别涂油、别用其他清洁剂”对应政策不建议自行使用成分未知清洁剂，删去会引导客户自行处理，保留。"
+              },
+              {
+                "candidate_span_id": "reply_2.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "请客户拍拉合视频并说明按其这款包核实后续处理，符合“询问问题表现、建议提供照片”的做法，未声称已查或已提交；与回复1的照片请求略有重复但不算错误，可保留。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "收到，先不用急着认定是坏了。拉链卡常见的原因可能是齿槽里进了细屑，也可以留意是不是装得比较满、拉合时有点偏。您可以先空包的情况下试拉一下；如果卡得明显或越来越紧，拍照发给我，我帮您对接售后查看。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "直接回应“会不会坏了”，先不急着认定坏，保留。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "列出可能原因（细屑、装得较满、拉合偏）是用“可能”表述的常见情况，不是诊断；句内“也可能”略显堆叠，可压缩为一句更口语，属非阻断编辑。"
+              },
+              {
+                "candidate_span_id": "reply_3.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "建议空包试拉并说明卡得明显时拍照对接售后查看，是必要处理方向，“对接售后查看”未承诺检验结果或免费维修，保留。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "original_record": "initial_raw_runs/N29_160c8acff6c643fe97ba5a68e1ad0f9c.json",
+      "offline_status": "success",
+      "offline_error": null,
+      "cause": "新版本改为收卡顿视频对接售后，不再教清理、反复试拉或猜原因。",
+      "editorial": "事实与处理方向改善，但口吻未完全达到目标：第一条“确实会让人不放心”、第二条“您先不用太担心”仍在解释/安抚客户情绪；可删，删后视频→售后仍完整。三条选择价值有限。原pass保留，结构来源误拦已离线修正；不宣称写作完全通过。",
+      "new_record": "raw_runs/b32f1cba90754508923cb3fc7bd612ec.json",
+      "new_messages": [
+        "您好，拉链卡顿确实会让人不放心。麻烦您拍一段拉合时的视频给我，我帮您转给售后看看情况、怎么处理。",
+        "收到，您先不用太担心。为了帮您对接售后，能否拍一段拉链开合卡顿的视频发我？我看过就帮您跟进处理。",
+        "肩包拉链卡着不好用，理解您的顾虑。您方便时录一段拉合过程的视频给我，我这边帮您交给售后确认处理方式。"
+      ],
+      "new_initial_record": "raw_runs/b32f1cba90754508923cb3fc7bd612ec.json",
+      "new_initial_status": "error",
+      "new_initial_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "new_status": "success",
+      "new_error": null,
+      "new_copy_allowed": true,
+      "new_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "background.client_info"
+        ],
+        "current_need": "客户首次反馈上月门店购买的轻行肩包拉链卡顿，担心坏了；顾问需安抚担心并给出可开始处理的办法，即收拉合卡顿视频并转交售后评估。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您好，拉链卡顿确实会让人不放心。麻烦您拍一段拉合时的视频给我，我帮您转给售后看看情况、怎么处理。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.closure",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“拉链卡顿确实会让人不放心”直接承接客户担心，是本次安抚的一部分；“您好”符合不知称呼时的规范开场。删掉会失去情绪承接，且未诊断故障或纠正客户看法，符合不扩写担忧的尺度。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“拍一段拉合时的视频”是首次反馈拉链卡顿的标准收料方式，“转给售后看看情况、怎么处理”表明评估由售后进行，未承诺维修结果、费用或周期，也未教自行排障，任务落实完整。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "收到，您先不用太担心。为了帮您对接售后，能否拍一段拉链开合卡顿的视频发我？我看过就帮您跟进处理。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.closure",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_2.s3"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_2.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“您先不用太担心”是温和安抚，没有断言“没坏”，也没有替客户下诊断，删掉会少掉对担心的回应。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "说明拍视频是为了对接售后，并具体要开合卡顿视频；问题表现由客户提供、处理交给售后，边界正确。"
+              },
+              {
+                "candidate_span_id": "reply_2.s3",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“我看过就帮您跟进处理”与上句“帮您对接售后”意思部分重复，且“处理”主语略含糊（实际由售后评估）；可压缩为“收到后我帮您转给售后跟进”。属非阻断的句内重复编辑，删改后任务仍完整，不影响交付。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "肩包拉链卡着不好用，理解您的顾虑。您方便时录一段拉合过程的视频给我，我这边帮您交给售后确认处理方式。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.closure",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "policy.5",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“肩包拉链卡着不好用”复述客户所述表现而非断言故障，“理解您的顾虑”承接担心；与已购轻行肩包拉链开合信息一致，无多推原因或纠正情绪。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“录一段拉合过程的视频”并“交给售后确认处理方式”，把判断权给售后，未承诺修复结果或免费维修，是合规的首次处理入口。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "new_review_schema_error": null,
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    },
+    {
+      "case_id": "N42",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：行，那帮我报一下名，姓陈，两位。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "advisor_instruction": "接住她两位报名的意向。",
+        "product_ids": []
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N42",
+        "conversation_id": "business-v2-chat-N42",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "好的陈女士，先记下您这边两位，我就按陈姓报名。活动是11月14日周六14:00—16:00，在澄序广场8号精品店，我把登记信息提交到门店，具体参加安排以门店确认为准。",
+        "收到，陈女士两位。这场“日常收纳小聚”在11月14日周六下午两点到四点，澄序广场8号精品店，时段内可以随时来，不用全程参加，也可以带上常用的小物对照体验。报名信息我提交给门店确认。",
+        "陈女士，两位的信息我记下了，稍后提交门店登记。活动当天11月14日周六14:00—16:00在澄序广场8号精品店，您可以带一位朋友一起来，参加安排等门店确认后我再回复您。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（ready requires three fixed fields and no advisor-blocking gap），不属于可明确兼容的空内部字段；原响应已保留，整组未采用。",
+        "retryable": false
+      },
+      "original_review": null,
+      "original_record": "initial_raw_runs/N42_0d584a1ad90249b9ab1e47c3f389614c.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "missing_original_generation",
+        "message": "原记录没有可校验的生成结构；不补写或重新生成。",
+        "retryable": false
+      },
+      "cause": "纠正旧评读：顾问任务明确有“她”，陈女士不是凭空补性别。",
+      "editorial": "新ready与missing_information=[]一致，同行称呼是正常客户澄清，不是工具缺原文。原错误ready+非空missing仍未放行。三条均偏长，第二条“三款包袋”分类不精确且不必要，建议只承接两位、补必要称呼及门店确认。当前UID已存称呼自动带入，性别不设必填；没有倒填历史profile。",
+      "new_record": "raw_runs/d78f59d1e4464a8eb659026170ad22ec.json",
+      "new_messages": [
+        "好的陈女士，两位我这边先记下，帮您提交登记。活动是11月14日周六14:00—16:00，在澄序广场8号精品店，时段内可以随时来，不用全程参加。您方便把同行朋友的称呼也发我吗？参加安排还要等门店确认后再回复您。",
+        "收到，陈女士，两位参加。11月14日周六14:00—16:00，澄序广场8号精品店，现场会演示三款包袋怎么收纳常用物品，也可以带自己的日常物品对照着试，时段内短暂停留就行。请问同行朋友怎么称呼？我一起登记，门店确认后告诉您。",
+        "陈女士，两位报名我记下了，这就帮您提交。时间地点是11月14日周六14:00—16:00、澄序广场8号精品店，期间随时可到、可随时离开。同行朋友需要登记称呼，您发我一下就好；确认后我回复您。"
+      ],
+      "new_initial_record": "raw_runs/d78f59d1e4464a8eb659026170ad22ec.json",
+      "new_initial_status": "success",
+      "new_initial_error": null,
+      "new_status": "success",
+      "new_error": null,
+      "new_copy_allowed": true,
+      "new_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "other",
+        "state_evidence": [
+          "chat.t1",
+          "task.advisor_instruction"
+        ],
+        "current_need": "客户陈女士提供姓氏并确认两位报名，需承接报名登记意向、补问同行朋友称呼以便登记参加人，并说明参加安排由门店确认。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "好的陈女士，两位我这边先记下，帮您提交登记。活动是11月14日周六14:00—16:00，在澄序广场8号精品店，时段内可以随时来，不用全程参加。您方便把同行朋友的称呼也发我吗？参加安排还要等门店确认后再回复您。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s3"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s4"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_1.s4"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "用已知姓氏“陈女士”承接两位报名，并以“先记下、帮您提交登记”表述准备提交而非已成功，符合任务要求；删掉则失去对报名意向的回应。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "时间、地点、时段内可到且无须全程参加均与活动资料一致，周六由给定日期算得；客户已确认报名，交代到场安排是完成本次任务的实际信息，删掉会缺必要安排。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "资料明确参加人需要提供称呼登记，同行朋友称呼是登记必需，向客户自然补问符合规则，删掉会无法登记第二位。"
+              },
+              {
+                "candidate_span_id": "reply_1.s4",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "“参加安排还要等门店确认”对应资料中参加安排由门店确认，避免客户理解为已定；删掉会让提交后果显得已确认。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "收到，陈女士，两位参加。11月14日周六14:00—16:00，澄序广场8号精品店，现场会演示三款包袋怎么收纳常用物品，也可以带自己的日常物品对照着试，时段内短暂停留就行。请问同行朋友怎么称呼？我一起登记，门店确认后告诉您。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s3"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s4"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_2.s4"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "简短接住两位报名的意愿，使用已知姓氏；删掉则直接跳到活动信息，缺对客户请求的回应。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "三款商品演示、可带日常物品对照、时段内短暂停留均与活动资料相符，时间地点与周六也准确；这正是活动任务应讲的可体验内容，删掉只剩时间地点。"
+              },
+              {
+                "candidate_span_id": "reply_2.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "参加人称谓是登记必需信息，这一问直接必要，删掉无法完成两位登记。"
+              },
+              {
+                "candidate_span_id": "reply_2.s4",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "“我一起登记”表示把同行人一并登记，尚未声称已成功，“门店确认后告诉您”对应门店确认环节；删掉会让客户以为报名已定。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "陈女士，两位报名我记下了，这就帮您提交。时间地点是11月14日周六14:00—16:00、澄序广场8号精品店，期间随时可到、可随时离开。同行朋友需要登记称呼，您发我一下就好；确认后我回复您。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "computed.calendar.1",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "materials.related_info",
+                "candidate_span_id": "reply_3.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "承接两位报名并以“这就帮您提交”表达准备提交，未谎称已提交成功；删掉会失去对客户报名请求的回应。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "时间、地点、周六与资料一致；“随时可到、可随时离开”是“时段内短暂停留、无须全程参加”的自然口语表达，不算新增安排，删掉则客户不知道何时到场。"
+              },
+              {
+                "candidate_span_id": "reply_3.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "登记称呼为活动资料要求，末句“确认后我回复您”对应门店确认，属于必要说明；这一句同时完成补问和交代后续，删掉仍缺同行人姓名。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "new_review_schema_error": null,
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    },
+    {
+      "case_id": "N46",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：买两只卡夹，能优惠一点吗？",
+        "related_info": "",
+        "advisor_instruction": "温暖但如实回答。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N46",
+        "conversation_id": "business-v2-chat-N46",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，随行卡夹目前没有折扣，单只2,800元，两只就是5,600元。",
+        "您好，谢谢您想买两只随行卡夹。这款目前没有优惠，也没有议价空间，两只按目录价合计5,600元。",
+        "您好，随行卡夹目前确实没有折扣，两只的合计是5,600元。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "policy_check",
+        "message": "随行卡夹的品牌现价为2,800元，候选报价不一致。",
+        "retryable": true
+      },
+      "original_review": null,
+      "original_record": "initial_raw_runs/N46_cdaa286cb58d435c96c510b1afd3cfb2.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "missing_original_review",
+        "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+        "retryable": false
+      },
+      "cause": "两只5600是总额，错总额仍拦；原三条只补首次复核，另版生成改善写作。",
+      "editorial": "旧第二条“谢谢您想买两只”确属多余致谢，但字面没有宣称已购买；新复核把它称为“当已购买致谢”理由过重，独立纠正。新版第一条最可用；第二条“跟您如实说一下”可省；第三条“没有已授权的优惠渠道”仍是内部化表达，可删，不是错价。",
+      "first_review_record": "raw_runs/60ab096f682d45fab0abcfac94243725.json",
+      "first_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户问买两只随行卡夹能否优惠，需要如实说明没有折扣并给出两只的合计金额。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您好，随行卡夹目前没有折扣，单只2,800元，两只就是5,600元。",
+            "answered": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“目前没有折扣”对应客户所问优惠，政策规定三款均无折扣；“单只2,800元，两只就是5,600元”按目录含税单价直接算出合计，算术正确，无多余尾巴，三条中这条最简洁完整。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "您好，谢谢您想买两只随行卡夹。这款目前没有优惠，也没有议价空间，两只按目录价合计5,600元。",
+            "answered": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "relationship",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“谢谢您想买两只随行卡夹”把咨询当已购买致谢，写作规则明确该句不比直接答更有礼貌，也不代表购买已发生；删去后由下一句直接答优惠与合计，信息仍完整，仅语气更直接。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“没有优惠，也没有议价空间”与政策一致（无折扣、顾问无议价权限），“两只按目录价合计5,600元”报价正确；“目录价”仅指本目录售价，不构成对客户的内部说明，可保留。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "您好，随行卡夹目前确实没有折扣，两只的合计是5,600元。",
+            "answered": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“确实没有折扣”承接客户问句且与政策相符，“两只的合计是5,600元”报价正确；全句一句答清，无多余追问或促销邀请。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "first_review_status": "success",
+      "new_record": "raw_runs/f3c994e95b744a8184ab855451597aac.json",
+      "new_messages": [
+        "您好，随行卡夹目前没有折扣，单只2,800元，两只合计5,600元。",
+        "卡夹目前没有优惠，价格是每只2,800元，两只一共5,600元，跟您如实说一下。",
+        "目前卡夹没有折扣，也没有已授权的优惠渠道。每只2,800元，两只合计5,600元。"
+      ],
+      "new_initial_record": "raw_runs/f3c994e95b744a8184ab855451597aac.json",
+      "new_initial_status": "success",
+      "new_initial_error": null,
+      "new_status": "success",
+      "new_error": null,
+      "new_copy_allowed": true,
+      "new_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario",
+          "task.advisor_instruction"
+        ],
+        "current_need": "客户想买两只卡夹并询问能否优惠；需要如实说明目前无折扣，并给出单只价格与两只合计金额。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您好，随行卡夹目前没有折扣，单只2,800元，两只合计5,600元。",
+            "answered": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“您好”是恰当称呼；“目前没有折扣”直接回应优惠询问，有政策依据；“单只2,800元，两只合计5,600元”按目录价与算术准确报出，未要求购买已发生、未加无折扣之外的多余尾巴。整句删任何部分都会漏答。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "卡夹目前没有优惠，价格是每只2,800元，两只一共5,600元，跟您如实说一下。",
+            "answered": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "前半句如实答优惠、价格与合计，事实无误，须保留。结尾“跟您如实说一下”是在向客户自述自己坦诚，属可省的自述尾巴，删去后答复仍完整；建议省去该分句并保持非阻断。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "目前卡夹没有折扣，也没有已授权的优惠渠道。每只2,800元，两只合计5,600元。",
+            "answered": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.full"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "“没有折扣”直接回应优惠询问，“也没有已授权的优惠渠道”与政策中顾问无议价权限、无已授权渠道一致，未过度承诺也未替客户关闭其他沟通，可保留。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "按目录单只含税价与两只算术合计报出，未附折扣暗示或额外条件，是当前问题的核心答案。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "new_review_schema_error": null,
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    },
+    {
+      "case_id": "N48",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：另一家的卡夹便宜不少，你们这款主要有什么不同？",
+        "related_info": "",
+        "advisor_instruction": "帮她从实际使用上比较。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "historical_customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N48",
+        "conversation_id": "business-v2-chat-N48",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您问的这款是随行卡夹，2,800元，采用哑光细纹牛皮，表面光泽较低、能看到细小纹理，有4个独立卡位，可放4张标准银行卡大小的卡片。另一家的具体材质和卡位情况我还不了解，暂时没法替您逐一比较；如果方便，可以把对方的商品信息发我看看。",
+        "随行卡夹的价格是2,800元，材质是哑光细纹牛皮，4个独立卡位，能放4张标准银行卡大小的卡片，外观上品牌标识比较小，整体更简洁。那款便宜一些的卡夹我这边没有资料，不好直接说差别在哪里；您要是把它的信息发我，我可以帮您对照着看。",
+        "随行卡夹是2,800元，哑光细纹牛皮、无内衬，4个独立卡位正好收4张标准银行卡大小的卡片。另一个品牌那款的具体情况我不清楚，没法作对比，也不想凭印象说别家的不是；您更在意卡位数量还是皮面手感，我可以就这款再说细一点。"
+      ],
+      "original_status": "error",
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "original_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario"
+        ],
+        "current_need": "客户拿另一家更便宜的卡夹与本款比较，问本款（P03随行卡夹）主要不同在哪里；需说明本款已确认的价格、材质、卡位容量与外观事实，并如实说明没有竞品资料、不贬低别家。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "您问的这款是随行卡夹，2,800元，采用哑光细纹牛皮，表面光泽较低、能看到细小纹理，有4个独立卡位，可放4张标准银行卡大小的卡片。另一家的具体材质和卡位情况我还不了解，暂时没法替您逐一比较；如果方便，可以把对方的商品信息发我看看。",
+            "answered": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.lining",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.2",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_1.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "报价2,800元、哑光细纹牛皮及“光泽较低、有细小纹理”的外观说明、4个独立卡位可放4张标准银行卡，均是目录已确认事实，直接回答“贵在哪、有何不同”；删任一部分都会丢失客户所问信息。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "necessary_limit",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "客户提出竞品比较，但目录无竞品资料。如实说“不了解对方材质和卡位、不能逐一比较”避免臆断或暗示别家不好，并给出“可把信息发我对照看”的低成本选项；删掉会变成回避比较或被迫编比较。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "随行卡夹的价格是2,800元，材质是哑光细纹牛皮，4个独立卡位，能放4张标准银行卡大小的卡片，外观上品牌标识比较小，整体更简洁。那款便宜一些的卡夹我这边没有资料，不好直接说差别在哪里；您要是把它的信息发我，我可以帮您对照着看。",
+            "answered": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.2",
+                "candidate_span_id": "reply_2.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "价格、材质、卡位与容量为已确认事实；小尺寸压印标识、外观更简洁是品牌设定允许的表达，且未宣称比别家更高级，正好作为“不同”的具体切口。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "judgment",
+                "action": "keep",
+                "delete_effect": "misleads",
+                "reason": "明确说没有竞品资料、不当面贬低或轻率比较，并请客户提供对方信息以便对照，符合竞品只依据可核实信息比较的边界；删掉会让“不同”停留在单方描述、显得回避客户的核心比较。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "随行卡夹是2,800元，哑光细纹牛皮、无内衬，4个独立卡位正好收4张标准银行卡大小的卡片。另一个品牌那款的具体情况我不清楚，没法作对比，也不想凭印象说别家的不是；您更在意卡位数量还是皮面手感，我可以就这款再说细一点。",
+            "answered": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.lining",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "价格、材质、无内衬、4个独立卡位收4张标准卡，都是目录事实；“正好收”只是对已知4卡位容量的正常判断，未超出实测保证。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“不清楚对方情况、没法作对比、不凭印象说别家不是”这层必要边界应保留；末句“您更在意卡位数量还是皮面手感，我可以就这款再说细一点”是把选择权抛回客户的追问，客户已问清不同点、事实已答完，可省略该句只保留边界说明，删后仍完整；且“皮面手感”本身目录无依据，建议一并删去。属非阻断编辑。"
+              }
+            ]
+          }
+        },
+        "issues": [
+          {
+            "code": "redundant_question",
+            "candidate_index": 2,
+            "evidence_span_id": "reply_3.s2",
+            "message": "末句追问“您更在意卡位数量还是皮面手感，我可以就这款再说细一点”在价格、材质、卡位已答清后属可省的选择追问，且“皮面手感”无目录依据；建议保留“情况不清楚、没法对比、不凭印象说别家不是”的边界，删去该追问。非阻断编辑意见。",
+            "source_refs": [
+              {
+                "source_id": "writing.rules"
+              },
+              {
+                "source_id": "policy.2"
+              }
+            ]
+          }
+        ]
+      },
+      "original_record": "initial_raw_runs/N48_9b9e0a133eb94b6abbc9a6638836525f.json",
+      "offline_status": "error",
+      "offline_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "cause": "旧pass同时列issues的矛盾继续保留；新一轮复核采用正确polish/issues分工。",
+      "editorial": "新版自然索竞品型号/链接，不再自述“不想说别家的不是”，也没编皮革等级或差价原因。第二、三条额外零钱袋、第一条无内衬不是当前比较的必要内容，建议压缩；第二条“结构和容量上比较明确”偏审计用语。新pass不等于三条编辑完美。",
+      "new_record": "raw_runs/a73f4de986604ab0999816b403087a53.json",
+      "new_messages": [
+        "随行卡夹是2,800元，哑光细纹牛皮、无内衬，里面有4个独立卡位，能放4张标准银行卡大小的卡。另一款的具体参数和用料我这边还没有，您把型号或链接发我，我帮您对照材质和卡位看看。",
+        "这款卡夹2,800元，用的是哑光细纹牛皮，结构和容量上比较明确：4个独立卡位，可放4张标准银行卡大小的卡片，没有单独零钱袋。您把另一款的链接发我，我按实际使用逐项对一下。",
+        "2,800元，材质是哑光细纹牛皮，4个独立卡位、能放4张标准银行卡，没有单独零钱袋。另一款我还不了解，发我型号或商品页，我帮您从日常装卡和材质上比较。"
+      ],
+      "new_initial_record": "raw_runs/a73f4de986604ab0999816b403087a53.json",
+      "new_initial_status": "success",
+      "new_initial_error": null,
+      "new_status": "success",
+      "new_error": null,
+      "new_copy_allowed": true,
+      "new_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "task.scenario",
+          "task.advisor_instruction"
+        ],
+        "current_need": "客户在比较另一家更便宜的卡夹，问本品P03随行卡夹主要不同在哪；缺竞品资料，需说明本品已知事实并自然索取竞品型号或链接以便对照。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "随行卡夹是2,800元，哑光细纹牛皮、无内衬，里面有4个独立卡位，能放4张标准银行卡大小的卡。另一款的具体参数和用料我这边还没有，您把型号或链接发我，我帮您对照材质和卡位看看。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.lining",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.lining",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "task.scenario",
+                "candidate_span_id": "reply_1.full"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "报价2,800元、哑光细纹牛皮、无内衬、4个独立卡位可放4张标准银行卡，均为P03目录已有事实，直接回答“主要有什么不同”的本品一侧，并自然承接“便宜不少”的价格顾虑；删掉即无本品依据。无额外收益或保证。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "当前无竞品资料，按policy.4与写作规则自然说明暂无法比较并索取型号或链接，落到材质和卡位这两个可对照点，属于完成比较任务的必要澄清；未贬低别家、未自述“不想说别家不是”，也不是无关偏好问卷。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "这款卡夹2,800元，用的是哑光细纹牛皮，结构和容量上比较明确：4个独立卡位，可放4张标准银行卡大小的卡片，没有单独零钱袋。您把另一款的链接发我，我按实际使用逐项对一下。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "报价、材质、4个独立卡位放4张标准银行卡均为目录事实；“没有单独零钱袋”是结构事实，客户未提零钱用途，只是简要说清结构，未据此否定用法，也未添加客户没给的分隔需求。与客户问“有什么不同”相关。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "索取另一款链接以便按实际使用对照，是对缺竞品资料的自然澄清，属完成比较任务，无推销或承诺；删掉则比较无从落地。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "2,800元，材质是哑光细纹牛皮，4个独立卡位、能放4张标准银行卡，没有单独零钱袋。另一款我还不了解，发我型号或商品页，我帮您从日常装卡和材质上比较。",
+            "answered": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "task.advisor_instruction",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P03.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.material",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.card_slots",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.capacity",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P03.coin_pocket",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "价格、材质、卡位容量与无零钱袋均为目录已知事实，简短答清本品结构，贴合“便宜不少、有什么不同”的询问；未承诺耐用或差价原因。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "如实说明另一款不了解，索取型号或商品页并从日常装卡和材质对照，符合缺竞品资料时的自然索取；未贬低别家，也未扩大到无关问卷。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "new_review_schema_error": null,
+      "new_validator_errors": [],
+      "new_generation_version": "0.16.1",
+      "new_review_version": "review-1.3.0"
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "version": "product-evidence-0.2.1",
+  "brand_version": "v0.4",
+  "source_file": "BRAND_RULES.md",
+  "authority": "仅整理既有虚构品牌资料；未知不是否定，未列出的背法不是不可使用，客户及顾问聊天不能授权商品属性",
+  "labels": {
+    "price": "人民币含税单件售价",
+    "material": "材质",
+    "lining": "内衬",
+    "dimensions_cm": "商品外尺寸宽×高×厚（约cm，非内尺寸或包口）",
+    "empty_weight_g": "空包/空卡夹自重（约g）",
+    "colors": "目录颜色（非库存）",
+    "carry_modes": "已明确的背法（非排他列表）",
+    "strap_adjustable": "肩带是否可调",
+    "closure": "包口开合方式",
+    "inner_flat_pockets": "内侧平口袋数量",
+    "card_slots": "独立卡位数量",
+    "coin_pocket": "是否有零钱袋",
+    "a4_fit": "是否可放A4资料",
+    "capacity": "已明确容量与用途",
+    "limitations": "使用边界",
+    "origin": "产地",
+    "leather_grade": "皮革等级",
+    "craft": "手工工艺",
+    "resale_value": "保值资料",
+    "stock": "实时库存",
+    "loaded_comfort": "装物后的个人舒适感受",
+    "loaded_weight_g": "装入实际物品后的总重",
+    "inner_dimensions_cm": "商品内尺寸",
+    "opening_dimensions_cm": "包口净尺寸"
+  },
+  "sources": {
+    "P01.row": "| P01 | 日行托特包；¥18,800 | 包身为哑光细纹牛皮；内衬棉布 | 34 × 28 × 12 cm；约750 g | 墨黑、暖棕 | 肩背；通勤带资料；可放A4纸质资料、500 mL水杯、折叠伞等日常物品；内侧有1个平口袋，可单独放钥匙等小物 | 不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水 |",
+    "P02.row": "| P02 | 轻行肩包；¥12,800 | 包身为哑光细纹牛皮；内衬棉布 | 22 × 16 × 7 cm；约420 g | 墨黑、米白 | 可肩背或斜挎，肩带可调节长度，包口用拉链开合；适合外出少带物品，可放普通手机、钥匙、口红等小物 | 放不下A4资料或电脑；普通带壳手机结合已给尺寸判断，接近边缘或特殊形状才另核实；不保证防水 |",
+    "P03.row": "| P03 | 随行卡夹；¥2,800 | 哑光细纹牛皮；无内衬 | 10 × 7.5 × 0.8 cm；约45 g | 墨黑、暖棕 | 有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物 | 无单独零钱袋；不是手机、护照或整叠现金的收纳设计 |",
+    "common.material": "三款均采用哑光细纹牛皮，指表面光泽较低、能看到细小纹理",
+    "common.unknown": "目前没有品牌历史、产地、成本或手工工艺资料可用于解释差价",
+    "common.stock": "初始目录不含实时库存、调货或预留记录",
+    "common.comfort": "不据此保证东西绝不会掉、背着不累、物品一定放得下",
+    "common.origin": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据",
+    "common.empty_weight": "重量为空包或空卡夹的约数",
+    "common.dimension_scope": "内尺寸和包口净尺寸均未提供",
+    "common.services": "是否提供配送、是否免邮及是否支持分期均未提供，状态为未知，不是已确认没有",
+    "common.price_basis": "所有价格均为本项目设定的人民币含税单件售价"
+  },
+  "products": [
+    {
+      "id": "P01",
+      "facts": {
+        "price": {
+          "status": "known",
+          "value": 18800,
+          "text": "18,800元",
+          "source_id": "P01.row",
+          "source_quote": "| P01 | 日行托特包；¥18,800 | 包身为哑光细纹牛皮；内衬棉布 | 34 × 28 × 12 cm；约750 g | 墨黑、暖棕 | 肩背；通勤带资料；可放A4纸质资料、500 mL水杯、折叠伞等日常物品；内侧有1个平口袋，可单独放钥匙等小物 | 不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水 |"
+        },
+        "material": {
+          "status": "known",
+          "value": "哑光细纹牛皮",
+          "text": "包身为哑光细纹牛皮",
+          "source_id": "P01.row",
+          "source_quote": "包身为哑光细纹牛皮"
+        },
+        "lining": {
+          "status": "known",
+          "value": "棉布",
+          "text": "内衬棉布",
+          "source_id": "P01.row",
+          "source_quote": "内衬棉布"
+        },
+        "dimensions_cm": {
+          "status": "known",
+          "value": [
+            34,
+            28,
+            12
+          ],
+          "text": "外尺寸约34 × 28 × 12 cm",
+          "source_id": "P01.row",
+          "source_quote": "34 × 28 × 12 cm"
+        },
+        "empty_weight_g": {
+          "status": "known",
+          "value": 750,
+          "text": "约750 g",
+          "source_id": "P01.row",
+          "source_quote": "约750 g"
+        },
+        "colors": {
+          "status": "known",
+          "value": [
+            "墨黑",
+            "暖棕"
+          ],
+          "text": "墨黑、暖棕",
+          "source_id": "P01.row",
+          "source_quote": "墨黑、暖棕"
+        },
+        "carry_modes": {
+          "status": "known",
+          "value": [
+            "肩背"
+          ],
+          "text": "肩背",
+          "source_id": "P01.row",
+          "source_quote": "肩背"
+        },
+        "strap_adjustable": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P01.row",
+          "source_quote": "| P01 | 日行托特包；¥18,800 | 包身为哑光细纹牛皮；内衬棉布 | 34 × 28 × 12 cm；约750 g | 墨黑、暖棕 | 肩背；通勤带资料；可放A4纸质资料、500 mL水杯、折叠伞等日常物品；内侧有1个平口袋，可单独放钥匙等小物 | 不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水 |"
+        },
+        "closure": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P01.row",
+          "source_quote": "| P01 | 日行托特包；¥18,800 | 包身为哑光细纹牛皮；内衬棉布 | 34 × 28 × 12 cm；约750 g | 墨黑、暖棕 | 肩背；通勤带资料；可放A4纸质资料、500 mL水杯、折叠伞等日常物品；内侧有1个平口袋，可单独放钥匙等小物 | 不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水 |"
+        },
+        "inner_flat_pockets": {
+          "status": "known",
+          "value": 1,
+          "text": "内侧有1个平口袋，可单独放钥匙等小物",
+          "source_id": "P01.row",
+          "source_quote": "内侧有1个平口袋，可单独放钥匙等小物"
+        },
+        "card_slots": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P01.row",
+          "source_quote": "| P01 | 日行托特包；¥18,800 | 包身为哑光细纹牛皮；内衬棉布 | 34 × 28 × 12 cm；约750 g | 墨黑、暖棕 | 肩背；通勤带资料；可放A4纸质资料、500 mL水杯、折叠伞等日常物品；内侧有1个平口袋，可单独放钥匙等小物 | 不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水 |"
+        },
+        "coin_pocket": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P01.row",
+          "source_quote": "| P01 | 日行托特包；¥18,800 | 包身为哑光细纹牛皮；内衬棉布 | 34 × 28 × 12 cm；约750 g | 墨黑、暖棕 | 肩背；通勤带资料；可放A4纸质资料、500 mL水杯、折叠伞等日常物品；内侧有1个平口袋，可单独放钥匙等小物 | 不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水 |"
+        },
+        "a4_fit": {
+          "status": "known",
+          "value": true,
+          "text": "可放A4纸质资料",
+          "source_id": "P01.row",
+          "source_quote": "可放A4纸质资料"
+        },
+        "capacity": {
+          "status": "known",
+          "value": "通勤带资料；A4纸质资料、500 mL水杯、折叠伞",
+          "text": "可放A4纸质资料、500 mL水杯、折叠伞等日常物品",
+          "source_id": "P01.row",
+          "source_quote": "可放A4纸质资料、500 mL水杯、折叠伞等日常物品"
+        },
+        "limitations": {
+          "status": "known",
+          "value": "不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水",
+          "text": "不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水",
+          "source_id": "P01.row",
+          "source_quote": "不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水"
+        },
+        "origin": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "leather_grade": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "craft": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "resale_value": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "stock": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.stock",
+          "source_quote": "初始目录不含实时库存、调货或预留记录"
+        },
+        "loaded_comfort": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.comfort",
+          "source_quote": "不据此保证东西绝不会掉、背着不累、物品一定放得下"
+        },
+        "loaded_weight_g": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，取决于实际携带物品，不能编造总重",
+          "source_id": "common.empty_weight",
+          "source_quote": "重量为空包或空卡夹的约数"
+        },
+        "inner_dimensions_cm": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能用外尺寸代替",
+          "source_id": "common.dimension_scope",
+          "source_quote": "内尺寸和包口净尺寸均未提供"
+        },
+        "opening_dimensions_cm": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能用外尺寸代替",
+          "source_id": "common.dimension_scope",
+          "source_quote": "内尺寸和包口净尺寸均未提供"
+        }
+      },
+      "aliases": [
+        "日行托特包",
+        "日行托特",
+        "托特包",
+        "托特"
+      ]
+    },
+    {
+      "id": "P02",
+      "facts": {
+        "price": {
+          "status": "known",
+          "value": 12800,
+          "text": "12,800元",
+          "source_id": "P02.row",
+          "source_quote": "| P02 | 轻行肩包；¥12,800 | 包身为哑光细纹牛皮；内衬棉布 | 22 × 16 × 7 cm；约420 g | 墨黑、米白 | 可肩背或斜挎，肩带可调节长度，包口用拉链开合；适合外出少带物品，可放普通手机、钥匙、口红等小物 | 放不下A4资料或电脑；普通带壳手机结合已给尺寸判断，接近边缘或特殊形状才另核实；不保证防水 |"
+        },
+        "material": {
+          "status": "known",
+          "value": "哑光细纹牛皮",
+          "text": "包身为哑光细纹牛皮",
+          "source_id": "P02.row",
+          "source_quote": "包身为哑光细纹牛皮"
+        },
+        "lining": {
+          "status": "known",
+          "value": "棉布",
+          "text": "内衬棉布",
+          "source_id": "P02.row",
+          "source_quote": "内衬棉布"
+        },
+        "dimensions_cm": {
+          "status": "known",
+          "value": [
+            22,
+            16,
+            7
+          ],
+          "text": "外尺寸约22 × 16 × 7 cm",
+          "source_id": "P02.row",
+          "source_quote": "22 × 16 × 7 cm"
+        },
+        "empty_weight_g": {
+          "status": "known",
+          "value": 420,
+          "text": "约420 g",
+          "source_id": "P02.row",
+          "source_quote": "约420 g"
+        },
+        "colors": {
+          "status": "known",
+          "value": [
+            "墨黑",
+            "米白"
+          ],
+          "text": "墨黑、米白",
+          "source_id": "P02.row",
+          "source_quote": "墨黑、米白"
+        },
+        "carry_modes": {
+          "status": "known",
+          "value": [
+            "肩背",
+            "斜挎"
+          ],
+          "text": "可肩背或斜挎",
+          "source_id": "P02.row",
+          "source_quote": "可肩背或斜挎"
+        },
+        "strap_adjustable": {
+          "status": "known",
+          "value": true,
+          "text": "肩带可调节长度",
+          "source_id": "P02.row",
+          "source_quote": "肩带可调节长度"
+        },
+        "closure": {
+          "status": "known",
+          "value": "拉链",
+          "text": "包口用拉链开合",
+          "source_id": "P02.row",
+          "source_quote": "包口用拉链开合"
+        },
+        "inner_flat_pockets": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P02.row",
+          "source_quote": "| P02 | 轻行肩包；¥12,800 | 包身为哑光细纹牛皮；内衬棉布 | 22 × 16 × 7 cm；约420 g | 墨黑、米白 | 可肩背或斜挎，肩带可调节长度，包口用拉链开合；适合外出少带物品，可放普通手机、钥匙、口红等小物 | 放不下A4资料或电脑；普通带壳手机结合已给尺寸判断，接近边缘或特殊形状才另核实；不保证防水 |"
+        },
+        "card_slots": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P02.row",
+          "source_quote": "| P02 | 轻行肩包；¥12,800 | 包身为哑光细纹牛皮；内衬棉布 | 22 × 16 × 7 cm；约420 g | 墨黑、米白 | 可肩背或斜挎，肩带可调节长度，包口用拉链开合；适合外出少带物品，可放普通手机、钥匙、口红等小物 | 放不下A4资料或电脑；普通带壳手机结合已给尺寸判断，接近边缘或特殊形状才另核实；不保证防水 |"
+        },
+        "coin_pocket": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P02.row",
+          "source_quote": "| P02 | 轻行肩包；¥12,800 | 包身为哑光细纹牛皮；内衬棉布 | 22 × 16 × 7 cm；约420 g | 墨黑、米白 | 可肩背或斜挎，肩带可调节长度，包口用拉链开合；适合外出少带物品，可放普通手机、钥匙、口红等小物 | 放不下A4资料或电脑；普通带壳手机结合已给尺寸判断，接近边缘或特殊形状才另核实；不保证防水 |"
+        },
+        "a4_fit": {
+          "status": "known",
+          "value": false,
+          "text": "放不下A4资料或电脑",
+          "source_id": "P02.row",
+          "source_quote": "放不下A4资料或电脑"
+        },
+        "capacity": {
+          "status": "known",
+          "value": "普通手机、钥匙、口红等小物",
+          "text": "可放普通手机、钥匙、口红等小物",
+          "source_id": "P02.row",
+          "source_quote": "可放普通手机、钥匙、口红等小物"
+        },
+        "limitations": {
+          "status": "known",
+          "value": "放不下A4资料或电脑；普通带壳手机结合已给尺寸判断，接近边缘或特殊形状才另核实；不保证防水",
+          "text": "放不下A4资料或电脑；普通带壳手机结合已给尺寸判断，接近边缘或特殊形状才另核实；不保证防水",
+          "source_id": "P02.row",
+          "source_quote": "放不下A4资料或电脑；普通带壳手机结合已给尺寸判断，接近边缘或特殊形状才另核实；不保证防水"
+        },
+        "origin": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "leather_grade": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "craft": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "resale_value": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "stock": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.stock",
+          "source_quote": "初始目录不含实时库存、调货或预留记录"
+        },
+        "loaded_comfort": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.comfort",
+          "source_quote": "不据此保证东西绝不会掉、背着不累、物品一定放得下"
+        },
+        "loaded_weight_g": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，取决于实际携带物品，不能编造总重",
+          "source_id": "common.empty_weight",
+          "source_quote": "重量为空包或空卡夹的约数"
+        },
+        "inner_dimensions_cm": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能用外尺寸代替",
+          "source_id": "common.dimension_scope",
+          "source_quote": "内尺寸和包口净尺寸均未提供"
+        },
+        "opening_dimensions_cm": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能用外尺寸代替",
+          "source_id": "common.dimension_scope",
+          "source_quote": "内尺寸和包口净尺寸均未提供"
+        }
+      },
+      "aliases": [
+        "轻行肩包",
+        "肩包"
+      ]
+    },
+    {
+      "id": "P03",
+      "facts": {
+        "price": {
+          "status": "known",
+          "value": 2800,
+          "text": "2,800元",
+          "source_id": "P03.row",
+          "source_quote": "| P03 | 随行卡夹；¥2,800 | 哑光细纹牛皮；无内衬 | 10 × 7.5 × 0.8 cm；约45 g | 墨黑、暖棕 | 有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物 | 无单独零钱袋；不是手机、护照或整叠现金的收纳设计 |"
+        },
+        "material": {
+          "status": "known",
+          "value": "哑光细纹牛皮",
+          "text": "哑光细纹牛皮",
+          "source_id": "P03.row",
+          "source_quote": "哑光细纹牛皮"
+        },
+        "lining": {
+          "status": "known",
+          "value": false,
+          "text": "无内衬",
+          "source_id": "P03.row",
+          "source_quote": "无内衬"
+        },
+        "dimensions_cm": {
+          "status": "known",
+          "value": [
+            10,
+            7.5,
+            0.8
+          ],
+          "text": "外尺寸约10 × 7.5 × 0.8 cm",
+          "source_id": "P03.row",
+          "source_quote": "10 × 7.5 × 0.8 cm"
+        },
+        "empty_weight_g": {
+          "status": "known",
+          "value": 45,
+          "text": "约45 g",
+          "source_id": "P03.row",
+          "source_quote": "约45 g"
+        },
+        "colors": {
+          "status": "known",
+          "value": [
+            "墨黑",
+            "暖棕"
+          ],
+          "text": "墨黑、暖棕",
+          "source_id": "P03.row",
+          "source_quote": "墨黑、暖棕"
+        },
+        "carry_modes": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P03.row",
+          "source_quote": "| P03 | 随行卡夹；¥2,800 | 哑光细纹牛皮；无内衬 | 10 × 7.5 × 0.8 cm；约45 g | 墨黑、暖棕 | 有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物 | 无单独零钱袋；不是手机、护照或整叠现金的收纳设计 |"
+        },
+        "strap_adjustable": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P03.row",
+          "source_quote": "| P03 | 随行卡夹；¥2,800 | 哑光细纹牛皮；无内衬 | 10 × 7.5 × 0.8 cm；约45 g | 墨黑、暖棕 | 有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物 | 无单独零钱袋；不是手机、护照或整叠现金的收纳设计 |"
+        },
+        "closure": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P03.row",
+          "source_quote": "| P03 | 随行卡夹；¥2,800 | 哑光细纹牛皮；无内衬 | 10 × 7.5 × 0.8 cm；约45 g | 墨黑、暖棕 | 有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物 | 无单独零钱袋；不是手机、护照或整叠现金的收纳设计 |"
+        },
+        "inner_flat_pockets": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P03.row",
+          "source_quote": "| P03 | 随行卡夹；¥2,800 | 哑光细纹牛皮；无内衬 | 10 × 7.5 × 0.8 cm；约45 g | 墨黑、暖棕 | 有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物 | 无单独零钱袋；不是手机、护照或整叠现金的收纳设计 |"
+        },
+        "card_slots": {
+          "status": "known",
+          "value": 4,
+          "text": "有4个独立卡位",
+          "source_id": "P03.row",
+          "source_quote": "有4个独立卡位"
+        },
+        "coin_pocket": {
+          "status": "known",
+          "value": false,
+          "text": "无单独零钱袋",
+          "source_id": "P03.row",
+          "source_quote": "无单独零钱袋"
+        },
+        "a4_fit": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "P03.row",
+          "source_quote": "| P03 | 随行卡夹；¥2,800 | 哑光细纹牛皮；无内衬 | 10 × 7.5 × 0.8 cm；约45 g | 墨黑、暖棕 | 有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物 | 无单独零钱袋；不是手机、护照或整叠现金的收纳设计 |"
+        },
+        "capacity": {
+          "status": "known",
+          "value": "4张标准银行卡大小卡片；卡片收纳或小件礼物",
+          "text": "有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物",
+          "source_id": "P03.row",
+          "source_quote": "有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物"
+        },
+        "limitations": {
+          "status": "known",
+          "value": "无单独零钱袋；不是手机、护照或整叠现金的收纳设计",
+          "text": "无单独零钱袋；不是手机、护照或整叠现金的收纳设计",
+          "source_id": "P03.row",
+          "source_quote": "无单独零钱袋；不是手机、护照或整叠现金的收纳设计"
+        },
+        "origin": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "leather_grade": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "craft": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "resale_value": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.origin",
+          "source_quote": "商品目录没有提供产地、皮革等级、全手工工艺、限量身份或保值数据"
+        },
+        "stock": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.stock",
+          "source_quote": "初始目录不含实时库存、调货或预留记录"
+        },
+        "loaded_comfort": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能断言有或没有",
+          "source_id": "common.comfort",
+          "source_quote": "不据此保证东西绝不会掉、背着不累、物品一定放得下"
+        },
+        "loaded_weight_g": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，取决于实际携带物品，不能编造总重",
+          "source_id": "common.empty_weight",
+          "source_quote": "重量为空包或空卡夹的约数"
+        },
+        "inner_dimensions_cm": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能用外尺寸代替",
+          "source_id": "common.dimension_scope",
+          "source_quote": "内尺寸和包口净尺寸均未提供"
+        },
+        "opening_dimensions_cm": {
+          "status": "unknown",
+          "value": null,
+          "text": "未提供，不能用外尺寸代替",
+          "source_id": "common.dimension_scope",
+          "source_quote": "内尺寸和包口净尺寸均未提供"
+        }
+      },
+      "aliases": [
+        "随行卡夹",
+        "卡夹"
+      ]
+    }
+  ],
+  "service_facts": {
+    "shipping": {
+      "status": "unknown",
+      "value": null,
+      "text": "未提供，须顾问向门店核实，不能断言支持或不支持",
+      "source_id": "common.services",
+      "source_quote": "是否提供配送、是否免邮及是否支持分期均未提供，状态为未知，不是已确认没有"
+    },
+    "free_shipping": {
+      "status": "unknown",
+      "value": null,
+      "text": "未提供，须顾问向门店核实，不能断言支持或不支持",
+      "source_id": "common.services",
+      "source_quote": "是否提供配送、是否免邮及是否支持分期均未提供，状态为未知，不是已确认没有"
+    },
+    "installments": {
+      "status": "unknown",
+      "value": null,
+      "text": "未提供，须顾问向门店核实，不能断言支持或不支持",
+      "source_id": "common.services",
+      "source_quote": "是否提供配送、是否免邮及是否支持分期均未提供，状态为未知，不是已确认没有"
+    }
+  }
+}

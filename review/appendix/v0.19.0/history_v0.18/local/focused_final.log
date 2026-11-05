@@ -1,0 +1,219 @@
+test_actual_generation_request_compact_review_and_internal_evidence_full (test_focused_generation.FocusedGenerationTests.test_actual_generation_request_compact_review_and_internal_evidence_full) ... ok
+test_actual_refusal_still_blocks_selling (test_focused_generation.FocusedGenerationTests.test_actual_refusal_still_blocks_selling) ... ok
+test_birthday_without_chat_and_simple_price_need_no_budget (test_focused_generation.FocusedGenerationTests.test_birthday_without_chat_and_simple_price_need_no_budget) ... ok
+test_carry_price_only_does_not_get_other_attributes_or_policy (test_focused_generation.FocusedGenerationTests.test_carry_price_only_does_not_get_other_attributes_or_policy) ... ok
+test_cleaner_keeps_necessary_policy_not_water_care (test_focused_generation.FocusedGenerationTests.test_cleaner_keeps_necessary_policy_not_water_care) ... ok
+test_coin_question_keeps_negative_structural_fact (test_focused_generation.FocusedGenerationTests.test_coin_question_keeps_negative_structural_fact) ... ok
+test_event_content_does_not_receive_signup_time_or_location (test_focused_generation.FocusedGenerationTests.test_event_content_does_not_receive_signup_time_or_location) ... ok
+test_followup_current_task_cannot_be_replaced_by_current_event (test_focused_generation.FocusedGenerationTests.test_followup_current_task_cannot_be_replaced_by_current_event) ... ok
+test_four_card_fact_has_price_capacity_but_no_irrelevant_limit (test_focused_generation.FocusedGenerationTests.test_four_card_fact_has_price_capacity_but_no_irrelevant_limit) ... ok
+test_latest_use_shift_keeps_chat_profile_and_current_recommendation (test_focused_generation.FocusedGenerationTests.test_latest_use_shift_keeps_chat_profile_and_current_recommendation) ... ok
+test_pause_state_requires_source_and_actual_behavior_not_only_labels (test_focused_generation.FocusedGenerationTests.test_pause_state_requires_source_and_actual_behavior_not_only_labels) ... ok
+test_phone_official_reference_not_recalled_or_forced_measurement (test_focused_generation.FocusedGenerationTests.test_phone_official_reference_not_recalled_or_forced_measurement) ... ok
+test_positive_feedback_has_no_care_facts_or_next_step (test_focused_generation.FocusedGenerationTests.test_positive_feedback_has_no_care_facts_or_next_step) ... ok
+test_positive_word_with_real_question_does_not_hide_question (test_focused_generation.FocusedGenerationTests.test_positive_word_with_real_question_does_not_hide_question) ... ok
+test_price_concern_does_not_retrieve_discount (test_focused_generation.FocusedGenerationTests.test_price_concern_does_not_retrieve_discount) ... ok
+test_quotes_roles_times_and_contact_limit_retained (test_focused_generation.FocusedGenerationTests.test_quotes_roles_times_and_contact_limit_retained) ... ok
+test_rephrased_followup_not_case_number (test_focused_generation.FocusedGenerationTests.test_rephrased_followup_not_case_number) ... ok
+test_saved_pause_original_pass_can_deliver_without_regeneration (test_focused_generation.FocusedGenerationTests.test_saved_pause_original_pass_can_deliver_without_regeneration) ... ok
+test_stock_not_given_as_confirmed_and_no_extra_catalog (test_focused_generation.FocusedGenerationTests.test_stock_not_given_as_confirmed_and_no_extra_catalog) ... ok
+test_aftersales_item_reference_and_record_read (test_targeted_16.TargetedSixteenTests.test_aftersales_item_reference_and_record_read) ... ok
+test_comparison_object_and_preference_question (test_targeted_16.TargetedSixteenTests.test_comparison_object_and_preference_question) ... ok
+test_consultation_selection_is_not_purchase (test_targeted_16.TargetedSixteenTests.test_consultation_selection_is_not_purchase) ... ok
+test_customer_clarification_not_advisor_gap (test_targeted_16.TargetedSixteenTests.test_customer_clarification_not_advisor_gap) ... ok
+test_history_color_is_not_new_product_color (test_targeted_16.TargetedSixteenTests.test_history_color_is_not_new_product_color) ... ok
+test_implicit_structure_and_material_do_not_replace_policy (test_targeted_16.TargetedSixteenTests.test_implicit_structure_and_material_do_not_replace_policy) ... ok
+test_mixed_sources_and_real_wrong_authority (test_targeted_16.TargetedSixteenTests.test_mixed_sources_and_real_wrong_authority) ... ok
+test_old_contradictions_are_not_normalized (test_targeted_16.TargetedSixteenTests.test_old_contradictions_are_not_normalized) ... ok
+test_original_pass_and_unreviewed_are_distinct (test_targeted_16.TargetedSixteenTests.test_original_pass_and_unreviewed_are_distinct) ... ok
+test_possession_question_targets_customer_item_not_brand_purchase (test_targeted_16.TargetedSixteenTests.test_possession_question_targets_customer_item_not_brand_purchase) ... ok
+test_revalidation_recomputes_not_backfills (test_targeted_16.TargetedSixteenTests.test_revalidation_recomputes_not_backfills) ... ok
+test_selected_object_and_latest_switch (test_targeted_16.TargetedSixteenTests.test_selected_object_and_latest_switch) ... ok
+test_task_materials_are_shared_hints_not_brand_facts (test_targeted_16.TargetedSixteenTests.test_task_materials_are_shared_hints_not_brand_facts) ... ok
+test_totals_keep_quantity_owner_and_unit_price (test_targeted_16.TargetedSixteenTests.test_totals_keep_quantity_owner_and_unit_price) ... ok
+test_customer_price_reference_does_not_require_brand_price_authorization (test_writing_business.WritingBusinessTests.test_customer_price_reference_does_not_require_brand_price_authorization) ... ok
+test_editorial_protocol_covers_every_exact_sentence_and_resolves_original (test_writing_business.WritingBusinessTests.test_editorial_protocol_covers_every_exact_sentence_and_resolves_original) ... ok
+test_explicit_task_scope_not_scenario_default (test_writing_business.WritingBusinessTests.test_explicit_task_scope_not_scenario_default) ... ok
+test_exterior_is_not_inner_or_opening_and_customer_item_not_bag (test_writing_business.WritingBusinessTests.test_exterior_is_not_inner_or_opening_and_customer_item_not_bag) ... ok
+test_grade_and_price_causation_require_own_evidence (test_writing_business.WritingBusinessTests.test_grade_and_price_causation_require_own_evidence) ... ok
+test_machine_basis_cannot_keep_stale_limits_or_turn_unknown_into_false (test_writing_business.WritingBusinessTests.test_machine_basis_cannot_keep_stale_limits_or_turn_unknown_into_false) ... ok
+test_pass_cannot_hide_remove_or_revision_or_missing (test_writing_business.WritingBusinessTests.test_pass_cannot_hide_remove_or_revision_or_missing) ... ok
+test_past_bag_requires_past_reference_not_preference (test_writing_business.WritingBusinessTests.test_past_bag_requires_past_reference_not_preference) ... ok
+test_phone_with_margin_allowed_no_false_demand_for_store (test_writing_business.WritingBusinessTests.test_phone_with_margin_allowed_no_false_demand_for_store) ... ok
+test_saved_factual_failures_reproduce_with_same_input_and_original_text (test_writing_business.WritingBusinessTests.test_saved_factual_failures_reproduce_with_same_input_and_original_text) ... ok
+test_service_history_internal_missing_not_customer_repeat (test_writing_business.WritingBusinessTests.test_service_history_internal_missing_not_customer_repeat) ... ok
+test_shared_entity_resolution_handles_customer_wallet_and_ordered_weights (test_writing_business.WritingBusinessTests.test_shared_entity_resolution_handles_customer_wallet_and_ordered_weights) ... ok
+test_shipping_installments_unknown_both_positive_and_negative (test_writing_business.WritingBusinessTests.test_shipping_installments_unknown_both_positive_and_negative) ... ok
+test_store_coverage_not_exclusive_channel_policy (test_writing_business.WritingBusinessTests.test_store_coverage_not_exclusive_channel_policy) ... ok
+test_structural_fact_and_known_price_gift_are_valid (test_writing_business.WritingBusinessTests.test_structural_fact_and_known_price_gift_are_valid) ... ok
+test_unknown_cleaner_caution_not_corner_trial_even_after_disclaimer (test_writing_business.WritingBusinessTests.test_unknown_cleaner_caution_not_corner_trial_even_after_disclaimer) ... ok
+test_actions_have_time_and_actor (test_statement_sources.StatementSourceTests.test_actions_have_time_and_actor) ... ok
+test_after_sales_event_task_background_have_their_own_sources (test_statement_sources.StatementSourceTests.test_after_sales_event_task_background_have_their_own_sources) ... ok
+test_answer_topics_and_calendar_are_derived_without_changing_sources (test_statement_sources.StatementSourceTests.test_answer_topics_and_calendar_are_derived_without_changing_sources) ... ok
+test_business_attachment_keeps_origin_without_authorizing_brand_benefits (test_statement_sources.StatementSourceTests.test_business_attachment_keeps_origin_without_authorizing_brand_benefits) ... ok
+test_contact_direction_and_history_are_not_scenario_labels (test_statement_sources.StatementSourceTests.test_contact_direction_and_history_are_not_scenario_labels) ... ok
+test_current_interest_excludes_rejected_product_in_same_message (test_statement_sources.StatementSourceTests.test_current_interest_excludes_rejected_product_in_same_message) ... ok
+test_dimensions_belong_to_personal_item_or_product (test_statement_sources.StatementSourceTests.test_dimensions_belong_to_personal_item_or_product) ... ok
+test_frozen_real_outputs_replayed_without_rewriting (test_statement_sources.StatementSourceTests.test_frozen_real_outputs_replayed_without_rewriting) ... ok
+test_historical_correction_is_not_cross_candidate_repair (test_statement_sources.StatementSourceTests.test_historical_correction_is_not_cross_candidate_repair) ... ok
+test_local_parser_checks_the_actual_request_schema_not_only_base_schema (test_statement_sources.StatementSourceTests.test_local_parser_checks_the_actual_request_schema_not_only_base_schema) ... ok
+test_money_has_owner_and_role_not_last_product (test_statement_sources.StatementSourceTests.test_money_has_owner_and_role_not_last_product) ... ok
+test_new_scope_variants_do_not_mask_later_real_errors (test_statement_sources.StatementSourceTests.test_new_scope_variants_do_not_mask_later_real_errors) ... ok
+test_nonexclusive_discussion_labels_do_not_require_random_regeneration (test_statement_sources.StatementSourceTests.test_nonexclusive_discussion_labels_do_not_require_random_regeneration) ... ok
+test_profile_can_supplement_but_cannot_replace_current_state_anchor (test_statement_sources.StatementSourceTests.test_profile_can_supplement_but_cannot_replace_current_state_anchor) ... ok
+test_question_pending_and_denial_do_not_authorize_properties (test_statement_sources.StatementSourceTests.test_question_pending_and_denial_do_not_authorize_properties) ... ok
+test_real_round1_false_positive_variants_have_general_regressions (test_statement_sources.StatementSourceTests.test_real_round1_false_positive_variants_have_general_regressions) ... ok
+test_records_and_actions_share_question_and_attribution_scope (test_statement_sources.StatementSourceTests.test_records_and_actions_share_question_and_attribution_scope) ... ok
+test_review_rejects_ellipses_fake_fields_and_false_completion_reason (test_statement_sources.StatementSourceTests.test_review_rejects_ellipses_fake_fields_and_false_completion_reason) ... ok
+test_round2_originals_replay_with_recomputed_subject_scope (test_statement_sources.StatementSourceTests.test_round2_originals_replay_with_recomputed_subject_scope) ... ok
+test_round3_denied_offers_and_existential_constraints_are_not_facts (test_statement_sources.StatementSourceTests.test_round3_denied_offers_and_existential_constraints_are_not_facts) ... ok
+test_round3_unprovided_reservation_record_is_not_proven_absent (test_statement_sources.StatementSourceTests.test_round3_unprovided_reservation_record_is_not_proven_absent) ... ok
+test_service_state_overlap_keeps_refusal_and_purchase_checks (test_statement_sources.StatementSourceTests.test_service_state_overlap_keeps_refusal_and_purchase_checks) ... ok
+test_source_v3_resolves_ids_without_accepting_model_rewritten_quote (test_statement_sources.StatementSourceTests.test_source_v3_resolves_ids_without_accepting_model_rewritten_quote) ... ok
+test_still_is_not_a_question_marker (test_statement_sources.StatementSourceTests.test_still_is_not_a_question_marker) ... ok
+test_strict_generation_does_not_accept_old_array_or_trim (test_statement_sources.StatementSourceTests.test_strict_generation_does_not_accept_old_array_or_trim) ... ok
+test_unknown_purchase_intent_is_not_a_sourced_pause (test_statement_sources.StatementSourceTests.test_unknown_purchase_intent_is_not_a_sourced_pause) ... ok
+test_unknown_records_are_not_absent_records (test_statement_sources.StatementSourceTests.test_unknown_records_are_not_absent_records) ... ok
+test_waterproof_topic_and_promised_property_are_different (test_statement_sources.StatementSourceTests.test_waterproof_topic_and_promised_property_are_different) ... ok
+test_actual_wechat_nonreceipt_or_unintelligible_voice_has_business_evidence (test_input_responsibility.InputResponsibilityTests.test_actual_wechat_nonreceipt_or_unintelligible_voice_has_business_evidence) ... ok
+test_advisor_and_customer_contracts_cannot_be_mixed (test_input_responsibility.InputResponsibilityTests.test_advisor_and_customer_contracts_cannot_be_mixed) ... ok
+test_available_tasks_do_not_need_all_profile_fields (test_input_responsibility.InputResponsibilityTests.test_available_tasks_do_not_need_all_profile_fields) ... ok
+test_damage_report_is_not_an_authorized_quality_diagnosis (test_input_responsibility.InputResponsibilityTests.test_damage_report_is_not_an_authorized_quality_diagnosis) ... ok
+test_direct_shared_backend_blocks_original_before_model (test_input_responsibility.InputResponsibilityTests.test_direct_shared_backend_blocks_original_before_model) ... ok
+test_generator_ready_and_reviewer_pass_do_not_override_absent_body (test_input_responsibility.InputResponsibilityTests.test_generator_ready_and_reviewer_pass_do_not_override_absent_body) ... ok
+test_irrelevant_voice_does_not_block_price_but_latest_unknown_voice_does (test_input_responsibility.InputResponsibilityTests.test_irrelevant_voice_does_not_block_price_but_latest_unknown_voice_does) ... ok
+test_main_recommendation_survives_excluded_comparison_but_explicit_subject_wins (test_input_responsibility.InputResponsibilityTests.test_main_recommendation_survives_excluded_comparison_but_explicit_subject_wins) ... ok
+test_missing_event_material_is_not_a_known_unset_business_status (test_input_responsibility.InputResponsibilityTests.test_missing_event_material_is_not_a_known_unset_business_status) ... ok
+test_optional_model_gap_is_not_turned_into_a_mandatory_advisor_form (test_input_responsibility.InputResponsibilityTests.test_optional_model_gap_is_not_turned_into_a_mandatory_advisor_form) ... ok
+test_original_input_requires_advisor_and_original_pass_cannot_authorize_resend (test_input_responsibility.InputResponsibilityTests.test_original_input_requires_advisor_and_original_pass_cannot_authorize_resend) ... ok
+test_real_customer_compatibility_gap_can_be_clarified_without_budget (test_input_responsibility.InputResponsibilityTests.test_real_customer_compatibility_gap_can_be_clarified_without_budget) ... ok
+test_saved_aftersales_review_passes_without_turning_damage_into_closure (test_input_responsibility.InputResponsibilityTests.test_saved_aftersales_review_passes_without_turning_damage_into_closure) ... ok
+test_saved_natural_language_preferences_are_reused_without_reentry (test_input_responsibility.InputResponsibilityTests.test_saved_natural_language_preferences_are_reused_without_reentry) ... ok
+test_selected_context_restoration_is_explicit_not_name_matching (test_input_responsibility.InputResponsibilityTests.test_selected_context_restoration_is_explicit_not_name_matching) ... ok
+test_selected_unconfirmed_screenshots_and_key_ocr_gap_stay_internal (test_input_responsibility.InputResponsibilityTests.test_selected_unconfirmed_screenshots_and_key_ocr_gap_stay_internal) ... ok
+test_simple_quote_and_existing_budget_cannot_trigger_reasking_budget (test_input_responsibility.InputResponsibilityTests.test_simple_quote_and_existing_budget_cannot_trigger_reasking_budget) ... ok
+test_supplied_body_uses_existing_uses_and_budget_without_duplicate_form (test_input_responsibility.InputResponsibilityTests.test_supplied_body_uses_existing_uses_and_budget_without_duplicate_form) ... ok
+test_typed_voice_placeholder_is_not_customer_speech (test_input_responsibility.InputResponsibilityTests.test_typed_voice_placeholder_is_not_customer_speech) ... ok
+test_current_saved_profile_drives_understanding_and_generation_without_reentry (test_signoff_readiness.SignoffReadinessAPITests.test_current_saved_profile_drives_understanding_and_generation_without_reentry) ... ERROR
+test_missing_reference_cannot_become_deliverable_through_actual_http_api (test_signoff_readiness.SignoffReadinessAPITests.test_missing_reference_cannot_become_deliverable_through_actual_http_api) ... ERROR
+test_actual_advisor_current_event_and_gap_types_remain_available (test_signoff_readiness.SignoffReadinessTests.test_actual_advisor_current_event_and_gap_types_remain_available) ... ok
+test_birthday_simple_quote_capacity_and_necessary_dimensions_still_work (test_signoff_readiness.SignoffReadinessTests.test_birthday_simple_quote_capacity_and_necessary_dimensions_still_work) ... ok
+test_forged_ready_and_wrong_pass_cannot_bypass_shared_delivery_checks (test_signoff_readiness.SignoffReadinessTests.test_forged_ready_and_wrong_pass_cannot_bypass_shared_delivery_checks) ... ok
+test_old_conditional_or_uncertain_gap_cannot_authorize_current_resend (test_signoff_readiness.SignoffReadinessTests.test_old_conditional_or_uncertain_gap_cannot_authorize_current_resend) ... ok
+test_reference_markers_without_content_stop_before_generator (test_signoff_readiness.SignoffReadinessTests.test_reference_markers_without_content_stop_before_generator) ... ok
+test_reported_first_person_does_not_belong_to_advisor (test_signoff_readiness.SignoffReadinessTests.test_reported_first_person_does_not_belong_to_advisor) ... ok
+test_saved_preferences_complete_shared_pipeline_with_local_generation_and_review (test_signoff_readiness.SignoffReadinessTests.test_saved_preferences_complete_shared_pipeline_with_local_generation_and_review) ... ok
+test_saved_preferences_do_not_replace_explicit_missing_current_chat (test_signoff_readiness.SignoffReadinessTests.test_saved_preferences_do_not_replace_explicit_missing_current_chat) ... ok
+test_saved_profile_participates_in_readiness_and_reaches_generator (test_signoff_readiness.SignoffReadinessTests.test_saved_profile_participates_in_readiness_and_reaches_generator) ... ERROR
+test_substantive_summary_can_replace_missing_chat_without_reentry (test_signoff_readiness.SignoffReadinessTests.test_substantive_summary_can_replace_missing_chat_without_reentry) ... ok
+test_advisor_question_is_not_a_new_customer_inquiry (test_task_preflight.TaskPreflightTests.test_advisor_question_is_not_a_new_customer_inquiry) ... ok
+test_all_current_business_cases_enter_actual_pipeline_without_changed_inputs (test_task_preflight.TaskPreflightTests.test_all_current_business_cases_enter_actual_pipeline_without_changed_inputs) ... ok
+test_opt_out_and_old_or_quoted_question_still_do_not_authorize_contact (test_task_preflight.TaskPreflightTests.test_opt_out_and_old_or_quoted_question_still_do_not_authorize_contact) ... ok
+test_unknown_vocabulary_in_specific_summary_is_still_usable (test_task_preflight.TaskPreflightTests.test_unknown_vocabulary_in_specific_summary_is_still_usable) ... ok
+test_unparsed_background_is_not_missing_background (test_task_preflight.TaskPreflightTests.test_unparsed_background_is_not_missing_background) ... ok
+test_constant_does_not_repair_false_facts_or_references (test_final_handoff.FinalHandoffTests.test_constant_does_not_repair_false_facts_or_references) ... ok
+test_only_requested_constant_can_be_restored (test_final_handoff.FinalHandoffTests.test_only_requested_constant_can_be_restored) ... ok
+test_protocol_extra_missing_structure_and_wrong_version_reject (test_final_handoff.FinalHandoffTests.test_protocol_extra_missing_structure_and_wrong_version_reject) ... ok
+test_transport_keeps_original_and_marks_native_mismatch (test_final_handoff.FinalHandoffTests.test_transport_keeps_original_and_marks_native_mismatch) ... ok
+test_old_review_is_not_silently_reclassified_or_overwritten (test_formal_v2_fixes.FormalV2FixTests.test_old_review_is_not_silently_reclassified_or_overwritten) ... ok
+test_rounded_dimensions_keep_each_precision_and_unit_when_sorted (test_formal_v2_fixes.FormalV2FixTests.test_rounded_dimensions_keep_each_precision_and_unit_when_sorted) ... ok
+test_saved_n10_allows_polish_without_editing_original_candidates (test_formal_v2_fixes.FormalV2FixTests.test_saved_n10_allows_polish_without_editing_original_candidates) ... ok
+test_wrong_dimensions_and_price_do_not_gain_polish_bypass (test_formal_v2_fixes.FormalV2FixTests.test_wrong_dimensions_and_price_do_not_gain_polish_bypass) ... ok
+test_active_demo_has_normal_birthday_and_model_query (test_business_v2.BusinessV2Tests.test_active_demo_has_normal_birthday_and_model_query) ... ok
+test_bulky_case_needs_specific_case_fact_not_measure_known_phone_again (test_business_v2.BusinessV2Tests.test_bulky_case_needs_specific_case_fact_not_measure_known_phone_again) ... ok
+test_correct_phone_bag_and_daily_fit_are_allowed_but_false_specs_block (test_business_v2.BusinessV2Tests.test_correct_phone_bag_and_daily_fit_are_allowed_but_false_specs_block) ... ok
+test_current50_are_new_business_inputs_with_separate_checks (test_business_v2.BusinessV2Tests.test_current50_are_new_business_inputs_with_separate_checks) ... ok
+test_generation_and_review_receive_identical_reference_and_source (test_business_v2.BusinessV2Tests.test_generation_and_review_receive_identical_reference_and_source) ... ERROR
+test_gift_background_does_not_turn_price_capacity_into_new_recommendation (test_business_v2.BusinessV2Tests.test_gift_background_does_not_turn_price_capacity_into_new_recommendation) ... ok
+test_official_specs_and_current_case_are_distinct_from_old_example (test_business_v2.BusinessV2Tests.test_official_specs_and_current_case_are_distinct_from_old_example) ... ok
+test_phone_query_uses_records_when_relevant_not_for_birthday (test_business_v2.BusinessV2Tests.test_phone_query_uses_records_when_relevant_not_for_birthday) ... ok
+test_source_edit_cannot_silently_change_phone_spec (test_business_v2.BusinessV2Tests.test_source_edit_cannot_silently_change_phone_spec) ... ok
+test_unrecorded_model_has_no_invented_dimensions_or_query_success (test_business_v2.BusinessV2Tests.test_unrecorded_model_has_no_invented_dimensions_or_query_success) ... ok
+test_customer_words_and_arbitrary_business_material_do_not_gain_authority (test_aftersales_scope.AftersalesScopeTests.test_customer_words_and_arbitrary_business_material_do_not_gain_authority) ... ok
+test_linked_purchase_order_and_aftersales_case_keep_their_own_identifiers (test_aftersales_scope.AftersalesScopeTests.test_linked_purchase_order_and_aftersales_case_keep_their_own_identifiers) ... ok
+test_original_input_messages_pass_and_references_survive_complete_revalidation (test_aftersales_scope.AftersalesScopeTests.test_original_input_messages_pass_and_references_survive_complete_revalidation) ... ok
+test_other_customer_product_and_order_cannot_authorize_current_case (test_aftersales_scope.AftersalesScopeTests.test_other_customer_product_and_order_cannot_authorize_current_case) ... ok
+test_post_review_rejects_wrong_amount_period_and_started_state_even_with_pass (test_aftersales_scope.AftersalesScopeTests.test_post_review_rejects_wrong_amount_period_and_started_state_even_with_pass) ... ok
+test_post_review_requires_actual_case_source_not_generic_policy (test_aftersales_scope.AftersalesScopeTests.test_post_review_requires_actual_case_source_not_generic_policy) ... ok
+test_selected_supplement_preserves_owner_and_order_binding (test_aftersales_scope.AftersalesScopeTests.test_selected_supplement_preserves_owner_and_order_binding) ... ok
+test_specific_evaluation_not_required_for_generic_policy_explanation (test_aftersales_scope.AftersalesScopeTests.test_specific_evaluation_not_required_for_generic_policy_explanation) ... ok
+test_contact_policy_blocks_before_model_request (test_workspace.WorkspaceTests.test_contact_policy_blocks_before_model_request) ... ok
+test_customer_preferences_share_but_budget_and_product_refusal_do_not (test_workspace.WorkspaceTests.test_customer_preferences_share_but_budget_and_product_refusal_do_not) ... ok
+test_database_failure_is_not_acknowledged_and_transaction_rolls_back (test_workspace.WorkspaceTests.test_database_failure_is_not_acknowledged_and_transaction_rolls_back) ... ok
+test_draft_all_fields_restore_after_database_reopen (test_workspace.WorkspaceTests.test_draft_all_fields_restore_after_database_reopen) ... ok
+test_generation_context_reads_only_injected_workspace_files (test_workspace.WorkspaceTests.test_generation_context_reads_only_injected_workspace_files) ... ok
+test_last_valid_result_survives_failure_and_new_unsubmitted_draft (test_workspace.WorkspaceTests.test_last_valid_result_survives_failure_and_new_unsubmitted_draft) ... ok
+test_lost_ack_after_another_write_requires_comparison (test_workspace.WorkspaceTests.test_lost_ack_after_another_write_requires_comparison) ... ok
+test_lost_ack_same_mutation_does_not_duplicate_or_overwrite (test_workspace.WorkspaceTests.test_lost_ack_same_mutation_does_not_duplicate_or_overwrite) ... ok
+test_marketing_opt_out_is_sticky_across_conversations (test_workspace.WorkspaceTests.test_marketing_opt_out_is_sticky_across_conversations) ... ok
+test_opt_out_clear_requires_explicit_source_and_keeps_audit (test_workspace.WorkspaceTests.test_opt_out_clear_requires_explicit_source_and_keeps_audit) ... ok
+test_opt_out_needs_customer_body_not_quote_advisor_or_voice (test_workspace.WorkspaceTests.test_opt_out_needs_customer_body_not_quote_advisor_or_voice) ... ok
+test_same_name_and_advisor_switch_are_separate (test_workspace.WorkspaceTests.test_same_name_and_advisor_switch_are_separate) ... ok
+test_stale_tab_is_rejected_and_both_checkpoint_versions_kept (test_workspace.WorkspaceTests.test_stale_tab_is_rejected_and_both_checkpoint_versions_kept) ... ok
+test_unowned_asset_reference_cannot_be_saved_under_another_customer (test_workspace.WorkspaceTests.test_unowned_asset_reference_cannot_be_saved_under_another_customer) ... ok
+test_unowned_old_records_need_explicit_claim_and_files_stay_unchanged (test_workspace.WorkspaceTests.test_unowned_old_records_need_explicit_claim_and_files_stay_unchanged) ... ok
+test_future_offer_is_not_a_completed_action_but_completed_assertion_still_needs_evidence (test_writing_rules.WritingRulesTests.test_future_offer_is_not_a_completed_action_but_completed_assertion_still_needs_evidence) ... ok
+test_no_comfort_guarantee_is_different_from_mandatory_disclaimer (test_writing_rules.WritingRulesTests.test_no_comfort_guarantee_is_different_from_mandatory_disclaimer) ... ok
+test_old_factually_accepted_group_is_flagged_for_shared_destination_and_audit_tone (test_writing_rules.WritingRulesTests.test_old_factually_accepted_group_is_flagged_for_shared_destination_and_audit_tone) ... ok
+test_real_defensive_attempt_and_speculative_stock_review_are_preserved_as_problems (test_writing_rules.WritingRulesTests.test_real_defensive_attempt_and_speculative_stock_review_are_preserved_as_problems) ... ok
+test_review_cannot_call_existing_750_missing_or_mix_pass_with_blocking_issues (test_writing_rules.WritingRulesTests.test_review_cannot_call_existing_750_missing_or_mix_pass_with_blocking_issues) ... ok
+test_reviewer_cannot_demand_try_on_after_a_complete_short_answer (test_writing_rules.WritingRulesTests.test_reviewer_cannot_demand_try_on_after_a_complete_short_answer) ... ok
+test_shared_rules_replace_accumulated_defensive_instructions (test_writing_rules.WritingRulesTests.test_shared_rules_replace_accumulated_defensive_instructions) ... ok
+test_short_known_answer_without_try_on_or_disclaimer_is_complete (test_writing_rules.WritingRulesTests.test_short_known_answer_without_try_on_or_disclaimer_is_complete) ... ok
+
+======================================================================
+ERROR: test_current_saved_profile_drives_understanding_and_generation_without_reentry (test_signoff_readiness.SignoffReadinessAPITests.test_current_saved_profile_drives_understanding_and_generation_without_reentry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tonylyu/Documents/ChatGPT/artefact笔试/tests/test_signoff_readiness.py", line 137, in setUp
+    self.fixture.setUp(self)
+  File "/Users/tonylyu/Documents/ChatGPT/artefact笔试/tests/test_workspace_api.py", line 37, in setUp
+    self.server = ThreadingHTTPServer(('127.0.0.1',0),app.Handler)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/socketserver.py", line 473, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 1] Operation not permitted
+
+======================================================================
+ERROR: test_missing_reference_cannot_become_deliverable_through_actual_http_api (test_signoff_readiness.SignoffReadinessAPITests.test_missing_reference_cannot_become_deliverable_through_actual_http_api)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tonylyu/Documents/ChatGPT/artefact笔试/tests/test_signoff_readiness.py", line 137, in setUp
+    self.fixture.setUp(self)
+  File "/Users/tonylyu/Documents/ChatGPT/artefact笔试/tests/test_workspace_api.py", line 37, in setUp
+    self.server = ThreadingHTTPServer(('127.0.0.1',0),app.Handler)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/socketserver.py", line 473, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 1] Operation not permitted
+
+======================================================================
+ERROR: test_saved_profile_participates_in_readiness_and_reaches_generator (test_signoff_readiness.SignoffReadinessTests.test_saved_profile_participates_in_readiness_and_reaches_generator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tonylyu/Documents/ChatGPT/artefact笔试/tests/test_signoff_readiness.py", line 109, in test_saved_profile_participates_in_readiness_and_reaches_generator
+    self.assertEqual(received[0]['customer_profile']['preferences'],self.profile['preferences'])
+                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'customer_profile'
+
+======================================================================
+ERROR: test_generation_and_review_receive_identical_reference_and_source (test_business_v2.BusinessV2Tests.test_generation_and_review_receive_identical_reference_and_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/tonylyu/Documents/ChatGPT/artefact笔试/tests/test_business_v2.py", line 103, in test_generation_and_review_receive_identical_reference_and_source
+    self.assertEqual(seen[0]['confirmed_context']['device_reference'],seen[1]['confirmed_context']['device_reference'])
+                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'confirmed_context'
+
+----------------------------------------------------------------------
+Ran 162 tests in 1.335s
+
+FAILED (errors=4)

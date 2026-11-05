@@ -1,0 +1,20 @@
+{
+  "app_version": "0.20.0",
+  "n16_current_valid": true,
+  "n16_copy_clicked_toast": true,
+  "n16_after_completed_switch_and_reload_copy_buttons": 3,
+  "old_failed_records_in_history": true,
+  "j01_format_failure_copy_buttons": 0,
+  "original_selection": {
+    "conversation": "83be6b7ba20d41b1943269c2eeed24ac",
+    "customer": "c19289b052d2449481bcd42da33c6842"
+  },
+  "restored_selection": {
+    "conversation": "83be6b7ba20d41b1943269c2eeed24ac",
+    "customer": "c19289b052d2449481bcd42da33c6842"
+  },
+  "restored_original": true,
+  "initial_immediate_reload_during_switch_restored_previous_selection": true,
+  "ui_code_unchanged": true,
+  "new_model_calls": 0
+}

@@ -1,0 +1,29 @@
+{
+  "viewer_app_version": "0.21.1",
+  "clean_source_url": "http://127.0.0.1:18880/",
+  "first_open_no_selected_customer": true,
+  "unconfigured_notice_seen": true,
+  "selected_saved_sessions": [
+    "N16",
+    "N21",
+    "J01",
+    "J02"
+  ],
+  "chat_background_and_three_replies_restored": true,
+  "j02_refresh_restored": true,
+  "copy_click_success_notice": true,
+  "new_native_clipboard_read": false,
+  "user_prior_copy_paste_confirmation": true,
+  "video_playback": {
+    "currentTime": 13.648,
+    "duration": 30,
+    "error": null,
+    "paused": false
+  },
+  "normal_customer_inputs_not_touched": true,
+  "disposable_server_stopped": true,
+  "normal_8765_kept_running": true,
+  "review_url": "http://127.0.0.1:8784/",
+  "real_ai_development_screenshots": 0,
+  "new_model_requests": 0
+}

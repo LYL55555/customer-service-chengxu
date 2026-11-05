@@ -1,0 +1,15 @@
+{
+  "attempt": "direct opening of index.html extracted from final archive using file URL in in-app browser",
+  "browser_result": "blocked by URL protocol policy; only http/https allowed",
+  "direct_offline_browser_open_tested": false,
+  "no_policy_workaround_attempted": true,
+  "already_passed_safe_checks": [
+    "actual ZIP extraction",
+    "all relative references resolve within extracted folder",
+    "all attachment hashes match",
+    "same material content opened in existing localhost review",
+    "source starts cleanly with missing-key notice"
+  ],
+  "required_submission_gap": "real AI development chat screenshots remain missing",
+  "new_model_requests": 0
+}

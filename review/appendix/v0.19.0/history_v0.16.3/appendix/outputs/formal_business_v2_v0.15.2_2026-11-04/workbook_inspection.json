@@ -1,0 +1,6 @@
+{
+  "inspection": "{\"kind\":\"table\",\"sheet\":\"初始重验与分项评读\",\"address\":\"A31:J31\",\"rows\":1,\"cols\":10,\"values\":[[\"N30\",\"error\",\"success\",\"pass\",\"未发现另列事实/任务问题；非全语义证明\",\"候选1：“您之前还没确认，所以”略像归责，可弱化；候选2：“是否维修您再考虑”可按关系语气简化，不必阻断；候选3：“您决定要修的话跟我说一声”是合理协助，可保留\",\"无另列误判\",\"初始0.15.1售后来源误拦，0.15.2用同三条、同pass及引用离线通过；0新增模型请求\",\"生成app0.15.1 / G1.3.0；复核review-1.2.1；统一校验app0.15.3 / aftersales1.0.1\",\"materials.related_info；policy.5\"]]}",
+  "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "rows": 50,
+  "columns": 8
+}

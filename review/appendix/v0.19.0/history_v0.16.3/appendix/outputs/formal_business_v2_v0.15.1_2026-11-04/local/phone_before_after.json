@@ -1,0 +1,52 @@
+{
+  "kind": "archived-code-local-replay-not-model-output",
+  "real_model_calls": 0,
+  "cases": [
+    {
+      "original": "iPhone 15 Pro Max机身约16×7.7×0.8厘米。",
+      "before": [],
+      "after": []
+    },
+    {
+      "original": "iPhone 15 Pro Max机身约16×7.7×1.2厘米。",
+      "before": [],
+      "after": [
+        {
+          "code": "wrong_device_dimensions",
+          "candidate_index": 0,
+          "evidence": "16×7.7×1.2厘米",
+          "source_id": "device.apple.iphone_15_pro_max",
+          "expected_mm": {
+            "height": 159.9,
+            "width": 76.7,
+            "depth": 8.25
+          },
+          "message": "手机数字与同一份苹果官方裸机规格不符，不能使用旧示意数字或模型记忆。"
+        }
+      ]
+    },
+    {
+      "original": "iPhone 15 Pro Max机身约16×7.7×1.3厘米。",
+      "before": [],
+      "after": [
+        {
+          "code": "wrong_device_dimensions",
+          "candidate_index": 0,
+          "evidence": "16×7.7×1.3厘米",
+          "source_id": "device.apple.iphone_15_pro_max",
+          "expected_mm": {
+            "height": 159.9,
+            "width": 76.7,
+            "depth": 8.25
+          },
+          "message": "手机数字与同一份苹果官方裸机规格不符，不能使用旧示意数字或模型记忆。"
+        }
+      ]
+    },
+    {
+      "original": "iPhone 15 Pro Max机身约7.7厘米×0.8厘米×16厘米。",
+      "before": [],
+      "after": []
+    }
+  ]
+}

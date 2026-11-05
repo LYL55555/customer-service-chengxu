@@ -1,0 +1,71 @@
+F02 success  messages 3 completed 1 requests 4
+F01 success  messages 3 completed 2 requests 5
+F03 success  messages 3 completed 3 requests 8
+F04 success  messages 3 completed 4 requests 9
+F05 success  messages 3 completed 5 requests 12
+F06 success  messages 3 completed 6 requests 13
+F07 success  messages 3 completed 7 requests 16
+F08 success  messages 3 completed 8 requests 17
+F09 success  messages 3 completed 9 requests 20
+F10 success  messages 3 completed 10 requests 21
+F12 error invalid_output messages 0 completed 11 requests 23
+F13 error policy_check messages 3 completed 12 requests 24
+F11 success  messages 3 completed 13 requests 24
+F14 success  messages 3 completed 14 requests 28
+F15 success  messages 3 completed 15 requests 29
+F16 success  messages 3 completed 16 requests 32
+F18 error policy_check messages 3 completed 17 requests 33
+F17 success  messages 3 completed 18 requests 34
+F19 success  messages 3 completed 19 requests 37
+F20 error invalid_review messages 3 completed 20 requests 38
+F21 success  messages 3 completed 21 requests 41
+F22 success  messages 3 completed 22 requests 42
+F23 success  messages 3 completed 23 requests 45
+F24 success  messages 3 completed 24 requests 46
+F25 error policy_check messages 3 completed 25 requests 47
+F26 success  messages 3 completed 26 requests 50
+F27 success  messages 3 completed 27 requests 51
+F28 error invalid_review messages 3 completed 28 requests 54
+F29 error quality_review messages 3 completed 29 requests 55
+F30 error invalid_review messages 3 completed 30 requests 58
+F31 error quality_review messages 3 completed 31 requests 59
+F32 error quality_review messages 3 completed 32 requests 62
+F33 error quality_review messages 3 completed 33 requests 63
+F34 success  messages 3 completed 34 requests 66
+F35 error invalid_review messages 3 completed 35 requests 68
+F36 success  messages 3 completed 36 requests 69
+F37 error invalid_review messages 3 completed 37 requests 72
+F38 success  messages 3 completed 38 requests 73
+F39 success  messages 3 completed 39 requests 76
+F40 success  messages 3 completed 40 requests 77
+F41 success  messages 3 completed 41 requests 80
+F42 success  messages 3 completed 42 requests 81
+F43 error invalid_review messages 3 completed 43 requests 84
+F44 success  messages 3 completed 44 requests 85
+F45 success  messages 3 completed 45 requests 88
+F46 success  messages 3 completed 46 requests 89
+F47 error policy_check messages 3 completed 47 requests 90
+F48 success  messages 3 completed 48 requests 93
+F49 success  messages 3 completed 49 requests 94
+F50 error provider_error messages 0 completed 50 requests 94
+{
+  "kind": "seen-original50-rerun-single-frozen-version",
+  "app_version": "0.13.6",
+  "freeze_sha256": "4dcf11b95ebbf071ed4d483337a8964eb17abff7f9cc6378e908ea9f53fbe299",
+  "original_case_sha256": "1f1f37d70a1102d45eedeacc834f3539e223c652866ee0035560a5817358a243",
+  "started_at": "2026-11-04T12:17:34.140608+00:00",
+  "requested_model": "deepseek-flash",
+  "automatic_retries": 0,
+  "max_parallel_cases": 2,
+  "actual_requests": 94,
+  "reported_total_tokens": 2167942,
+  "requests_with_usage": 93,
+  "requests_without_usage": 1,
+  "finished_at": "2026-11-04T12:20:28.188851+00:00",
+  "completed": true,
+  "source_hashes_unchanged": true,
+  "status_counts": {
+    "success": 34,
+    "error": 16
+  }
+}

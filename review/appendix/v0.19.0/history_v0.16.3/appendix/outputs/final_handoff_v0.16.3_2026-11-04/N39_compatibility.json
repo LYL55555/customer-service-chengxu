@@ -1,0 +1,22 @@
+{
+  "case_id": "N39",
+  "record": "raw_runs/dce91fbf10054208a37df1d61af3341b.json",
+  "status": "success",
+  "copy_allowed": true,
+  "new_model_requests": 0,
+  "compatibility": {
+    "version": "task-delivery-0.10.0",
+    "action": "restore_requested_protocol_constant",
+    "path": "$.source_protocol",
+    "original_field_present": false,
+    "value": "sources-v4",
+    "requested_enum": [
+      "sources-v4"
+    ],
+    "original_schema_error": "$ fields",
+    "provider_native_schema_match": false,
+    "candidate_and_review_content_unchanged": true
+  },
+  "raw_response_unchanged": true,
+  "original_messages_unchanged": true
+}

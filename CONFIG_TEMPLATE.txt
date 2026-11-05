@@ -1,0 +1,6 @@
+MODEL_BASE_URL=https://api.deepseek.com
+MODEL_NAME=deepseek-flash
+MODEL_API_KEY=
+REVIEW_MODEL_NAME=deepseek-flash
+MODEL_TIMEOUT_SECONDS=60
+PORT=8765

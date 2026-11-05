@@ -1,0 +1,7 @@
+{
+  "status": "stopped",
+  "reason": "J02 Pro诊断分支仅供内容评读，不能选择为失败历史回放源；预期error而离线文字重验success，显式断言停止",
+  "fix": "回放只选择initial_record原始结构失败；不变更原文、原复核或校验器",
+  "new_model_requests": 0,
+  "production_changes": false
+}

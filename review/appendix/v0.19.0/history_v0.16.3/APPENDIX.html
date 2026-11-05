@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>附录证据</title><style>body{margin:0;background:#f8f6f1;color:#24352e;font:17px/1.75 system-ui,-apple-system,"PingFang SC",sans-serif}main{max-width:1080px;margin:auto;padding:30px 30px 65px}nav{padding:12px 0;border-bottom:1px solid #ccc}a{color:#245f4a}h1{font-size:32px;line-height:1.3}h2{margin-top:36px;font-size:24px}h3{font-size:19px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #ccc;padding:10px;vertical-align:top;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;background:#efeee8;padding:14px}img,video{max-width:100%;height:auto}.reply{padding:14px 18px;margin:12px 0;border:1px solid #d0d5cd;background:white;white-space:pre-wrap}.note{background:#e7eddf;padding:16px}summary{cursor:pointer;padding:8px 0}blockquote{margin:10px 0;padding:6px 20px;border-left:3px solid #84927a}code{overflow-wrap:anywhere}small{color:#56675a}.muted{color:#56675a}</style><main><nav><a href="index.html">当前评审入口</a> · 澄序 CHENGXU · 0.16.3</nav><h1>附录：需要追溯时再看</h1>
+<ul>
+<li><a href="appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/OUTPUTS.json">原业务50全部输入/原文/分项判断JSON</a></li>
+<li><a href="appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/UNIFIED_REVALIDATION.json">原业务50统一重验及阶段版本</a></li>
+<li><a href="appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/ALL_REQUESTS.json">94次原请求ledger</a></li>
+<li><a href="appendix/outputs/targeted_output_review_v0.15.3_2026-11-04/REPORT.md">16案独立复查原件</a></li>
+<li><a href="appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json">16案修复前后原文及判断</a></li>
+<li><a href="appendix/outputs/independent_approval_v0.16.2_2026-11-04/APPROVAL.md">前版0.16.2独立检查</a></li>
+<li><a href="appendix/outputs/final_handoff_v0.16.3_2026-11-04/calls.json">本轮4次请求及用量</a></li>
+<li><a href="appendix/outputs/final_handoff_v0.16.3_2026-11-04/N39_compatibility.json">N39兼容记录</a></li>
+<li><a href="appendix/EXPORT_MANIFEST.json">证据导出清单</a></li>
+</ul>
+<p>附录也保留早期F组50及后续49组实验，属于已废弃/早期版本，不与当前N组50合并。所有原件仍在项目中；导出若包含本机项目绝对路径，只将路径前缀脱敏，记录原/导出哈希，模型候选原文不改。</p>
+<p>本包不含原题PDF、真实密钥或客户运行库。历史源码审计小包不当当前可运行源码；请使用根目录SOURCE_v0.16.3.zip。</p>
+<h2>附录存储说明</h2>
+<p><a href="appendix/EVIDENCE_STORAGE.json">证据存储与重复文件映射</a>。当前N组50原始raw均可直接读取；重复副本只映射到同字节原件，最终重验保留。早期废弃F组的原始响应放在一个<a href="appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz">历史原件归档</a>中，分数、首轮原文与报告仍可直接阅读。需要核对历史原件时，可用系统归档工具解压，或从本包根目录运行 <code>python3 -m tarfile -e appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz appendix/outputs</code>。默认阅读不需要此步骤。原项目文件没有删除。</p></main></html>

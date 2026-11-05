@@ -1,0 +1,3938 @@
+{
+  "run_kind": "original50_remaining46_after_offline_validator_repair",
+  "dataset_id": "business-realistic-v2.0",
+  "app_version": "0.15.2",
+  "started_at": "2026-11-04T22:31:46.544802+00:00",
+  "original_baseline": "[PROJECT_ROOT]/outputs/formal_business_v2_v0.15.1_2026-11-04/baseline.json",
+  "first4_revalidation": "FIRST4_REVALIDATION.json",
+  "requests": [
+    {
+      "case_id": "N01",
+      "stage": "generation",
+      "purpose": "生日短祝福：简短、称呼自然，祝福答完可结束；不强塞商品、问题或档案操作",
+      "started_at": "2026-11-04T22:31:46.587288+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "753c37606d383d81b5429aa0b6a34acee02453fb302dc0e2d1b99e69693152cb",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:31:48.860468+00:00",
+      "duration_ms": 2273,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 23836,
+        "completion_tokens": 246,
+        "total_tokens": 24082,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13212
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N01",
+      "stage": "review",
+      "purpose": "生日短祝福：简短、称呼自然，祝福答完可结束；不强塞商品、问题或档案操作",
+      "started_at": "2026-11-04T22:31:48.888381+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "d179ebca14de92e508f31c8728bd0d58fd8efa274e25bce6ca1437d5144f634f",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:31:54.058381+00:00",
+      "duration_ms": 5169,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25205,
+        "completion_tokens": 990,
+        "total_tokens": 26195,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 14453
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N02",
+      "stage": "generation",
+      "purpose": "出差中的生日：可以结合忙碌出差体贴祝愿，不编目的地或实际庆祝安排；不要求补行程资料",
+      "started_at": "2026-11-04T22:31:54.087663+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "a638e5926cc0a190dd04926203a6d88927d35fb94618c6b16981550264d00a3a",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:31:57.126873+00:00",
+      "duration_ms": 3038,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 23995,
+        "completion_tokens": 257,
+        "total_tokens": 24252,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12347
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N02",
+      "stage": "review",
+      "purpose": "出差中的生日：可以结合忙碌出差体贴祝愿，不编目的地或实际庆祝安排；不要求补行程资料",
+      "started_at": "2026-11-04T22:31:57.142250+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "0b08aa5976ea5ddf17cbdb061e3bcd363c5ce3431eee8795ea0abe8a6b797a36",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:01.875081+00:00",
+      "duration_ms": 4731,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25201,
+        "completion_tokens": 865,
+        "total_tokens": 26066,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14321
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N03",
+      "stage": "generation",
+      "purpose": "熟悉客户的自然生日祝福：轻松得体，不装过分亲密；不编年龄、家庭和礼物",
+      "started_at": "2026-11-04T22:32:01.907252+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "a0c2977149b3397319057f3338ab4f330e3c151a5d100ad50b597b0041439149",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:04.893247+00:00",
+      "duration_ms": 2985,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 23869,
+        "completion_tokens": 239,
+        "total_tokens": 24108,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12221
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N03",
+      "stage": "review",
+      "purpose": "熟悉客户的自然生日祝福：轻松得体，不装过分亲密；不编年龄、家庭和礼物",
+      "started_at": "2026-11-04T22:32:04.913719+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "70697327bc851f33f75f0df0f54d1ddf88f1ee6992ba007e4bc659df3bf77c9c",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:10.458662+00:00",
+      "duration_ms": 5542,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25115,
+        "completion_tokens": 961,
+        "total_tokens": 26076,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14235
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N04",
+      "stage": "generation",
+      "purpose": "生日祝福后的承接：接住加班和感谢，不重发一篇首次生日祝词；不继续追问工作或推销",
+      "started_at": "2026-11-04T22:32:10.473373+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "78ccfc4c11e6d73ff3e97f9cbc9d08d4b167d3b889c1da174aa35f34993a6206",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:12.950503+00:00",
+      "duration_ms": 2476,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24120,
+        "completion_tokens": 250,
+        "total_tokens": 24370,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13496
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N04",
+      "stage": "review",
+      "purpose": "生日祝福后的承接：接住加班和感谢，不重发一篇首次生日祝词；不继续追问工作或推销",
+      "started_at": "2026-11-04T22:32:12.973232+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "c483e3e72471cc19638326beb03817f3c16f4801a57520e67ba02641519198d3",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:18.511061+00:00",
+      "duration_ms": 5535,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25673,
+        "completion_tokens": 1082,
+        "total_tokens": 26755,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 14921
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N05",
+      "stage": "generation",
+      "purpose": "已购客户的生日：生日是当前任务，已购记录不必硬用；不把祝福变成包袋关怀或邀请",
+      "started_at": "2026-11-04T22:32:18.544089+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "8bdb6cff81e0f8feee25419f12a9f83f947c3093e8f3731dd303d3fbf6a08e12",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:20.595154+00:00",
+      "duration_ms": 2050,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24075,
+        "completion_tokens": 229,
+        "total_tokens": 24304,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12427
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N05",
+      "stage": "review",
+      "purpose": "已购客户的生日：生日是当前任务，已购记录不必硬用；不把祝福变成包袋关怀或邀请",
+      "started_at": "2026-11-04T22:32:20.612409+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "108c0f6887b0b5e5953a3d211e8220ec25674b13762cbddd06a44d26f789e89c",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:24.678741+00:00",
+      "duration_ms": 4064,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25292,
+        "completion_tokens": 925,
+        "total_tokens": 26217,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14412
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N06",
+      "stage": "generation",
+      "purpose": "正式一些的新年问候：对应新春，礼貌但不像公文；祝愿不当作已发生生活事实，不虚构赠礼",
+      "started_at": "2026-11-04T22:32:24.712382+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "25ec640d6685ec7d228af2c708a76cd06121388c56e6dffc7028e8f84a2547a7",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:27.141303+00:00",
+      "duration_ms": 2428,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 23859,
+        "completion_tokens": 244,
+        "total_tokens": 24103,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12211
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N06",
+      "stage": "review",
+      "purpose": "正式一些的新年问候：对应新春，礼貌但不像公文；祝愿不当作已发生生活事实，不虚构赠礼",
+      "started_at": "2026-11-04T22:32:27.165763+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "c5cdcfe396a36a341639c947642155bbad003697adc69e27673b6e9eeeff59b8",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:32.330522+00:00",
+      "duration_ms": 5163,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25235,
+        "completion_tokens": 1006,
+        "total_tokens": 26241,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14355
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N07",
+      "stage": "generation",
+      "purpose": "中秋问候：是中秋祝福，不套生日；一般祝愿不需要家庭档案，不编具体团聚行程",
+      "started_at": "2026-11-04T22:32:32.361141+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "06d5753e84a62efb9411bb2bb838f68768fd5fb07fdfb98c6e835817f68020a6",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:34.873493+00:00",
+      "duration_ms": 2511,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 23810,
+        "completion_tokens": 235,
+        "total_tokens": 24045,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12162
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N07",
+      "stage": "review",
+      "purpose": "中秋问候：是中秋祝福，不套生日；一般祝愿不需要家庭档案，不编具体团聚行程",
+      "started_at": "2026-11-04T22:32:34.891592+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "1b70617329c3e2d0226c4e10a95fd26c1e9fa0ba319da767764f2881b559f745",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:40.495017+00:00",
+      "duration_ms": 5602,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25234,
+        "completion_tokens": 1090,
+        "total_tokens": 26324,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14354
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N08",
+      "stage": "generation",
+      "purpose": "轻松的圣诞问候：节日正确、自然、不夹营销；不推断宗教或家庭身份",
+      "started_at": "2026-11-04T22:32:40.511714+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "f2ea907e9ff5f8c8eba5366104e1533bd66ec7961f7a7dab42c3b674158cd30d",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:43.503403+00:00",
+      "duration_ms": 2991,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 23839,
+        "completion_tokens": 275,
+        "total_tokens": 24114,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12191
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N08",
+      "stage": "review",
+      "purpose": "轻松的圣诞问候：节日正确、自然、不夹营销；不推断宗教或家庭身份",
+      "started_at": "2026-11-04T22:32:43.514995+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "1370331f4798bc5c9002680061ffbcbe8488f26e6668714e39dbb8f16c5c7268",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:48.223951+00:00",
+      "duration_ms": 4707,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25090,
+        "completion_tokens": 904,
+        "total_tokens": 25994,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14210
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N09",
+      "stage": "generation",
+      "purpose": "已选卡夹，问价格和四张卡：2800元，四个独立卡位，四张标准银行卡能放；客户已选品，不问方向、不扩写取用好处或其他物品限制",
+      "started_at": "2026-11-04T22:32:48.257347+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "96c11242edb2a8721ece3952c31e947a9b34213dbd3f742b28710b852347e373",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:51.264816+00:00",
+      "duration_ms": 3006,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24552,
+        "completion_tokens": 299,
+        "total_tokens": 24851,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13928
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N09",
+      "stage": "review",
+      "purpose": "已选卡夹，问价格和四张卡：2800元，四个独立卡位，四张标准银行卡能放；客户已选品，不问方向、不扩写取用好处或其他物品限制",
+      "started_at": "2026-11-04T22:32:51.291319+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "d92b5b8628ea5ef91a6f8ea75b90ad19da681f7ec685095c60045b0267e9f8c3",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:57.130226+00:00",
+      "duration_ms": 5837,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25808,
+        "completion_tokens": 1204,
+        "total_tokens": 27012,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14928
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N11",
+      "stage": "generation",
+      "purpose": "通勤包开放推荐：推荐有A4、水杯、伞用途依据的托特；复用暖棕偏好，不重问全部需求或预算",
+      "started_at": "2026-11-04T22:32:57.158450+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "56879e95b872980ecec4539cff9c578c80dee8358e1ecb2cbb25cae0ab51cf17",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:32:59.624693+00:00",
+      "duration_ms": 2465,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24575,
+        "completion_tokens": 334,
+        "total_tokens": 24909,
+        "prompt_tokens_details": {
+          "cached_tokens": 10496
+        },
+        "prompt_cache_hit_tokens": 10496,
+        "prompt_cache_miss_tokens": 14079
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N11",
+      "stage": "review",
+      "purpose": "通勤包开放推荐：推荐有A4、水杯、伞用途依据的托特；复用暖棕偏好，不重问全部需求或预算",
+      "started_at": "2026-11-04T22:32:59.634434+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "82e5ea508411b137f932a6b70545117a76bb6f6c12bec8a0a5ee018fd3d577a9",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:07.128210+00:00",
+      "duration_ms": 7493,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26412,
+        "completion_tokens": 1718,
+        "total_tokens": 28130,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 15660
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N12",
+      "stage": "generation",
+      "purpose": "周末轻装：结合少量物品推荐肩包并给必要价格信息；不追加电脑、A4或长钱包风险清单",
+      "started_at": "2026-11-04T22:33:07.159755+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4957140db36231c455cae787752b7e7dca446e397fa5cb3ca15cd160daeb723a",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:11.318611+00:00",
+      "duration_ms": 4158,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24084,
+        "completion_tokens": 458,
+        "total_tokens": 24542,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13460
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N13",
+      "stage": "generation",
+      "purpose": "给导师的低调小礼物：结合小礼物和低调设计推荐卡夹，说明价格与相关特点；不编礼盒、刻字或导师喜好，不强迫先填预算",
+      "started_at": "2026-11-04T22:33:11.351945+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "44281298da37aaf980f85bdc1b0d5e198497030e134050b656631db26b6dc6a0",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:14.778495+00:00",
+      "duration_ms": 3425,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24068,
+        "completion_tokens": 436,
+        "total_tokens": 24504,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13444
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N13",
+      "stage": "review",
+      "purpose": "给导师的低调小礼物：结合小礼物和低调设计推荐卡夹，说明价格与相关特点；不编礼盒、刻字或导师喜好，不强迫先填预算",
+      "started_at": "2026-11-04T22:33:14.801545+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "5fa4046145f87b9ead24def8fd382213a77005ede1b5fd20a37d9b97c9983641",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:23.032129+00:00",
+      "duration_ms": 8228,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26722,
+        "completion_tokens": 1743,
+        "total_tokens": 28465,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15842
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N14",
+      "stage": "generation",
+      "purpose": "暖棕托特与深色衣服：目录暖棕有依据，可作适度搭配建议；目录颜色不等于现货，不保证百搭",
+      "started_at": "2026-11-04T22:33:23.051817+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "716f111e00e28af88b6fc6034a29bce5aa6956de2c1987a8206967e93d7ef088",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:26.245348+00:00",
+      "duration_ms": 3193,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24287,
+        "completion_tokens": 332,
+        "total_tokens": 24619,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13663
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N14",
+      "stage": "review",
+      "purpose": "暖棕托特与深色衣服：目录暖棕有依据，可作适度搭配建议；目录颜色不等于现货，不保证百搭",
+      "started_at": "2026-11-04T22:33:26.253938+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "fb5b40c9b703a9c817391e1f841c36ed33fa7bde51b1de00263b5960ef87639c",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:32.264938+00:00",
+      "duration_ms": 6010,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25997,
+        "completion_tokens": 1123,
+        "total_tokens": 27120,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15117
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N15",
+      "stage": "generation",
+      "purpose": "两款重量比较：肩包约420克，托特约750克，均为空包；不扩成装物后总重或舒适保证",
+      "started_at": "2026-11-04T22:33:32.299091+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "411d2c74d7e37b4fae61f8c6ce4dc668e0c62a35d240209bb9f98b7e079b86ef",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:35.177685+00:00",
+      "duration_ms": 2877,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24512,
+        "completion_tokens": 283,
+        "total_tokens": 24795,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13888
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N15",
+      "stage": "review",
+      "purpose": "两款重量比较：肩包约420克，托特约750克，均为空包；不扩成装物后总重或舒适保证",
+      "started_at": "2026-11-04T22:33:35.199153+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "36633031013f64b0237f9a8075e30940933551e3612fcb61392390e9d64333e6",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:39.688331+00:00",
+      "duration_ms": 4486,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25501,
+        "completion_tokens": 952,
+        "total_tokens": 26453,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14621
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N16",
+      "stage": "generation",
+      "purpose": "步行通勤担心重量：用空包750克与已知物品说明取舍，不编装载总重；试背是有用的可选帮助，不把所有判断推回客户",
+      "started_at": "2026-11-04T22:33:39.721882+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "3203026f6e8284239063b5d364934e1f8c6f9d69ce756aa0e357ff22da94be3a",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:43.937775+00:00",
+      "duration_ms": 4214,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24683,
+        "completion_tokens": 440,
+        "total_tokens": 25123,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14059
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N16",
+      "stage": "review",
+      "purpose": "步行通勤担心重量：用空包750克与已知物品说明取舍，不编装载总重；试背是有用的可选帮助，不把所有判断推回客户",
+      "started_at": "2026-11-04T22:33:43.963989+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "5ca11b508331b4b639a5f4c6c64159aa603b9c32e12d29dc798a0c356b7c6f29",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:51.227304+00:00",
+      "duration_ms": 7261,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26639,
+        "completion_tokens": 1694,
+        "total_tokens": 28333,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15759
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N17",
+      "stage": "generation",
+      "purpose": "小包能否放A4：解析它指肩包，明确不放A4；有资料需求时可提托特，不问客户重复商品名",
+      "started_at": "2026-11-04T22:33:51.262308+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "c324827ffe71e80facfe32d9d347f759dac3ad85eef028ea8cbe866499b683a5",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:53.610070+00:00",
+      "duration_ms": 2346,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24837,
+        "completion_tokens": 235,
+        "total_tokens": 25072,
+        "prompt_tokens_details": {
+          "cached_tokens": 10496
+        },
+        "prompt_cache_hit_tokens": 10496,
+        "prompt_cache_miss_tokens": 14341
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N17",
+      "stage": "review",
+      "purpose": "小包能否放A4：解析它指肩包，明确不放A4；有资料需求时可提托特，不问客户重复商品名",
+      "started_at": "2026-11-04T22:33:53.627282+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "80d1a06f5ddc6815b8303d772c3d4df42e6e491921413f09e93ba31970aa589a",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:33:57.949567+00:00",
+      "duration_ms": 4320,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25490,
+        "completion_tokens": 924,
+        "total_tokens": 26414,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 14738
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N18",
+      "stage": "generation",
+      "purpose": "厚文件夹适配：A4纸用途已知，厚文件夹需要针对尺寸；不保证厚夹能装，也不要求补整套档案",
+      "started_at": "2026-11-04T22:33:57.979344+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "c94f4d43949367c2142c93aa2be80d3987a2150d7c024e14c45bc210830a1395",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:01.958281+00:00",
+      "duration_ms": 3977,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24339,
+        "completion_tokens": 477,
+        "total_tokens": 24816,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13715
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N18",
+      "stage": "review",
+      "purpose": "厚文件夹适配：A4纸用途已知，厚文件夹需要针对尺寸；不保证厚夹能装，也不要求补整套档案",
+      "started_at": "2026-11-04T22:34:01.969789+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "de662d8145048bbb6d6b5ddd65a1cf96ffc77bd6440bd231ac52cc58fc54ed3c",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:10.767401+00:00",
+      "duration_ms": 8796,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26272,
+        "completion_tokens": 1898,
+        "total_tokens": 28170,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15392
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N19",
+      "stage": "generation",
+      "purpose": "卡片和几个硬币：四个卡位、无单独零钱袋；不补各有固定位置的需求，不代替客户判用法不合适，不加自述尾句",
+      "started_at": "2026-11-04T22:34:10.790566+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "2ac066feaf9f0967977fbe91a0a19bb9b588cc43bc7fcb80596ca13745b72f2f",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:13.716768+00:00",
+      "duration_ms": 2925,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24380,
+        "completion_tokens": 277,
+        "total_tokens": 24657,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13756
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N19",
+      "stage": "review",
+      "purpose": "卡片和几个硬币：四个卡位、无单独零钱袋；不补各有固定位置的需求，不代替客户判用法不合适，不加自述尾句",
+      "started_at": "2026-11-04T22:34:13.742057+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "f938ba8e7e328b94574bb87db25ddfd731ca54421c26c20101f31a4126d75af7",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:18.683520+00:00",
+      "duration_ms": 4939,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25442,
+        "completion_tokens": 986,
+        "total_tokens": 26428,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14562
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N20",
+      "stage": "generation",
+      "purpose": "材质与内衬：包身哑光细纹牛皮，内衬棉布；不编皮革等级、产地、全手工或耐用年限",
+      "started_at": "2026-11-04T22:34:18.718499+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "05019567508eac950e366cfe3c53ef7a0c069fe8f5ce9b69e3424c64977e9c8a",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:21.723521+00:00",
+      "duration_ms": 3003,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24198,
+        "completion_tokens": 320,
+        "total_tokens": 24518,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13574
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N21",
+      "stage": "generation",
+      "purpose": "到店前想留黑色肩包：黑色目录有依据，库存及预留由顾问向门店确认；未来协助不说成已经留好，不另问已经给出的款式",
+      "started_at": "2026-11-04T22:34:21.757781+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4a8536759565f99aadb9169f8e45d1496aaaf04e9bdc898d90184bd38ceda472",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:25.045454+00:00",
+      "duration_ms": 3286,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24301,
+        "completion_tokens": 316,
+        "total_tokens": 24617,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13677
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N21",
+      "stage": "review",
+      "purpose": "到店前想留黑色肩包：黑色目录有依据，库存及预留由顾问向门店确认；未来协助不说成已经留好，不另问已经给出的款式",
+      "started_at": "2026-11-04T22:34:25.067249+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "8b62a93603f48cdc3e78388aace7809dd173d473aebba169fa73e53f58bdf31c",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:31.025260+00:00",
+      "duration_ms": 5955,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25951,
+        "completion_tokens": 1243,
+        "total_tokens": 27194,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15071
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N22",
+      "stage": "generation",
+      "purpose": "长聊天里转向上班用途：当前通勤需求和两万预算优先，推荐托特18800；复用墨黑偏好与已说物品，不继续肩包或重问预算",
+      "started_at": "2026-11-04T22:34:31.059982+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "5aa9b4433e9397365e43b323d89e03c86f0527d0e834e7312b48788058d15afe",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:34.797800+00:00",
+      "duration_ms": 3736,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25251,
+        "completion_tokens": 460,
+        "total_tokens": 25711,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14627
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N22",
+      "stage": "review",
+      "purpose": "长聊天里转向上班用途：当前通勤需求和两万预算优先，推荐托特18800；复用墨黑偏好与已说物品，不继续肩包或重问预算",
+      "started_at": "2026-11-04T22:34:34.826128+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "a622ec5143fae43794580aeb9a0c9b67b7373c4586de329481c6e87059440ac8",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:41.893865+00:00",
+      "duration_ms": 7065,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 27039,
+        "completion_tokens": 1637,
+        "total_tokens": 28676,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 16287
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N23",
+      "stage": "generation",
+      "purpose": "卡夹购后问候：依据真实已购卡夹问使用感受；不重讲卡位参数，不编出现故障",
+      "started_at": "2026-11-04T22:34:41.930432+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "663496000f2472245a005a577aa165581f9265add2f968f9d94c8c1d0b944f04",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:45.135877+00:00",
+      "duration_ms": 3204,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24230,
+        "completion_tokens": 268,
+        "total_tokens": 24498,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13606
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N23",
+      "stage": "review",
+      "purpose": "卡夹购后问候：依据真实已购卡夹问使用感受；不重讲卡位参数，不编出现故障",
+      "started_at": "2026-11-04T22:34:45.158510+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "6195fb985b060728eeddc10741b202797b130209394e45b6e9cbb92c82e58cf0",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:50.619044+00:00",
+      "duration_ms": 5458,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25601,
+        "completion_tokens": 1084,
+        "total_tokens": 26685,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14721
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N24",
+      "stage": "generation",
+      "purpose": "接住正面使用反馈：自然接住使用反馈；不再介绍平口袋参数、强找问题或推荐下一款",
+      "started_at": "2026-11-04T22:34:50.653026+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "9e52b26ccd6cf5d2730966471e7c9688e842f20b29d969c8ce5851475fbbe64c",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:34:53.935880+00:00",
+      "duration_ms": 3281,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24801,
+        "completion_tokens": 301,
+        "total_tokens": 25102,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14177
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N24",
+      "stage": "review",
+      "purpose": "接住正面使用反馈：自然接住使用反馈；不再介绍平口袋参数、强找问题或推荐下一款",
+      "started_at": "2026-11-04T22:34:53.958948+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "19423a9d30e10284af4b0b223010d6771d179f3920f74a13a18b90d12451be9b",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:00.478896+00:00",
+      "duration_ms": 6517,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26167,
+        "completion_tokens": 1314,
+        "total_tokens": 27481,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15287
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N25",
+      "stage": "generation",
+      "purpose": "沾雨后的下一步：给通风自然晾干等相关已知步骤；不编纸巾已损伤皮面，不默认送修、不搬整份保养表",
+      "started_at": "2026-11-04T22:35:00.515650+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "50099201afadaf92344ebebd349a477938191d8addc6c92ba307509a3ddfa6c5",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:03.019846+00:00",
+      "duration_ms": 2502,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24249,
+        "completion_tokens": 336,
+        "total_tokens": 24585,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13625
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N25",
+      "stage": "review",
+      "purpose": "沾雨后的下一步：给通风自然晾干等相关已知步骤；不编纸巾已损伤皮面，不默认送修、不搬整份保养表",
+      "started_at": "2026-11-04T22:35:03.045379+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "7029602fca7992d9a8b18162beee6bca728896fa857b74717921d92122bb66de",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:07.870803+00:00",
+      "duration_ms": 4823,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25884,
+        "completion_tokens": 968,
+        "total_tokens": 26852,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15004
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N26",
+      "stage": "generation",
+      "purpose": "家用清洁剂咨询：不建议自行试用成分未知清洁剂，包括角落试用；可最少索取瓶身或污渍照片交售后，不扩成淋雨步骤",
+      "started_at": "2026-11-04T22:35:07.900784+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "922f90ab9f81aee8335d787bbb2b9e2e3c7d62fee9ac885c44fa97f74a78b71d",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:11.617317+00:00",
+      "duration_ms": 3714,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24297,
+        "completion_tokens": 409,
+        "total_tokens": 24706,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13673
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N26",
+      "stage": "review",
+      "purpose": "家用清洁剂咨询：不建议自行试用成分未知清洁剂，包括角落试用；可最少索取瓶身或污渍照片交售后，不扩成淋雨步骤",
+      "started_at": "2026-11-04T22:35:11.638549+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "71973d5805bc25f246fb9c68d6c42e97c70eb4689eb0c57a1ad13c7e7ee118d7",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:17.875668+00:00",
+      "duration_ms": 6234,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26307,
+        "completion_tokens": 1353,
+        "total_tokens": 27660,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15427
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N27",
+      "stage": "generation",
+      "purpose": "复用售后进度记录：复用收件和检测状态，不让客户重说故障；不虚构刚查过、修好、费用或期限",
+      "started_at": "2026-11-04T22:35:17.913621+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "35ad8ca340f6dc166f450e13bc8abea719417938ae2656a261215fa160252473",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:20.855360+00:00",
+      "duration_ms": 2940,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25014,
+        "completion_tokens": 312,
+        "total_tokens": 25326,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14390
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N28",
+      "stage": "generation",
+      "purpose": "未用肩包想换色：计算仍在申请期，说明可申请换色而非已批准；不用重问已核对标牌凭证，不保证米白库存",
+      "started_at": "2026-11-04T22:35:20.892716+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "cc2f3018463d47869791f6e417aa1ea2438d72566a56caf6158c61d6a4d47e83",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:25.053563+00:00",
+      "duration_ms": 4158,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24725,
+        "completion_tokens": 464,
+        "total_tokens": 25189,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14101
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N28",
+      "stage": "review",
+      "purpose": "未用肩包想换色：计算仍在申请期，说明可申请换色而非已批准；不用重问已核对标牌凭证，不保证米白库存",
+      "started_at": "2026-11-04T22:35:25.079162+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "d6124815c2efdc16409cabca10e9b9e099382a98020b358af3e36accb02e1a23",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:32.119734+00:00",
+      "duration_ms": 7037,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26840,
+        "completion_tokens": 1483,
+        "total_tokens": 28323,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15960
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N29",
+      "stage": "generation",
+      "purpose": "拉链卡顿担心坏了：症状不当诊断；可收局部视频或交售后查看；不先认定质量问题、使用责任或免费维修",
+      "started_at": "2026-11-04T22:35:32.157254+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "b03c4c2b1e70b51cbcfe3be16cf0a9bb6161c4464c66a5cc00c283f77922965f",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:36.222423+00:00",
+      "duration_ms": 4063,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24739,
+        "completion_tokens": 423,
+        "total_tokens": 25162,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14115
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N29",
+      "stage": "review",
+      "purpose": "拉链卡顿担心坏了：症状不当诊断；可收局部视频或交售后查看；不先认定质量问题、使用责任或免费维修",
+      "started_at": "2026-11-04T22:35:36.248382+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "f99778a4dccaafeba2fe655d00539296549607a7335b83b6f4eb1d1ed7be363b",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:43.871169+00:00",
+      "duration_ms": 7619,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26990,
+        "completion_tokens": 1445,
+        "total_tokens": 28435,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 16110
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N31",
+      "stage": "generation",
+      "purpose": "已购卡夹客户久未互动：已购与联系间隔有记录，可自然接续；不责问没来，不重讲参数或编新品",
+      "started_at": "2026-11-04T22:35:43.908793+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "25ded70f36c8800b40778f1cd830d3aebb134b06ad27360d595d9b2c030af094",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:47.684178+00:00",
+      "duration_ms": 3773,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24266,
+        "completion_tokens": 341,
+        "total_tokens": 24607,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13642
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N31",
+      "stage": "review",
+      "purpose": "已购卡夹客户久未互动：已购与联系间隔有记录，可自然接续；不责问没来，不重讲参数或编新品",
+      "started_at": "2026-11-04T22:35:47.704472+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "e9c9aa2ac5790184b2b603e3cb8d797a86c53437b46e467ae242c869aa3d79b5",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:54.070422+00:00",
+      "duration_ms": 6363,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26105,
+        "completion_tokens": 1442,
+        "total_tokens": 27547,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15225
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N32",
+      "stage": "generation",
+      "purpose": "看过暖棕款的客户：普通问候可开始，不硬塞颜色偏好；看过不等于买过，不问之前那只包用得如何",
+      "started_at": "2026-11-04T22:35:54.109085+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "00280fe555063298b6424bcd380cfc7dac8c250fa201ae93b67908bb023482d9",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:57.192815+00:00",
+      "duration_ms": 3081,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24041,
+        "completion_tokens": 310,
+        "total_tokens": 24351,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12393
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N33",
+      "stage": "generation",
+      "purpose": "客户说最近忙：接住忙碌，给空间；不追具体到店时间、不加促销或问原因",
+      "started_at": "2026-11-04T22:35:57.226302+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "f373150a2efc67e5b86695bcd808e32334cac1e66393cd21dcd672fce9d2beea",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:35:59.920528+00:00",
+      "duration_ms": 2692,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24170,
+        "completion_tokens": 272,
+        "total_tokens": 24442,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13546
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N33",
+      "stage": "review",
+      "purpose": "客户说最近忙：接住忙碌，给空间；不追具体到店时间、不加促销或问原因",
+      "started_at": "2026-11-04T22:35:59.945167+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "c0e80c8c5bb72ddcb144a3d8b5d65d11f82b87380e686d6d0283e4fa706fb909",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:03.865342+00:00",
+      "duration_ms": 3916,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25235,
+        "completion_tokens": 797,
+        "total_tokens": 26032,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14355
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N34",
+      "stage": "generation",
+      "purpose": "客户重新问卡夹是否在售：当前目录商品可说明在售，价格可简短补充；在售不是实时有货，不重问什么卡夹",
+      "started_at": "2026-11-04T22:36:03.898921+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "b38f8a82968b301523492637d2f9b44f62b958515774b110e9a4eed14d33969f",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:06.473841+00:00",
+      "duration_ms": 2572,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24284,
+        "completion_tokens": 328,
+        "total_tokens": 24612,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13660
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N34",
+      "stage": "review",
+      "purpose": "客户重新问卡夹是否在售：当前目录商品可说明在售，价格可简短补充；在售不是实时有货，不重问什么卡夹",
+      "started_at": "2026-11-04T22:36:06.492014+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "7b8e89e22a635cc26ef50cde1967510732c653f09132fedcedbf2331a90958ae",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:12.280627+00:00",
+      "duration_ms": 5786,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25809,
+        "completion_tokens": 1255,
+        "total_tokens": 27064,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14929
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N35",
+      "stage": "generation",
+      "purpose": "接续线下审美偏好：以已有关系轻问近期需求即可；不编已购、新品到货或库存，不要求先填档案",
+      "started_at": "2026-11-04T22:36:12.315865+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "6a102e5829748b1a932d87503a97bce7660ec2638e08845a62161e3d9d6d1fbb",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:16.359553+00:00",
+      "duration_ms": 4042,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24015,
+        "completion_tokens": 363,
+        "total_tokens": 24378,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12367
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N35",
+      "stage": "review",
+      "purpose": "接续线下审美偏好：以已有关系轻问近期需求即可；不编已购、新品到货或库存，不要求先填档案",
+      "started_at": "2026-11-04T22:36:16.384986+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "42fdba002d21dfdb09b474aac37630e5fca5910cee3011bbf9368c64ed8ed27e",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:25.165518+00:00",
+      "duration_ms": 8777,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26509,
+        "completion_tokens": 1790,
+        "total_tokens": 28299,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15629
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N36",
+      "stage": "generation",
+      "purpose": "按约定时间续聊通勤包：复用上次话题和约定，不从头整理；不把此前暂缓当永久拒绝，也不假定已经回到本地",
+      "started_at": "2026-11-04T22:36:25.204292+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "499d23a6e586f0daee80109ae1be7bad5f2130621f78279cad561f54ddd9c10c",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:28.418409+00:00",
+      "duration_ms": 3212,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24409,
+        "completion_tokens": 417,
+        "total_tokens": 24826,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 12761
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N36",
+      "stage": "review",
+      "purpose": "按约定时间续聊通勤包：复用上次话题和约定，不从头整理；不把此前暂缓当永久拒绝，也不假定已经回到本地",
+      "started_at": "2026-11-04T22:36:28.436767+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "2ca8fd8a83cfd2c5f0f15e8316c842e5f2985f24fc05739a7a1a7b00f1534c17",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:37.357133+00:00",
+      "duration_ms": 8917,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26722,
+        "completion_tokens": 1953,
+        "total_tokens": 28675,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 15970
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N38",
+      "stage": "generation",
+      "purpose": "活动时间地点短答：14日14—16点、澄序广场8号精品店；不让客户重复活动名，不附不必要的资格或销售介绍",
+      "started_at": "2026-11-04T22:36:37.391225+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "075e9f0d145dc43081348b39ad396e664c32e7919e392c238c2437935bf3ac85",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:39.704219+00:00",
+      "duration_ms": 2310,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24946,
+        "completion_tokens": 278,
+        "total_tokens": 25224,
+        "prompt_tokens_details": {
+          "cached_tokens": 10496
+        },
+        "prompt_cache_hit_tokens": 10496,
+        "prompt_cache_miss_tokens": 14450
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N38",
+      "stage": "review",
+      "purpose": "活动时间地点短答：14日14—16点、澄序广场8号精品店；不让客户重复活动名，不附不必要的资格或销售介绍",
+      "started_at": "2026-11-04T22:36:39.729649+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4f20c850cfb3291eccbbbc5ede5f8047b301c5a2ad3ab401dd33e0d08ce62ea9",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:43.649568+00:00",
+      "duration_ms": 3916,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25776,
+        "completion_tokens": 871,
+        "total_tokens": 26647,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 15024
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N39",
+      "stage": "generation",
+      "purpose": "先了解活动内容：讲收纳演示、对照随身物品能了解什么；不堆术语、先列缺席清单或催报名",
+      "started_at": "2026-11-04T22:36:43.676888+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "49fff26a5057edb64d72c5aef50d6a6d503820bc79f98517488a1e9376f520df",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:48.020501+00:00",
+      "duration_ms": 4341,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24789,
+        "completion_tokens": 525,
+        "total_tokens": 25314,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14165
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N39",
+      "stage": "review",
+      "purpose": "先了解活动内容：讲收纳演示、对照随身物品能了解什么；不堆术语、先列缺席清单或催报名",
+      "started_at": "2026-11-04T22:36:48.046247+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "48d0605b88a1495150bffcca8549e7aa175a8a002c58bb029de780d11ea7dab1",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:55.684855+00:00",
+      "duration_ms": 7635,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 27342,
+        "completion_tokens": 1869,
+        "total_tokens": 29211,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 16462
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N40",
+      "stage": "generation",
+      "purpose": "只能停留半小时：利用自由体验、可短暂停留的已知安排；不要求全程或虚构专属讲解时段",
+      "started_at": "2026-11-04T22:36:55.714472+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "aac93127b68a003027a7e279a530010eaf6f084a0438a799ccbb111223bcb809",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:36:58.845233+00:00",
+      "duration_ms": 3128,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24780,
+        "completion_tokens": 373,
+        "total_tokens": 25153,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14156
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N40",
+      "stage": "review",
+      "purpose": "只能停留半小时：利用自由体验、可短暂停留的已知安排；不要求全程或虚构专属讲解时段",
+      "started_at": "2026-11-04T22:36:58.868104+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "3751663fa13ed22b24d3c0f4b719ea6bc988d8ff708e056f1ab786920a1e9412",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:04.485324+00:00",
+      "duration_ms": 5613,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26424,
+        "completion_tokens": 1144,
+        "total_tokens": 27568,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15544
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N41",
+      "stage": "generation",
+      "purpose": "带朋友同行：可带一人，称呼登记后由门店确认；必要时收称呼，不说已留两席或增加会员门槛",
+      "started_at": "2026-11-04T22:37:04.513695+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "437f311375ca7b8a22d8896191376eebca69674bbad2abc212af122c16832069",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:07.411850+00:00",
+      "duration_ms": 2896,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24774,
+        "completion_tokens": 288,
+        "total_tokens": 25062,
+        "prompt_tokens_details": {
+          "cached_tokens": 10496
+        },
+        "prompt_cache_hit_tokens": 10496,
+        "prompt_cache_miss_tokens": 14278
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N41",
+      "stage": "review",
+      "purpose": "带朋友同行：可带一人，称呼登记后由门店确认；必要时收称呼，不说已留两席或增加会员门槛",
+      "started_at": "2026-11-04T22:37:07.436011+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "45fad37c047ec892e5f0ccfa8be7fba32cd399d64aecaea65274ee741f1e5082",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:12.780062+00:00",
+      "duration_ms": 5340,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25995,
+        "completion_tokens": 1098,
+        "total_tokens": 27093,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15115
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N42",
+      "stage": "generation",
+      "purpose": "客户请帮报名两位：两位意向已给，不重问人数或方向；可问朋友称呼并协助登记，不能声称系统已经报名完成",
+      "started_at": "2026-11-04T22:37:12.814182+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "cdaf28748ad2611499131c518f0f6fbe9d728592c505662af56ac33c7cf5f3fc",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:16.785550+00:00",
+      "duration_ms": 3969,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24807,
+        "completion_tokens": 471,
+        "total_tokens": 25278,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14183
+      },
+      "provider_status": null,
+      "error": "ready requires three fixed fields and no advisor-blocking gap"
+    },
+    {
+      "case_id": "N43",
+      "stage": "generation",
+      "purpose": "本场来不了，问后续：尊重本场来不了，不继续劝本场；后续时间无来源时顾问帮核实，不编时间也不说现实中一定没安排",
+      "started_at": "2026-11-04T22:37:16.820079+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "6e67b02a48aca532e9dbfbc38c7e447076683d945f59d12768d058e6df1b17a3",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:20.359518+00:00",
+      "duration_ms": 3536,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24837,
+        "completion_tokens": 369,
+        "total_tokens": 25206,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 14213
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N43",
+      "stage": "review",
+      "purpose": "本场来不了，问后续：尊重本场来不了，不继续劝本场；后续时间无来源时顾问帮核实，不编时间也不说现实中一定没安排",
+      "started_at": "2026-11-04T22:37:20.386636+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "8c9b801dd4ebc8f3bcf07c8d45c2b5fdb0820e6282859919a31d1f9acaba0782",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:26.194517+00:00",
+      "duration_ms": 5804,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26463,
+        "completion_tokens": 1266,
+        "total_tokens": 27729,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15583
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N44",
+      "stage": "generation",
+      "purpose": "觉得贵但想判断日常用途：回应少量随身物品用途与现价；嫌贵不等于求折扣或拒绝，不主动播报折扣",
+      "started_at": "2026-11-04T22:37:26.234143+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "b28ad02ce8aff2cd66dddd7e23f0303ceeab7d91c5b95a737135dabf401fe478",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:30.344547+00:00",
+      "duration_ms": 4107,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24500,
+        "completion_tokens": 467,
+        "total_tokens": 24967,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13876
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N44",
+      "stage": "review",
+      "purpose": "觉得贵但想判断日常用途：回应少量随身物品用途与现价；嫌贵不等于求折扣或拒绝，不主动播报折扣",
+      "started_at": "2026-11-04T22:37:30.370839+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "2b3cc09fc53bb9841bc1db777869b9f2d26c6329867f0fbcd5b8a2a564ad5f4c",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:39.244414+00:00",
+      "duration_ms": 8870,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26932,
+        "completion_tokens": 2057,
+        "total_tokens": 28989,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 16052
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N45",
+      "stage": "generation",
+      "purpose": "两份卡夹礼物总价：2800×2=5600元；不用顺带无折扣、确认礼物方向或每条问颜色",
+      "started_at": "2026-11-04T22:37:39.290232+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "ed6a559171f582326fcf4f05a3819bcd83b4bdcb6cdc1353c922500ab8800a71",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:41.438169+00:00",
+      "duration_ms": 2145,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24316,
+        "completion_tokens": 244,
+        "total_tokens": 24560,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13692
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N45",
+      "stage": "review",
+      "purpose": "两份卡夹礼物总价：2800×2=5600元；不用顺带无折扣、确认礼物方向或每条问颜色",
+      "started_at": "2026-11-04T22:37:41.461374+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "768439a228248b69acfa6cd18c2b3b0c08e96d353668173db55e776114a2063a",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:45.198011+00:00",
+      "duration_ms": 3732,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25242,
+        "completion_tokens": 804,
+        "total_tokens": 26046,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14362
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N46",
+      "stage": "generation",
+      "purpose": "买两只询问优惠：无折扣，合计5600元；不编申请渠道或赠品，不为说服购买堆卖点",
+      "started_at": "2026-11-04T22:37:45.233286+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "ebccbeba134681742a49a704ef06e17afc89609b012d29399152d8634823d53b",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:48.458030+00:00",
+      "duration_ms": 3222,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24271,
+        "completion_tokens": 313,
+        "total_tokens": 24584,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13647
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N47",
+      "stage": "generation",
+      "purpose": "预算内确认肩包是否合适：12800元在预算附近，手机钥匙用途有据；已选商品不问方向，不加A4/电脑等未提需求",
+      "started_at": "2026-11-04T22:37:48.490874+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "31dac6be425b14de5bafa4fe275f8cee7cb184601344b1692d63153504d5d619",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:51.607661+00:00",
+      "duration_ms": 3114,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24589,
+        "completion_tokens": 388,
+        "total_tokens": 24977,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13965
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N47",
+      "stage": "review",
+      "purpose": "预算内确认肩包是否合适：12800元在预算附近，手机钥匙用途有据；已选商品不问方向，不加A4/电脑等未提需求",
+      "started_at": "2026-11-04T22:37:51.631592+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4543c5120b40f8b5fe8bd9134e43d115b269d17c06fbd52246e7df7c284ce48d",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:37:57.353884+00:00",
+      "duration_ms": 5718,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25682,
+        "completion_tokens": 1227,
+        "total_tokens": 26909,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14802
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N48",
+      "stage": "generation",
+      "purpose": "与更便宜的竞品比较：自家材质、小标识、卡位可说明；不知道竞品具体款不编差异/成本；需要时最少了解竞品信息",
+      "started_at": "2026-11-04T22:37:57.386488+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "539bc2cc274be38cf7ec8f87fc9bae665fb05c9bd293859c68512e61771b6275",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:38:02.136783+00:00",
+      "duration_ms": 4748,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24262,
+        "completion_tokens": 510,
+        "total_tokens": 24772,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13638
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N48",
+      "stage": "review",
+      "purpose": "与更便宜的竞品比较：自家材质、小标识、卡位可说明；不知道竞品具体款不编差异/成本；需要时最少了解竞品信息",
+      "started_at": "2026-11-04T22:38:02.167813+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "e7034dd8acf9bcc0def644f83059c1e50e87b8f133f7dcc4f5b17489b2ca5f87",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:38:10.433107+00:00",
+      "duration_ms": 8260,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26612,
+        "completion_tokens": 1713,
+        "total_tokens": 28325,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 15732
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N49",
+      "stage": "generation",
+      "purpose": "喜欢托特但想缓一缓：确认先不留，温暖收尾；不追问理由、追加优惠或到店邀请",
+      "started_at": "2026-11-04T22:38:10.469990+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "8ed7979db7bdf7749b08c19e75cb78b23f9682f56d56bba43f90b0b778d8137a",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:38:12.954310+00:00",
+      "duration_ms": 2480,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24382,
+        "completion_tokens": 272,
+        "total_tokens": 24654,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13758
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N49",
+      "stage": "review",
+      "purpose": "喜欢托特但想缓一缓：确认先不留，温暖收尾；不追问理由、追加优惠或到店邀请",
+      "started_at": "2026-11-04T22:38:12.982703+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "e984b0032e2b2a07742f3feaf547a93633a467939f272ab55e5a468f9f305e74",
+      "app_version": "0.15.2",
+      "finished_at": "2026-11-04T22:38:19.155295+00:00",
+      "duration_ms": 6168,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25843,
+        "completion_tokens": 1188,
+        "total_tokens": 27031,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14963
+      },
+      "provider_status": null,
+      "error": null
+    }
+  ],
+  "results": [
+    {
+      "case_id": "N01",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "林女士，今天生日，平时喜欢简短的微信。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "今天给林女士发个生日祝福。"
+      },
+      "run_id": "b507f5f5e1a5457ca5eb733a742c9df3",
+      "raw_record": "raw_runs/b507f5f5e1a5457ca5eb733a742c9df3.json",
+      "raw_sha256": "eb6dde0e537afd8d8ee6bf8c8edabfd5814dad41990b43d274c51ca79095e668",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "林女士，生日快乐！愿新的一岁顺顺利利，平安喜乐。",
+        "林女士，祝您生日快乐，愿这一年过得轻松自在，事事顺心。",
+        "林女士，生日快乐！祝您身体健康，日子舒心，所愿皆成。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N02",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "郑先生，今天生日；前天说这周在外地出差。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给郑先生送个不打扰他的生日祝福。"
+      },
+      "run_id": "56444651bb0b4846ad2380d354348571",
+      "raw_record": "raw_runs/56444651bb0b4846ad2380d354348571.json",
+      "raw_sha256": "c8e70aa7145c917114c2b81bc3652a6aa0d7f942c0332fccaf9787696dde80e2",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "郑先生，生日快乐！祝您新的一岁顺遂安康，事业如意。",
+        "郑先生，今天是您的生日，祝您生日快乐，诸事顺心，身体康健。",
+        "郑先生，生日这天特地来道一声祝福：生日快乐，愿接下来的日子都舒展顺意。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N03",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "赵女士，今天生日，和顾问聊过几次日常穿搭，平时交流比较轻松。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给赵女士发个自然一点的生日祝福。"
+      },
+      "run_id": "8641571e1fdf420ea387d671b5b49640",
+      "raw_record": "raw_runs/8641571e1fdf420ea387d671b5b49640.json",
+      "raw_sha256": "ba80462ba2143c9aee32fb1db7f264beec478eef79663549ece5d52fbe54d98e",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "赵女士，生日快乐！愿新的一岁一切顺心，每天都过得自在。",
+        "赵女士，祝您生日快乐，愿这一年里喜欢的事都能慢慢实现，日子过得舒心。",
+        "赵女士，今天是您的生日，祝您生日快乐，身体健康，事事如意。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N04",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "顾问刚给许女士发生日祝福。",
+        "conversation": "客户：谢谢呀，今天还得加班😂",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "接着她这句话回一下。"
+      },
+      "run_id": "03f0b01eecde4216ae019530b20a9da4",
+      "raw_record": "raw_runs/03f0b01eecde4216ae019530b20a9da4.json",
+      "raw_sha256": "a4bf2d3f6e6208e5fc50b542cbcf2a31837fd16078fcf29b0fb04a4f27a037d3",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "许女士，谢谢您回我。生日还要加班辛苦了，忙完记得吃点好的，祝您新的一岁顺顺利利、少加班多休息。",
+        "不客气呀。生日当天还加班，真是辛苦了，希望今天忙归忙，也能给自己留一点庆祝的时间，生日快乐！",
+        "您客气了。加班的日子也要照顾好自己，祝您生日快乐，接下来的日子轻松顺心。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N05",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "陈女士，今天生日；上个月买过轻行肩包。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "今天给她发生日祝福。"
+      },
+      "run_id": "4c9a1ff48a654b0a9cd3284f702893c7",
+      "raw_record": "raw_runs/4c9a1ff48a654b0a9cd3284f702893c7.json",
+      "raw_sha256": "4e627ae0f2f4cdcdd1c4891da58f95b23b8bce27a080563ed356a1c7b9386123",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "陈女士，生日快乐！祝您新的一岁顺心自在，喜欢的事物都能慢慢拥有。",
+        "陈女士，祝您生日快乐，愿这一年平安顺遂，每天都过得舒心。",
+        "陈女士，今天是您的生日，祝您生日快乐，愿新的一岁从容自在、事事如意。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N06",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "周先生，平时喜欢礼貌、简洁的沟通；门店安排本次新春问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给周先生发个新春祝福。"
+      },
+      "run_id": "230db9c262b349d4812a92b4b85efd20",
+      "raw_record": "raw_runs/230db9c262b349d4812a92b4b85efd20.json",
+      "raw_sha256": "3c6057fd765dd79eef4d817fd340c3b3da612492af3cc7bdf292e17688bc8679",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "周先生，新春好。祝您和家人节日安康，新一年顺遂如意。",
+        "周先生，新春快乐！愿新的一年平安顺心，万事从容。",
+        "周先生，值此新春，祝您节日愉快，身体康健，新岁一切安好。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N07",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "何女士，本次是门店中秋问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给何女士发句中秋祝福。"
+      },
+      "run_id": "96fa313340304ebf8403c86e7b23b00e",
+      "raw_record": "raw_runs/96fa313340304ebf8403c86e7b23b00e.json",
+      "raw_sha256": "5cb52e78173349751c518a95892a7cb68bb0883a3f43a8262b0e9cafb63e9923",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "何女士，中秋快乐。愿您和家人团聚安好，日子过得舒心顺意。",
+        "何女士，中秋节到了，祝您节日快乐，月圆人安，阖家都顺心。",
+        "何女士，中秋安康。祝您这个节日过得轻松愉快，事事如意。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N08",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "孙女士，平时聊微信比较轻松；本次是圣诞节问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给孙女士发个简短的节日祝福。"
+      },
+      "run_id": "62edb8914314485ba394a01efd8c96a1",
+      "raw_record": "raw_runs/62edb8914314485ba394a01efd8c96a1.json",
+      "raw_sha256": "5103cb8c4bb319acc1fc879c957a58da3bc2224879af5635ca510c27be42f9cc",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "孙女士，圣诞节快乐！祝您节日过得舒心，也愿新的一年顺顺利利。",
+        "孙女士，圣诞快乐，愿您和家人朋友都过得温暖开心。",
+        "孙女士，圣诞节到了，祝您节日愉快，接下来的日子平安顺遂。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N09",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想给同事送个小礼物，她平时就带四张银行卡。随行卡夹多少钱？放得下吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "回复她这两个问题。"
+      },
+      "run_id": "7928cbf823664f37b0332335011c23f0",
+      "raw_record": "raw_runs/7928cbf823664f37b0332335011c23f0.json",
+      "raw_sha256": "5e1bb7411339c82e4a71ee18cc2057ab4ee16f4a9c019dbb234238ec805f7117",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "您好，随行卡夹的价格是2,800元。它有4个独立卡位，可以放4张标准银行卡大小的卡片，带四张卡是够用的。",
+        "随行卡夹2,800元，4个独立卡位正好对应四张标准银行卡，放得下。",
+        "随行卡夹是2,800元。里面是4个独立卡位，能放4张标准银行卡大小的卡片，您同事平时带四张卡正好合适。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "unsupported_customer_commitment",
+          "message": "提问或条件式购买不能升级为已决定购买"
+        }
+      ],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N11",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想买个上班背的包，平时带A4文件、水杯和小雨伞，别太张扬。你觉得哪款合适？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "按她日常带的东西推荐。"
+      },
+      "run_id": "d38003772a094f1a965d0cbe98bae981",
+      "raw_record": "raw_runs/d38003772a094f1a965d0cbe98bae981.json",
+      "raw_sha256": "b2ba1ed467410c519db0d17fc5d1fdb52599be2acdd0a13cd0a0335b3a50d7d6",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "您好，按您平时带的东西，日行托特包最合适：它能放A4纸质资料、500mL水杯和折叠伞，肩背也适合通勤。它有小尺寸压印标识，外观简洁；您喜欢的暖棕在目录颜色里也有。",
+        "上班带A4文件、水杯和小雨伞的话，建议选日行托特包，这几样都在它的容量范围内。轻行肩包放不下A4资料，不太适合您现在的需要。托特包的标识比较小，整体不张扬，颜色也有暖棕。",
+        "日行托特包更适合您：A4纸质资料、水杯和折叠伞都能放，肩背通勤用。它只有小尺寸压印标识，比较低调，目录里有暖棕可选。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N12",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：周末出门就手机钥匙，不想背大包，有合适的吗？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给一个适合轻装出门的建议。"
+      },
+      "run_id": "652cd79cb3a64bafb1f1185e5aca8d72",
+      "raw_record": "raw_runs/652cd79cb3a64bafb1f1185e5aca8d72.json",
+      "raw_sha256": "dac9512e04235bd5e541771c01ef2ff933281c49ce830ff0bae8b871e6b5524c",
+      "program_status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "日行托特包的carry_modes依据为：肩背；该断言没有同一商品资料支持，未知不能解释成没有。",
+        "retryable": true
+      },
+      "messages": [
+        "按您说的轻装出门，轻行肩包更合适：包身约22 × 16 × 7 cm，日常放手机、钥匙这类随身小物刚好，可肩背也可斜挎，肩带长度能调。日行托特包更大一些，适合要带资料或水杯、伞的时候。",
+        "周末只带手机和钥匙的话，推荐轻行肩包，属于外出少带物品的尺寸，手机、钥匙都能放，拉链开合，肩带可调节，斜挎或肩背都行。轻行肩包价格是12,800元。",
+        "不想背大包的话，可以看轻行肩包，比托特包小一圈，是外出随手带小物的款式，手机、钥匙放进去没问题，肩带能调长度。您更习惯斜挎还是肩背，我可以再帮您对一下。"
+      ],
+      "review_verdict": null,
+      "review_issues": null,
+      "review_validation_errors": null,
+      "policy_checks": [
+        {
+          "code": "unsupported_product_fact",
+          "candidate_index": 2,
+          "product_id": "P01",
+          "field": "carry_modes",
+          "evidence": "斜挎",
+          "expected": "肩背",
+          "fact_ref": {
+            "product_id": "P01",
+            "field": "carry_modes",
+            "status": "known",
+            "value": "肩背"
+          },
+          "source_quote": "肩背",
+          "message": "日行托特包的carry_modes依据为：肩背；该断言没有同一商品资料支持，未知不能解释成没有。"
+        }
+      ],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": null,
+      "generation_requested": true,
+      "review_requested": false
+    },
+    {
+      "case_id": "N13",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想送导师一个低调的小礼物，不要太抢眼，有什么建议？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "先给她一个合适的商品建议。"
+      },
+      "run_id": "f0036493f0844b2e83faeacc818d3abd",
+      "raw_record": "raw_runs/f0036493f0844b2e83faeacc818d3abd.json",
+      "raw_sha256": "4540f0d94505536e8f1cdc7fb11ef0c8ad65f716faec66e4486149d90e67fbdc",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "送导师的话，可以先看随行卡夹：4个独立卡位，可以放4张标准银行卡大小的卡片，本身体积很小，也适合作为小件礼物。外观是三款共用的哑光细纹牛皮和小尺寸压印标识，整体比较低调。卡夹价格2,800元。",
+        "如果不想太抢眼，随行卡夹会比较合适。它只有10 × 7.5 × 0.8 cm，标识也比较小；4个独立卡位可放4张标准银行卡大小的卡片。价格是2,800元。",
+        "低调的小礼物可以看随行卡夹，墨黑和暖棕两个颜色都偏沉稳，哑光细纹牛皮表面光泽低，标识也很小。它有4个独立卡位，可放4张标准银行卡大小的卡片，价格2,800元。若想送更日常的包袋，轻行肩包是12,800元，可肩背或斜挎，适合装手机、钥匙这类小物。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N14",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：托特有棕色的吗？我衣服基本都是深色。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "回答颜色，顺便帮她判断一下搭配。"
+      },
+      "run_id": "ac8d1401a23a4d08b30d98e071629aee",
+      "raw_record": "raw_runs/ac8d1401a23a4d08b30d98e071629aee.json",
+      "raw_sha256": "c0e440fe0b290b787832f0f9d703b5224d346f06f1f0213b0469d53d4386f863",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "有的，日行托特包有暖棕和墨黑两个颜色。深色衣服配暖棕会有层次，配墨黑会更统一，看您更喜欢哪种感觉。",
+        "托特有棕色的，是暖棕；另外还有墨黑。两个配深色衣服都合适，暖棕更暖一些，墨黑则更沉稳低调。",
+        "有的，暖棕是这个托特包的目录颜色之一，另外还有墨黑。您平时深色衣服多的话，暖棕能带出一点暖色调的对比，墨黑配起来更顺色，两种都行。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N15",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：肩包和托特哪个轻一点？",
+        "related_info": "",
+        "product_ids": [
+          "P01",
+          "P02"
+        ],
+        "advisor_instruction": "直接比较一下。"
+      },
+      "run_id": "6c68ad92bec543b0a77151f37ca063a4",
+      "raw_record": "raw_runs/6c68ad92bec543b0a77151f37ca063a4.json",
+      "raw_sha256": "c4cbe12555481a995efefa7a1525d2d5a4161e973fb04bcb09208d5ef0f8c33c",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "轻行肩包的自重约420 g，日行托特包约750 g，两个相比是肩包更轻。",
+        "肩包轻一些，空包约420 g；托特包约750 g。",
+        "轻行肩包更轻，空包重量约420 g，托特包约750 g。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N16",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "平时通勤带A4资料和一瓶水。",
+        "conversation": "客户：我每天走路二十分钟，托特装东西会不会太沉？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "结合她的使用情况帮她判断。"
+      },
+      "run_id": "f1c3acaf16264e3cb72c8fcc4ad8c38d",
+      "raw_record": "raw_runs/f1c3acaf16264e3cb72c8fcc4ad8c38d.json",
+      "raw_sha256": "cdc34ca81161c16c6247bf745f01c9081c4cf03546b4acff33c0fd1b3e1d049d",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "日行托特包空包大约750克，我们不会说它轻若无物。您平时就带A4资料和一瓶水，这两样本就在它的日常容量范围内，装好后重量主要看您实际带多少；走路二十分钟的感受还是建议您到店装着自己的东西上身试一下更直接。",
+        "这款托特包自重约750克，不算特别轻的包。用来装A4资料加一瓶水是日常用途，容量没有问题，但走二十分钟会不会觉得沉，和您带的东西多少、背法都有关，我没法只凭包重给您一个确切答案。",
+        "日行托特包空包约750克。放A4资料和一瓶水属于它的日常收纳范围，容量上不用担心；至于装好后走路二十分钟的体感，得看您实际带的分量，方便的话来店用您自己的东西试背一下，会比看数字更清楚。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N17",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "顾问：昨天看的轻行肩包，您还想了解哪一点？\n客户：它能放A4吗？偶尔要拿几页材料。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "回答她的容量问题。"
+      },
+      "run_id": "84a45bacfe51421a99425bb549fad03e",
+      "raw_record": "raw_runs/84a45bacfe51421a99425bb549fad03e.json",
+      "raw_sha256": "e5a7075e113ddc719051683716edecc930ab24beca5ccfb46f93cfeaa6244966",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "轻行肩包放不下A4资料，夹几页材料也不太行。",
+        "您说的A4它放不下，整张A4的尺寸超过了这只肩包。",
+        "轻行肩包放不下A4资料，这类材料得另拿或换能装资料的款式。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N18",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：我那个文件夹挺厚，日行托特装资料会不会挤？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "先回答已知的，再说还需要什么。"
+      },
+      "run_id": "f57895d879c84495a6dc9975a3290969",
+      "raw_record": "raw_runs/f57895d879c84495a6dc9975a3290969.json",
+      "raw_sha256": "16151c018483062988071c8f0a9c4d14b688d3b2a9119c2c11132270d54b3d8a",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "日行托特包能放下A4纸质资料。不过厚文件夹是否放得下，资料里没有给出内尺寸和包口尺寸，单看外尺寸34 × 28 × 12 cm我没法替您确定会不会挤，这点我不想凭估计答复您。",
+        "日行托特包放普通A4资料是够的，加厚文件夹就不好只看外尺寸了。您方便的话，把文件夹的长宽厚告诉我，我帮您对一下。",
+        "日行托特的外尺寸是34 × 28 × 12 cm，放A4纸质资料没有问题；但厚文件夹这块，品牌资料里确实没有内尺寸和包口尺寸，我不能直接说一定不挤。您把文件夹的厚度和尺寸发我，我对着看会更准确。"
+      ],
+      "review_verdict": "needs_review",
+      "review_issues": [
+        {
+          "code": "incomplete_reply",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s2",
+          "message": "三条里只有第一条完全没有给下一步：客户问“会不会挤”，reply_1 只回答“不能确定”，未提示可提供文件夹尺寸或到店试放，厚文件夹这一核心疑虑停留在无结论状态，与另外两条不一致（另两条均给出请客户发尺寸的跟进）。建议补一句轻量跟进，例如请客户把文件夹厚度和尺寸发来帮对一下。",
+          "source_refs": [
+            {
+              "source_id": "product.P01.limitations"
+            },
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        }
+      ],
+      "review_validation_errors": [
+        {
+          "code": "issue_source_type",
+          "message": "漏答应指向任务或客户问题，不是任意商品字段",
+          "candidate_index": 0,
+          "source_id": "product.P01.limitations"
+        },
+        {
+          "code": "issue_source_type",
+          "message": "漏答应指向任务或客户问题，不是任意商品字段",
+          "candidate_index": 0,
+          "source_id": "writing.rules"
+        },
+        {
+          "code": "false_missing_answer",
+          "message": "不能忽略完整候选里已有的回答",
+          "candidate_index": 0
+        }
+      ],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N19",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：随行卡夹有零钱袋吗？我想卡和几个硬币一起放。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "说明它的收纳结构就行。"
+      },
+      "run_id": "3f7272a4aca9495f981ba940a14eb96d",
+      "raw_record": "raw_runs/3f7272a4aca9495f981ba940a14eb96d.json",
+      "raw_sha256": "a02d2676285ba27c4b14f16e8ae1db7c7ffa1924eadc98bd8b2c9e76deb048e5",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "随行卡夹没有单独零钱袋，它的结构是4个独立卡位，可以放4张标准银行卡大小的卡片。",
+        "您好，随行卡夹是没有单独零钱袋的，里面是4个独立卡位，能放4张标准银行卡大小的卡片。",
+        "这款卡夹没有单独零钱袋，收纳部分是4个独立卡位，可放4张标准银行卡大小的卡片。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N20",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：这款皮看着细细的，是牛皮吗？里面是什么材质？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "回答材质和内衬。"
+      },
+      "run_id": "82bdf19117834ea891d1e500bde92089",
+      "raw_record": "raw_runs/82bdf19117834ea891d1e500bde92089.json",
+      "raw_sha256": "7f66f69a10f76f909dbc9a469b613549e2401155807d24d1e15c47059099a137",
+      "program_status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "messages": [
+        "是牛皮的，这款日行托特包包身是哑光细纹牛皮，所以表面光泽低、能看到细小纹理。里面内衬是棉布。",
+        "是的，包身用哑光细纹牛皮，皮面本身就是细细的纹理。内里是棉布内衬。",
+        "这款的包身是哑光细纹牛皮，皮面偏哑光、纹路细，所以看着是细细的质感；内衬为棉布。"
+      ],
+      "review_verdict": null,
+      "review_issues": null,
+      "review_validation_errors": null,
+      "policy_checks": [
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 0,
+          "evidence": "牛皮",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 1,
+          "evidence": "牛皮",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 2,
+          "evidence": "牛皮",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 2,
+          "evidence": "内衬为棉布",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        }
+      ],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": null,
+      "generation_requested": true,
+      "review_requested": false
+    },
+    {
+      "case_id": "N21",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "接住她的到店意向，帮她安排下一步。"
+      },
+      "run_id": "ebb5d01a3b5b4bc3badc3c8246541e84",
+      "raw_record": "raw_runs/ebb5d01a3b5b4bc3badc3c8246541e84.json",
+      "raw_sha256": "aba06d1f940beed7acc0ca87672cac9991d3b3151de77e692587f4b1cadc87fa",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "留货我这边没有直接记录可以确认，得先帮您查一下墨黑色的库存和能不能预留。查好我回您，周六您过来就能直接看。",
+        "您好，墨黑色是轻行肩包的目录颜色之一，能不能预留我需要先和门店确认一下。有结果我尽快告诉您，不耽误您周六的安排。",
+        "轻行肩包墨黑色的库存和预留我先帮您问一下门店，确认后回您。周六想看的话，到时可以现场上手试背，看看大小和肩带长度合不合适。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 0,
+          "domains": [
+            "event"
+          ]
+        },
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 1,
+          "domains": [
+            "event"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 2,
+          "source_id": "product.P02.strap_adjustable",
+          "claim_domains": [
+            "event",
+            "product"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 2,
+          "source_id": "product.P02.carry_modes",
+          "claim_domains": [
+            "event",
+            "product"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 2,
+          "domains": [
+            "event"
+          ]
+        }
+      ],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N22",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "顾问：您昨天看的轻行肩包，还想了解什么？\n客户：这两天换了项目，现在还得带文件去公司。\n顾问：平时会带哪些东西？\n客户：A4和水杯基本天天带，包别太花。\n客户：那还是帮我看看上班用的吧，预算两万以内。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "按现在的需求推荐，接着聊。"
+      },
+      "run_id": "0b19732c414047d0816343d7462f6d80",
+      "raw_record": "raw_runs/0b19732c414047d0816343d7462f6d80.json",
+      "raw_sha256": "14d7c95edf40cdb34cd65e8771a9063de2e79febc02290ab850caef60b315d7a",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "按您现在上班要带的A4和水杯，日行托特包更合适：它明确能放A4纸质资料和500 mL水杯，也符合两万以内的预算，价格是18,800元。颜色有墨黑和暖棕，墨黑配它的低调小标识，和您说的别太花正合适。",
+        "上班带A4和水杯的话，之前看的轻行肩包就放不下了，A4和电脑都装不进去。日行托特包可以放A4纸质资料、500 mL水杯这些日常物品，18,800元也在您两万以内的预算里；墨黑是比较稳妥的一色，标识也很小。",
+        "您现在每天要带文件和水杯，建议看日行托特包：能装A4纸质资料和500 mL水杯，18,800元在预算内，墨黑这个颜色也不显花哨。如果您还要带电脑或厚文件夹，需要再核对一下尺寸，您跟我说一声就行。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N23",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "周女士，两周前在门店买了随行卡夹。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "发个简短的购后问候，看看用着怎么样。"
+      },
+      "run_id": "d4a51378d1894c2f9e30f09cd8fa9c01",
+      "raw_record": "raw_runs/d4a51378d1894c2f9e30f09cd8fa9c01.json",
+      "raw_sha256": "e9d04970294ee866c245900a86d24cf1b7a057be8e2d69a1d464460700b18fc2",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "周女士，您好。上次那款随行卡夹用着还顺手吗？",
+        "周女士，跟您问候一下，两周前您带走的那只卡夹这两周用下来感觉怎么样？",
+        "周女士，您好，想起来问问您那只随行卡夹用得还习惯吗？卡位还够用吧？"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N24",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上周在门店买过日行托特包。",
+        "conversation": "客户：托特这几天背着还不错，里面的小袋子刚好放钥匙。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "接着她的反馈回一句。"
+      },
+      "run_id": "fa5350b006f84b06a3bb5a10792d11ee",
+      "raw_record": "raw_runs/fa5350b006f84b06a3bb5a10792d11ee.json",
+      "raw_sha256": "817d898e1b2381a069adeab433e7aeab814f1f03e2e395f3d7b0bec18a32f72b",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "听您说背得舒服就放心了，那个平口袋本来就是可以单独放钥匙这类小物的。后面用着有什么想法随时跟我说。",
+        "谢谢您回来说使用感受，钥匙放在那个内侧平口袋里确实好找。平时注意别长时间淋雨，沾到水用干软布吸干、通风处晾干就好。",
+        "托特能顺手就好，小口袋刚好派上用场。用着哪儿不顺手或者想了解怎么打理，都可以跟我说。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 1,
+          "source_id": "product.P01.limitations",
+          "claim_domains": [
+            "service"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        }
+      ],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N25",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：昨天下雨包沾了点水，我用纸巾擦过了，现在要怎么处理？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "告诉她现在怎么处理。"
+      },
+      "run_id": "96f512a2473b4dbe80e158634f16cf61",
+      "raw_record": "raw_runs/96f512a2473b4dbe80e158634f16cf61.json",
+      "raw_sha256": "fb59998302ac5b4f28bfbafacd07664df7ce413274abd52b1f37ee356b621078",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "您好，包面沾到雨水后，建议用干燥的软布轻轻把水分吸干，再放在通风处自然晾干，不要用吹风机烘干。",
+        "纸巾擦过问题不大，接下来用干燥的软布轻轻吸干残留水分，然后放在通风处自然晾干就好。尽量不要用酒精或成分不明的清洁剂处理。",
+        "日常遇到这种情况，用干软布把水吸干、放通风处自然晾干就可以，别用烘干或酒精擦拭。之后若有不放心的地方，可以拍张局部照片发我看看。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N26",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "给她安全、好操作的处理建议。"
+      },
+      "run_id": "eef441c2c5c644e0b182d6e1f8bde4a0",
+      "raw_record": "raw_runs/eef441c2c5c644e0b182d6e1f8bde4a0.json",
+      "raw_sha256": "49958ae32d6a41058d045ae28c74ef323980d9f9237479d4365bc6bc1cf5a0f6",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "您好，家里那瓶清洁剂成分不确定的话，先不要用在卡夹上，也不建议先在角落试。皮面沾到污渍，先用干燥软布轻轻吸一吸、擦一擦，放在通风处自然晾干。",
+        "您好，成分不明的清洁剂不建议自行使用，包括只在一小块试。卡夹是哑光细纹牛皮，日常沾到污渍可以先用干软布轻轻吸干表面，再在通风处自然晾干，避免烘干和酒精擦拭。",
+        "您好，建议先别用家里那瓶清洁剂，成分不清楚的情况下不好判断对皮面的影响。先用干燥的软布轻轻吸掉、擦去表面污渍，再自然晾干就好；如果污渍比较明显或一直没淡，您可以拍张局部照片发我，我帮您看看后续怎么处理。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 0,
+          "source_id": "product.P03.material",
+          "claim_domains": [
+            "service"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        }
+      ],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N27",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上次说帮我看拉链的事，有进展了吗？",
+        "related_info": "虚构售后记录CX-1102：轻行肩包拉链问题；门店2026-11-03已收件，目前售后检测中，尚无费用和完成时间结论。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "根据已有售后记录回她。"
+      },
+      "run_id": "365c6df8c95e48f3a494a677bc0b5686",
+      "raw_record": "raw_runs/365c6df8c95e48f3a494a677bc0b5686.json",
+      "raw_sha256": "cdc26ed0c66ed656e95d3062a572cb00d009c955cf27d2b46d25cc4275bbec42",
+      "program_status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。",
+        "retryable": true
+      },
+      "messages": [
+        "您好，拉链的事我这边查过了：门店11月3日已经收件，目前还在售后检测中。费用和完成时间暂时还没有结论，一有结果我就跟您说。",
+        "有进展了：您那只轻行肩包门店11月3日已经收到，现在在售后检测。检测结果、是否涉及费用和大概多久，都要等售后给出结论，我这边会替您盯着。",
+        "查到了，肩包11月3日门店已收件，现在处于售后检测环节。目前还不好说费用和完成时间，等检测那边有结论我再联系您。"
+      ],
+      "review_verdict": null,
+      "review_issues": null,
+      "review_validation_errors": null,
+      "policy_checks": [
+        {
+          "code": "unsupported_completed_action",
+          "candidate_index": 0,
+          "evidence": "我这边查过",
+          "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。"
+        },
+        {
+          "code": "invented_purchase_history",
+          "candidate_index": 1,
+          "evidence": "有进展了：您那只轻行肩包门店11月3日已经收到",
+          "product_ids": [
+            "P02"
+          ],
+          "message": "没有该商品的购买或使用依据；其他商品的已购记录不能支持这项已购预设。"
+        }
+      ],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": null,
+      "generation_requested": true,
+      "review_requested": false
+    },
+    {
+      "case_id": "N28",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上周买的肩包还没用，想换成米白，能换吗？",
+        "related_info": "虚构门店订单：2026-11-01购买轻行肩包；本次业务日期2026-11-04。顾问已核对未使用、标牌和原包装齐全、有购买凭证，商品尚待门店检查。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "根据订单和已核对情况回复。"
+      },
+      "run_id": "ea8e708399f34a1bb0dcf5e00d4e6447",
+      "raw_record": "raw_runs/ea8e708399f34a1bb0dcf5e00d4e6447.json",
+      "raw_sha256": "5264f12cce508b35d8af7974ed559279e9d4607ce9495426eceb861fe43e698a",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "您好，您这只轻行肩包是11月1日在门店购买的，今天是11月4日，还在自购买次日起算的7个自然日内。您已核对过商品未使用、标牌和原包装齐全，也有购买凭证，按现有信息符合换货申请条件。换成米白可以申请，最终要由门店检查确认。",
+        "您好，想换成米白是可以申请的。购买日期是11月1日，按7个自然日的未使用退换条件还在申请范围内；您这边商品未使用、标牌和原包装齐全、购买凭证也有，信息是齐的，最后以门店检查结果为准。",
+        "您好，这只肩包目前符合未使用商品的换货申请条件，米白也在轻行肩包的目录颜色里，可以申请换色。商品送到门店检查确认后即可办理，检查结果出来后我再和您说一声。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 2,
+          "source_id": "product.P02.colors",
+          "claim_domains": [
+            "service"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        }
+      ],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N29",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上个月在门店买过轻行肩包。",
+        "conversation": "客户：这两天总觉得肩包拉链有点卡，会不会坏了？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "接住她的担心，给个能开始处理的办法。"
+      },
+      "run_id": "160c8acff6c643fe97ba5a68e1ad0f9c",
+      "raw_record": "raw_runs/160c8acff6c643fe97ba5a68e1ad0f9c.json",
+      "raw_sha256": "f046930a6fb7957dce9d46e9dca2bc13ef6dd245411aff3ab8444243207fad93",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "您好，拉链有点卡不一定就是坏了，先别往卡的方向硬拉。可以看看齿槽里有没有细小杂物或线头，清理后再顺着拉几次试试。如果还是不顺，把卡顿位置拍张照片给我，我帮您看看怎么处理。",
+        "肩包拉链才用了一个月就卡，确实会让人担心。先别涂油、也别用其他清洁剂，避免留下痕迹。您方便的话，拍一段拉合时卡住的视频发我，我先按您这款包帮您核实后续怎么处理。",
+        "收到，先不用急着认定是坏了。拉链卡常见的原因可能是齿槽里进了细屑，也可以留意是不是装得比较满、拉合时有点偏。您可以先空包的情况下试拉一下；如果卡得明显或越来越紧，拍照发给我，我帮您对接售后查看。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N31",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "陈女士，三个月前买过随行卡夹，上次微信互动也是当时。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "轻松问候一下，也可以问问卡夹用着怎么样。"
+      },
+      "run_id": "96992d391cdd410a86f34b6d387736cd",
+      "raw_record": "raw_runs/96992d391cdd410a86f34b6d387736cd.json",
+      "raw_sha256": "82e6975bde1cb68b2d21bbedea34202d70212a5e7c27bb448d0f79c1299b7b86",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "陈女士您好，好久没联系了。之前那只随行卡夹用着还顺手吗？希望它一直帮您把卡片收得妥妥的。",
+        "陈女士您好，隔了一阵来问候一下。随行卡夹这几个月的使用还习惯吗？愿您日常出行都轻松顺利。",
+        "陈女士您好，上次给您的那只随行卡夹，现在用着感觉怎么样？有需要了解的地方随时找我。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N32",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "孙女士，上次到店看过暖棕款，后来没有继续聊。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "简单问候，重新接上联系。"
+      },
+      "run_id": "6230ec42ce3b4911af483d2a4d31f80a",
+      "raw_record": "raw_runs/6230ec42ce3b4911af483d2a4d31f80a.json",
+      "raw_sha256": "48cd1839a1202667c01570cc1acdc51ac30626b211ad79ddfc682cb68adce543",
+      "program_status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "messages": [
+        "孙女士您好，我是澄序的顾问。上次您在店里看过暖棕款，想着跟您打个招呼。最近有需要了解随时找我。",
+        "孙女士您好，好久没联系了。上次看过的那只暖棕款还记得，您若想再看看，跟我说一声就好。",
+        "孙女士您好，打扰一下。上次您看的暖棕款一直有印象，想问问最近还好吗？有想了解的随时联系我。"
+      ],
+      "review_verdict": null,
+      "review_issues": null,
+      "review_validation_errors": null,
+      "policy_checks": [
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 0,
+          "evidence": "暖棕款",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 1,
+          "evidence": "暖棕款",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 2,
+          "evidence": "暖棕款",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        }
+      ],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": null,
+      "generation_requested": true,
+      "review_requested": false
+    },
+    {
+      "case_id": "N33",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "顾问刚发过轻量问候。",
+        "conversation": "客户：最近工作有点忙，等忙完再去店里看看。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "体谅她现在忙，回一句。"
+      },
+      "run_id": "3abfef81ef5c4f0e9eccbf40dea135e4",
+      "raw_record": "raw_runs/3abfef81ef5c4f0e9eccbf40dea135e4.json",
+      "raw_sha256": "24319b2105f48825551977b5db6b4b6c9402e24a6a0b8a1cda87c19f8f80e9a3",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "理解的，工作忙起来确实顾不上这些，您先忙，等方便了再来店里看看就好。",
+        "没关系，忙完再来就好，店里的节奏也不急，您有空时过来随意看看。",
+        "好呀，先把工作顾好，等您空了想来店里坐坐，随时跟我说一声就行。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N34",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "",
+        "conversation": "客户：好久没去，你们那个随行卡夹还在卖吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "直接回她这款的信息。"
+      },
+      "run_id": "6c8f81209e8e475ab14d395420f71737",
+      "raw_record": "raw_runs/6c8f81209e8e475ab14d395420f71737.json",
+      "raw_sha256": "8784f092c23e4abbc79cc66361d3a1a2f3d4aff2d7ea39a6d95805c2fc4e4e88",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "您好，随行卡夹目前还在售，价格是2,800元，有墨黑和暖棕两个颜色，4个独立卡位能放4张标准银行卡大小的卡片。",
+        "随行卡夹还在售的，2,800元。它是哑光细纹牛皮，4个独立卡位，放4张标准银行卡没问题。",
+        "您好，好久不见。随行卡夹还在售，2,800元，目录里有墨黑和暖棕两色；具体颜色是否还有现货，我可以帮您确认。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N35",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "何女士上次到店说不喜欢大标识，喜欢不用刻意搭配的款式。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "温和重新联系，问问她最近有没有选包的打算。"
+      },
+      "run_id": "c75f65ab743e4b36a74d607cd8e76945",
+      "raw_record": "raw_runs/c75f65ab743e4b36a74d607cd8e76945.json",
+      "raw_sha256": "de21497a97532253c851494d10cab3d8a1665ac70a63d6de7bfbe4f36ed4d088",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "何女士您好，我是澄序的顾问。上次您来店里时提到，不喜欢标识特别大、也不用刻意搭配的款式，我们这边几款的标识都很小，外观比较简洁。最近您在考虑选包的话，我可以按这个方向帮您看看。",
+        "何女士您好，好久没联系了。上次您说喜欢低调、不用费心搭配的款式，我们几款都是小尺寸压印标识，配墨黑或暖棕都比较好穿。最近要是有选包的打算，随时跟我说一声。",
+        "何女士您好，我是澄序的顾问。想起您上次到店时说过，偏好标识不显眼、日常好搭的包，这个方向我们一直记着。最近有没有选包的计划？需要的话我帮您留意。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N36",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "姜女士10月中旬聊过通勤包，当时说11月初出差结束再看；双方约好11月初联系。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "按约接着上次的通勤包话题聊。"
+      },
+      "run_id": "a6d3ca0e5afc4ad9916cc4079abc76f7",
+      "raw_record": "raw_runs/a6d3ca0e5afc4ad9916cc4079abc76f7.json",
+      "raw_sha256": "118415c207834819d4698cab4cab735d803fe2da3bc632663218c53596493d00",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "姜女士，您好。您出差该结束了，之前说11月初再聊通勤包的事，我按约定来问问您近况。您通勤要带A4，日行托特包正好能放下A4纸质资料，也有您喜欢的墨黑；您要是方便，我们可以接着看。",
+        "姜女士您好，出差辛苦了。上次聊通勤包时您提到要带A4，日行托特包可以放A4纸质资料，颜色有墨黑，我先跟您说一声。您现在想继续了解，还是再挑个方便的时间聊都行。",
+        "姜女士好，之前约好11月初联系您，我来接着上次的通勤包话题。带A4的通勤包，日行托特包能放下A4纸质资料，目录里有墨黑。您时间方便的时候告诉我一声，我们慢慢聊。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N38",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "顾问：周末有个日常收纳小聚，有空可以来看看。\n客户：几点？在哪儿呀？",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "告诉她时间地点。"
+      },
+      "run_id": "2fbb8d7989c44867a86315789a636278",
+      "raw_record": "raw_runs/2fbb8d7989c44867a86315789a636278.json",
+      "raw_sha256": "30aa056f1571274717c64d82a1be4f2e3ade5ee4bd1240390a6dec969fd9f263",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "是11月14日周六，下午2点到4点，在澄序广场8号精品店。",
+        "11月14日周六下午2点到4点，地点是澄序广场8号精品店。",
+        "时间是11月14日周六14:00—16:00，在澄序广场8号精品店。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N39",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "用容易懂的话介绍内容。"
+      },
+      "run_id": "e62c0ac11be4412a8fe343bf050a6b0d",
+      "raw_record": "raw_runs/e62c0ac11be4412a8fe343bf050a6b0d.json",
+      "raw_sha256": "dc760d314b0e133edf60eeedea3dc504f66b90470ab198dcbb9b68ab8b895ece",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "这次活动主要看收纳：现场会演示日行托特包、轻行肩包和随行卡夹怎么装常用物品，比如资料、水杯、手机、卡片这些。不用懂皮具也能看明白，您也可以在时段内自由体验，带上平时用的东西对照着试。11月14日周六14:00—16:00在澄序广场8号精品店，短暂停留即可，不必全程参加。",
+        "活动就是看这三个包怎么用：哪种装通勤资料、哪种适合出门少带东西、卡片怎么分开放。全程是实物演示和自由体验，不讲皮具知识，不懂也没关系。时间是11月14日周六14:00—16:00，地点在澄序广场8号精品店，时段内来一会儿就行。",
+        "“日常收纳小聚”主要演示日行托特包、轻行肩包、随行卡夹的日常收纳方式，现场可以直接上手体验，也可以带自己的日常物品来对照看看合不合适。11月14日周六14:00—16:00在澄序广场8号精品店，中间停留一会儿就可以，不需要全程在场；想带一位朋友也可以，登记时提供称呼就行。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 0,
+          "source_id": "product.P01.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 0,
+          "source_id": "product.P02.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 0,
+          "source_id": "product.P03.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 1,
+          "source_id": "product.P01.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 1,
+          "source_id": "product.P02.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 1,
+          "source_id": "product.P03.card_slots",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        }
+      ],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N40",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：我可能只有半小时，过去看看方便吗？",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "按活动安排回复她。"
+      },
+      "run_id": "b68bf44c554242c0b78a909f9fc1d8be",
+      "raw_record": "raw_runs/b68bf44c554242c0b78a909f9fc1d8be.json",
+      "raw_sha256": "09e15924dc0c325595326e69976e5b578b814bfad4eba0a1f13bb50d5e1ebd4e",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "方便的。11月14日周六14:00—16:00在澄序广场8号精品店，时段内可以随时过来，半小时也够，不用全程参加，看看演示或自己试用都可以。",
+        "可以的。日常收纳小聚是11月14日周六14:00—16:00，在澄序广场8号精品店，活动时间内随时进出都行，您待半小时也没问题。",
+        "方便，您不必全程参加。活动在11月14日周六14:00—16:00，澄序广场8号精品店，时段内会持续演示三款包怎么收日常物品，也可以带自己的东西来对照看看。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N41",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：我能带一个朋友一起来吗？",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "回答同行安排。"
+      },
+      "run_id": "f6e1782ef64f49028388d355aa845b2e",
+      "raw_record": "raw_runs/f6e1782ef64f49028388d355aa845b2e.json",
+      "raw_sha256": "1c663fd8db89b0fe85fda3e75e37a5bd776251f87d3dd8b3813b385d860dd376",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "可以的，可以带一位朋友一起来。同行朋友的称呼也麻烦留一下，方便做参加登记。",
+        "可以的，一位朋友随您一起过来没问题。参加人的称呼需要登记一下，最终参加安排由门店确认。",
+        "可以带一位朋友。您和朋友的称呼都给我一下，我这边登记后由门店确认参加安排。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N42",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：行，那帮我报一下名，姓陈，两位。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "接住她两位报名的意向。"
+      },
+      "run_id": "0d584a1ad90249b9ab1e47c3f389614c",
+      "raw_record": "raw_runs/0d584a1ad90249b9ab1e47c3f389614c.json",
+      "raw_sha256": "aef655fc16edaed7ae4b4a4e4b7e436f3757398ec7d4a436d467440886392aee",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（ready requires three fixed fields and no advisor-blocking gap），不属于可明确兼容的空内部字段；原响应已保留，整组未采用。",
+        "retryable": false
+      },
+      "messages": [
+        "好的陈女士，先记下您这边两位，我就按陈姓报名。活动是11月14日周六14:00—16:00，在澄序广场8号精品店，我把登记信息提交到门店，具体参加安排以门店确认为准。",
+        "收到，陈女士两位。这场“日常收纳小聚”在11月14日周六下午两点到四点，澄序广场8号精品店，时段内可以随时来，不用全程参加，也可以带上常用的小物对照体验。报名信息我提交给门店确认。",
+        "陈女士，两位的信息我记下了，稍后提交门店登记。活动当天11月14日周六14:00—16:00在澄序广场8号精品店，您可以带一位朋友一起来，参加安排等门店确认后我再回复您。"
+      ],
+      "review_verdict": null,
+      "review_issues": null,
+      "review_validation_errors": null,
+      "policy_checks": null,
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": null,
+      "generation_requested": true,
+      "review_requested": false
+    },
+    {
+      "case_id": "N43",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：这周末来不了，之后还有类似活动吗？",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "回应她对后续活动的兴趣。"
+      },
+      "run_id": "1ebbb56f698044739e1044213a6e6a6d",
+      "raw_record": "raw_runs/1ebbb56f698044739e1044213a6e6a6d.json",
+      "raw_sha256": "7b5c79a61dfc34de5fcbd1dd1010133970723505305e4bb74c003c87faf257bf",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "没关系，这周末的“日常收纳小聚”是11月14日周六14:00—16:00，在澄序广场8号精品店。之后如果有类似活动，我再跟您说一声。",
+        "这周末来不了不影响的。最近这场安排在11月14日周六下午两点到四点，澄序广场8号精品店，时段内会演示三款包怎么收纳日常物品，也可以自己带东西对照，短暂停留就行。",
+        "之后这类活动我会留意告诉您。这次的是11月14日周六14:00—16:00，澄序广场8号精品店，到场可以自由体验，带一位朋友的话，参加人的称呼需要登记一下。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N44",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "结合她的用途帮她判断。"
+      },
+      "run_id": "16eaaf77cb30487d950624d59bda6551",
+      "raw_record": "raw_runs/16eaaf77cb30487d950624d59bda6551.json",
+      "raw_sha256": "63ec2c7a744ddee2b7da77d72f69290eed39a6e7fd38a92f58dc1f27748d9996",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "轻行肩包是12,800元。按您平时只带手机和钥匙的用法，它容量是合适的：包身约22 × 16 × 7 cm，空包约420 g，手机、钥匙、口红这类小物都放得下，肩带可调，也能斜挎。价格上目前确实没有折扣，您可以先按容量和日常用法看看合不合适。",
+        "这款肩包12,800元，日常带手机和钥匙正好是它的使用范围，不用带大包。它肩带可调、拉链开合，外出少带东西时背着比较省事。如果您觉得这个价格超出预期，也可以告诉我大概的预算，我帮您看看有没有更合适的。",
+        "日常只带手机和钥匙，肩包的量是够的，它就是按外出少带物品设计的。价格是12,800元，目前没有折扣，这点我先如实跟您说。您可以比较一下自己的预算和用法再定，需要我补充什么细节也可以随时问。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N45",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：随行卡夹拿两只一共多少钱？给两位同事。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "直接告诉她总价。"
+      },
+      "run_id": "38c70301b4544320b778872aec0b4077",
+      "raw_record": "raw_runs/38c70301b4544320b778872aec0b4077.json",
+      "raw_sha256": "13465c528ad0d83bb0b5f36525212ba13621154ce94094a069f386635c3ea47a",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "随行卡夹一只2,800元，两只一共5,600元。",
+        "您好，随行卡夹单只2,800元，拿两只合计5,600元。",
+        "随行卡夹两只合计5,600元，单只2,800元。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N46",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：买两只卡夹，能优惠一点吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "温暖但如实回答。"
+      },
+      "run_id": "cdaa286cb58d435c96c510b1afd3cfb2",
+      "raw_record": "raw_runs/cdaa286cb58d435c96c510b1afd3cfb2.json",
+      "raw_sha256": "edfb345803b5ff9518de4a117ade9eec0989beba81bfbfe082e97c66871106e0",
+      "program_status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "随行卡夹的品牌现价为2,800元，候选报价不一致。",
+        "retryable": true
+      },
+      "messages": [
+        "您好，随行卡夹目前没有折扣，单只2,800元，两只就是5,600元。",
+        "您好，谢谢您想买两只随行卡夹。这款目前没有优惠，也没有议价空间，两只按目录价合计5,600元。",
+        "您好，随行卡夹目前确实没有折扣，两只的合计是5,600元。"
+      ],
+      "review_verdict": null,
+      "review_issues": null,
+      "review_validation_errors": null,
+      "policy_checks": [
+        {
+          "code": "wrong_price",
+          "candidate_index": 0,
+          "evidence": "5,600元",
+          "expected": 2800,
+          "product_id": "P03",
+          "message": "随行卡夹的品牌现价为2,800元，候选报价不一致。"
+        }
+      ],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": null,
+      "generation_requested": true,
+      "review_requested": false
+    },
+    {
+      "case_id": "N47",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：我预算一万三左右，平时就带手机钥匙，轻行肩包合适吗？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "结合她的预算和用法判断。"
+      },
+      "run_id": "81550b62b83a4d2a91d8b4a2617cc275",
+      "raw_record": "raw_runs/81550b62b83a4d2a91d8b4a2617cc275.json",
+      "raw_sha256": "b3f0b1f7c3cecad50229faed30aace75d6c7db4e59f38a6045ab996037e757c3",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "轻行肩包的价格是12,800元，在您一万三左右的预算内；它可肩背或斜挎，平时放手机和钥匙是合适的。",
+        "合适的。轻行肩包12,800元，在您的预算范围内，容量也正好对应手机、钥匙这类随身小物。",
+        "按您的预算和日常用法，轻行肩包是对得上的：价格12,800元，包型本来就是为外出只带手机、钥匙等小物设计的。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N48",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：另一家的卡夹便宜不少，你们这款主要有什么不同？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "帮她从实际使用上比较。"
+      },
+      "run_id": "9b9e0a133eb94b6abbc9a6638836525f",
+      "raw_record": "raw_runs/9b9e0a133eb94b6abbc9a6638836525f.json",
+      "raw_sha256": "4a50656d8a3a4bdc14bbe0517a4fb4031dc25945ad293647bbce88248e2b3b0e",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "您问的这款是随行卡夹，2,800元，采用哑光细纹牛皮，表面光泽较低、能看到细小纹理，有4个独立卡位，可放4张标准银行卡大小的卡片。另一家的具体材质和卡位情况我还不了解，暂时没法替您逐一比较；如果方便，可以把对方的商品信息发我看看。",
+        "随行卡夹的价格是2,800元，材质是哑光细纹牛皮，4个独立卡位，能放4张标准银行卡大小的卡片，外观上品牌标识比较小，整体更简洁。那款便宜一些的卡夹我这边没有资料，不好直接说差别在哪里；您要是把它的信息发我，我可以帮您对照着看。",
+        "随行卡夹是2,800元，哑光细纹牛皮、无内衬，4个独立卡位正好收4张标准银行卡大小的卡片。另一个品牌那款的具体情况我不清楚，没法作对比，也不想凭印象说别家的不是；您更在意卡位数量还是皮面手感，我可以就这款再说细一点。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [
+        {
+          "code": "redundant_question",
+          "candidate_index": 2,
+          "evidence_span_id": "reply_3.s2",
+          "message": "末句追问“您更在意卡位数量还是皮面手感，我可以就这款再说细一点”在价格、材质、卡位已答清后属可省的选择追问，且“皮面手感”无目录依据；建议保留“情况不清楚、没法对比、不凭印象说别家不是”的边界，删去该追问。非阻断编辑意见。",
+          "source_refs": [
+            {
+              "source_id": "writing.rules"
+            },
+            {
+              "source_id": "policy.2"
+            }
+          ]
+        }
+      ],
+      "review_validation_errors": [
+        {
+          "code": "contradictory_review_verdict",
+          "message": "pass不能同时包含待处理问题"
+        },
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 0,
+          "domains": [
+            "pricing"
+          ]
+        }
+      ],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N49",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：托特我挺喜欢，就是价格还得想想，先别帮我留。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "尊重她现在想缓一缓。"
+      },
+      "run_id": "9fef96447d354b92958826bbafc74fc1",
+      "raw_record": "raw_runs/9fef96447d354b92958826bbafc74fc1.json",
+      "raw_sha256": "6b59c59f09283f0c88b0b7086ac9dff19862dd55876fcff3e76c517ad55dabd2",
+      "program_status": "error",
+      "error": {
+        "code": "state_mismatch",
+        "message": "独立复核与生成结果的客户状态不一致，请按完整消息核对商品范围与当前问题。",
+        "retryable": true
+      },
+      "messages": [
+        "好的，不帮您留。日行托特包的价格是18,800元，您慢慢想，有需要再找我就好。",
+        "明白，先帮您留着决定空间，不预留。托特是18,800元，想清楚价格这块随时和我说。",
+        "好的，不会帮您预留。日行托特包目前售价18,800元，价格上您再考虑看看，有想法我们再聊。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_app_version": "0.15.2",
+      "generation_prompt_version": "1.3.0",
+      "review_prompt_version": "review-1.2.1",
+      "generation_requested": true,
+      "review_requested": true
+    }
+  ],
+  "expected_case_ids": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17",
+    "N18",
+    "N19",
+    "N20",
+    "N21",
+    "N22",
+    "N23",
+    "N24",
+    "N25",
+    "N26",
+    "N27",
+    "N28",
+    "N29",
+    "N31",
+    "N32",
+    "N33",
+    "N34",
+    "N35",
+    "N36",
+    "N38",
+    "N39",
+    "N40",
+    "N41",
+    "N42",
+    "N43",
+    "N44",
+    "N45",
+    "N46",
+    "N47",
+    "N48",
+    "N49"
+  ],
+  "max_generation_per_case": 1,
+  "max_review_per_case": 1,
+  "automatic_retries": 0,
+  "source_freeze_sha256": "d69e485065d3d33a040fa3241232f224a254f1b4238180f28b45a68f39a4f1b8",
+  "case_sha256": "a8ebe47eb54129c5c263d10d6393628dd8824b3d1c47e66c9fbbf7f94183148a",
+  "completed": true,
+  "request_count": 86,
+  "reported_total_tokens": 2228511,
+  "requests_without_usage": 0,
+  "finished_at": "2026-11-04T22:38:19.182424+00:00"
+}

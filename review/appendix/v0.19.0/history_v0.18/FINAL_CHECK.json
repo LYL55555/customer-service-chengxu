@@ -1,0 +1,22 @@
+{
+  "validator": "0.18.2",
+  "protected_files_unchanged": 397,
+  "source_frozen_files": 45,
+  "eight_inputs_unchanged": true,
+  "all_21_messages_exact": true,
+  "actual_generation_payload_compact": true,
+  "local_report_links": 13,
+  "real_requests": 15,
+  "auto_retry": 0,
+  "final_local_tests": {
+    "tests": 211,
+    "errors": 0,
+    "failures": 0,
+    "remote_attempts": [],
+    "real_model_calls": 0
+  },
+  "real_181_not_replaced_by_local_182": true,
+  "web_unchanged": true,
+  "model_key_env_runtime_db_not_in_artifacts": true,
+  "formal50_untouched": true
+}

@@ -1,0 +1,64 @@
+{
+  "validator_app_version": "0.15.2",
+  "all_accepted": true,
+  "original_records_unchanged": true,
+  "model_requests": 0,
+  "results": [
+    {
+      "case_id": "N10",
+      "original_record": "outputs/formal_business_v2_v0.15.1_2026-11-04/raw_runs/f119b6ae0e20432690a75416516fe621.json",
+      "original_sha256": "922b2145eb56056dc3121fa77fcab9a17344ac7f8ce2aaad205a4be7e4962151",
+      "original_status": "success",
+      "original_generation_app_version": "0.15.1",
+      "original_review_prompt_version": "review-1.2.1",
+      "revalidated_status": "success",
+      "validator_app_version": "0.15.2",
+      "derived_record": "outputs/formal_business_v2_v0.15.2_2026-11-04/first4_revalidated/N10.json",
+      "messages_unchanged": true,
+      "model_review_unchanged": true,
+      "model_requests": 0
+    },
+    {
+      "case_id": "N30",
+      "original_record": "outputs/formal_business_v2_v0.15.1_2026-11-04/raw_runs/06612298ba8449fab6a2bee8d94bf71d.json",
+      "original_sha256": "64592c8424294a27886746c0d19c80e9ceea3b7d9c87c48f7cc2bb920c8c1a28",
+      "original_status": "error",
+      "original_generation_app_version": "0.15.1",
+      "original_review_prompt_version": "review-1.2.1",
+      "revalidated_status": "success",
+      "validator_app_version": "0.15.2",
+      "derived_record": "outputs/formal_business_v2_v0.15.2_2026-11-04/first4_revalidated/N30.json",
+      "messages_unchanged": true,
+      "model_review_unchanged": true,
+      "model_requests": 0
+    },
+    {
+      "case_id": "N37",
+      "original_record": "outputs/formal_business_v2_v0.15.1_2026-11-04/raw_runs/e20d0bb432c142d7ae9e2706bb84da0a.json",
+      "original_sha256": "55fa767048cf1be861477dfa88a9a8dac034ee385f7de936e9c5d188a431eabc",
+      "original_status": "success",
+      "original_generation_app_version": "0.15.1",
+      "original_review_prompt_version": "review-1.2.1",
+      "revalidated_status": "success",
+      "validator_app_version": "0.15.2",
+      "derived_record": "outputs/formal_business_v2_v0.15.2_2026-11-04/first4_revalidated/N37.json",
+      "messages_unchanged": true,
+      "model_review_unchanged": true,
+      "model_requests": 0
+    },
+    {
+      "case_id": "N50",
+      "original_record": "outputs/formal_business_v2_v0.15.1_2026-11-04/raw_runs/c751e3259dca4b549eccd1525d2b54db.json",
+      "original_sha256": "cddf8bd547573ab9721b098f168facae076378258905ce0af11feb2226b2ce81",
+      "original_status": "success",
+      "original_generation_app_version": "0.15.1",
+      "original_review_prompt_version": "review-1.2.1",
+      "revalidated_status": "success",
+      "validator_app_version": "0.15.2",
+      "derived_record": "outputs/formal_business_v2_v0.15.2_2026-11-04/first4_revalidated/N50.json",
+      "messages_unchanged": true,
+      "model_review_unchanged": true,
+      "model_requests": 0
+    }
+  ]
+}

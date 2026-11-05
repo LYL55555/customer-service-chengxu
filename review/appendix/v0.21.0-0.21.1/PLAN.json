@@ -1,0 +1,48 @@
+{
+  "order": [
+    "J01",
+    "J02"
+  ],
+  "cases": [
+    {
+      "case_id": "J01",
+      "mode": "generate_and_review_once",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "上下班坐地铁，平时包里就是一份A4资料和一瓶500毫升的水。",
+        "conversation": "客户：从地铁站到公司得走个一刻钟，这只托特天天背会不会费劲？",
+        "related_info": "",
+        "advisor_instruction": "结合她日常携带和步行的情况回答，已经选定日行托特包。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {},
+      "purpose": "固定开发回归：对客重量小计与内部口径分离"
+    },
+    {
+      "case_id": "J02",
+      "mode": "generate_and_review_once",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "想找一只下班买咖啡、周末出门时用的小包，喜欢低调。",
+        "conversation": "客户：一万二千八比我预想的高。要是就装手机钥匙，平时出门背它合不合适？",
+        "related_info": "",
+        "advisor_instruction": "围绕她现在的日常用途帮她判断。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {},
+      "purpose": "固定开发回归：报价和低调设计依据取材"
+    }
+  ],
+  "max_requests": 4,
+  "max_generation_per_case": 1,
+  "max_review_per_case": 1,
+  "auto_retries": 0,
+  "blind_test": false,
+  "n16_closed_no_calls": true,
+  "packaging_paused": true,
+  "ui_frozen": true
+}

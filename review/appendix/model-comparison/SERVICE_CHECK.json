@@ -1,0 +1,11 @@
+{
+  "app_version": "0.21.1",
+  "app_url": "http://localhost:8765/",
+  "page_status": 200,
+  "normal_generation_model": "deepseek-flash",
+  "production_code_changed": false,
+  "env_changed": false,
+  "additional_model_calls": 0,
+  "kept_running": true,
+  "report_url": "http://127.0.0.1:8783/"
+}

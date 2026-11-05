@@ -1,0 +1,25 @@
+{
+  "app_version": "0.19.0",
+  "generation_prompt": "2.1.0",
+  "review_prompt": "1.4.0",
+  "ui_version": "ui-2.0.0 unchanged",
+  "cases": 5,
+  "generation_calls": 5,
+  "review_calls": 5,
+  "total_tokens": 167134,
+  "auto_retries": 0,
+  "all_15_original_messages_preserved": true,
+  "program_delivered": [
+    "N39",
+    "N44",
+    "N26",
+    "N21"
+  ],
+  "not_delivered": [
+    "N16"
+  ],
+  "editorial_fully_resolved": false,
+  "submission_ready": false,
+  "reason": "N16无据肯定/防守性自述/无效复核仍在；真实AI开发对话截图缺失",
+  "formal50_rerun": false
+}

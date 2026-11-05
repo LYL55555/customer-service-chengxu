@@ -1,0 +1,96 @@
+[
+  {
+    "case_id": "J01",
+    "baseline_model": "deepseek-flash",
+    "alternative_model": "deepseek-v4-pro",
+    "changed_fields": [
+      "model"
+    ],
+    "actual_generation_body_equal_except_model": true,
+    "non_model_request_sha256": "62ad130b12505d3b02ba77ebaa2796156730b781696f7a85afe181b9f007a316",
+    "generation_prompt_hash_unchanged": true,
+    "generation_facts": [
+      {
+        "source_id": "product.P01.empty_weight_g",
+        "kind": "product_known",
+        "authority": "brand",
+        "status": "known",
+        "text": "约750 g",
+        "scope": {
+          "product_id": "P01",
+          "product_name": "日行托特包",
+          "field": "empty_weight_g"
+        }
+      },
+      {
+        "source_id": "computed.load.P01",
+        "kind": "derived_load",
+        "authority": "bounded_component_calculation_not_full_loaded_weight",
+        "status": "known",
+        "text": "空包约750克，加上500毫升水约500克，两项小计约1.25公斤；另加水瓶和资料等实际携带物的重量。",
+        "scope": {
+          "product_id": "P01",
+          "subtotal_g": 1250.0,
+          "parent_source_ids": [
+            "product.P01.empty_weight_g",
+            "background.client_info"
+          ]
+        }
+      }
+    ],
+    "review_model": "deepseek-flash",
+    "review_prompt_hash_unchanged": true,
+    "review_writing_rules_unchanged": true,
+    "current_accepted_validator": "0.21.1",
+    "no_new_prompt_or_rule_tuning": true
+  },
+  {
+    "case_id": "J02",
+    "baseline_model": "deepseek-flash",
+    "alternative_model": "deepseek-v4-pro",
+    "changed_fields": [
+      "model"
+    ],
+    "actual_generation_body_equal_except_model": true,
+    "non_model_request_sha256": "233845f570e84803eed793806a178790d27835fd3900445a21d1ede8a30238da",
+    "generation_prompt_hash_unchanged": true,
+    "generation_facts": [
+      {
+        "source_id": "product.P02.capacity",
+        "kind": "product_known",
+        "authority": "brand",
+        "status": "known",
+        "text": "可放普通手机、钥匙",
+        "scope": {
+          "product_id": "P02",
+          "product_name": "轻行肩包",
+          "field": "capacity"
+        }
+      },
+      {
+        "source_id": "product.P02.price",
+        "kind": "product_known",
+        "authority": "brand",
+        "status": "known",
+        "text": "12,800元",
+        "scope": {
+          "product_id": "P02",
+          "product_name": "轻行肩包",
+          "field": "price"
+        }
+      },
+      {
+        "source_id": "policy.2",
+        "kind": "brand_policy",
+        "authority": "brand",
+        "status": "known",
+        "text": "三款均使用小尺寸压印品牌标识"
+      }
+    ],
+    "review_model": "deepseek-flash",
+    "review_prompt_hash_unchanged": true,
+    "review_writing_rules_unchanged": true,
+    "current_accepted_validator": "0.21.1",
+    "no_new_prompt_or_rule_tuning": true
+  }
+]

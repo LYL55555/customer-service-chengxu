@@ -1,0 +1,19 @@
+{
+  "app_version": "0.20.0",
+  "frozen_core_unchanged": 49,
+  "protected_files_unchanged": 813,
+  "old_workspace_rows_preserved": 215,
+  "allowed_changes": "N16/N44虚构演示会话指向新有效分支；新增J01/J02虚构记录，其他旧行不变",
+  "requests": 7,
+  "generations": 3,
+  "reviews": 4,
+  "auto_retries": 0,
+  "original_messages_exact": 12,
+  "n16_original_generation_unchanged": true,
+  "ui_restore": true,
+  "normal_service_kept_running": true,
+  "report_url": "http://127.0.0.1:8781/",
+  "new_package_created": false,
+  "old_formal50_unchanged": true,
+  "release_ready": false
+}

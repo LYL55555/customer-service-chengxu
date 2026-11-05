@@ -1,0 +1,52 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>B · 方法论</title><style>body{margin:0;background:#f8f6f1;color:#24352e;font:17px/1.75 system-ui,-apple-system,"PingFang SC",sans-serif}main{max-width:1080px;margin:auto;padding:30px 30px 65px}nav{padding:12px 0;border-bottom:1px solid #ccc}a{color:#245f4a}h1{font-size:32px;line-height:1.3}h2{margin-top:36px;font-size:24px}h3{font-size:19px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #ccc;padding:10px;vertical-align:top;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;background:#efeee8;padding:14px}img,video{max-width:100%;height:auto}.reply{padding:14px 18px;margin:12px 0;border:1px solid #d0d5cd;background:white;white-space:pre-wrap}.note{background:#e7eddf;padding:16px}summary{cursor:pointer;padding:8px 0}blockquote{margin:10px 0;padding:6px 20px;border-left:3px solid #84927a}code{overflow-wrap:anywhere}small{color:#56675a}.muted{color:#56675a}</style><main><nav><a href="index.html">当前评审入口</a> · 澄序 CHENGXU · 0.16.3</nav><h1>B · 给客户顾问的下一句话助手</h1>
+<p>客户顾问在微信上既要回答，也要推荐、主动关怀、生日问候、邀请和接续关系。产品目标是让顾问少重抄已知资料，拿到有依据且愿意选择的一句话。这个目标尚未由真人顾问研究或节时实验验证。</p>
+<h2>题目要求与自定范围</h2>
+<table>
+<thead>
+<tr>
+<th>题目明确要求</th>
+<th>我们的实现与自行设定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>虚构奢侈品牌，说明假设</td>
+<td>澄序：低调、重视日用的精品皮具；托特18800、肩包12800、卡夹2800元，品牌v0.4。价格/政策均为虚构，不是行业通则</td>
+</tr>
+<tr>
+<td>六种场景，输入客户/场景/聊天及必要商品资料</td>
+<td>单页覆盖生日节日、推荐、购后、唤回、邀请、价格异议；截图和保存记录优先，顾问可自然语言补充</td>
+</tr>
+<tr>
+<td>有效输出三条中文微信供选择</td>
+<td>每条独立完成当前任务；三条可在语气和详略不同，不强制追问/风险/到店三分工</td>
+</tr>
+<tr>
+<td>A—E材料、50例各三条及评估截图</td>
+<td><a href="C_50_ORIGINALS.html">原50与150条</a>、<a href="C_50_ORIGINALS.xlsx">原八列表</a>，失败不剔除，分阶段展示</td>
+</tr>
+<tr>
+<td>架构图为加分项；演示/源码选交</td>
+<td><a href="ARCHITECTURE.svg">实际架构</a>、本地可运行源码、明确标注保存结果的30秒回放</td>
+</tr>
+</tbody>
+</table>
+<p>截图OCR、顾问/客户/会话文件夹、SQLite检查点、来源核对、拒收营销、固定字段约束及复核是我们为可靠性自行增加的设计，题目没有要求生产CRM、登录、云同步或自动发微信。</p>
+<h2>业务和流程取舍</h2>
+<p>保留三款容易核对的商品。已知和未知共用一份商品索引，不能为了案例过关补设定。未知不等于没有，政策要符合当前任务与适用条件：客户问价格不用预算，祝福不用聊天；厚文件夹才需必要尺寸，未知清洁剂交售后而不是套沾水步骤。</p>
+<p>本机OCR加气泡布局先拟稿；仅对顾问自己的一对一微信默认右顾问/左客户，该假设可改。顾问复核文字、角色、引用与顺序并可人工补漏，确认后才导入。语音条不是已听过；关键原文未导入请顾问处理，不替工具向客户索取。视觉支持是可配置补充，当前DeepSeek文字生成不承担图片识别，未声称对所有截图或视觉提供方都验证过。</p>
+<p>长期偏好及拒收推广归客户，本次预算/暂缓/换款归会话。当前UID范围内恢复记录，不按名字猜。SQLite保存检查点及版本，JSON/图片保存原响应、引用与截图；这只是本机隔离，不是生产账号权限。</p>
+<h2>实际技术实现</h2>
+<p>Python标准库HTTP服务、原生HTML/CSS/JS、SQLite及文件存储。OCR预处理用Pillow，macOS本地Swift Vision识字。网页和实验共用engine的生成、结构/事实检查与复核；少数失败组单条收尾由留档脚本建立关联分支，未为此重做界面。</p>
+<p>生成与复核是DeepSeek同一提供方的两次独立请求，并非两个独立人类裁判。品牌/商品与写作约束在系统层；确认聊天、当前客户记录、业务材料和顾问要求分来源进入请求。手机型号来自有限的官方来源表，同时提供给生成与复核；当前验证型号范围很小，未查到不假装查询。</p>
+<p>DeepSeek beta工具请求固定三个候选字段，本地仍检查实际返回，不截前三条、不自动重试。仅有两种明确兼容：已知空内部字段；或当次请求唯一固定sources-v4且确实只漏协议标记时恢复常量。完整原响应和适配并存，不能称供应商原生合规。缺判定、缺证据、缺候选、额外不明内容及错误协议仍拒绝。</p>
+<p>ready交付三条，needs_advisor交付零条并给内部待办。合理向客户补问必要尺寸或同行称呼可以ready，不混进顾问原资料缺口。引用按客户、商品、售后单、政策、活动、官方设备、任务分别核对；同句不同来源可支持对应断言，客户聊天不能授权品牌权益。复核自身矛盾和引用错也记录。</p>
+<h2>测试设计与版本</h2>
+<p>当前提交主表是business-realistic-v2.0的N01—N50，不与早期F01—F50混合。正常业务需求先写，再选必要难点：8生日节日、14推荐、8购后、6唤回、7邀请、7价格异议。生日更正等人为任务已退出当前集，旧实验只留档。</p>
+<p>先写每案检查依据，再冻结；首四生成/复核app0.15.1，余46为0.15.2。每案首次生成最多一次，符合前置检查才首次复核；共50生成44复核，94请求，150原文齐全。没有为失败重抽、删分母。最终统一程序重验0.15.3只改变N30，原始34组交付、统一35组；这两个数字是程序交付，不是事实正确率或愿发率。</p>
+<p>14挑战案和已见16案属于开发回归。后续16案原文重验、五组首次复核、九组写作对照，以及本次N21/N29单条修订和N39兼容都另版展示，不回写原50评分，不拼最好结果计算新通过率。<a href="STAGES.html">逐案阶段索引</a>。</p>
+<h2>什么是好，什么不可接受</h2>
+<p>先判任务理解、事实、边界与独立完整，再判自然度、品牌分寸、冗余和选择价值。答案可以答完结束；同功能三条不是自动失败，也不靠多余问题凑差异。编辑判断逐句指出删哪部分及删后是否仍完整，不只写“语气待用户判断”。</p>
+<p>S0/S1：编折扣、错价、无据售后承诺、实质内部信息泄露、违背明确拒绝、让客户填补工具漏正文、虚构已执行外部动作。应阻断或优先修复。S2：漏核心任务、错误否定合理用法、流程误拦等影响完成任务。S3：重复、略书面、可省建议和轻微分类，单列编辑，不与错承诺等权。</p>
+<p>评价来源是程序、模型复核和AI开发者逐字业务评读三层，分别可能出错。没有真人顾问参与这次验收，不证明节省时间或比同资料通用模型文案更好；现有证据支持上下文恢复、明确来源、联系限制与保存追溯的工作流价值，文案优势及整体负担尚需真实任务验证。</p>
+<p><a href="appendix/reference/BRAND_RULES.md">品牌规则</a> · <a href="appendix/reference/PRODUCT_EVIDENCE.md">已知/未知事实</a> · <a href="appendix/reference/WRITING_RULES.md">写作与评审规则</a></p></main></html>

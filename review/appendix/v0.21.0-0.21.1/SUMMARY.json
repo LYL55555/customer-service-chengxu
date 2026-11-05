@@ -1,0 +1,19 @@
+{
+  "generation_app_version": "0.21.0",
+  "validator_app_version": "0.21.1",
+  "generation_prompt": "2.3.0",
+  "review_prompt": "1.6.0",
+  "task_materials": "2.5.0",
+  "structure": "0.11.0",
+  "generations": 2,
+  "reviews": 2,
+  "requests": 4,
+  "tokens": 72956,
+  "auto_retries": 0,
+  "development_regression_not_blind": true,
+  "n16_calls": 0,
+  "ui_changed": false,
+  "formal50_rerun": false,
+  "packaging_paused": true,
+  "editorial_fully_resolved": false
+}

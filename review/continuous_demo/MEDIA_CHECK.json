@@ -1,0 +1,13 @@
+{
+  "duration_seconds" : 60.791266666666665,
+  "height" : 1324,
+  "nominal_frame_rate" : 7.9452199935913086,
+  "sample_frames" : [
+    2,
+    15,
+    30,
+    43,
+    58
+  ],
+  "width" : 2900
+}

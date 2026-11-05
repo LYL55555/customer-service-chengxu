@@ -1,0 +1,42 @@
+{
+  "app_version": "0.20.0",
+  "sessions": [
+    {
+      "case_id": "N16",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "09596c5b2fd749a796b45c9f291304ec",
+      "conversation_id": "dfb2aeb2639b401c865b68d533db90d6",
+      "run_id": "32b75f85425b4e4c9ec07db7560bc73a",
+      "status": "success",
+      "source_run_id": "d59d6137cbc44ae6b8ed7262e5fe4468"
+    },
+    {
+      "case_id": "N44",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "59a63079b6f14e7c94e2c33464724a4f",
+      "conversation_id": "913055285d5640188a73c8fbe270977c",
+      "run_id": "629e3cddf3e74e04b44e06d5b4e4f4fa",
+      "status": "success",
+      "source_run_id": "d284fb9716ae44b6a6becab8cad65ba6"
+    },
+    {
+      "case_id": "J01",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "07c2599ac7fe4d85892c5b2fcb40f5de",
+      "conversation_id": "74ac9f1ee1bf418aa994b567c01ea1a8",
+      "run_id": "ff561953544249b08328e04ee811b714",
+      "status": "error",
+      "source_run_id": "b44b4a42463f4e57a35690e5a5ced559"
+    },
+    {
+      "case_id": "J02",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "281ba51ab29246f5a95ce007944094a0",
+      "conversation_id": "0194aef46b32486e9a095b70510c71ff",
+      "run_id": "531527607b1e44368b7abdbc385c4918",
+      "status": "success",
+      "source_run_id": "34b48463c43e4e5abd54da67bbe92128"
+    }
+  ],
+  "new_model_calls": 0
+}

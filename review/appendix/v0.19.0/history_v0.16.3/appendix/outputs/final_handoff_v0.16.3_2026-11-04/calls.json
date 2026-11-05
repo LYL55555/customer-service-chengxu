@@ -1,0 +1,115 @@
+{
+  "app_version": "0.16.3",
+  "requests": [
+    {
+      "case_id": "N21",
+      "stage": "generation",
+      "purpose": "本轮只改第二条。直接承接帮客户确认墨黑肩包库存及能否预留，确认后回复。库存未确认，不先说周六到店就能看、没问题或保证安排。不要提内部记录。第一条、第三条逐字保持原文。",
+      "started_at": "2026-11-05T01:31:12.907187+00:00",
+      "request_sha256": "01e013e98b8ce227246d21faaa9d30259dc2e2ba933e08b041a209071abc2cf7",
+      "finished_at": "2026-11-05T01:31:15.073572+00:00",
+      "duration_ms": 2166,
+      "usage": {
+        "prompt_tokens": 25277,
+        "completion_tokens": 283,
+        "total_tokens": 25560,
+        "prompt_tokens_details": {
+          "cached_tokens": 11136
+        },
+        "prompt_cache_hit_tokens": 11136,
+        "prompt_cache_miss_tokens": 14141
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N21",
+      "stage": "review",
+      "purpose": "首次复核这条定向修订及完整三条，不重抽",
+      "started_at": "2026-11-05T01:31:15.085488+00:00",
+      "request_sha256": "fa2b8f20b33316cc585a39769d4218dd1c3a91cbaf905420bc08d6c32cadb301",
+      "finished_at": "2026-11-05T01:31:19.712808+00:00",
+      "duration_ms": 4626,
+      "usage": {
+        "prompt_tokens": 27109,
+        "completion_tokens": 1038,
+        "total_tokens": 28147,
+        "prompt_tokens_details": {
+          "cached_tokens": 12160
+        },
+        "prompt_cache_hit_tokens": 12160,
+        "prompt_cache_miss_tokens": 14949
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N29",
+      "stage": "generation",
+      "purpose": "本轮只精简第二条。直接请客户拍拉链卡顿的拉合视频，再说帮她交售后确认怎么处理。删除情绪判断和安抚，不写先不用太担心、会让人不放心，不猜原因、不教排障、不加为了帮助您等自述。第一条、第三条逐字保持原文。",
+      "started_at": "2026-11-05T01:31:19.742587+00:00",
+      "request_sha256": "7fc8ce200cfcb5adc2f09dd6ef355ab749f9b810b7f31c6e4fdec2be126c43c5",
+      "finished_at": "2026-11-05T01:31:22.360612+00:00",
+      "duration_ms": 2617,
+      "usage": {
+        "prompt_tokens": 25792,
+        "completion_tokens": 313,
+        "total_tokens": 26105,
+        "prompt_tokens_details": {
+          "cached_tokens": 11136
+        },
+        "prompt_cache_hit_tokens": 11136,
+        "prompt_cache_miss_tokens": 14656
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N29",
+      "stage": "review",
+      "purpose": "首次复核这条定向修订及完整三条，不重抽",
+      "started_at": "2026-11-05T01:31:22.371700+00:00",
+      "request_sha256": "3a78065f07dfb2d6f77d0eee69d5e77694d91a7682a1a7f0d0f61363473684ea",
+      "finished_at": "2026-11-05T01:31:28.283311+00:00",
+      "duration_ms": 5910,
+      "usage": {
+        "prompt_tokens": 27762,
+        "completion_tokens": 1310,
+        "total_tokens": 29072,
+        "prompt_tokens_details": {
+          "cached_tokens": 12288
+        },
+        "prompt_cache_hit_tokens": 12288,
+        "prompt_cache_miss_tokens": 15474
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "N21",
+      "record": "raw_runs/b5de9ed7d8cc4c16bce77e2d80c33652.json",
+      "status": "success",
+      "error": null,
+      "review": "pass",
+      "unchanged_other_candidates": true,
+      "original_run_id": "890e01fdfd904bdba397e7ccc2874fe2",
+      "original_status": "error"
+    },
+    {
+      "case_id": "N29",
+      "record": "raw_runs/83e40c0b335645bcaf2d23c06adb1ac5.json",
+      "status": "success",
+      "error": null,
+      "review": "pass",
+      "unchanged_other_candidates": true,
+      "original_run_id": "b32f1cba90754508923cb3fc7bd612ec",
+      "original_status": "error"
+    }
+  ],
+  "max_requests": 4,
+  "automatic_retries": 0,
+  "request_count": 4,
+  "tokens": 108884
+}

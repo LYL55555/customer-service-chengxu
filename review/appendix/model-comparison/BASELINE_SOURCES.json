@@ -1,0 +1,30 @@
+[
+  {
+    "case_id": "J01",
+    "kind": "original",
+    "original": "outputs/materials_split_v0.21.0_2026-11-05/raw_runs/bed3ea0b94424bdf99e7fc174531fd57.json",
+    "copy": "baseline/J01_original.json",
+    "sha256": "4a48d93e1573039c0b5a67cf837e4ddd14d4b77b25e7b1e4b4099988eafc9377"
+  },
+  {
+    "case_id": "J01",
+    "kind": "offline_accepted_validator",
+    "original": "outputs/materials_split_v0.21.0_2026-11-05/offline_revalidation_v0211/f4828e7a8d094351b56ad5e71206a7cb.json",
+    "copy": "baseline/J01_offline_accepted_validator.json",
+    "sha256": "3f2e2ea03c39990dbd6297e43e0afb8d7c1c4c66690f8db1b55c062767634cda"
+  },
+  {
+    "case_id": "J02",
+    "kind": "original",
+    "original": "outputs/materials_split_v0.21.0_2026-11-05/raw_runs/ea853621d4384ceabd2ac7dc00b10352.json",
+    "copy": "baseline/J02_original.json",
+    "sha256": "480d20319162b58058bedba2f8d3d4376aa8a9461ec739a139d3bcc91d2699c7"
+  },
+  {
+    "case_id": "J02",
+    "kind": "offline_accepted_validator",
+    "original": "outputs/materials_split_v0.21.0_2026-11-05/offline_revalidation_v0211/cef33e94e1e9408487a97544af7817e2.json",
+    "copy": "baseline/J02_offline_accepted_validator.json",
+    "sha256": "25478264fdee97e629ea542bc00c2f3d58e8fda8db7dd96c3ac091102cf35adb"
+  }
+]

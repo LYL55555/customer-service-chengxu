@@ -1,0 +1,300 @@
+{
+  "summary": {
+    "app_version": "0.19.0",
+    "generation_prompt": "2.1.0",
+    "review_prompt": "1.4.0",
+    "ui_version": "ui-2.0.0 unchanged",
+    "cases": 5,
+    "generation_calls": 5,
+    "review_calls": 5,
+    "total_tokens": 167134,
+    "auto_retries": 0,
+    "all_15_original_messages_preserved": true,
+    "program_delivered": [
+      "N39",
+      "N44",
+      "N26",
+      "N21"
+    ],
+    "not_delivered": [
+      "N16"
+    ],
+    "editorial_fully_resolved": false,
+    "submission_ready": false,
+    "reason": "N16无据肯定/防守性自述/无效复核仍在；真实AI开发对话截图缺失",
+    "formal50_rerun": false
+  },
+  "cases": [
+    {
+      "case_id": "N16",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "平时通勤带A4资料和一瓶水。",
+        "conversation": "客户：我每天走路二十分钟，托特装东西会不会太沉？",
+        "related_info": "",
+        "advisor_instruction": "结合她的使用情况帮她判断。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N16",
+        "conversation_id": "business-v2-chat-N16",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "record": "raw_runs/4c36d123c9c74355a1b38bfcff8de5f1.json",
+      "initial_record": "raw_runs/4c36d123c9c74355a1b38bfcff8de5f1.json",
+      "run_id": "4c36d123c9c74355a1b38bfcff8de5f1",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "review_prompt": "review-1.4.0",
+      "messages": [
+        "日行托特包空包约750g，不算超轻的款。您平时带A4资料加一瓶水，包本身能装下，但装进去后总重量会增加，增加的多少看资料厚薄和水量。每天走二十分钟的话，这个分量多数人能接受，不过肩带压在肩上的感觉还是得您亲自试过才准，方便的话可以带常带的东西来试背走走。",
+        "先跟您交个底，日行托特空包大约750g，我们也不会说它超轻。它的好处是A4资料、500mL水杯都放得下。您每天走二十分钟，装满后重量肯定比空包多，具体多多少要看您带多少资料，这个我没法替您估准，背着舒不舒服也因人而异，您要是来店里，我可以陪您装上平时带的东西走一走看。",
+        "日行托特包空包约750g，装A4资料和一瓶水没问题。走路二十分钟带上这些东西，会比空包沉一些，实际多重取决于资料的量和水量，我这边没有装物后的总重数据，不好替您下结论。您是每天都这么通勤的话，建议先照着平时的东西装一装试背一下，再决定合不合适。"
+      ],
+      "program_status": "error",
+      "program_error": {
+        "code": "invalid_review",
+        "message": "复核没有返回完整有效结构，原响应保留；未删减、降级或重试。",
+        "retryable": false
+      },
+      "model_verdict": null,
+      "review_parse_error": {
+        "code": "invalid_output",
+        "message": "模型响应不是预期的 JSON 格式，原始响应已记录，可以重试。"
+      },
+      "review_validation_errors": null,
+      "provider_native_generation_schema": true,
+      "provider_native_review_schema": null,
+      "generation_count": 1,
+      "review_count": 1,
+      "previous_version": "0.18.0",
+      "previous_program_status": "success",
+      "previous_messages": [
+        "按您平时通勤带A4资料和一瓶水来说，日行托特包是够用的，装这些没问题。包本身约750克，属于中等偏轻，再加资料和水走路二十分钟问题不大；不过资料多的话，肩膀会觉得有点分量，建议资料尽量精简。",
+        "日行托特包空包约750克，容量上放A4纸质资料和500 mL水杯都合适。您每天走二十分钟，日常通勤的量背起来不会太吃力；如果担心沉，可以把重的东西靠里放，肩带受力会更舒服些。",
+        "您这个使用场景挺适合日行托特的：A4资料和水杯都装得下，空包大约750克，不算重。二十分钟路程背日常通勤的东西是可以的，只是文件带得多时会有点压肩，按需少带一些会更轻松。"
+      ],
+      "independent": {
+        "fact": "不通过",
+        "editorial": "防守性自述仍明显，三条都落到试背",
+        "review": "复核JSON缺逗号或括号，未形成有效结论；没有补括号或重试",
+        "detail": "第一条“这个分量多数人能接受”没有群体使用数据支持，是新的无据肯定，本地规则也未识别这一新表达；最终因无效复核被拦，不能说事实护栏已经完整拦住。第二条“先跟您交个底”“我没法替您估准”，第三条“我这边没有装物后的总重数据，不好替您下结论”仍把内部能力限制写给客户。自重750g、物品增加重量有依据；相关试背建议本身合理，但三条都靠试背结束，没有执行可选帮助的取舍。该案保持未交付，不能宣布已修好。"
+      }
+    },
+    {
+      "case_id": "N39",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "advisor_instruction": "用容易懂的话介绍内容。",
+        "product_ids": []
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N39",
+        "conversation_id": "business-v2-chat-N39",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "record": "raw_runs/5de05675ea8248b1a7533459b226c811.json",
+      "initial_record": "raw_runs/5de05675ea8248b1a7533459b226c811.json",
+      "run_id": "5de05675ea8248b1a7533459b226c811",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "review_prompt": "review-1.4.0",
+      "messages": [
+        "不用懂皮具也能看明白的～活动时段内会持续演示日行托特包、轻行肩包、随行卡夹怎么收纳日常物品，您也可以自己上手体验，带上平时包里的东西对照着试试，感受更直接。",
+        "活动主要看的是实用这块：现场会持续演示日行托特包、轻行肩包和随行卡夹如何收纳常用物品。不懂皮具完全没关系，这种演示看一遍就知道顺不顺手；也欢迎您自由体验，带自己的日常物品来对照最直观。",
+        "您放心，不需要懂皮具。现场会用日行托特包、轻行肩包、随行卡夹做收纳演示，看常用物品怎么放进去、拿取方不方便；演示时段内都能看，也可以自己动手试、拿自己的东西对照感受。想了解哪款，到时候直接问就好。"
+      ],
+      "program_status": "success",
+      "program_error": null,
+      "model_verdict": "pass",
+      "review_parse_error": null,
+      "review_validation_errors": [],
+      "provider_native_generation_schema": true,
+      "provider_native_review_schema": true,
+      "generation_count": 1,
+      "review_count": 1,
+      "previous_version": "0.18.0",
+      "previous_program_status": "error",
+      "previous_messages": [
+        "不用担心懂不懂皮具，这次活动主要就是看日常用起来顺不顺手。时段内会持续演示日行托特包、轻行肩包和随行卡夹怎么收纳常用物品；您也可以自己上手体验，带自己的日常物品对照着试更直观。",
+        "活动上会一直有人演示日行托特包、轻行肩包和随行卡夹怎么装日常东西，您可以自由体验，不用懂皮具，带上平时用的东西对照看看就好。",
+        "这次看到的就是几款日行包和三款怎么用：日行托特包、轻行肩包、随行卡夹会持续演示收纳常用物品，也能自由上手试，带自己的日常物品来对照最直观。不懂皮具完全没关系，看的都是日常使用。"
+      ],
+      "independent": {
+        "fact": "当前原文事实与任务通过",
+        "editorial": "可以轻润色，不强阻断",
+        "review": "有效pass；保留原复核与来源",
+        "detail": "三条均介绍托特、肩包、卡夹的收纳演示和自由体验，没有旧版混乱的“几款日行包和三款怎么用”，也没有索取同行称呼。第一条“～”略热情；第二条“看一遍就知道顺不顺手”可更平实，第三条到时直接问是正常服务帮助。它们与体验任务有关，不应一律判成防守性写作。"
+      }
+    },
+    {
+      "case_id": "N44",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+        "related_info": "",
+        "advisor_instruction": "结合她的用途帮她判断。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N44",
+        "conversation_id": "business-v2-chat-N44",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "record": "raw_runs/43ada053977f4deab9f6f6cd7139c6e7.json",
+      "initial_record": "raw_runs/43ada053977f4deab9f6f6cd7139c6e7.json",
+      "run_id": "43ada053977f4deab9f6f6cd7139c6e7",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "review_prompt": "review-1.4.0",
+      "messages": [
+        "您说的没错，轻行肩包是12,800元，确实不算轻的价格。不过从用途上看，它刚好能放下普通手机和钥匙，您平时就带这两样，日常出门是完全够用的，不用额外装一堆东西。要不要我把它和别的款再帮您对比一下？",
+        "理解您的感受，轻行肩包12,800元，比预期高一些。它的容量是能放普通手机和钥匙，正好对上您日常只带这两样的习惯，日常用是合适的；只是价格这块确实需要您自己权衡。您先慢慢考虑，有想了解的随时问我。",
+        "帮您理一下：轻行肩包可放普通手机、钥匙，和您平时只带这两样的用法是对得上的，日常用不会显得多余；价格是12,800元，确实比您预想的高一点。如果您更看重日常轻便，这款是合适的；如果预算上还想再看看，我也可以帮您留意其他选择。"
+      ],
+      "program_status": "success",
+      "program_error": null,
+      "model_verdict": "pass",
+      "review_parse_error": null,
+      "review_validation_errors": [],
+      "provider_native_generation_schema": true,
+      "provider_native_review_schema": true,
+      "generation_count": 1,
+      "review_count": 1,
+      "previous_version": "0.18.0",
+      "previous_program_status": "error",
+      "previous_messages": [
+        "理解您的顾虑，轻行肩包是12,800元，确实不算随手买的小件。不过从您说的用途看，它正好合适——容量就是放普通手机和钥匙这类随身小物，日常轻装出门不用背大包。如果您平时基本上只带这些，它算是对得上需求的选择；如果哪天要装水杯、雨伞，就得再考虑一下。",
+        "您这个用法其实和它很匹配。轻行肩包容量是放普通手机、钥匙，日常轻装刚好，不会空荡荡。价格是12,800元，比您预期高一些我理解，贵主要不在容量大，而在它轻便好带。只看日常这两样的话，它是合适的；要不要再看看，您也不用急着定。",
+        "日常只带手机和钥匙的话，轻行肩包是合适的，它容量就是这两样随身小物，轻装出门正好。价格12,800元，确实比您想的高一点，这点我不绕。您可以按自己平时的出门习惯衡量：如果多数时候就这些，它够用也顺手；偶尔要装别的东西，我们就再看别的款。"
+      ],
+      "independent": {
+        "fact": "当前原文未再编定价原因或商品能力",
+        "editorial": "仍需润色，未达简洁写作目标",
+        "review": "有效pass；程序交付不等于编辑完全通过",
+        "detail": "价格12800与手机钥匙容量准确，没有再加水杯雨伞或解释贵的原因。第一条“确实不算轻的价格”别扭，“要不要…和别的款…对比”不是当前必要问题；第二条已经回答用途合适，再说“价格…需要您自己权衡”可省；第三条“帮您理一下”和假设其他选择偏拖沓。正常“有想了解的随时问我”可以保留，不应与这些问题混为一谈。原文未剪句。"
+      }
+    },
+    {
+      "case_id": "N26",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+        "related_info": "",
+        "advisor_instruction": "给她安全、好操作的处理建议。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N26",
+        "conversation_id": "business-v2-chat-N26",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "record": "raw_runs/6e9a509cd3264942bcfaaae24c661541.json",
+      "initial_record": "raw_runs/6e9a509cd3264942bcfaaae24c661541.json",
+      "run_id": "6e9a509cd3264942bcfaaae24c661541",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "review_prompt": "review-1.4.0",
+      "messages": [
+        "您好，家里这瓶清洁剂成分不清楚的话，先别用在卡夹上，也别在角落先试。麻烦您拍一下瓶身标签或成分表发我，我帮您交售后看看能不能用、怎么处理更稳妥。",
+        "卡夹蹭到污渍先别急着擦，成分不明的清洁剂建议不碰，角落试也不建议。您把瓶子的标签或成分信息拍给我，我这边请售后确认后再告诉您合适的处理方式，免得伤到皮面。",
+        "这种情况我不建议直接用家里那瓶清洁剂——成分不明，先别上，也先别在边角试探。您方便的话拍张标签或成分给我，我转给售后看看，再给您好操作的清洁建议。"
+      ],
+      "program_status": "success",
+      "program_error": null,
+      "model_verdict": "pass",
+      "review_parse_error": null,
+      "review_validation_errors": [],
+      "provider_native_generation_schema": true,
+      "provider_native_review_schema": true,
+      "generation_count": 1,
+      "review_count": 1,
+      "previous_version": "0.18.1",
+      "previous_program_status": "error",
+      "previous_messages": [
+        "您好，这瓶清洁剂先别用，成分不清楚的话，我们也不建议先在角落试。您能拍一下瓶身标签或成分表给我吗？我这边交给售后同事看一下，再告诉您合不合适、怎么处理。在那之前，先用干的软布把表面的浮尘轻轻擦掉就好。",
+        "先别急着上那瓶清洁剂哦。成分不明的话，包括在角落先试，我们也不建议。方便的话把瓶子的标签或成分信息发我，我请售后帮您判断能不能用在卡夹上，再给您稳妥的处理方式。现在可以先用干软布轻轻拂一下污渍表面。",
+        "成分不知道的清洁剂，先都不要用，也别先在角落小范围试。麻烦您拍一下那瓶的标签或成分表发我，我转给售后看过后告诉您能不能用、该怎么清。眼下先用干净软布干擦表面，别沾水也别用力搓。"
+      ],
+      "independent": {
+        "fact": "当前原文必要提醒和处理路径通过",
+        "editorial": "第一条可直接作为选择，余两条略可压缩",
+        "review": "有效pass，但current_need将持有卡夹推为已购入，属复核评读过度推断",
+        "detail": "三条均先停用未知清洁剂、提醒不在角落试，收标签/成分交售后；没有干擦或拂擦操作。第二条“先别急着擦”是在本案等待评估时暂停处理，不是声称所有干布都不可用；“免得伤到皮面”是相关风险提醒，不是损坏诊断。第三条把进一步建议放在售后查看后。复核的“客户已购入P03”没有购买来源，当前消息只证明在使用/持有；没有把此判断写入长期购买记录，候选也没有声称上次购买。"
+      }
+    },
+    {
+      "case_id": "N21",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+        "related_info": "",
+        "advisor_instruction": "接住她的到店意向，帮她安排下一步。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N21",
+        "conversation_id": "business-v2-chat-N21",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "record": "raw_runs/cc9dd82c891940eea97e90078571445c.json",
+      "initial_record": "raw_runs/cc9dd82c891940eea97e90078571445c.json",
+      "run_id": "cc9dd82c891940eea97e90078571445c",
+      "app_version": "0.19.0",
+      "generation_prompt": "2.1.0",
+      "review_prompt": "review-1.4.0",
+      "messages": [
+        "您好，轻行肩包有墨黑色。您说的预留我这边先去确认一下库存情况，能留的话就按您周六到店的计划安排，确认好我第一时间回您。",
+        "收到，墨黑色的轻行肩包我帮您留意。周六到店前我先核实一下现货和能否预留，确认后马上告诉您，您方便的话也可以跟我说下大概几点到。",
+        "好的，墨黑色轻行肩包先帮您记着。能不能预留需要我核实一下当前库存，我确认后就回您，尽量让您周六来了能直接看到。有任何问题随时找我。"
+      ],
+      "program_status": "success",
+      "program_error": null,
+      "model_verdict": "pass",
+      "review_parse_error": null,
+      "review_validation_errors": [],
+      "provider_native_generation_schema": true,
+      "provider_native_review_schema": true,
+      "generation_count": 1,
+      "review_count": 1,
+      "previous_version": "0.18.1",
+      "previous_program_status": "needs_advisor",
+      "previous_messages": [],
+      "independent": {
+        "fact": "当前原文核库存和预留边界通过",
+        "editorial": "第二条可省询问到店时间；正常服务收尾保留",
+        "review": "有效pass；本次ready路由获得真实验证",
+        "detail": "确实返回三条，不再要求顾问先完成库存查询才生成。均承接核实库存及能否预留，确认后回复；没有已预留或周六一定有货的保证。第一条可以选择；第二条问具体几点到略早，可省但不是再次索取工具漏资料；第三条“尽量让…直接看到”是努力方向，前面保留需核实，并非确定库存承诺。"
+      }
+    }
+  ]
+}

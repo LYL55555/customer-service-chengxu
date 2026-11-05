@@ -1,0 +1,6 @@
+{
+  "inspection": "{\"kind\":\"table\",\"sheet\":\"八列原文\",\"address\":\"F11:H11\",\"rows\":1,\"cols\":3,\"values\":[[\"轻行肩包可以斜挎，肩带长度也能调节。您这款iPhone 15 Pro Max按裸机尺寸看通常够放，普通薄壳一般也放得下。\",\"可以的，轻行肩包支持肩背和斜挎，肩带可调节长度。iPhone 15 Pro Max放进去通常没问题，日常薄壳也一般够放；特别厚的壳或外接配件就不太好确定。\",\"轻行肩包能斜挎，肩带可以调长短。iPhone 15 Pro Max的尺寸放进去是够的，普通薄壳通常也没问题。\"]]}",
+  "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "rows": 50,
+  "columns": 8
+}

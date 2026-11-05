@@ -1,0 +1,18 @@
+{
+  "existing_rows_unchanged": true,
+  "checked_tables": [
+    "advisors",
+    "customers",
+    "conversations",
+    "drafts",
+    "checkpoints",
+    "profile_versions",
+    "resources",
+    "mutations",
+    "contact_evidence"
+  ],
+  "new_sessions": 3,
+  "model_requests_during_ui_walkthrough": 0,
+  "clipboard_native_paste": "not_verified_external_automation_channel",
+  "ui_return_refresh_draft_verified": true
+}

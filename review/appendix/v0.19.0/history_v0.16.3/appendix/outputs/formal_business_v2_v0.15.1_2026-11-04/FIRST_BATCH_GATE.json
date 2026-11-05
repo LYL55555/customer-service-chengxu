@@ -1,0 +1,27 @@
+{
+  "baseline_id": "formal-business-v2-baseline-0.15.1",
+  "app_version": "0.15.1",
+  "checked_at": "2026-11-04T21:55:59.409691+00:00",
+  "baseline_sha256": "1cdb26b3449c897e14f873996cfaa9d1558f53156f3d091112d6c48a7facc551",
+  "first_batch": [
+    "N10",
+    "N30",
+    "N37",
+    "N50"
+  ],
+  "continue_same_version": false,
+  "stop_reason": "systematic_normal_answer_false_block",
+  "blocking_cases": [
+    "N30"
+  ],
+  "diagnosis": "本客户售后评估单提供450元、预计10个工作日；三条正确转述，复核pass且引用该单。程序将有效业务/订单资料排除service域，导致missing_authoritative_check。",
+  "minor_findings_not_stop_reasons": [
+    "N10可省的厚壳尾句与复核过度解释",
+    "N37邀请过长、重复索已知称呼",
+    "N37候选2将两款包及卡夹统称三款包，轻微分类错误",
+    "N50略书面目录用语"
+  ],
+  "remaining_cases_not_called": 46,
+  "automatic_retries": 0,
+  "no_best_of_rounds": true
+}

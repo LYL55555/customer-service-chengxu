@@ -1,0 +1,109 @@
+{
+  "advisor_id": "919ead81aefd489b8748fb55bb8f7239",
+  "advisor_name": "提交演示 · 虚构顾问小林",
+  "app_version": "0.16.3",
+  "source_mode": "明确关联的已保存真实结果演示，未重新生成",
+  "sessions": [
+    {
+      "case_id": "N21",
+      "customer_id": "ba0eac9fedb4426c8e0c65128579ddb7",
+      "conversation_id": "925ccddd8eab4025b47b97419f598dfc",
+      "customer_name": "N21 · 虚构演示客户",
+      "valid_run_id": "d56c43dd5d324edd8a696e3e077c8023",
+      "failed_run_id": "6a4d74f23a4b46d18b80724351021575",
+      "source_original_run_id": "b5de9ed7d8cc4c16bce77e2d80c33652",
+      "expected_second_message": "我先帮您核实墨黑色轻行肩包的库存，以及周六能否为您预留一只，确认后回复您。",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+        "related_info": "",
+        "advisor_instruction": "接住她的到店意向，帮她安排下一步。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "draft": {
+        "input": {
+          "scenario": "商品推荐",
+          "client_info": "",
+          "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+          "related_info": "",
+          "advisor_instruction": "接住她的到店意向，帮她安排下一步。",
+          "product_ids": [
+            "P02"
+          ]
+        },
+        "context": {},
+        "revision_text": "只保留必要事实和下一步，其他候选先不改。",
+        "target": "1"
+      }
+    },
+    {
+      "case_id": "N29",
+      "customer_id": "e9c6057aced7463f84c18597bd5bb8e4",
+      "conversation_id": "c1d9fe655ffe4d64a0714552d304514c",
+      "customer_name": "N29 · 虚构演示客户",
+      "valid_run_id": "fe9a329baea545afa17c8482f84b90f4",
+      "failed_run_id": "83eebec51e5d47739ef82c8d46f0360a",
+      "source_original_run_id": "83e40c0b335645bcaf2d23c06adb1ac5",
+      "expected_second_message": "麻烦您拍一段拉链卡顿的拉合视频发我，我帮您转给售后确认怎么处理。",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上个月在门店买过轻行肩包。",
+        "conversation": "客户：这两天总觉得肩包拉链有点卡，会不会坏了？",
+        "related_info": "",
+        "advisor_instruction": "接住她的担心，给个能开始处理的办法。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "draft": {
+        "input": {
+          "scenario": "购后关怀",
+          "client_info": "上个月在门店买过轻行肩包。",
+          "conversation": "客户：这两天总觉得肩包拉链有点卡，会不会坏了？",
+          "related_info": "",
+          "advisor_instruction": "接住她的担心，给个能开始处理的办法。",
+          "product_ids": [
+            "P02"
+          ]
+        },
+        "context": {},
+        "revision_text": "只保留必要事实和下一步，其他候选先不改。",
+        "target": "1"
+      }
+    },
+    {
+      "case_id": "N39",
+      "customer_id": "cb610a6ea5a9458ab558beefbde718fa",
+      "conversation_id": "42dfc4355e69489fb6501cf6019e7860",
+      "customer_name": "N39 · 虚构演示客户",
+      "valid_run_id": "65da825830ee465e9b96d433747c4188",
+      "failed_run_id": "b4756624d12e435681c2a7595efc7659",
+      "source_original_run_id": "dce91fbf10054208a37df1d61af3341b",
+      "expected_second_message": "这场活动叫“日常收纳小聚”，11月14日周六14:00—16:00在澄序广场8号精品店，现场会演示三款包袋怎么收常用物品，也欢迎您自己体验。不用全程参加，时段内过来待一会儿也可以。",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "advisor_instruction": "用容易懂的话介绍内容。",
+        "product_ids": []
+      },
+      "draft": {
+        "input": {
+          "scenario": "活动邀请",
+          "client_info": "",
+          "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+          "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+          "advisor_instruction": "用容易懂的话介绍内容。",
+          "product_ids": []
+        },
+        "context": {},
+        "revision_text": "只保留必要事实和下一步，其他候选先不改。",
+        "target": "1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": "device-catalog-1.0.0",
+  "scope": "已由开发者核对官方来源的本地型号表；不代表全型号在线搜索",
+  "verified_on": "2026-11-04",
+  "devices": [
+    {
+      "id": "device.apple.iphone_15_pro_max",
+      "model": "iPhone 15 Pro Max",
+      "canonical": "iphone15promax",
+      "manufacturer": "Apple",
+      "bare_dimensions_mm": {
+        "height": 159.9,
+        "width": 76.7,
+        "depth": 8.25
+      },
+      "case_dimensions_status": "unknown",
+      "source_url": "https://support.apple.com/zh-cn/111828",
+      "source_title": "iPhone 15 Pro Max - 技术规格 - 官方 Apple 支持 (中国)",
+      "source_section": "尺寸和重量",
+      "source_quote": "宽度： 76.7 毫米(3.02 英寸)\n高度： 159.9 毫米(6.29 英寸)\n厚度： 8.25 毫米(0.32 英寸)",
+      "source_quote_sha256": "2182202f2b377824a3749c7ac27e2edd758979b53e904c6c16fdddbd6bb55e8d",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

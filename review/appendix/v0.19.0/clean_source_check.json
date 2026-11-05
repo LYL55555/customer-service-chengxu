@@ -1,0 +1,65 @@
+{
+  "source_sha256": "e12feb26e0c49c9928e8ad415ef5a25949b5da5c9f77ea6009de429caba85976",
+  "new_model_requests": 0,
+  "app_version": "0.19.0",
+  "unconfigured_status": "unconfigured",
+  "six_scenarios": 6,
+  "demo_customers": 5,
+  "idempotent_demo_loader": true,
+  "record_guards": [
+    {
+      "case_id": "N16",
+      "source_version": "0.18.0",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "N16",
+      "source_version": "0.19.0",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "N39",
+      "source_version": "0.18.0",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "N39",
+      "source_version": "0.19.0",
+      "copy_allowed": true
+    },
+    {
+      "case_id": "N44",
+      "source_version": "0.18.0",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "N44",
+      "source_version": "0.19.0",
+      "copy_allowed": true
+    },
+    {
+      "case_id": "N26",
+      "source_version": "0.18.1",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "N26",
+      "source_version": "0.19.0",
+      "copy_allowed": true
+    },
+    {
+      "case_id": "N21",
+      "source_version": "0.18.1",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "N21",
+      "source_version": "0.19.0",
+      "copy_allowed": true
+    }
+  ],
+  "offline_contract_tests": "4 passed",
+  "startup_passed": true,
+  "temporary_server_stopped": true,
+  "normal_8765_kept_running": true
+}

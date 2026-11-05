@@ -1,0 +1,3350 @@
+{
+  "summary": {
+    "kind": "same-seen50-new-version-first-attempts-not-original-baseline",
+    "app_version": "0.13.6",
+    "completed": 50,
+    "case_count": 50,
+    "status_counts": {
+      "success": 34,
+      "error": 16
+    },
+    "groups_with_exact_three_original_strings": 49,
+    "original_message_count": 147,
+    "failed_case_ids": [
+      "F12",
+      "F13",
+      "F18",
+      "F20",
+      "F25",
+      "F28",
+      "F29",
+      "F30",
+      "F31",
+      "F32",
+      "F33",
+      "F35",
+      "F37",
+      "F43",
+      "F47",
+      "F50"
+    ],
+    "actual_requests": 94,
+    "reported_total_tokens": 2167942,
+    "requests_without_usage": 1,
+    "automatic_retries": 0,
+    "case_sha256": "1f1f37d70a1102d45eedeacc834f3539e223c652866ee0035560a5817358a243",
+    "original_baseline_unchanged": true,
+    "model_pass_is_not_human_quality_acceptance": true
+  },
+  "results": [
+    {
+      "case_id": "F01",
+      "scenario": "生日及节日问候",
+      "title": "简短生日祝福",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户许女士，顾问已确认本次为生日问候，具体发送日期未提供。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "每条尽量一到两句。"
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F01",
+        "conversation_id": "formal-chat-F01",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "生日祝福不说今天或具体年龄",
+        "无商品促销或虚构往来"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/6e1e3f02a623493180f24ec30cd20b5f.json",
+      "raw_sha256": "60cdfde52d9e3f32ed7fea39bfd25d847bea4a9c115e57e667a3a71398d95073",
+      "run_id": "6e1e3f02a623493180f24ec30cd20b5f",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "许女士，生日快乐，祝您新的一岁顺心自在。",
+        "许女士，生日快乐。愿这一年里日常轻松顺意，喜欢的事都能慢慢做成。",
+        "许女士，生日快乐，祝您健康、开心，往后的日子都过得舒心。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "cb348465f152fd1884439f17c371cc757f78830f5a58df6830c0037da9e52399",
+        "0bb244696c72eb15d88bca02d8484c9c2d3cdbc497aad0a45a1d144870190681",
+        "e04f6735f2220ea2e261118fae61b9a5d271fd858872c98051aab91107fb8526"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F02",
+      "scenario": "生日及节日问候",
+      "title": "客户不喜欢昵称",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户沈先生，已确认生日问候，客户偏好直接称沈先生，不用亲昵称呼。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F02",
+        "conversation_id": "formal-chat-F02",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "使用合适称呼",
+        "无家庭、年龄推断"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "三种简短祝福重心，不要求添加行动",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/c6cf02d7b5c34c9ca95560cc0dfd8a30.json",
+      "raw_sha256": "4ab93005ab09fea9526723baea0ebd0369278b78b776276110e202dd07716317",
+      "run_id": "c6cf02d7b5c34c9ca95560cc0dfd8a30",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "沈先生，生日快乐。祝您新的一年顺利、舒心。",
+        "沈先生，生日快乐！愿这一年里想做的事都慢慢有进展，日常也过得轻松愉快。",
+        "沈先生，祝您生日快乐，身体健康，岁岁都有好消息。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "70ef46639ff72757508e0a93d68a482e0b8893bb529a0794e8a0c5fe934ab250",
+        "9671e7a051942f015faef97e284f8315b47f27e422093a35ca5c84fbfd03c04b",
+        "8063bad27973b9aebdb97137a1bdd1750a4670b7c83ad73e1c1862ad4d9d41d0"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F03",
+      "scenario": "生日及节日问候",
+      "title": "中秋而非生日",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户顾女士，仅知道称呼。",
+        "conversation": "",
+        "related_info": "顾问此次准备中秋节问候，未提供发送日期或家庭资料。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F03",
+        "conversation_id": "formal-chat-F03",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "对应中秋，不写生日快乐",
+        "不编月饼礼物、团聚或家庭事实"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/87807f8669b64d2ca3325286b1ddc16a.json",
+      "raw_sha256": "a30a3f56279a1791103689b5cbc28708748027659ff4e7d5028b9851a1eda5d9",
+      "run_id": "87807f8669b64d2ca3325286b1ddc16a",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "顾女士，中秋快乐。愿您和家人平安顺意，团圆自在。",
+        "顾女士，中秋快乐。祝您节日里过得舒心，所愿皆成。",
+        "顾女士，中秋佳节，愿月色温柔，您也一切安好。中秋快乐。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "03371c9c79c584f0f8175c60da81089280f5fe7cc6c7fa30abd737b6e233a6a0",
+        "fd023949f72766a5a39b3685559d32886bc5b4634a82281b094a4f9a856a8262",
+        "d46ce25e70c4611a758dc26baee6c7c938b3b97b9a4fe78c6664f14aca006fad"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S3 / 表达取舍",
+        "observation": "“愿您和家人…团圆自在”是祝愿，不等于断言客户当日确实团聚；不按虚构家庭行程记硬事实错。第三条重复中秋快乐、偏文雅，可由用户判断。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F04",
+      "scenario": "生日及节日问候",
+      "title": "春节节制祝福",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户梁先生，确认春节问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "语气朴素一些，不要像群发广告。"
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F04",
+        "conversation_id": "formal-chat-F04",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "祝福为主不顺带商品",
+        "不默认生肖、年龄或家庭情况"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/d51c48f1fa1b4523a943112fe86ae61d.json",
+      "raw_sha256": "2782b88c88abd7e8b394d76c6f211f91c052ff124cf941cf499aa44fc935b0e2",
+      "run_id": "d51c48f1fa1b4523a943112fe86ae61d",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "梁先生，春节好，给您拜个年。愿新的一年顺遂平安，阖家安康。",
+        "梁先生，春节快乐。祝您新岁顺心，日子过得从容舒心，家人也都平安喜乐。",
+        "梁先生，春节到了，向您问声好。祝您和家人身体健康、万事顺意。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "e22d0d4d49aaf00916857f8a6b96b9a4bfa0dade7b520312af16f5bb598585e0",
+        "29a5f0c098df75bedabc6263c364f99cb0eb8cbd96e11f5f5238e41a5ef1b1c1",
+        "625408109e1b25a02faf564390a72ce209cf8a9387457efe5815fb4a3e6b4624"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S3 / 时点措辞",
+        "observation": "第3条“春节到了”未给发送日，较稳妥的祝福无需这句；不与错误折扣/售后承诺等权。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F05",
+      "scenario": "生日及节日问候",
+      "title": "已知客户正在旅行",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户赵女士，确认生日问候。客户昨天主动说自己这周在旅行，地点和同行者未知。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F05",
+        "conversation_id": "formal-chat-F05",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "可结合已知旅行祝愿",
+        "不编目的地、家人或旅行体验"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/cfbf46793d88476eb976cf4abb327233.json",
+      "raw_sha256": "0d0fa9ade536464e87fc26db55a9e05de184817db63a3cb88e5909b31291cce4",
+      "run_id": "cfbf46793d88476eb976cf4abb327233",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "赵女士，生日快乐！愿新的一岁顺心如意，旅途也愉快。",
+        "赵女士，祝您生日快乐。听说您这周在外旅行，愿这段行程轻松自在，回来也带着好心情。",
+        "赵女士，生日快乐，祝您一切顺遂，想去的地方都能慢慢走遍。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "e085b4e4ff7eb93eccff727cc17e78e2d9f6d17ce5a6f8773a74d9b2c31362b1",
+        "f7de4febd4eddda86fb74b2b610f44de173ce15ceb2f03fe66c3fa05ade86f85",
+        "a200530d26e5d2927f96bc8fed5004cd38316935c4862783f113963b486208f8"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F06",
+      "scenario": "生日及节日问候",
+      "title": "长期偏好不谈生日日期",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户方女士，顾问确认生日问候；客户以前说不喜欢别人提年龄。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F06",
+        "conversation_id": "formal-chat-F06",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "不提年龄或日期",
+        "不借生日推销"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/af034b6d09b042419f545001273781b9.json",
+      "raw_sha256": "fcd1c3ad5c6bd806dd1ecc70e1c29af00774418df8bf69d7cd4c3351adad90c9",
+      "run_id": "af034b6d09b042419f545001273781b9",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "方女士，生日快乐。祝您新的一岁事事顺心，平安喜乐。",
+        "方女士，祝您生日快乐。愿这一年身体舒爽、日子从容，身边常有让您开心的小事。",
+        "方女士，生日快乐。祝您这一年顺顺利利，想做什么都有好心情。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "f49741d1ee3192e759e21324b17a99e8cff4274a927f391b72946af064136f2d",
+        "a5ca420efd485be34fa512de05a6b7842127d40c5302cf0e3ba195db790956b2",
+        "2f4572bcc39891df0ab23121dbaf44d3837ac67c9427be188b096227ab68398a"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F07",
+      "scenario": "生日及节日问候",
+      "title": "接住客户感谢",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户孟女士；当前顾问需回复客户的感谢。",
+        "conversation": "客户：谢谢您还记得，收到生日祝福很开心。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F07",
+        "conversation_id": "formal-chat-F07",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "回应当前感谢，不重新发一整篇首次问候",
+        "不编赠礼或亲密经历"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/fea9b6d0a5274290aa176a3333f7be4e.json",
+      "raw_sha256": "93d66fb5044d842cb973d3ea532be18a5d559248587e9196f32881157eb34a39",
+      "run_id": "fea9b6d0a5274290aa176a3333f7be4e",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "孟女士，您喜欢就好，祝您新的一岁顺利、开开心心。",
+        "听到您开心我也很高兴。生日祝福送到就好，祝您这一年都平安顺遂。",
+        "孟女士不客气，能赶上给您送上祝福就好，愿您接下来的日子一切都好。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "5ec5956ec8e7f106a6da16a5cd6e312fc290a457b15fa4f6627e283d0eef34ad",
+        "9d3984159668329e695a8781389a9974b1d6878795cd47b0eb4dc9cbaabdcde3",
+        "03aa2768488fbfcfdf0feafb449c04034761e6ecda55908ee793bd8354f39f9b"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S3 / 语气",
+        "observation": "第3条“能赶上给您送上祝福”多了一层未给时点的表达，核心仍回应客户已收祝福的感谢。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F08",
+      "scenario": "生日及节日问候",
+      "title": "生日备注更正意向",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "虚构客户程先生，这是客户刚发来的更正；生日档案尚未实际修改。",
+        "conversation": "客户：我的生日是11月19日，之前写成18日了，麻烦以后按19日记。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F08",
+        "conversation_id": "formal-chat-F08",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "承接正确19日",
+        "不说档案已经修改、也不假设今天生日"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/995768a8acc14e26bad1728af3a0e024.json",
+      "raw_sha256": "005ce2b32c549332de4c9516b242953d8528ba6278467cca00672493f65bb1e9",
+      "run_id": "995768a8acc14e26bad1728af3a0e024",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "程先生，收到，以后按11月19日记，谢谢您特意更正。",
+        "程先生，好的，记下是11月19日了，之前的18日就不用管了。我这边会把档案一并改过来。",
+        "程先生，谢谢您告诉我，之后生日就按11月19日来记。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "9692c7ddaeb7f3abbc74b8b6700762a713b523df0e6f6908a9b51d57ae615b09",
+        "10887b9c50def9b9b6b9f946795791761d60720f2425abd1643a5c886edb79c8",
+        "0005602b4d4fdc65081cf9ef9e1c4ae0fd51b73a0121ce71802fa441b296387f"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "待用户核对 / 动作时态",
+        "observation": "“记下是11月19日了”可指在对话里接收更正，不等于已写客户数据库；“会把档案改过来”是未来意向，不当作已完成。但实际顾问需兑现此意向。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F09",
+      "scenario": "商品推荐",
+      "title": "卡片礼物和卡位",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想给同事送个小礼物，平时只带四张银行卡。随行卡夹多少钱，能装下吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F09",
+        "conversation_id": "formal-chat-F09",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "2,800元和4个独立卡位",
+        "标准银行卡尺寸的四张可用，不编礼盒或赠品"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/26cce63daddd4bb3931209c9e0a25341.json",
+      "raw_sha256": "fccb5116afdf1eb2aa9bc937174a783a21516239eecf837338c96b7b25027f8d",
+      "run_id": "26cce63daddd4bb3931209c9e0a25341",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "随行卡夹是2,800元，有4个独立卡位，正好放4张标准银行卡大小的卡片。送平时只带几张卡的同事，这个容量是合适的。",
+        "随行卡夹2,800元，4个独立卡位，每张卡单独放；平时只带四张银行卡的话，刚好够用。它本身只做卡片收纳，当小礼物比较轻巧。",
+        "随行卡夹的价格是2,800元，4个独立卡位可以放4张标准银行卡大小的卡片，您说的四张卡能装下。它没有零钱袋，也不适合放手机或护照，作为小礼物主要就是收卡用。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "5892dce78534e132c12b944426805a99fdc703ca3bc12f5cbf16153f9654802e",
+        "e8e1b1df8e8945c0e0b9e9d95b666f160e914f66d3e8ddd83cbdcf214168d97e",
+        "046a6f447c905df47c382e2ae9fda19d14ae0c2c1f19e4a1f74b8618b0571aa6"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F10",
+      "scenario": "商品推荐",
+      "title": "零钱需求不能靠卡夹替代",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：随行卡夹能不能放硬币？我想把卡和零钱放一起。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F10",
+        "conversation_id": "formal-chat-F10",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "明确无零钱袋",
+        "不许诺可放硬币或强推包袋替代"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/a4c179adb2314441b7212c0e6b91ce26.json",
+      "raw_sha256": "619db54a8787cf5053a4c4c13dc6f1077ae235710322d51e1e7c2cf9121907cd",
+      "run_id": "a4c179adb2314441b7212c0e6b91ce26",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "随行卡夹没有零钱袋，主要收纳是4个独立卡位，可放4张标准银行卡大小的卡片，所以卡和零钱放在一起这个用法它并不合适。",
+        "这款随行卡夹是没有零钱袋的，4个独立卡位放卡片，硬币没有专门位置。如果您希望卡和零钱一处收纳，它可能不是最合适的选择。",
+        "随行卡夹的容量是4个独立卡位，无零钱袋，也不适合放整叠现金，卡和零钱一起收的话它的结构不太对得上。您要是想找能同时放卡和零钱的款式，我帮您留意一下。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "7920c89ec1102ef12eaf30a60a4abe2417b95be29be46ca7b8d6e774107265b4",
+        "70c76241798715e2140c951f39638e19cf70b9459c617fa535b4cc67de1dc47c",
+        "0675351b0d4fd0e208dc86bd0f7849feaefa9a428a5663b355f7a003ad2849c6"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S3 / 不必要后续",
+        "observation": "第3条“帮您留意”没有编造已存在的替代款，但用户只问硬币，前两条更直接；不宜暗示目录外商品已可提供。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F11",
+      "scenario": "商品推荐",
+      "title": "具体手机尺寸需要核实",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：轻行肩包平时能斜挎吗？我的手机连壳15.8×7.8×1.2厘米。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F11",
+        "conversation_id": "formal-chat-F11",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "支持斜挎及肩背",
+        "客户手机尺寸不当包尺寸，不凭外尺寸保证装入"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/e12dcb5de4ed440e9bea6ccd1b4a4af7.json",
+      "raw_sha256": "33c1620a0f22f2271beb3f5b4c10209c0cd1cbdfe4d6f1bec7677383a2fdf94c",
+      "run_id": "e12dcb5de4ed440e9bea6ccd1b4a4af7",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "轻行肩包可以斜挎，肩带长度也可以调节。您的手机连壳是15.8×7.8×1.2厘米，包身是22×16×7厘米，按尺寸看放手机是够的；不过手机连壳这类大件，还可以再跟实际包口对一下更稳妥。",
+        "可以斜挎的，肩带长度可调，包口是拉链开合。您手机连壳15.8厘米长、7.8厘米宽，和肩包22×16厘米的包身比，放进去是有余量的。这款适合外出少带东西时用，放手机、钥匙、口红这类随身小物正合适。",
+        "轻行肩包支持肩背也可以斜挎，肩带长度能按身高和习惯调。您给的手机尺寸我记下了，包身外尺寸比手机大不少，但我更想帮您确认放进包口后是否顺手——方便的话到店可以带手机试一下。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "e20ab1fc92428a7c56f0ca39ad820fefcc49cf4e4273a9e88de4db09467810cf",
+        "ef230bdb3d89b619503bb1d117a1cea23795a0fc24b0281f9f890790d31d34e1",
+        "96564c93a8be18ea72695c5a546b019012b990a854dbfe053ddcad40b9209faf"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S1 / 实际适配无依据，复核漏检",
+        "observation": "第1条“按尺寸看放手机是够的”和第2条“放进去是有余量的”把包外尺寸推成实际可装/内部余量，资料不能支持。第3条保留核对包口才更稳妥；不能因组状态success或review pass就认定全组三条安全。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F12",
+      "scenario": "商品推荐",
+      "title": "厚文件夹不同于A4纸",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：我每天带A4纸，还会夹一个很厚的文件夹，日行托特能一起装吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F12",
+        "conversation_id": "formal-chat-F12",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "A4纸容量明确",
+        "厚文件夹需另核尺寸，不把A4等同厚夹"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（$ fields），不属于可明确兼容的空内部字段；原响应已保留，整组未采用。",
+        "retryable": false
+      },
+      "raw_record": "raw_runs/57bb8840d7e24696929800745e82f2d1.json",
+      "raw_sha256": "5fa4cd1a6b842763ae94de64931e32dc0ea7e41e66339b0cd04c72fa7ffe0cc4",
+      "run_id": "57bb8840d7e24696929800745e82f2d1",
+      "app_version": "0.13.6",
+      "generation_contract_valid": false,
+      "review_attempted": false,
+      "review_verdict": null,
+      "review_issues": null,
+      "program_checks": null,
+      "messages": [
+        "日行托特包是可以放A4纸质资料的。不过厚文件夹能不能一起放，资料里没有给出结论，需要看文件夹的具体尺寸；方便的话把长、宽、厚发我，我帮您一起核对。",
+        "A4纸质资料放进去是没问题的。您说的很厚文件夹，目前还没法凭资料判断能不能一起装，包内尺寸是34 × 28 × 12 cm，您可以先量一下文件夹，我再帮您对一对。",
+        "日行托特的容量是按通勤带资料来做的，A4纸质资料可以放。厚文件夹这一项需要另核对尺寸，您把文件夹的长宽厚告诉我，或者带来门店实际试一下更稳妥。"
+      ],
+      "message_origin": "parsed_provider_output.messages：按三个命名字段展示原文，不修补整组合同",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "840f71b610daef7539f314a87cc68eed914431b26a82be5f4ada53a2b29da87d",
+        "f15cd53b0becc9750e0cd9f56aa8023c717821cd3797bb3da8ba6821e337e68b",
+        "a88476ee2fca29a113c196df02f26a67b1f2594e0a6f430ef1d8d2e14e06895f"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S1 + 合同失败",
+        "observation": "原arguments仍有三个完整候选，未补missing_information或修坏掉的advisor_note，因此保留接口失败。第2条“包内尺寸34×28×12”本身也错：给的是包体尺寸，不能改为内尺寸。全三条都以量尺寸/试放收尾，选择价值有限。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F13",
+      "scenario": "商品推荐",
+      "title": "两款背法和重量比较",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：轻行肩包和日行托特分别多重？我想知道哪些能斜挎。",
+        "related_info": "",
+        "product_ids": [
+          "P01",
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F13",
+        "conversation_id": "formal-chat-F13",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "P01约750克、P02约420克",
+        "P02可斜挎，P01未提供斜挎配置，不移植特点"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "raw_record": "raw_runs/3ab82ccd60f844e8abf66d39bba8069b.json",
+      "raw_sha256": "a4e7abad9cfdb6333c44d47890396d2018ac6ee88827d73031f574909cb5a7fc",
+      "run_id": "3ab82ccd60f844e8abf66d39bba8069b",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": false,
+      "review_verdict": null,
+      "review_issues": null,
+      "program_checks": [
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 2,
+          "evidence": "约420 g",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 2,
+          "evidence": "750 g",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        }
+      ],
+      "messages": [
+        "轻行肩包空包约420 g，日行托特约750 g，两款都是空包自重的约数。背法上，轻行肩包可以肩背或斜挎，肩带长度可调；日行托特目前确认的是肩背。",
+        "轻行肩包约420 g、日行托特约750 g，都是空包重量。能斜挎的是轻行肩包，肩带可调节长度，包口是拉链开合；托特包的尺寸是34 × 28 × 12 cm，更适合放A4资料这类通勤物品。",
+        "两者空包分别约420 g和750 g。要斜挎的话，目前轻行肩包符合，肩带可调节；日行托特确认的背法是肩背。如果您平时带的东西不多，轻行肩包会更贴合斜挎的需求。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "5f932de42254c6de4090e5f2ce5eb3780f9ae6d688224dfc5a776adb42f15538",
+        "0d3536070b1e27c047b1966fb802b9cdf7f88df440248d5348cc5a220941e4b0",
+        "8b9e95b2445b741e7a29903191b93611a2557a4b27036924124a9547bb79452a"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "程序指代检查疑似误拦 / 未新增属性错误",
+        "observation": "客户原问“轻行肩包和日行托特分别多重”，第3条按同顺序420g/750g是可对照的；程序未把“两者分别”解析到两款就拒绝，不能据此认定重量本来错。三条明确P02可斜挎、P01只陈述已知肩背，未说P01不可斜挎；仍有“目前确认”等审核腔。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F14",
+      "scenario": "商品推荐",
+      "title": "两只卡夹的总额",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：一只随行卡夹2,800对吧？我要两只，一共多少钱？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F14",
+        "conversation_id": "formal-chat-F14",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "单价2,800、两只合计5,600",
+        "总额不能误当商品单价"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/1079028cfcde4ee6bb1ba7d00d48b9f9.json",
+      "raw_sha256": "08e09e554256cee0d9c57cf76a863cdfbcb95c489ac999d86d9ad1ba764bd998",
+      "run_id": "1079028cfcde4ee6bb1ba7d00d48b9f9",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "对，随行卡夹单只2,800元，两只一共5,600元，没有折扣。",
+        "是的，一只2,800元，两只共5,600元。它有两个颜色：墨黑和暖棕，您两只想要同色还是各一只？",
+        "一只2,800元没错，两只就是5,600元。如果需要，我可以再帮您确认一下这两个颜色的库存情况。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "dfc9a7e73ed440d09c7d155cbcb6dea7ddc9726d9264fb63664c80ca922e0ce3",
+        "7f0cf8ff276545d7689534bad6ee477a3f5281cd63d5cc771bfa02fedec4b015",
+        "adbe41e3a801604ab294c0bfe9400676bff6637765440c7f468dee7b44a560c5"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F15",
+      "scenario": "商品推荐",
+      "title": "低调外观的具体依据",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：不喜欢很明显的大标识，轻行肩包外观是什么感觉？别说那些空泛的高级。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F15",
+        "conversation_id": "formal-chat-F15",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "可讲小压印标识、哑光细纹牛皮、简洁线条",
+        "不编产地、皮革等级或地位象征"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/2a01c9d3c6304599a7f246ebf26ede1c.json",
+      "raw_sha256": "c4dc4af4d384ee679529ef4e85309813cb17ce06ef29d086b8aad2a298a9dc42",
+      "run_id": "2a01c9d3c6304599a7f246ebf26ede1c",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "轻行肩包的标识是小尺寸压印的，没有大面积标识，整体看起来比较简洁。包身是哑光细纹牛皮，光泽低、能看到细小纹理，不是亮面。目录里有墨黑、米白两色。",
+        "它的外观偏克制：品牌标识压得很小，不显眼；皮面是哑光的，表面有细纹，不反光。尺寸约22 × 16 × 7 cm，自重约420 g，是随身小包的体量。",
+        "标识只有一小处压印，不会有抢眼的大logo；哑光细纹牛皮让包看起来比较素净低调。如果您主要关心标识不显眼，这款是符合的；我也可以帮您把两个颜色的实拍情况再确认一下。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "8520d46dfd2c8a62686ba29c09e4d34aa05165db2aa91df1c948647db5d48ee0",
+        "09e7d02826cc556a3ba2f096de834312dd0c835d8cde2b12bc31b67b58fbd651",
+        "1d1d93009e920044121c078ade479b846f46c008654ec461f4cea2babe39eaca"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S1 / 商品事实扩写，复核漏检",
+        "observation": "第2条“不反光”比资料“哑光、光泽低”更绝对，没有来源；第1条“目录里”及第3条库存/实拍核实帮助可能偏审核腔，但与无据属性分开。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F16",
+      "scenario": "商品推荐",
+      "title": "托特材质与内袋",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：日行托特外面和里面是什么材质？钥匙能单独放吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F16",
+        "conversation_id": "formal-chat-F16",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "包身哑光细纹牛皮、棉布内衬",
+        "一个内侧平口袋可放钥匙，每条答两问"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/d5cbf587e9f143a287efb94660a14544.json",
+      "raw_sha256": "f3ccec019ea1157073bf980466c7c301cdbc8314df8311b10d8ccf39e62d16da",
+      "run_id": "d5cbf587e9f143a287efb94660a14544",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "日行托特包身外面是哑光细纹牛皮，内里是棉布内衬。内侧有一个平口袋，可以单独放钥匙这类小物。",
+        "外面是哑光细纹牛皮，皮面光泽低、能看到细小纹理；里面是棉布内衬。包内有一个平口袋，钥匙单独放进去没问题。",
+        "日行托特外面是哑光细纹牛皮，内衬是棉布。钥匙可以放在内侧的平口袋里。您要是还想了解它的收纳，我可以再和您说说。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "f0275810c7da31f0c163421bfa455502a10c8e03a1481defb985ed7f252fa24f",
+        "5b79520835adba00c07a3b71d539de3def1f4a4233638701f941b73cb303cd66",
+        "d4394b06f729f34ea16e1e6bbf9055ff63db03dfb82b1d4767b4677a111b7e6d"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F17",
+      "scenario": "商品推荐",
+      "title": "卡夹不是护照套",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：下个月出差，随行卡夹能当护照夹用吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F17",
+        "conversation_id": "formal-chat-F17",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "不适合护照，不能把卡片容量当护照容量",
+        "不虚构其他未上架商品"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/18117c1726884123ae0977f7b93dce9d.json",
+      "raw_sha256": "d29ca2792250f6a1bd54ae967a1b03315141481b6535e1036f3cc7f118256196",
+      "run_id": "18117c1726884123ae0977f7b93dce9d",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "随行卡夹不太适合当护照夹用。它有4个独立卡位，可以放4张标准银行卡大小的卡片，但资料里明确不适合放护照，也不能当作包袋替代；出差证件建议另找专门的护照夹。",
+        "随行卡夹是10 × 7.5 × 0.8 cm，只装4张银行卡大小的卡片，护照放不下，所以当护照夹不合适。出差带证件的话，我建议按护照本身的尺寸另找专门收纳。",
+        "这款卡夹主要收卡片，护照放不进去，出差时当护照夹会不方便。如果您是想小件礼物或自用收卡，它倒合适；证件部分需要另配一个护照夹。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "f3223677d98d63fa09f2944db6012dbe26a52cc0b0177c236418d3a3dacc70e3",
+        "cf56b051efd5831d0642e007758b1caa7623322ee69cdb1650cab2dd9214b672",
+        "19d06efb6b5a6b2a4d7564a6cd3adf07df6ff74394514717e7307e61c7f78b6b"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S3 / 介绍范围与语义强度",
+        "observation": "明确“不适合护照”有资料。第2/3条改说“放不下/放不进去”比“不适合”更强，建议用户留意表达边界；第3条又转向小礼物，与当前出差护照需求不紧密。不把正常否定护照用途本身判无据。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F18",
+      "scenario": "商品推荐",
+      "title": "肩包与长钱包兼容",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：轻行肩包是拉链吗？长钱包19×10×2.5厘米能放下不？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F18",
+        "conversation_id": "formal-chat-F18",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "确认拉链开合",
+        "区分客户钱包和包尺寸，钱包实际兼容需核实"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "轻行肩包的dimensions_cm依据为：22 × 16 × 7 cm；该断言没有同一商品资料支持，未知不能解释成没有。",
+        "retryable": true
+      },
+      "raw_record": "raw_runs/977f7faeca7c47e6b53a9b46c0dfd94a.json",
+      "raw_sha256": "2e8c5add29945e978a65aa62129d7b2a36ef55c5787918153b99f34bb7040359",
+      "run_id": "977f7faeca7c47e6b53a9b46c0dfd94a",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": false,
+      "review_verdict": null,
+      "review_issues": null,
+      "program_checks": [
+        {
+          "code": "wrong_product_fact",
+          "candidate_index": 1,
+          "product_id": "P02",
+          "field": "dimensions_cm",
+          "evidence": "19×10×2.5厘米",
+          "expected": "22 × 16 × 7 cm",
+          "fact_ref": {
+            "product_id": "P02",
+            "field": "dimensions_cm",
+            "status": "known",
+            "value": "22 × 16 × 7 cm"
+          },
+          "source_quote": "22 × 16 × 7 cm",
+          "message": "轻行肩包的dimensions_cm依据为：22 × 16 × 7 cm；该断言没有同一商品资料支持，未知不能解释成没有。"
+        }
+      ],
+      "messages": [
+        "是的，轻行肩包是包口拉链开合。长钱包这类大件目录里注明需要核对尺寸，肩包内里实际能放下的情况，我帮您跟门店确认一下。",
+        "轻行肩包是拉链开合的。您这个长钱包19×10×2.5厘米属于需要核对尺寸的大件，单看数字我没法保证放得下，您要不方便的话我把尺寸转给门店帮您看看？",
+        "包口是拉链的。长钱包能不能放进去得实际核对，您这个尺寸我记下了，我先帮您问一下门店，有结果再回复您。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "e632295f11cb3633427eb4c21ef9221df4997e48162f273a168799ae23ec5818",
+        "78aca88c73f979e1cec2422c51bb08fb298bc1129a6e1acd46c61cd7aa601ce5",
+        "759103085975617a91f297e7e8e927534835ac6b6e0422a2e8c1ede8f38b2a5b"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "程序物品归属误拦",
+        "observation": "19×10×2.5是客户明确给的长钱包尺寸，三条均保留核实，没有说成包尺寸；程序却按P02的22×16×7检查此数值。应记录为误拦，不改客户数字来通过。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F19",
+      "scenario": "购后关怀",
+      "title": "门店未使用申请退货",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：11月1日在门店买的卡夹没用过，包装标牌小票都在，今天3号想退可以吗？",
+        "related_info": "本例业务日期2026-11-03，购买日2026-11-01，门店购买，未使用、标牌及原包装齐全、有凭证，尚未门店检查。",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F19",
+        "conversation_id": "formal-chat-F19",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "符合申请条件不等于已批准",
+        "最终门店检查，不保证到账日期"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/2fbd954e104e4084b103d2a9169a64b7.json",
+      "raw_sha256": "6e2a48cfd4ea51f68f183257a4d3488336229b50c392df7626b2e77df38e1c14",
+      "run_id": "2fbd954e104e4084b103d2a9169a64b7",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "可以的。门店购买后7个自然日内，商品未使用、标牌和原包装齐全、有购买凭证，就可以申请退货或换货；按您11月1日购买、今天11月3日算仍在期限内。最终以门店检查确认为准，您带好卡夹和小票到店就行。",
+        "按您说的情况，符合退货申请条件：门店购买后7个自然日内，未使用、标牌和原包装齐全、有购买凭证即可申请，您这单第7天是11月8日。门店会先检查商品，退款到账时间需要按门店流程确认。",
+        "可以申请退。您有未使用的卡夹、包装、标牌和小票，按门店购买的规则是可以在7个自然日内办理退货或换货的。到店交给出货同事检查确认即可；如果需要，我也可以先帮您和门店核对接下来的办理安排。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "3b9d636a8ecbd81052ca725e1717f42f85b840a65e4943bc4d9558b06f4d9fe0",
+        "230794b4ccfe3d036a0ad5be5fcdb3cb40cead43aa8d15c0efbd2c36a30cf606",
+        "466e8925e8a36b7bf1107a14d3643d68a24c514563dc8ff197148d97e1016299"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "未见实质售后越权",
+        "observation": "三条均区分申请和门店最终检查，11/1次日起算至11/8正确；“可以的”后面有限定为申请，不等于保证已批准。第3条“出货同事”显生硬，可换普通门店称呼，但本轮原文不改。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F20",
+      "scenario": "购后关怀",
+      "title": "退换最后一天计数",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：10月27日在店里买的肩包没用，今天11月3日，包装和凭证都齐，还来得及申请换色吗？",
+        "related_info": "虚构业务日期2026-11-03，门店购买日期2026-10-27；未使用、标牌原包装及购买凭证齐全；未检查。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F20",
+        "conversation_id": "formal-chat-F20",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "次日起7自然日，第7日11/3可申请",
+        "换色不等于有库存，不直接批准"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "raw_record": "raw_runs/459fcb808be24fd5b8c30de5b7b1883f.json",
+      "raw_sha256": "67212b2b288c3299460ccd8fd98874a5819f30b1f5897d0fe65d9c4378022390",
+      "run_id": "459fcb808be24fd5b8c30de5b7b1883f",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "block",
+      "review_issues": [
+        {
+          "code": "policy_error",
+          "candidate_index": 1,
+          "evidence_span_id": "reply_2.s2",
+          "message": "“未使用、标牌及原包装齐全并有凭证即可申请换货”把规则说成只要满足条件就能换货，漏掉了“最终需门店检查确认”这一前提，属于对售后政策条件的不完整转述，容易让客户理解为已经获批。",
+          "source_refs": [
+            {
+              "source_id": "policy.5"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 1,
+          "evidence_span_id": "reply_2.s3",
+          "message": "“是否需要调货”引入调货状态，初始目录不含调货或预留记录，回应换色时追问调货不在已知资料范围内；可改为请客户选色并说明到店确认。",
+          "source_refs": [
+            {
+              "source_id": "product.P02.colors"
+            }
+          ]
+        },
+        {
+          "code": "policy_error",
+          "candidate_index": 2,
+          "evidence_span_id": "reply_3.s2",
+          "message": "“帮您一起提交给门店检查”是未来协助意向，本身可以，但“可以提交换色申请”与“最终结果以门店确认为准”并存时需明确当前只是按信息初步判断；此处未说明门店检查前不能确定换色结果，措辞仍偏向已受理，建议明确“门店检查后再确认结果”。",
+          "source_refs": [
+            {
+              "source_id": "policy.5"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "来得及。10月27日门店购买的，次日起算第7天是11月3日，今天仍在7个自然日内。您这件未使用、标牌原包装和凭证齐全，按这些信息符合申请换色的条件，最终以门店检查确认为准。您想换哪个颜色？",
+        "可以申请。门店购买的商品自购买次日起算7个自然日内，未使用、标牌及原包装齐全并有凭证即可申请换货；您10月27日买的，今天11月3日正好是第7日。轻行肩包有墨黑和米白两种颜色，具体换哪色和是否需要调货，我先帮您跟门店确认。",
+        "按您说的日期算，今天还在7天内，未使用且包装凭证齐全，可以提交换色申请。方便的话把购买凭证和包身、标牌的照片发我，我帮您一起提交给门店检查。换色的最终结果以门店确认为准。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "a06e38ed1804d223b1db6e8035db2897c07c1f5c3fb6dada9c555cde86de7ac6",
+        "3428437d9abd0977093e087ac1220cf3468bc2231bce8eb1f041847c4100ba68",
+        "e4d7ca48e0a836d69516e4ee4727f27c58c51754f0c09ce292ba0ed7327bef06"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "混合问题 / 生成和复核分别看",
+        "observation": "第1条“您这件…标牌…齐全”将未明确的标牌情况当事实；客户只说包装和凭证齐全。另一方面，复核把第2条“可申请”推成已批准、把未来确认调货认定成已有调货状态，理由过强；第3条明确最终门店确认，复核又说完全未说明也不成立。invalid_review还有来源类型错误，不能照单全收block。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F21",
+      "scenario": "购后关怀",
+      "title": "渠道未知先核实",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：朋友帮我买的托特，我不清楚哪个渠道，能直接退吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F21",
+        "conversation_id": "formal-chat-F21",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "先核实渠道、记录和商品情况",
+        "不直接套门店7日或保证退货"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/51c634acd6d04268ab6fab1ae2d5d9f8.json",
+      "raw_sha256": "cc55e0b4ef43d80e41181aaf1a7ac4354f7a860244dc80893ff6680b664fd58e",
+      "run_id": "51c634acd6d04268ab6fab1ae2d5d9f8",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "您好，购买渠道不清楚的话，退换还不能直接确定。方便的话把购买凭证或订单截图发给我，我先帮您核实渠道和后续可按哪种方式处理。",
+        "目前只支持门店购买场景下的退换：自购买次日起7个自然日内，商品未使用、标牌和原包装齐全，并有购买凭证，可以申请退货或换货，最终由门店检查确认。您这次是朋友代买的，渠道还需要确认，我可以陪您一起理清该找哪里办。",
+        "先别急着寄回。您可以把购买凭证或朋友下单的截图发我，我先帮您确认是哪个渠道买的、是否还在退换期内，再告诉您具体该走哪一步。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "0caf3b99443ce703ec2ee9330874373088a35939f2ad4c1697fa2b3c6750e709",
+        "2feeb55fb55ab9962cda01e5d22526bd32c04c691120ab94341c33440f913db0",
+        "ee432edb18f29028f61c5ed23782ab4caac04e4b074a12d66abeef161fbcccab"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S1 / 覆盖范围误写业务限制，复核漏检",
+        "observation": "第2条“目前只支持门店购买场景下的退换”把本项目资料只描述门店，变成品牌只处理门店渠道，超出policy.5；第1/3条先核渠道更合适。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F22",
+      "scenario": "购后关怀",
+      "title": "网上购买不套门店规则",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "虚构客户，仅知道其描述网上购买，具体平台未知。",
+        "conversation": "客户：我是网上买的，昨天到货，想退掉，是不是也按你们门店七天走？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F22",
+        "conversation_id": "formal-chat-F22",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "说明需核实渠道规则",
+        "不编线上退货权益、平台地址或批准"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/54efe7a0cfa74b4e9346314f20eb6b44.json",
+      "raw_sha256": "66618a524f0ec473a0fb012aa3f95c7e77f46c68addc881b934623aa6cac948d",
+      "run_id": "54efe7a0cfa74b4e9346314f20eb6b44",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "您好，七天退换是门店购买的规则，网购渠道不一定相同。您是在哪个平台下的单？我先帮您核实对应的退货流程。",
+        "明白您想退货。门店购买是次日起算7个自然日内、商品未使用且标牌原包装凭证齐全可申请，最终需门店检查确认；您这单是网上买的，具体平台不同，流程要先核实。方便告诉我是哪个平台吗？",
+        "网上渠道的退货不直接按门店七天规则来，需要看平台那边的安排。您把下单平台的名称和订单信息发我，我先帮您核实怎么申请。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "56d83ff140fd1abe0036f63fdb361783f5655fdca05cac2f73c8ada3e5b88343",
+        "f6ea14fa0cc381172c61fb892d2a665ca45addd74af5e8f290503cab1a2612c8",
+        "183e99068fcd92d93d754bd63f881ff27597bd1c0897e9493457ba84db5366d7"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F23",
+      "scenario": "购后关怀",
+      "title": "卡夹污渍与清洁剂",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹蹭上污渍，家里有清洁剂但不知道成分，直接擦行吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F23",
+        "conversation_id": "formal-chat-F23",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "不建议自行用未知清洁剂",
+        "可收局部照片交售后，不编皮面损坏机理"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/b849bf6bab13478393574bc4c0906b9a.json",
+      "raw_sha256": "327d49487b2e909665541f7b5f057d4f172b6184e06c9018fecfd9b1fa2b0f6f",
+      "run_id": "b849bf6bab13478393574bc4c0906b9a",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "不建议直接擦。成分不明的清洁剂可能对皮面有影响，酒精和含溶剂的更要避开。可以先在不显眼的小角落点一点试，没有异常再处理污渍；要是污渍比较明显，拍张照片发我，我帮您一起问售后怎么处理更稳妥。",
+        "家里那瓶清洁剂成分不清楚，先别直接上卡夹。常规做法是避免长时间淋雨，沾水后用干燥软布轻轻吸干、放通风处自然晾干；污渍这块，您方便的话拍张局部照片，我帮您提交给售后看看怎么处理。",
+        "成分不清的清洁剂，我不建议您直接往卡夹上擦。您先拍张污渍的局部照片，我帮您问一下售后，确认能不能处理、该怎么清洁，再动手会放心一些。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "4332bfc88b98f64e687f66487dadc68aeefa5aba432b4203f1d69bb3eb468491",
+        "693e9265f0f73ce863d235df8bfa14a0853293b6cceeacc02c9d7ecbc0ee60c3",
+        "964766cc7e3808a2f9b795b0d7a8fb40c862ceff6712358fdb60f6d08ca72220"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S0 / 明确禁令被违反，复核漏检",
+        "observation": "第1条建议对未知清洁剂“小角落点一点试，没有异常再处理”，与policy.5不建议自行使用未知清洁剂相冲突，可能误导实际护理。第2条没有新增污渍处理法，但把沾水保养表搬入污渍问题，相关性较弱；第3条先照片评估更贴任务。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F24",
+      "scenario": "购后关怀",
+      "title": "维修费用和周期均未知",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：肩包拉链有点卡，修一下要多少钱、几天能好？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F24",
+        "conversation_id": "formal-chat-F24",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "两项都需售后评估",
+        "不保证免费、固定天数或认定人为使用不当"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/fc572f83dc8e4e44b494104754495ee9.json",
+      "raw_sha256": "5c7adce5f5e57ca03ae9f10075a1667a14e9bbafe0a6d8d423716292cd18efcc",
+      "run_id": "fc572f83dc8e4e44b494104754495ee9",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "您好，拉链卡的情况我记下了。能否修、费用多少和需要几天，都要售后看过实物才能确定，我这边没法先给报价和工期。我可以先帮您把情况和这张肩包一起提交评估。",
+        "收到，肩包拉链发卡这件事我先帮您转给售后查看。维修是否能做、收费和周期都要他们检查后告知，再由您决定要不要处理，我会把结果转给您。",
+        "肩包拉链卡着用起来确实不方便。麻烦您拍一张拉链部位的近照发我，我连同您说的发卡情况一起提交售后评估；费用和所需时间他们会看过实物后给答复。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "43d5f97ffb223d28a43ead626f3ba3ffa85a7f8a5c3baf406e481aac0e921882",
+        "28c4ceffbf14c0f73fa5a24a48246e9038aa3ffd77fe6b1aa4bd0c26f82c5f31",
+        "9f75c8cd9710c6fec9435dad86593660f72354576773d3ea1ea697605bc5d593"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S2 / 未给处理流程，S3措辞",
+        "observation": "第1/3条把“售后评估”加成必须看过实物才可确定，资料只说查看情况和评估，可先照片，不保证一定需要实物。第1条“这张肩包”也不像自然微信；不当作已收到照片或已执行提交。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F25",
+      "scenario": "购后关怀",
+      "title": "客户询问尚未核实的单号",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "虚构客户，本次没有提供已提交记录或售后单号。",
+        "conversation": "客户：上次你们说会帮我提交售后，现在有单号吗？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F25",
+        "conversation_id": "formal-chat-F25",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "未来提交意向不等于已完成",
+        "不能编单号、已查结果或已提交事实"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。",
+        "retryable": true
+      },
+      "raw_record": "raw_runs/a657ce81057740b3891ff6fdfa85e719.json",
+      "raw_sha256": "ba5d3ecef43871fc4b9927e4b636a4f1670863d095f72878c1c84ce74660b44c",
+      "run_id": "a657ce81057740b3891ff6fdfa85e719",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": false,
+      "review_verdict": null,
+      "review_issues": null,
+      "program_checks": [
+        {
+          "code": "unsupported_completed_action",
+          "candidate_index": 0,
+          "evidence": "已提交",
+          "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。"
+        }
+      ],
+      "messages": [
+        "您好，我先说明一下：我这边这次没有看到已提交的售后单号，所以暂时没法直接报给您。我先帮您核对上次的沟通记录和提交情况，有结果就回复您。",
+        "抱歉让您来问。现在还没有确认到单号，我先去核实上次说的售后是否已经提交、进度到哪里了，核实清楚后告诉您。",
+        "您好，单号我这边暂时还没确认到，需要先核对上次的沟通和提交情况。麻烦您把售后涉及的商品和问题简单说一下，我一起帮您跟进。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "06a859427b083fb4212078949442444ba9cce469b5ff237300041dc2b319a330",
+        "b3b8f48e2603f4577767d1ab4f727299b9142c453f5de5983cf4f6ad8d2426a8",
+        "a1cd814f8186619efa4f323ab421a024a86fe9a3d26c5a657e57754db5ef6ad1"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "程序警报与上下文缺口并存",
+        "observation": "第1条“没看到已提交单号”有暗示查询结果的风险，不能因工具无资料说现实无记录；第2/3条“还没确认”是待核实。第3条又问售后商品与问题，若只是工具没拿到上次记录，应请顾问补旧记录，不让客户为工具再说。冻结后不另修此分支，原文保留。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F26",
+      "scenario": "购后关怀",
+      "title": "购后轻量关怀",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "虚构客户蒋女士，已知两周前在门店买随行卡夹；顾问这次准备问使用是否顺手，没有已知质量问题。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F26",
+        "conversation_id": "formal-chat-F26",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "可问卡夹使用感受",
+        "不编已出现损坏、反馈或终身服务"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/f281b37366fb42f49ab2409b39bfe16f.json",
+      "raw_sha256": "6928acbcdc91a74979e45195c0be4cf61209c9fadd58ed118f05ab29163e1382",
+      "run_id": "f281b37366fb42f49ab2409b39bfe16f",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "蒋女士您好，两周前您在门店买的随行卡夹，用起来还顺手吗？4个卡位是否够放您常用的卡片？",
+        "蒋女士您好，想问候一下，随行卡夹这两周用着感觉如何？卡位松紧或日常携带上有需要留意的，都可以跟我说。",
+        "蒋女士您好，之前您买的那只随行卡夹，现在用着顺手吗？平时注意避免长时间淋雨，沾到水用干软布轻轻吸干、通风处自然晾干就好。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "fdadf8206131ffb61b7c3972d7e1c78f72f8d880d5734408310b9e6303cde6e7",
+        "32dcb579e311b871fa0a7fdeb3b59108cf66d61dca232f61451cf665d08620d8",
+        "7f1815cd15be5f1c0311112d04a7153bdb80fe792414d940e5c83982269b6a21"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "前置修复实证 / 无需新来信",
+        "observation": "原输入不变，已进入真实生成及复核并交付三条。都是已购卡夹关怀，无虚构损坏；第3条附保养提示不是事实错，用户可判断主动问候是否需要。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F27",
+      "scenario": "购后关怀",
+      "title": "已知沾水不延伸到免费维修",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：托特沾了几滴水，我已用干软布吸干了。接下来怎么办，必须拿去修吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F27",
+        "conversation_id": "formal-chat-F27",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "通风自然晾干，不建议热风或酒精",
+        "不认定已经损坏，也不直接保证无需维修或免费"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/b95b5c167aa347b1ae9840d1ea954e11.json",
+      "raw_sha256": "cbc43198af24d058f7f7763ecc86adfbeeef9747143425ec0c821a90efb90dc9",
+      "run_id": "b95b5c167aa347b1ae9840d1ea954e11",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "几滴水一般不用特意送去维修。您已经用干软布吸干了，接下来把它放在通风处自然晾干就好，暂时不用急着处理。",
+        "目前看不用维修。吸干后放在通风处自然晾干就行，注意别用吹风机烘干，也别用酒精或不确定成分的清洁剂擦拭。",
+        "沾几滴水按日常保养处理即可：通风处自然晾干，避免长时间淋雨，也不用送修。晾干后如果皮面还有颜色或质地的明显变化，您拍张局部照片发我，我帮您一起交给售后看看。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "4b8ecca17b3a025397b556e36abe5b8eb7b99658229a74b53a91f3124c71555f",
+        "792f1b67049259dfc09beab1392ea490d0a9b852d0fbf599c379479fc91511c9",
+        "778469ce9a425f8976dfdc4df7d34eac91d30227a9f4a90fab2614dfb42d9e05"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S1 / 无评估先断言不需维修，复核漏检",
+        "observation": "第1条“一般不用特意送维修”、第2条“目前看不用维修”、第3条“也不用送修”超出了已给沾水保养步骤。可以先自然晾干、异常再协助评估，不把保养步骤当维修结论。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F28",
+      "scenario": "沉睡客户唤回",
+      "title": "只有已知购买记录",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户杜女士，八个月前买过随行卡夹，最近未到店；顾问拟轻量问候。无当前来信，无拒收营销记录。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F28",
+        "conversation_id": "formal-chat-F28",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "不责问未到店",
+        "可接续卡夹使用，不编近期活动或生活"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "raw_record": "raw_runs/b0c9e5da59fb4b3ba9172b6bc74f1bbd.json",
+      "raw_sha256": "7f7bb2b4c020e528eb2400cdbaed6028b3f902982ddcb60b735a479de48049e2",
+      "run_id": "b0c9e5da59fb4b3ba9172b6bc74f1bbd",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "block",
+      "review_issues": [
+        {
+          "code": "context_mismatch",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s1",
+          "message": "“很久没联系了”是顾问自行叙述双方联系间隔，资料只有“八个月前购买、最近未到店”，没有聊天频率或未联系记录；按规则轻量问候直接问候或关心使用即可，不自行叙述多久没联系过。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            },
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "杜女士，您好，很久没联系了。之前您在店里带走的随行卡夹，用着还顺手吗？",
+        "杜女士，您好，想着跟您问声好。那只随行卡夹有4个独立卡位，平时放几张常用卡应该挺省手，用下来还合心意吗？",
+        "杜女士，您好，来问候一下。随行卡夹用着有什么不顺手的地方，或者需要了解保养，随时跟我说。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "2bf94602133176ea317a3f70899f59e7f34073c253abf24b973684849da04ab1",
+        "1a3777fda6a20cbbf33a68ceba28f86c17815364d81f5153dfe20c396ff587e8",
+        "5cf4bd78ee93ae9409757505b3f5fd8ebbf948247128c38fd7602fe8b830be5b"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S2 / 生成问题 + 复核检查未完整",
+        "observation": "“很久没联系”只凭未到店不能推断。程序invalid_review另因第3条问是否需了解保养被要求service来源，未必意味着那句本身不可发；此案同时有真实生成缺陷，不能整组标纯误拦。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F29",
+      "scenario": "沉睡客户唤回",
+      "title": "偏好短消息",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户袁先生，半年未到店，以前明确喜欢简短微信。现在没有客户新来信，顾问拟问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "每条最多两句。"
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F29",
+        "conversation_id": "formal-chat-F29",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "符合简短偏好",
+        "不捏造新品、活动或优惠"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "raw_record": "raw_runs/a312c1f043904f949c209d19ec04251c.json",
+      "raw_sha256": "4704e6bb05095de82aee4f5c233eaedb2bb5fc80a8de1feb08b15b7c1ca4f6fc",
+      "run_id": "a312c1f043904f949c209d19ec04251c",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "block",
+      "review_issues": [
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s1",
+          "message": "背景只说半年未到店，并没说半年没在微信联系过；“好久没聊了”自行叙述了双方未提供的聊天历史。可改为直接问候，不表态多久没聊。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 1,
+          "evidence_span_id": "reply_2.s2",
+          "message": "“隔了段时间没联系”同样是把“未到店”扩写成微信联系间隔，缺乏来源；保留称呼与“想问候一下”即可。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "袁先生，好久没聊了，最近一切都顺利吧？",
+        "袁先生，您好。隔了段时间没联系，想问候一下，最近还好吗？",
+        "袁先生，您好。一直记得您喜欢简短的消息，就不多打扰，祝您一切顺心。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "d47715786c107dedfc8a04b82f41c0f660ddf50b92290510c89bf9d12172d418",
+        "af6f779d2e8c49a31b81669d5c4beb22a68b17d0d081d89ace58a4104eb4fbf9",
+        "4f4119325a1652e42dc093eb5fe96f580532e1580532c4b1bbd48775245e2ab3"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S2 / 联系史无依据，前置已修",
+        "observation": "六个旧误拦之一，本轮确实生成三条。前两条“好久没聊/隔段时间没联系”没有来源，复核指出此问题成立；第3条复用已知短消息偏好，未见同类事实错。整组未交付发生在质量复核，不是前置再次要资料。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F30",
+      "scenario": "沉睡客户唤回",
+      "title": "历史活动问题不当新咨询",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户罗女士；这段聊天来自2025年，没有新的客户来信，本次只想轻量接续关系。",
+        "conversation": "2025-03-12\n客户：周末活动在哪儿？\n顾问：我再发您信息。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F30",
+        "conversation_id": "formal-chat-F30",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "不回答旧活动时间地点",
+        "不把旧问句视为当前邀约同意"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "raw_record": "raw_runs/4354c8c6ac1947baa4ee6462b92b67ac.json",
+      "raw_sha256": "fa8f1619ab8f9015acb7b7364287afedafaaee55cdad0b02ec450818fc475428",
+      "run_id": "4354c8c6ac1947baa4ee6462b92b67ac",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "block",
+      "review_issues": [
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s2",
+          "message": "“周末活动现在已经结束”没有活动业务资料支持，背景只说旧聊天来自2025年、无意向恢复营销；客户旧问题只是问活动在哪里，不能据此断言活动已结束。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            },
+            {
+              "source_id": "chat.t1"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 1,
+          "evidence_span_id": "reply_2.s2",
+          "message": "“周末活动已经过去一段时间了”同样把客户旧提问转述成活动已结束的确定事实，资料中没有活动排期或结束记录。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            },
+            {
+              "source_id": "chat.t1"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 2,
+          "evidence_span_id": "reply_3.s2",
+          "message": "“去年您问的周末活动已经结束了”既编造活动已结束，又把旧消息月份直接叙述为“去年”，属于无依据补写业务事实。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            },
+            {
+              "source_id": "chat.t1"
+            }
+          ]
+        },
+        {
+          "code": "context_mismatch",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s1",
+          "message": "三条都以“之前您问的活动已结束”作为问候落点，实际任务只是轻量接续、没有新来信，可只问候或关心近况，但不宜接续成活动状态告知。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            },
+            {
+              "source_id": "task.scenario"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "罗女士您好，好久没联系了。之前您问过的周末活动现在已经结束，近况都还好吗？",
+        "罗女士您好，想跟您问声好。之前您问的周末活动已经过去一段时间了，如果您之后还有想了解的，随时跟我说就好。",
+        "罗女士您好，跟您打个招呼。去年您问的周末活动已经结束了，没有别的事，就是想起您，祝您一切顺心。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "5cef517d30284b67f6174d7118ae85e8fcab5b5acd60a2ca7bee5f0a829cb044",
+        "fab787f50d825d52253f47cb5aa03bd610759fd0d76f143e250c7e389b27680c",
+        "4ad90842d98b1b9bb5e135f6ca51834ffaa6eb9f932f92638e5989cbda2076bc"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S2 / 接续了不该接续的活动状态，复核部分理由不成立",
+        "observation": "旧活动已结束没有业务资料，不应在轻量问候里主动告知该状态；第1条还编了联系间隔。但复核说“去年”本身无依据不准确：原背景明确聊天来自2025，本轮2026可称去年。程序invalid_review另有引用域问题。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F31",
+      "scenario": "沉睡客户唤回",
+      "title": "客户曾希望少发商品内容",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户钱女士，顾问与其有已知门店购买关系，五个月未到店。过去她说喜欢简单问候，不希望每次都是商品介绍；无全面拒收联系设置。当前无来信。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F31",
+        "conversation_id": "formal-chat-F31",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "只轻量问候，不附商品推销",
+        "不说已获得新的联系许可"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "raw_record": "raw_runs/2b22b05be2664ef9b205132264bbbad1.json",
+      "raw_sha256": "4945a662041c4318c1a3d4c148ccf73c900e51f730609bb0b102f3a182435c08",
+      "run_id": "2b22b05be2664ef9b205132264bbbad1",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "needs_review",
+      "review_issues": [
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.full",
+          "message": "“有段时间没和您联系了”是对双方联系历史的正面叙述：背景只说明五个月未到店、当前无来信，并未说明顾问此前没有联系过；同一规则要求不自行叙述双方多久没有联系过。可改为直接问候或只提“有一阵没见到您来店里”。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 1,
+          "evidence_span_id": "reply_2.s1",
+          "message": "“好久没聊了”同样断言了聊天往来间隔，资料只有未到店和当前无来信，没有聊天记录可用于确认；只可问候问候或关心使用，不叙述联系间隔。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 2,
+          "evidence_span_id": "reply_3.s1",
+          "message": "第三条没有硬事实错误，但“用着还顺心吗”隐含此前购买之物正在使用且状况可评，资料仅说明有门店购买关系、未到店，未提供具体商品或使用情况；作为沉睡唤回的轻问候可保留，也可改成只问近况，避免让客户觉得被暗指某件未记录的商品。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "钱女士您好，有段时间没和您联系了，就想简单问候一下，最近都还好吗？",
+        "钱女士您好，好久没聊了，不做商品介绍，只是问声好。之前那只包用得还好吗？",
+        "钱女士您好，今天不聊商品，就想轻轻问一句：最近过得怎么样，用着还顺心吗？"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "a0960941f8366930fce5202936c1ad47f298716023dc8e5afe5101ff47b2859a",
+        "fd34aa08215932c71d922f69bf0b49116f5681e954725267c639b8fa1763c088",
+        "b88956ead8751ef9e8ed74e07de130b7587f0b710f036e302f94e1e4b3750d27"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S2 / 联系史和具体物品，复核有过度判断",
+        "observation": "前两条编未联系间隔，第2条“之前那只包”也把未明确商品的购买关系变成包袋。第3条泛问用着是否顺心，在明确有门店购买关系的背景下不应仅因未给具体型号就判成无购买依据；“今天不聊商品”主要是表达取舍。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F32",
+      "scenario": "沉睡客户唤回",
+      "title": "称呼未知不装熟",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户，去年在店里买过轻行肩包，此后无新来信；没有姓名、年龄和家庭资料。当前准备简单问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F32",
+        "conversation_id": "formal-chat-F32",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "不用编姓名或亲密称呼",
+        "不编顾问过去一直没打扰或客户近况"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "raw_record": "raw_runs/5072eb5bf2504185bfde581c3b15517e.json",
+      "raw_sha256": "e989505c18ed97af3dfbcd409dc1e5931073ad4fa93c3710566045f6b60a01c7",
+      "run_id": "5072eb5bf2504185bfde581c3b15517e",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "block",
+      "review_issues": [
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 1,
+          "evidence_span_id": "reply_2.s1",
+          "message": "“好久没联系”自行叙述双方多久没有往来。背景只说明去年购买后无新来信，未给出可推断“很久没联系”的沟通记录，按规则不自行叙述间隔。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            },
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 2,
+          "evidence_span_id": "reply_3.s1",
+          "message": "“今天只是问候”点明今天，但本次没有确认发送日期，背景也未提供日期的消息依据，不宜以“今天”作时间断言。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            },
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s2",
+          "message": "“之前您在我们店里选过轻行肩包”把购买表述为“选过”，背景是去年在店里买过。改为“买过/用过”更贴合已知事实，避免让客户以为只是看过未买。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "您好，我是澄序的顾问。之前您在我们店里选过轻行肩包，想简单问候一下，最近一切都还顺利吗？",
+        "您好，好久没联系，想轻轻问一声好。那只轻行肩包用得还顺手吗？有需要了解的地方随时找我。",
+        "您好，我是澄序的顾问，今天只是问候，不打扰您。希望您最近顺心，肩包的使用上有任何问题都可以跟我说。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "4fa3865b2585904f0b93fe3bcb094ce1a946f6147672f51d873d85eaa7e72dea",
+        "c2d838bdf0046290b549150e1a8eccea9dc0b659dc67a9b6075fd6500d35ecb6",
+        "a583f681c7c489bc18a481cb3f911a3e070b586c5bcd2e75db7250f0447efbfe"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S2 / 部分生成问题，复核不全可靠",
+        "observation": "第2条“好久没联系”仍无充分联系史。第1条背景买过=>选过是自然表述，复核因此指责并不成立；第3条“今天只是问候”描述本次沟通意图，不是编活动日期，至多措辞偏好，不与硬事实等权。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F33",
+      "scenario": "沉睡客户唤回",
+      "title": "已知客户喜欢暖棕但无新商品",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户彭女士，过去说喜欢暖棕，半年未到店，无本次来信；顾问没有任何新品或活动资料。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F33",
+        "conversation_id": "formal-chat-F33",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "不将旧颜色偏好当购买意愿",
+        "不虚构暖棕新品到店或库存"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "raw_record": "raw_runs/1ee674f26aec4a60b07958ab9f6781c0.json",
+      "raw_sha256": "c7976ead51894a022dc30d591c7feb97b6560f850c845b516891aa8b8ea1d5f0",
+      "run_id": "1ee674f26aec4a60b07958ab9f6781c0",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "needs_review",
+      "review_issues": [
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s1",
+          "message": "背景只说半年未到店，没有真实的最后联系时间；写“许久没联系”等于断言双方已经很久没沟通过，属于未提供的联系史。可直接问候或关心使用，不叙述多久没联系。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            },
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s2",
+          "message": "“最近用包还顺手吗”预设客户此前买过并使用皮具，背景只提到暖棕偏好和未到店，没有购买记录依据。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            }
+          ]
+        },
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 2,
+          "evidence_span_id": "reply_3.s2",
+          "message": "“之前的皮具用得还习惯吗”暗示客户此前购买过皮具，资料未提供购买记录，属于编造购买与使用事实。",
+          "source_refs": [
+            {
+              "source_id": "background.client_info"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "彭女士您好，许久没联系，想问候一下。之前您提过喜欢暖棕，最近用包还顺手吗？",
+        "彭女士您好，最近还好吗？想起您之前说偏爱暖棕，特意来问声好，有空聊聊近况就好。",
+        "彭女士您好，隔了些日子来打个招呼。之前的皮具用得还习惯吗？日常保养上有什么想了解的，随时找我。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "445ae20cb6841ba9cc86c4971bcd419b160e73aba5d9cb83cadf44e7c8cd6542",
+        "3fad90398f7b6d562ce28d30af8f6eada42bffed781a9f8b9ed05600a19c9cae",
+        "cec7604aed4539a75a5a57bda88e42671643ab9ba58543872115ae64a4294244"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S2 / 无购买记录却预设已购，前置已修",
+        "observation": "第1条编未联系间隔，第1/3条问之前的包/皮具使用，未给已购记录；第2条只复用暖棕偏好轻量问候，未见同类问题。不是暖棕词没被解析就要补资料。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F34",
+      "scenario": "沉睡客户唤回",
+      "title": "只问已购使用不追销",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "虚构客户唐先生，四个月前买日行托特，现在无新来信；顾问希望只问使用感受，不介绍别的商品。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "不需要预约或到店邀请。"
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F34",
+        "conversation_id": "formal-chat-F34",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "只问使用体验，不催消费",
+        "不说客户现有包需要更换"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/b26496f507124597a1118994d00d3ffc.json",
+      "raw_sha256": "38b05e356ccceb21ac50f84d2f85262904b700ad038bb82681e648d49fb1e624",
+      "run_id": "b26496f507124597a1118994d00d3ffc",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "唐先生您好，之前您选的日行托特包，这段时间用着还顺手吗？",
+        "唐先生您好，想起您之前买的日行托特包，想问问日常用起来的感受，容量和肩背都还合适吗？",
+        "唐先生您好，问候一下您那只日行托特包，用了这些日子有什么不习惯的地方，也可以跟我说说。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "b438154d89eb724368ea544f6591d6539f075422da563deeac88ef088b9a9959",
+        "e925bbac275951db7764b413a44603447813819dace0aa8e47be914a18ba73be",
+        "a22945d5627c6b0f906e6fbfcb764052aece68812c696626933d38f5d5cbc309"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "前置修复实证 / 无新来信正常关怀",
+        "observation": "已购托特和本次只问使用感受均来自原背景；三条进入真实生成/复核并交付，不推其他商品或凭空认定损坏。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F35",
+      "scenario": "活动邀请",
+      "title": "活动基本邀请",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "虚构客户任女士；允许普通联系，无当前来信。",
+        "conversation": "",
+        "related_info": "虚构活动：日常收纳体验；2026-11-14 14:00—16:00；地点澄序广场8号精品店。活动内容为展示现有三款商品的日常收纳，无折扣赠品；是否有空可询问，未登记席位。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F35",
+        "conversation_id": "formal-chat-F35",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "日期时间地点准确",
+        "可问意愿，不确认席位或承诺优惠"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "raw_record": "raw_runs/f2d1ed5f18724a73bb392b821f22fcc1.json",
+      "raw_sha256": "6723fc99ba6534588cf57c60b220df9a7ffb198c8a50b797e2bdeb8dce6c61ee",
+      "run_id": "f2d1ed5f18724a73bb392b821f22fcc1",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "block",
+      "review_issues": [
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 1,
+          "evidence_span_id": "reply_2.s2",
+          "message": "“我可以帮您留个位子”带有承诺预留席位的意味，但活动资料明确写“未登记席位”，也没有预留记录依据。可改成“有兴趣的话跟我说，我帮您确认当天安排”，不承诺留位。",
+          "source_refs": [
+            {
+              "source_id": "materials.related_info"
+            },
+            {
+              "source_id": "policy.4"
+            }
+          ]
+        },
+        {
+          "code": "insufficient_choice",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.full",
+          "message": "三条第一句都以“任女士您好”加同一活动信息开头，结构高度重合；第1条与第3条只在“欢迎来看看／确认安排”上略有差别，作为三选一的价值不足。可让其中一条更简洁地只报时间地点，另一条侧重活动内容，避免三条同一句式改写。",
+          "source_refs": [
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "任女士您好，11月14日周六14:00—16:00，我们在澄序广场8号精品店有一场日常收纳体验，会展示现有三款商品的日常收纳方式。您那天有空的话，欢迎来看看。",
+        "任女士您好，想跟您说个活动：11月14日（周六）下午两点到四点，在澄序广场8号精品店有日常收纳体验，现场会展示现有三款商品平时怎么收纳。不设折扣和赠品，就是看看实际用法，您若有兴趣我可以帮您留个位子。",
+        "任女士您好，11月14日周六下午14:00—16:00，澄序广场8号精品店有一场日常收纳体验，会展示三款商品在日常使用中的收纳方式。若您方便来，跟我说一声，我再帮您确认安排。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "992226e1791f576f79a97dcb3e622945ba79e3eda6bd096238deeb90c59a5c76",
+        "8a9771a7c60da9b02db0c0df61a3047492a046ac9b0568f0ffc649bddcfdc995",
+        "fcddcd16c553e878fc3e8cfe44b37b8d9c1ea398cade384bf1c42257afd32353"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "复核理由需区分未来帮助与完成 / 选择价值另看",
+        "observation": "完整活动资料已进入真实生成，未重填背景。第2条“可以帮您留个位子”是未来帮助，不等于已留位；但可能被理解成保证席位，可由人判断是否要限定成申请/确认。复核用“未登记”直接证明不能提出帮助理由过强；三条信息高度相近属选择价值意见，不自动变成事实错误。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F36",
+      "scenario": "活动邀请",
+      "title": "主动索取地址没有问号",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "虚构客户，本次是客户主动咨询；长期不收推广。",
+        "conversation": "客户：麻烦把活动地址发一下，别的不用介绍",
+        "related_info": "虚构活动2026-11-14 14:00—16:00，地址澄序广场8号精品店；无已登记记录。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F36",
+        "conversation_id": "formal-chat-F36",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": true
+      },
+      "expected_checks": [
+        "只答澄序广场8号精品店",
+        "不因无问号误拦，不恢复营销同意"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "允许三种简洁地址表达，不为区别追加问题",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/137a8539318f4f59af1c6278bbcfd730.json",
+      "raw_sha256": "8a13791059a6bcbe1571f99697dff67a326f528cefe656e77e41bb0c0325a67a",
+      "run_id": "137a8539318f4f59af1c6278bbcfd730",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "您好，活动地址是澄序广场8号精品店。",
+        "活动在澄序广场8号精品店，时间是2026年11月14日（周六）14:00—16:00。",
+        "地址是澄序广场8号精品店，11月14日周六14:00—16:00，您按这个地址过去就好。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "86d13eba95827adcef30042076813ce7b99787e60736de48ac3141dac384b18c",
+        "c4ee90934548d5f0fd36cb7b7e52e48d27e70fe1b0e1fa1a66a5519d9ac20073",
+        "241b9133883145d521b7581755e892f525ba160a5bdd40427ce3bba59bb9b222"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S3 / 正确但多答",
+        "observation": "长期不收推广不妨碍客户本次主动索取地址。三条地址正确；第2/3条额外给了时间，违背“别的不用介绍”的简洁偏好，不能因此说活动时间本身是编造或营销许可已经恢复。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F37",
+      "scenario": "活动邀请",
+      "title": "同行须登记未确认",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：我想14号来，可以带一位朋友吗？",
+        "related_info": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店；允许携一位朋友，但需登记后确认；本客户尚未登记。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F37",
+        "conversation_id": "formal-chat-F37",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "可携一位朋友但需登记确认",
+        "未来协助不等于已登记或已留两席"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "raw_record": "raw_runs/8d3267daa70f4a259285698eec88d20f.json",
+      "raw_sha256": "88104ce663817f2733b9eb222657c433411c55eebe879b4e98a608faf597839e",
+      "run_id": "8d3267daa70f4a259285698eec88d20f",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "block",
+      "review_issues": [
+        {
+          "code": "unsupported_fact",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s2",
+          "message": "“我先帮您登记您和朋友”没有客户同意，也没有实际登记记录；资料只说客户尚未登记、需登记后确认。可改为“我先帮您登记，可以吗”或“我帮您登记”，把登记作为承接意向，而不是已替对方做好决定或已完成。",
+          "source_refs": [
+            {
+              "source_id": "materials.related_info"
+            },
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        },
+        {
+          "code": "redundant_question",
+          "candidate_index": 1,
+          "evidence_span_id": "reply_2.s2",
+          "message": "客户只问能否带一位朋友；向客户要朋友称呼这一项不是登记必需的，也超出所问，增加了一次不必要的追问。可删去，或仅说“我这边帮您登记”。",
+          "source_refs": [
+            {
+              "source_id": "chat.t1"
+            },
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        }
+      ],
+      "program_checks": [],
+      "messages": [
+        "可以带一位朋友。14号（周六）14:00—16:00在澄序广场8号精品店，同行一位需要登记后确认，我先帮您登记您和朋友，确认后回复您。",
+        "可以的，一位朋友同行没问题。您说的14号是周六，活动时间是14:00—16:00，地点在澄序广场8号精品店；同行需要登记后才能确认，您方便的话把朋友称呼给我，我一并登记。",
+        "14号周六这场可以带一位朋友，不过同行名额要登记后确认，目前您这边还没有登记。需要我现在帮您登记您和一位朋友吗？确认好我再跟您说一声。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "9279360fd929d89813ff687bf2f1b00c064b8ed9d72964acb75f672ce91468bc",
+        "1c6bd1e633a717ef400bd614727868bad2be281e7562cc8f9e241b98b0d3eb93",
+        "1844a788b409588f7df46b4549b996c45a4b02b8f8a7bd93feb7f3c98a291b0f"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "复核实际误判动作时态",
+        "observation": "“我先帮您登记…确认后回复”是将来协助，复核却要求已有登记记录、称像已完成，程序也识别false_completed_action_inference。第2条要朋友称呼是否必要是流程/体验问题，资料未写字段，不能自称确定不必需。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F38",
+      "scenario": "活动邀请",
+      "title": "两个日期选周六",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：我周六比较方便，那天几点？",
+        "related_info": "虚构活动两场：2026-11-20（周五）16:00—18:00；2026-11-21（周六）10:00—12:00；均在澄序广场8号精品店，无客户登记。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F38",
+        "conversation_id": "formal-chat-F38",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "回答周六11/21的10:00—12:00",
+        "不混用周五时段或确认预约"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/f9b765657613426097259368acfd2f48.json",
+      "raw_sha256": "ee0e5d71df2e6ecdf3fc735954d1850fe7cb283fe0941e9c6d8b24b9362aff0f",
+      "run_id": "f9b765657613426097259368acfd2f48",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "周六这场是11月21日10:00—12:00，在澄序广场8号精品店。",
+        "周六那场在10:00—12:00，地点是澄序广场8号精品店；周五还有一场16:00—18:00，同店。",
+        "周六场次是10:00—12:00，澄序广场8号精品店。您如果确定过来，我先帮您登记一下，方便安排。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "aa54e34853d996f24ce362191b67eee4af4a978aa9b6e8a6b45ebab800986fa2",
+        "7642119f0beb00ddd3d57e88e3c6abc72ed8f441c4cef4c15cf9dd17b75a283a",
+        "0582d187f391abce2a4850bf7f8eec4fe7cfeffdbbd281d3bc23235b42c2ba80"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S3 / 多答与额外意向",
+        "observation": "周六时段选择正确；第2条又报周五、第3条额外提出登记，未虚构已完成，但用户当前只问几点，可以更短。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F39",
+      "scenario": "活动邀请",
+      "title": "确认活动没有折扣",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：这个活动去了一定能买到优惠价吗？",
+        "related_info": "虚构活动2026-11-14 14:00—16:00在澄序广场8号精品店，为现有商品收纳展示；没有新增折扣、赠品或购买权益。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F39",
+        "conversation_id": "formal-chat-F39",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "无折扣政策准确",
+        "说明活动用途，不夸大参加收益"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/a47b8c6e004b4b31bad48fc5fb552ce1.json",
+      "raw_sha256": "cf7f63b412c45b808a54876f49bf333a07f015491c8c3e7316ab24f5f12ab91a",
+      "run_id": "a47b8c6e004b4b31bad48fc5fb552ce1",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "不会的，这次活动没有额外的优惠价。三款商品目前都按目录价格，活动当天也不设折扣、赠品或购买权益。",
+        "活动是11月14日（周六）14:00—16:00，在澄序广场8号精品店，内容是现有商品的收纳展示，不会因为到场就有优惠价。价格与平时一致。",
+        "这次活动只是现有商品的收纳展示，没有新增折扣或其他购买权益，到场也不会拿到优惠价。如果您想了解某个具体款式的价格，我可以直接报给您。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "60d5e334725af1f384048ac4677e0806be4d16106b71fd9a3f001213ac57daec",
+        "92dbc2a5c8dec20ed779586f6110fc2bdbf9d5e041b4a765cc2167a035a4ac14",
+        "145f337526a62c6b1174700e6be963b3466301ffb47ae02e5f64503bffd67362"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "未见实质权益越权",
+        "observation": "明确无折扣赠品，与policy.4和活动资料一致；第2条额外报时间地点是详略取舍，不等于编活动。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F40",
+      "scenario": "活动邀请",
+      "title": "已有记录仅核对登记",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：上次登记的活动还是周六两点吗？",
+        "related_info": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店。虚构登记记录：该客户已登记1位参加这场活动，没有新增同行登记。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F40",
+        "conversation_id": "formal-chat-F40",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "可依据明确业务记录确认一位登记和时段",
+        "不虚构同行、余位或升级权益"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/814acb690ce545739799fc46b025109c.json",
+      "raw_sha256": "974b7bdffcf244f832dfe7bece33fd022f28273f5dcc7048f4928c03176cdc3c",
+      "run_id": "814acb690ce545739799fc46b025109c",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "是的，活动还是周六 11 月 14 日下午两点，地点在澄序广场 8 号精品店，时间是 14:00—16:00。",
+        "您登记的活动没有变动：2026 年 11 月 14 日（周六）14:00—16:00，澄序广场 8 号精品店。",
+        "是的，仍是周六两点开始。登记记录里是 1 位参加，时间为 11 月 14 日 14:00—16:00，地点澄序广场 8 号精品店。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "a4323d05aa5274864115207910e83f09b0567c157698351009bdf8afa588ca5f",
+        "997004a6953aeed74120786926330d253efc76ee5bc3732261b31ac78a13704a",
+        "8dc05e908bfbeb0a5387d2ed39ff6947586f3af61695c7aa310b0898f16b5381"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F41",
+      "scenario": "活动邀请",
+      "title": "想先了解内容再决定",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：先别帮我约，我想知道这个活动具体做什么。",
+        "related_info": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店；展示现有三款商品的收纳方式，可对照日常物品了解尺寸；无新品发布、折扣或赠品。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F41",
+        "conversation_id": "formal-chat-F41",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "回答展示日常收纳内容",
+        "不预约、不虚构新品或礼物"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/5080f85e08be414db85c63fb1a89f245.json",
+      "raw_sha256": "4fe157427a05f75e4606792eb9df2536816f2b36274a477d790d3db641719d8e",
+      "run_id": "5080f85e08be414db85c63fb1a89f245",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "好的，先不约。这场在11月14日（周六）14:00—16:00，地点是澄序广场8号精品店，主要是现场展示现有三款商品的收纳方式，可以带自己的日常物品对照着看尺寸。没有新品发布，也没有折扣或赠品。",
+        "明白，先不帮您约。活动内容就是把日行托特包、轻行肩包和随行卡夹这三款现有的收纳方式演示出来，您可以拿平时带的东西对照尺寸看合不合适；时间是11月14日周六14:00—16:00，在澄序广场8号精品店。",
+        "没问题，不预约。活动在11月14日周六下午2点到4点，澄序广场8号精品店，主要是看三款现有商品的收纳演示，也方便对照日常物品了解尺寸。没有新品、折扣或赠品，您了解清楚后再决定要不要去。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "845f9181d012d2e8f75edb4332dbf006d27cfadc83844e0598648df6ff316cd0",
+        "a25c8057414e3ea1e336a9fc57c9d6becef3944a50c312d86df45f8fe6e34b63",
+        "32efdbef09ae3685a7406f950e40b3b7a0d86ac7c2c59ef91504d502d2bfb869"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S3 / 相关性和选择价值",
+        "observation": "三条均尊重先不约并解释现有收纳演示；重复完整日期地点较多，可以更聚焦活动内容。“带日常物品对照”作为普通建议，与虚构登记/入场制度分开看。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F42",
+      "scenario": "活动邀请",
+      "title": "纠正旧活动星期",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "顾问：活动在周五。\n客户：你之前说周五，我看11月14日是周六，麻烦确认一下。",
+        "related_info": "最新已确认虚构活动资料：2026-11-14（周六）14:00—16:00，澄序广场8号精品店。旧顾问星期说错。",
+        "product_ids": [],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F42",
+        "conversation_id": "formal-chat-F42",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "纠正为11/14周六",
+        "否定旧周五不能当新活动星期冲突"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/3fb86bcbfa4b4c8190a76580d329273a.json",
+      "raw_sha256": "e731c00a4c5a23596ef97fe1ad661fa55a0f0208a9124c932c8bd438ac766db7",
+      "run_id": "3fb86bcbfa4b4c8190a76580d329273a",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "您看得没错，是我之前说错了，抱歉。活动是11月14日周六，14:00—16:00，在澄序广场8号精品店。",
+        "确实是我说错了，11月14日是周六。已确认的活动时间是当天14:00—16:00，地点在澄序广场8号精品店。",
+        "抱歉给您添了疑问，之前“周五”的说法有误。这场活动安排在2026年11月14日（周六）14:00—16:00，澄序广场8号精品店。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "9184d83004b651931c7aa632577a48f4be9d6c1d79ab6dc4253ca309af53bb39",
+        "6a7c1cd2bd78de83e287c97451fd84b217d6373581941b531d258e5e4a0ab28e",
+        "6dcfd50204c6342465b20cc85bddf7cdee24daa2c9f0ec90d50279c797f1ba78"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F43",
+      "scenario": "价格异议",
+      "title": "卡夹价格和礼物用途",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：卡夹2,800是不是有点贵？我只是送个不太夸张的小礼物。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F43",
+        "conversation_id": "formal-chat-F43",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "2,800与无折扣",
+        "有依据说明卡片用途/低调设计，不把精品身份当价值证明"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "raw_record": "raw_runs/97eae9e2fb44469bab3357350d3e9ea2.json",
+      "raw_sha256": "6bef4c0a6132df630788f4c3efef8792496e66f3b910811e303805ef88edda50",
+      "run_id": "97eae9e2fb44469bab3357350d3e9ea2",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "随行卡夹的价格是2,800元，目前没有折扣。它比较适合您说的这种小礼物场景：外观是哑光细纹牛皮，标识也小，不显夸张；内里是4个独立卡位，可以放4张标准大小的银行卡。",
+        "理解您会拿2,800元来衡量一份小礼物。卡夹本身走的是简洁低调的路线，4个独立卡位放银行卡刚好；不过它只是卡片收纳，没有零钱袋，也放不下手机或护照，如果对方平时习惯带较多东西，可能会觉得用处有限。",
+        "2,800元是随行卡夹的现行价格，目前没有折扣。送不太夸张的小礼物的话，它体积小、标识低调，适合做卡片收纳；您也可以告诉我礼物对象大概的使用习惯，我帮您看看是否合不合适。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "4ff3718c5b222e37c3fe3831bb285380f181c6c631221e0bd15070dd6be68057",
+        "9cea609fe4af88b0afb08a42c1e05d6fe93e0ba0bae0555d76d520a6f114294f",
+        "cf48f240b57c4b5cb7798e0e240bcdd1ae6c32238eb5dfc874c2e829c5a34876"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "程序来源域检查疑似误拦",
+        "observation": "第2条“理解您会拿2,800元衡量礼物”回应客户已给价格，不是另报未授权价格；程序因未补pricing来源拒绝原pass，不等于报价错。原三条仍供用户逐字审阅。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F44",
+      "scenario": "价格异议",
+      "title": "预算明确且继续了解肩包",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：我预算13,000，轻行肩包12,800在范围内，就是想确认平时少带东西值不值得选。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F44",
+        "conversation_id": "formal-chat-F44",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "不重复问已知预算",
+        "用随身小物、背法/拉链等真实信息帮判断，不保证物有所值"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/30a169b3d8d74bd5b0282f1a4171e3bf.json",
+      "raw_sha256": "fa57007a3c1788d4aa547cd62a674092e4845647f6860a582405dbdc74728bdc",
+      "run_id": "30a169b3d8d74bd5b0282f1a4171e3bf",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "12,800元在您的预算内。轻行肩包就是为少带东西的场合设计的：22 × 16 × 7 cm、空包约420 g，可肩背或斜挎，肩带能调长度，包口是拉链开合，普通手机、钥匙、口红这类小物能放下。它放不下A4资料和电脑，所以如果您平时确实只带随身小物，它的定位是合适的；这款目前没有折扣。",
+        "在您这个预算和“平时少带东西”的前提下，轻行肩包是对应的选择：肩带可调、拉链开合，随身小物够用。需要提醒的是它放不下A4和电脑，手机连壳或长钱包这类大件建议核对一下尺寸再定。目前这款没有折扣，价格就是12,800元。",
+        "按您说的少带东西，轻行肩包合适：可肩背或斜挎、肩带可调，包口拉链开合，手机、钥匙、口红这些小物能放。它装不了A4资料和电脑，所以适合轻装出门，不适合通勤带资料。价格12,800元，目前没有折扣。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "7def159782254a51662ca5eda57d9aa36da5640b0d6e5592cf8273f1140d611d",
+        "39a17a8b8e1d39017e94f03848370a1733ba19ccf9ead1f9f4257114070c5e6e",
+        "8a7d0a0e805744e7116e0df6b72045df4e2e338891dcb751014700f086ba7422"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F45",
+      "scenario": "价格异议",
+      "title": "旧订单实付不是现价",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：我去年这张订单实付10,000，现在轻行肩包为什么报12,800？能按旧价吗？",
+        "related_info": "虚构旧订单仅证明客户声称的历史实付金额，未提供当时优惠原因；当前品牌目录及无折扣规则不变。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F45",
+        "conversation_id": "formal-chat-F45",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "客户旧实付不当当前授权售价",
+        "不编涨价原因或兑现旧价"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/3f47b543b1ab4aeb941c38fb8470dd2b.json",
+      "raw_sha256": "bd22165fc890ce0b02bd0c771ea200373a115814870fbc1be3408d81cc43e767",
+      "run_id": "3f47b543b1ab4aeb941c38fb8470dd2b",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "轻行肩包目前的价格是12,800元，三款都没有折扣，旧价这边暂时无法按原金额给您。您提到去年实付10,000元，我可以帮您核实一下当时的订单记录。",
+        "理解您会拿去年的实付来对比。现在轻行肩包标价12,800元，目前没有折扣，也没有办法按旧价成交。去年的那笔订单我可以帮您核实一下具体情况，有结果再回复您。",
+        "现在这款轻行肩包是12,800元，目前没有折扣，也不能按去年的价格给您。如果您还考虑它，我可以帮您核实去年那笔订单的记录。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "f3864743952a79a4b1f4be761d16ec87200cbad755db830ea0e98d1930d15288",
+        "b7a7832913edbfceeff94cf1d2b12cb2a4c0a395fcd985b0c99387a124b418f5",
+        "c650b2b130e2c1aa8048afbde37334a12992e8d4ffea0f1d09499baf9266abfc"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+        "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F46",
+      "scenario": "价格异议",
+      "title": "分期及免邮权益未知",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：随行卡夹价格没问题，有免邮或者免息分期吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F46",
+        "conversation_id": "formal-chat-F46",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "未设相关权益，需核实不承诺",
+        "不因能接受价格就编成交/配送"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/92953d47d4bd402a84dd7629ebeb7988.json",
+      "raw_sha256": "198cd041afee3b7a59521c014e3f0c9fe32b20be1072f19b87a12ca3f91ca69d",
+      "run_id": "92953d47d4bd402a84dd7629ebeb7988",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "随行卡夹目前没有免邮或免息分期的权益，价格就是2,800元。免邮和分期的服务信息我再帮您核实一下，有结果回复您。",
+        "谢谢您确认价格没问题。随行卡夹目前没有包邮和免息分期，2,800元是单件含税售价；这两项我再帮您跟门店确认一下具体情况。",
+        "这款卡夹现在没有免邮，也没有免息分期。您如果方便，我可以帮您问一下门店有没有其他付款方式，再回复您。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "c492289dfc189960e1d8b34fcd58f24bee7e1f14b70bcc07d458d2fa4dd38406",
+        "f8cfdbcf62f608db92e9c5fd47539993de20092793e7a568c94ff1d209282904",
+        "999f4802e46da37f37a784e7b380bff639c19366ff8c88fcfcf9b58ce1839060"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S1 / 含税限定无依据，复核漏检",
+        "observation": "第2条“含税售价”未提供来源；不能自行给目录价加税费口径。“当前未设免邮/分期权益”有policy.4，但相关服务仍须核实；第3条没再核实也没给可用帮助，完整性较弱。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F47",
+      "scenario": "价格异议",
+      "title": "两款价差不编成本原因",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：托特18,800，肩包12,800，差了6,000是因为皮更好吗？",
+        "related_info": "",
+        "product_ids": [
+          "P01",
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F47",
+        "conversation_id": "formal-chat-F47",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "价差6,000可算，不当第三个商品单价",
+        "材质同为哑光细纹牛皮/棉布，不编皮革等级或成本原因"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。",
+        "retryable": true
+      },
+      "raw_record": "raw_runs/5c19cc24deb949828738d099cca37b61.json",
+      "raw_sha256": "3418f9301ade22e31611e7344feac35d30855aadebf0f606501717f2b0faae9f",
+      "run_id": "5c19cc24deb949828738d099cca37b61",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": false,
+      "review_verdict": null,
+      "review_issues": null,
+      "program_checks": [
+        {
+          "code": "unsupported_price_cause",
+          "candidate_index": 0,
+          "evidence": "差价不是因为皮更好：它们用的都是哑光细纹牛皮",
+          "message": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。"
+        },
+        {
+          "code": "unsupported_price_cause",
+          "candidate_index": 0,
+          "evidence": "价格差主要来自尺寸和容量",
+          "message": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。"
+        }
+      ],
+      "messages": [
+        "两款价格确实是18,800元和12,800元，不过差价不是因为皮更好：它们用的都是哑光细纹牛皮，内衬也都是棉布。价格差主要来自尺寸和容量，托特是34×28×12cm、约750g，能放A4资料；肩包是22×16×7cm、约420g，适合随身小物。至于定价的其他细节，我目前没有可对照的依据。",
+        "两款并不是皮料等级不同，材质都是哑光细纹牛皮。差6,000元，实际对应的是尺寸和用途：托特更大，可放A4纸质资料、500mL水杯、折叠伞，还带一个内侧平口袋；肩包偏轻便，能肩背或斜挎，放普通手机、钥匙、口红这类小物。如果您告诉我平时主要带什么，我可以帮您看哪款更合适。",
+        "皮料这部分我可以先明确：两款都是哑光细纹牛皮，不存在托特用皮更好的情况。价格差体现的是包体大小和收纳：托特装得下A4资料，适合通勤带东西；肩包更小巧，走轻便路线。这个差价的成本构成我没有资料可以细说，但按使用需求挑选会更实在。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "7c72ff450648261fbf6dfa9be184c89841f91dbc14518c31ede3ec1f972c1acf",
+        "a44545c98991784b0971fbae5f5c2335d85b2ec8998e819610f6e449a7abdfba",
+        "04b0b9a92bd105930a78ff46d7544c03c75e12cf5cfa8f9b0a0620ab0c802836"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "S1 / 无定价资料却编原因，程序正确拦截",
+        "observation": "三条都把价差解释成尺寸/容量；“不是皮更好/皮料等级相同”也不能从同为细纹牛皮推出。程序阻止了这个问题，但生成能力仍没修好，本轮不重抽。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F48",
+      "scenario": "价格异议",
+      "title": "考虑考虑给空间",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "虚构客户当前只表示暂缓，没有新商品问题。",
+        "conversation": "客户：我考虑考虑，晚点再回复您。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F48",
+        "conversation_id": "formal-chat-F48",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "理解暂缓，不因没命中词表拒绝unclear",
+        "三条温暖给空间，不追问或承诺跟进"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "允许三条功能接近，语气和简洁度供选择，不重新销售",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/1cec4523a85443a6a5eb86f5522ab622.json",
+      "raw_sha256": "34e2fdc474ee74cfb7aa77a9dae1c4c7dc5c8b0a44d3a339ab1317323926c1bf",
+      "run_id": "1cec4523a85443a6a5eb86f5522ab622",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "好的，您慢慢考虑，有需要随时找我。",
+        "好的，那不打扰您，等您想好了再联系就行。",
+        "了解，谢谢您告诉我。轻行肩包的情况您先留着参考，之后有问题随时问我就好。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "e5c07737412bb452f3eb7c45590d4fe2cf98be51bb341046f974239bbe6a0266",
+        "5c1251b42b20a94dcc59c95f44d1f3532e0e9a9a81139b353086c3535f96d3f6",
+        "dff2006e9886efa1d9bdc5e90eb4a808040b1d1915b8f0f41125e8b7bfbecca2"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "允许三条功能接近",
+        "observation": "客户当前只暂缓，没有新问题；三条给空间，不为区别再推销。不能为强造三种功能逼问或预约。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F49",
+      "scenario": "价格异议",
+      "title": "明确拒绝后的收尾",
+      "difficulty": "normal",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：我已经决定这次不买了，不用再介绍其他的。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F49",
+        "conversation_id": "formal-chat-F49",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "温暖停止本次推荐",
+        "不追问、换款、试背或主动跟进"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "允许三条功能接近，不为差异重新推销",
+      "status": "success",
+      "error": null,
+      "raw_record": "raw_runs/3dbc2b7430e84d62a017d071c2fddda6.json",
+      "raw_sha256": "6429b71340444d914dfa94085e9080c38dece8eed51ab554ee31e23ce8bc8f81",
+      "run_id": "3dbc2b7430e84d62a017d071c2fddda6",
+      "app_version": "0.13.6",
+      "generation_contract_valid": true,
+      "review_attempted": true,
+      "review_verdict": "pass",
+      "review_issues": [],
+      "program_checks": [],
+      "messages": [
+        "好的，我明白，这次就不打扰您了。有需要随时联系我。",
+        "收到，尊重您的决定。之前聊到的内容您留个印象就好，之后有需要用得上再找我也行。",
+        "好的，这次就不再多介绍了。谢谢您抽时间了解，祝您一切顺利。"
+      ],
+      "message_origin": "parsed_output.messages",
+      "has_exact_three_original_strings": true,
+      "message_sha256": [
+        "9f1f9fce357998ee6b14bbe31717a4862a320d1091f11b117a2ab82f282c659b",
+        "e92310414d002463ccbae856da86a7c8cb366be455fbff2f064d54c9e6ed9acf",
+        "296015532ca15b0019227c84bf595095ffb3399cc86c25a40bb3bf5a8375efcb"
+      ],
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "允许简短结束 / S3措辞",
+        "observation": "明确拒绝后都停止本次推荐，未换款；第2条“之前聊到内容留个印象”略拖尾，但不是继续强推或优惠承诺。"
+      },
+      "human_quality_decision": null
+    },
+    {
+      "case_id": "F50",
+      "scenario": "价格异议",
+      "title": "竞品材质传言不作比较依据",
+      "difficulty": "challenge",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：朋友说别家的牛皮更好，你们的轻行肩包能便宜一点吗？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": ""
+      },
+      "customer_context": {
+        "advisor_id": "formal-advisor",
+        "customer_id": "formal-customer-F50",
+        "conversation_id": "formal-chat-F50",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "expected_checks": [
+        "无折扣，不依据朋友传言评价竞品",
+        "可讲自家已有特点，不编成本/产地/性能优势"
+      ],
+      "tone_goal": "自然、温暖、有分寸；内部依据和操作说明留给顾问",
+      "choice_goal": "详略、语气或与任务相关的帮助有区别，每条独立完整；不靠多问或免责凑差异",
+      "status": "error",
+      "error": {
+        "code": "provider_error",
+        "message": "模型接口返回 HTTP 402，请核对地址、模型名及接口参数。",
+        "retryable": false
+      },
+      "raw_record": "raw_runs/a11c932de82243abb4007c318bf41e99.json",
+      "raw_sha256": "6f431f987f6ca5c30085b73316cc9d8ce66f035c6b095fb84a0079bec7dce999",
+      "run_id": "a11c932de82243abb4007c318bf41e99",
+      "app_version": "0.13.6",
+      "generation_contract_valid": false,
+      "review_attempted": false,
+      "review_verdict": null,
+      "review_issues": null,
+      "program_checks": null,
+      "messages": null,
+      "message_origin": "无可直接读取的完整候选；不修JSON或补文",
+      "has_exact_three_original_strings": false,
+      "message_sha256": null,
+      "developer_notes": {
+        "kind": "AI developer read-through, not independent signoff or advisor approval",
+        "category": "外部阻塞 / 没有输出",
+        "observation": "HTTP402，原响应Insufficient Balance；无法展示三条，未补旧输出或自动重试。恢复余额后只能另存补跑，不改本轮首次失败。"
+      },
+      "human_quality_decision": null
+    }
+  ]
+}

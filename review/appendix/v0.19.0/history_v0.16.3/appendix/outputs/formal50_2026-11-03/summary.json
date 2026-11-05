@@ -1,0 +1,108 @@
+{
+  "kind": "formal-first-baseline-not-best-of-rounds",
+  "baseline_app_version": "0.12.0",
+  "current_app_version": "0.12.2",
+  "cases": 50,
+  "real_message_groups": 50,
+  "real_messages": 150,
+  "generation_contract_valid": 49,
+  "pipeline_delivered": 31,
+  "pipeline_errors": 19,
+  "manual_hard_group_pass": 34,
+  "manual_hard_message_pass": 127,
+  "tone_counts": {
+    "2": 96,
+    "1": 54
+  },
+  "choice_counts": {
+    "2": 14,
+    "1": 32,
+    "0": 4
+  },
+  "individual_hard_and_tone2": 83,
+  "delivered_hard_fail_case_ids": [
+    "F15",
+    "F23",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F36"
+  ],
+  "fully_hard_accepted_but_program_false_blocked": [
+    "F09",
+    "F11",
+    "F13",
+    "F25",
+    "F35",
+    "F39",
+    "F41",
+    "F42",
+    "F44",
+    "F49",
+    "F50"
+  ],
+  "review_pass_but_hard_fail": [
+    "F15",
+    "F22",
+    "F23",
+    "F24",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F36"
+  ],
+  "label_counts": {
+    "generation_context_error": 1,
+    "reviewer_reason_overreach": 1,
+    "program_source_false_positive": 10,
+    "program_product_scope_false_positive": 1,
+    "generation_contract_error": 1,
+    "generation_unsupported_property": 1,
+    "reviewer_missed_generation_error": 11,
+    "generation_fit_inference": 1,
+    "program_object_false_positive": 1,
+    "generation_unauthorized_service": 1,
+    "generation_unknown_as_different": 1,
+    "generation_care_scope_extension": 1,
+    "generation_invented_damage_mechanism": 1,
+    "program_topic_as_property_false_positive": 1,
+    "generation_invented_contact_history": 6,
+    "generation_context_overanswer": 1,
+    "generation_invented_event_procedure": 1,
+    "program_weekday_scope_false_positive": 1,
+    "generation_known_policy_as_unknown": 1,
+    "reviewer_contract_error": 1,
+    "generation_unsupported_quality_equivalence": 1,
+    "generation_invented_price_cause": 1,
+    "program_difference_as_price_false_positive": 1,
+    "program_plural_scope_false_positive": 1
+  },
+  "actual_model_requests": 95,
+  "stage_counts": {
+    "generation": 50,
+    "review": 45
+  },
+  "usage": {
+    "prompt_tokens": 2031564,
+    "completion_tokens": 51731,
+    "total_tokens": 2083295,
+    "prompt_cache_hit_tokens": 901376,
+    "prompt_cache_miss_tokens": 1130188
+  },
+  "automatic_retries": 0,
+  "frozen_hashes_unchanged": true,
+  "case_sha256": "1f1f37d70a1102d45eedeacc834f3539e223c652866ee0035560a5817358a243",
+  "returned_models": [
+    "deepseek-flash"
+  ],
+  "provider_fingerprints": [
+    "bc19ba97cbe016479903222bb1578db6"
+  ],
+  "not_advisor_user_study": true
+}

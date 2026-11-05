@@ -1,0 +1,1131 @@
+{
+  "kind": "ai-developer-full-text-reading-not-advisor-user-study",
+  "results": [
+    {
+      "case_id": "F01",
+      "run_id": "80bd863110904cc4a0de8862947413eb",
+      "raw_record_sha256": "adf7b01dc910a5905b5b572bfa3a62d5c7c0b00ecb4050d9b1975692351915bf",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [],
+      "note": "三条均为独立生日祝福，顺心/愿望/健康侧重不同；无日期或具体年龄。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F02",
+      "run_id": "39144e0a9a0b4f17bf3541afd665802e",
+      "raw_record_sha256": "b01ba0e567690af99e6a03748b6a2197e463a76e54ff38a485ad75b8e6375e49",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [],
+      "note": "按沈先生称呼。身边的人为泛指祝愿，不等于断言婚育；语气/祝愿重心可选。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F03",
+      "run_id": "e45e6542e5df40e1bbfb7e04a659e6a7",
+      "raw_record_sha256": "990d7c581b13401ada1319a3b932ccda99492fedd114200c5b31968d5a7a1180",
+      "hard_pass": [
+        true,
+        false,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_context_error",
+        "reviewer_reason_overreach"
+      ],
+      "note": "第2条这几天的相聚和休息预设未提供安排，需改；复核对此有据。但第1条泛指家人的祝愿不证明假定共度，复核把祝愿推成事实过强；节日到了在拟节日问候中属时机措辞风险，不单凭此认定具体日期错误。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F04",
+      "run_id": "856c08a22e434779962f2e4640e5df68",
+      "raw_record_sha256": "8916ee5050ecb7292ec987e2ce7a6224b16dd68fe6503cb2acd3fdde529a9f5c",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "三条均节制祝福；和家人为泛指祝愿，不是具体婚育事实。春节到了适用于拟定春节发送场景，发送时机仍需顾问选用。选择主要在详略。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F05",
+      "run_id": "200ccdbc9d134c1db24102005f6e11fc",
+      "raw_record_sha256": "0abdc27443fca0e22782d6d13552c565e52d0a57db8e622f92bc1a311c75a61f",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [],
+      "note": "旅行背景有来源，旅途祝愿不冒充已知体验；未编地点或同行者。第2条更通用。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F06",
+      "run_id": "d4631097b36645a8bdd501611792b84a",
+      "raw_record_sha256": "c1fa47cbe6c412fc842b592a0e9e0f99ea0e6dd5cb60b1c885a8c9b4c4051cae",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        1,
+        2,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "新的一岁未编实际年龄，但对不喜欢谈年龄的客户可省，属于分寸润色。没有日期或促销；整体三条接近。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F07",
+      "run_id": "e94be1d1e56249e489d483251351bd3e",
+      "raw_record_sha256": "e3b1fd9142836388ac19a83b1ab05e4c628b128cdd532769d9a2a9b655c06cb2",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "回应客户感谢且无新增经历。第3条一份开心/最好的回音偏文学和顾问自我说明，不如前两条直接。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F08",
+      "run_id": "c963ce299c504448af1b866cb16861d0",
+      "raw_record_sha256": "14353aef1b1c4f4e26b2d6d57cf9978e8b7718562b68d2d315236ac2635c4239",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "正确承接11/19，更正记录均为以后/会/去执行的意向，不是已完成档案。功能接近符合承接任务。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F09",
+      "run_id": "c7702ce63d214d13a425d2eeac455b6f",
+      "raw_record_sha256": "6824b10cde9d0cf852123bed2c23776065881ade17a596ebb6f6bd75e955cfd6",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "价格/四卡位均有据，各条完整。第2条多解释不能当包、无零钱袋并非客户所问，第3条目录措辞偏审核。程序因未把无售价词的2,800识成价格、未把颜色词识成商品而错拦合法price/colors来源，不是复核编依据。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F10",
+      "run_id": "86f9276e2da241b48f28900b78217951",
+      "raw_record_sha256": "1453ddc6da44bc220518b850b0637abcc4e3ae049a3ef2259dd6e25c9bbdebe0",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "三条明确无零钱袋并说明卡片用途。第3条别的办法偏空泛，但未虚构另一商品或承诺硬币容量。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F11",
+      "run_id": "2d01e974f4d54d3484ba4346d975f10d",
+      "raw_record_sha256": "6a553d266f3046b8cdd2d2768a49c4a0bc78622d3be53d373ada0ee233ca1964",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        1,
+        1,
+        2
+      ],
+      "choice_score": 0,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "斜挎与可调正确；手机/包尺寸分开，数字比较未保证实际装入。程序未识别含尺寸比较的语义片段为product，误拦dimensions/limitations引用；三条都以实物确认收尾，实际选择较弱。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F12",
+      "run_id": "d28cac04d85b4ffab22ea3d0a2b7213e",
+      "raw_record_sha256": "f7e346004b738c5b30a032f35e9df77c71fbdb735e022b34239c2f161ece9977",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "三条均区分A4与厚文件夹；必要尺寸追问合理。第3条我不凭外尺寸替您判断偏防御，前两条更直接；未知兼容任务允许共同核实重心。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F13",
+      "run_id": "ebef7da546b24c05bf465ce7f8ac565a",
+      "raw_record_sha256": "7d92f4e5efa4d6dbabdd35bccc6fd3cb9ae50355b14f8472f5b6ad36ff5cda32",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [
+        "program_product_scope_false_positive"
+      ],
+      "note": "重量、各自背法有据。斜挎的话/要能斜挎的话是话题或需求，随后主语为轻行肩包，程序沿用前款P01把话题误当托特斜挎断言。三条信息近似，仅第3条稍偏选择建议。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F14",
+      "run_id": "d5202b0c521643c4b1299a47eeebbff0",
+      "raw_record_sha256": "f30dbdfe523a14f1d0365c17cdd3ac4c95575060886fbd8a332512572a04dcca",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_contract_error"
+      ],
+      "note": "未通过完整schema：advisor_note是数组、缺missing_information，整组正确阻止且未复核。但原tool arguments中messages确有三个完整字符串，单价/两只总额正确，可作为首轮实际原文展示，不修补成接口成功。第2条多余卖点、第3条追问颜色并非当前必需。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F15",
+      "run_id": "79805da2981546dba082ed7f744bb357",
+      "raw_record_sha256": "fd4b993216c906f2fb70d45c826e567d7f2e0269fe6415245c86d0b2b23f9273",
+      "hard_pass": [
+        true,
+        false,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_unsupported_property",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "第2条把资料中的低光泽说成不反光，确定性过强而无依据；复核pass漏掉。第1条按低光泽细纹描述较稳；第3条审核式自我总结、比亮面低调是外观解释而非竞品品质断言，保留语气风险。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F16",
+      "run_id": "7b2d6f0b35b84152a595c89951df2338",
+      "raw_record_sha256": "82ca45c1389a11388b436897c81896f52faea4798dfd0ad4bb5ad9651d7fe798",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "三条材质与内侧单独放钥匙均答全。第2条直接可用；第3条泛问别的细节可省，并非必要帮助。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F17",
+      "run_id": "b2d9cbeaa0dd4294ad66238feb1c4cc3",
+      "raw_record_sha256": "c75b6f5b158a122dc39ecaee495da97570dc3e3b27ae5364a5803b2a2917a93a",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "目录明确不适合护照，因此不作护照夹推荐成立。第1条放不进去比不适合更绝对，建议选第2条；第3条堆其他不适合物品且追加需求问题，非当前必要。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F18",
+      "run_id": "c2ffec0a547b44b1ab6ee1cad29d7a3d",
+      "raw_record_sha256": "e0dde0956c2dba4c4746dfa883a5df81c1546ecc1a9fdc8375e47538c6c1b8f9",
+      "hard_pass": [
+        true,
+        true,
+        false
+      ],
+      "tone_scores": [
+        1,
+        1,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_fit_inference",
+        "program_object_false_positive"
+      ],
+      "note": "第3条从包外尺寸推出理论可放入，虽后加试放仍属未经确认的装载推断；第2条放得下的范围措辞也应改成纯数字比较。第1条只是客户钱包/包外数字比较未保证，但程序没认您这个钱包，把19×10×2.5误当包尺寸。复核未调用，不能称它漏检。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F19",
+      "run_id": "f77d8512cb264f86a019f46f01e13eac",
+      "raw_record_sha256": "1d3ce1422b34d6923b3519996071c1c12ce705aaf000c88b9a1d781bd9220f8a",
+      "hard_pass": [
+        true,
+        false,
+        true
+      ],
+      "tone_scores": [
+        1,
+        1,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [
+        "generation_unauthorized_service"
+      ],
+      "note": "第2条不会当场另加条件是无依据门店办理保证，复核正确指出。第1/3条仅符合申请条件、仍经门店检查，成立。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F20",
+      "run_id": "28d3de5a74e24c5d992700eb69e9da90",
+      "raw_record_sha256": "73a3bd9684ac68c81fac02e965e9e85058af82909ba94012879f5d74c4e419ae",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [],
+      "note": "10/28起算第7日11/3正确；仅申请不保证批准/库存，问换哪种颜色是当前换色任务必要信息。三条含计数、办理协助、可选颜色不同帮助。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F21",
+      "run_id": "ecf953ac32584ee59f8461377e9922cd",
+      "raw_record_sha256": "3f09bfa27d3767c6022cbabd6c66f23b3693d310b9e0d938572639f1e40079fa",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        1,
+        1,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [],
+      "note": "未确认渠道不套门店政策；前两条整段政策较长且购买场景设定的措辞像内部文档，第3条先保留标牌包装并核实渠道更实用。不把不自然措辞夸成事实错误。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F22",
+      "run_id": "2795dab9b6f94896890d81eeb5b23dda",
+      "raw_record_sha256": "2bec1d12787f7021b21a1451faed4d8398db4dbea22a437ac9361824ebe34924",
+      "hard_pass": [
+        false,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_unknown_as_different",
+        "reviewer_missed_generation_error",
+        "program_source_false_positive"
+      ],
+      "note": "第1条断言网上与门店不完全相同，但实际未知，只能说不能直接套用；复核pass漏掉这一点。policy.4可支持我帮核实的行动，程序因整句只识service误拦合法辅助来源。该误拦并不使有硬问题整组应通过。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F23",
+      "run_id": "c4510894f2024f6db3de8ea7e3c17d03",
+      "raw_record_sha256": "0f049d3850953860de25a0f811dbc9c7276d18391e30a46f4b920020f2faf7f9",
+      "hard_pass": [
+        false,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [
+        "generation_care_scope_extension",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "第1条把仅针对沾水的干软布吸干扩展成擦未知污渍，无相应污渍处置依据；复核pass漏掉。第2条收照片交售后、第3条明确沾水和污渍不同较稳，不编具体损伤机理。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F24",
+      "run_id": "02efe329da09467b92fbc8a770e8f63b",
+      "raw_record_sha256": "f016f44313282a1647cb408c5aba57b39117eec05dce1150a651ac224b9e75a9",
+      "hard_pass": [
+        true,
+        true,
+        false
+      ],
+      "tone_scores": [
+        1,
+        2,
+        1
+      ],
+      "choice_score": 2,
+      "labels": [
+        "generation_invented_damage_mechanism",
+        "reviewer_missed_generation_error",
+        "program_topic_as_property_false_positive"
+      ],
+      "note": "第3条避免拉链齿进一步变形预设变形且添加未提供机理/操作建议；复核pass漏掉。售后提及拉链卡住不等于介绍拉链开合属性，程序要求product来源而拒绝policy.5是另一误拦；本组仍有真实硬问题。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F25",
+      "run_id": "f473a22f8da04f5f99014b95d1b42058",
+      "raw_record_sha256": "5a9699a6cbf6a77328dff6af99c0055a06c739bf28715d3dddf66f85bde7ff4b",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "三条均未编已提交或单号，未来核实合法。售后单号一词不是退换/维修政策断言，客户/背景可支持未知业务状态，程序却机械要求policy.5。第3条再索凭证/照片并非找单号最小必要步骤。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F26",
+      "run_id": "b05df16a48e8459390e33c25dc1aa4e2",
+      "raw_record_sha256": "b29bb1b7137f53d6ab1483068bfb0de88d8f0db5604c53372eda25161b149128",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [],
+      "note": "围绕已购卡夹，直接使用感受/卡位够用/需要帮助的重心可选；未编损坏或新服务。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F27",
+      "run_id": "787a3b0f49ea483daff0a48d374848ca",
+      "raw_record_sha256": "0d000ebdf647ac1856fa18867f772d69354ab284cdb9e13335f79ccfaf413b16",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "先按已给沾水步骤晾干，后视状态售后，不是保证无需维修。第3条留下的痕迹可改成若有痕迹以免预设，但没有明确认定损伤，本轮不据此硬判失败；三条都有照片收尾，选择偏弱。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F28",
+      "run_id": "386ef191e0014432a763d1a9f721859f",
+      "raw_record_sha256": "6f7b2313e06a1edd33733688203edfb667515288695e769b660696cb9060cc01",
+      "hard_pass": [
+        false,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_invented_contact_history",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "第1条好久没和您联系不由八个月前购买/最近未到店证明；复核pass漏掉。第2条四卡位属无当前需求的复述，第3条问使用问题更合适。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F29",
+      "run_id": "98fca3ddecb6493cbc98cb845a40fa84",
+      "raw_record_sha256": "063a926eb1567b06df2bfe36c5fdbf0466df029a1f3d679873f8402c154e1928",
+      "hard_pass": [
+        false,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_invented_contact_history",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "半年未到店不证明微信未联系，第1条有一阵没联系了无对应记录。好久不见可以联系未到店的已知背景，但不是已获继续营销许可；三条选择较近。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F30",
+      "run_id": "5d9c7d80292840378d28cdc8f48b7416",
+      "raw_record_sha256": "2f8aa8483a328f907d2d605f9cf83fc3eb048cb5073cfdd91c3907794405d36b",
+      "hard_pass": [
+        false,
+        true,
+        false
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_invented_contact_history",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "正确没有回答旧活动问句。无新客户来信支持隔段时间没聊，但不证明顾问从没发出联系或许久未见面，第1/3条分别扩写未联系/未见历史；依给定背景严格判，属于可供顾问复核的边界。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F31",
+      "run_id": "3f30cb7bf1b14b3489096f81b81a10a6",
+      "raw_record_sha256": "d9158d9fa32c33712534b9d433a9379a29322d52880bdfb67042d61a7f7902e7",
+      "hard_pass": [
+        false,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_invented_contact_history",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "第1条未到店推成未联系，无依据。第2条偏好有来源，但复述这次不多介绍的写作安排显刻意；第3条轻问候较好。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F32",
+      "run_id": "524364909a2242ac8f04c5247cf28f91",
+      "raw_record_sha256": "2af902b19a83076b90b7371dfba9465a1cf97d33a695091568925cb78f560c24",
+      "hard_pass": [
+        false,
+        false,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [
+        "generation_invented_contact_history",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "此后无新来信不等于顾问没有发出过联系，第1/2条补出没联系历史。第3条只用已购肩包记录并提供条件性帮助较稳；称呼未编。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F33",
+      "run_id": "8bd4a52bdfc44614b097b5200fde8ff5",
+      "raw_record_sha256": "881c493e6c111a1d64945d622261c78902c92d6ef896209c0a7f8cafb89c9042",
+      "hard_pass": [
+        false,
+        false,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 0,
+      "labels": [
+        "generation_invented_contact_history",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "未到店/无本次来信未证明历史无联系/无聊天，第1/2条做了这一断言。第3条为本次想起客户而问候，不声称过去没联系；三条近乎同一套问近况。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F34",
+      "run_id": "532619f47f544246bcbdba0b9fb59dcb",
+      "raw_record_sha256": "e05b072a284c78d88d01cc5211c69416c98e2dd5fe3047671675950f5809f3af",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "问已购托特使用反馈，不直接推销。第2条以目录用途带资料/水杯提问，未明确断言客户实际这样用，但可改为条件式以减少默认用途；功能差异较小。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F35",
+      "run_id": "42c445fa56c04c959a25dc3f4830ada0",
+      "raw_record_sha256": "0ff2224b04c2696b0ece019040f207ef9704a7cca61fd3b29e7fe15357de34ed",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "日期地点内容均来自活动资料，材料明确无折扣赠品且与品牌一致；程序要求另引pricing而误拦一致的无优惠说明。第3条把未登记座位的内部状态带入初次邀请，虽有源仍不省事。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F36",
+      "run_id": "c19068daf78c4531b07087c90ad69b2f",
+      "raw_record_sha256": "d26312557ed2ba0b7d9d2a8196fa5cdb38434394aac382fadc778a9f0078d11a",
+      "hard_pass": [
+        false,
+        false,
+        false
+      ],
+      "tone_scores": [
+        1,
+        1,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_context_overanswer",
+        "generation_invented_event_procedure",
+        "reviewer_missed_generation_error"
+      ],
+      "note": "客户只要地址且别的不介绍，三条都加时间；不应把服务答复错误等同恢复营销。第3条到了报活动即可编了未提供入场流程，第2条按地址过去就行也未考虑资格未知；复核pass漏掉。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F37",
+      "run_id": "b0095489474241ca94bc385f228d878c",
+      "raw_record_sha256": "75c5e3cd41502ee8d06e0e79ae47525667fc5cf200f4f0fb417ea22e3dba34a7",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        1,
+        2,
+        2
+      ],
+      "choice_score": 0,
+      "labels": [],
+      "note": "允许一位朋友并需登记确认有业务依据，三条均未来协助而非已登记。几乎只有语序/称呼差异，选择价值不足；初句可以的可以带重复。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F38",
+      "run_id": "0cc8f20e36c44bfa978b4dadb9f3998b",
+      "raw_record_sha256": "2923ace5c4f77145b9bdb8293588e626b67aa03042918878d59f4c92988c651a",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "周六11/21 10—12及地点准确；第2条追加周五时段非必要，第3条条件性确认到场安排没有承诺预约。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F39",
+      "run_id": "0e39bdedb54d41d39c3b52fb851fb735",
+      "raw_record_sha256": "5db4a8aa6acb0a5e642e98afee4a6f3601d112071f8b569d860272ca9776a563",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        1,
+        1,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "业务资料明确无新增折扣且与品牌一致，程序因另需pricing来源误拦，不是用活动资料新增优惠授权。第3条先回答再解释活动用途较适合，前两条时间地点过满。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F40",
+      "run_id": "d124678c16dc400f9f8bbf01db2e6d93",
+      "raw_record_sha256": "bbdbc36fafee8ee54345ea8dc8467018020177b6ac7026c2941f7ce9c4e788a7",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "一位已登记有明确业务记录，允许确认。第3条主动增加同行登记不必要，同行条件未知时最好先核实；这是未来协助而非已完成，未据此硬判已新增席位。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F41",
+      "run_id": "42823f34c05946ffadaeef80a1b550b0",
+      "raw_record_sha256": "f070f6f7df7d389f721384989da05797ce0065ce4984e44dd03e88d8b6baa1d7",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        1,
+        1,
+        1
+      ],
+      "choice_score": 0,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "三条均尊重先不约并介绍既有收纳展示，无新品礼物。程序把有业务依据且不新增优惠的无折扣说明误拦；三条只是重新排列同一组内容，都过长。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F42",
+      "run_id": "95672f9fb7d84d16bcb200ec4ae472fc",
+      "raw_record_sha256": "2d5e4f993265878952073259d42d88957e4618bc2e42d0f055b5752dba65df49",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "program_weekday_scope_false_positive"
+      ],
+      "note": "原顾问确实说周五，当前正确纠为11/14周六；之前说周五是我口误不是本次活动周五断言，程序限定范围仍误报。各条日期时段地点一致。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F43",
+      "run_id": "65ad48e7e0a84b4da2557efb822234a2",
+      "raw_record_sha256": "dcff3601874fe6f5e9b838fc5f1f92fc1282653dd98950b99dbb678bf7e20f14",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        2
+      ],
+      "choice_score": 2,
+      "labels": [],
+      "note": "价/无折扣/低调外观/卡用途有据；第2条负面用途罗列过长。第3条询问收礼人是否用卡夹是礼物是否合用的必要信息，不是已有信息重复问。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F44",
+      "run_id": "523f23a61e9a48dba6345ad837cb7aa5",
+      "raw_record_sha256": "f1d8e36b64ddc71e14daa48bf05b48eb1c3ba4feb2fb88fa5ec490ca43dfea20",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "预算不重复问，容量背法材质有据；第3条把A4资料泛称资料不够精确，本轮按明确产品容量语境理解而非所有纸张的物理断言。合法价格/使用边界/尊重预算来源因关键词分类不足被错拒。三条都加不能装大件，防御感仍在。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F45",
+      "run_id": "8927626c48d244fa95b3bbc2b14de267",
+      "raw_record_sha256": "122fa20c97e015e6b9c6e039eca058d4a13d9843089e910f74ecb002479a9fb7",
+      "hard_pass": [
+        true,
+        true,
+        false
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 1,
+      "labels": [
+        "generation_known_policy_as_unknown",
+        "reviewer_contract_error"
+      ],
+      "note": "第3条把能否按旧价说成无法确认，弱化已明确统一现价/无优惠渠道边界，给出未授权例外希望。前两条明确现价并核实旧实付原因。复核结构失败，不能声称它漏检或正确复核。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F46",
+      "run_id": "90c6937b2ae2488b987ac95c6aa5ba18",
+      "raw_record_sha256": "ea5e47041ac92b8b495b925df6673e18810666a2e24d90fe94b260ce4da6e0ed",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        1,
+        1,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "未设免邮分期可如实说明并核实具体服务。第1条两色都有可按目录颜色理解，但易被读成库存，不宜直接选；第2条追问颜色非当前必需。未把有颜色一律判成现货承诺。第3条较省事。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F47",
+      "run_id": "23b909c9d1aa4302b0fe326f87384d57",
+      "raw_record_sha256": "489e528bffdbccc03fe5c7ac1af8d070471e720ab95df97c051df03c69e603d0",
+      "hard_pass": [
+        false,
+        false,
+        false
+      ],
+      "tone_scores": [
+        2,
+        2,
+        1
+      ],
+      "choice_score": 2,
+      "labels": [
+        "generation_unsupported_quality_equivalence",
+        "generation_invented_price_cause",
+        "program_difference_as_price_false_positive",
+        "program_plural_scope_false_positive"
+      ],
+      "note": "同为哑光细纹牛皮不证明皮料等级/品质完全相同，也不能否定谁更好；三条都把6000差价归因容量/重量，未给成本定价依据。程序另把差额当售价、两款共有的材质描述当对象不明，应分开修；复核未调用。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F48",
+      "run_id": "66557af9fd99416e8b525236bdf1389a",
+      "raw_record_sha256": "5a62017f3eb87dbb28985a423dcbaea775c33e78f123c144c1c46936428afb04",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [],
+      "note": "两阶段均按我考虑考虑理解unclear，真实验证不再词表硬限制。三条给空间、不追问/主动跟进，功能接近符合暂缓任务。",
+      "preferred_candidate_index": 1,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F49",
+      "run_id": "a5367904f24542558690f1ba188304b4",
+      "raw_record_sha256": "fed4588ad74a04fa0c637170e7e8f1347496863b727555ec4d1a99e85e25f7e8",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        2,
+        2
+      ],
+      "choice_score": 1,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "本次不推荐并允许客户以后主动咨询，不承诺主动再联系。policy.4包含明确拒绝后的做法，可支持收尾，程序因域词不匹配错拒。三条功能接近合理。",
+      "preferred_candidate_index": 2,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    },
+    {
+      "case_id": "F50",
+      "run_id": "d76ea1f514c24f0d9db970f2624a4aa6",
+      "raw_record_sha256": "d9df4279a26ba378a589684cfadff04ffb3dc04a98135bec52a562db896e9504",
+      "hard_pass": [
+        true,
+        true,
+        true
+      ],
+      "tone_scores": [
+        2,
+        1,
+        1
+      ],
+      "choice_score": 2,
+      "labels": [
+        "program_source_false_positive"
+      ],
+      "note": "报价/无折扣/已知材质与背法正确，未据朋友传言贬低竞品。第1条短答加关键用途问题合适；第2条较长，第3条主动引入尺寸手感顾虑稍生硬。policy.4支持不作竞品保证，被局部词域错拒。",
+      "preferred_candidate_index": 0,
+      "read_full_three": true,
+      "not_based_only_on_model_pass": true
+    }
+  ]
+}

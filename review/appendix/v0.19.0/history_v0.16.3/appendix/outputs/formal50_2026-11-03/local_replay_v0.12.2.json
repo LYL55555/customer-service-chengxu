@@ -1,0 +1,424 @@
+{
+  "kind": "offline-recheck-of-same-first-real-outputs-not-new-real-success-rate",
+  "validation_app_version": "0.12.2",
+  "baseline_app_version": "0.12.0",
+  "real_model_calls": 0,
+  "original_baseline_unchanged": true,
+  "counts": {
+    "saved_review_passes_current_local_checks": 42,
+    "quality_review": 2,
+    "review_not_run_in_baseline": 3,
+    "original_contract_failure": 1,
+    "original_review_format_failure": 1,
+    "policy_check": 1
+  },
+  "results": [
+    {
+      "case_id": "F01",
+      "original_run_id": "80bd863110904cc4a0de8862947413eb",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "adf7b01dc910a5905b5b572bfa3a62d5c7c0b00ecb4050d9b1975692351915bf",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F02",
+      "original_run_id": "39144e0a9a0b4f17bf3541afd665802e",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "b01ba0e567690af99e6a03748b6a2197e463a76e54ff38a485ad75b8e6375e49",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F03",
+      "original_run_id": "e45e6542e5df40e1bbfb7e04a659e6a7",
+      "original_status": "error",
+      "original_error": "quality_review",
+      "raw_sha256": "990d7c581b13401ada1319a3b932ccda99492fedd114200c5b31968d5a7a1180",
+      "outcome": "quality_review",
+      "error": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+      "validation_errors": []
+    },
+    {
+      "case_id": "F04",
+      "original_run_id": "856c08a22e434779962f2e4640e5df68",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "8916ee5050ecb7292ec987e2ce7a6224b16dd68fe6503cb2acd3fdde529a9f5c",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F05",
+      "original_run_id": "200ccdbc9d134c1db24102005f6e11fc",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "0abdc27443fca0e22782d6d13552c565e52d0a57db8e622f92bc1a311c75a61f",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F06",
+      "original_run_id": "d4631097b36645a8bdd501611792b84a",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "c1fa47cbe6c412fc842b592a0e9e0f99ea0e6dd5cb60b1c885a8c9b4c4051cae",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F07",
+      "original_run_id": "e94be1d1e56249e489d483251351bd3e",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "e3b1fd9142836388ac19a83b1ab05e4c628b128cdd532769d9a2a9b655c06cb2",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F08",
+      "original_run_id": "c963ce299c504448af1b866cb16861d0",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "14353aef1b1c4f4e26b2d6d57cf9978e8b7718562b68d2d315236ac2635c4239",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F09",
+      "original_run_id": "c7702ce63d214d13a425d2eeac455b6f",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "6824b10cde9d0cf852123bed2c23776065881ade17a596ebb6f6bd75e955cfd6",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F10",
+      "original_run_id": "86f9276e2da241b48f28900b78217951",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "1453ddc6da44bc220518b850b0637abcc4e3ae049a3ef2259dd6e25c9bbdebe0",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F11",
+      "original_run_id": "2d01e974f4d54d3484ba4346d975f10d",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "6a553d266f3046b8cdd2d2768a49c4a0bc78622d3be53d373ada0ee233ca1964",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F12",
+      "original_run_id": "d28cac04d85b4ffab22ea3d0a2b7213e",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "f7e346004b738c5b30a032f35e9df77c71fbdb735e022b34239c2f161ece9977",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F13",
+      "original_run_id": "ebef7da546b24c05bf465ce7f8ac565a",
+      "original_status": "error",
+      "original_error": "policy_check",
+      "raw_sha256": "7d92f4e5efa4d6dbabdd35bccc6fd3cb9ae50355b14f8472f5b6ad36ff5cda32",
+      "outcome": "review_not_run_in_baseline"
+    },
+    {
+      "case_id": "F14",
+      "original_run_id": "d5202b0c521643c4b1299a47eeebbff0",
+      "original_status": "error",
+      "original_error": "invalid_output",
+      "raw_sha256": "f30dbdfe523a14f1d0365c17cdd3ac4c95575060886fbd8a332512572a04dcca",
+      "outcome": "original_contract_failure",
+      "detail": "$ fields"
+    },
+    {
+      "case_id": "F15",
+      "original_run_id": "79805da2981546dba082ed7f744bb357",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "fd4b993216c906f2fb70d45c826e567d7f2e0269fe6415245c86d0b2b23f9273",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F16",
+      "original_run_id": "7b2d6f0b35b84152a595c89951df2338",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "82ca45c1389a11388b436897c81896f52faea4798dfd0ad4bb5ad9651d7fe798",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F17",
+      "original_run_id": "b2d9cbeaa0dd4294ad66238feb1c4cc3",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "c75b6f5b158a122dc39ecaee495da97570dc3e3b27ae5364a5803b2a2917a93a",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F18",
+      "original_run_id": "c2ffec0a547b44b1ab6ee1cad29d7a3d",
+      "original_status": "error",
+      "original_error": "policy_check",
+      "raw_sha256": "e0dde0956c2dba4c4746dfa883a5df81c1546ecc1a9fdc8375e47538c6c1b8f9",
+      "outcome": "review_not_run_in_baseline"
+    },
+    {
+      "case_id": "F19",
+      "original_run_id": "f77d8512cb264f86a019f46f01e13eac",
+      "original_status": "error",
+      "original_error": "quality_review",
+      "raw_sha256": "1d3ce1422b34d6923b3519996071c1c12ce705aaf000c88b9a1d781bd9220f8a",
+      "outcome": "quality_review",
+      "error": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+      "validation_errors": []
+    },
+    {
+      "case_id": "F20",
+      "original_run_id": "28d3de5a74e24c5d992700eb69e9da90",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "73a3bd9684ac68c81fac02e965e9e85058af82909ba94012879f5d74c4e419ae",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F21",
+      "original_run_id": "ecf953ac32584ee59f8461377e9922cd",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "3f09bfa27d3767c6022cbabd6c66f23b3693d310b9e0d938572639f1e40079fa",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F22",
+      "original_run_id": "2795dab9b6f94896890d81eeb5b23dda",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "2bec1d12787f7021b21a1451faed4d8398db4dbea22a437ac9361824ebe34924",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F23",
+      "original_run_id": "c4510894f2024f6db3de8ea7e3c17d03",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "0f049d3850953860de25a0f811dbc9c7276d18391e30a46f4b920020f2faf7f9",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F24",
+      "original_run_id": "02efe329da09467b92fbc8a770e8f63b",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "f016f44313282a1647cb408c5aba57b39117eec05dce1150a651ac224b9e75a9",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F25",
+      "original_run_id": "f473a22f8da04f5f99014b95d1b42058",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "5a9699a6cbf6a77328dff6af99c0055a06c739bf28715d3dddf66f85bde7ff4b",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F26",
+      "original_run_id": "b05df16a48e8459390e33c25dc1aa4e2",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "b29bb1b7137f53d6ab1483068bfb0de88d8f0db5604c53372eda25161b149128",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F27",
+      "original_run_id": "787a3b0f49ea483daff0a48d374848ca",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "0d000ebdf647ac1856fa18867f772d69354ab284cdb9e13335f79ccfaf413b16",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F28",
+      "original_run_id": "386ef191e0014432a763d1a9f721859f",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "6f7b2313e06a1edd33733688203edfb667515288695e769b660696cb9060cc01",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F29",
+      "original_run_id": "98fca3ddecb6493cbc98cb845a40fa84",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "063a926eb1567b06df2bfe36c5fdbf0466df029a1f3d679873f8402c154e1928",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F30",
+      "original_run_id": "5d9c7d80292840378d28cdc8f48b7416",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "2f8aa8483a328f907d2d605f9cf83fc3eb048cb5073cfdd91c3907794405d36b",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F31",
+      "original_run_id": "3f30cb7bf1b14b3489096f81b81a10a6",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "d9158d9fa32c33712534b9d433a9379a29322d52880bdfb67042d61a7f7902e7",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F32",
+      "original_run_id": "524364909a2242ac8f04c5247cf28f91",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "2af902b19a83076b90b7371dfba9465a1cf97d33a695091568925cb78f560c24",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F33",
+      "original_run_id": "8bd4a52bdfc44614b097b5200fde8ff5",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "881c493e6c111a1d64945d622261c78902c92d6ef896209c0a7f8cafb89c9042",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F34",
+      "original_run_id": "532619f47f544246bcbdba0b9fb59dcb",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "e05b072a284c78d88d01cc5211c69416c98e2dd5fe3047671675950f5809f3af",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F35",
+      "original_run_id": "42c445fa56c04c959a25dc3f4830ada0",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "0ff2224b04c2696b0ece019040f207ef9704a7cca61fd3b29e7fe15357de34ed",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F36",
+      "original_run_id": "c19068daf78c4531b07087c90ad69b2f",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "d26312557ed2ba0b7d9d2a8196fa5cdb38434394aac382fadc778a9f0078d11a",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F37",
+      "original_run_id": "b0095489474241ca94bc385f228d878c",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "75c5e3cd41502ee8d06e0e79ae47525667fc5cf200f4f0fb417ea22e3dba34a7",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F38",
+      "original_run_id": "0cc8f20e36c44bfa978b4dadb9f3998b",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "2923ace5c4f77145b9bdb8293588e626b67aa03042918878d59f4c92988c651a",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F39",
+      "original_run_id": "0e39bdedb54d41d39c3b52fb851fb735",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "5db4a8aa6acb0a5e642e98afee4a6f3601d112071f8b569d860272ca9776a563",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F40",
+      "original_run_id": "d124678c16dc400f9f8bbf01db2e6d93",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "bbdbc36fafee8ee54345ea8dc8467018020177b6ac7026c2941f7ce9c4e788a7",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F41",
+      "original_run_id": "42823f34c05946ffadaeef80a1b550b0",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "f070f6f7df7d389f721384989da05797ce0065ce4984e44dd03e88d8b6baa1d7",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F42",
+      "original_run_id": "95672f9fb7d84d16bcb200ec4ae472fc",
+      "original_status": "error",
+      "original_error": "policy_check",
+      "raw_sha256": "2d5e4f993265878952073259d42d88957e4618bc2e42d0f055b5752dba65df49",
+      "outcome": "review_not_run_in_baseline"
+    },
+    {
+      "case_id": "F43",
+      "original_run_id": "65ad48e7e0a84b4da2557efb822234a2",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "dcff3601874fe6f5e9b838fc5f1f92fc1282653dd98950b99dbb678bf7e20f14",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F44",
+      "original_run_id": "523f23a61e9a48dba6345ad837cb7aa5",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "f1d8e36b64ddc71e14daa48bf05b48eb1c3ba4feb2fb88fa5ec490ca43dfea20",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F45",
+      "original_run_id": "8927626c48d244fa95b3bbc2b14de267",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "122fa20c97e015e6b9c6e039eca058d4a13d9843089e910f74ecb002479a9fb7",
+      "outcome": "original_review_format_failure"
+    },
+    {
+      "case_id": "F46",
+      "original_run_id": "90c6937b2ae2488b987ac95c6aa5ba18",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "ea5e47041ac92b8b495b925df6673e18810666a2e24d90fe94b260ce4da6e0ed",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F47",
+      "original_run_id": "23b909c9d1aa4302b0fe326f87384d57",
+      "original_status": "error",
+      "original_error": "policy_check",
+      "raw_sha256": "489e528bffdbccc03fe5c7ac1af8d070471e720ab95df97c051df03c69e603d0",
+      "outcome": "policy_check",
+      "error": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。",
+      "validation_errors": null
+    },
+    {
+      "case_id": "F48",
+      "original_run_id": "66557af9fd99416e8b525236bdf1389a",
+      "original_status": "success",
+      "original_error": null,
+      "raw_sha256": "5a62017f3eb87dbb28985a423dcbaea775c33e78f123c144c1c46936428afb04",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F49",
+      "original_run_id": "a5367904f24542558690f1ba188304b4",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "fed4588ad74a04fa0c637170e7e8f1347496863b727555ec4d1a99e85e25f7e8",
+      "outcome": "saved_review_passes_current_local_checks"
+    },
+    {
+      "case_id": "F50",
+      "original_run_id": "d76ea1f514c24f0d9db970f2624a4aa6",
+      "original_status": "error",
+      "original_error": "invalid_review",
+      "raw_sha256": "d9df4279a26ba378a589684cfadff04ffb3dc04a98135bec52a562db896e9504",
+      "outcome": "saved_review_passes_current_local_checks"
+    }
+  ]
+}

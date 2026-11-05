@@ -1,0 +1,37 @@
+{
+  "kind": "same-seen50-new-version-first-attempts-not-original-baseline",
+  "app_version": "0.13.6",
+  "completed": 50,
+  "case_count": 50,
+  "status_counts": {
+    "success": 34,
+    "error": 16
+  },
+  "groups_with_exact_three_original_strings": 49,
+  "original_message_count": 147,
+  "failed_case_ids": [
+    "F12",
+    "F13",
+    "F18",
+    "F20",
+    "F25",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F35",
+    "F37",
+    "F43",
+    "F47",
+    "F50"
+  ],
+  "actual_requests": 94,
+  "reported_total_tokens": 2167942,
+  "requests_without_usage": 1,
+  "automatic_retries": 0,
+  "case_sha256": "1f1f37d70a1102d45eedeacc834f3539e223c652866ee0035560a5817358a243",
+  "original_baseline_unchanged": true,
+  "model_pass_is_not_human_quality_acceptance": true
+}

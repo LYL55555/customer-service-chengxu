@@ -1,0 +1,160 @@
+[
+  {
+    "label": "bounded",
+    "candidate": "日行托特空包750克，带A4资料和水走二十分钟不会太吃力，方便时可试背。",
+    "expected_allowed": true,
+    "full_pipeline_allowed": true,
+    "precheck_error_code": null,
+    "generation_check_errors": [],
+    "review_source_audit_errors": [],
+    "fixture_not_model_output": true
+  },
+  {
+    "label": "vague_polish",
+    "candidate": "日行托特空包750克，这个分量多数人能接受，方便时可试背。",
+    "expected_allowed": true,
+    "full_pipeline_allowed": true,
+    "precheck_error_code": null,
+    "generation_check_errors": [],
+    "review_source_audit_errors": [],
+    "fixture_not_model_output": true
+  },
+  {
+    "label": "wrong_price",
+    "candidate": "日行托特售价19,800元，方便时可试背。",
+    "expected_allowed": false,
+    "full_pipeline_allowed": false,
+    "precheck_error_code": "policy_check",
+    "generation_check_errors": [
+      {
+        "code": "wrong_price",
+        "candidate_index": 0,
+        "evidence": "19,800元",
+        "expected": 18800,
+        "product_id": "P01",
+        "message": "日行托特包的品牌现价为18,800元，候选报价不一致。"
+      }
+    ],
+    "review_source_audit_errors": [
+      {
+        "code": "price_source_mismatch",
+        "message": "引用的商品价格与该片段的商品/数值不符，不能用其他商品价格作依据",
+        "candidate_index": 0,
+        "source_id": "product.P01.price"
+      }
+    ],
+    "fixture_not_model_output": true
+  },
+  {
+    "label": "wrong_weight",
+    "candidate": "日行托特空包650克，方便时可试背。",
+    "expected_allowed": false,
+    "full_pipeline_allowed": false,
+    "precheck_error_code": "policy_check",
+    "generation_check_errors": [
+      {
+        "code": "wrong_product_fact",
+        "candidate_index": 0,
+        "product_id": "P01",
+        "field": "empty_weight_g",
+        "evidence": "650克",
+        "expected": "约750 g",
+        "fact_ref": {
+          "product_id": "P01",
+          "field": "empty_weight_g",
+          "status": "known",
+          "value": "约750 g"
+        },
+        "source_quote": "约750 g",
+        "message": "日行托特包的empty_weight_g依据为：约750 g；该断言没有同一商品资料支持，未知不能解释成没有。"
+      }
+    ],
+    "review_source_audit_errors": [
+      {
+        "code": "reviewer_missed_product_fact",
+        "message": "复核放过不支持的商品事实",
+        "candidate_index": 0,
+        "conflict": {
+          "code": "wrong_product_fact",
+          "candidate_index": null,
+          "product_id": "P01",
+          "field": "empty_weight_g",
+          "evidence": "650克",
+          "expected": "约750 g",
+          "fact_ref": {
+            "product_id": "P01",
+            "field": "empty_weight_g",
+            "status": "known",
+            "value": "约750 g"
+          },
+          "source_quote": "约750 g",
+          "message": "日行托特包的empty_weight_g依据为：约750 g；该断言没有同一商品资料支持，未知不能解释成没有。"
+        }
+      }
+    ],
+    "fixture_not_model_output": true
+  },
+  {
+    "label": "absolute",
+    "candidate": "不论装多少东西，日行托特背多久都不会累，方便时可试背。",
+    "expected_allowed": false,
+    "full_pipeline_allowed": false,
+    "precheck_error_code": "policy_check",
+    "generation_check_errors": [
+      {
+        "code": "unsupported_comfort_guarantee",
+        "candidate_index": 0,
+        "evidence": "不论装多少东西，日行托特背多久都不会累",
+        "message": "无条件或全人群的舒适保证没有依据；结合已知重量、携带物和步行情境的日常判断不属于此项。"
+      },
+      {
+        "code": "unsupported_comfort_guarantee",
+        "candidate_index": 0,
+        "evidence": "背多久都不会累",
+        "message": "无条件或全人群的舒适保证没有依据；结合已知重量、携带物和步行情境的日常判断不属于此项。"
+      }
+    ],
+    "review_source_audit_errors": [
+      {
+        "code": "reviewer_missed_product_fact",
+        "message": "复核放过不支持的商品事实",
+        "candidate_index": 0,
+        "conflict": {
+          "code": "unsupported_comfort_guarantee",
+          "candidate_index": null,
+          "evidence": "不论装多少东西，日行托特背多久都不会累",
+          "message": "无条件或全人群的舒适保证没有依据；结合已知重量、携带物和步行情境的日常判断不属于此项。"
+        }
+      },
+      {
+        "code": "reviewer_missed_product_fact",
+        "message": "复核放过不支持的商品事实",
+        "candidate_index": 0,
+        "conflict": {
+          "code": "unsupported_comfort_guarantee",
+          "candidate_index": null,
+          "evidence": "背多久都不会累",
+          "message": "无条件或全人群的舒适保证没有依据；结合已知重量、携带物和步行情境的日常判断不属于此项。"
+        }
+      }
+    ],
+    "fixture_not_model_output": true
+  },
+  {
+    "label": "invented_stock",
+    "candidate": "轻行肩包已经给您留好，周六肯定有货，方便时可试背。",
+    "expected_allowed": false,
+    "full_pipeline_allowed": false,
+    "precheck_error_code": "policy_check",
+    "generation_check_errors": [
+      {
+        "code": "unsupported_completed_action",
+        "candidate_index": 0,
+        "evidence": "已经给您留好",
+        "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。"
+      }
+    ],
+    "review_source_audit_errors": [],
+    "fixture_not_model_output": true
+  }
+]

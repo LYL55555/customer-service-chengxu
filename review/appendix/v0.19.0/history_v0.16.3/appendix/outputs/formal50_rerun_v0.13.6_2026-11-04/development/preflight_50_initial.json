@@ -1,0 +1,1281 @@
+{
+  "app_version": "0.13.6",
+  "real_model_calls": 0,
+  "results": [
+    {
+      "case_id": "F01",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户许女士，顾问已确认本次为生日问候，具体发送日期未提供。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F02",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户沈先生，已确认生日问候，客户偏好直接称沈先生，不用亲昵称呼。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F03",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户顾女士，仅知道称呼。"
+            },
+            {
+              "source_id": "materials.related_info",
+              "text": "顾问此次准备中秋节问候，未提供发送日期或家庭资料。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F04",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户梁先生，确认春节问候。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F05",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户赵女士，确认生日问候。客户昨天主动说自己这周在旅行，地点和同行者未知。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F06",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户方女士，顾问确认生日问候；客户以前说不喜欢别人提年龄。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F07",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户孟女士；当前顾问需回复客户的感谢。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F08",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户程先生，这是客户刚发来的更正；生日档案尚未实际修改。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F09",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F10",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F11",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F12",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F13",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F14",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F15",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F16",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F17",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F18",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F19",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "本例业务日期2026-11-03，购买日2026-11-01，门店购买，未使用、标牌及原包装齐全、有凭证，尚未门店检查。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F20",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构业务日期2026-11-03，门店购买日期2026-10-27；未使用、标牌原包装及购买凭证齐全；未检查。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F21",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F22",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户，仅知道其描述网上购买，具体平台未知。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F23",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F24",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F25",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户，本次没有提供已提交记录或售后单号。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F26",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户蒋女士，已知两周前在门店买随行卡夹；顾问这次准备问使用是否顺手，没有已知质量问题。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F27",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F28",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [
+            {
+              "source_id": "background.client_info",
+              "kind": "need",
+              "quote": "八个月前买过随行卡夹"
+            }
+          ],
+          "available": [
+            {
+              "source_id": "background.client_info",
+              "kind": "need",
+              "quote": "八个月前买过随行卡夹"
+            }
+          ],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户杜女士，八个月前买过随行卡夹，最近未到店；顾问拟轻量问候。无当前来信，无拒收营销记录。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F29",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户袁先生，半年未到店，以前明确喜欢简短微信。现在没有客户新来信，顾问拟问候。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F30",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户罗女士；这段聊天来自2025年，没有新的客户来信，本次只想轻量接续关系。"
+            }
+          ],
+          "body_dependencies": [
+            {
+              "source_id": "background.client_info",
+              "quote": "这段聊天来自2025年"
+            }
+          ],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F31",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [
+            {
+              "source_id": "background.client_info",
+              "kind": "unparsed_summary",
+              "quote": "过去她说喜欢简单问候"
+            }
+          ],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户钱女士，顾问与其有已知门店购买关系，五个月未到店。过去她说喜欢简单问候，不希望每次都是商品介绍；无全面拒收联系设置。当前无来信。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F32",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [
+            {
+              "source_id": "background.client_info",
+              "kind": "need",
+              "quote": "去年在店里买过轻行肩包"
+            }
+          ],
+          "available": [
+            {
+              "source_id": "background.client_info",
+              "kind": "need",
+              "quote": "去年在店里买过轻行肩包"
+            }
+          ],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户，去年在店里买过轻行肩包，此后无新来信；没有姓名、年龄和家庭资料。当前准备简单问候。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F33",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户彭女士，过去说喜欢暖棕，半年未到店，无本次来信；顾问没有任何新品或活动资料。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F34",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户唐先生，四个月前买日行托特，现在无新来信；顾问希望只问使用感受，不介绍别的商品。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F35",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户任女士；允许普通联系，无当前来信。"
+            },
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构活动：日常收纳体验；2026-11-14 14:00—16:00；地点澄序广场8号精品店。活动内容为展示现有三款商品的日常收纳，无折扣赠品；是否有空可询问，未登记席位。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F36",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户，本次是客户主动咨询；长期不收推广。"
+            },
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构活动2026-11-14 14:00—16:00，地址澄序广场8号精品店；无已登记记录。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F37",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店；允许携一位朋友，但需登记后确认；本客户尚未登记。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F38",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构活动两场：2026-11-20（周五）16:00—18:00；2026-11-21（周六）10:00—12:00；均在澄序广场8号精品店，无客户登记。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F39",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构活动2026-11-14 14:00—16:00在澄序广场8号精品店，为现有商品收纳展示；没有新增折扣、赠品或购买权益。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F40",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店。虚构登记记录：该客户已登记1位参加这场活动，没有新增同行登记。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F41",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [
+            {
+              "source_id": "materials.related_info",
+              "kind": "question",
+              "quote": "可对照日常物品了解尺寸"
+            }
+          ],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构活动2026-11-14 14:00—16:00，澄序广场8号精品店；展示现有三款商品的收纳方式，可对照日常物品了解尺寸；无新品发布、折扣或赠品。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F42",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "最新已确认虚构活动资料：2026-11-14（周六）14:00—16:00，澄序广场8号精品店。旧顾问星期说错。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t2"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F43",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F44",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F45",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "materials.related_info",
+              "text": "虚构旧订单仅证明客户声称的历史实付金额，未提供当时优惠原因；当前品牌目录及无折扣规则不变。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F46",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F47",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F48",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [
+            {
+              "source_id": "background.client_info",
+              "text": "虚构客户当前只表示暂缓，没有新商品问题。"
+            }
+          ],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F49",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    },
+    {
+      "case_id": "F50",
+      "readiness": {
+        "version": "input-responsibility-0.4.0",
+        "state": "ready",
+        "items": [],
+        "external_gap_evidence": [],
+        "task_evidence": {
+          "summary": [],
+          "available": [],
+          "sources": [],
+          "body_dependencies": [],
+          "parse_scope": "字段提取非穷尽；未命中不能证明资料缺失"
+        },
+        "known_customer_text_ids": [
+          "t1"
+        ],
+        "principle": "按当前任务判断；无预算不阻止推荐，工具未知不等于客户没说或业务未定"
+      },
+      "blockers": [],
+      "can_enter_generation": true
+    }
+  ]
+}

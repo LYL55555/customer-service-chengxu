@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>运行工具</title><style>body{margin:0;background:#f8f6f1;color:#24352e;font:17px/1.75 system-ui,-apple-system,"PingFang SC",sans-serif}main{max-width:1080px;margin:auto;padding:30px 30px 65px}nav{padding:12px 0;border-bottom:1px solid #ccc}a{color:#245f4a}h1{font-size:32px;line-height:1.3}h2{margin-top:36px;font-size:24px}h3{font-size:19px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #ccc;padding:10px;vertical-align:top;text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;background:#efeee8;padding:14px}img,video{max-width:100%;height:auto}.reply{padding:14px 18px;margin:12px 0;border:1px solid #d0d5cd;background:white;white-space:pre-wrap}.note{background:#e7eddf;padding:16px}summary{cursor:pointer;padding:8px 0}blockquote{margin:10px 0;padding:6px 20px;border-left:3px solid #84927a}code{overflow-wrap:anywhere}small{color:#56675a}.muted{color:#56675a}</style><main><nav><a href="index.html">当前评审入口</a> · 澄序 CHENGXU · 0.16.3</nav><h1>解压后运行 · 0.16.3</h1>
+<p>评审材料可直接双击index.html阅读，无需账户。localhost地址只对运行者本机有效，不能当公网演示链接。</p>
+<ol>
+<li>解压SOURCE_v0.16.3.zip，进入其中CHENGXU_Source_v0.16.3文件夹。</li>
+<li>安装Python 3.10或以上；建议macOS。终端运行：</li>
+</ol>
+<pre><code class="language-sh">python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+python3 scripts/load_saved_demo.py
+python3 app.py
+</code></pre>
+<ol>
+<li>打开http://127.0.0.1:8765/。在“顾问与客户”选“提交演示 · 虚构顾问小林”，查看N21/N29/N39。标题明确“保存的真实结果”，载入过程0模型调用；历史失败也保留。可先不配key阅读、查看及选择复制。</li>
+<li>若要真实生成，在源码根目录自行新建.env，按CONFIG_TEMPLATE.txt填写地址、模型和key。不要把key填进网页或聊天，也不要对外提交.env。重启服务或刷新配置；未配置时页面会明确提示，已配置但未调用时显示尚未验证。</li>
+<li>原生复制测试：复制N21或N29第二条，粘贴到本机空白文稿核对。本轮自动化粘贴通道未能完成此项，详见D评估；不要以“已复制”提示代替实际核对。</li>
+</ol>
+<p>接口使用DeepSeek官方beta严格工具模式；其他OpenAI兼容接口只保证有本地JSON检查，尚未在本轮实测。正常服务不自动重试。若要在另一端口运行，可在本地.env写PORT=18865后重启。</p>
+<p>聊天截图的本机OCR依赖macOS及可用Swift命令行工具；其他平台可直接用已确认文字聊天和保存结果演示，不能承诺相同截图能力。新截图请使用虚构内容。</p>
+<p>源码不含key、任何.env文件、运行客户数据库和缓存；首次运行自行建立本机data目录。保存结果演示提供的是明确虚构案例的JSON，不是从运行库导出的数据库。重复载入脚本不会覆盖已有演示资料。</p></main></html>

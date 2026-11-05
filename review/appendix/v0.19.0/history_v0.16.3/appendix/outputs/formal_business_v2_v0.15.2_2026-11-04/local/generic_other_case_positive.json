@@ -1,0 +1,87 @@
+{
+  "kind": "local-synthetic-positive-not-new-model-output",
+  "model_requests": 0,
+  "original_50_inputs_unchanged": true,
+  "case_id": "SC-2088",
+  "current_customer_id": "fictional-local-other-current-customer",
+  "product_id": "P01",
+  "fee": 680,
+  "expected_workdays": 12,
+  "actual_full_validation": "accepted",
+  "actual_source_scope": {
+    "version": "aftersales-evidence-1.0.1",
+    "customer_id": "fictional-local-other-current-customer",
+    "focus_product_ids": [
+      "P01"
+    ],
+    "current_case_ids": [],
+    "records": [
+      {
+        "source_id": "materials.related_info",
+        "case_id": "SC-2088",
+        "order_ids": [],
+        "customer_id": "fictional-local-other-current-customer",
+        "product_id": "P01",
+        "binding": "explicit_current_customer",
+        "source_start": 0,
+        "source_end": 72,
+        "source_quote": "虚构售后单SC-2088，属于本客户日行托特包。售后2026-11-04评估可维修，报价680元，预计12个工作日；客户尚未同意维修，尚未开修。",
+        "facts": {
+          "fee": {
+            "field": "fee",
+            "value": "680",
+            "unit": "CNY",
+            "start": 44,
+            "end": 48,
+            "quote": "680元",
+            "estimated": false,
+            "guaranteed": false
+          },
+          "duration": {
+            "field": "duration",
+            "value": "12",
+            "unit": "workday",
+            "start": 51,
+            "end": 57,
+            "quote": "12个工作日",
+            "estimated": true,
+            "guaranteed": false
+          },
+          "repairable": {
+            "field": "repairable",
+            "value": true,
+            "unit": null,
+            "start": 38,
+            "end": 41,
+            "quote": "可维修",
+            "estimated": false,
+            "guaranteed": false
+          },
+          "started": {
+            "field": "started",
+            "value": false,
+            "unit": null,
+            "start": 67,
+            "end": 71,
+            "quote": "尚未开修",
+            "estimated": false,
+            "guaranteed": false
+          },
+          "agreed": {
+            "field": "agreed",
+            "value": false,
+            "unit": null,
+            "start": 60,
+            "end": 66,
+            "quote": "尚未同意维修",
+            "estimated": false,
+            "guaranteed": false
+          }
+        },
+        "valid": true,
+        "reasons": []
+      }
+    ],
+    "binding_hash": "3578669e994a39d52fecb3288f59e3eda3f7f4c56e681c92bee622d19b4b7b3e"
+  }
+}

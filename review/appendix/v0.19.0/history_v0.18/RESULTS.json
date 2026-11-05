@@ -1,0 +1,1654 @@
+{
+  "cases": [
+    {
+      "case_id": "N16",
+      "chunk": 1,
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "平时通勤带A4资料和一瓶水。",
+        "conversation": "客户：我每天走路二十分钟，托特装东西会不会太沉？",
+        "related_info": "",
+        "advisor_instruction": "结合她的使用情况帮她判断。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N16",
+        "conversation_id": "business-v2-chat-N16",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "raw_record": "raw_runs/68302cdbb1d440478d6c65097b344660.json",
+      "record_app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "messages": [
+        "按您平时通勤带A4资料和一瓶水来说，日行托特包是够用的，装这些没问题。包本身约750克，属于中等偏轻，再加资料和水走路二十分钟问题不大；不过资料多的话，肩膀会觉得有点分量，建议资料尽量精简。",
+        "日行托特包空包约750克，容量上放A4纸质资料和500 mL水杯都合适。您每天走二十分钟，日常通勤的量背起来不会太吃力；如果担心沉，可以把重的东西靠里放，肩带受力会更舒服些。",
+        "您这个使用场景挺适合日行托特的：A4资料和水杯都装得下，空包大约750克，不算重。二十分钟路程背日常通勤的东西是可以的，只是文件带得多时会有点压肩，按需少带一些会更轻松。"
+      ],
+      "initial_status": "success",
+      "initial_error": null,
+      "model_review": "pass",
+      "review_parse_error": null,
+      "review_validation_errors": [],
+      "final_offline_status": "error",
+      "final_offline_error": {
+        "code": "policy_check",
+        "message": "没有轻重分级或比较基准，单款自重不能变成轻重等级分类。",
+        "retryable": false
+      },
+      "final_validator": "0.18.2",
+      "generation_count": 1,
+      "review_count": 1,
+      "generation_message_characters": 3014,
+      "selected_facts": [
+        {
+          "source_id": "product.P01.capacity",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放A4纸质资料、500 mL水杯",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "capacity"
+          }
+        },
+        {
+          "source_id": "product.P01.empty_weight_g",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "约750 g",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "empty_weight_g"
+          }
+        },
+        {
+          "source_id": "product.P01.a4_fit",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放A4纸质资料",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "a4_fit"
+          }
+        }
+      ],
+      "selection_audit": {
+        "version": "task-materials-2.0.0",
+        "selected": [
+          {
+            "source_id": "product.P01.capacity",
+            "reason": "回答当前capacity",
+            "selected_text": "可放A4纸质资料、500 mL水杯",
+            "source_text": "可放A4纸质资料、500 mL水杯、折叠伞等日常物品",
+            "start": null,
+            "end": null,
+            "transformation": "select_supported_items_matching_current_use"
+          },
+          {
+            "source_id": "product.P01.empty_weight_g",
+            "reason": "回答当前weight",
+            "selected_text": "约750 g",
+            "source_text": "约750 g",
+            "start": null,
+            "end": null,
+            "transformation": "exact_source_text"
+          },
+          {
+            "source_id": "product.P01.a4_fit",
+            "reason": "当前用途包含A4",
+            "selected_text": "可放A4纸质资料",
+            "source_text": "可放A4纸质资料",
+            "start": null,
+            "end": null,
+            "transformation": "single_A4_proposition"
+          }
+        ],
+        "selected_source_ids": [
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.empty_weight_g"
+        ],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.2",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.price",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.capacity",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "writing.rules",
+          "task.scenario",
+          "task.advisor_instruction",
+          "background.client_info",
+          "chat.t1"
+        ],
+        "full_source_count": 84,
+        "selected_fact_count": 3,
+        "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+      },
+      "generation_usage": {
+        "prompt_tokens": 2047,
+        "completion_tokens": 379,
+        "total_tokens": 2426,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2047
+      },
+      "review_usage": {
+        "prompt_tokens": 28257,
+        "completion_tokens": 1507,
+        "total_tokens": 29764,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 16609
+      },
+      "independent_opinion": "不认可旧复核pass。三条没有能力免责声明，却换成无据的确定判断：第一条“属于中等偏轻”“走路二十分钟问题不大”，第二条“不会太吃力”“肩带受力会更舒服些”都不能由750克和容量推出。第三条“不算重”“有点压肩”仍是体感推测。保留自重和实际携带背景；不要把减少防守变成舒适保证。0.18.1/2已补任务相关未知并在本地拦住首两条核心无据断言，未再次真实生成，因此不能宣称新重量写法已通过。",
+      "old_generation_message_characters": 57606
+    },
+    {
+      "case_id": "N22",
+      "chunk": 1,
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "顾问：您昨天看的轻行肩包，还想了解什么？\n客户：这两天换了项目，现在还得带文件去公司。\n顾问：平时会带哪些东西？\n客户：A4和水杯基本天天带，包别太花。\n客户：那还是帮我看看上班用的吧，预算两万以内。",
+        "related_info": "",
+        "advisor_instruction": "按现在的需求推荐，接着聊。",
+        "product_ids": []
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N22",
+        "conversation_id": "business-v2-chat-N22",
+        "profile_revision": 1,
+        "preferences": "喜欢墨黑、小标识。",
+        "marketing_opt_out": false
+      },
+      "raw_record": "raw_runs/6fedc44fc8554604bb36b2ab61e8a68e.json",
+      "record_app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "messages": [
+        "按您天天带A4和水杯、又不想要太花的要求，日行托特包更合适。它能放下A4纸质资料和500 mL水杯，颜色是墨黑，标识是小尺寸压印，不显眼。价格18,800元，在您两万以内。",
+        "那看上班用的，我建议日行托特包：A4资料和500 mL水杯都能放，通勤刚好。墨黑配上小尺寸压印标识，简洁不花，也贴合您一贯的偏好。18,800元，预算内。",
+        "明白，上班用就按A4和水杯来选。日行托特包容量能装A4纸质资料和500 mL水杯，墨黑、小标识，不花哨。18,800元，两万以内还留有余地。"
+      ],
+      "initial_status": "error",
+      "initial_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "model_review": "pass",
+      "review_parse_error": null,
+      "review_validation_errors": [
+        {
+          "code": "price_source_mismatch",
+          "message": "引用的商品价格与该片段的商品/数值不符，不能用其他商品价格作依据",
+          "candidate_index": 0,
+          "source_id": "product.P01.price"
+        }
+      ],
+      "final_offline_status": "success",
+      "final_offline_error": null,
+      "final_validator": "0.18.2",
+      "generation_count": 1,
+      "review_count": 1,
+      "generation_message_characters": 4054,
+      "selected_facts": [
+        {
+          "source_id": "product.P01.capacity",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放A4纸质资料、500 mL水杯",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "capacity"
+          }
+        },
+        {
+          "source_id": "product.P01.colors",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "墨黑",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "colors"
+          }
+        },
+        {
+          "source_id": "product.P01.price",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "18,800元",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "price"
+          }
+        },
+        {
+          "source_id": "product.P01.a4_fit",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放A4纸质资料",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "a4_fit"
+          }
+        },
+        {
+          "source_id": "policy.2",
+          "kind": "brand_policy",
+          "authority": "brand",
+          "status": "known",
+          "text": "三款均使用小尺寸压印品牌标识"
+        }
+      ],
+      "selection_audit": {
+        "version": "task-materials-2.0.0",
+        "selected": [
+          {
+            "source_id": "product.P01.capacity",
+            "reason": "回答当前capacity",
+            "selected_text": "可放A4纸质资料、500 mL水杯",
+            "source_text": "可放A4纸质资料、500 mL水杯、折叠伞等日常物品",
+            "start": null,
+            "end": null,
+            "transformation": "select_supported_items_matching_current_use"
+          },
+          {
+            "source_id": "product.P01.colors",
+            "reason": "回答当前design",
+            "selected_text": "墨黑",
+            "source_text": "墨黑、暖棕",
+            "start": null,
+            "end": null,
+            "transformation": "requested_catalog_color_only"
+          },
+          {
+            "source_id": "product.P01.price",
+            "reason": "回答当前price",
+            "selected_text": "18,800元",
+            "source_text": "18,800元",
+            "start": null,
+            "end": null,
+            "transformation": "exact_source_text"
+          },
+          {
+            "source_id": "product.P01.a4_fit",
+            "reason": "当前用途包含A4",
+            "selected_text": "可放A4纸质资料",
+            "source_text": "可放A4纸质资料",
+            "start": null,
+            "end": null,
+            "transformation": "single_A4_proposition"
+          },
+          {
+            "source_id": "policy.2",
+            "reason": "当前低调/小标识偏好",
+            "selected_text": "三款均使用小尺寸压印品牌标识",
+            "source_text": "## 2. 品牌设定\n\n- 名称：澄序 CHENGXU\n- 类别：虚构精品奢侈皮具品牌，低调、重视日常使用\n- 主要用途：日常通勤、轻便外出、小件礼物\n- 品牌表达：温暖、低调、具体；从客户的用途和顾虑出发，主动提供有帮助的信息\n- 顾问目标：先完成当前任务；客户已选商品只问事实，就直接答清。开放推荐或真实比较时再结合需求帮助选择；尊重预算和选择，明确拒绝后不继续劝买\n- 常见客户资料：称呼、主动表达的用途、颜色偏好、预算、购买记录和最近聊天\n- 初始资料不包含客户真实身份、联系方式或任何真实个人数据\n\n表达能一句答清就一句；必要时用一至三句短句。只有完成当前任务确实需要才提一个轻量问题，最多一个是上限，不是每条都要有问题。客户已提出的选择方向不再反问确认。不默认使用表情、亲昵称呼、夸张感叹或反复催促。已知称呼可使用；不知道称呼时使用“您好”或直接接话，不猜姓名、性别或关系。\n\n### 品牌与设计特点（全部为本项目虚构）\n\n| 特点 | 具体设定 | 顾问可以介绍的内容 | 表达边界 |\n| --- | --- | --- | --- |\n| 低调标识 | 三款均使用小尺寸压印品牌标识，没有大面积醒目标识 | “它的标识比较小，外观更简洁” | 不宣称有身份门槛、稀缺身份或比其他品牌更高级 |\n| 统一皮面 | 三款均采用哑光细纹牛皮，指表面光泽较低、能看到细小纹理 | 可以说明材质和外观，不需要堆砌皮革术语 | 细纹不等于防刮；不据此承诺耐用年限、防水或不掉色 |\n| 基础配色 | 目录仅使用墨黑、暖棕、米白三种颜色，各商品可选颜色见下表 | 结合客户已知颜色偏好介绍 | 不保证适合所有衣服或所有场合；不把目录颜色当作现货 |\n| 日常收纳 | 托特包有内侧平口袋；肩包有可调节肩带和拉链开合；卡夹有4个独立卡位 | 说明具体部件能怎样配合使用需求 | 不据此保证东西绝不会掉、背着不累、物品一定放得下 |\n\n介绍商品时挑与客户问题有关的一两点即可。这些特点为顾问提供具体信息，并不能证明商品一定“值这个价”或比客户提到的另一款更好；目前没有品牌历史、产地、成本或手工工艺资料可用于解释差价。\n\n",
+            "start": 486,
+            "end": 500,
+            "transformation": "exact_source_text"
+          }
+        ],
+        "selected_source_ids": [
+          "policy.2",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.colors",
+          "product.P01.price"
+        ],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.empty_weight_g",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.price",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.capacity",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "writing.rules",
+          "task.scenario",
+          "task.advisor_instruction",
+          "profile.preferences",
+          "chat.t1",
+          "chat.t2",
+          "chat.t3",
+          "chat.t4",
+          "chat.t5"
+        ],
+        "full_source_count": 88,
+        "selected_fact_count": 5,
+        "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+      },
+      "generation_usage": {
+        "prompt_tokens": 2435,
+        "completion_tokens": 385,
+        "total_tokens": 2820,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1667
+      },
+      "review_usage": {
+        "prompt_tokens": 28882,
+        "completion_tokens": 1899,
+        "total_tokens": 30781,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 17234
+      },
+      "independent_opinion": "三条均可独立完成当前通勤推荐：A4、水杯、两万预算与墨黑小标识来源一致；没有再追加电脑、厚文件夹、预算追问或免责声明。第一条最直接，第二条“一贯的偏好”有长期记录，第三条预算余量不是折扣。三条差异较小但可接受，不需要人为加问题。原error是程序将独立价格句误绑定到前文旧肩包，现用完整候选主语和片段位置重验通过；原三条及原pass未改。",
+      "old_generation_message_characters": 59753
+    },
+    {
+      "case_id": "N39",
+      "chunk": 1,
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "advisor_instruction": "用容易懂的话介绍内容。",
+        "product_ids": []
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N39",
+        "conversation_id": "business-v2-chat-N39",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "raw_record": "raw_runs/d6f2854699744f35b6243b0826bcecb0.json",
+      "record_app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "messages": [
+        "不用担心懂不懂皮具，这次活动主要就是看日常用起来顺不顺手。时段内会持续演示日行托特包、轻行肩包和随行卡夹怎么收纳常用物品；您也可以自己上手体验，带自己的日常物品对照着试更直观。",
+        "活动上会一直有人演示日行托特包、轻行肩包和随行卡夹怎么装日常东西，您可以自由体验，不用懂皮具，带上平时用的东西对照看看就好。",
+        "这次看到的就是几款日行包和三款怎么用：日行托特包、轻行肩包、随行卡夹会持续演示收纳常用物品，也能自由上手试，带自己的日常物品来对照最直观。不懂皮具完全没关系，看的都是日常使用。"
+      ],
+      "initial_status": "error",
+      "initial_error": {
+        "code": "invalid_review",
+        "message": "复核没有返回完整有效结构，原响应保留；未删减、降级或重试。",
+        "retryable": false
+      },
+      "model_review": null,
+      "review_parse_error": {
+        "code": "invalid_output",
+        "message": "模型响应不是预期的 JSON 格式，原始响应已记录，可以重试。"
+      },
+      "review_validation_errors": null,
+      "final_offline_status": "error",
+      "final_offline_error": {
+        "code": "missing_original_review",
+        "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+        "retryable": false
+      },
+      "final_validator": "0.18.2",
+      "generation_count": 1,
+      "review_count": 1,
+      "generation_message_characters": 2110,
+      "selected_facts": [
+        {
+          "source_id": "materials.related_info",
+          "kind": "business_material",
+          "authority": "business_facts_not_brand_override",
+          "status": "known",
+          "text": "时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。",
+          "scope": {
+            "kind": "business_material",
+            "metadata": {}
+          }
+        }
+      ],
+      "selection_audit": {
+        "version": "task-materials-2.0.0",
+        "selected": [
+          {
+            "source_id": "materials.related_info",
+            "reason": "本次活动问题：event_experience",
+            "selected_text": "时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。",
+            "source_text": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+            "start": 48,
+            "end": 94,
+            "transformation": "exact_source_text"
+          }
+        ],
+        "selected_source_ids": [
+          "materials.related_info"
+        ],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.2",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.empty_weight_g",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.price",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.capacity",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "writing.rules",
+          "task.scenario",
+          "task.advisor_instruction",
+          "computed.calendar.1",
+          "chat.t1"
+        ],
+        "full_source_count": 85,
+        "selected_fact_count": 1,
+        "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+      },
+      "generation_usage": {
+        "prompt_tokens": 1691,
+        "completion_tokens": 341,
+        "total_tokens": 2032,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 923
+      },
+      "review_usage": {
+        "prompt_tokens": 28099,
+        "completion_tokens": 1202,
+        "total_tokens": 29301,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 16451
+      },
+      "independent_opinion": "第一二条聚焦看收纳演示和自由体验，原先多余的同行称呼、登记以及时间地点清单已消失。这里的上手体验就是客户问的活动内容，不是把到店当回答前提。第三条“几款日行包和三款怎么用”语义混乱、分类不清，应润色；不能认同原无效复核文本把这句说成与目录一致。本次复核JSON缺括号，未形成可采纳结论；没有补括号、重请求或强行交付。",
+      "old_generation_message_characters": 59581
+    },
+    {
+      "case_id": "N44",
+      "chunk": 1,
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+        "related_info": "",
+        "advisor_instruction": "结合她的用途帮她判断。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N44",
+        "conversation_id": "business-v2-chat-N44",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "raw_record": "raw_runs/dd38cf7146f84fe4b27e5f348c197bed.json",
+      "record_app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "messages": [
+        "理解您的顾虑，轻行肩包是12,800元，确实不算随手买的小件。不过从您说的用途看，它正好合适——容量就是放普通手机和钥匙这类随身小物，日常轻装出门不用背大包。如果您平时基本上只带这些，它算是对得上需求的选择；如果哪天要装水杯、雨伞，就得再考虑一下。",
+        "您这个用法其实和它很匹配。轻行肩包容量是放普通手机、钥匙，日常轻装刚好，不会空荡荡。价格是12,800元，比您预期高一些我理解，贵主要不在容量大，而在它轻便好带。只看日常这两样的话，它是合适的；要不要再看看，您也不用急着定。",
+        "日常只带手机和钥匙的话，轻行肩包是合适的，它容量就是这两样随身小物，轻装出门正好。价格12,800元，确实比您想的高一点，这点我不绕。您可以按自己平时的出门习惯衡量：如果多数时候就这些，它够用也顺手；偶尔要装别的东西，我们就再看别的款。"
+      ],
+      "initial_status": "error",
+      "initial_error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "model_review": "needs_review",
+      "review_parse_error": null,
+      "review_validation_errors": [],
+      "final_offline_status": "error",
+      "final_offline_error": {
+        "code": "policy_check",
+        "message": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。",
+        "retryable": false
+      },
+      "final_validator": "0.18.2",
+      "generation_count": 1,
+      "review_count": 1,
+      "generation_message_characters": 2578,
+      "selected_facts": [
+        {
+          "source_id": "product.P02.capacity",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放普通手机、钥匙",
+          "scope": {
+            "product_id": "P02",
+            "product_name": "轻行肩包",
+            "field": "capacity"
+          }
+        },
+        {
+          "source_id": "product.P02.price",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "12,800元",
+          "scope": {
+            "product_id": "P02",
+            "product_name": "轻行肩包",
+            "field": "price"
+          }
+        }
+      ],
+      "selection_audit": {
+        "version": "task-materials-2.0.0",
+        "selected": [
+          {
+            "source_id": "product.P02.capacity",
+            "reason": "回答当前capacity",
+            "selected_text": "可放普通手机、钥匙",
+            "source_text": "可放普通手机、钥匙、口红等小物",
+            "start": null,
+            "end": null,
+            "transformation": "select_supported_items_matching_current_use"
+          },
+          {
+            "source_id": "product.P02.price",
+            "reason": "回答当前price",
+            "selected_text": "12,800元",
+            "source_text": "12,800元",
+            "start": null,
+            "end": null,
+            "transformation": "exact_source_text"
+          }
+        ],
+        "selected_source_ids": [
+          "product.P02.capacity",
+          "product.P02.price"
+        ],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.2",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.empty_weight_g",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "writing.rules",
+          "task.scenario",
+          "task.advisor_instruction",
+          "chat.t1"
+        ],
+        "full_source_count": 83,
+        "selected_fact_count": 2,
+        "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+      },
+      "generation_usage": {
+        "prompt_tokens": 1907,
+        "completion_tokens": 424,
+        "total_tokens": 2331,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1139
+      },
+      "review_usage": {
+        "prompt_tokens": 28869,
+        "completion_tokens": 2065,
+        "total_tokens": 30934,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 17221
+      },
+      "independent_opinion": "仍未达目标。第一条末尾“如果哪天要装水杯、雨伞”新增需求，且“如果您平时基本上只带这些”重复客户已说用途。第二条“贵主要不在容量大，而在它轻便好带”编定价原因，应拦；“不会空荡荡”也是无必要感受推测。第三条“这点我不绕”是自述，“按自己…衡量”“再看别的款”把判断交回客户并加换款。三条共同保留价格和手机钥匙容量足够；本次原文不删改。复核抓到定价错误合理，未因此宣称其所有编辑理由都正确。",
+      "old_generation_message_characters": 56523
+    },
+    {
+      "case_id": "N26",
+      "chunk": 2,
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+        "related_info": "",
+        "advisor_instruction": "给她安全、好操作的处理建议。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N26",
+        "conversation_id": "business-v2-chat-N26",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "raw_record": "raw_runs/3f7e337031a04329b18d5cc2ba1b8e84.json",
+      "record_app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "messages": [
+        "您好，这瓶清洁剂先别用，成分不清楚的话，我们也不建议先在角落试。您能拍一下瓶身标签或成分表给我吗？我这边交给售后同事看一下，再告诉您合不合适、怎么处理。在那之前，先用干的软布把表面的浮尘轻轻擦掉就好。",
+        "先别急着上那瓶清洁剂哦。成分不明的话，包括在角落先试，我们也不建议。方便的话把瓶子的标签或成分信息发我，我请售后帮您判断能不能用在卡夹上，再给您稳妥的处理方式。现在可以先用干软布轻轻拂一下污渍表面。",
+        "成分不知道的清洁剂，先都不要用，也别先在角落小范围试。麻烦您拍一下那瓶的标签或成分表发我，我转给售后看过后告诉您能不能用、该怎么清。眼下先用干净软布干擦表面，别沾水也别用力搓。"
+      ],
+      "initial_status": "error",
+      "initial_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "model_review": "needs_review",
+      "review_parse_error": null,
+      "review_validation_errors": [
+        {
+          "code": "contradictory_editing",
+          "message": "建议删除不能同时认为删后漏答或误导",
+          "candidate_index": 1
+        },
+        {
+          "code": "contradictory_editing",
+          "message": "建议删除不能同时认为删后漏答或误导",
+          "candidate_index": 2
+        },
+        {
+          "code": "issue_source_type",
+          "message": "判错依据的类型与候选断言不符",
+          "candidate_index": 0,
+          "source_id": "writing.rules"
+        },
+        {
+          "code": "issue_source_type",
+          "message": "判错依据的类型与候选断言不符",
+          "candidate_index": 1,
+          "source_id": "writing.rules"
+        },
+        {
+          "code": "issue_source_type",
+          "message": "判错依据的类型与候选断言不符",
+          "candidate_index": 2,
+          "source_id": "writing.rules"
+        }
+      ],
+      "final_offline_status": "error",
+      "final_offline_error": {
+        "code": "policy_check",
+        "message": "当前为污渍与未知清洁剂咨询，没有本案去渍操作依据；沾水吸干不能授权干擦或拂擦污渍。",
+        "retryable": false
+      },
+      "final_validator": "0.18.2",
+      "generation_count": 1,
+      "review_count": 1,
+      "generation_message_characters": 2346,
+      "selected_facts": [
+        {
+          "source_id": "policy.5",
+          "kind": "brand_policy",
+          "authority": "brand",
+          "status": "known",
+          "text": "成分未知的清洁剂先不要使用，也不要先在角落试用。"
+        }
+      ],
+      "selection_audit": {
+        "version": "task-materials-2.1.0",
+        "selected": [
+          {
+            "source_id": "policy.5",
+            "reason": "回答清洁剂能否使用",
+            "selected_text": "成分未知的清洁剂先不要使用，也不要先在角落试用。",
+            "source_text": "## 5. 售后与保养\n\n为了简化评测，以下退换规则只描述本项目的虚构门店购买场景。购买渠道不明或涉及其他渠道时，先核实，不直接套用。这是本资料的覆盖范围，不代表品牌只支持门店退换或其他渠道没有售后。\n\n| 事项 | v0.4规则 | 顾问的表达边界 |\n| --- | --- | --- |\n| 未使用商品退换 | 门店购买后，自购买次日起算7个自然日内，商品未使用、标牌及原包装齐全、有购买凭证，可申请退货或换货；最终需门店检查确认 | 信息齐全时可说“按现有信息，符合申请条件”；不能保证立即批准或指定退款到账日 |\n| 条件不全或超过7日 | 不直接承诺适用上述未使用商品退换规则；可以协助核实后续处理方式 | 不说“随时可退”；也不在资料不全时直接下结论 |\n| 质量或损坏问题 | 由售后查看情况并评估处理；不能只因为超过7日就拒绝核实质量问题 | 可询问问题表现、购买记录，建议提供局部照片；不先断言是客户使用不当 |\n| 维修 | 是否能修、是否收费、费用和周期均需售后评估并告知客户，再由客户决定 | 不承诺免费维修、终身保修、修复如新或固定天数完成 |\n| 日常保养 | 避免长时间淋雨；沾水后用干燥软布轻轻吸干，在通风处自然晾干 | 不建议酒精擦拭、烘干或自行使用成分未知的清洁剂，也不建议先在角落试用未知清洁剂；不保证永不掉色、永不划伤 |\n\n例：虚构订单在2026-11-01购买，次日11-02为第1日，第7日为11-08。判断时必须有购买日期及本次评估日期；日期缺失时先核实。退换申请资格与是否存在质量问题分开判断。\n\n顾问通常只需说明与客户当前问题有关的规则，不把整张政策表发给客户。已提交售后的客户问单号或进度，先利用已有记录；工具没带入旧问题不是请客户重新描述故障的理由。缺失内部记录由顾问查询，不假称已查，也不让客户重复已给信息。轻微沾水可结合已知保养步骤作一般性安抚，不把无明显异常一律升级送修；未查看实物仍不作绝对无损或永不需修的诊断。\n\n",
+            "start": null,
+            "end": null,
+            "transformation": "negative_care_permission_from_policy"
+          }
+        ],
+        "selected_source_ids": [
+          "policy.5"
+        ],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.2",
+          "policy.3",
+          "policy.4",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.empty_weight_g",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.price",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.capacity",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "writing.rules",
+          "task.scenario",
+          "task.advisor_instruction",
+          "chat.t1"
+        ],
+        "full_source_count": 83,
+        "selected_fact_count": 1,
+        "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+      },
+      "generation_usage": {
+        "prompt_tokens": 1816,
+        "completion_tokens": 416,
+        "total_tokens": 2232,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1048
+      },
+      "review_usage": {
+        "prompt_tokens": 28747,
+        "completion_tokens": 2148,
+        "total_tokens": 30895,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 17099
+      },
+      "independent_opinion": "每条前段停用未知清洁剂、别角落试、发标签交售后都应保留，这是必要提醒。三条尾部各自加了无据干擦/拂擦处理，不能采用；原输入是污渍，不是浮尘。模型note还把未取入的材质写成未知，实际品牌材质已知，应区分取材范围与事实状态。复核指出处理越界合理，但“干擦与停用清洁剂自相矛盾”不是严谨理由：两者是不同动作，真正问题是本案没有去渍操作依据。复核又将remove配成misleads并用writing.rules授权政策错误理由，程序正确发现其自身不一致。0.18.2本地共用检查已拦住无据去渍；未重生成。",
+      "old_generation_message_characters": 58979
+    },
+    {
+      "case_id": "N21",
+      "chunk": 2,
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+        "related_info": "",
+        "advisor_instruction": "接住她的到店意向，帮她安排下一步。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N21",
+        "conversation_id": "business-v2-chat-N21",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "raw_record": "raw_runs/2cb8debd6133466b940a20212ed2039d.json",
+      "record_app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "messages": [],
+      "initial_status": "needs_advisor",
+      "initial_error": {
+        "code": "advisor_input",
+        "message": "模型识别到需要顾问处理的资料缺口，未生成客户消息。",
+        "retryable": false
+      },
+      "model_review": null,
+      "review_parse_error": null,
+      "review_validation_errors": null,
+      "final_offline_status": "error",
+      "final_offline_error": {
+        "code": "invalid_advisor_request",
+        "message": "当前正文完整，可以回复承接后续业务核实；模型把业务核实误当作导入原资料缺口，未采用这次待办。",
+        "retryable": false
+      },
+      "final_validator": "0.18.2",
+      "generation_count": 1,
+      "review_count": 0,
+      "generation_message_characters": 2444,
+      "selected_facts": [
+        {
+          "source_id": "product.P02.colors",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "墨黑",
+          "scope": {
+            "product_id": "P02",
+            "product_name": "轻行肩包",
+            "field": "colors"
+          }
+        }
+      ],
+      "selection_audit": {
+        "version": "task-materials-2.1.0",
+        "selected": [
+          {
+            "source_id": "product.P02.colors",
+            "reason": "回答当前colors",
+            "selected_text": "墨黑",
+            "source_text": "墨黑、米白",
+            "start": null,
+            "end": null,
+            "transformation": "requested_catalog_color_only"
+          }
+        ],
+        "selected_source_ids": [
+          "product.P02.colors"
+        ],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.2",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.empty_weight_g",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.price",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.capacity",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "writing.rules",
+          "task.scenario",
+          "task.advisor_instruction",
+          "chat.t1"
+        ],
+        "full_source_count": 83,
+        "selected_fact_count": 1,
+        "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+      },
+      "generation_usage": {
+        "prompt_tokens": 1817,
+        "completion_tokens": 205,
+        "total_tokens": 2022,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1049
+      },
+      "review_usage": null,
+      "independent_opinion": "没有输出，属于生成器任务就绪判断错误。现有正文足以回复承接核库存及能否预留，不应让顾问为了工具先完成外部业务核实。原needs_advisor保留，没有编三条替代，也没有对空消息调用复核。0.18.2增加业务跟进回复路由：确有当前正文且前置就绪时，严格接口只接收ready三字段，其他接口本地也拒绝错误内部待办；此新路由只做本地验证，没有追加真实请求来证明已改善。",
+      "old_generation_message_characters": 59515
+    },
+    {
+      "case_id": "X01",
+      "chunk": 2,
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想送同事一个卡夹，她平时带四张银行卡。随行卡夹多少钱，装得下吗？",
+        "related_info": "",
+        "advisor_instruction": "回复客户当前这句话。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "focused-generation-advisor",
+        "customer_id": "new-X01",
+        "conversation_id": "new-chat-X01",
+        "preferences": "",
+        "marketing_opt_out": false,
+        "profile_revision": 0
+      },
+      "raw_record": "raw_runs/e0912cbc33624b9585bc2b2c487078ea.json",
+      "record_app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "messages": [
+        "随行卡夹是2,800元，有4个独立卡位，放4张标准银行卡大小的卡正好，给同事日常带卡用挺合适的。",
+        "随行卡夹2,800元。它是4个独立卡位，能放4张标准银行卡大小的卡片，您同事四张卡刚够用，不用担心装不下。",
+        "您好，随行卡夹售价2,800元；容量上是4个独立卡位，可放4张标准银行卡大小的卡片，四张银行卡正好放满，送同事日常用很合适。"
+      ],
+      "initial_status": "success",
+      "initial_error": null,
+      "model_review": "pass",
+      "review_parse_error": null,
+      "review_validation_errors": [],
+      "final_offline_status": "success",
+      "final_offline_error": null,
+      "final_validator": "0.18.2",
+      "generation_count": 1,
+      "review_count": 1,
+      "generation_message_characters": 2691,
+      "selected_facts": [
+        {
+          "source_id": "product.P03.capacity",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "有4个独立卡位，可放4张标准银行卡大小的卡片",
+          "scope": {
+            "product_id": "P03",
+            "product_name": "随行卡夹",
+            "field": "capacity"
+          }
+        },
+        {
+          "source_id": "product.P03.price",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "2,800元",
+          "scope": {
+            "product_id": "P03",
+            "product_name": "随行卡夹",
+            "field": "price"
+          }
+        }
+      ],
+      "selection_audit": {
+        "version": "task-materials-2.1.0",
+        "selected": [
+          {
+            "source_id": "product.P03.capacity",
+            "reason": "回答当前capacity",
+            "selected_text": "有4个独立卡位，可放4张标准银行卡大小的卡片",
+            "source_text": "有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物",
+            "start": null,
+            "end": null,
+            "transformation": "card_capacity_clause"
+          },
+          {
+            "source_id": "product.P03.price",
+            "reason": "回答当前price",
+            "selected_text": "2,800元",
+            "source_text": "2,800元",
+            "start": null,
+            "end": null,
+            "transformation": "exact_source_text"
+          }
+        ],
+        "selected_source_ids": [
+          "product.P03.capacity",
+          "product.P03.price"
+        ],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.2",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.empty_weight_g",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.price",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.capacity",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "writing.rules",
+          "task.scenario",
+          "task.advisor_instruction",
+          "chat.t1"
+        ],
+        "full_source_count": 83,
+        "selected_fact_count": 2,
+        "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+      },
+      "generation_usage": {
+        "prompt_tokens": 1913,
+        "completion_tokens": 296,
+        "total_tokens": 2209,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1145
+      },
+      "review_usage": {
+        "prompt_tokens": 27454,
+        "completion_tokens": 1216,
+        "total_tokens": 28670,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 15806
+      },
+      "independent_opinion": "价格与四张卡均答清，无额外追问、无护照手机零钱限制。第一条相对最自然；第二条“不用担心装不下”重复答案，可省。第三条“四张银行卡正好放满”不如直接说能放四张简洁，但未编尺寸、取用效率或卡位结构收益。内部note中的零钱/票据补充无必要，不应成为下一句客户消息。三条功能接近对这个简单问题可以接受，不必添三种销售动作。"
+    },
+    {
+      "case_id": "X02",
+      "chunk": 2,
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "两周前在门店买了日行托特包。",
+        "conversation": "客户：这个包这阵子背着挺顺手的，谢谢你上次帮我选。",
+        "related_info": "",
+        "advisor_instruction": "回复客户当前这句话。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "focused-generation-advisor",
+        "customer_id": "new-X02",
+        "conversation_id": "new-chat-X02",
+        "preferences": "",
+        "marketing_opt_out": false,
+        "profile_revision": 0
+      },
+      "raw_record": "raw_runs/91b3785816df437393e91c453cc5a2db.json",
+      "record_app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "messages": [
+        "看到您背着顺手我就放心了，谢谢您特意来跟我说一声～用着有什么想调整的随时找我。",
+        "不客气，最开心就是听到您说用着顺手。日行托特包能陪您日常出门就好，之后有需要随时喊我。",
+        "真好，这阵子背着顺心比什么都强。谢谢您上次信任我，慢慢用，有想法再聊。"
+      ],
+      "initial_status": "success",
+      "initial_error": null,
+      "model_review": "pass",
+      "review_parse_error": null,
+      "review_validation_errors": [],
+      "final_offline_status": "success",
+      "final_offline_error": null,
+      "final_validator": "0.18.2",
+      "generation_count": 1,
+      "review_count": 1,
+      "generation_message_characters": 1980,
+      "selected_facts": [],
+      "selection_audit": {
+        "version": "task-materials-2.1.0",
+        "selected": [],
+        "selected_source_ids": [],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.2",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.empty_weight_g",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.price",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.capacity",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "writing.rules",
+          "task.scenario",
+          "task.advisor_instruction",
+          "background.client_info",
+          "chat.t1"
+        ],
+        "full_source_count": 84,
+        "selected_fact_count": 0,
+        "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+      },
+      "generation_usage": {
+        "prompt_tokens": 1656,
+        "completion_tokens": 238,
+        "total_tokens": 1894,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 888
+      },
+      "review_usage": {
+        "prompt_tokens": 27623,
+        "completion_tokens": 1079,
+        "total_tokens": 28702,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 15975
+      },
+      "independent_opinion": "事实与任务层面可用：没有护理清单、商品卖点或新问题。语气仍有编辑空间：第一条“我就放心了”和“有什么想调整的随时找我”，第二条“随时喊我”，第三条“比什么都强”“慢慢用”均可省或调整。三条末尾仍习惯性留一个后续入口，所以不能凭pass宣布已做到答完即停；这属于非阻断编辑，不改原文也不重抽。"
+    }
+  ]
+}

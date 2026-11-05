@@ -1,0 +1,1075 @@
+[
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/96f512a2473b4dbe80e158634f16cf61.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N25_96f512a2473b4dbe80e158634f16cf61.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/f6e1782ef64f49028388d355aa845b2e.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N41_f6e1782ef64f49028388d355aa845b2e.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/b68bf44c554242c0b78a909f9fc1d8be.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N40_b68bf44c554242c0b78a909f9fc1d8be.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/9fef96447d354b92958826bbafc74fc1.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N49_9fef96447d354b92958826bbafc74fc1.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/7928cbf823664f37b0332335011c23f0.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N09_7928cbf823664f37b0332335011c23f0.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/9b9e0a133eb94b6abbc9a6638836525f.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N48_9b9e0a133eb94b6abbc9a6638836525f.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/1ebbb56f698044739e1044213a6e6a6d.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N43_1ebbb56f698044739e1044213a6e6a6d.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/f57895d879c84495a6dc9975a3290969.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N18_f57895d879c84495a6dc9975a3290969.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/d4a51378d1894c2f9e30f09cd8fa9c01.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N23_d4a51378d1894c2f9e30f09cd8fa9c01.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/62edb8914314485ba394a01efd8c96a1.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N08_62edb8914314485ba394a01efd8c96a1.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/f0036493f0844b2e83faeacc818d3abd.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N13_f0036493f0844b2e83faeacc818d3abd.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/3f7272a4aca9495f981ba940a14eb96d.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N19_3f7272a4aca9495f981ba940a14eb96d.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/652cd79cb3a64bafb1f1185e5aca8d72.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N12_652cd79cb3a64bafb1f1185e5aca8d72.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/0d584a1ad90249b9ab1e47c3f389614c.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N42_0d584a1ad90249b9ab1e47c3f389614c.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/b507f5f5e1a5457ca5eb733a742c9df3.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N01_b507f5f5e1a5457ca5eb733a742c9df3.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/d38003772a094f1a965d0cbe98bae981.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N11_d38003772a094f1a965d0cbe98bae981.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/6c8f81209e8e475ab14d395420f71737.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N34_6c8f81209e8e475ab14d395420f71737.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/4c9a1ff48a654b0a9cd3284f702893c7.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N05_4c9a1ff48a654b0a9cd3284f702893c7.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/c75f65ab743e4b36a74d607cd8e76945.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N35_c75f65ab743e4b36a74d607cd8e76945.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/81550b62b83a4d2a91d8b4a2617cc275.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N47_81550b62b83a4d2a91d8b4a2617cc275.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/0b19732c414047d0816343d7462f6d80.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N22_0b19732c414047d0816343d7462f6d80.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/82bdf19117834ea891d1e500bde92089.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N20_82bdf19117834ea891d1e500bde92089.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/ea8e708399f34a1bb0dcf5e00d4e6447.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N28_ea8e708399f34a1bb0dcf5e00d4e6447.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/fa5350b006f84b06a3bb5a10792d11ee.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N24_fa5350b006f84b06a3bb5a10792d11ee.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/6230ec42ce3b4911af483d2a4d31f80a.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N32_6230ec42ce3b4911af483d2a4d31f80a.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/38c70301b4544320b778872aec0b4077.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N45_38c70301b4544320b778872aec0b4077.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/a6d3ca0e5afc4ad9916cc4079abc76f7.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N36_a6d3ca0e5afc4ad9916cc4079abc76f7.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/e62c0ac11be4412a8fe343bf050a6b0d.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N39_e62c0ac11be4412a8fe343bf050a6b0d.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/eef441c2c5c644e0b182d6e1f8bde4a0.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N26_eef441c2c5c644e0b182d6e1f8bde4a0.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/cdaa286cb58d435c96c510b1afd3cfb2.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N46_cdaa286cb58d435c96c510b1afd3cfb2.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/ebb5d01a3b5b4bc3badc3c8246541e84.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N21_ebb5d01a3b5b4bc3badc3c8246541e84.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/56444651bb0b4846ad2380d354348571.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N02_56444651bb0b4846ad2380d354348571.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/84a45bacfe51421a99425bb549fad03e.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N17_84a45bacfe51421a99425bb549fad03e.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/160c8acff6c643fe97ba5a68e1ad0f9c.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N29_160c8acff6c643fe97ba5a68e1ad0f9c.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/3abfef81ef5c4f0e9eccbf40dea135e4.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N33_3abfef81ef5c4f0e9eccbf40dea135e4.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/2fbb8d7989c44867a86315789a636278.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N38_2fbb8d7989c44867a86315789a636278.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/96992d391cdd410a86f34b6d387736cd.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N31_96992d391cdd410a86f34b6d387736cd.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/8641571e1fdf420ea387d671b5b49640.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N03_8641571e1fdf420ea387d671b5b49640.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/365c6df8c95e48f3a494a677bc0b5686.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N27_365c6df8c95e48f3a494a677bc0b5686.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/03f0b01eecde4216ae019530b20a9da4.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N04_03f0b01eecde4216ae019530b20a9da4.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/16eaaf77cb30487d950624d59bda6551.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N44_16eaaf77cb30487d950624d59bda6551.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/96fa313340304ebf8403c86e7b23b00e.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N07_96fa313340304ebf8403c86e7b23b00e.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/230db9c262b349d4812a92b4b85efd20.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N06_230db9c262b349d4812a92b4b85efd20.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/ac8d1401a23a4d08b30d98e071629aee.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N14_ac8d1401a23a4d08b30d98e071629aee.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/f1c3acaf16264e3cb72c8fcc4ad8c38d.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N16_f1c3acaf16264e3cb72c8fcc4ad8c38d.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/raw_runs/6c68ad92bec543b0a77151f37ca063a4.json",
+    "canonical": "appendix/outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N15_6c68ad92bec543b0a77151f37ca063a4.json",
+    "reason": "byte-identical original run already included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N19_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N20_first_review_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N18_writing_first_review_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N18_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N28_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N26_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N48_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N46_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N18_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N29_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N46_first_review_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N18_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N39_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N24_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N12_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N27_first_review_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N32_first_review_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N48_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N26_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N12_first_review_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N46_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N42_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N21_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N20_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N27_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N32_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N20_first_review_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N42_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N32_first_review_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N46_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N26_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N21_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N24_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N27_first_review_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N42_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N29_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N39_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N29_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N24_writing_v0162.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N48_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N21_writing_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N39_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N46_first_review_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N09_offline.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/local/N12_first_review_v0162_final.json",
+    "canonical": "appendix/outputs/targeted_fix_v0.16.0_2026-11-04/RESULTS.json",
+    "reason": "intermediate duplicate diagnostic; source retained in project, final result and current derivative included"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/90c6937b2ae2488b987ac95c6aa5ba18.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/90c6937b2ae2488b987ac95c6aa5ba18.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/80bd863110904cc4a0de8862947413eb.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/80bd863110904cc4a0de8862947413eb.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/02efe329da09467b92fbc8a770e8f63b.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/02efe329da09467b92fbc8a770e8f63b.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/ecf953ac32584ee59f8461377e9922cd.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/ecf953ac32584ee59f8461377e9922cd.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/524364909a2242ac8f04c5247cf28f91.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/524364909a2242ac8f04c5247cf28f91.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/0cc8f20e36c44bfa978b4dadb9f3998b.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/0cc8f20e36c44bfa978b4dadb9f3998b.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/2d01e974f4d54d3484ba4346d975f10d.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/2d01e974f4d54d3484ba4346d975f10d.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/39144e0a9a0b4f17bf3541afd665802e.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/39144e0a9a0b4f17bf3541afd665802e.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/b2d9cbeaa0dd4294ad66238feb1c4cc3.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/b2d9cbeaa0dd4294ad66238feb1c4cc3.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/d76ea1f514c24f0d9db970f2624a4aa6.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/d76ea1f514c24f0d9db970f2624a4aa6.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/d28cac04d85b4ffab22ea3d0a2b7213e.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/d28cac04d85b4ffab22ea3d0a2b7213e.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/787a3b0f49ea483daff0a48d374848ca.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/787a3b0f49ea483daff0a48d374848ca.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/7b2d6f0b35b84152a595c89951df2338.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/7b2d6f0b35b84152a595c89951df2338.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/386ef191e0014432a763d1a9f721859f.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/386ef191e0014432a763d1a9f721859f.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/c4510894f2024f6db3de8ea7e3c17d03.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/c4510894f2024f6db3de8ea7e3c17d03.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/2795dab9b6f94896890d81eeb5b23dda.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/2795dab9b6f94896890d81eeb5b23dda.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/a5367904f24542558690f1ba188304b4.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/a5367904f24542558690f1ba188304b4.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/c19068daf78c4531b07087c90ad69b2f.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/c19068daf78c4531b07087c90ad69b2f.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/b05df16a48e8459390e33c25dc1aa4e2.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/b05df16a48e8459390e33c25dc1aa4e2.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/23b909c9d1aa4302b0fe326f87384d57.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/23b909c9d1aa4302b0fe326f87384d57.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/3f30cb7bf1b14b3489096f81b81a10a6.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/3f30cb7bf1b14b3489096f81b81a10a6.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/5d9c7d80292840378d28cdc8f48b7416.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/5d9c7d80292840378d28cdc8f48b7416.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/98fca3ddecb6493cbc98cb845a40fa84.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/98fca3ddecb6493cbc98cb845a40fa84.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/d4631097b36645a8bdd501611792b84a.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/d4631097b36645a8bdd501611792b84a.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/200ccdbc9d134c1db24102005f6e11fc.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/200ccdbc9d134c1db24102005f6e11fc.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/c2ffec0a547b44b1ab6ee1cad29d7a3d.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/c2ffec0a547b44b1ab6ee1cad29d7a3d.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/e94be1d1e56249e489d483251351bd3e.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/e94be1d1e56249e489d483251351bd3e.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/28d3de5a74e24c5d992700eb69e9da90.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/28d3de5a74e24c5d992700eb69e9da90.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/79805da2981546dba082ed7f744bb357.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/79805da2981546dba082ed7f744bb357.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/8927626c48d244fa95b3bbc2b14de267.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/8927626c48d244fa95b3bbc2b14de267.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/c7702ce63d214d13a425d2eeac455b6f.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/c7702ce63d214d13a425d2eeac455b6f.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/0e39bdedb54d41d39c3b52fb851fb735.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/0e39bdedb54d41d39c3b52fb851fb735.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/42c445fa56c04c959a25dc3f4830ada0.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/42c445fa56c04c959a25dc3f4830ada0.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/f473a22f8da04f5f99014b95d1b42058.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/f473a22f8da04f5f99014b95d1b42058.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/e45e6542e5df40e1bbfb7e04a659e6a7.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/e45e6542e5df40e1bbfb7e04a659e6a7.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/d124678c16dc400f9f8bbf01db2e6d93.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/d124678c16dc400f9f8bbf01db2e6d93.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/c963ce299c504448af1b866cb16861d0.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/c963ce299c504448af1b866cb16861d0.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/8bd4a52bdfc44614b097b5200fde8ff5.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/8bd4a52bdfc44614b097b5200fde8ff5.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/f77d8512cb264f86a019f46f01e13eac.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/f77d8512cb264f86a019f46f01e13eac.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/95672f9fb7d84d16bcb200ec4ae472fc.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/95672f9fb7d84d16bcb200ec4ae472fc.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/523f23a61e9a48dba6345ad837cb7aa5.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/523f23a61e9a48dba6345ad837cb7aa5.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/d5202b0c521643c4b1299a47eeebbff0.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/d5202b0c521643c4b1299a47eeebbff0.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/b0095489474241ca94bc385f228d878c.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/b0095489474241ca94bc385f228d878c.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/ebef7da546b24c05bf465ce7f8ac565a.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/ebef7da546b24c05bf465ce7f8ac565a.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/65ad48e7e0a84b4da2557efb822234a2.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/65ad48e7e0a84b4da2557efb822234a2.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/856c08a22e434779962f2e4640e5df68.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/856c08a22e434779962f2e4640e5df68.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/86f9276e2da241b48f28900b78217951.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/86f9276e2da241b48f28900b78217951.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/42823f34c05946ffadaeef80a1b550b0.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/42823f34c05946ffadaeef80a1b550b0.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/66557af9fd99416e8b525236bdf1389a.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/66557af9fd99416e8b525236bdf1389a.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/baseline_raw/532619f47f544246bcbdba0b9fb59dcb.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/baseline_raw/532619f47f544246bcbdba0b9fb59dcb.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/followup_v0.12.1/results.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/followup_v0.12.1/results.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/followup_v0.12.1/raw_runs/21df634ec6d04cfe98b3aab02a6691ed.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/followup_v0.12.1/raw_runs/21df634ec6d04cfe98b3aab02a6691ed.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_2026-11-03/followup_v0.12.1/raw_runs/adb672d8bf044d70a4dd836c6f87f498.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_2026-11-03/followup_v0.12.1/raw_runs/adb672d8bf044d70a4dd836c6f87f498.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/1ee674f26aec4a60b07958ab9f6781c0.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/1ee674f26aec4a60b07958ab9f6781c0.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/d51c48f1fa1b4523a943112fe86ae61d.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/d51c48f1fa1b4523a943112fe86ae61d.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/1079028cfcde4ee6bb1ba7d00d48b9f9.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/1079028cfcde4ee6bb1ba7d00d48b9f9.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/f2d1ed5f18724a73bb392b821f22fcc1.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/f2d1ed5f18724a73bb392b821f22fcc1.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/459fcb808be24fd5b8c30de5b7b1883f.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/459fcb808be24fd5b8c30de5b7b1883f.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/f281b37366fb42f49ab2409b39bfe16f.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/f281b37366fb42f49ab2409b39bfe16f.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/977f7faeca7c47e6b53a9b46c0dfd94a.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/977f7faeca7c47e6b53a9b46c0dfd94a.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/cfbf46793d88476eb976cf4abb327233.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/cfbf46793d88476eb976cf4abb327233.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/814acb690ce545739799fc46b025109c.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/814acb690ce545739799fc46b025109c.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/54efe7a0cfa74b4e9346314f20eb6b44.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/54efe7a0cfa74b4e9346314f20eb6b44.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/a47b8c6e004b4b31bad48fc5fb552ce1.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/a47b8c6e004b4b31bad48fc5fb552ce1.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/5080f85e08be414db85c63fb1a89f245.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/5080f85e08be414db85c63fb1a89f245.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/a657ce81057740b3891ff6fdfa85e719.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/a657ce81057740b3891ff6fdfa85e719.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/b849bf6bab13478393574bc4c0906b9a.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/b849bf6bab13478393574bc4c0906b9a.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/4354c8c6ac1947baa4ee6462b92b67ac.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/4354c8c6ac1947baa4ee6462b92b67ac.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/3ab82ccd60f844e8abf66d39bba8069b.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/3ab82ccd60f844e8abf66d39bba8069b.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/5072eb5bf2504185bfde581c3b15517e.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/5072eb5bf2504185bfde581c3b15517e.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/fc572f83dc8e4e44b494104754495ee9.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/fc572f83dc8e4e44b494104754495ee9.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/c6cf02d7b5c34c9ca95560cc0dfd8a30.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/c6cf02d7b5c34c9ca95560cc0dfd8a30.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/e12dcb5de4ed440e9bea6ccd1b4a4af7.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/e12dcb5de4ed440e9bea6ccd1b4a4af7.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/6e1e3f02a623493180f24ec30cd20b5f.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/6e1e3f02a623493180f24ec30cd20b5f.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/26cce63daddd4bb3931209c9e0a25341.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/26cce63daddd4bb3931209c9e0a25341.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/a4c179adb2314441b7212c0e6b91ce26.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/a4c179adb2314441b7212c0e6b91ce26.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/87807f8669b64d2ca3325286b1ddc16a.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/87807f8669b64d2ca3325286b1ddc16a.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/30a169b3d8d74bd5b0282f1a4171e3bf.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/30a169b3d8d74bd5b0282f1a4171e3bf.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/fea9b6d0a5274290aa176a3333f7be4e.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/fea9b6d0a5274290aa176a3333f7be4e.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/3dbc2b7430e84d62a017d071c2fddda6.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/3dbc2b7430e84d62a017d071c2fddda6.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/51c634acd6d04268ab6fab1ae2d5d9f8.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/51c634acd6d04268ab6fab1ae2d5d9f8.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/b0c9e5da59fb4b3ba9172b6bc74f1bbd.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/b0c9e5da59fb4b3ba9172b6bc74f1bbd.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/8d3267daa70f4a259285698eec88d20f.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/8d3267daa70f4a259285698eec88d20f.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/92953d47d4bd402a84dd7629ebeb7988.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/92953d47d4bd402a84dd7629ebeb7988.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/2b22b05be2664ef9b205132264bbbad1.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/2b22b05be2664ef9b205132264bbbad1.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/5c19cc24deb949828738d099cca37b61.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/5c19cc24deb949828738d099cca37b61.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/3fb86bcbfa4b4c8190a76580d329273a.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/3fb86bcbfa4b4c8190a76580d329273a.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/97eae9e2fb44469bab3357350d3e9ea2.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/97eae9e2fb44469bab3357350d3e9ea2.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/b95b5c167aa347b1ae9840d1ea954e11.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/b95b5c167aa347b1ae9840d1ea954e11.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/3f47b543b1ab4aeb941c38fb8470dd2b.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/3f47b543b1ab4aeb941c38fb8470dd2b.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/57bb8840d7e24696929800745e82f2d1.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/57bb8840d7e24696929800745e82f2d1.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/a312c1f043904f949c209d19ec04251c.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/a312c1f043904f949c209d19ec04251c.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/2fbd954e104e4084b103d2a9169a64b7.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/2fbd954e104e4084b103d2a9169a64b7.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/a11c932de82243abb4007c318bf41e99.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/a11c932de82243abb4007c318bf41e99.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/995768a8acc14e26bad1728af3a0e024.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/995768a8acc14e26bad1728af3a0e024.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/137a8539318f4f59af1c6278bbcfd730.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/137a8539318f4f59af1c6278bbcfd730.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/2a01c9d3c6304599a7f246ebf26ede1c.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/2a01c9d3c6304599a7f246ebf26ede1c.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/1cec4523a85443a6a5eb86f5522ab622.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/1cec4523a85443a6a5eb86f5522ab622.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/b26496f507124597a1118994d00d3ffc.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/b26496f507124597a1118994d00d3ffc.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/18117c1726884123ae0977f7b93dce9d.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/18117c1726884123ae0977f7b93dce9d.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/af034b6d09b042419f545001273781b9.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/af034b6d09b042419f545001273781b9.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/f9b765657613426097259368acfd2f48.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/f9b765657613426097259368acfd2f48.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  },
+  {
+    "path": "appendix/outputs/formal50_rerun_v0.13.6_2026-11-04/raw_runs/d5cbf587e9f143a287efb94660a14544.json",
+    "archive": "appendix/RETIRED_F_EXPERIMENT_RAW.tar.xz",
+    "member": "formal50_rerun_v0.13.6_2026-11-04/raw_runs/d5cbf587e9f143a287efb94660a14544.json",
+    "reason": "retired F dataset provider raw; scores and original150 stay directly readable"
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "case_id": "N09",
+    "status": "success",
+    "error": null,
+    "issues": [],
+    "review_errors": [],
+    "focus": [
+      "P03"
+    ]
+  },
+  {
+    "case_id": "N12",
+    "status": "error",
+    "error": {
+      "code": "missing_original_review",
+      "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+      "retryable": false
+    },
+    "issues": [],
+    "review_errors": null,
+    "focus": []
+  },
+  {
+    "case_id": "N20",
+    "status": "error",
+    "error": {
+      "code": "missing_original_review",
+      "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+      "retryable": false
+    },
+    "issues": [],
+    "review_errors": null,
+    "focus": [
+      "P01"
+    ]
+  },
+  {
+    "case_id": "N27",
+    "status": "error",
+    "error": {
+      "code": "missing_original_review",
+      "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+      "retryable": false
+    },
+    "issues": [],
+    "review_errors": null,
+    "focus": [
+      "P02"
+    ]
+  },
+  {
+    "case_id": "N28",
+    "status": "success",
+    "error": null,
+    "issues": [],
+    "review_errors": [],
+    "focus": [
+      "P02"
+    ]
+  },
+  {
+    "case_id": "N32",
+    "status": "error",
+    "error": {
+      "code": "missing_original_review",
+      "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+      "retryable": false
+    },
+    "issues": [],
+    "review_errors": null,
+    "focus": []
+  },
+  {
+    "case_id": "N39",
+    "status": "error",
+    "error": {
+      "code": "policy_check",
+      "message": "活动资料没有支持这项排除安排；可以介绍已知体验，不能从未提及推成明确不提供。",
+      "retryable": false
+    },
+    "issues": [
+      {
+        "code": "unsupported_event_exclusion",
+        "candidate_index": 1,
+        "evidence": "不讲皮具知识",
+        "message": "活动资料没有支持这项排除安排；可以介绍已知体验，不能从未提及推成明确不提供。"
+      }
+    ],
+    "review_errors": [
+      {
+        "code": "source_domain_mismatch",
+        "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+        "candidate_index": 0,
+        "source_id": "product.P01.capacity",
+        "claim_domains": [
+          "event"
+        ],
+        "source_domains": [
+          "product"
+        ]
+      },
+      {
+        "code": "source_domain_mismatch",
+        "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+        "candidate_index": 0,
+        "source_id": "product.P02.capacity",
+        "claim_domains": [
+          "event"
+        ],
+        "source_domains": [
+          "product"
+        ]
+      },
+      {
+        "code": "source_domain_mismatch",
+        "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+        "candidate_index": 0,
+        "source_id": "product.P03.capacity",
+        "claim_domains": [
+          "event"
+        ],
+        "source_domains": [
+          "product"
+        ]
+      },
+      {
+        "code": "source_domain_mismatch",
+        "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+        "candidate_index": 1,
+        "source_id": "product.P01.capacity",
+        "claim_domains": [
+          "event"
+        ],
+        "source_domains": [
+          "product"
+        ]
+      },
+      {
+        "code": "source_domain_mismatch",
+        "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+        "candidate_index": 1,
+        "source_id": "product.P02.capacity",
+        "claim_domains": [
+          "event"
+        ],
+        "source_domains": [
+          "product"
+        ]
+      },
+      {
+        "code": "source_domain_mismatch",
+        "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+        "candidate_index": 1,
+        "source_id": "product.P03.card_slots",
+        "claim_domains": [
+          "event"
+        ],
+        "source_domains": [
+          "product"
+        ]
+      }
+    ],
+    "focus": []
+  },
+  {
+    "case_id": "N18",
+    "status": "error",
+    "error": {
+      "code": "invalid_review",
+      "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+      "retryable": false
+    },
+    "issues": [],
+    "review_errors": [
+      {
+        "code": "issue_source_type",
+        "message": "漏答应指向任务或客户问题，不是任意商品字段",
+        "candidate_index": 0,
+        "source_id": "product.P01.limitations"
+      },
+      {
+        "code": "issue_source_type",
+        "message": "漏答应指向任务或客户问题，不是任意商品字段",
+        "candidate_index": 0,
+        "source_id": "writing.rules"
+      }
+    ],
+    "focus": [
+      "P01"
+    ]
+  },
+  {
+    "case_id": "N19",
+    "status": "success",
+    "error": null,
+    "issues": [],
+    "review_errors": [],
+    "focus": [
+      "P03"
+    ]
+  },
+  {
+    "case_id": "N21",
+    "status": "success",
+    "error": null,
+    "issues": [],
+    "review_errors": [],
+    "focus": [
+      "P02"
+    ]
+  },
+  {
+    "case_id": "N24",
+    "status": "success",
+    "error": null,
+    "issues": [],
+    "review_errors": [],
+    "focus": [
+      "P01"
+    ]
+  },
+  {
+    "case_id": "N26",
+    "status": "success",
+    "error": null,
+    "issues": [],
+    "review_errors": [],
+    "focus": [
+      "P03"
+    ]
+  },
+  {
+    "case_id": "N29",
+    "status": "success",
+    "error": null,
+    "issues": [],
+    "review_errors": [],
+    "focus": [
+      "P02"
+    ]
+  },
+  {
+    "case_id": "N42",
+    "status": "error",
+    "error": {
+      "code": "missing_original_generation",
+      "message": "原记录没有可校验的生成结构；不补写或重新生成。",
+      "retryable": false
+    },
+    "issues": [],
+    "review_errors": null,
+    "focus": []
+  },
+  {
+    "case_id": "N46",
+    "status": "error",
+    "error": {
+      "code": "missing_original_review",
+      "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+      "retryable": false
+    },
+    "issues": [],
+    "review_errors": null,
+    "focus": [
+      "P03"
+    ]
+  },
+  {
+    "case_id": "N48",
+    "status": "error",
+    "error": {
+      "code": "invalid_review",
+      "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+      "retryable": false
+    },
+    "issues": [],
+    "review_errors": [
+      {
+        "code": "contradictory_review_verdict",
+        "message": "pass不能同时包含待处理问题"
+      },
+      {
+        "code": "missing_authoritative_check",
+        "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+        "candidate_index": 0,
+        "domains": [
+          "pricing"
+        ]
+      }
+    ],
+    "focus": [
+      "P03"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+test_explicit_registered_owner_and_conversation (test_workbench_start_api.WorkbenchExamplesTests.test_explicit_registered_owner_and_conversation) ... ok
+test_no_registry_does_not_guess_examples_by_name (test_workbench_start_api.WorkbenchExamplesTests.test_no_registry_does_not_guess_examples_by_name) ... ok
+test_other_customer_cannot_be_mapped_by_same_name (test_workbench_start_api.WorkbenchExamplesTests.test_other_customer_cannot_be_mapped_by_same_name) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.026s
+
+OK

@@ -1,0 +1,26 @@
+{
+  "app_version": "0.18.2",
+  "url": "http://127.0.0.1:8765/",
+  "http_status": 200,
+  "model_status": {
+    "state": "unverified",
+    "message": "已配置，尚未验证连接",
+    "model": "deepseek-flash",
+    "host": "api.deepseek.com",
+    "app_version": "0.18.2"
+  },
+  "normal_service": {
+    "pid": 37516,
+    "url": "http://127.0.0.1:8765/",
+    "app_version": "0.18.2",
+    "mode": "normal-app-no-acceptance-caps",
+    "started_at": "2026-11-05T12:41:32.098724+00:00",
+    "log": "/Users/tonylyu/Documents/ChatGPT/artefact笔试/artifacts/normal_service_v0.18.2.log",
+    "keep_running_explicitly_requested": true
+  },
+  "workspace_db_before": "92df2857d488d4c310737547e7beecc236f2dffc766abb8eb0791ef1458aad12",
+  "workspace_db_after": "92df2857d488d4c310737547e7beecc236f2dffc766abb8eb0791ef1458aad12",
+  "workspace_db_unchanged": true,
+  "new_model_requests": 0,
+  "kept_running": true
+}

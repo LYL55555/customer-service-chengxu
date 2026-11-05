@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "N49",
+    "original_status": "error",
+    "revalidated_status": "success",
+    "error": null,
+    "original_messages_preserved": true,
+    "original_review_preserved": true,
+    "model_calls": 0
+  },
+  {
+    "case_id": "N43",
+    "original_status": "success",
+    "revalidated_status": "error",
+    "error": {
+      "code": "policy_check",
+      "message": "客户问后续活动，这条没有回答后续安排或承接核实；介绍本场活动、泛泛以后再联系不能代替。",
+      "retryable": false
+    },
+    "original_messages_preserved": true,
+    "original_review_preserved": true,
+    "model_calls": 0
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "order": [
+    "N16",
+    "N44",
+    "J01",
+    "J02"
+  ],
+  "cases": [
+    {
+      "case_id": "N16",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "平时通勤带A4资料和一瓶水。",
+        "conversation": "客户：我每天走路二十分钟，托特装东西会不会太沉？",
+        "related_info": "",
+        "advisor_instruction": "结合她的使用情况帮她判断。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N16",
+        "conversation_id": "business-v2-chat-N16",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "previous_source": "outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N16_f1c3acaf16264e3cb72c8fcc4ad8c38d.json",
+      "mode": "review_saved",
+      "purpose": "按修正尺度复核原三条，独立处理原复核格式错误，不重新生成",
+      "source_record": "outputs/final_five_v0.19.0_2026-11-05/raw_runs/4c36d123c9c74355a1b38bfcff8de5f1.json"
+    },
+    {
+      "case_id": "N44",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+        "related_info": "",
+        "advisor_instruction": "结合她的用途帮她判断。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N44",
+        "conversation_id": "business-v2-chat-N44",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "previous_source": "outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N44_16eaaf77cb30487d950624d59bda6551.json",
+      "mode": "generate",
+      "purpose": "验证按用途给判断，减少内部自述与额外比较任务"
+    },
+    {
+      "case_id": "J01",
+      "mode": "generate",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "上下班坐地铁，平时包里就是一份A4资料和一瓶500毫升的水。",
+        "conversation": "客户：从地铁站到公司得走个一刻钟，这只托特天天背会不会费劲？",
+        "related_info": "",
+        "advisor_instruction": "结合她日常携带和步行的情况回答，已经选定日行托特包。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {},
+      "purpose": "未进入写作示例的新问法：负重判断"
+    },
+    {
+      "case_id": "J02",
+      "mode": "generate",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "想找一只下班买咖啡、周末出门时用的小包，喜欢低调。",
+        "conversation": "客户：一万二千八比我预想的高。要是就装手机钥匙，平时出门背它合不合适？",
+        "related_info": "",
+        "advisor_instruction": "围绕她现在的日常用途帮她判断。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {},
+      "purpose": "未进入写作示例的新问法：嫌贵但用途合适"
+    }
+  ],
+  "max_generations": 3,
+  "max_reviews": 4,
+  "max_requests": 7,
+  "auto_retries": 0,
+  "no_formal50": true,
+  "packaging_paused": true,
+  "new_questions_fixed_before_prompt_change": true
+}

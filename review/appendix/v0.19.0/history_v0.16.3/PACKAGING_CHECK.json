@@ -1,0 +1,26 @@
+{
+  "app_version": "0.16.3",
+  "files": 324,
+  "review_after_unzip": {
+    "relative_links_checked": 63,
+    "broken_links": 0,
+    "eight_columns": true,
+    "cases": 50,
+    "original_messages_exact": 150,
+    "video_container_valid": true,
+    "source_matches_clean_started_zip": true
+  },
+  "old_protected_hashes_unchanged": 1220,
+  "key_env_runtime_db_original_brief_excluded": true,
+  "application": "runnable; two revisions and protocol compatibility passed",
+  "submission": "manual AI development chat screenshots and native paste confirmation still outstanding",
+  "formal50_replaced": false,
+  "model_requests_this_turn": 4,
+  "auto_retries": 0,
+  "native_paste_verified": false,
+  "ai_chat_screenshots_complete": false,
+  "log_rows": 259,
+  "current_tool": "http://127.0.0.1:8765/",
+  "current_review": "http://127.0.0.1:8770/",
+  "note": "已完成解压检查；本文件不包含归档自身hash，以避免自引用；外部CHECK文件给最终zip哈希"
+}

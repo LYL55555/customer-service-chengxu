@@ -1,0 +1,1995 @@
+{
+  "baseline": "formal-business-v2-baseline-0.15.1",
+  "app_version": "0.15.1",
+  "dataset": "business-realistic-v2.0",
+  "planned_cases": 50,
+  "executed_cases": 4,
+  "unexecuted_cases": 46,
+  "completed": false,
+  "gate": {
+    "baseline_id": "formal-business-v2-baseline-0.15.1",
+    "app_version": "0.15.1",
+    "checked_at": "2026-11-04T21:55:59.409691+00:00",
+    "baseline_sha256": "1cdb26b3449c897e14f873996cfaa9d1558f53156f3d091112d6c48a7facc551",
+    "first_batch": [
+      "N10",
+      "N30",
+      "N37",
+      "N50"
+    ],
+    "continue_same_version": false,
+    "stop_reason": "systematic_normal_answer_false_block",
+    "blocking_cases": [
+      "N30"
+    ],
+    "diagnosis": "本客户售后评估单提供450元、预计10个工作日；三条正确转述，复核pass且引用该单。程序将有效业务/订单资料排除service域，导致missing_authoritative_check。",
+    "minor_findings_not_stop_reasons": [
+      "N10可省的厚壳尾句与复核过度解释",
+      "N37邀请过长、重复索已知称呼",
+      "N37候选2将两款包及卡夹统称三款包，轻微分类错误",
+      "N50略书面目录用语"
+    ],
+    "remaining_cases_not_called": 46,
+    "automatic_retries": 0,
+    "no_best_of_rounds": true
+  },
+  "cases": [
+    {
+      "case_id": "N01",
+      "title": "生日短祝福",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "林女士，今天生日，平时喜欢简短的微信。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "今天给林女士发个生日祝福。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N01",
+        "conversation_id": "business-v2-chat-N01",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "简短、称呼自然，祝福答完可结束",
+        "不强塞商品、问题或档案操作"
+      ],
+      "basis": [
+        "task.scenario",
+        "background.client_info",
+        "policy.7"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N02",
+      "title": "出差中的生日",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "郑先生，今天生日；前天说这周在外地出差。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给郑先生送个不打扰他的生日祝福。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N02",
+        "conversation_id": "business-v2-chat-N02",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "可以结合忙碌出差体贴祝愿，不编目的地或实际庆祝安排",
+        "不要求补行程资料"
+      ],
+      "basis": [
+        "background.client_info",
+        "policy.7"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N03",
+      "title": "熟悉客户的自然生日祝福",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "赵女士，今天生日，和顾问聊过几次日常穿搭，平时交流比较轻松。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给赵女士发个自然一点的生日祝福。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N03",
+        "conversation_id": "business-v2-chat-N03",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "轻松得体，不装过分亲密",
+        "不编年龄、家庭和礼物"
+      ],
+      "basis": [
+        "background.client_info",
+        "policy.7"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N04",
+      "title": "生日祝福后的承接",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "顾问刚给许女士发生日祝福。",
+        "conversation": "客户：谢谢呀，今天还得加班😂",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "接着她这句话回一下。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N04",
+        "conversation_id": "business-v2-chat-N04",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "接住加班和感谢，不重发一篇首次生日祝词",
+        "不继续追问工作或推销"
+      ],
+      "basis": [
+        "chat",
+        "background.client_info"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N05",
+      "title": "已购客户的生日",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "陈女士，今天生日；上个月买过轻行肩包。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "今天给她发生日祝福。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N05",
+        "conversation_id": "business-v2-chat-N05",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "生日是当前任务，已购记录不必硬用",
+        "不把祝福变成包袋关怀或邀请"
+      ],
+      "basis": [
+        "background.client_info",
+        "policy.7"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N06",
+      "title": "正式一些的新年问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "周先生，平时喜欢礼貌、简洁的沟通；门店安排本次新春问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给周先生发个新春祝福。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N06",
+        "conversation_id": "business-v2-chat-N06",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "对应新春，礼貌但不像公文",
+        "祝愿不当作已发生生活事实，不虚构赠礼"
+      ],
+      "basis": [
+        "background.client_info",
+        "task.scenario"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N07",
+      "title": "中秋问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "何女士，本次是门店中秋问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给何女士发句中秋祝福。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N07",
+        "conversation_id": "business-v2-chat-N07",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "是中秋祝福，不套生日",
+        "一般祝愿不需要家庭档案，不编具体团聚行程"
+      ],
+      "basis": [
+        "background.client_info",
+        "task.scenario"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N08",
+      "title": "轻松的圣诞问候",
+      "input": {
+        "scenario": "生日及节日问候",
+        "client_info": "孙女士，平时聊微信比较轻松；本次是圣诞节问候。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给孙女士发个简短的节日祝福。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N08",
+        "conversation_id": "business-v2-chat-N08",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "节日正确、自然、不夹营销",
+        "不推断宗教或家庭身份"
+      ],
+      "basis": [
+        "background.client_info",
+        "task.scenario"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N09",
+      "title": "已选卡夹，问价格和四张卡",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想给同事送个小礼物，她平时就带四张银行卡。随行卡夹多少钱？放得下吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "回复她这两个问题。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N09",
+        "conversation_id": "business-v2-chat-N09",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "2800元，四个独立卡位，四张标准银行卡能放",
+        "客户已选品，不问方向、不扩写取用好处或其他物品限制"
+      ],
+      "basis": [
+        "product.P03.price",
+        "product.P03.card_slots",
+        "product.P03.capacity"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N10",
+      "title": "手机型号与斜挎",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：轻行肩包能斜挎吗？我用的是iPhone 15 Pro Max，手机能放进去吗？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "回复她关于背法和放手机的问题。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N10",
+        "conversation_id": "business-v2-chat-N10",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "查官方型号表，区分裸机与手机壳",
+        "可斜挎、肩带可调；结合资料作通常够放的日常判断",
+        "不让客户量手机，不把到店变前提，不声称官方认证适配"
+      ],
+      "basis": [
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.capacity",
+        "product.P02.dimensions_cm",
+        "device.apple.iphone_15_pro_max"
+      ],
+      "execution": "executed",
+      "messages": [
+        "轻行肩包可以斜挎，肩带长度也能调节。您这款iPhone 15 Pro Max按裸机尺寸看通常够放，普通薄壳一般也放得下。",
+        "可以的，轻行肩包支持肩背和斜挎，肩带可调节长度。iPhone 15 Pro Max放进去通常没问题，日常薄壳也一般够放；特别厚的壳或外接配件就不太好确定。",
+        "轻行肩包能斜挎，肩带可以调长短。iPhone 15 Pro Max的尺寸放进去是够的，普通薄壳通常也没问题。"
+      ],
+      "record": {
+        "case_id": "N10",
+        "phase": "first",
+        "input": {
+          "scenario": "商品推荐",
+          "client_info": "",
+          "conversation": "客户：轻行肩包能斜挎吗？我用的是iPhone 15 Pro Max，手机能放进去吗？",
+          "related_info": "",
+          "product_ids": [
+            "P02"
+          ],
+          "advisor_instruction": "回复她关于背法和放手机的问题。"
+        },
+        "run_id": "f119b6ae0e20432690a75416516fe621",
+        "raw_record": "raw_runs/f119b6ae0e20432690a75416516fe621.json",
+        "raw_sha256": "922b2145eb56056dc3121fa77fcab9a17344ac7f8ce2aaad205a4be7e4962151",
+        "program_status": "success",
+        "error": null,
+        "messages": [
+          "轻行肩包可以斜挎，肩带长度也能调节。您这款iPhone 15 Pro Max按裸机尺寸看通常够放，普通薄壳一般也放得下。",
+          "可以的，轻行肩包支持肩背和斜挎，肩带可调节长度。iPhone 15 Pro Max放进去通常没问题，日常薄壳也一般够放；特别厚的壳或外接配件就不太好确定。",
+          "轻行肩包能斜挎，肩带可以调长短。iPhone 15 Pro Max的尺寸放进去是够的，普通薄壳通常也没问题。"
+        ],
+        "review_verdict": "pass",
+        "review_issues": [],
+        "review_validation_errors": [],
+        "policy_checks": [],
+        "generation_requested": true,
+        "review_requested": true
+      },
+      "assessment": {
+        "fact_status": "事实有据，三条均独立回答斜挎与型号容量",
+        "fact_issues": [],
+        "program_false_block": null,
+        "review_errors": [
+          "复核称删除候选2的厚壳尾句会扩大为所有壳保证，但前文已经限定通常、日常薄壳；必要性解释过重，未造成阻断"
+        ],
+        "candidates": [
+          {
+            "keep": "斜挎、可调、该型号及普通薄壳通常够放",
+            "polish": "“按裸机尺寸看”可更口语，核心回答已完整",
+            "reason": "依据同一设备查询与P02；没有要求客户量手机或到店",
+            "original": "轻行肩包可以斜挎，肩带长度也能调节。您这款iPhone 15 Pro Max按裸机尺寸看通常够放，普通薄壳一般也放得下。"
+          },
+          {
+            "keep": "先答斜挎与通常容量",
+            "polish": "“特别厚的壳或外接配件就不太好确定”可省",
+            "reason": "客户没提这些配件，前文通常和日常薄壳已限定范围；不是事实错或强制到店",
+            "original": "可以的，轻行肩包支持肩背和斜挎，肩带可调节长度。iPhone 15 Pro Max放进去通常没问题，日常薄壳也一般够放；特别厚的壳或外接配件就不太好确定。"
+          },
+          {
+            "keep": "背法与手机容量两问均答清",
+            "polish": "可按语气选择，当前日常表达不等于所有壳实测保证",
+            "reason": "复核以polish建议更保守说法，未阻断；开发者不认为必须每条再加限定",
+            "original": "轻行肩包能斜挎，肩带可以调长短。iPhone 15 Pro Max的尺寸放进去是够的，普通薄壳通常也没问题。"
+          }
+        ],
+        "case_id": "N10",
+        "reviewer": "AI开发者对照原始资料，非真人顾问或独立盲评",
+        "version": "developer-review-v2-baseline-1.0",
+        "raw_record": "raw_runs/f119b6ae0e20432690a75416516fe621.json",
+        "raw_sha256": "922b2145eb56056dc3121fa77fcab9a17344ac7f8ce2aaad205a4be7e4962151"
+      }
+    },
+    {
+      "case_id": "N11",
+      "title": "通勤包开放推荐",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想买个上班背的包，平时带A4文件、水杯和小雨伞，别太张扬。你觉得哪款合适？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "按她日常带的东西推荐。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N11",
+        "conversation_id": "business-v2-chat-N11",
+        "profile_revision": 1,
+        "preferences": "喜欢暖棕，偏好小标识。",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "推荐有A4、水杯、伞用途依据的托特",
+        "复用暖棕偏好，不重问全部需求或预算"
+      ],
+      "basis": [
+        "product.P01.capacity",
+        "product.P01.price",
+        "profile.preferences",
+        "policy.2"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N12",
+      "title": "周末轻装",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：周末出门就手机钥匙，不想背大包，有合适的吗？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给一个适合轻装出门的建议。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N12",
+        "conversation_id": "business-v2-chat-N12",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "结合少量物品推荐肩包并给必要价格信息",
+        "不追加电脑、A4或长钱包风险清单"
+      ],
+      "basis": [
+        "product.P02.capacity",
+        "product.P02.price"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N13",
+      "title": "给导师的低调小礼物",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想送导师一个低调的小礼物，不要太抢眼，有什么建议？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "先给她一个合适的商品建议。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N13",
+        "conversation_id": "business-v2-chat-N13",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "结合小礼物和低调设计推荐卡夹，说明价格与相关特点",
+        "不编礼盒、刻字或导师喜好，不强迫先填预算"
+      ],
+      "basis": [
+        "product.P03.capacity",
+        "product.P03.price",
+        "policy.2"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N14",
+      "title": "暖棕托特与深色衣服",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：托特有棕色的吗？我衣服基本都是深色。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "回答颜色，顺便帮她判断一下搭配。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N14",
+        "conversation_id": "business-v2-chat-N14",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "目录暖棕有依据，可作适度搭配建议",
+        "目录颜色不等于现货，不保证百搭"
+      ],
+      "basis": [
+        "product.P01.colors",
+        "policy.2"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N15",
+      "title": "两款重量比较",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：肩包和托特哪个轻一点？",
+        "related_info": "",
+        "product_ids": [
+          "P01",
+          "P02"
+        ],
+        "advisor_instruction": "直接比较一下。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N15",
+        "conversation_id": "business-v2-chat-N15",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "肩包约420克，托特约750克，均为空包",
+        "不扩成装物后总重或舒适保证"
+      ],
+      "basis": [
+        "product.P01.empty_weight_g",
+        "product.P02.empty_weight_g"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N16",
+      "title": "步行通勤担心重量",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "平时通勤带A4资料和一瓶水。",
+        "conversation": "客户：我每天走路二十分钟，托特装东西会不会太沉？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "结合她的使用情况帮她判断。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N16",
+        "conversation_id": "business-v2-chat-N16",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "用空包750克与已知物品说明取舍，不编装载总重",
+        "试背是有用的可选帮助，不把所有判断推回客户"
+      ],
+      "basis": [
+        "product.P01.empty_weight_g",
+        "background.client_info",
+        "chat"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N17",
+      "title": "小包能否放A4",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "顾问：昨天看的轻行肩包，您还想了解哪一点？\n客户：它能放A4吗？偶尔要拿几页材料。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "回答她的容量问题。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N17",
+        "conversation_id": "business-v2-chat-N17",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "解析它指肩包，明确不放A4",
+        "有资料需求时可提托特，不问客户重复商品名"
+      ],
+      "basis": [
+        "product.P02.a4_fit",
+        "product.P01.capacity"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N18",
+      "title": "厚文件夹适配",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：我那个文件夹挺厚，日行托特装资料会不会挤？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "先回答已知的，再说还需要什么。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N18",
+        "conversation_id": "business-v2-chat-N18",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "A4纸用途已知，厚文件夹需要针对尺寸",
+        "不保证厚夹能装，也不要求补整套档案"
+      ],
+      "basis": [
+        "product.P01.capacity",
+        "product.P01.dimensions_cm",
+        "product.P01.limitations"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N19",
+      "title": "卡片和几个硬币",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：随行卡夹有零钱袋吗？我想卡和几个硬币一起放。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "说明它的收纳结构就行。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N19",
+        "conversation_id": "business-v2-chat-N19",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "四个卡位、无单独零钱袋",
+        "不补各有固定位置的需求，不代替客户判用法不合适，不加自述尾句"
+      ],
+      "basis": [
+        "product.P03.card_slots",
+        "product.P03.coin_pocket"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N20",
+      "title": "材质与内衬",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：这款皮看着细细的，是牛皮吗？里面是什么材质？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "回答材质和内衬。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N20",
+        "conversation_id": "business-v2-chat-N20",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "包身哑光细纹牛皮，内衬棉布",
+        "不编皮革等级、产地、全手工或耐用年限"
+      ],
+      "basis": [
+        "product.P01.material",
+        "product.P01.lining"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N21",
+      "title": "到店前想留黑色肩包",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "接住她的到店意向，帮她安排下一步。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N21",
+        "conversation_id": "business-v2-chat-N21",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "黑色目录有依据，库存及预留由顾问向门店确认",
+        "未来协助不说成已经留好，不另问已经给出的款式"
+      ],
+      "basis": [
+        "product.P02.colors",
+        "policy.4"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N22",
+      "title": "长聊天里转向上班用途",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "顾问：您昨天看的轻行肩包，还想了解什么？\n客户：这两天换了项目，现在还得带文件去公司。\n顾问：平时会带哪些东西？\n客户：A4和水杯基本天天带，包别太花。\n客户：那还是帮我看看上班用的吧，预算两万以内。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "按现在的需求推荐，接着聊。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N22",
+        "conversation_id": "business-v2-chat-N22",
+        "profile_revision": 1,
+        "preferences": "喜欢墨黑、小标识。",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "当前通勤需求和两万预算优先，推荐托特18800",
+        "复用墨黑偏好与已说物品，不继续肩包或重问预算"
+      ],
+      "basis": [
+        "chat",
+        "profile.preferences",
+        "product.P01.capacity",
+        "product.P01.price"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N23",
+      "title": "卡夹购后问候",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "周女士，两周前在门店买了随行卡夹。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "发个简短的购后问候，看看用着怎么样。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N23",
+        "conversation_id": "business-v2-chat-N23",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "依据真实已购卡夹问使用感受",
+        "不重讲卡位参数，不编出现故障"
+      ],
+      "basis": [
+        "background.client_info"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N24",
+      "title": "接住正面使用反馈",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上周在门店买过日行托特包。",
+        "conversation": "客户：托特这几天背着还不错，里面的小袋子刚好放钥匙。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "接着她的反馈回一句。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N24",
+        "conversation_id": "business-v2-chat-N24",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "自然接住使用反馈",
+        "不再介绍平口袋参数、强找问题或推荐下一款"
+      ],
+      "basis": [
+        "chat",
+        "background.client_info"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N25",
+      "title": "沾雨后的下一步",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：昨天下雨包沾了点水，我用纸巾擦过了，现在要怎么处理？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "告诉她现在怎么处理。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N25",
+        "conversation_id": "business-v2-chat-N25",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "给通风自然晾干等相关已知步骤",
+        "不编纸巾已损伤皮面，不默认送修、不搬整份保养表"
+      ],
+      "basis": [
+        "policy.5",
+        "chat"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N26",
+      "title": "家用清洁剂咨询",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "给她安全、好操作的处理建议。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N26",
+        "conversation_id": "business-v2-chat-N26",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "不建议自行试用成分未知清洁剂，包括角落试用",
+        "可最少索取瓶身或污渍照片交售后，不扩成淋雨步骤"
+      ],
+      "basis": [
+        "policy.5",
+        "chat"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N27",
+      "title": "复用售后进度记录",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上次说帮我看拉链的事，有进展了吗？",
+        "related_info": "虚构售后记录CX-1102：轻行肩包拉链问题；门店2026-11-03已收件，目前售后检测中，尚无费用和完成时间结论。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "根据已有售后记录回她。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N27",
+        "conversation_id": "business-v2-chat-N27",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "复用收件和检测状态，不让客户重说故障",
+        "不虚构刚查过、修好、费用或期限"
+      ],
+      "basis": [
+        "materials.related_info",
+        "policy.5"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N28",
+      "title": "未用肩包想换色",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上周买的肩包还没用，想换成米白，能换吗？",
+        "related_info": "虚构门店订单：2026-11-01购买轻行肩包；本次业务日期2026-11-04。顾问已核对未使用、标牌和原包装齐全、有购买凭证，商品尚待门店检查。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "根据订单和已核对情况回复。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N28",
+        "conversation_id": "business-v2-chat-N28",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "计算仍在申请期，说明可申请换色而非已批准",
+        "不用重问已核对标牌凭证，不保证米白库存"
+      ],
+      "basis": [
+        "materials.related_info",
+        "policy.5",
+        "product.P02.colors"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N29",
+      "title": "拉链卡顿担心坏了",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上个月在门店买过轻行肩包。",
+        "conversation": "客户：这两天总觉得肩包拉链有点卡，会不会坏了？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "接住她的担心，给个能开始处理的办法。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N29",
+        "conversation_id": "business-v2-chat-N29",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "症状不当诊断；可收局部视频或交售后查看",
+        "不先认定质量问题、使用责任或免费维修"
+      ],
+      "basis": [
+        "policy.5",
+        "chat"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N30",
+      "title": "转达已评估的维修费用",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上次你说要评估，现在费用出来了吗？",
+        "related_info": "虚构售后单CX-1030，属于本客户轻行肩包。售后2026-11-04评估可维修，报价450元，预计10个工作日；客户尚未同意维修，尚未开修。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "把这次售后的评估结果告诉她。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N30",
+        "conversation_id": "business-v2-chat-N30",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "转达本单450元和预计周期，帮助客户决定",
+        "不把本单报价变通用政策，不声称已同意或已开始维修"
+      ],
+      "basis": [
+        "materials.related_info",
+        "policy.5"
+      ],
+      "execution": "executed",
+      "messages": [
+        "您好，轻行肩包的维修评估结果已经出来了：可以维修，报价450元，预计10个工作日。您之前还没确认，所以目前还没有开修。",
+        "费用已经出来了，售后评估这只轻行肩包可以维修，报价是450元，预计需要10个工作日。是否维修您再考虑，确认后我再帮您安排。",
+        "上次的评估有结果了：轻行肩包可以修，维修费用450元，预计10个工作日。包目前还没开始修，您决定要修的话跟我说一声。"
+      ],
+      "record": {
+        "case_id": "N30",
+        "phase": "first",
+        "input": {
+          "scenario": "购后关怀",
+          "client_info": "",
+          "conversation": "客户：上次你说要评估，现在费用出来了吗？",
+          "related_info": "虚构售后单CX-1030，属于本客户轻行肩包。售后2026-11-04评估可维修，报价450元，预计10个工作日；客户尚未同意维修，尚未开修。",
+          "product_ids": [
+            "P02"
+          ],
+          "advisor_instruction": "把这次售后的评估结果告诉她。"
+        },
+        "run_id": "06612298ba8449fab6a2bee8d94bf71d",
+        "raw_record": "raw_runs/06612298ba8449fab6a2bee8d94bf71d.json",
+        "raw_sha256": "64592c8424294a27886746c0d19c80e9ceea3b7d9c87c48f7cc2bb920c8c1a28",
+        "program_status": "error",
+        "error": {
+          "code": "invalid_review",
+          "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+          "retryable": false
+        },
+        "messages": [
+          "您好，轻行肩包的维修评估结果已经出来了：可以维修，报价450元，预计10个工作日。您之前还没确认，所以目前还没有开修。",
+          "费用已经出来了，售后评估这只轻行肩包可以维修，报价是450元，预计需要10个工作日。是否维修您再考虑，确认后我再帮您安排。",
+          "上次的评估有结果了：轻行肩包可以修，维修费用450元，预计10个工作日。包目前还没开始修，您决定要修的话跟我说一声。"
+        ],
+        "review_verdict": "pass",
+        "review_issues": [],
+        "review_validation_errors": [
+          {
+            "code": "missing_authoritative_check",
+            "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+            "candidate_index": 0,
+            "domains": [
+              "service"
+            ]
+          },
+          {
+            "code": "missing_authoritative_check",
+            "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+            "candidate_index": 1,
+            "domains": [
+              "service"
+            ]
+          },
+          {
+            "code": "missing_authoritative_check",
+            "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+            "candidate_index": 2,
+            "domains": [
+              "service"
+            ]
+          }
+        ],
+        "policy_checks": [],
+        "generation_requested": true,
+        "review_requested": true
+      },
+      "assessment": {
+        "fact_status": "三条均准确转述本客户售后评估，核心已答",
+        "fact_issues": [],
+        "program_false_block": "missing_authoritative_check：有效本单业务资料未被赋予service域，三条正常回答整组被误拦",
+        "review_errors": [],
+        "candidates": [
+          {
+            "keep": "可维修、450元、预计10工作日、尚未开修",
+            "polish": "“您之前还没确认，所以”略像归责，可弱化",
+            "reason": "事实均有本客户售后单；“您好”无客户称呼时可接受",
+            "original": "您好，轻行肩包的维修评估结果已经出来了：可以维修，报价450元，预计10个工作日。您之前还没确认，所以目前还没有开修。"
+          },
+          {
+            "keep": "费用与周期、客户决定后再安排",
+            "polish": "“是否维修您再考虑”可按关系语气简化，不必阻断",
+            "reason": "未来安排不是已开修；这里需要客户决定，下一步有实际用途",
+            "original": "费用已经出来了，售后评估这只轻行肩包可以维修，报价是450元，预计需要10个工作日。是否维修您再考虑，确认后我再帮您安排。"
+          },
+          {
+            "keep": "评估结果、费用与预计周期、未开修状态",
+            "polish": "“您决定要修的话跟我说一声”是合理协助，可保留",
+            "reason": "不是习惯性无关提问，实际维修需要客户同意",
+            "original": "上次的评估有结果了：轻行肩包可以修，维修费用450元，预计10个工作日。包目前还没开始修，您决定要修的话跟我说一声。"
+          }
+        ],
+        "case_id": "N30",
+        "reviewer": "AI开发者对照原始资料，非真人顾问或独立盲评",
+        "version": "developer-review-v2-baseline-1.0",
+        "raw_record": "raw_runs/06612298ba8449fab6a2bee8d94bf71d.json",
+        "raw_sha256": "64592c8424294a27886746c0d19c80e9ceea3b7d9c87c48f7cc2bb920c8c1a28"
+      }
+    },
+    {
+      "case_id": "N31",
+      "title": "已购卡夹客户久未互动",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "陈女士，三个月前买过随行卡夹，上次微信互动也是当时。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "轻松问候一下，也可以问问卡夹用着怎么样。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N31",
+        "conversation_id": "business-v2-chat-N31",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "已购与联系间隔有记录，可自然接续",
+        "不责问没来，不重讲参数或编新品"
+      ],
+      "basis": [
+        "background.client_info"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N32",
+      "title": "看过暖棕款的客户",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "孙女士，上次到店看过暖棕款，后来没有继续聊。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "简单问候，重新接上联系。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N32",
+        "conversation_id": "business-v2-chat-N32",
+        "profile_revision": 1,
+        "preferences": "喜欢暖棕，交流喜欢简短。",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "普通问候可开始，不硬塞颜色偏好",
+        "看过不等于买过，不问之前那只包用得如何"
+      ],
+      "basis": [
+        "background.client_info",
+        "profile.preferences"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N33",
+      "title": "客户说最近忙",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "顾问刚发过轻量问候。",
+        "conversation": "客户：最近工作有点忙，等忙完再去店里看看。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "体谅她现在忙，回一句。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N33",
+        "conversation_id": "business-v2-chat-N33",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "接住忙碌，给空间",
+        "不追具体到店时间、不加促销或问原因"
+      ],
+      "basis": [
+        "chat"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N34",
+      "title": "客户重新问卡夹是否在售",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "",
+        "conversation": "客户：好久没去，你们那个随行卡夹还在卖吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "直接回她这款的信息。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N34",
+        "conversation_id": "business-v2-chat-N34",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "当前目录商品可说明在售，价格可简短补充",
+        "在售不是实时有货，不重问什么卡夹"
+      ],
+      "basis": [
+        "product.P03.price",
+        "product.P03.capacity",
+        "policy.4"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N35",
+      "title": "接续线下审美偏好",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "何女士上次到店说不喜欢大标识，喜欢不用刻意搭配的款式。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "温和重新联系，问问她最近有没有选包的打算。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N35",
+        "conversation_id": "business-v2-chat-N35",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "以已有关系轻问近期需求即可",
+        "不编已购、新品到货或库存，不要求先填档案"
+      ],
+      "basis": [
+        "background.client_info",
+        "task.scenario"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N36",
+      "title": "按约定时间续聊通勤包",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "姜女士10月中旬聊过通勤包，当时说11月初出差结束再看；双方约好11月初联系。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "按约接着上次的通勤包话题聊。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N36",
+        "conversation_id": "business-v2-chat-N36",
+        "profile_revision": 1,
+        "preferences": "通勤要带A4，喜欢低调墨黑。",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "复用上次话题和约定，不从头整理",
+        "不把此前暂缓当永久拒绝，也不假定已经回到本地"
+      ],
+      "basis": [
+        "background.client_info",
+        "profile.preferences"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N37",
+      "title": "向有兴趣的客户发邀请",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "赵女士上次表示想了解包袋怎么收纳日常物品，让顾问有活动时告诉她。",
+        "conversation": "",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "邀请她来这次日常收纳小聚。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N37",
+        "conversation_id": "business-v2-chat-N37",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "说清体验价值、时间地点，自然询问意愿",
+        "不先列没有新品优惠，不冒称已报名"
+      ],
+      "basis": [
+        "materials.related_info",
+        "background.client_info"
+      ],
+      "execution": "executed",
+      "messages": [
+        "赵女士，之前您提到想了解包袋怎么收纳日常物品。11月14日周六14:00—16:00，澄序广场8号精品店有一场“日常收纳小聚”，现场会演示日行托特包、轻行肩包和随行卡夹怎么收纳常用物品，也可以带上您平时的东西来对照体验。活动时段内可随时来，不必全程参加，也可以带一位朋友；参加需要留一下称呼，具体安排由门店确认。您要是有兴趣，我可以先帮您把参加信息登记给门店。",
+        "赵女士，跟您说个活动：11月14日（周六）14:00—16:00，澄序广场8号精品店会有“日常收纳小聚”。正好对应您上次想了解的包袋收纳，现场会演示三款包怎么装常用物品，您也能自己试试，带上平时带的东西对照更方便。时段内短暂停留就可以，不用从头待到尾，还能带一位朋友一起，同行的也留个称呼。想来的话告诉我称呼，我帮您跟门店确认。",
+        "赵女士，您之前说想了解包袋怎么收纳日常物品，我们11月14日周六下午两点到四点在澄序广场8号精品店有一场小聚，会演示日行托特包、轻行肩包和随行卡夹的收纳方式，也可以自己上手体验。两点到四点之间来都行，待一会儿就可以，带一位朋友也可以。参加要登记称呼，具体由门店确认，您有兴趣的话把称呼告诉我，我帮您对接门店。"
+      ],
+      "record": {
+        "case_id": "N37",
+        "phase": "first",
+        "input": {
+          "scenario": "活动邀请",
+          "client_info": "赵女士上次表示想了解包袋怎么收纳日常物品，让顾问有活动时告诉她。",
+          "conversation": "",
+          "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+          "product_ids": [],
+          "advisor_instruction": "邀请她来这次日常收纳小聚。"
+        },
+        "run_id": "e20d0bb432c142d7ae9e2706bb84da0a",
+        "raw_record": "raw_runs/e20d0bb432c142d7ae9e2706bb84da0a.json",
+        "raw_sha256": "55fa767048cf1be861477dfa88a9a8dac034ee385f7de936e9c5d188a431eabc",
+        "program_status": "success",
+        "error": null,
+        "messages": [
+          "赵女士，之前您提到想了解包袋怎么收纳日常物品。11月14日周六14:00—16:00，澄序广场8号精品店有一场“日常收纳小聚”，现场会演示日行托特包、轻行肩包和随行卡夹怎么收纳常用物品，也可以带上您平时的东西来对照体验。活动时段内可随时来，不必全程参加，也可以带一位朋友；参加需要留一下称呼，具体安排由门店确认。您要是有兴趣，我可以先帮您把参加信息登记给门店。",
+          "赵女士，跟您说个活动：11月14日（周六）14:00—16:00，澄序广场8号精品店会有“日常收纳小聚”。正好对应您上次想了解的包袋收纳，现场会演示三款包怎么装常用物品，您也能自己试试，带上平时带的东西对照更方便。时段内短暂停留就可以，不用从头待到尾，还能带一位朋友一起，同行的也留个称呼。想来的话告诉我称呼，我帮您跟门店确认。",
+          "赵女士，您之前说想了解包袋怎么收纳日常物品，我们11月14日周六下午两点到四点在澄序广场8号精品店有一场小聚，会演示日行托特包、轻行肩包和随行卡夹的收纳方式，也可以自己上手体验。两点到四点之间来都行，待一会儿就可以，带一位朋友也可以。参加要登记称呼，具体由门店确认，您有兴趣的话把称呼告诉我，我帮您对接门店。"
+        ],
+        "review_verdict": "pass",
+        "review_issues": [],
+        "review_validation_errors": [],
+        "policy_checks": [],
+        "generation_requested": true,
+        "review_requested": true
+      },
+      "assessment": {
+        "fact_status": "时间地点和体验有据；候选2有轻微商品分类错误",
+        "fact_issues": [
+          {
+            "candidate": 2,
+            "quote": "现场会演示三款包怎么装常用物品",
+            "severity": "轻微事实分类",
+            "basis": "活动原文列日行托特包、轻行肩包、随行卡夹，是三款商品，不是三款包",
+            "impact": "不改变时间权益或体验安排，但应记录，不能以pass称事实全对"
+          }
+        ],
+        "program_false_block": null,
+        "review_errors": [
+          "候选2将卡夹也统称包，复核未指出",
+          "把短暂停留、朋友和全部登记步骤都解释为首次邀请不可缺少；忽略已有赵女士称呼，保留重复索称呼"
+        ],
+        "candidates": [
+          {
+            "keep": "接续客户嘱托、活动价值、时间地点",
+            "polish": "把短暂停留、同行和登记细节一次讲齐偏长，可压缩",
+            "reason": "这些内容真实，但首次邀请无需全展开；不是这轮停批理由",
+            "original": "赵女士，之前您提到想了解包袋怎么收纳日常物品。11月14日周六14:00—16:00，澄序广场8号精品店有一场“日常收纳小聚”，现场会演示日行托特包、轻行肩包和随行卡夹怎么收纳常用物品，也可以带上您平时的东西来对照体验。活动时段内可随时来，不必全程参加，也可以带一位朋友；参加需要留一下称呼，具体安排由门店确认。您要是有兴趣，我可以先帮您把参加信息登记给门店。"
+          },
+          {
+            "keep": "时间地点及上手收纳体验",
+            "polish": "“短暂停留…不用从头待到尾”重复；已有赵女士称呼，不必再索本人称呼",
+            "reason": "“三款包”另列轻微事实错误，不在polish里掩盖；其他重复属于非阻断编辑",
+            "original": "赵女士，跟您说个活动：11月14日（周六）14:00—16:00，澄序广场8号精品店会有“日常收纳小聚”。正好对应您上次想了解的包袋收纳，现场会演示三款包怎么装常用物品，您也能自己试试，带上平时带的东西对照更方便。时段内短暂停留就可以，不用从头待到尾，还能带一位朋友一起，同行的也留个称呼。想来的话告诉我称呼，我帮您跟门店确认。"
+          },
+          {
+            "keep": "活动与客户此前需求关联明确",
+            "polish": "尾部把称呼、登记、确认、对接重复铺陈，可短一些",
+            "reason": "没声称已报名；报名流程真实，但可以待客户表达参加意愿再展开",
+            "original": "赵女士，您之前说想了解包袋怎么收纳日常物品，我们11月14日周六下午两点到四点在澄序广场8号精品店有一场小聚，会演示日行托特包、轻行肩包和随行卡夹的收纳方式，也可以自己上手体验。两点到四点之间来都行，待一会儿就可以，带一位朋友也可以。参加要登记称呼，具体由门店确认，您有兴趣的话把称呼告诉我，我帮您对接门店。"
+          }
+        ],
+        "case_id": "N37",
+        "reviewer": "AI开发者对照原始资料，非真人顾问或独立盲评",
+        "version": "developer-review-v2-baseline-1.0",
+        "raw_record": "raw_runs/e20d0bb432c142d7ae9e2706bb84da0a.json",
+        "raw_sha256": "55fa767048cf1be861477dfa88a9a8dac034ee385f7de936e9c5d188a431eabc"
+      }
+    },
+    {
+      "case_id": "N38",
+      "title": "活动时间地点短答",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "顾问：周末有个日常收纳小聚，有空可以来看看。\n客户：几点？在哪儿呀？",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "告诉她时间地点。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N38",
+        "conversation_id": "business-v2-chat-N38",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "14日14—16点、澄序广场8号精品店",
+        "不让客户重复活动名，不附不必要的资格或销售介绍"
+      ],
+      "basis": [
+        "materials.related_info",
+        "chat"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N39",
+      "title": "先了解活动内容",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "用容易懂的话介绍内容。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N39",
+        "conversation_id": "business-v2-chat-N39",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "讲收纳演示、对照随身物品能了解什么",
+        "不堆术语、先列缺席清单或催报名"
+      ],
+      "basis": [
+        "materials.related_info"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N40",
+      "title": "只能停留半小时",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：我可能只有半小时，过去看看方便吗？",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "按活动安排回复她。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N40",
+        "conversation_id": "business-v2-chat-N40",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "利用自由体验、可短暂停留的已知安排",
+        "不要求全程或虚构专属讲解时段"
+      ],
+      "basis": [
+        "materials.related_info"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N41",
+      "title": "带朋友同行",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：我能带一个朋友一起来吗？",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "回答同行安排。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N41",
+        "conversation_id": "business-v2-chat-N41",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "可带一人，称呼登记后由门店确认",
+        "必要时收称呼，不说已留两席或增加会员门槛"
+      ],
+      "basis": [
+        "materials.related_info"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N42",
+      "title": "客户请帮报名两位",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：行，那帮我报一下名，姓陈，两位。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "接住她两位报名的意向。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N42",
+        "conversation_id": "business-v2-chat-N42",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "两位意向已给，不重问人数或方向",
+        "可问朋友称呼并协助登记，不能声称系统已经报名完成"
+      ],
+      "basis": [
+        "chat",
+        "materials.related_info",
+        "policy.4"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N43",
+      "title": "本场来不了，问后续",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：这周末来不了，之后还有类似活动吗？",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "回应她对后续活动的兴趣。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N43",
+        "conversation_id": "business-v2-chat-N43",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "尊重本场来不了，不继续劝本场",
+        "后续时间无来源时顾问帮核实，不编时间也不说现实中一定没安排"
+      ],
+      "basis": [
+        "materials.related_info",
+        "chat"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N44",
+      "title": "觉得贵但想判断日常用途",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "结合她的用途帮她判断。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N44",
+        "conversation_id": "business-v2-chat-N44",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "回应少量随身物品用途与现价",
+        "嫌贵不等于求折扣或拒绝，不主动播报折扣"
+      ],
+      "basis": [
+        "product.P02.capacity",
+        "product.P02.price",
+        "chat"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N45",
+      "title": "两份卡夹礼物总价",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：随行卡夹拿两只一共多少钱？给两位同事。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "直接告诉她总价。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N45",
+        "conversation_id": "business-v2-chat-N45",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "2800×2=5600元",
+        "不用顺带无折扣、确认礼物方向或每条问颜色"
+      ],
+      "basis": [
+        "product.P03.price"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N46",
+      "title": "买两只询问优惠",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：买两只卡夹，能优惠一点吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "温暖但如实回答。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N46",
+        "conversation_id": "business-v2-chat-N46",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "无折扣，合计5600元",
+        "不编申请渠道或赠品，不为说服购买堆卖点"
+      ],
+      "basis": [
+        "product.P03.price",
+        "policy.4"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N47",
+      "title": "预算内确认肩包是否合适",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：我预算一万三左右，平时就带手机钥匙，轻行肩包合适吗？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "结合她的预算和用法判断。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N47",
+        "conversation_id": "business-v2-chat-N47",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "12800元在预算附近，手机钥匙用途有据",
+        "已选商品不问方向，不加A4/电脑等未提需求"
+      ],
+      "basis": [
+        "product.P02.price",
+        "product.P02.capacity"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N48",
+      "title": "与更便宜的竞品比较",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：另一家的卡夹便宜不少，你们这款主要有什么不同？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "帮她从实际使用上比较。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N48",
+        "conversation_id": "business-v2-chat-N48",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "自家材质、小标识、卡位可说明",
+        "不知道竞品具体款不编差异/成本；需要时最少了解竞品信息"
+      ],
+      "basis": [
+        "product.P03.material",
+        "product.P03.card_slots",
+        "policy.2",
+        "policy.4"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N49",
+      "title": "喜欢托特但想缓一缓",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：托特我挺喜欢，就是价格还得想想，先别帮我留。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "尊重她现在想缓一缓。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N49",
+        "conversation_id": "business-v2-chat-N49",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "确认先不留，温暖收尾",
+        "不追问理由、追加优惠或到店邀请"
+      ],
+      "basis": [
+        "chat",
+        "policy.4"
+      ],
+      "execution": "not_run",
+      "messages": [],
+      "record": null,
+      "assessment": null
+    },
+    {
+      "case_id": "N50",
+      "title": "暂不买包，转问卡夹礼物",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：包我先不买了，给我看看卡夹吧，想买个不太招摇的小礼物。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "接住她的新需求。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N50",
+        "conversation_id": "business-v2-chat-N50",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "checks": [
+        "停止包袋推荐，回答卡夹礼物需求",
+        "不把整段判拒绝，不让客户再次确认自己提出的方向"
+      ],
+      "basis": [
+        "chat",
+        "product.P03.price",
+        "product.P03.capacity",
+        "policy.2"
+      ],
+      "execution": "executed",
+      "messages": [
+        "好的，包的事先放一放。卡夹是2,800元，标识比较小，外观简洁，作为小礼物挺合适。",
+        "明白，那我们看卡夹。随行卡夹2,800元，哑光细纹牛皮，表面是压印的小尺寸品牌标识，不张扬；有4个独立卡位，可以放4张标准银行卡大小的卡片。",
+        "没问题，包就先不看了。随行卡夹是2,800元，外观偏简洁低调，适合当小件礼物；目录有墨黑和暖棕两个颜色，需要的话我帮您确认哪款有货。"
+      ],
+      "record": {
+        "case_id": "N50",
+        "phase": "first",
+        "input": {
+          "scenario": "价格异议",
+          "client_info": "",
+          "conversation": "客户：包我先不买了，给我看看卡夹吧，想买个不太招摇的小礼物。",
+          "related_info": "",
+          "product_ids": [],
+          "advisor_instruction": "接住她的新需求。"
+        },
+        "run_id": "c751e3259dca4b549eccd1525d2b54db",
+        "raw_record": "raw_runs/c751e3259dca4b549eccd1525d2b54db.json",
+        "raw_sha256": "cddf8bd547573ab9721b098f168facae076378258905ce0af11feb2226b2ce81",
+        "program_status": "success",
+        "error": null,
+        "messages": [
+          "好的，包的事先放一放。卡夹是2,800元，标识比较小，外观简洁，作为小礼物挺合适。",
+          "明白，那我们看卡夹。随行卡夹2,800元，哑光细纹牛皮，表面是压印的小尺寸品牌标识，不张扬；有4个独立卡位，可以放4张标准银行卡大小的卡片。",
+          "没问题，包就先不看了。随行卡夹是2,800元，外观偏简洁低调，适合当小件礼物；目录有墨黑和暖棕两个颜色，需要的话我帮您确认哪款有货。"
+        ],
+        "review_verdict": "pass",
+        "review_issues": [],
+        "review_validation_errors": [],
+        "policy_checks": [],
+        "generation_requested": true,
+        "review_requested": true
+      },
+      "assessment": {
+        "fact_status": "三条均尊重不买包的范围，并回应卡夹礼物新需求",
+        "fact_issues": [],
+        "program_false_block": null,
+        "review_errors": [],
+        "candidates": [
+          {
+            "keep": "承接先不看包、2800元、低调小礼物判断",
+            "polish": "无必须修改处",
+            "reason": "简短直接，不让客户再次确认自己提出的方向",
+            "original": "好的，包的事先放一放。卡夹是2,800元，标识比较小，外观简洁，作为小礼物挺合适。"
+          },
+          {
+            "keep": "价格、材质、小标识与卡位结构",
+            "polish": "“标准银行卡大小的卡片”略书面，可更直接",
+            "reason": "此处是开放了解卡夹，结构介绍有关，不必一概删掉",
+            "original": "明白，那我们看卡夹。随行卡夹2,800元，哑光细纹牛皮，表面是压印的小尺寸品牌标识，不张扬；有4个独立卡位，可以放4张标准银行卡大小的卡片。"
+          },
+          {
+            "keep": "价格、礼物用途、两色选择与可选核库存帮助",
+            "polish": "“目录有”可换日常表达，属于编辑建议",
+            "reason": "没有把目录颜色当现货，也没有劝回包袋",
+            "original": "没问题，包就先不看了。随行卡夹是2,800元，外观偏简洁低调，适合当小件礼物；目录有墨黑和暖棕两个颜色，需要的话我帮您确认哪款有货。"
+          }
+        ],
+        "case_id": "N50",
+        "reviewer": "AI开发者对照原始资料，非真人顾问或独立盲评",
+        "version": "developer-review-v2-baseline-1.0",
+        "raw_record": "raw_runs/c751e3259dca4b549eccd1525d2b54db.json",
+        "raw_sha256": "cddf8bd547573ab9721b098f168facae076378258905ce0af11feb2226b2ce81"
+      }
+    }
+  ]
+}

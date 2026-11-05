@@ -1,0 +1,6 @@
+{
+  "observed": "额外独立来源审计的库存例没有再报完成动作；共用validate_output前置仍以unsupported_completed_action拦住，review_saved也先执行该前置",
+  "initial_test_assumption": "误以为source_review.audit单层会重复全部本地动作校验；未为此放宽检查或修改产品",
+  "full_pipeline_all_contrasts_passed": true,
+  "source_audit_not_universal_chinese_proof": true
+}

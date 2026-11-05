@@ -1,0 +1,132 @@
+[
+  {
+    "id": "DEV-GREETING",
+    "label": "生日及节日问候 · 生日短祝福",
+    "input": {
+      "scenario": "生日及节日问候",
+      "client_info": "林女士，今天生日，平时喜欢简短的微信。",
+      "conversation": "",
+      "related_info": "",
+      "product_ids": [],
+      "advisor_instruction": "今天给林女士发个生日祝福。"
+    },
+    "expectation": "简短、称呼自然，祝福答完可结束；不强塞商品、问题或档案操作",
+    "dataset_id": "business-realistic-v2.0",
+    "case_id": "N01"
+  },
+  {
+    "id": "DEV-GIFT",
+    "label": "商品推荐 · 已选卡夹，问价格和四张卡",
+    "input": {
+      "scenario": "商品推荐",
+      "client_info": "",
+      "conversation": "客户：想给同事送个小礼物，她平时就带四张银行卡。随行卡夹多少钱？放得下吗？",
+      "related_info": "",
+      "product_ids": [
+        "P03"
+      ],
+      "advisor_instruction": "回复她这两个问题。"
+    },
+    "expectation": "2800元，四个独立卡位，四张标准银行卡能放；客户已选品，不问方向、不扩写取用好处或其他物品限制",
+    "dataset_id": "business-realistic-v2.0",
+    "case_id": "N09"
+  },
+  {
+    "id": "DEV-PHONE",
+    "label": "商品推荐 · 手机型号与斜挎",
+    "input": {
+      "scenario": "商品推荐",
+      "client_info": "",
+      "conversation": "客户：轻行肩包能斜挎吗？我用的是iPhone 15 Pro Max，手机能放进去吗？",
+      "related_info": "",
+      "product_ids": [
+        "P02"
+      ],
+      "advisor_instruction": "回复她关于背法和放手机的问题。"
+    },
+    "expectation": "查官方型号表，区分裸机与手机壳；可斜挎、肩带可调；结合资料作通常够放的日常判断；不让客户量手机，不把到店变前提，不声称官方认证适配",
+    "dataset_id": "business-realistic-v2.0",
+    "case_id": "N10"
+  },
+  {
+    "id": "DEV-RECOMMEND",
+    "label": "商品推荐 · 周末轻装",
+    "input": {
+      "scenario": "商品推荐",
+      "client_info": "",
+      "conversation": "客户：周末出门就手机钥匙，不想背大包，有合适的吗？",
+      "related_info": "",
+      "product_ids": [],
+      "advisor_instruction": "给一个适合轻装出门的建议。"
+    },
+    "expectation": "结合少量物品推荐肩包并给必要价格信息；不追加电脑、A4或长钱包风险清单",
+    "dataset_id": "business-realistic-v2.0",
+    "case_id": "N12"
+  },
+  {
+    "id": "DEV-CARE",
+    "label": "购后关怀 · 卡夹购后问候",
+    "input": {
+      "scenario": "购后关怀",
+      "client_info": "周女士，两周前在门店买了随行卡夹。",
+      "conversation": "",
+      "related_info": "",
+      "product_ids": [
+        "P03"
+      ],
+      "advisor_instruction": "发个简短的购后问候，看看用着怎么样。"
+    },
+    "expectation": "依据真实已购卡夹问使用感受；不重讲卡位参数，不编出现故障",
+    "dataset_id": "business-realistic-v2.0",
+    "case_id": "N23"
+  },
+  {
+    "id": "DEV-REACTIVATE",
+    "label": "沉睡客户唤回 · 已购卡夹客户久未互动",
+    "input": {
+      "scenario": "沉睡客户唤回",
+      "client_info": "陈女士，三个月前买过随行卡夹，上次微信互动也是当时。",
+      "conversation": "",
+      "related_info": "",
+      "product_ids": [
+        "P03"
+      ],
+      "advisor_instruction": "轻松问候一下，也可以问问卡夹用着怎么样。"
+    },
+    "expectation": "已购与联系间隔有记录，可自然接续；不责问没来，不重讲参数或编新品",
+    "dataset_id": "business-realistic-v2.0",
+    "case_id": "N31"
+  },
+  {
+    "id": "DEV-EVENT",
+    "label": "活动邀请 · 向有兴趣的客户发邀请",
+    "input": {
+      "scenario": "活动邀请",
+      "client_info": "赵女士上次表示想了解包袋怎么收纳日常物品，让顾问有活动时告诉她。",
+      "conversation": "",
+      "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+      "product_ids": [],
+      "advisor_instruction": "邀请她来这次日常收纳小聚。"
+    },
+    "expectation": "说清体验价值、时间地点，自然询问意愿；不先列没有新品优惠，不冒称已报名",
+    "dataset_id": "business-realistic-v2.0",
+    "case_id": "N37"
+  },
+  {
+    "id": "DEV-PRICE",
+    "label": "价格异议 · 预算内确认肩包是否合适",
+    "input": {
+      "scenario": "价格异议",
+      "client_info": "",
+      "conversation": "客户：我预算一万三左右，平时就带手机钥匙，轻行肩包合适吗？",
+      "related_info": "",
+      "product_ids": [
+        "P02"
+      ],
+      "advisor_instruction": "结合她的预算和用法判断。"
+    },
+    "expectation": "12800元在预算附近，手机钥匙用途有据；已选商品不问方向，不加A4/电脑等未提需求",
+    "dataset_id": "business-realistic-v2.0",
+    "case_id": "N47"
+  }
+]

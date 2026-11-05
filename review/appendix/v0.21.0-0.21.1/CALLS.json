@@ -1,0 +1,130 @@
+{
+  "calls": [
+    {
+      "case_id": "J01",
+      "stage": "generation",
+      "purpose": "固定开发回归：对客重量小计与内部口径分离",
+      "started_at": "2026-11-05T20:55:33.716546+00:00",
+      "state": "returned",
+      "app_version": "0.21.0",
+      "prompt_version": "2.3.0",
+      "request_sha256": "9b82d2bf865d6951adeb3de992e787ff56b45185f234a9cea5bbd21880db001d",
+      "completed_at": "2026-11-05T20:55:38.224743+00:00",
+      "usage": {
+        "prompt_tokens": 3013,
+        "completion_tokens": 571,
+        "total_tokens": 3584,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 3013
+      },
+      "provider_status": null,
+      "provider_response_id": "107fbc03-6141-4bf0-842c-015a57a5852e",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J01",
+      "stage": "review",
+      "purpose": "固定开发回归：对客重量小计与内部口径分离",
+      "started_at": "2026-11-05T20:55:38.272829+00:00",
+      "state": "returned",
+      "app_version": "0.21.0",
+      "prompt_version": "review-1.6.0",
+      "request_sha256": "7634f0a9641506a8ec8e1b46919c2a16572bd8461aa6a9e5ff5916054a810f62",
+      "completed_at": "2026-11-05T20:55:47.547694+00:00",
+      "usage": {
+        "prompt_tokens": 31710,
+        "completion_tokens": 2061,
+        "total_tokens": 33771,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 30942
+      },
+      "provider_status": null,
+      "provider_response_id": "c425dbbc-aec1-485c-8765-816a73d0a56c",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J02",
+      "stage": "generation",
+      "purpose": "固定开发回归：报价和低调设计依据取材",
+      "started_at": "2026-11-05T20:55:47.595225+00:00",
+      "state": "returned",
+      "app_version": "0.21.0",
+      "prompt_version": "2.3.0",
+      "request_sha256": "3d7855a5ad6086c985cb30d85a0205a593cf74d1f9fb773e784733e03024c065",
+      "completed_at": "2026-11-05T20:55:51.400643+00:00",
+      "usage": {
+        "prompt_tokens": 2720,
+        "completion_tokens": 493,
+        "total_tokens": 3213,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1824
+      },
+      "provider_status": null,
+      "provider_response_id": "82085018-6063-4ddb-9530-61fdee1db9a3",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J02",
+      "stage": "review",
+      "purpose": "固定开发回归：报价和低调设计依据取材",
+      "started_at": "2026-11-05T20:55:51.422102+00:00",
+      "state": "returned",
+      "app_version": "0.21.0",
+      "prompt_version": "review-1.6.0",
+      "request_sha256": "ae4af6334db38bfce2bea81f87443ca8185a8b4236f9cc76839e4933ffdf4271",
+      "completed_at": "2026-11-05T20:56:00.050589+00:00",
+      "usage": {
+        "prompt_tokens": 30441,
+        "completion_tokens": 1947,
+        "total_tokens": 32388,
+        "prompt_tokens_details": {
+          "cached_tokens": 12160
+        },
+        "prompt_cache_hit_tokens": 12160,
+        "prompt_cache_miss_tokens": 18281
+      },
+      "provider_status": null,
+      "provider_response_id": "3982610e-0892-4764-bd41-befe7380f1db",
+      "returned_model": "deepseek-flash"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "J01",
+      "initial_record": "raw_runs/7662bf69200b48438b5db557cae92d88.json",
+      "record": "raw_runs/bed3ea0b94424bdf99e7fc174531fd57.json",
+      "run_id": "bed3ea0b94424bdf99e7fc174531fd57",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "当前水重、两项小计或已知重量下限与程序依据不符，后接试背建议也不能抵消错误数字。",
+        "retryable": true
+      },
+      "verdict": "pass",
+      "diagnostic_only": true,
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "J02",
+      "initial_record": "raw_runs/ea853621d4384ceabd2ac7dc00b10352.json",
+      "record": "raw_runs/ea853621d4384ceabd2ac7dc00b10352.json",
+      "run_id": "ea853621d4384ceabd2ac7dc00b10352",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "diagnostic_only": false,
+      "generation_count": 1,
+      "review_count": 1
+    }
+  ]
+}

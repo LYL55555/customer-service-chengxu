@@ -1,0 +1,1 @@
+此处仅放真实AI开发对话截图。当前没有已核实图片，不能用产品截图替代。请见外层AI_CHAT_GAPS.html和AI_CHAT_COVERAGE.json逐阶段补齐。不要包含key、原题正文或真实客户信息。

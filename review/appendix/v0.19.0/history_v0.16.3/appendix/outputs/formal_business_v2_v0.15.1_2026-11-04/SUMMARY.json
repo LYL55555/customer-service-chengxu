@@ -1,0 +1,25 @@
+{
+  "baseline_id": "formal-business-v2-baseline-0.15.1",
+  "app_version": "0.15.1",
+  "planned_cases": 50,
+  "executed_cases": 4,
+  "not_run": 46,
+  "actual_message_groups": 4,
+  "actual_messages": 12,
+  "program_delivered": 3,
+  "program_errors": 1,
+  "model_verdicts": {
+    "pass": 4
+  },
+  "developer_fact_findings": 1,
+  "developer_program_false_blocks": [
+    "N30"
+  ],
+  "first_batch_continue": false,
+  "actual_requests": 8,
+  "reported_tokens": 213446,
+  "requests_without_usage": 0,
+  "automatic_retries": 0,
+  "not_formal50_complete": true,
+  "not_best_of_rounds": true
+}

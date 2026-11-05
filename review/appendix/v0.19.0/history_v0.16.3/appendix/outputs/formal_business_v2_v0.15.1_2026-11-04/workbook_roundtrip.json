@@ -1,0 +1,10 @@
+{
+  "sheets": 2,
+  "rawColumns": 8,
+  "plannedRows": 50,
+  "realGroups": 4,
+  "realTexts": 12,
+  "notRunRows": 46,
+  "allNonemptyCellsExactAfterSavedImport": true,
+  "emptyInputCells": "xlsx空单元格导入为null，与原空字符串按空白核对；候选原文不做规范化"
+}

@@ -1,0 +1,252 @@
+{
+  "F01": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F02": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F03": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S3 / 表达取舍",
+    "observation": "“愿您和家人…团圆自在”是祝愿，不等于断言客户当日确实团聚；不按虚构家庭行程记硬事实错。第三条重复中秋快乐、偏文雅，可由用户判断。"
+  },
+  "F04": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S3 / 时点措辞",
+    "observation": "第3条“春节到了”未给发送日，较稳妥的祝福无需这句；不与错误折扣/售后承诺等权。"
+  },
+  "F05": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F06": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F07": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S3 / 语气",
+    "observation": "第3条“能赶上给您送上祝福”多了一层未给时点的表达，核心仍回应客户已收祝福的感谢。"
+  },
+  "F08": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "待用户核对 / 动作时态",
+    "observation": "“记下是11月19日了”可指在对话里接收更正，不等于已写客户数据库；“会把档案改过来”是未来意向，不当作已完成。但实际顾问需兑现此意向。"
+  },
+  "F09": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F10": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S3 / 不必要后续",
+    "observation": "第3条“帮您留意”没有编造已存在的替代款，但用户只问硬币，前两条更直接；不宜暗示目录外商品已可提供。"
+  },
+  "F11": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S1 / 实际适配无依据，复核漏检",
+    "observation": "第1条“按尺寸看放手机是够的”和第2条“放进去是有余量的”把包外尺寸推成实际可装/内部余量，资料不能支持。第3条保留核对包口才更稳妥；不能因组状态success或review pass就认定全组三条安全。"
+  },
+  "F12": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S1 + 合同失败",
+    "observation": "原arguments仍有三个完整候选，未补missing_information或修坏掉的advisor_note，因此保留接口失败。第2条“包内尺寸34×28×12”本身也错：给的是包体尺寸，不能改为内尺寸。全三条都以量尺寸/试放收尾，选择价值有限。"
+  },
+  "F13": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "程序指代检查疑似误拦 / 未新增属性错误",
+    "observation": "客户原问“轻行肩包和日行托特分别多重”，第3条按同顺序420g/750g是可对照的；程序未把“两者分别”解析到两款就拒绝，不能据此认定重量本来错。三条明确P02可斜挎、P01只陈述已知肩背，未说P01不可斜挎；仍有“目前确认”等审核腔。"
+  },
+  "F14": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F15": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S1 / 商品事实扩写，复核漏检",
+    "observation": "第2条“不反光”比资料“哑光、光泽低”更绝对，没有来源；第1条“目录里”及第3条库存/实拍核实帮助可能偏审核腔，但与无据属性分开。"
+  },
+  "F16": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F17": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S3 / 介绍范围与语义强度",
+    "observation": "明确“不适合护照”有资料。第2/3条改说“放不下/放不进去”比“不适合”更强，建议用户留意表达边界；第3条又转向小礼物，与当前出差护照需求不紧密。不把正常否定护照用途本身判无据。"
+  },
+  "F18": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "程序物品归属误拦",
+    "observation": "19×10×2.5是客户明确给的长钱包尺寸，三条均保留核实，没有说成包尺寸；程序却按P02的22×16×7检查此数值。应记录为误拦，不改客户数字来通过。"
+  },
+  "F19": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "未见实质售后越权",
+    "observation": "三条均区分申请和门店最终检查，11/1次日起算至11/8正确；“可以的”后面有限定为申请，不等于保证已批准。第3条“出货同事”显生硬，可换普通门店称呼，但本轮原文不改。"
+  },
+  "F20": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "混合问题 / 生成和复核分别看",
+    "observation": "第1条“您这件…标牌…齐全”将未明确的标牌情况当事实；客户只说包装和凭证齐全。另一方面，复核把第2条“可申请”推成已批准、把未来确认调货认定成已有调货状态，理由过强；第3条明确最终门店确认，复核又说完全未说明也不成立。invalid_review还有来源类型错误，不能照单全收block。"
+  },
+  "F21": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S1 / 覆盖范围误写业务限制，复核漏检",
+    "observation": "第2条“目前只支持门店购买场景下的退换”把本项目资料只描述门店，变成品牌只处理门店渠道，超出policy.5；第1/3条先核渠道更合适。"
+  },
+  "F22": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F23": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S0 / 明确禁令被违反，复核漏检",
+    "observation": "第1条建议对未知清洁剂“小角落点一点试，没有异常再处理”，与policy.5不建议自行使用未知清洁剂相冲突，可能误导实际护理。第2条没有新增污渍处理法，但把沾水保养表搬入污渍问题，相关性较弱；第3条先照片评估更贴任务。"
+  },
+  "F24": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S2 / 未给处理流程，S3措辞",
+    "observation": "第1/3条把“售后评估”加成必须看过实物才可确定，资料只说查看情况和评估，可先照片，不保证一定需要实物。第1条“这张肩包”也不像自然微信；不当作已收到照片或已执行提交。"
+  },
+  "F25": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "程序警报与上下文缺口并存",
+    "observation": "第1条“没看到已提交单号”有暗示查询结果的风险，不能因工具无资料说现实无记录；第2/3条“还没确认”是待核实。第3条又问售后商品与问题，若只是工具没拿到上次记录，应请顾问补旧记录，不让客户为工具再说。冻结后不另修此分支，原文保留。"
+  },
+  "F26": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "前置修复实证 / 无需新来信",
+    "observation": "原输入不变，已进入真实生成及复核并交付三条。都是已购卡夹关怀，无虚构损坏；第3条附保养提示不是事实错，用户可判断主动问候是否需要。"
+  },
+  "F27": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S1 / 无评估先断言不需维修，复核漏检",
+    "observation": "第1条“一般不用特意送维修”、第2条“目前看不用维修”、第3条“也不用送修”超出了已给沾水保养步骤。可以先自然晾干、异常再协助评估，不把保养步骤当维修结论。"
+  },
+  "F28": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S2 / 生成问题 + 复核检查未完整",
+    "observation": "“很久没联系”只凭未到店不能推断。程序invalid_review另因第3条问是否需了解保养被要求service来源，未必意味着那句本身不可发；此案同时有真实生成缺陷，不能整组标纯误拦。"
+  },
+  "F29": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S2 / 联系史无依据，前置已修",
+    "observation": "六个旧误拦之一，本轮确实生成三条。前两条“好久没聊/隔段时间没联系”没有来源，复核指出此问题成立；第3条复用已知短消息偏好，未见同类事实错。整组未交付发生在质量复核，不是前置再次要资料。"
+  },
+  "F30": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S2 / 接续了不该接续的活动状态，复核部分理由不成立",
+    "observation": "旧活动已结束没有业务资料，不应在轻量问候里主动告知该状态；第1条还编了联系间隔。但复核说“去年”本身无依据不准确：原背景明确聊天来自2025，本轮2026可称去年。程序invalid_review另有引用域问题。"
+  },
+  "F31": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S2 / 联系史和具体物品，复核有过度判断",
+    "observation": "前两条编未联系间隔，第2条“之前那只包”也把未明确商品的购买关系变成包袋。第3条泛问用着是否顺心，在明确有门店购买关系的背景下不应仅因未给具体型号就判成无购买依据；“今天不聊商品”主要是表达取舍。"
+  },
+  "F32": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S2 / 部分生成问题，复核不全可靠",
+    "observation": "第2条“好久没联系”仍无充分联系史。第1条背景买过=>选过是自然表述，复核因此指责并不成立；第3条“今天只是问候”描述本次沟通意图，不是编活动日期，至多措辞偏好，不与硬事实等权。"
+  },
+  "F33": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S2 / 无购买记录却预设已购，前置已修",
+    "observation": "第1条编未联系间隔，第1/3条问之前的包/皮具使用，未给已购记录；第2条只复用暖棕偏好轻量问候，未见同类问题。不是暖棕词没被解析就要补资料。"
+  },
+  "F34": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "前置修复实证 / 无新来信正常关怀",
+    "observation": "已购托特和本次只问使用感受均来自原背景；三条进入真实生成/复核并交付，不推其他商品或凭空认定损坏。"
+  },
+  "F35": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "复核理由需区分未来帮助与完成 / 选择价值另看",
+    "observation": "完整活动资料已进入真实生成，未重填背景。第2条“可以帮您留个位子”是未来帮助，不等于已留位；但可能被理解成保证席位，可由人判断是否要限定成申请/确认。复核用“未登记”直接证明不能提出帮助理由过强；三条信息高度相近属选择价值意见，不自动变成事实错误。"
+  },
+  "F36": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S3 / 正确但多答",
+    "observation": "长期不收推广不妨碍客户本次主动索取地址。三条地址正确；第2/3条额外给了时间，违背“别的不用介绍”的简洁偏好，不能因此说活动时间本身是编造或营销许可已经恢复。"
+  },
+  "F37": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "复核实际误判动作时态",
+    "observation": "“我先帮您登记…确认后回复”是将来协助，复核却要求已有登记记录、称像已完成，程序也识别false_completed_action_inference。第2条要朋友称呼是否必要是流程/体验问题，资料未写字段，不能自称确定不必需。"
+  },
+  "F38": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S3 / 多答与额外意向",
+    "observation": "周六时段选择正确；第2条又报周五、第3条额外提出登记，未虚构已完成，但用户当前只问几点，可以更短。"
+  },
+  "F39": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "未见实质权益越权",
+    "observation": "明确无折扣赠品，与policy.4和活动资料一致；第2条额外报时间地点是详略取舍，不等于编活动。"
+  },
+  "F40": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F41": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S3 / 相关性和选择价值",
+    "observation": "三条均尊重先不约并解释现有收纳演示；重复完整日期地点较多，可以更聚焦活动内容。“带日常物品对照”作为普通建议，与虚构登记/入场制度分开看。"
+  },
+  "F42": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F43": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "程序来源域检查疑似误拦",
+    "observation": "第2条“理解您会拿2,800元衡量礼物”回应客户已给价格，不是另报未授权价格；程序因未补pricing来源拒绝原pass，不等于报价错。原三条仍供用户逐字审阅。"
+  },
+  "F44": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F45": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "facts": "已全文对照本例输入及既有品牌规则，未见明显实质事实冲突；这不是全语义保证。",
+    "tone_and_choice": "未代用户给愿发评分；请先看三条原文再判断是否有选择价值。"
+  },
+  "F46": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S1 / 含税限定无依据，复核漏检",
+    "observation": "第2条“含税售价”未提供来源；不能自行给目录价加税费口径。“当前未设免邮/分期权益”有policy.4，但相关服务仍须核实；第3条没再核实也没给可用帮助，完整性较弱。"
+  },
+  "F47": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "S1 / 无定价资料却编原因，程序正确拦截",
+    "observation": "三条都把价差解释成尺寸/容量；“不是皮更好/皮料等级相同”也不能从同为细纹牛皮推出。程序阻止了这个问题，但生成能力仍没修好，本轮不重抽。"
+  },
+  "F48": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "允许三条功能接近",
+    "observation": "客户当前只暂缓，没有新问题；三条给空间，不为区别再推销。不能为强造三种功能逼问或预约。"
+  },
+  "F49": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "允许简短结束 / S3措辞",
+    "observation": "明确拒绝后都停止本次推荐，未换款；第2条“之前聊到内容留个印象”略拖尾，但不是继续强推或优惠承诺。"
+  },
+  "F50": {
+    "kind": "AI developer read-through, not independent signoff or advisor approval",
+    "category": "外部阻塞 / 没有输出",
+    "observation": "HTTP402，原响应Insufficient Balance；无法展示三条，未补旧输出或自动重试。恢复余额后只能另存补跑，不改本轮首次失败。"
+  }
+}

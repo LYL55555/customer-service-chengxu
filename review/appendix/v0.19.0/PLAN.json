@@ -1,0 +1,125 @@
+{
+  "version": "final-five-1.0",
+  "cases": [
+    {
+      "case_id": "N16",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "平时通勤带A4资料和一瓶水。",
+        "conversation": "客户：我每天走路二十分钟，托特装东西会不会太沉？",
+        "related_info": "",
+        "advisor_instruction": "结合她的使用情况帮她判断。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N16",
+        "conversation_id": "business-v2-chat-N16",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "previous_source": "outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N16_f1c3acaf16264e3cb72c8fcc4ad8c38d.json"
+    },
+    {
+      "case_id": "N39",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "advisor_instruction": "用容易懂的话介绍内容。",
+        "product_ids": []
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N39",
+        "conversation_id": "business-v2-chat-N39",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "previous_source": "outputs/final_handoff_v0.16.3_2026-11-04/raw_runs/dce91fbf10054208a37df1d61af3341b.json"
+    },
+    {
+      "case_id": "N44",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+        "related_info": "",
+        "advisor_instruction": "结合她的用途帮她判断。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N44",
+        "conversation_id": "business-v2-chat-N44",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "previous_source": "outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N44_16eaaf77cb30487d950624d59bda6551.json"
+    },
+    {
+      "case_id": "N26",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+        "related_info": "",
+        "advisor_instruction": "给她安全、好操作的处理建议。",
+        "product_ids": [
+          "P03"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N26",
+        "conversation_id": "business-v2-chat-N26",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "previous_source": "outputs/targeted_fix_v0.16.0_2026-11-04/raw_runs/e87d024563ad43fda052b55249b5d5c0.json"
+    },
+    {
+      "case_id": "N21",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+        "related_info": "",
+        "advisor_instruction": "接住她的到店意向，帮她安排下一步。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N21",
+        "conversation_id": "business-v2-chat-N21",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "previous_source": "outputs/final_handoff_v0.16.3_2026-11-04/raw_runs/b5de9ed7d8cc4c16bce77e2d80c33652.json"
+    }
+  ],
+  "order": [
+    "N16",
+    "N39",
+    "N44",
+    "N26",
+    "N21"
+  ],
+  "max_generation_per_case": 1,
+  "max_review_per_case": 1,
+  "auto_retry": false,
+  "unchanged_inputs": true,
+  "review_after_local_block": "only first existing review, if three complete original candidates; never authorize delivery"
+}

@@ -1,0 +1,84 @@
+{
+  "current_app_version": "0.21.1",
+  "normal_service_url": "http://localhost:8765/",
+  "normal_service_kept_running": true,
+  "production_core_unchanged": 45,
+  "env_unchanged": true,
+  "old_submission_files_unchanged": 2531,
+  "intentional_pointer_update": "submission/START_HERE.html",
+  "new_model_requests": 2,
+  "formal50_rerun": false,
+  "original_scores_preserved": true,
+  "original_outputs_preserved": true,
+  "source_clean_start": {
+    "source_sha256": "6f81f2d04b807ed809d54aef23e33f63aa7d580c1e3869e378d5bd9dbf21dc24",
+    "current_app_version": "0.21.1",
+    "unconfigured_status": "unconfigured",
+    "startup_passed": true,
+    "replay_permissions_passed": true,
+    "same_runtime_as_existing_smoke": true,
+    "source_changes_since_smoke": [
+      "README.md"
+    ],
+    "new_model_requests": 0,
+    "temporary_final_source_server_stopped": true
+  },
+  "review": {
+    "relative_links_checked": 216,
+    "broken_links": 0,
+    "table": {
+      "rows": 50,
+      "required_columns": 8,
+      "original_messages_exact": 150,
+      "original_table_bytes_unchanged": true
+    },
+    "source_hash_matches_manifest": true,
+    "video_container_valid": true,
+    "current_versions_match": true
+  },
+  "real_ai_chat_screenshots": 0,
+  "required_ai_screenshots_complete": false,
+  "application_local_ready": true,
+  "materials_version_consistent": true,
+  "submission_ready": false,
+  "remaining_required_item": "真实AI开发对话截图及逐步覆盖关联",
+  "known_product_limits": "D/E逐项披露，不以轻微口吻笼统阻断整个应用",
+  "offline_direct_file_browser_check": {
+    "attempt": "direct opening of index.html extracted from final archive using file URL in in-app browser",
+    "browser_result": "blocked by URL protocol policy; only http/https allowed",
+    "direct_offline_browser_open_tested": false,
+    "no_policy_workaround_attempted": true,
+    "already_passed_safe_checks": [
+      "actual ZIP extraction",
+      "all relative references resolve within extracted folder",
+      "all attachment hashes match",
+      "same material content opened in existing localhost review",
+      "source starts cleanly with missing-key notice"
+    ],
+    "required_submission_gap": "real AI development chat screenshots remain missing",
+    "new_model_requests": 0
+  },
+  "continuous_demo_update": {
+    "app_version": "0.21.1",
+    "kind": "continuous actual Chrome tab capture, selectively accelerated idle/wait segments",
+    "video": "DEMO_continuous_v0.21.1.mp4",
+    "video_sha256": "2496e79bcb0425ef4cfc4bb24419f3ea810a395355ee82758020e6432b190014",
+    "original_sha256": "11c8c1adc49c636b59aabb2bde94f061c651876500ac023ed8dbea919c33638f",
+    "original_duration_seconds": 104.165,
+    "output_duration_seconds": 60.791266666666665,
+    "added_text": false,
+    "added_borders": false,
+    "screenshot_slideshow": false,
+    "source_order_preserved": true,
+    "model_run_id": "b620cbb7ab6d4f3caf8b64b20cc0efb2",
+    "generation_requests": 1,
+    "review_requests": 1,
+    "automatic_retries": 0,
+    "tokens": 33444,
+    "formal50_rerun": false,
+    "selected_candidate": 3,
+    "program_status": "success",
+    "review_verdict": "pass"
+  },
+  "old_slideshow_videos_excluded": true
+}

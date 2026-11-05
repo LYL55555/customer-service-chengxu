@@ -1,0 +1,28 @@
+[
+  {
+    "case_id": "J01",
+    "initial_status": "error",
+    "status": "success",
+    "error": null,
+    "record": "offline_revalidation_v0211/f4828e7a8d094351b56ad5e71206a7cb.json",
+    "run_id": "f4828e7a8d094351b56ad5e71206a7cb",
+    "generation_app_version": "0.21.0",
+    "validator_app_version": "0.21.1",
+    "original_review_unchanged": true,
+    "messages_unchanged": true,
+    "new_model_calls": 0
+  },
+  {
+    "case_id": "J02",
+    "initial_status": "success",
+    "status": "success",
+    "error": null,
+    "record": "offline_revalidation_v0211/cef33e94e1e9408487a97544af7817e2.json",
+    "run_id": "cef33e94e1e9408487a97544af7817e2",
+    "generation_app_version": "0.21.0",
+    "validator_app_version": "0.21.1",
+    "original_review_unchanged": true,
+    "messages_unchanged": true,
+    "new_model_calls": 0
+  }
+]

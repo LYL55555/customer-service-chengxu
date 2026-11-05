@@ -1,0 +1,19 @@
+{
+  "original_record": "outputs/judgment_calibration_v0.20.0_2026-11-05/raw_runs/b44b4a42463f4e57a35690e5a5ced559.json",
+  "new_record": "offline_compat/77b2b65c73544d288a48c2ce638f785e.json",
+  "status": "success",
+  "compatibility": {
+    "version": "task-delivery-0.11.0",
+    "action": "ignore_model_scope_metadata",
+    "path": "$.messages.target_index",
+    "original_value": 0,
+    "original_schema_error": "$.messages variants",
+    "candidates_unchanged": true,
+    "reason": "模型附加的修改索引没有业务效力；只兼容这一个已知元数据字段，完整候选与当次结构仍校验",
+    "model_target_adopted": false,
+    "scope_authority": "user_request_only",
+    "provider_native_schema_match": false
+  },
+  "original_review_reused_unchanged": true,
+  "model_calls": 0
+}

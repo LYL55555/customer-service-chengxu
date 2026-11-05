@@ -1,0 +1,13 @@
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+data/
+*.sqlite*
+*.db
+.DS_Store
+.cache/
+Written_Challenge_Brief.pdf
+*DEMO_saved_results*.mp4

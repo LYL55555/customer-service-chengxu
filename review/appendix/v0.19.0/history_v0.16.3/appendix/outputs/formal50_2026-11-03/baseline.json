@@ -1,0 +1,2744 @@
+{
+  "kind": "first-real-result-single-frozen-version",
+  "app_version": "0.12.0",
+  "freeze_sha256": "14127385d079a088c7ac26231089a3688c09692677ae5160f635e4cc89c4c31e",
+  "case_sha256": "1f1f37d70a1102d45eedeacc834f3539e223c652866ee0035560a5817358a243",
+  "started_at": "2026-11-03T17:52:40.593713+00:00",
+  "requests": [
+    {
+      "case_id": "F01",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：生日祝福不说今天或具体年龄；无商品促销或虚构往来",
+      "started_at": "2026-11-03T17:52:40.667444+00:00",
+      "request_sha256": "24144c35a562e7f227b4c540354375a3a2f18e3dfd088ba4f7fe018f92d092c7",
+      "duration_ms": 3380,
+      "usage": {
+        "prompt_tokens": 20223,
+        "completion_tokens": 257,
+        "total_tokens": 20480,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 19327
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F01",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：生日祝福不说今天或具体年龄；无商品促销或虚构往来",
+      "started_at": "2026-11-03T17:52:44.063604+00:00",
+      "request_sha256": "993fd736799b2a62afafeb7fdb6405e80f7154c9ce659fbd740121d01e937dbf",
+      "duration_ms": 3181,
+      "usage": {
+        "prompt_tokens": 21581,
+        "completion_tokens": 590,
+        "total_tokens": 22171,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 21069
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F02",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：使用合适称呼；无家庭、年龄推断",
+      "started_at": "2026-11-03T17:52:47.273565+00:00",
+      "request_sha256": "07c91a8822fd7b8f3dea0027f62b30d6ce0c14566588b610151ae38c1fa12571",
+      "duration_ms": 2706,
+      "usage": {
+        "prompt_tokens": 20232,
+        "completion_tokens": 236,
+        "total_tokens": 20468,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10376
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F02",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：使用合适称呼；无家庭、年龄推断",
+      "started_at": "2026-11-03T17:52:49.992108+00:00",
+      "request_sha256": "8380b023fcf7756a5391000acc5e8332459d775a2592e37591792f0767b43688",
+      "duration_ms": 3038,
+      "usage": {
+        "prompt_tokens": 21496,
+        "completion_tokens": 589,
+        "total_tokens": 22085,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12024
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F03",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：对应中秋，不写生日快乐；不编月饼礼物、团聚或家庭事实",
+      "started_at": "2026-11-03T17:52:53.052640+00:00",
+      "request_sha256": "28a83b28b7f2e233fc2d40562e48457ef7a05cef0c0b9b5e47d701f95d00ac79",
+      "duration_ms": 2733,
+      "usage": {
+        "prompt_tokens": 20277,
+        "completion_tokens": 238,
+        "total_tokens": 20515,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10421
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F03",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：对应中秋，不写生日快乐；不编月饼礼物、团聚或家庭事实",
+      "started_at": "2026-11-03T17:52:55.795943+00:00",
+      "request_sha256": "97cb4eea556635ef1414b6c62dc2410c98dd02ac2c356eb654dfac29b533740a",
+      "duration_ms": 4289,
+      "usage": {
+        "prompt_tokens": 21333,
+        "completion_tokens": 837,
+        "total_tokens": 22170,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11861
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F04",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：祝福为主不顺带商品；不默认生肖、年龄或家庭情况",
+      "started_at": "2026-11-03T17:53:00.113671+00:00",
+      "request_sha256": "f2d1cc899bba62125ddf5ba3d7ae0165431ee600dcf6652f230ad87bf2099b3e",
+      "duration_ms": 3200,
+      "usage": {
+        "prompt_tokens": 20194,
+        "completion_tokens": 307,
+        "total_tokens": 20501,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10338
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F04",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：祝福为主不顺带商品；不默认生肖、年龄或家庭情况",
+      "started_at": "2026-11-03T17:53:03.341880+00:00",
+      "request_sha256": "c4d09e7f652268e094faccd7e07592bf8c48af448228c34dc7e70ba8d56f148d",
+      "duration_ms": 3351,
+      "usage": {
+        "prompt_tokens": 21512,
+        "completion_tokens": 595,
+        "total_tokens": 22107,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12040
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F05",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：可结合已知旅行祝愿；不编目的地、家人或旅行体验",
+      "started_at": "2026-11-03T17:53:06.719343+00:00",
+      "request_sha256": "318353054b1b60f0d3b5e4f072d7bc2bf63fc575662a7ef3d882a119c6b8bb12",
+      "duration_ms": 2871,
+      "usage": {
+        "prompt_tokens": 20240,
+        "completion_tokens": 288,
+        "total_tokens": 20528,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10384
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F05",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：可结合已知旅行祝愿；不编目的地、家人或旅行体验",
+      "started_at": "2026-11-03T17:53:09.601437+00:00",
+      "request_sha256": "3993fbd8354f60c2f2a13e9e917e5a15f0cc51101d3a1210d8059eb5d5a1eb02",
+      "duration_ms": 4906,
+      "usage": {
+        "prompt_tokens": 21639,
+        "completion_tokens": 620,
+        "total_tokens": 22259,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12167
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F06",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：不提年龄或日期；不借生日推销",
+      "started_at": "2026-11-03T17:53:14.529859+00:00",
+      "request_sha256": "fa77b37dd142d3423a87544cf6078ffaad91716ebb58ac7805f1c854d5ad598d",
+      "duration_ms": 3139,
+      "usage": {
+        "prompt_tokens": 20218,
+        "completion_tokens": 244,
+        "total_tokens": 20462,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10362
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F06",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：不提年龄或日期；不借生日推销",
+      "started_at": "2026-11-03T17:53:17.677326+00:00",
+      "request_sha256": "2d29505e490dfabc9a7aecf8dd66e2c9dc86e12fc678c0c5d1424fffb6f58bc3",
+      "duration_ms": 2961,
+      "usage": {
+        "prompt_tokens": 21603,
+        "completion_tokens": 596,
+        "total_tokens": 22199,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12131
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F07",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：回应当前感谢，不重新发一整篇首次问候；不编赠礼或亲密经历",
+      "started_at": "2026-11-03T17:53:20.662913+00:00",
+      "request_sha256": "7cff87f24e13b0f51561b5b3239f426f879a5edc2af4f31667d1d4a3ddb0e3cc",
+      "duration_ms": 3541,
+      "usage": {
+        "prompt_tokens": 20463,
+        "completion_tokens": 258,
+        "total_tokens": 20721,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10607
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F07",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：回应当前感谢，不重新发一整篇首次问候；不编赠礼或亲密经历",
+      "started_at": "2026-11-03T17:53:24.217106+00:00",
+      "request_sha256": "0199cc0fad7b3f6d73c6af22ab423a744c6bf6a1a1af9a00342a180c2ad47e25",
+      "duration_ms": 4157,
+      "usage": {
+        "prompt_tokens": 21460,
+        "completion_tokens": 588,
+        "total_tokens": 22048,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11988
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F08",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：承接正确19日；不说档案已经修改、也不假设今天生日",
+      "started_at": "2026-11-03T17:53:28.404179+00:00",
+      "request_sha256": "9e6ea8fc50806b2662f52129634175757133427cf1d24f8d4d76b2edc3bc0654",
+      "duration_ms": 4442,
+      "usage": {
+        "prompt_tokens": 20575,
+        "completion_tokens": 310,
+        "total_tokens": 20885,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10719
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F08",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：承接正确19日；不说档案已经修改、也不假设今天生日",
+      "started_at": "2026-11-03T17:53:32.857603+00:00",
+      "request_sha256": "7b18fe83f55bd120225987b5186db422b2310c3604bf8804379da80ebde16cec",
+      "duration_ms": 3203,
+      "usage": {
+        "prompt_tokens": 21782,
+        "completion_tokens": 585,
+        "total_tokens": 22367,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12310
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F09",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：2,800元和4个独立卡位；标准银行卡尺寸的四张可用，不编礼盒或赠品",
+      "started_at": "2026-11-03T17:53:36.088759+00:00",
+      "request_sha256": "f2f6080bca5d45dcd38dd603a2db37cfb0a7981ae36cb45a7f88b3b984336022",
+      "duration_ms": 3465,
+      "usage": {
+        "prompt_tokens": 20737,
+        "completion_tokens": 380,
+        "total_tokens": 21117,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10881
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F09",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：2,800元和4个独立卡位；标准银行卡尺寸的四张可用，不编礼盒或赠品",
+      "started_at": "2026-11-03T17:53:39.569005+00:00",
+      "request_sha256": "f5b92eecb19a69fb69d94b94331e659dc22c273e0ff78e95fb4e0bb0ff572770",
+      "duration_ms": 5023,
+      "usage": {
+        "prompt_tokens": 22429,
+        "completion_tokens": 1178,
+        "total_tokens": 23607,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12957
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F10",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：明确无零钱袋；不许诺可放硬币或强推包袋替代",
+      "started_at": "2026-11-03T17:53:44.618088+00:00",
+      "request_sha256": "c338c6640acefbea8178bc9c5dc48e62cfb55f1925148143d51cab9122f3f7dd",
+      "duration_ms": 2621,
+      "usage": {
+        "prompt_tokens": 20666,
+        "completion_tokens": 327,
+        "total_tokens": 20993,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10682
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F10",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：明确无零钱袋；不许诺可放硬币或强推包袋替代",
+      "started_at": "2026-11-03T17:53:47.253718+00:00",
+      "request_sha256": "b3aab72f8bbae626afb89d1b4cf0bae9ca65af968edca71d84a29a3188ef3cac",
+      "duration_ms": 3720,
+      "usage": {
+        "prompt_tokens": 22150,
+        "completion_tokens": 862,
+        "total_tokens": 23012,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12678
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F11",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：支持斜挎及肩背；客户手机尺寸不当包尺寸，不凭外尺寸保证装入",
+      "started_at": "2026-11-03T17:53:50.996879+00:00",
+      "request_sha256": "5519e019866eda029e6934d31a1674fca1cc62de6e9e322673d9e39682fb6838",
+      "duration_ms": 3462,
+      "usage": {
+        "prompt_tokens": 20864,
+        "completion_tokens": 422,
+        "total_tokens": 21286,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10880
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F11",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：支持斜挎及肩背；客户手机尺寸不当包尺寸，不凭外尺寸保证装入",
+      "started_at": "2026-11-03T17:53:54.469432+00:00",
+      "request_sha256": "7f30af041094087b2acba21d5066a41fd7ac58caa35aca337dcaba64a74f2aa9",
+      "duration_ms": 4214,
+      "usage": {
+        "prompt_tokens": 22711,
+        "completion_tokens": 901,
+        "total_tokens": 23612,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13239
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F12",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：A4纸容量明确；厚文件夹需另核尺寸，不把A4等同厚夹",
+      "started_at": "2026-11-03T17:53:58.713301+00:00",
+      "request_sha256": "d2736e819a54537df7e8facf8c612ba49ffb0dabbc8421798db1081c7c8fda47",
+      "duration_ms": 3340,
+      "usage": {
+        "prompt_tokens": 21118,
+        "completion_tokens": 384,
+        "total_tokens": 21502,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11646
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F12",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：A4纸容量明确；厚文件夹需另核尺寸，不把A4等同厚夹",
+      "started_at": "2026-11-03T17:54:02.065275+00:00",
+      "request_sha256": "b9f1e8dfbc38affb3ed14d41970a6aec82d11cc235eb5db6576c78591154b697",
+      "duration_ms": 3678,
+      "usage": {
+        "prompt_tokens": 22523,
+        "completion_tokens": 828,
+        "total_tokens": 23351,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13051
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F13",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：P01约750克、P02约420克；P02可斜挎，P01未提供斜挎配置，不移植特点",
+      "started_at": "2026-11-03T17:54:05.767522+00:00",
+      "request_sha256": "40ba10dffde80256137a7e3cf5d67503a5174f276dd0176118cd734625760a6f",
+      "duration_ms": 3309,
+      "usage": {
+        "prompt_tokens": 20976,
+        "completion_tokens": 421,
+        "total_tokens": 21397,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10992
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F14",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：单价2,800、两只合计5,600；总额不能误当商品单价",
+      "started_at": "2026-11-03T17:54:09.104453+00:00",
+      "request_sha256": "7851b15f951fb4c957a7d740e5788aedb3a9a6051adf7d001085eafaac4661c5",
+      "duration_ms": 3109,
+      "usage": {
+        "prompt_tokens": 20646,
+        "completion_tokens": 333,
+        "total_tokens": 20979,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10662
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": "$ fields"
+    },
+    {
+      "case_id": "F15",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：可讲小压印标识、哑光细纹牛皮、简洁线条；不编产地、皮革等级或地位象征",
+      "started_at": "2026-11-03T17:54:12.228436+00:00",
+      "request_sha256": "6fc45bc64bdabdb783e6072f30f85a86793c56724dc2bfcf915aed794a06107b",
+      "duration_ms": 3771,
+      "usage": {
+        "prompt_tokens": 20692,
+        "completion_tokens": 387,
+        "total_tokens": 21079,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10708
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F15",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：可讲小压印标识、哑光细纹牛皮、简洁线条；不编产地、皮革等级或地位象征",
+      "started_at": "2026-11-03T17:54:16.012080+00:00",
+      "request_sha256": "9e03267d3cf714f7faf20d533f32a21d2cb3ca2d3f4998abbbdd395fd4230e0f",
+      "duration_ms": 4366,
+      "usage": {
+        "prompt_tokens": 22411,
+        "completion_tokens": 665,
+        "total_tokens": 23076,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12939
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F16",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：包身哑光细纹牛皮、棉布内衬；一个内侧平口袋可放钥匙，每条答两问",
+      "started_at": "2026-11-03T17:54:20.403990+00:00",
+      "request_sha256": "a2625bf688a66b7148d2964bd612d886b06cfdba3f6f2922646c328db47dd9ef",
+      "duration_ms": 3154,
+      "usage": {
+        "prompt_tokens": 20739,
+        "completion_tokens": 370,
+        "total_tokens": 21109,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10755
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F16",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：包身哑光细纹牛皮、棉布内衬；一个内侧平口袋可放钥匙，每条答两问",
+      "started_at": "2026-11-03T17:54:23.574989+00:00",
+      "request_sha256": "d52dd0d689ceba0df41791510111a09e1a0110611c5165b9f4e4287aecf40b4e",
+      "duration_ms": 3442,
+      "usage": {
+        "prompt_tokens": 22335,
+        "completion_tokens": 779,
+        "total_tokens": 23114,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12863
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F17",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：不适合护照，不能把卡片容量当护照容量；不虚构其他未上架商品",
+      "started_at": "2026-11-03T17:54:27.053860+00:00",
+      "request_sha256": "76ed29081b60044545ed007cafe12a109da94f20f594fa9a7844738e79b2a373",
+      "duration_ms": 3459,
+      "usage": {
+        "prompt_tokens": 20642,
+        "completion_tokens": 356,
+        "total_tokens": 20998,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10658
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F17",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：不适合护照，不能把卡片容量当护照容量；不虚构其他未上架商品",
+      "started_at": "2026-11-03T17:54:30.524079+00:00",
+      "request_sha256": "0b434b1f8e2a5af51f06b7d955c094e40e9c1a8c973bc79ffd3838af8e7aa1ba",
+      "duration_ms": 2962,
+      "usage": {
+        "prompt_tokens": 22148,
+        "completion_tokens": 596,
+        "total_tokens": 22744,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12676
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F18",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：确认拉链开合；区分客户钱包和包尺寸，钱包实际兼容需核实",
+      "started_at": "2026-11-03T17:54:33.508023+00:00",
+      "request_sha256": "e83d76157f2678f3db8bdfaf4c66cbc52669fcf759a9929e78d832a0221c7431",
+      "duration_ms": 4476,
+      "usage": {
+        "prompt_tokens": 20739,
+        "completion_tokens": 469,
+        "total_tokens": 21208,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10755
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F19",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：符合申请条件不等于已批准；最终门店检查，不保证到账日期",
+      "started_at": "2026-11-03T17:54:38.010008+00:00",
+      "request_sha256": "13ff349973b301c2ca4eb557e527c49c55af0bed23b6d0b9c3d12cfa14f5d8f3",
+      "duration_ms": 4207,
+      "usage": {
+        "prompt_tokens": 20888,
+        "completion_tokens": 471,
+        "total_tokens": 21359,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 11032
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F19",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：符合申请条件不等于已批准；最终门店检查，不保证到账日期",
+      "started_at": "2026-11-03T17:54:42.234384+00:00",
+      "request_sha256": "54b781dc6c8289cc2c23dfeaeaff19faf056afd61a3d601c03569dc8e87ed002",
+      "duration_ms": 4202,
+      "usage": {
+        "prompt_tokens": 22994,
+        "completion_tokens": 958,
+        "total_tokens": 23952,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13522
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F20",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：次日起7自然日，第7日11/3可申请；换色不等于有库存，不直接批准",
+      "started_at": "2026-11-03T17:54:46.468491+00:00",
+      "request_sha256": "1f828a5744194bd871ef3cf3459f989b6f49b31806adb6fbf53fcd4fffd5cb70",
+      "duration_ms": 3737,
+      "usage": {
+        "prompt_tokens": 20924,
+        "completion_tokens": 455,
+        "total_tokens": 21379,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10940
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F20",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：次日起7自然日，第7日11/3可申请；换色不等于有库存，不直接批准",
+      "started_at": "2026-11-03T17:54:50.221759+00:00",
+      "request_sha256": "33d664f0ca0075701be5fb0e132c387bf7c18d2b7ee86bae9f52c88de58ddc6e",
+      "duration_ms": 4053,
+      "usage": {
+        "prompt_tokens": 23107,
+        "completion_tokens": 860,
+        "total_tokens": 23967,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13635
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F21",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：先核实渠道、记录和商品情况；不直接套门店7日或保证退货",
+      "started_at": "2026-11-03T17:54:54.299657+00:00",
+      "request_sha256": "bca3f7b93fa28f734d5647333207c1123add5eb9b0b5a86a8b503cf6ab98dc2f",
+      "duration_ms": 4682,
+      "usage": {
+        "prompt_tokens": 20681,
+        "completion_tokens": 427,
+        "total_tokens": 21108,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10697
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F21",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：先核实渠道、记录和商品情况；不直接套门店7日或保证退货",
+      "started_at": "2026-11-03T17:54:58.998098+00:00",
+      "request_sha256": "455a040efbd3217570da4619c6560e50bbc81c436cbbcc43c1976a7154925029",
+      "duration_ms": 4245,
+      "usage": {
+        "prompt_tokens": 22969,
+        "completion_tokens": 794,
+        "total_tokens": 23763,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13497
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F22",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：说明需核实渠道规则；不编线上退货权益、平台地址或批准",
+      "started_at": "2026-11-03T17:55:03.276539+00:00",
+      "request_sha256": "d34c025aa70302f6f4ca5e06ba37840d3470b9a040911ba4fb86805826e9078b",
+      "duration_ms": 3595,
+      "usage": {
+        "prompt_tokens": 20571,
+        "completion_tokens": 398,
+        "total_tokens": 20969,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10715
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F22",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：说明需核实渠道规则；不编线上退货权益、平台地址或批准",
+      "started_at": "2026-11-03T17:55:06.884889+00:00",
+      "request_sha256": "3c26812e645831bb5aec1b17f15f6c0958e960076d13a05631e98c7e60d2f5ea",
+      "duration_ms": 3135,
+      "usage": {
+        "prompt_tokens": 22532,
+        "completion_tokens": 728,
+        "total_tokens": 23260,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13060
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F23",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：不建议自行用未知清洁剂；可收局部照片交售后，不编皮面损坏机理",
+      "started_at": "2026-11-03T17:55:10.048739+00:00",
+      "request_sha256": "30fbe44098d8ab0120e1caf3d57f104572796a4d5b4b9bba7e219a33f409cca9",
+      "duration_ms": 3656,
+      "usage": {
+        "prompt_tokens": 20679,
+        "completion_tokens": 353,
+        "total_tokens": 21032,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10695
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F23",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：不建议自行用未知清洁剂；可收局部照片交售后，不编皮面损坏机理",
+      "started_at": "2026-11-03T17:55:13.721622+00:00",
+      "request_sha256": "57a3f57d607ff0dad0cfa2fd11292c4f89db031c29d269e59e8d11f6cdadbb3f",
+      "duration_ms": 3644,
+      "usage": {
+        "prompt_tokens": 22429,
+        "completion_tokens": 674,
+        "total_tokens": 23103,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12957
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F24",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：两项都需售后评估；不保证免费、固定天数或认定人为使用不当",
+      "started_at": "2026-11-03T17:55:17.394102+00:00",
+      "request_sha256": "28ed1ee66828e10f497e851784322053a77f13f7067a20a2899c1d4936186496",
+      "duration_ms": 3355,
+      "usage": {
+        "prompt_tokens": 20674,
+        "completion_tokens": 386,
+        "total_tokens": 21060,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10690
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F24",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：两项都需售后评估；不保证免费、固定天数或认定人为使用不当",
+      "started_at": "2026-11-03T17:55:20.759654+00:00",
+      "request_sha256": "6ca4068849c84523bef5aac5b8c876b31fe2f5366093308d0ba11da194121c43",
+      "duration_ms": 3662,
+      "usage": {
+        "prompt_tokens": 22740,
+        "completion_tokens": 806,
+        "total_tokens": 23546,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13268
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F25",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：未来提交意向不等于已完成；不能编单号、已查结果或已提交事实",
+      "started_at": "2026-11-03T17:55:24.452591+00:00",
+      "request_sha256": "bffad1aa1f2aaee8f3909d1d290e05d09f770878de611b857d3530afa87aa73f",
+      "duration_ms": 3436,
+      "usage": {
+        "prompt_tokens": 20518,
+        "completion_tokens": 312,
+        "total_tokens": 20830,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10662
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F25",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：未来提交意向不等于已完成；不能编单号、已查结果或已提交事实",
+      "started_at": "2026-11-03T17:55:27.900449+00:00",
+      "request_sha256": "7321db97a0e63de2083daa7b31ab68cc0828e8fc351f1e993e6f9efdecf85b34",
+      "duration_ms": 3329,
+      "usage": {
+        "prompt_tokens": 21928,
+        "completion_tokens": 715,
+        "total_tokens": 22643,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12456
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F26",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：可问卡夹使用感受；不编已出现损坏、反馈或终身服务",
+      "started_at": "2026-11-03T17:55:31.251439+00:00",
+      "request_sha256": "694234b7b894d3f69e07242454b232c96ba69bf54e57f7fee426ada8dfd63250",
+      "duration_ms": 2871,
+      "usage": {
+        "prompt_tokens": 20414,
+        "completion_tokens": 289,
+        "total_tokens": 20703,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10558
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F26",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：可问卡夹使用感受；不编已出现损坏、反馈或终身服务",
+      "started_at": "2026-11-03T17:55:34.135998+00:00",
+      "request_sha256": "c48c6d309565eb109f3186a584e6ee8b28837986e28a288214220ded18973f73",
+      "duration_ms": 3061,
+      "usage": {
+        "prompt_tokens": 21523,
+        "completion_tokens": 614,
+        "total_tokens": 22137,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12051
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F27",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：通风自然晾干，不建议热风或酒精；不认定已经损坏，也不直接保证无需维修或免费",
+      "started_at": "2026-11-03T17:55:37.226124+00:00",
+      "request_sha256": "acb7b8d1b46d1bdd75460bd10eb54c10dde101eda4136cfa06fd8eee0270fd97",
+      "duration_ms": 4415,
+      "usage": {
+        "prompt_tokens": 20731,
+        "completion_tokens": 420,
+        "total_tokens": 21151,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10747
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F27",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：通风自然晾干，不建议热风或酒精；不认定已经损坏，也不直接保证无需维修或免费",
+      "started_at": "2026-11-03T17:55:41.658603+00:00",
+      "request_sha256": "0c1b5015e261c19a33c4cd82b07647ae5a267b77680c6480782218adabe80583",
+      "duration_ms": 3858,
+      "usage": {
+        "prompt_tokens": 22909,
+        "completion_tokens": 911,
+        "total_tokens": 23820,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13437
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F28",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：不责问未到店；可接续卡夹使用，不编近期活动或生活",
+      "started_at": "2026-11-03T17:55:45.541617+00:00",
+      "request_sha256": "3be09bd515e12beafcd1ac027803a4f3628c5c550feef97b81f0091acf819d9e",
+      "duration_ms": 3424,
+      "usage": {
+        "prompt_tokens": 20444,
+        "completion_tokens": 348,
+        "total_tokens": 20792,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10588
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F28",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：不责问未到店；可接续卡夹使用，不编近期活动或生活",
+      "started_at": "2026-11-03T17:55:48.981578+00:00",
+      "request_sha256": "b884bdf37ff188c1f97786abc867046b865faaf87d26d62214fa573be8f025f7",
+      "duration_ms": 3577,
+      "usage": {
+        "prompt_tokens": 22028,
+        "completion_tokens": 689,
+        "total_tokens": 22717,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12556
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F29",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：符合简短偏好；不捏造新品、活动或优惠",
+      "started_at": "2026-11-03T17:55:52.582026+00:00",
+      "request_sha256": "69ffd4c26dfbb62332f3205ccc5fd24a121ee9cc0975bfbf7adad23acb769c72",
+      "duration_ms": 3404,
+      "usage": {
+        "prompt_tokens": 20250,
+        "completion_tokens": 312,
+        "total_tokens": 20562,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10394
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F29",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：符合简短偏好；不捏造新品、活动或优惠",
+      "started_at": "2026-11-03T17:55:56.009932+00:00",
+      "request_sha256": "0f3dc89e50015b5906c183475e059f937e928a2f705537e8e373c1718b62622b",
+      "duration_ms": 3446,
+      "usage": {
+        "prompt_tokens": 21613,
+        "completion_tokens": 615,
+        "total_tokens": 22228,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12141
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F30",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：不回答旧活动时间地点；不把旧问句视为当前邀约同意",
+      "started_at": "2026-11-03T17:55:59.489440+00:00",
+      "request_sha256": "95d478aaa00dd9fc399cc7490077f388ba5bfcba8a3bc40b0e17be3426813fd9",
+      "duration_ms": 3520,
+      "usage": {
+        "prompt_tokens": 20758,
+        "completion_tokens": 363,
+        "total_tokens": 21121,
+        "prompt_tokens_details": {
+          "cached_tokens": 9344
+        },
+        "prompt_cache_hit_tokens": 9344,
+        "prompt_cache_miss_tokens": 11414
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F30",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：不回答旧活动时间地点；不把旧问句视为当前邀约同意",
+      "started_at": "2026-11-03T17:56:03.019634+00:00",
+      "request_sha256": "14824b23941c79cc42dc96218b87fc4be070aa8ff796784be528186113f5517a",
+      "duration_ms": 3108,
+      "usage": {
+        "prompt_tokens": 21792,
+        "completion_tokens": 591,
+        "total_tokens": 22383,
+        "prompt_tokens_details": {
+          "cached_tokens": 9344
+        },
+        "prompt_cache_hit_tokens": 9344,
+        "prompt_cache_miss_tokens": 12448
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F31",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：只轻量问候，不附商品推销；不说已获得新的联系许可",
+      "started_at": "2026-11-03T17:56:06.149645+00:00",
+      "request_sha256": "b18c8f230742e37691b87725f70e84d109a85869e0560fd98c102b9969162157",
+      "duration_ms": 2728,
+      "usage": {
+        "prompt_tokens": 20315,
+        "completion_tokens": 307,
+        "total_tokens": 20622,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10459
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F31",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：只轻量问候，不附商品推销；不说已获得新的联系许可",
+      "started_at": "2026-11-03T17:56:08.888802+00:00",
+      "request_sha256": "bf9c13cb5e2839cc9de3b3036dd8e7df770f7ad8e45c45c3b978ab1eb38db4a7",
+      "duration_ms": 2996,
+      "usage": {
+        "prompt_tokens": 21741,
+        "completion_tokens": 629,
+        "total_tokens": 22370,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12269
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F32",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：不用编姓名或亲密称呼；不编顾问过去一直没打扰或客户近况",
+      "started_at": "2026-11-03T17:56:11.914546+00:00",
+      "request_sha256": "0da98ff1d650c33db818398c305736e05ba5ec49616bceab7b66fb27244bb489",
+      "duration_ms": 2980,
+      "usage": {
+        "prompt_tokens": 20439,
+        "completion_tokens": 368,
+        "total_tokens": 20807,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10583
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F32",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：不用编姓名或亲密称呼；不编顾问过去一直没打扰或客户近况",
+      "started_at": "2026-11-03T17:56:14.910680+00:00",
+      "request_sha256": "cd18b89119db0e4faa4c39669027c584b528ff59f450648b567eef3fab1706b7",
+      "duration_ms": 4918,
+      "usage": {
+        "prompt_tokens": 21994,
+        "completion_tokens": 632,
+        "total_tokens": 22626,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12522
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F33",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：不将旧颜色偏好当购买意愿；不虚构暖棕新品到店或库存",
+      "started_at": "2026-11-03T17:56:19.868488+00:00",
+      "request_sha256": "d035fd72bb4bf29d510134afca58a2453168a5cee9ca077f456ec5c36309bd88",
+      "duration_ms": 3115,
+      "usage": {
+        "prompt_tokens": 20255,
+        "completion_tokens": 280,
+        "total_tokens": 20535,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10399
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F33",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：不将旧颜色偏好当购买意愿；不虚构暖棕新品到店或库存",
+      "started_at": "2026-11-03T17:56:22.999654+00:00",
+      "request_sha256": "aca0da02e2911eb0c6e38ac6d2c2e5c6794507a0b07a82adb7941d7cffb0624e",
+      "duration_ms": 3036,
+      "usage": {
+        "prompt_tokens": 21306,
+        "completion_tokens": 558,
+        "total_tokens": 21864,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11834
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F34",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：只问使用体验，不催消费；不说客户现有包需要更换",
+      "started_at": "2026-11-03T17:56:26.062100+00:00",
+      "request_sha256": "528687c5b899778bc5f03eb382884478ee1cc2fc8b24001be9c90de2dd033d17",
+      "duration_ms": 2983,
+      "usage": {
+        "prompt_tokens": 20471,
+        "completion_tokens": 321,
+        "total_tokens": 20792,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10615
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F34",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：只问使用体验，不催消费；不说客户现有包需要更换",
+      "started_at": "2026-11-03T17:56:29.056991+00:00",
+      "request_sha256": "4ebb053359e89d5ed7bc8b4d0b42fac3977436431152b97893e00915557631a0",
+      "duration_ms": 3164,
+      "usage": {
+        "prompt_tokens": 21990,
+        "completion_tokens": 631,
+        "total_tokens": 22621,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12518
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F35",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：日期时间地点准确；可问意愿，不确认席位或承诺优惠",
+      "started_at": "2026-11-03T17:56:32.254743+00:00",
+      "request_sha256": "9be1a6f5cbc442d602fe950b3349212bb0d0c1a6ce8838f94abde8a035374bff",
+      "duration_ms": 3691,
+      "usage": {
+        "prompt_tokens": 20712,
+        "completion_tokens": 497,
+        "total_tokens": 21209,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11240
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F35",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：日期时间地点准确；可问意愿，不确认席位或承诺优惠",
+      "started_at": "2026-11-03T17:56:35.958410+00:00",
+      "request_sha256": "1e668a607401208f6a322fc068c6903bdb2333c03ab0e6568881c4316c20650c",
+      "duration_ms": 4124,
+      "usage": {
+        "prompt_tokens": 22958,
+        "completion_tokens": 884,
+        "total_tokens": 23842,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13486
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F36",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：只答澄序广场8号精品店；不因无问号误拦，不恢复营销同意",
+      "started_at": "2026-11-03T17:56:40.107797+00:00",
+      "request_sha256": "52594b083459b7617b3cc640d4f13dc9c64889d935a17e9139231d7e2d28b5fe",
+      "duration_ms": 2684,
+      "usage": {
+        "prompt_tokens": 21036,
+        "completion_tokens": 371,
+        "total_tokens": 21407,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11564
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F36",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：只答澄序广场8号精品店；不因无问号误拦，不恢复营销同意",
+      "started_at": "2026-11-03T17:56:42.808626+00:00",
+      "request_sha256": "cf642eecebcf1e3b941fe800beac492c44c6b75cd5da057afcddf37d2632f322",
+      "duration_ms": 2876,
+      "usage": {
+        "prompt_tokens": 22142,
+        "completion_tokens": 637,
+        "total_tokens": 22779,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12670
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F37",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：可携一位朋友但需登记确认；未来协助不等于已登记或已留两席",
+      "started_at": "2026-11-03T17:56:45.709906+00:00",
+      "request_sha256": "744638e9a2ccaa245b5575ca354d243fd030048bd6d4aa58da6e60ae9ac4895a",
+      "duration_ms": 3130,
+      "usage": {
+        "prompt_tokens": 20859,
+        "completion_tokens": 381,
+        "total_tokens": 21240,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11387
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F37",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：可携一位朋友但需登记确认；未来协助不等于已登记或已留两席",
+      "started_at": "2026-11-03T17:56:48.855519+00:00",
+      "request_sha256": "6877ae0a35d3014cbf436bd0552138e459df9208aff596a88ec15f8d75e7a9b1",
+      "duration_ms": 4028,
+      "usage": {
+        "prompt_tokens": 22727,
+        "completion_tokens": 868,
+        "total_tokens": 23595,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13255
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F38",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：回答周六11/21的10:00—12:00；不混用周五时段或确认预约",
+      "started_at": "2026-11-03T17:56:52.911676+00:00",
+      "request_sha256": "895ee52bc232a838bfc8a465c53a2bcf5f32d2f233cbcb8d2978adbf8299a00d",
+      "duration_ms": 2960,
+      "usage": {
+        "prompt_tokens": 21184,
+        "completion_tokens": 353,
+        "total_tokens": 21537,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11712
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F38",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：回答周六11/21的10:00—12:00；不混用周五时段或确认预约",
+      "started_at": "2026-11-03T17:56:55.883893+00:00",
+      "request_sha256": "324bc6baa7174a1b88a690664c97a27a69988637cc8e67657b4143686eabcf4a",
+      "duration_ms": 3388,
+      "usage": {
+        "prompt_tokens": 22234,
+        "completion_tokens": 705,
+        "total_tokens": 22939,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12762
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F39",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：无折扣政策准确；说明活动用途，不夸大参加收益",
+      "started_at": "2026-11-03T17:56:59.304150+00:00",
+      "request_sha256": "4fff2a7c83b518b14a278bab6b47cde050e5331697f17603f0621ac58e4c4463",
+      "duration_ms": 4402,
+      "usage": {
+        "prompt_tokens": 20810,
+        "completion_tokens": 365,
+        "total_tokens": 21175,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 10698
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F39",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：无折扣政策准确；说明活动用途，不夸大参加收益",
+      "started_at": "2026-11-03T17:57:03.723529+00:00",
+      "request_sha256": "518084da1c9ae1d20be4d5c419adb0614cc8c0edd7542b1af7dea5ab2e3be280",
+      "duration_ms": 7790,
+      "usage": {
+        "prompt_tokens": 22154,
+        "completion_tokens": 670,
+        "total_tokens": 22824,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12682
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F40",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：可依据明确业务记录确认一位登记和时段；不虚构同行、余位或升级权益",
+      "started_at": "2026-11-03T17:57:11.554692+00:00",
+      "request_sha256": "c74f52520f01e2dbf178a7373808ddcb920d20ca5ab30ea50f76096548b53ace",
+      "duration_ms": 2762,
+      "usage": {
+        "prompt_tokens": 20840,
+        "completion_tokens": 343,
+        "total_tokens": 21183,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 11368
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F40",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：可依据明确业务记录确认一位登记和时段；不虚构同行、余位或升级权益",
+      "started_at": "2026-11-03T17:57:14.334265+00:00",
+      "request_sha256": "8aee7d32299a4e33d97f772f91d9087bc0d0fdecfa849f4c979d088bea481fd8",
+      "duration_ms": 3559,
+      "usage": {
+        "prompt_tokens": 22124,
+        "completion_tokens": 677,
+        "total_tokens": 22801,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12652
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F41",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：回答展示日常收纳内容；不预约、不虚构新品或礼物",
+      "started_at": "2026-11-03T17:57:17.919284+00:00",
+      "request_sha256": "521da2f3c52eced9bbc33ac8cdb59152dfbb62bea639e55c51ddeef7ba958fb1",
+      "duration_ms": 3787,
+      "usage": {
+        "prompt_tokens": 20834,
+        "completion_tokens": 460,
+        "total_tokens": 21294,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 10722
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F41",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：回答展示日常收纳内容；不预约、不虚构新品或礼物",
+      "started_at": "2026-11-03T17:57:21.724499+00:00",
+      "request_sha256": "98050f0a97a64dc5ce801ed7a886e39126cf9568195c51fef227a08db5400a0b",
+      "duration_ms": 4573,
+      "usage": {
+        "prompt_tokens": 23095,
+        "completion_tokens": 947,
+        "total_tokens": 24042,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13623
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F42",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：纠正为11/14周六；否定旧周五不能当新活动星期冲突",
+      "started_at": "2026-11-03T17:57:26.325600+00:00",
+      "request_sha256": "c2cc9c7a0f5e43dd9e6e9f60c5a3a9975480e4336257b793618d90d42b80a3ca",
+      "duration_ms": 2790,
+      "usage": {
+        "prompt_tokens": 21019,
+        "completion_tokens": 381,
+        "total_tokens": 21400,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 10907
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F43",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：2,800与无折扣；有依据说明卡片用途/低调设计，不把精品身份当价值证明",
+      "started_at": "2026-11-03T17:57:29.146071+00:00",
+      "request_sha256": "cf2135efaef482d171afdbd51c636099e0a091596eefb9a379b9e750efb46764",
+      "duration_ms": 3701,
+      "usage": {
+        "prompt_tokens": 20655,
+        "completion_tokens": 430,
+        "total_tokens": 21085,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10799
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F43",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：2,800与无折扣；有依据说明卡片用途/低调设计，不把精品身份当价值证明",
+      "started_at": "2026-11-03T17:57:32.862234+00:00",
+      "request_sha256": "05188e43368edb290e33883ff2867ed53d6b7677a4cdc55a4caefeb126630ab1",
+      "duration_ms": 4381,
+      "usage": {
+        "prompt_tokens": 22614,
+        "completion_tokens": 872,
+        "total_tokens": 23486,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13142
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F44",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：不重复问已知预算；用随身小物、背法/拉链等真实信息帮判断，不保证物有所值",
+      "started_at": "2026-11-03T17:57:37.278565+00:00",
+      "request_sha256": "e0b5f9fad6882c078b900ae09065e3f01672badb9735ed0d6104ff367ce21eff",
+      "duration_ms": 4166,
+      "usage": {
+        "prompt_tokens": 20906,
+        "completion_tokens": 515,
+        "total_tokens": 21421,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10922
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F44",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：不重复问已知预算；用随身小物、背法/拉链等真实信息帮判断，不保证物有所值",
+      "started_at": "2026-11-03T17:57:41.467614+00:00",
+      "request_sha256": "52922ec8dcb2717deb02bf338d6d962810a4e8955acea10860cec348c35da261",
+      "duration_ms": 4831,
+      "usage": {
+        "prompt_tokens": 22877,
+        "completion_tokens": 1140,
+        "total_tokens": 24017,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13405
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F45",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：客户旧实付不当当前授权售价；不编涨价原因或兑现旧价",
+      "started_at": "2026-11-03T17:57:46.337081+00:00",
+      "request_sha256": "bd49c63dbd9d00913b3f4b76947a9a4399d5a3d5105b479b845487ebd703c61a",
+      "duration_ms": 3729,
+      "usage": {
+        "prompt_tokens": 20885,
+        "completion_tokens": 478,
+        "total_tokens": 21363,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10901
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F45",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：客户旧实付不当当前授权售价；不编涨价原因或兑现旧价",
+      "started_at": "2026-11-03T17:57:50.087512+00:00",
+      "request_sha256": "2bb4a2682ae6d26bbe07d6b27750156e2172c82dc30ec4a88be5210d1ee0a9b8",
+      "duration_ms": 3983,
+      "usage": {
+        "prompt_tokens": 22562,
+        "completion_tokens": 918,
+        "total_tokens": 23480,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13090
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F46",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：未设相关权益，需核实不承诺；不因能接受价格就编成交/配送",
+      "started_at": "2026-11-03T17:57:54.101765+00:00",
+      "request_sha256": "9d2641bfe9ab114977548ea4e734fb990c426a4bda2f5b7cdc8098722bf13163",
+      "duration_ms": 3651,
+      "usage": {
+        "prompt_tokens": 20656,
+        "completion_tokens": 420,
+        "total_tokens": 21076,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10672
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F46",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：未设相关权益，需核实不承诺；不因能接受价格就编成交/配送",
+      "started_at": "2026-11-03T17:57:57.765140+00:00",
+      "request_sha256": "16746758f56c9a6e7a5a529b8eeaa6c78e707bfb649fefaacb06c2f3d448e2d8",
+      "duration_ms": 3956,
+      "usage": {
+        "prompt_tokens": 22551,
+        "completion_tokens": 790,
+        "total_tokens": 23341,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13079
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F47",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：价差6,000可算，不当第三个商品单价；材质同为哑光细纹牛皮/棉布，不编皮革等级或成本原因",
+      "started_at": "2026-11-03T17:58:01.774040+00:00",
+      "request_sha256": "9f2306547a557c7af58a6d421d84dccbc81c39f361c39426edb2b2c3299f2f07",
+      "duration_ms": 3720,
+      "usage": {
+        "prompt_tokens": 20949,
+        "completion_tokens": 513,
+        "total_tokens": 21462,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10965
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F48",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：理解暂缓，不因没命中词表拒绝unclear；三条温暖给空间，不追问或承诺跟进",
+      "started_at": "2026-11-03T17:58:05.519051+00:00",
+      "request_sha256": "e55c9c77d0bd536a171df6070d80f1ad7d3d2a795cb3dc2a43c852d79e464480",
+      "duration_ms": 2627,
+      "usage": {
+        "prompt_tokens": 20651,
+        "completion_tokens": 288,
+        "total_tokens": 20939,
+        "prompt_tokens_details": {
+          "cached_tokens": 9856
+        },
+        "prompt_cache_hit_tokens": 9856,
+        "prompt_cache_miss_tokens": 10795
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F48",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：理解暂缓，不因没命中词表拒绝unclear；三条温暖给空间，不追问或承诺跟进",
+      "started_at": "2026-11-03T17:58:08.168812+00:00",
+      "request_sha256": "1ed0e632ae3979991bba38c3eb1d13cb787dae0c54772d45dbd10d1010bb6698",
+      "duration_ms": 3181,
+      "usage": {
+        "prompt_tokens": 21547,
+        "completion_tokens": 517,
+        "total_tokens": 22064,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12075
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F49",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：温暖停止本次推荐；不追问、换款、试背或主动跟进",
+      "started_at": "2026-11-03T17:58:11.382187+00:00",
+      "request_sha256": "fe378a09858de8dcfa6784b054c0b17eeb76ff9ebf550916caed31f6c72797cd",
+      "duration_ms": 3122,
+      "usage": {
+        "prompt_tokens": 20521,
+        "completion_tokens": 272,
+        "total_tokens": 20793,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10537
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F49",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：温暖停止本次推荐；不追问、换款、试背或主动跟进",
+      "started_at": "2026-11-03T17:58:14.521392+00:00",
+      "request_sha256": "0d6a8952975e74b623d730e7de380f4501c401eb94eca579dce3bcdbab2d6d4b",
+      "duration_ms": 3449,
+      "usage": {
+        "prompt_tokens": 21859,
+        "completion_tokens": 586,
+        "total_tokens": 22445,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 12387
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F50",
+      "stage": "generation",
+      "purpose": "正式首轮首次生成：无折扣，不依据朋友传言评价竞品；可讲自家已有特点，不编成本/产地/性能优势",
+      "started_at": "2026-11-03T17:58:17.997364+00:00",
+      "request_sha256": "9f0f5babb739004248d6855506924cc3b94b3a786210450763c62d9847282ac8",
+      "duration_ms": 4031,
+      "usage": {
+        "prompt_tokens": 20678,
+        "completion_tokens": 487,
+        "total_tokens": 21165,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 10694
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F50",
+      "stage": "review",
+      "purpose": "正式首轮首次独立复核：无折扣，不依据朋友传言评价竞品；可讲自家已有特点，不编成本/产地/性能优势",
+      "started_at": "2026-11-03T17:58:22.043924+00:00",
+      "request_sha256": "060e5e13d09f92f479207bcee0a8f22ab3cc8a347867e3cf214bd622966a070d",
+      "duration_ms": 4364,
+      "usage": {
+        "prompt_tokens": 22964,
+        "completion_tokens": 955,
+        "total_tokens": 23919,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472
+        },
+        "prompt_cache_hit_tokens": 9472,
+        "prompt_cache_miss_tokens": 13492
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    }
+  ],
+  "results": [
+    {
+      "case_id": "F01",
+      "run_id": "80bd863110904cc4a0de8862947413eb",
+      "raw_record": "baseline_raw/80bd863110904cc4a0de8862947413eb.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "许女士，生日快乐！祝您新的一岁顺心自在，常有欢喜。",
+        "许女士，生日快乐。愿您这一年过得松弛安稳，想做的事都能慢慢实现。",
+        "许女士，生日快乐！愿新的一岁平安健康，日子过得温暖又从容。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F02",
+      "run_id": "39144e0a9a0b4f17bf3541afd665802e",
+      "raw_record": "baseline_raw/39144e0a9a0b4f17bf3541afd665802e.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "沈先生，祝您生日快乐。愿新的一岁顺心如意，健康常伴。",
+        "沈先生，生日快乐。愿这一年里想做的事都顺利，日子过得踏实自在。",
+        "沈先生，祝您生日快乐，愿您和身边的人平安喜乐，事事顺意。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F03",
+      "run_id": "e45e6542e5df40e1bbfb7e04a659e6a7",
+      "raw_record": "baseline_raw/e45e6542e5df40e1bbfb7e04a659e6a7.json",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "顾女士，中秋快乐，愿您和家人顺遂安康。",
+        "顾女士，中秋到了，祝您节日愉快，也愿这几天的相聚和休息都轻松自在。",
+        "顾女士，中秋快乐，愿月圆人安，接下来的日子顺心。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F04",
+      "run_id": "856c08a22e434779962f2e4640e5df68",
+      "raw_record": "baseline_raw/856c08a22e434779962f2e4640e5df68.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "梁先生，新春快乐，祝您和家人都顺心安康。",
+        "梁先生，春节到了，给您拜个年。愿新的一年里诸事顺遂，日子过得安稳踏实。",
+        "梁先生，春节好。祝您新一年身体健康、事事如意，也愿您有个轻松愉快的新春。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F05",
+      "run_id": "200ccdbc9d134c1db24102005f6e11fc",
+      "raw_record": "baseline_raw/200ccdbc9d134c1db24102005f6e11fc.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "赵女士，生日快乐！祝您这周旅途顺心，好好享受这段在路上的时光。",
+        "赵女士，祝您生日快乐。愿新的一岁从容自在，想去的地方都能慢慢走到。",
+        "赵女士，生日快乐！知道您这周在外面旅行，愿一路平安、玩得尽兴。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F06",
+      "run_id": "d4631097b36645a8bdd501611792b84a",
+      "raw_record": "baseline_raw/d4631097b36645a8bdd501611792b84a.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "方女士，生日快乐。祝您新的一岁顺心自在，喜欢的事都能慢慢做成。",
+        "方女士，生日快乐！愿这一年里，日子轻松一些，想做的事都有好心情去完成。",
+        "方女士，生日快乐。祝您身体健康、心情舒畅，过得从容自在。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F07",
+      "run_id": "e94be1d1e56249e489d483251351bd3e",
+      "raw_record": "baseline_raw/e94be1d1e56249e489d483251351bd3e.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "孟女士，您喜欢就好，也祝您新的一岁顺心如意。",
+        "孟女士，看到您开心我也很高兴，祝您这一年平安顺遂，日子过得舒心。",
+        "孟女士，您的生日能收到这样一份开心，就是最好的回音，祝您一切安好。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F08",
+      "run_id": "c963ce299c504448af1b866cb16861d0",
+      "raw_record": "baseline_raw/c963ce299c504448af1b866cb16861d0.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "程先生，收到，以后按11月19日记。谢谢您特意更正。",
+        "程先生，明白了，我这边会按11月19日记录，之前写成18日那处一并改过来。",
+        "程先生，好的，以11月19日为准。我去把您的生日记录更正过来，之后都按19日。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F09",
+      "run_id": "c7702ce63d214d13a425d2eeac455b6f",
+      "raw_record": "baseline_raw/c7702ce63d214d13a425d2eeac455b6f.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "随行卡夹是2,800元。它有4个独立卡位，可放4张标准银行卡大小的卡片，您同事平时只带这四张卡，正好放得下。",
+        "随行卡夹2,800元，有4个独立卡位，正好可以放4张标准银行卡大小的卡片，做小礼物也挺合适。它主要用来收纳卡片，不能当包用，也没有零钱袋，这点可以考虑进去。",
+        "随行卡夹的价格是2,800元，4个独立卡位可以放4张标准银行卡大小的卡片，和您说的使用情况是匹配的。目录有墨黑、暖棕两色，如果要送礼，我可以帮您确认这两个颜色的库存。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F10",
+      "run_id": "86f9276e2da241b48f28900b78217951",
+      "raw_record": "baseline_raw/86f9276e2da241b48f28900b78217951.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "随行卡夹没有零钱袋，卡和硬币放一起这个需求它满足不了；它有4个独立卡位，主要用来放卡片。",
+        "随行卡夹本身没有零钱袋，硬币没地方单独收；它能放4张标准银行卡大小的卡片，适合只带卡的情况。如果卡和零钱要一起带，目前这款不太合适。",
+        "这款卡夹无零钱袋，不适合把硬币和卡混放在一起；它有4个独立卡位，是纯卡片收纳。您要是主要想卡和零钱一处放，我再帮您看看有没有别的办法。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F11",
+      "run_id": "2d01e974f4d54d3484ba4346d975f10d",
+      "raw_record": "baseline_raw/2d01e974f4d54d3484ba4346d975f10d.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "可以斜挎，轻行肩包的肩带长度可调，包口是拉链开合。您的手机连壳15.8×7.8×1.2厘米，包身外尺寸约22×16×7厘米，按数字看长高都在包身范围内；实际放入是否顺手，建议以门店实物确认。",
+        "轻行肩包平时可以斜挎，肩带能调节长度，出门带手机、钥匙、口红这类小物比较合适。您的手机连壳长15.8厘米、高7.8厘米，包身外尺寸约22×16×7厘米，手机连壳这类大件建议实机再核对一下。",
+        "能斜挎，肩带可调，也支持肩背。手机连壳的尺寸在包身外尺寸范围内，不过放进去是否服帖要看到实物更稳妥，我可以帮您跟门店确认一下。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F12",
+      "run_id": "d28cac04d85b4ffab22ea3d0a2b7213e",
+      "raw_record": "baseline_raw/d28cac04d85b4ffab22ea3d0a2b7213e.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "日行托特包可以放A4纸质资料；您那个很厚的文件夹能否一起装，需要另核对尺寸。方便告诉我文件夹的厚度吗？我帮您确认。",
+        "日行托特包放A4纸质资料没问题。包身是34 × 28 × 12 cm，很厚的文件夹是否放得下还需另核对尺寸，您可以告诉我文件夹的长宽厚，我帮您一起确认。",
+        "A4资料日行托特包能放。厚文件夹属于需要另核对尺寸的情况，我不凭包的外尺寸替您判断放不放得下；您把文件夹厚度告诉我，我先帮您核实。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F13",
+      "run_id": "ebef7da546b24c05bf465ce7f8ac565a",
+      "raw_record": "baseline_raw/ebef7da546b24c05bf465ce7f8ac565a.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "日行托特包的carry_modes依据为：肩背；该断言没有同一商品资料支持，未知不能解释成没有。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "messages": [
+        "轻行肩包自重约420 g，日行托特包约750 g。斜挎的话，目前轻行肩包可以肩背或斜挎，肩带长度可调；日行托特包采用肩背设计。",
+        "轻行肩包约420 g，日行托特包约750 g，都是空包的约数。两款里，轻行肩包可肩背也可斜挎，肩带长度能调；日行托特包目前提供的是肩背设计。",
+        "重量上：轻行肩包约420 g，日行托特包约750 g。要能斜挎的话，先看轻行肩包——它可肩背或斜挎，肩带可调节；日行托特包则以肩背为主。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F14",
+      "run_id": "d5202b0c521643c4b1299a47eeebbff0",
+      "raw_record": "baseline_raw/d5202b0c521643c4b1299a47eeebbff0.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（$ fields），原响应已保留；未修补或降级。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "messages": null,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F15",
+      "run_id": "79805da2981546dba082ed7f744bb357",
+      "raw_record": "baseline_raw/79805da2981546dba082ed7f744bb357.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "轻行肩包的品牌标识是小尺寸压印，不是大面积醒目标识。包身是哑光细纹牛皮，表面光泽不高、能看到细小的皮纹，整体看起来比较素净。",
+        "它的可看之处在皮面：哑光细纹牛皮，不反光，细纹是看得见的；标识只有小尺寸压印，没有大块做法。目录配色是墨黑和米白，都是基础色系。",
+        "标识是小尺寸压印，远看不显眼；皮面为哑光细纹牛皮，比亮面皮低调一些，纹路是细的。这两点就是它外观上最具体的信息，比“高级”这类说法更能帮您判断。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F16",
+      "run_id": "7b2d6f0b35b84152a595c89951df2338",
+      "raw_record": "baseline_raw/7b2d6f0b35b84152a595c89951df2338.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "日行托特包外面是哑光细纹牛皮，光泽比较低、能看到细小纹理；里面是棉布内衬。包内有1个内侧平口袋，钥匙可以单独放进去，和主空间里的其他东西分开。",
+        "您好，日行托特包身是哑光细纹牛皮，内衬是棉布。内侧有一个平口袋，正好可以单独放钥匙这类小物。",
+        "包身是哑光细纹牛皮、内衬棉布；内侧有1个平口袋，钥匙可以单独放在那里，找起来会方便些。如果您还有别的想确认的细节，我也可以再帮您看。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F17",
+      "run_id": "b2d9cbeaa0dd4294ad66238feb1c4cc3",
+      "raw_record": "baseline_raw/b2d9cbeaa0dd4294ad66238feb1c4cc3.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "随行卡夹不适合放护照。它是4个独立卡位，主要收标准银行卡大小的卡片，护照放不进去。",
+        "这款随行卡夹是按卡片收纳设计的，有4个独立卡位，可以放4张标准银行卡大小的卡片；护照不在它能放的范围里，出差用的话它更适合单独装卡。",
+        "随行卡夹当护照夹不太合适，它没有零钱袋，也不适合放手机、护照或整叠现金，不能当包袋用。您出差如果证件和卡都比较多，可以说一下大概要带的东西，我再帮您看看怎么分开放。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F18",
+      "run_id": "c2ffec0a547b44b1ab6ee1cad29d7a3d",
+      "raw_record": "baseline_raw/c2ffec0a547b44b1ab6ee1cad29d7a3d.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "轻行肩包的dimensions_cm依据为：22 × 16 × 7 cm；该断言没有同一商品资料支持，未知不能解释成没有。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "messages": [
+        "轻行肩包包口是拉链开合的。您这个钱包19×10×2.5厘米，肩包外形是22×16×7厘米，长宽参数上小于包身，但内里是否可以顺畅放入，我建议拿实物尺寸核对一下，或者到店实际放放看更稳妥。",
+        "是拉链的，肩带长度也可以调节。钱包长宽19×10厘米，对比肩包22×16厘米的包身是放得下的范围；不过包里放进去后的实际余量还跟钱包厚度和包口有关，需要我帮您进一步确认吗？",
+        "轻行肩包是拉链开合，肩带可调节。从尺寸看，您的钱包19×10×2.5厘米小于包身22×16×7厘米，理论上可以放入，但实际以实物试放为准。要是您方便，我可以帮您联系门店确认具体内里容纳情况。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F19",
+      "run_id": "f77d8512cb264f86a019f46f01e13eac",
+      "raw_record": "baseline_raw/f77d8512cb264f86a019f46f01e13eac.json",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "可以的。11月1日门店购买，按购买次日起算7个自然日，现在还在期限内；您未使用、标牌和原包装齐全、有小票，按现有信息符合退货申请条件。最终需要门店检查确认，您方便时把卡夹和凭证带到门店办理就好。",
+        "可以的，今天3号还在7天退换期内（从11月2日算第1日，到11月8日）。您说的未使用、标牌原包装齐全、有小票，这些都符合退货申请要求；门店检查后会确认办理，不会当场另加条件。",
+        "可以的，时间上没问题。您到门店时带上卡夹、标牌、原包装和小票，连同商品保持未使用状态交给店员检查，就可以申请退货。若您愿意，我也可以先帮您和门店说一声，方便您过去办理。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F20",
+      "run_id": "28d3de5a74e24c5d992700eb69e9da90",
+      "raw_record": "baseline_raw/28d3de5a74e24c5d992700eb69e9da90.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "您好，按现有信息还来得及。10月27日门店购买，从次日起算第7日是11月3日；商品未使用、标牌原包装和购买凭证齐全，符合换货申请条件，最终需门店检查确认。您想换成哪个颜色？我先帮您核实一下。",
+        "来得及，今天正好是第7个自然日。轻行肩包未使用、标牌原包装和凭证齐全，按现有信息是符合换色申请条件的，最终以门店检查确认为准。您方便的话把商品带到店里，或我先帮您把申请提交上去。",
+        "今天还在7天退换期内，未使用且标牌、原包装、凭证齐全的话，可以提出换色申请，最终结果需门店检查确认。您想换墨黑还是米白，我可以先帮您确认可选的颜色。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F21",
+      "run_id": "ecf953ac32584ee59f8461377e9922cd",
+      "raw_record": "baseline_raw/ecf953ac32584ee59f8461377e9922cd.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "购买渠道不明的话，目前还不能确定能不能直接退。我们的未使用退换是按门店购买场景设定的：自购买次日起7个自然日内，商品未使用、标牌和原包装齐全、有购买凭证，可以申请退换，最终以门店检查确认为准。您先跟朋友确认一下是在哪里买的，我这边可以帮您一起看接下来怎么处理。",
+        "这个要先看购买渠道，暂时没办法直接说能退。如果是在我们门店买的，7个自然日内、商品未使用且标牌原包装和凭证齐全，可以申请退换，最终由门店检查确认；别的渠道买的就不直接套这条。您方便的话先问下朋友购买渠道和日期。",
+        "渠道不清楚的话，我建议先别把包用起来，标牌和原包装也先留着，这些都可能影响后续能不能申请退换。您把朋友那边能提供的购买渠道、日期和凭证信息发我，我帮您看看怎么处理。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F22",
+      "run_id": "2795dab9b6f94896890d81eeb5b23dda",
+      "raw_record": "baseline_raw/2795dab9b6f94896890d81eeb5b23dda.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "您好，网上订单的退换规则和门店不完全相同，具体要看下单的平台。您可以告诉我是在哪个平台买的吗？我帮您核实对应的退货流程。",
+        "您从网上购买的情况，我这边还没有平台的退货细则，暂时不能直接按门店七天来套。麻烦您把下单平台和订单号发我，我帮您确认能不能退、该走哪个渠道。",
+        "理解您的顾虑。门店的七天退换是按门店购买的情况规定的，网上订单需要按对应平台的规则处理。方便说下是哪个平台下的单吗？我先帮您核实清楚再答复您。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F23",
+      "run_id": "c4510894f2024f6db3de8ea7e3c17d03",
+      "raw_record": "baseline_raw/c4510894f2024f6db3de8ea7e3c17d03.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "成分不明的清洁剂先别直接擦在卡夹上。建议用干燥的软布轻轻吸拭污渍，放在通风处；不建议用酒精或自行换用其他清洁剂，以免伤到皮面。",
+        "不建议直接用成分不明的清洁剂擦，因为不确定它是否会伤到哑光细纹牛皮。您先别急，可以把污渍的位置和目前的样子拍张照片发给我，我帮您一起提交售后，请他们看看该怎么处理。",
+        "这种情况先别用未知成分的清洁剂擦拭。日常如果只是沾到水，用干燥软布轻轻吸干、通风处自然晾干就好；这次是污渍，我建议先让售后评估处理方式，再决定怎么清洁会更稳妥。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F24",
+      "run_id": "02efe329da09467b92fbc8a770e8f63b",
+      "raw_record": "baseline_raw/02efe329da09467b92fbc8a770e8f63b.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "拉链卡住确实影响使用。维修费用和周期都要售后看过拉链情况才能定，我没办法先报数字。您方便拍一张拉链部位的近照发我吗？收到后我帮您提交售后评估。",
+        "肩包拉链卡的问题需要售后检查后才能判断怎么修，费用和周期也会在那时一起告知，确认后您再决定是否处理。您可以先拍照发我，或者告知购买时的门店和大致购买时间，我帮您对接评估。",
+        "拉链有点卡先别硬拉，避免拉链齿进一步变形。是否可修、费用和大概几天能好，都需要售后看过实物再答复。您把拉链处拍给我，我来帮您提交。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F25",
+      "run_id": "f473a22f8da04f5f99014b95d1b42058",
+      "raw_record": "baseline_raw/f473a22f8da04f5f99014b95d1b42058.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "您好，目前售后单号我这边还不能确认，我先帮您核实上次的沟通和提交情况，有结果第一时间回您。",
+        "不好意思让您惦记这件事。上次提到的售后提交，我现在还没有可确认的单号，我先去核实，核实清楚后把情况告诉您。",
+        "您好，这件事我记下了。单号我暂时无法确认，需要先核实上次是否已提交；方便的话，也请把购买凭证或商品照片发我，我一起跟进。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F26",
+      "run_id": "b05df16a48e8459390e33c25dc1aa4e2",
+      "raw_record": "baseline_raw/b05df16a48e8459390e33c25dc1aa4e2.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "蒋女士您好，您两周前在门店买的随行卡夹，用起来还顺手吗？",
+        "蒋女士您好，想问一下那只随行卡夹用着怎么样，4个卡位日常放卡够不够用？",
+        "蒋女士您好，随行卡夹用下来如果有什么想了解的，比如日常保养，随时跟我说。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F27",
+      "run_id": "787a3b0f49ea483daff0a48d374848ca",
+      "raw_record": "baseline_raw/787a3b0f49ea483daff0a48d374848ca.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "您用干软布吸干这一步是对的，几滴水先不用直接送去修。接下来把包放在通风处自然晾干就好，别用吹风机烘，也别用酒精或其他清洁剂擦。晾干后有需要，可以拍张局部照片给我，我帮您看看。",
+        "几滴水一般不用马上送修。您已经用干软布吸干了，接着在通风处自然晾干即可，避免长时间淋雨，也不建议烘干或用酒精、未知清洁剂擦拭。干透后如果表面还有明显痕迹，拍张局部照片发我，我再帮您一起看要不要交给售后评估。",
+        "先不用急，这种情况通常先自然晾干，放在通风处，不要用吹风机或酒精处理。吸水后留下的痕迹和状态，照片能看得更清楚，您方便时发我一张局部照片，我先帮您看看；是否需要送售后评估，再按实际情况判断。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F28",
+      "run_id": "386ef191e0014432a763d1a9f721859f",
+      "raw_record": "baseline_raw/386ef191e0014432a763d1a9f721859f.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "杜女士您好，好久没和您联系了。之前您在我们这里带过随行卡夹，不知道用着还顺手吗？",
+        "杜女士您好，隔了一段时间来问候一下。您之前选的随行卡夹有4个独立卡位，如果平时用着有什么想了解的，随时跟我说。",
+        "杜女士您好，最近还好吗？上次您带走的随行卡夹若有什么想咨询的，我这边都在，方便时回复我就好。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F29",
+      "run_id": "98fca3ddecb6493cbc98cb845a40fa84",
+      "raw_record": "baseline_raw/98fca3ddecb6493cbc98cb845a40fa84.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "袁先生，您好。有一阵没联系了，近来一切都还顺利吗？",
+        "袁先生，好久不见，简单问候一下。最近生活和工作都还顺心吗？",
+        "袁先生，您好，隔了段时间来问候一声。如果您有需要，随时跟我说就好。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F30",
+      "run_id": "5d9c7d80292840378d28cdc8f48b7416",
+      "raw_record": "baseline_raw/5d9c7d80292840378d28cdc8f48b7416.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "罗女士，好久没联系了，问候一下，最近一切都还顺心吗？",
+        "罗女士，隔了段时间没聊，想着跟您打个招呼。您近来都还好吧？",
+        "罗女士，许久未见，来跟您问声好，祝您日常顺顺利利。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F31",
+      "run_id": "3f30cb7bf1b14b3489096f81b81a10a6",
+      "raw_record": "baseline_raw/3f30cb7bf1b14b3489096f81b81a10a6.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "钱女士，您好，有段时间没联系了。想问声近况，一切都顺心吗？",
+        "钱女士，好久不见。记得您说过更喜欢简单的问候，这次就不多介绍什么了，希望您最近过得顺利。",
+        "钱女士，您好，隔了一段时间，来问个好。您有需要时随时招呼我就行，不用急着回复。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F32",
+      "run_id": "524364909a2242ac8f04c5247cf28f91",
+      "raw_record": "baseline_raw/524364909a2242ac8f04c5247cf28f91.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "您好，好久没联系了。之前您在我们这里带走过一只轻行肩包，想简单问候一下，最近一切都好吗？",
+        "您好，我是澄序的顾问。之前您在店里买过轻行肩包，隔了一段时间没联系，想跟您打个招呼，希望您一切顺利。",
+        "您好，冒昧来问候一下。您之前在我们这里选过轻行肩包，如果有使用上的问题，随时跟我说一声就好。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F33",
+      "run_id": "8bd4a52bdfc44614b097b5200fde8ff5",
+      "raw_record": "baseline_raw/8bd4a52bdfc44614b097b5200fde8ff5.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "彭女士，您好，有一段时间没联系了，最近还好吗？",
+        "彭女士，您好，许久没和您聊了，想问候一下您近况，一切都顺心吧。",
+        "彭女士，您好，隔了些时间想起您，过来问候一声，希望您最近都好。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F34",
+      "run_id": "532619f47f544246bcbdba0b9fb59dcb",
+      "raw_record": "baseline_raw/532619f47f544246bcbdba0b9fb59dcb.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "唐先生您好，之前您带走的日行托特包，用起来还顺手吗？想听听您的实际感受。",
+        "唐先生，您好。距离您选那款日行托特包已经过去一段时间了，日常带资料、装水杯这些用着方便吗？",
+        "唐先生您好，想简单问候一下，那只日行托特包用得还习惯吗？有想说的都可以和我讲。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F35",
+      "run_id": "42c445fa56c04c959a25dc3f4830ada0",
+      "raw_record": "baseline_raw/42c445fa56c04c959a25dc3f4830ada0.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "任女士，您好。11月14日（周六）14:00—16:00，澄序广场8号精品店有一场日常收纳体验，会展示现有三款商品的日常收纳。您那天方便过来看看吗？",
+        "任女士，您好。想跟您说一声，11月14日周六下午14:00—16:00，我们在澄序广场8号精品店有一场日常收纳体验，内容是展示现有三款商品的日常收纳，没有折扣或赠品。如果那天有空，欢迎您来看看。",
+        "任女士，您好。11月14日（周六）14:00—16:00在澄序广场8号精品店有日常收纳体验，看的是现有三款商品的日常收纳，现场没有折扣赠品。座位这边尚未登记，您如果有兴趣，跟我说一声，我去帮您确认。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F36",
+      "run_id": "c19068daf78c4531b07087c90ad69b2f",
+      "raw_record": "baseline_raw/c19068daf78c4531b07087c90ad69b2f.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "活动地址是澄序广场8号精品店，时间是2026年11月14日（周六）14:00—16:00。",
+        "您好，活动在澄序广场8号精品店，11月14日周六14:00—16:00，您按这个地址过去就行。",
+        "地址：澄序广场8号精品店；活动时间：2026年11月14日周六14:00—16:00。到了报活动即可。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F37",
+      "run_id": "b0095489474241ca94bc385f228d878c",
+      "raw_record": "baseline_raw/b0095489474241ca94bc385f228d878c.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "可以的，可以带一位朋友。14号周六下午14:00—16:00在澄序广场8号精品店；同行需要登记后确认，您把朋友的信息给我，我来帮您登记。",
+        "可以的，每位可以带一位朋友。活动是14号（周六）14:00—16:00，地点在澄序广场8号精品店。同行需要先登记再确认，您方便时把朋友的信息发我，我帮您一起登记。",
+        "您好，可以带一位朋友。14号周六14:00—16:00在澄序广场8号精品店。朋友这一位需要登记后确认，我这边收到您报的信息就帮您去登记。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F38",
+      "run_id": "0cc8f20e36c44bfa978b4dadb9f3998b",
+      "raw_record": "baseline_raw/0cc8f20e36c44bfa978b4dadb9f3998b.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "周六是11月21日，活动时间10:00—12:00，地点在澄序广场8号精品店。",
+        "您方便的周六场是11月21日10:00—12:00，在澄序广场8号精品店；周五那场是16:00—18:00，按您的时间来就好。",
+        "周六11月21日的活动是10:00—12:00，在澄序广场8号精品店。您要是确定过来，我先帮您跟门店确认一下到场安排。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F39",
+      "run_id": "0e39bdedb54d41d39c3b52fb851fb735",
+      "raw_record": "baseline_raw/0e39bdedb54d41d39c3b52fb851fb735.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "这次活动没有优惠价：11月14日14:00—16:00在澄序广场8号精品店，内容是现有商品的收纳展示，没有新增折扣、赠品或购买权益。",
+        "去活动不等于能买到优惠价，本次没有新增折扣或购买权益，主要是看看现有商品的收纳展示；时间地点是11月14日周六14:00—16:00，澄序广场8号精品店。",
+        "这次活动没有设优惠价或赠品，价格上不会和平时不同。如果您是想先看实物再决定要不要买，活动当天有收纳展示可以看。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F40",
+      "run_id": "d124678c16dc400f9f8bbf01db2e6d93",
+      "raw_record": "baseline_raw/d124678c16dc400f9f8bbf01db2e6d93.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "您好，是周六下午两点，2026年11月14日14:00—16:00，地点在澄序广场8号精品店。",
+        "没变，还是11月14日周六14:00—16:00，澄序广场8号精品店。您这次登记的是1位参加。",
+        "是的，周六两点开始，到四点结束，11月14日，在澄序广场8号精品店。如需增加同行人数，我可以帮您一并登记。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F41",
+      "run_id": "42823f34c05946ffadaeef80a1b550b0",
+      "raw_record": "baseline_raw/42823f34c05946ffadaeef80a1b550b0.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "好的，先不约。这个活动是11月14日（周六）14:00—16:00，在澄序广场8号精品店，主要展示现有三款商品的收纳方式，也可以带上日常物品对照了解尺寸。没有新品发布、折扣或赠品。",
+        "明白，先不帮您约。活动内容是把现有三款商品的收纳方式展示出来，您可以对照自己平时带的东西了解尺寸；没有新品发布，也没有折扣和赠品。时间是11月14日周六14:00—16:00，地点在澄序广场8号精品店。",
+        "先不预约，没问题。这场活动就是展示现有三款商品怎么收纳，也方便对照日常物品感受尺寸，现场没有新品、折扣或赠品。时间地点是11月14日周六14:00—16:00，澄序广场8号精品店，您先了解内容就好。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F42",
+      "run_id": "95672f9fb7d84d16bcb200ec4ae472fc",
+      "raw_record": "baseline_raw/95672f9fb7d84d16bcb200ec4ae472fc.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "所指活动日期与星期不一致；否定旧说法及其他人的可用时间不按活动日期处理。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "messages": [
+        "您说得对，是我之前说错了，向您致歉。活动是2026年11月14日，周六，14:00—16:00，地点在澄序广场8号精品店。",
+        "之前说周五是我口误，11月14日确实是周六。活动时间为14:00—16:00，在澄序广场8号精品店，以这个为准。",
+        "确认一下：11月14日是周六，不是周五，之前是我说错了。活动当天14:00—16:00在澄序广场8号精品店，您按这个时间安排就好。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F43",
+      "run_id": "65ad48e7e0a84b4da2557efb822234a2",
+      "raw_record": "baseline_raw/65ad48e7e0a84b4da2557efb822234a2.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "随行卡夹的价格是2,800元，目前这款没有折扣。作为小礼物，它是哑光细纹牛皮、标识比较小，外观简洁，不太张扬。",
+        "2,800元是随行卡夹目前的定价，这款没有折扣。它适合送礼的一点是外观比较低调：小尺寸压印标识，哑光细纹牛皮的纹理也不抢眼。不过它只有4个独立卡位，只能装标准银行卡大小的卡片，没有零钱袋，也不适合放手机或护照，您可以按收礼人的使用习惯权衡。",
+        "理解您对价格的顾虑，这款目前就是2,800元，暂时没有折扣。如果您想先确认它合不合适送礼，可以告诉我收礼人平时是否用卡夹收卡，我帮您一起看看细节是否对得上。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F44",
+      "run_id": "523f23a61e9a48dba6345ad837cb7aa5",
+      "raw_record": "baseline_raw/523f23a61e9a48dba6345ad837cb7aa5.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "轻行肩包是12,800元，在您预算内，容量就是为出门少带东西准备的：普通手机、钥匙、口红这类日常小物能放下，肩背或斜挎都行，肩带长度也能调。它放不下A4资料和电脑，如果平时只带这些随身小件，用途是对得上的。",
+        "按您平时少带东西的场景看，这款是对路的：420 g左右的自重、22 × 16 × 7 cm的体积，装手机、钥匙、口红，拉链开合也比较省心。需要提醒的是它放不下A4资料或电脑，手机如果带壳、或者用长钱包，大小还需要再核一下。",
+        "这个价位买它，主要买的是日常轻便出门的合用度：包身是哑光细纹牛皮，肩带可调、包口拉链，放普通手机、钥匙、口红这些小物。如果您平时确实很少带大件，它在您预算内是合适的选择；要是常带电脑或资料，它就装不下。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F45",
+      "run_id": "8927626c48d244fa95b3bbc2b14de267",
+      "raw_record": "baseline_raw/8927626c48d244fa95b3bbc2b14de267.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核没有返回完整有效结构，原响应保留；未删减、降级或重试。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "您好，轻行肩包目前的价格是12,800元，三款都没有折扣，也没有按旧价或优惠价下单的权限。您那张订单的实付10,000元和当时的情况，我可以帮您核实一下。",
+        "轻行肩包现在的售价是12,800元，当前没有折扣，旧价这次没法按原样给到。您提到去年实付10,000，我可以帮您核实当时订单的情况后回复您。",
+        "您好，轻行肩包现价12,800元，目前没有折扣，也暂无优惠申请渠道。去年那笔实付10,000的记录我这边可以帮您核对，但能否按旧价下单现在无法确认。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F46",
+      "run_id": "90c6937b2ae2488b987ac95c6aa5ba18",
+      "raw_record": "baseline_raw/90c6937b2ae2488b987ac95c6aa5ba18.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "您好，随行卡夹目前没有免邮或免息分期权益。这款是2,800元，墨黑和暖棕两个颜色都有；配送和支付方面的服务信息，我先帮您核实一下，有结果再回复您。",
+        "谢谢您确认价格。免邮和免息分期这边目前都没有设，我不便直接答应您。您看中的是墨黑还是暖棕？我先把颜色和配送方式帮您确认清楚，再一并回复。",
+        "随行卡夹2,800元，这款目前没有免邮或免息分期的安排。若您需要，我可以帮您把配送和支付的具体服务信息核实后告诉您。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F47",
+      "run_id": "23b909c9d1aa4302b0fe326f87384d57",
+      "raw_record": "baseline_raw/23b909c9d1aa4302b0fe326f87384d57.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "messages": [
+        "两款用的皮面是一样的哑光细纹牛皮，并不是托特的皮更好。6,000元的差别主要在尺寸和容量：托特34×28×12cm，能放A4资料、水杯和折叠伞；肩包22×16×7cm，放不下A4或电脑，适合出门少带东西时用。",
+        "皮料上两款一致，都是哑光细纹牛皮加棉布内衬，所以差价不是皮更好。托特更大也更重（约750g，肩包约420g），能装A4资料、500mL水杯和折叠伞；肩包主打轻便随身，手机、钥匙、口红这类小物更合适。选哪款主要看您平时要带多少东西。",
+        "不是皮的区别，两款皮面一样。6,000元对应的是容量和自重：托特能放A4资料和日常大件，肩包则是小包，装不下A4或电脑。如果您说说平时出门都带什么，我可以帮您看看哪款更合适。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F48",
+      "run_id": "66557af9fd99416e8b525236bdf1389a",
+      "raw_record": "baseline_raw/66557af9fd99416e8b525236bdf1389a.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "好的，您慢慢看，晚点方便时回复我就好。",
+        "好的，不着急，您先考虑，有需要了解的地方随时问我。",
+        "收到，您先按自己的节奏来，我这边不催您。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F49",
+      "run_id": "a5367904f24542558690f1ba188304b4",
+      "raw_record": "baseline_raw/a5367904f24542558690f1ba188304b4.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "好的，这次就不打扰您了。以后如需了解或有问题，随时找我。",
+        "好的，理解您的决定，那这次就不再多介绍了。感谢您抽时间了解，祝您一切顺利。",
+        "好的，收到，这次就先到这里。有需要的时候您再联系我就好。"
+      ],
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F50",
+      "run_id": "d76ea1f514c24f0d9db970f2624a4aa6",
+      "raw_record": "baseline_raw/d76ea1f514c24f0d9db970f2624a4aa6.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "messages": [
+        "轻行肩包目前的价格是12,800元，这款没有折扣。朋友提到的那家皮料我这边没有具体信息，不好比较；如果方便，您可以说说平时主要带些什么，我帮您看看它合不合适。",
+        "轻行肩包是12,800元，目前没有折扣，也没有议价空间。它的包身是哑光细纹牛皮，肩带可调节，肩背或斜挎都行，适合外出少带东西的时候用；但放不下A4资料和电脑。您平时带的东西多吗？我可以帮您判断容量。",
+        "这款肩包目前没有优惠，售价就是12,800元。皮料这块，我们用的是哑光细纹牛皮，表面光泽低、能看到细纹理；朋友说的那家我没有资料，没办法替您比哪家更好。如果尺寸或手感上有顾虑，我可以帮您再核实。"
+      ],
+      "source_hashes_unchanged": true
+    }
+  ],
+  "automatic_retries": 0,
+  "formal_50": true,
+  "actual_model_requests": 95,
+  "total_tokens": 2083295,
+  "finished_at": "2026-11-03T17:58:26.429737+00:00",
+  "source_hashes_unchanged": true,
+  "completed": true,
+  "status_counts": {
+    "success": 31,
+    "error": 19
+  }
+}

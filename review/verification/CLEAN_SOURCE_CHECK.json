@@ -1,0 +1,86 @@
+{
+  "source_sha256": "bfbd3eed4b483283ef7bc564e0eaac4a0d98c810059ecbfa0a877dec124fbe81",
+  "startup_passed": true,
+  "app_version": "0.21.1",
+  "scenarios": 6,
+  "missing_key_state": "unconfigured",
+  "no_saved_examples_before_explicit_load": true,
+  "explicit_replay_sessions": 6,
+  "idempotent_replay_loader": true,
+  "saved_record_guards": [
+    {
+      "case_id": "N16",
+      "source_version": "0.19.0",
+      "expected_status": "error",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "N16",
+      "source_version": "0.20.0",
+      "expected_status": "success",
+      "copy_allowed": true
+    },
+    {
+      "case_id": "N39",
+      "source_version": "0.19.0",
+      "expected_status": "success",
+      "copy_allowed": true
+    },
+    {
+      "case_id": "N26",
+      "source_version": "0.19.0",
+      "expected_status": "success",
+      "copy_allowed": true
+    },
+    {
+      "case_id": "N21",
+      "source_version": "0.19.0",
+      "expected_status": "success",
+      "copy_allowed": true
+    },
+    {
+      "case_id": "J01",
+      "source_version": "0.21.1",
+      "expected_status": "error",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "J01",
+      "source_version": "0.21.0",
+      "expected_status": "success",
+      "copy_allowed": true
+    },
+    {
+      "case_id": "J02",
+      "source_version": "0.21.1",
+      "expected_status": "error",
+      "copy_allowed": false
+    },
+    {
+      "case_id": "J02",
+      "source_version": "0.21.0",
+      "expected_status": "success",
+      "copy_allowed": true
+    }
+  ],
+  "existing_offline_checks": [
+    {
+      "pattern": "test_submission_contract.py",
+      "result": "pass",
+      "kind": "existing offline contract/smoke checks; not model quality score"
+    },
+    {
+      "pattern": "test_workbench_start_api.py",
+      "result": "pass",
+      "kind": "existing offline contract/smoke checks; not model quality score"
+    }
+  ],
+  "new_model_requests": 0,
+  "check_server": {
+    "pid": 73786,
+    "url": "http://127.0.0.1:18880/",
+    "folder": "/Users/tonylyu/Documents/ChatGPT/artefact笔试/outputs/final_package_v0.21.1_2026-11-05/clean_source/CHENGXU_Source_v0.21.1",
+    "purpose": "disposable extracted source for UI/demo QA"
+  },
+  "normal_8765_kept_running": true
+}

@@ -1,0 +1,112 @@
+{
+  "app_version": "0.19.0",
+  "advisor_id": "689e448a3bec42c0b9776412d959f452",
+  "sessions": [
+    {
+      "case_id": "N16",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "09596c5b2fd749a796b45c9f291304ec",
+      "conversation_id": "dfb2aeb2639b401c865b68d533db90d6",
+      "title": "步行通勤的负重顾虑",
+      "runs": [
+        {
+          "run_id": "5fa924233f1748ad865e5ce42bdf3dd6",
+          "status": "error",
+          "source_run_id": "68302cdbb1d440478d6c65097b344660",
+          "source_version": "0.18.0"
+        },
+        {
+          "run_id": "ee16dd56c3f7453682a8fffab84cf7cf",
+          "status": "error",
+          "source_run_id": "4c36d123c9c74355a1b38bfcff8de5f1",
+          "source_version": "0.19.0"
+        }
+      ]
+    },
+    {
+      "case_id": "N39",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "ce3b4641b7b241a0aa296517984bf3dd",
+      "conversation_id": "87e943d5d1e44d93b19b50727d857f95",
+      "title": "了解活动体验",
+      "runs": [
+        {
+          "run_id": "5591c2e4256e45af9a9b3f07b0c8e9b2",
+          "status": "error",
+          "source_run_id": "d6f2854699744f35b6243b0826bcecb0",
+          "source_version": "0.18.0"
+        },
+        {
+          "run_id": "d84aa86894c340d39d33e72222eb38b9",
+          "status": "success",
+          "source_run_id": "5de05675ea8248b1a7533459b226c811",
+          "source_version": "0.19.0"
+        }
+      ]
+    },
+    {
+      "case_id": "N44",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "59a63079b6f14e7c94e2c33464724a4f",
+      "conversation_id": "913055285d5640188a73c8fbe270977c",
+      "title": "肩包价格与日常用途",
+      "runs": [
+        {
+          "run_id": "0be7e670ef2b42cca720cd534f11cf76",
+          "status": "error",
+          "source_run_id": "dd38cf7146f84fe4b27e5f348c197bed",
+          "source_version": "0.18.0"
+        },
+        {
+          "run_id": "c80eb7d9da7e422c95b0f61efa160a8e",
+          "status": "success",
+          "source_run_id": "43ada053977f4deab9f6f6cd7139c6e7",
+          "source_version": "0.19.0"
+        }
+      ]
+    },
+    {
+      "case_id": "N26",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "55dd0e9fa3bf4ba5bf6652d8f52a47b9",
+      "conversation_id": "d97726bff0dc4866be36799a2f06ea87",
+      "title": "卡夹污渍与清洁剂",
+      "runs": [
+        {
+          "run_id": "a266626cc7cf4fdba59d4397329c9712",
+          "status": "error",
+          "source_run_id": "3f7e337031a04329b18d5cc2ba1b8e84",
+          "source_version": "0.18.1"
+        },
+        {
+          "run_id": "a92eb5289df8469bb401b284f468c1f4",
+          "status": "success",
+          "source_run_id": "6e9a509cd3264942bcfaaae24c661541",
+          "source_version": "0.19.0"
+        }
+      ]
+    },
+    {
+      "case_id": "N21",
+      "advisor_id": "689e448a3bec42c0b9776412d959f452",
+      "customer_id": "ee99272337ae45a5bc29e2afd1ce2450",
+      "conversation_id": "5263fd26201f4d379e9c564762a954ac",
+      "title": "核实库存与周六预留",
+      "runs": [
+        {
+          "run_id": "cc939637f77e4334bc7bba571155b17b",
+          "status": "error",
+          "source_run_id": "2cb8debd6133466b940a20212ed2039d",
+          "source_version": "0.18.1"
+        },
+        {
+          "run_id": "f704f1bf755a414595baa5422fac6565",
+          "status": "success",
+          "source_run_id": "cc9dd82c891940eea97e90078571445c",
+          "source_version": "0.19.0"
+        }
+      ]
+    }
+  ],
+  "new_model_calls": 0
+}

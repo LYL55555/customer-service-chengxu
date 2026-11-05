@@ -1,0 +1,2698 @@
+{
+  "kind": "seen-original50-rerun-single-frozen-version",
+  "app_version": "0.13.6",
+  "freeze_sha256": "4dcf11b95ebbf071ed4d483337a8964eb17abff7f9cc6378e908ea9f53fbe299",
+  "original_case_sha256": "1f1f37d70a1102d45eedeacc834f3539e223c652866ee0035560a5817358a243",
+  "started_at": "2026-11-04T12:17:34.140608+00:00",
+  "requested_model": "deepseek-flash",
+  "requests": [
+    {
+      "case_id": "F02",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：使用合适称呼；无家庭、年龄推断",
+      "started_at": "2026-11-04T12:17:34.180565+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "101e7003eaaceb006bff0012e7442905b9c77dab4893738320886936833ea20a",
+      "finished_at": "2026-11-04T12:17:37.007045+00:00",
+      "duration_ms": 2826,
+      "usage": {
+        "prompt_tokens": 21733,
+        "completion_tokens": 223,
+        "total_tokens": 21956,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11109
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F01",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：生日祝福不说今天或具体年龄；无商品促销或虚构往来",
+      "started_at": "2026-11-04T12:17:34.181301+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "009611ddc31ba5ba477ce73ff33533c79cd1d22bea356533be44b5a3d1e5c3a3",
+      "finished_at": "2026-11-04T12:17:37.548839+00:00",
+      "duration_ms": 3367,
+      "usage": {
+        "prompt_tokens": 21711,
+        "completion_tokens": 262,
+        "total_tokens": 21973,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11087
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F02",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：使用合适称呼；无家庭、年龄推断",
+      "started_at": "2026-11-04T12:17:37.032416+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "46279c36b47a34d7b2433a2260bfcb338b9bbc54ab0f46c6f7b242745b6cb22f",
+      "finished_at": "2026-11-04T12:17:40.020487+00:00",
+      "duration_ms": 2987,
+      "usage": {
+        "prompt_tokens": 22678,
+        "completion_tokens": 597,
+        "total_tokens": 23275,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 12566
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F01",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：生日祝福不说今天或具体年龄；无商品促销或虚构往来",
+      "started_at": "2026-11-04T12:17:37.560524+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "6460ad509fa8a37e61b9f8617b9fb63388f8361b46db0cad15df5a25d1f81a0b",
+      "finished_at": "2026-11-04T12:17:40.753321+00:00",
+      "duration_ms": 3191,
+      "usage": {
+        "prompt_tokens": 22584,
+        "completion_tokens": 580,
+        "total_tokens": 23164,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12344
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F03",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：对应中秋，不写生日快乐；不编月饼礼物、团聚或家庭事实",
+      "started_at": "2026-11-04T12:17:40.050029+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "8c5156389c3362c89209e55eb0572fe33c198df7319ec45930be554b26c6293f",
+      "finished_at": "2026-11-04T12:17:43.338216+00:00",
+      "duration_ms": 3287,
+      "usage": {
+        "prompt_tokens": 21814,
+        "completion_tokens": 238,
+        "total_tokens": 22052,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11190
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F04",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：祝福为主不顺带商品；不默认生肖、年龄或家庭情况",
+      "started_at": "2026-11-04T12:17:40.776692+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "533a003756707145d781e4774e9f8d3d75cc8ae31e470af660ba7f6a89fc3f03",
+      "finished_at": "2026-11-04T12:17:43.877592+00:00",
+      "duration_ms": 3100,
+      "usage": {
+        "prompt_tokens": 21660,
+        "completion_tokens": 301,
+        "total_tokens": 21961,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11036
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F03",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：对应中秋，不写生日快乐；不编月饼礼物、团聚或家庭事实",
+      "started_at": "2026-11-04T12:17:43.350738+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "7fc047c7d21ec2b15826803ef80bcadd92cbd071d8e4da6d410ead439a925a4b",
+      "finished_at": "2026-11-04T12:17:46.705014+00:00",
+      "duration_ms": 3352,
+      "usage": {
+        "prompt_tokens": 22925,
+        "completion_tokens": 745,
+        "total_tokens": 23670,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 12813
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F04",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：祝福为主不顺带商品；不默认生肖、年龄或家庭情况",
+      "started_at": "2026-11-04T12:17:43.889642+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "360873f7707fa465e6257f0a3420a345b0493b0b77e22180a7c07f072ce92eca",
+      "finished_at": "2026-11-04T12:17:47.372571+00:00",
+      "duration_ms": 3481,
+      "usage": {
+        "prompt_tokens": 22862,
+        "completion_tokens": 597,
+        "total_tokens": 23459,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12622
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F05",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：可结合已知旅行祝愿；不编目的地、家人或旅行体验",
+      "started_at": "2026-11-04T12:17:46.732447+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "c51954c0c113ec0edf84e4acefc08ffb3043c5f85a00ab0fcf1daafe20572432",
+      "finished_at": "2026-11-04T12:17:49.687244+00:00",
+      "duration_ms": 2954,
+      "usage": {
+        "prompt_tokens": 21739,
+        "completion_tokens": 303,
+        "total_tokens": 22042,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11115
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F06",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：不提年龄或日期；不借生日推销",
+      "started_at": "2026-11-04T12:17:47.398805+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "311d4a9c1bb4098fabd812fd0fbeaec50f41adc572143a7ce9a26c8f6a3ae21f",
+      "finished_at": "2026-11-04T12:17:50.130641+00:00",
+      "duration_ms": 2731,
+      "usage": {
+        "prompt_tokens": 21699,
+        "completion_tokens": 282,
+        "total_tokens": 21981,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11075
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F05",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：可结合已知旅行祝愿；不编目的地、家人或旅行体验",
+      "started_at": "2026-11-04T12:17:49.700702+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "80bf947e33e0275ff08c382b3d100fb1210b848003edb64bc8bd4fdab2af5545",
+      "finished_at": "2026-11-04T12:17:52.795604+00:00",
+      "duration_ms": 3093,
+      "usage": {
+        "prompt_tokens": 22762,
+        "completion_tokens": 616,
+        "total_tokens": 23378,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12522
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F06",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：不提年龄或日期；不借生日推销",
+      "started_at": "2026-11-04T12:17:50.139515+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "043a56110e41e4141073d9bf313800f2e763aaea3a3ca954f01765bf95e13f67",
+      "finished_at": "2026-11-04T12:17:53.274170+00:00",
+      "duration_ms": 3133,
+      "usage": {
+        "prompt_tokens": 22847,
+        "completion_tokens": 604,
+        "total_tokens": 23451,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12607
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F07",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：回应当前感谢，不重新发一整篇首次问候；不编赠礼或亲密经历",
+      "started_at": "2026-11-04T12:17:52.823313+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "a6ed446f5ba0bffeebee301d217c1b3efe53bcce2e2033455f0909c953d82923",
+      "finished_at": "2026-11-04T12:17:55.031900+00:00",
+      "duration_ms": 2208,
+      "usage": {
+        "prompt_tokens": 21962,
+        "completion_tokens": 226,
+        "total_tokens": 22188,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11338
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F08",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：承接正确19日；不说档案已经修改、也不假设今天生日",
+      "started_at": "2026-11-04T12:17:53.293191+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "e51702b650c8733e1dc20cb41b6f34259f20768aa3c14e8a95d76823878459de",
+      "finished_at": "2026-11-04T12:17:56.408335+00:00",
+      "duration_ms": 3114,
+      "usage": {
+        "prompt_tokens": 22087,
+        "completion_tokens": 292,
+        "total_tokens": 22379,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11463
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F07",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：回应当前感谢，不重新发一整篇首次问候；不编赠礼或亲密经历",
+      "started_at": "2026-11-04T12:17:55.044817+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "dc392f6f2001f7a7db14a3f65f348b6fc38b6813f88bca9028de7ad7618ad136",
+      "finished_at": "2026-11-04T12:17:58.595391+00:00",
+      "duration_ms": 3548,
+      "usage": {
+        "prompt_tokens": 22786,
+        "completion_tokens": 645,
+        "total_tokens": 23431,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 12674
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F08",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：承接正确19日；不说档案已经修改、也不假设今天生日",
+      "started_at": "2026-11-04T12:17:56.420365+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "1980aa728d214e2a4e38f7a5f5f3706015df207726e1d8de5996f241664fcb51",
+      "finished_at": "2026-11-04T12:17:59.273805+00:00",
+      "duration_ms": 2851,
+      "usage": {
+        "prompt_tokens": 22896,
+        "completion_tokens": 570,
+        "total_tokens": 23466,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12656
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F09",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：2,800元和4个独立卡位；标准银行卡尺寸的四张可用，不编礼盒或赠品",
+      "started_at": "2026-11-04T12:17:58.621484+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "316bae4544cd53fd5e76300766ac0494a4a4fc2761c6a27e26acaa5f6f5431db",
+      "finished_at": "2026-11-04T12:18:01.368816+00:00",
+      "duration_ms": 2746,
+      "usage": {
+        "prompt_tokens": 22171,
+        "completion_tokens": 367,
+        "total_tokens": 22538,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11547
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F10",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：明确无零钱袋；不许诺可放硬币或强推包袋替代",
+      "started_at": "2026-11-04T12:17:59.301215+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "084a2956e621c74d61df80eb0ca434cc5ab21645962838d60c1db9d311f1413a",
+      "finished_at": "2026-11-04T12:18:03.055897+00:00",
+      "duration_ms": 3753,
+      "usage": {
+        "prompt_tokens": 22093,
+        "completion_tokens": 361,
+        "total_tokens": 22454,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11341
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F09",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：2,800元和4个独立卡位；标准银行卡尺寸的四张可用，不编礼盒或赠品",
+      "started_at": "2026-11-04T12:18:01.390550+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "ffb9d661e017ce0537656143bacd5432bf7baa43ffcc7fc766dc76827ee2c697",
+      "finished_at": "2026-11-04T12:18:05.050020+00:00",
+      "duration_ms": 3657,
+      "usage": {
+        "prompt_tokens": 23600,
+        "completion_tokens": 794,
+        "total_tokens": 24394,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 13488
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F10",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：明确无零钱袋；不许诺可放硬币或强推包袋替代",
+      "started_at": "2026-11-04T12:18:03.069267+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "1c01a12ca9f933fcca8b383438c1f5afb4bb075b846c8e5cc95795dd083ab223",
+      "finished_at": "2026-11-04T12:18:06.787024+00:00",
+      "duration_ms": 3716,
+      "usage": {
+        "prompt_tokens": 23429,
+        "completion_tokens": 620,
+        "total_tokens": 24049,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13189
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F11",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：支持斜挎及肩背；客户手机尺寸不当包尺寸，不凭外尺寸保证装入",
+      "started_at": "2026-11-04T12:18:05.081286+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "9775d476f6c58541eb89ff19177211d484a7907c6b8b35606b47b69fc37fd7c6",
+      "finished_at": "2026-11-04T12:18:09.365555+00:00",
+      "duration_ms": 4283,
+      "usage": {
+        "prompt_tokens": 22302,
+        "completion_tokens": 468,
+        "total_tokens": 22770,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11550
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F12",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：A4纸容量明确；厚文件夹需另核尺寸，不把A4等同厚夹",
+      "started_at": "2026-11-04T12:18:06.805492+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "ed50fffec97a6aa416f3d6982678e8e19155779897ce69bdca83f909a23e7ce8",
+      "finished_at": "2026-11-04T12:18:10.367018+00:00",
+      "duration_ms": 3560,
+      "usage": {
+        "prompt_tokens": 22553,
+        "completion_tokens": 386,
+        "total_tokens": 22939,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 12441
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": "$ fields"
+    },
+    {
+      "case_id": "F11",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：支持斜挎及肩背；客户手机尺寸不当包尺寸，不凭外尺寸保证装入",
+      "started_at": "2026-11-04T12:18:09.382343+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "44a9742c47f04b73f6e860f673524454b5e35f04315f5b28bd09a19768cf156b",
+      "finished_at": "2026-11-04T12:18:14.382243+00:00",
+      "duration_ms": 4998,
+      "usage": {
+        "prompt_tokens": 24141,
+        "completion_tokens": 994,
+        "total_tokens": 25135,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13901
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F13",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：P01约750克、P02约420克；P02可斜挎，P01未提供斜挎配置，不移植特点",
+      "started_at": "2026-11-04T12:18:10.392088+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "462b88dc571822b0a2997265bdc805a3033ce291d14c8233e362806536dbb2e5",
+      "finished_at": "2026-11-04T12:18:14.363397+00:00",
+      "duration_ms": 3969,
+      "usage": {
+        "prompt_tokens": 22408,
+        "completion_tokens": 464,
+        "total_tokens": 22872,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11656
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F14",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：单价2,800、两只合计5,600；总额不能误当商品单价",
+      "started_at": "2026-11-04T12:18:14.413421+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "042c20a9c8beab4d0dd2dba120de02d7dc18cdfe3b33526f73ef9fc0e203eb3a",
+      "finished_at": "2026-11-04T12:18:17.075366+00:00",
+      "duration_ms": 2660,
+      "usage": {
+        "prompt_tokens": 22084,
+        "completion_tokens": 320,
+        "total_tokens": 22404,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11332
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F15",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：可讲小压印标识、哑光细纹牛皮、简洁线条；不编产地、皮革等级或地位象征",
+      "started_at": "2026-11-04T12:18:14.415825+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "5eeabc0e47d2660b41e57fbda5ecd0c89ea89315e21efd5892cfadd536e1e96b",
+      "finished_at": "2026-11-04T12:18:18.766995+00:00",
+      "duration_ms": 4350,
+      "usage": {
+        "prompt_tokens": 22130,
+        "completion_tokens": 499,
+        "total_tokens": 22629,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11378
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F14",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：单价2,800、两只合计5,600；总额不能误当商品单价",
+      "started_at": "2026-11-04T12:18:17.092013+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "27a8b0ed000b74e4847d0a9037f0c39c17066c73faee618d7d3137e6d73507ad",
+      "finished_at": "2026-11-04T12:18:20.202714+00:00",
+      "duration_ms": 3108,
+      "usage": {
+        "prompt_tokens": 23107,
+        "completion_tokens": 598,
+        "total_tokens": 23705,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12867
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F15",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：可讲小压印标识、哑光细纹牛皮、简洁线条；不编产地、皮革等级或地位象征",
+      "started_at": "2026-11-04T12:18:18.783066+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "3077e473cc71de94dec25d7538cb997a7d64a5d6331630258fcce955afe3efe1",
+      "finished_at": "2026-11-04T12:18:22.293622+00:00",
+      "duration_ms": 3508,
+      "usage": {
+        "prompt_tokens": 23787,
+        "completion_tokens": 708,
+        "total_tokens": 24495,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13547
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F16",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：包身哑光细纹牛皮、棉布内衬；一个内侧平口袋可放钥匙，每条答两问",
+      "started_at": "2026-11-04T12:18:20.230851+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "3ce7bbcbe2ddcc3631eafd8dcc0585819169d254b357178a445c0b0e55ddea05",
+      "finished_at": "2026-11-04T12:18:22.832275+00:00",
+      "duration_ms": 2600,
+      "usage": {
+        "prompt_tokens": 22171,
+        "completion_tokens": 325,
+        "total_tokens": 22496,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11419
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F17",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：不适合护照，不能把卡片容量当护照容量；不虚构其他未上架商品",
+      "started_at": "2026-11-04T12:18:22.323466+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "7a572d3d9fe67995e41107f8a90266b549d79f65efcd2f7f0169bc5204a903e2",
+      "finished_at": "2026-11-04T12:18:26.287632+00:00",
+      "duration_ms": 3962,
+      "usage": {
+        "prompt_tokens": 22078,
+        "completion_tokens": 391,
+        "total_tokens": 22469,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11326
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F16",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：包身哑光细纹牛皮、棉布内衬；一个内侧平口袋可放钥匙，每条答两问",
+      "started_at": "2026-11-04T12:18:22.845467+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "9ec427303fe3b7369e5cab5ade33eaa8784231f8927cb50bba6631ef973282c0",
+      "finished_at": "2026-11-04T12:18:26.547530+00:00",
+      "duration_ms": 3699,
+      "usage": {
+        "prompt_tokens": 23513,
+        "completion_tokens": 712,
+        "total_tokens": 24225,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13273
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F17",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：不适合护照，不能把卡片容量当护照容量；不虚构其他未上架商品",
+      "started_at": "2026-11-04T12:18:26.303640+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "94cd9701ac5f1f0714a782156e6a66106de7440b1e6a9ec3359d50c0b1ab6f52",
+      "finished_at": "2026-11-04T12:18:30.243286+00:00",
+      "duration_ms": 3937,
+      "usage": {
+        "prompt_tokens": 23584,
+        "completion_tokens": 837,
+        "total_tokens": 24421,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13344
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F18",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：确认拉链开合；区分客户钱包和包尺寸，钱包实际兼容需核实",
+      "started_at": "2026-11-04T12:18:26.577376+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "dbef4a90fed5da596b7512d463975bc0991d14f448ccf85eb5a895b4d83c3024",
+      "finished_at": "2026-11-04T12:18:30.131431+00:00",
+      "duration_ms": 3553,
+      "usage": {
+        "prompt_tokens": 22170,
+        "completion_tokens": 359,
+        "total_tokens": 22529,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11418
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F19",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：符合申请条件不等于已批准；最终门店检查，不保证到账日期",
+      "started_at": "2026-11-04T12:18:30.152616+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "c56921a545c89a91b397a68eacf45cfc76feec27208f492fb76d9fb3ca246757",
+      "finished_at": "2026-11-04T12:18:33.719828+00:00",
+      "duration_ms": 3566,
+      "usage": {
+        "prompt_tokens": 22447,
+        "completion_tokens": 455,
+        "total_tokens": 22902,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11823
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F20",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：次日起7自然日，第7日11/3可申请；换色不等于有库存，不直接批准",
+      "started_at": "2026-11-04T12:18:30.265511+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4ebe6a51d35a587b283c4051c180cf93d510a5b1c5afdded8a75d95810d8c105",
+      "finished_at": "2026-11-04T12:18:34.200561+00:00",
+      "duration_ms": 3934,
+      "usage": {
+        "prompt_tokens": 22472,
+        "completion_tokens": 498,
+        "total_tokens": 22970,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11848
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F19",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：符合申请条件不等于已批准；最终门店检查，不保证到账日期",
+      "started_at": "2026-11-04T12:18:33.734277+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "2218e1449630768f5e57356aaa8992977ef94912c8b90ee69805f2bae40a46b8",
+      "finished_at": "2026-11-04T12:18:38.249354+00:00",
+      "duration_ms": 4512,
+      "usage": {
+        "prompt_tokens": 24330,
+        "completion_tokens": 862,
+        "total_tokens": 25192,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 14218
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F20",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：次日起7自然日，第7日11/3可申请；换色不等于有库存，不直接批准",
+      "started_at": "2026-11-04T12:18:34.216178+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "ea9b20ec43ca7b5b4d7813a9a2ad981def62b188c21b2266f81a9028f1547d2e",
+      "finished_at": "2026-11-04T12:18:41.078889+00:00",
+      "duration_ms": 6860,
+      "usage": {
+        "prompt_tokens": 24632,
+        "completion_tokens": 1291,
+        "total_tokens": 25923,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 14520
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F21",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：先核实渠道、记录和商品情况；不直接套门店7日或保证退货",
+      "started_at": "2026-11-04T12:18:38.279162+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "81b9c5f94422ac51f18315281e73075dfcece3d1c0a29e30fcab4bc7517457df",
+      "finished_at": "2026-11-04T12:18:42.545919+00:00",
+      "duration_ms": 4265,
+      "usage": {
+        "prompt_tokens": 22114,
+        "completion_tokens": 420,
+        "total_tokens": 22534,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11362
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F22",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：说明需核实渠道规则；不编线上退货权益、平台地址或批准",
+      "started_at": "2026-11-04T12:18:41.111031+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "7ef7d00e1faa162038538a6f985d9c21ed088a32a92c2ea7f4e73a34d6e18bce",
+      "finished_at": "2026-11-04T12:18:44.853365+00:00",
+      "duration_ms": 3741,
+      "usage": {
+        "prompt_tokens": 22069,
+        "completion_tokens": 379,
+        "total_tokens": 22448,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11445
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F21",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：先核实渠道、记录和商品情况；不直接套门店7日或保证退货",
+      "started_at": "2026-11-04T12:18:42.562386+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "a115ef11698e86938f93ddb36f4b9114002032564d3fe51c9fabaaa9c138bed9",
+      "finished_at": "2026-11-04T12:18:46.215342+00:00",
+      "duration_ms": 3650,
+      "usage": {
+        "prompt_tokens": 23628,
+        "completion_tokens": 660,
+        "total_tokens": 24288,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13388
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F22",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：说明需核实渠道规则；不编线上退货权益、平台地址或批准",
+      "started_at": "2026-11-04T12:18:44.868937+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "bcf38ab9ecb053ede2bb84db3a5d1c79427960e994b3695438f54bcc55aad627",
+      "finished_at": "2026-11-04T12:18:48.566136+00:00",
+      "duration_ms": 3694,
+      "usage": {
+        "prompt_tokens": 23672,
+        "completion_tokens": 717,
+        "total_tokens": 24389,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13432
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F23",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：不建议自行用未知清洁剂；可收局部照片交售后，不编皮面损坏机理",
+      "started_at": "2026-11-04T12:18:46.244652+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "f47b8c414f189a956459636e1b0cd7c444ace4f02b97bc860792435f01016937",
+      "finished_at": "2026-11-04T12:18:50.203290+00:00",
+      "duration_ms": 3957,
+      "usage": {
+        "prompt_tokens": 22112,
+        "completion_tokens": 397,
+        "total_tokens": 22509,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11360
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F24",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：两项都需售后评估；不保证免费、固定天数或认定人为使用不当",
+      "started_at": "2026-11-04T12:18:48.598313+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4f59bba6df84854c22d05648da9962d8637567e98a28577289958edc3b5474e9",
+      "finished_at": "2026-11-04T12:18:52.581302+00:00",
+      "duration_ms": 3981,
+      "usage": {
+        "prompt_tokens": 22108,
+        "completion_tokens": 366,
+        "total_tokens": 22474,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11356
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F23",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：不建议自行用未知清洁剂；可收局部照片交售后，不编皮面损坏机理",
+      "started_at": "2026-11-04T12:18:50.220138+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "2cddb584076fed004de90a5484337c075d637f5f3f44b80020c2b6502cc7da23",
+      "finished_at": "2026-11-04T12:18:53.839367+00:00",
+      "duration_ms": 3617,
+      "usage": {
+        "prompt_tokens": 23865,
+        "completion_tokens": 779,
+        "total_tokens": 24644,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13625
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F24",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：两项都需售后评估；不保证免费、固定天数或认定人为使用不当",
+      "started_at": "2026-11-04T12:18:52.598542+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "e44cc55670bb4606db37a67afd7ce6de8ea8087f9867e372fd1090699a95178f",
+      "finished_at": "2026-11-04T12:18:56.178122+00:00",
+      "duration_ms": 3576,
+      "usage": {
+        "prompt_tokens": 23657,
+        "completion_tokens": 722,
+        "total_tokens": 24379,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13417
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F25",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：未来提交意向不等于已完成；不能编单号、已查结果或已提交事实",
+      "started_at": "2026-11-04T12:18:53.872455+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "6e1caa259da95be868069aa4e1712eda7e92e26b573598d78abdbaf6800347d0",
+      "finished_at": "2026-11-04T12:18:57.493184+00:00",
+      "duration_ms": 3618,
+      "usage": {
+        "prompt_tokens": 22017,
+        "completion_tokens": 336,
+        "total_tokens": 22353,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11393
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F26",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：可问卡夹使用感受；不编已出现损坏、反馈或终身服务",
+      "started_at": "2026-11-04T12:18:56.205728+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4caf48500e66834ba841b7390eed390a4aaf7c16595c66f21fb25447a1f018f4",
+      "finished_at": "2026-11-04T12:18:59.846450+00:00",
+      "duration_ms": 3639,
+      "usage": {
+        "prompt_tokens": 21926,
+        "completion_tokens": 321,
+        "total_tokens": 22247,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11302
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F27",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：通风自然晾干，不建议热风或酒精；不认定已经损坏，也不直接保证无需维修或免费",
+      "started_at": "2026-11-04T12:18:57.521747+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "ec85df60da125bbe939a0fcdbab6381ac897499ef1d6dfb4073abb7a496b5785",
+      "finished_at": "2026-11-04T12:19:01.280754+00:00",
+      "duration_ms": 3757,
+      "usage": {
+        "prompt_tokens": 22163,
+        "completion_tokens": 404,
+        "total_tokens": 22567,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11411
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F26",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：可问卡夹使用感受；不编已出现损坏、反馈或终身服务",
+      "started_at": "2026-11-04T12:18:59.860965+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "146f433f9d71c3b7bae6faacc7d6e39a40f49faebf438b8912b19d349a975c62",
+      "finished_at": "2026-11-04T12:19:03.834592+00:00",
+      "duration_ms": 3971,
+      "usage": {
+        "prompt_tokens": 23332,
+        "completion_tokens": 711,
+        "total_tokens": 24043,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13092
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F27",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：通风自然晾干，不建议热风或酒精；不认定已经损坏，也不直接保证无需维修或免费",
+      "started_at": "2026-11-04T12:19:01.295928+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4d0b28572fcb635912ee5de904d300649899300fdd470d34464f1548d67be8b3",
+      "finished_at": "2026-11-04T12:19:04.779536+00:00",
+      "duration_ms": 3481,
+      "usage": {
+        "prompt_tokens": 23490,
+        "completion_tokens": 634,
+        "total_tokens": 24124,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13250
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F28",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：不责问未到店；可接续卡夹使用，不编近期活动或生活",
+      "started_at": "2026-11-04T12:19:03.864994+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "29c92ae7ac8e7df73cb2b387d809471df79ed75ac5eb570e97af6bccb7fe2633",
+      "finished_at": "2026-11-04T12:19:07.422351+00:00",
+      "duration_ms": 3556,
+      "usage": {
+        "prompt_tokens": 22112,
+        "completion_tokens": 343,
+        "total_tokens": 22455,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11488
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F29",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：符合简短偏好；不捏造新品、活动或优惠",
+      "started_at": "2026-11-04T12:19:04.808365+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "f81e5da26f17792f211ecab4f0fd86ed53de9c57e6c91c5f5617e422df3fcb90",
+      "finished_at": "2026-11-04T12:19:07.780549+00:00",
+      "duration_ms": 2971,
+      "usage": {
+        "prompt_tokens": 21758,
+        "completion_tokens": 308,
+        "total_tokens": 22066,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11134
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F28",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：不责问未到店；可接续卡夹使用，不编近期活动或生活",
+      "started_at": "2026-11-04T12:19:07.438048+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "54fbc178d737f155ff10a5a155ffe527264b26a0cdefbea3d2a6e3d76f901fba",
+      "finished_at": "2026-11-04T12:19:11.464078+00:00",
+      "duration_ms": 4023,
+      "usage": {
+        "prompt_tokens": 23339,
+        "completion_tokens": 731,
+        "total_tokens": 24070,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13099
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F29",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：符合简短偏好；不捏造新品、活动或优惠",
+      "started_at": "2026-11-04T12:19:07.794466+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "28b125b7152521c07c77eddaf74056dfbbbd9f52218f3f2e8a7f1e8ab10b51f1",
+      "finished_at": "2026-11-04T12:19:11.904078+00:00",
+      "duration_ms": 4106,
+      "usage": {
+        "prompt_tokens": 22726,
+        "completion_tokens": 710,
+        "total_tokens": 23436,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12486
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F30",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：不回答旧活动时间地点；不把旧问句视为当前邀约同意",
+      "started_at": "2026-11-04T12:19:11.496367+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "2891dca2e20c4048b28e2b16565a04d15658a9ce43482cdd63e58a4b1c44d8a9",
+      "finished_at": "2026-11-04T12:19:14.741325+00:00",
+      "duration_ms": 3243,
+      "usage": {
+        "prompt_tokens": 22324,
+        "completion_tokens": 337,
+        "total_tokens": 22661,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984
+        },
+        "prompt_cache_hit_tokens": 9984,
+        "prompt_cache_miss_tokens": 12340
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F31",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：只轻量问候，不附商品推销；不说已获得新的联系许可",
+      "started_at": "2026-11-04T12:19:11.928546+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "3373ac0a991b7c3848cb0bc62ae41f96bf881f7eb2a10939453bda9e5f60d93f",
+      "finished_at": "2026-11-04T12:19:15.774002+00:00",
+      "duration_ms": 3844,
+      "usage": {
+        "prompt_tokens": 21924,
+        "completion_tokens": 360,
+        "total_tokens": 22284,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11300
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F30",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：不回答旧活动时间地点；不把旧问句视为当前邀约同意",
+      "started_at": "2026-11-04T12:19:14.756055+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "42abe5a1c58329c0ca383de7035e126954227aa8d1103e416a59759732d546e2",
+      "finished_at": "2026-11-04T12:19:20.638834+00:00",
+      "duration_ms": 5879,
+      "usage": {
+        "prompt_tokens": 23452,
+        "completion_tokens": 1169,
+        "total_tokens": 24621,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 13340
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F31",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：只轻量问候，不附商品推销；不说已获得新的联系许可",
+      "started_at": "2026-11-04T12:19:15.786824+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "08a49b2f19c751475573a3a1c0d36cad2fe8cb5af69d01754af1c49018e6eb9c",
+      "finished_at": "2026-11-04T12:19:21.194217+00:00",
+      "duration_ms": 5404,
+      "usage": {
+        "prompt_tokens": 22811,
+        "completion_tokens": 963,
+        "total_tokens": 23774,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12571
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F32",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：不用编姓名或亲密称呼；不编顾问过去一直没打扰或客户近况",
+      "started_at": "2026-11-04T12:19:20.664272+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "be0a00b7df61fccd6f31ca95363dff2034ce88791b4665ea064217d71a28c5a2",
+      "finished_at": "2026-11-04T12:19:24.485035+00:00",
+      "duration_ms": 3819,
+      "usage": {
+        "prompt_tokens": 22102,
+        "completion_tokens": 343,
+        "total_tokens": 22445,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11478
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F33",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：不将旧颜色偏好当购买意愿；不虚构暖棕新品到店或库存",
+      "started_at": "2026-11-04T12:19:21.225007+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "1b3ad7ba20b4dffa730cb277d6fe622f35553386df7d4dd4d4d5e89145320961",
+      "finished_at": "2026-11-04T12:19:25.078243+00:00",
+      "duration_ms": 3851,
+      "usage": {
+        "prompt_tokens": 21754,
+        "completion_tokens": 375,
+        "total_tokens": 22129,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11130
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F32",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：不用编姓名或亲密称呼；不编顾问过去一直没打扰或客户近况",
+      "started_at": "2026-11-04T12:19:24.494361+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "177de6cf507e288a1b9408840d3f77c70ee801842e1ba648fe3d08b2c4aeb8ee",
+      "finished_at": "2026-11-04T12:19:29.488925+00:00",
+      "duration_ms": 4993,
+      "usage": {
+        "prompt_tokens": 23412,
+        "completion_tokens": 912,
+        "total_tokens": 24324,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 13300
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F33",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：不将旧颜色偏好当购买意愿；不虚构暖棕新品到店或库存",
+      "started_at": "2026-11-04T12:19:25.092170+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "5bd8537b5327f4b07caf4cf281c92bfb8322d79c2cd2b3722a848cca760c6cb8",
+      "finished_at": "2026-11-04T12:19:30.026642+00:00",
+      "duration_ms": 4931,
+      "usage": {
+        "prompt_tokens": 23127,
+        "completion_tokens": 882,
+        "total_tokens": 24009,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12887
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F34",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：只问使用体验，不催消费；不说客户现有包需要更换",
+      "started_at": "2026-11-04T12:19:29.519641+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "c0c0b567f319e1464e39774bfd2957b2836f373ec44def2807b9be5cfc3539c0",
+      "finished_at": "2026-11-04T12:19:32.407739+00:00",
+      "duration_ms": 2886,
+      "usage": {
+        "prompt_tokens": 21979,
+        "completion_tokens": 319,
+        "total_tokens": 22298,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11355
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F35",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：日期时间地点准确；可问意愿，不确认席位或承诺优惠",
+      "started_at": "2026-11-04T12:19:30.058671+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "10403e7f7254b72007be5f36b89b3467cf81b022b7e05daf15312271c707ae39",
+      "finished_at": "2026-11-04T12:19:33.831696+00:00",
+      "duration_ms": 3771,
+      "usage": {
+        "prompt_tokens": 22343,
+        "completion_tokens": 450,
+        "total_tokens": 22793,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 12231
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F34",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：只问使用体验，不催消费；不说客户现有包需要更换",
+      "started_at": "2026-11-04T12:19:32.422484+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "b329e31182bcfcb6d64962aa5eb5ef9432592b535641c4e51970dbb0cdc0f9dd",
+      "finished_at": "2026-11-04T12:19:35.257939+00:00",
+      "duration_ms": 2832,
+      "usage": {
+        "prompt_tokens": 22841,
+        "completion_tokens": 595,
+        "total_tokens": 23436,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12601
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F35",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：日期时间地点准确；可问意愿，不确认席位或承诺优惠",
+      "started_at": "2026-11-04T12:19:33.847756+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "db207864f7f35edcf1b657aaa511fb14167a3a6b90fa76d5567a6296766d5d6a",
+      "finished_at": "2026-11-04T12:19:38.940125+00:00",
+      "duration_ms": 5089,
+      "usage": {
+        "prompt_tokens": 23930,
+        "completion_tokens": 1078,
+        "total_tokens": 25008,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13690
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F36",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：只答澄序广场8号精品店；不因无问号误拦，不恢复营销同意",
+      "started_at": "2026-11-04T12:19:35.287035+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "2f97ae877461798608b7af823862a8b5e15d3ddcaa1b9f41071b90bd26ffd7fe",
+      "finished_at": "2026-11-04T12:19:38.738718+00:00",
+      "duration_ms": 3450,
+      "usage": {
+        "prompt_tokens": 22651,
+        "completion_tokens": 319,
+        "total_tokens": 22970,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 12539
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F36",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：只答澄序广场8号精品店；不因无问号误拦，不恢复营销同意",
+      "started_at": "2026-11-04T12:19:38.750704+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "e0611bc43cd9d1a77f36fde548deab57fecb339c239b6c37942a8d6ec7b69a6a",
+      "finished_at": "2026-11-04T12:19:41.914577+00:00",
+      "duration_ms": 3161,
+      "usage": {
+        "prompt_tokens": 23184,
+        "completion_tokens": 607,
+        "total_tokens": 23791,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 13072
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F37",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：可携一位朋友但需登记确认；未来协助不等于已登记或已留两席",
+      "started_at": "2026-11-04T12:19:38.966737+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "7227706e627a5b4b57cf50026cc8a239455d53c8db0e676864660362165bfc1f",
+      "finished_at": "2026-11-04T12:19:42.030696+00:00",
+      "duration_ms": 3062,
+      "usage": {
+        "prompt_tokens": 22420,
+        "completion_tokens": 406,
+        "total_tokens": 22826,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 12308
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F38",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：回答周六11/21的10:00—12:00；不混用周五时段或确认预约",
+      "started_at": "2026-11-04T12:19:41.932765+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "cfc93f39bf5b37d5756b9eabe1cb6721ecf3c0899de07b634a269bdac8786ca1",
+      "finished_at": "2026-11-04T12:19:45.389189+00:00",
+      "duration_ms": 3454,
+      "usage": {
+        "prompt_tokens": 22771,
+        "completion_tokens": 309,
+        "total_tokens": 23080,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 12659
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F37",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：可携一位朋友但需登记确认；未来协助不等于已登记或已留两席",
+      "started_at": "2026-11-04T12:19:42.042732+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "745f7fecf20072076fa2e55189ba52420caef4980a26f25a2274777640355a91",
+      "finished_at": "2026-11-04T12:19:47.289861+00:00",
+      "duration_ms": 5244,
+      "usage": {
+        "prompt_tokens": 23854,
+        "completion_tokens": 1018,
+        "total_tokens": 24872,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13614
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F38",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：回答周六11/21的10:00—12:00；不混用周五时段或确认预约",
+      "started_at": "2026-11-04T12:19:45.405649+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "86a53496fec41ea1fda0c0dac7939cc52fe13927bf1e511edb6c0b169acaf28a",
+      "finished_at": "2026-11-04T12:19:48.675201+00:00",
+      "duration_ms": 3266,
+      "usage": {
+        "prompt_tokens": 23421,
+        "completion_tokens": 631,
+        "total_tokens": 24052,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13181
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F39",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：无折扣政策准确；说明活动用途，不夸大参加收益",
+      "started_at": "2026-11-04T12:19:47.314540+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "4bee697c49a1fe3f2fd7a1de0fd7cc57862cc786cef060100679acbe4c834a52",
+      "finished_at": "2026-11-04T12:19:50.057101+00:00",
+      "duration_ms": 2740,
+      "usage": {
+        "prompt_tokens": 22371,
+        "completion_tokens": 353,
+        "total_tokens": 22724,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 11491
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F40",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：可依据明确业务记录确认一位登记和时段；不虚构同行、余位或升级权益",
+      "started_at": "2026-11-04T12:19:48.706105+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "061fad8549e9108061c2b5db7f50cd6a8c375107b0fadeef3318549c13477d9e",
+      "finished_at": "2026-11-04T12:19:52.287082+00:00",
+      "duration_ms": 3579,
+      "usage": {
+        "prompt_tokens": 22412,
+        "completion_tokens": 334,
+        "total_tokens": 22746,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12172
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F39",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：无折扣政策准确；说明活动用途，不夸大参加收益",
+      "started_at": "2026-11-04T12:19:50.073412+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "ec1c9cbbee011a63655ebc231ca499290533d58207741e343eabfd7503c039a5",
+      "finished_at": "2026-11-04T12:19:53.794928+00:00",
+      "duration_ms": 3718,
+      "usage": {
+        "prompt_tokens": 23560,
+        "completion_tokens": 677,
+        "total_tokens": 24237,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13320
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F40",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：可依据明确业务记录确认一位登记和时段；不虚构同行、余位或升级权益",
+      "started_at": "2026-11-04T12:19:52.298843+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "f7b198a28568ffed0532706eec5031e594113ecdad1f6ced97fe3826abb90f23",
+      "finished_at": "2026-11-04T12:19:56.332952+00:00",
+      "duration_ms": 4030,
+      "usage": {
+        "prompt_tokens": 23422,
+        "completion_tokens": 698,
+        "total_tokens": 24120,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13182
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F41",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：回答展示日常收纳内容；不预约、不虚构新品或礼物",
+      "started_at": "2026-11-04T12:19:53.826789+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "1e94b3138868e699411c193568620b4b27a99f52643b519924c5d9c8d9f21dbe",
+      "finished_at": "2026-11-04T12:19:56.713622+00:00",
+      "duration_ms": 2884,
+      "usage": {
+        "prompt_tokens": 22482,
+        "completion_tokens": 380,
+        "total_tokens": 22862,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 11602
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F42",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：纠正为11/14周六；否定旧周五不能当新活动星期冲突",
+      "started_at": "2026-11-04T12:19:56.359748+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "9b2a4d770cd7bfd42edeb338c3a4c7ef3052c8a2beb000fd4acaead28022dbeb",
+      "finished_at": "2026-11-04T12:19:59.347448+00:00",
+      "duration_ms": 2984,
+      "usage": {
+        "prompt_tokens": 22575,
+        "completion_tokens": 385,
+        "total_tokens": 22960,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 11695
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F41",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：回答展示日常收纳内容；不预约、不虚构新品或礼物",
+      "started_at": "2026-11-04T12:19:56.732855+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "72f6937e8fc7f507467b43a4146bd95249090ab348a3b27740f93241486e156d",
+      "finished_at": "2026-11-04T12:20:00.907272+00:00",
+      "duration_ms": 4171,
+      "usage": {
+        "prompt_tokens": 24327,
+        "completion_tokens": 806,
+        "total_tokens": 25133,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 14087
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F42",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：纠正为11/14周六；否定旧周五不能当新活动星期冲突",
+      "started_at": "2026-11-04T12:19:59.358908+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "949196e7c2bea0b4aff870e4a0c2c095c5ea80d997ca87eeb8b050c330cabd44",
+      "finished_at": "2026-11-04T12:20:03.723568+00:00",
+      "duration_ms": 4362,
+      "usage": {
+        "prompt_tokens": 23725,
+        "completion_tokens": 959,
+        "total_tokens": 24684,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112
+        },
+        "prompt_cache_hit_tokens": 10112,
+        "prompt_cache_miss_tokens": 13613
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F43",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：2,800与无折扣；有依据说明卡片用途/低调设计，不把精品身份当价值证明",
+      "started_at": "2026-11-04T12:20:00.942341+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "601cf093153c30c525fee653774ff20c7de51da79fc9d92ef3d42e072bf7c869",
+      "finished_at": "2026-11-04T12:20:05.131281+00:00",
+      "duration_ms": 4187,
+      "usage": {
+        "prompt_tokens": 22088,
+        "completion_tokens": 436,
+        "total_tokens": 22524,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11464
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F44",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：不重复问已知预算；用随身小物、背法/拉链等真实信息帮判断，不保证物有所值",
+      "started_at": "2026-11-04T12:20:03.744597+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "168b453df765719e1b120b1d0c7660ffca6c543dc68c7e5000811cc7126d71ce",
+      "finished_at": "2026-11-04T12:20:07.906174+00:00",
+      "duration_ms": 4160,
+      "usage": {
+        "prompt_tokens": 22330,
+        "completion_tokens": 537,
+        "total_tokens": 22867,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11578
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F43",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：2,800与无折扣；有依据说明卡片用途/低调设计，不把精品身份当价值证明",
+      "started_at": "2026-11-04T12:20:05.142562+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "247799048f6f031cec1ead0c29f676d6625176a91a2d7e5985f4675b4b393bcc",
+      "finished_at": "2026-11-04T12:20:09.295916+00:00",
+      "duration_ms": 4151,
+      "usage": {
+        "prompt_tokens": 23760,
+        "completion_tokens": 974,
+        "total_tokens": 24734,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13520
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F44",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：不重复问已知预算；用随身小物、背法/拉链等真实信息帮判断，不保证物有所值",
+      "started_at": "2026-11-04T12:20:07.924777+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "8a06e4f980de8b821ae32008bb75ef6cb81900dfe5acb554020f8e19d95d91a3",
+      "finished_at": "2026-11-04T12:20:12.680831+00:00",
+      "duration_ms": 4753,
+      "usage": {
+        "prompt_tokens": 24597,
+        "completion_tokens": 1261,
+        "total_tokens": 25858,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 14357
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F45",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：客户旧实付不当当前授权售价；不编涨价原因或兑现旧价",
+      "started_at": "2026-11-04T12:20:09.327181+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "f2d65531fa6ebf1fb4ed1595c82d55068ef42734e9899ce5c504ec0259948863",
+      "finished_at": "2026-11-04T12:20:13.023151+00:00",
+      "duration_ms": 3694,
+      "usage": {
+        "prompt_tokens": 22418,
+        "completion_tokens": 447,
+        "total_tokens": 22865,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11666
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F46",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：未设相关权益，需核实不承诺；不因能接受价格就编成交/配送",
+      "started_at": "2026-11-04T12:20:12.715937+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "7dfc2d4ee37db510ab58d51ded7450f6742033ddb08770238203c91517c3d5ff",
+      "finished_at": "2026-11-04T12:20:16.250856+00:00",
+      "duration_ms": 3532,
+      "usage": {
+        "prompt_tokens": 22084,
+        "completion_tokens": 360,
+        "total_tokens": 22444,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11332
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F45",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：客户旧实付不当当前授权售价；不编涨价原因或兑现旧价",
+      "started_at": "2026-11-04T12:20:13.029382+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "3c838ca7f48f262f77e5480f0fc56aaff35f230a470b3cab3c53937b6bf05a8a",
+      "finished_at": "2026-11-04T12:20:17.247171+00:00",
+      "duration_ms": 4216,
+      "usage": {
+        "prompt_tokens": 23863,
+        "completion_tokens": 768,
+        "total_tokens": 24631,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13623
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F46",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：未设相关权益，需核实不承诺；不因能接受价格就编成交/配送",
+      "started_at": "2026-11-04T12:20:16.266426+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "213034118fbfb9df908169087006ac259c8a9bb4de31e80524e47a7cc73cf44d",
+      "finished_at": "2026-11-04T12:20:20.348028+00:00",
+      "duration_ms": 4078,
+      "usage": {
+        "prompt_tokens": 23390,
+        "completion_tokens": 728,
+        "total_tokens": 24118,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 13150
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F47",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：价差6,000可算，不当第三个商品单价；材质同为哑光细纹牛皮/棉布，不编皮革等级或成本原因",
+      "started_at": "2026-11-04T12:20:17.276004+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "28e53daa1ebdc9730b58e1268af776e1472c7943ef914459b5d1d40f14ba3fac",
+      "finished_at": "2026-11-04T12:20:22.482304+00:00",
+      "duration_ms": 5204,
+      "usage": {
+        "prompt_tokens": 22380,
+        "completion_tokens": 542,
+        "total_tokens": 22922,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11628
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F48",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：理解暂缓，不因没命中词表拒绝unclear；三条温暖给空间，不追问或承诺跟进",
+      "started_at": "2026-11-04T12:20:20.370881+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "fba15d7c0282a284f8958c4b8be1681ccb76e17ce0e9acf5fbdca655c5f28ef5",
+      "finished_at": "2026-11-04T12:20:23.729961+00:00",
+      "duration_ms": 3357,
+      "usage": {
+        "prompt_tokens": 22150,
+        "completion_tokens": 278,
+        "total_tokens": 22428,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 11526
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F49",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：温暖停止本次推荐；不追问、换款、试背或主动跟进",
+      "started_at": "2026-11-04T12:20:22.515938+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "5ec332205a6ae28c71ff18269cc862927611158532ba3ce69c9024eee66a0336",
+      "finished_at": "2026-11-04T12:20:25.023092+00:00",
+      "duration_ms": 2505,
+      "usage": {
+        "prompt_tokens": 21955,
+        "completion_tokens": 291,
+        "total_tokens": 22246,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 11203
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F48",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：理解暂缓，不因没命中词表拒绝unclear；三条温暖给空间，不追问或承诺跟进",
+      "started_at": "2026-11-04T12:20:23.741848+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "3d27ef73d9b6d178e3609dccc34947a2f122a10ce6806e7b31cec6269d3858d6",
+      "finished_at": "2026-11-04T12:20:27.292895+00:00",
+      "duration_ms": 3549,
+      "usage": {
+        "prompt_tokens": 22916,
+        "completion_tokens": 580,
+        "total_tokens": 23496,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12676
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F49",
+      "stage": "review",
+      "purpose": "同一原50例新版本首次复核：温暖停止本次推荐；不追问、换款、试背或主动跟进",
+      "started_at": "2026-11-04T12:20:25.036759+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "3b15629849d13f63212db6af93d25495ccc91c4f4053e5a90ce22799a2d3f872",
+      "finished_at": "2026-11-04T12:20:27.911787+00:00",
+      "duration_ms": 2871,
+      "usage": {
+        "prompt_tokens": 23084,
+        "completion_tokens": 523,
+        "total_tokens": 23607,
+        "prompt_tokens_details": {
+          "cached_tokens": 10240
+        },
+        "prompt_cache_hit_tokens": 10240,
+        "prompt_cache_miss_tokens": 12844
+      },
+      "returned_model": "deepseek-flash",
+      "response_error": null
+    },
+    {
+      "case_id": "F50",
+      "stage": "generation",
+      "purpose": "同一原50例新版本首次生成：无折扣，不依据朋友传言评价竞品；可讲自家已有特点，不编成本/产地/性能优势",
+      "started_at": "2026-11-04T12:20:27.324462+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "852bb53ea58c982febedc2137cd51e0e9d3b931c78727cf0179ec7b2e3549ab4",
+      "finished_at": "2026-11-04T12:20:28.170628+00:00",
+      "duration_ms": 844,
+      "usage": null,
+      "returned_model": null,
+      "response_error": null
+    }
+  ],
+  "results": [
+    {
+      "case_id": "F01",
+      "run_id": "6e1e3f02a623493180f24ec30cd20b5f",
+      "raw_record": "raw_runs/6e1e3f02a623493180f24ec30cd20b5f.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F02",
+      "run_id": "c6cf02d7b5c34c9ca95560cc0dfd8a30",
+      "raw_record": "raw_runs/c6cf02d7b5c34c9ca95560cc0dfd8a30.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F03",
+      "run_id": "87807f8669b64d2ca3325286b1ddc16a",
+      "raw_record": "raw_runs/87807f8669b64d2ca3325286b1ddc16a.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F04",
+      "run_id": "d51c48f1fa1b4523a943112fe86ae61d",
+      "raw_record": "raw_runs/d51c48f1fa1b4523a943112fe86ae61d.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F05",
+      "run_id": "cfbf46793d88476eb976cf4abb327233",
+      "raw_record": "raw_runs/cfbf46793d88476eb976cf4abb327233.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F06",
+      "run_id": "af034b6d09b042419f545001273781b9",
+      "raw_record": "raw_runs/af034b6d09b042419f545001273781b9.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F07",
+      "run_id": "fea9b6d0a5274290aa176a3333f7be4e",
+      "raw_record": "raw_runs/fea9b6d0a5274290aa176a3333f7be4e.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F08",
+      "run_id": "995768a8acc14e26bad1728af3a0e024",
+      "raw_record": "raw_runs/995768a8acc14e26bad1728af3a0e024.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F09",
+      "run_id": "26cce63daddd4bb3931209c9e0a25341",
+      "raw_record": "raw_runs/26cce63daddd4bb3931209c9e0a25341.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F10",
+      "run_id": "a4c179adb2314441b7212c0e6b91ce26",
+      "raw_record": "raw_runs/a4c179adb2314441b7212c0e6b91ce26.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F11",
+      "run_id": "e12dcb5de4ed440e9bea6ccd1b4a4af7",
+      "raw_record": "raw_runs/e12dcb5de4ed440e9bea6ccd1b4a4af7.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F12",
+      "run_id": "57bb8840d7e24696929800745e82f2d1",
+      "raw_record": "raw_runs/57bb8840d7e24696929800745e82f2d1.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（$ fields），不属于可明确兼容的空内部字段；原响应已保留，整组未采用。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "returned_message_count": 0,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F13",
+      "run_id": "3ab82ccd60f844e8abf66d39bba8069b",
+      "raw_record": "raw_runs/3ab82ccd60f844e8abf66d39bba8069b.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F14",
+      "run_id": "1079028cfcde4ee6bb1ba7d00d48b9f9",
+      "raw_record": "raw_runs/1079028cfcde4ee6bb1ba7d00d48b9f9.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F15",
+      "run_id": "2a01c9d3c6304599a7f246ebf26ede1c",
+      "raw_record": "raw_runs/2a01c9d3c6304599a7f246ebf26ede1c.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F16",
+      "run_id": "d5cbf587e9f143a287efb94660a14544",
+      "raw_record": "raw_runs/d5cbf587e9f143a287efb94660a14544.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F17",
+      "run_id": "18117c1726884123ae0977f7b93dce9d",
+      "raw_record": "raw_runs/18117c1726884123ae0977f7b93dce9d.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F18",
+      "run_id": "977f7faeca7c47e6b53a9b46c0dfd94a",
+      "raw_record": "raw_runs/977f7faeca7c47e6b53a9b46c0dfd94a.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "轻行肩包的dimensions_cm依据为：22 × 16 × 7 cm；该断言没有同一商品资料支持，未知不能解释成没有。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F19",
+      "run_id": "2fbd954e104e4084b103d2a9169a64b7",
+      "raw_record": "raw_runs/2fbd954e104e4084b103d2a9169a64b7.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F20",
+      "run_id": "459fcb808be24fd5b8c30de5b7b1883f",
+      "raw_record": "raw_runs/459fcb808be24fd5b8c30de5b7b1883f.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F21",
+      "run_id": "51c634acd6d04268ab6fab1ae2d5d9f8",
+      "raw_record": "raw_runs/51c634acd6d04268ab6fab1ae2d5d9f8.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F22",
+      "run_id": "54efe7a0cfa74b4e9346314f20eb6b44",
+      "raw_record": "raw_runs/54efe7a0cfa74b4e9346314f20eb6b44.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F23",
+      "run_id": "b849bf6bab13478393574bc4c0906b9a",
+      "raw_record": "raw_runs/b849bf6bab13478393574bc4c0906b9a.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F24",
+      "run_id": "fc572f83dc8e4e44b494104754495ee9",
+      "raw_record": "raw_runs/fc572f83dc8e4e44b494104754495ee9.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F25",
+      "run_id": "a657ce81057740b3891ff6fdfa85e719",
+      "raw_record": "raw_runs/a657ce81057740b3891ff6fdfa85e719.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F26",
+      "run_id": "f281b37366fb42f49ab2409b39bfe16f",
+      "raw_record": "raw_runs/f281b37366fb42f49ab2409b39bfe16f.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F27",
+      "run_id": "b95b5c167aa347b1ae9840d1ea954e11",
+      "raw_record": "raw_runs/b95b5c167aa347b1ae9840d1ea954e11.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F28",
+      "run_id": "b0c9e5da59fb4b3ba9172b6bc74f1bbd",
+      "raw_record": "raw_runs/b0c9e5da59fb4b3ba9172b6bc74f1bbd.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F29",
+      "run_id": "a312c1f043904f949c209d19ec04251c",
+      "raw_record": "raw_runs/a312c1f043904f949c209d19ec04251c.json",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F30",
+      "run_id": "4354c8c6ac1947baa4ee6462b92b67ac",
+      "raw_record": "raw_runs/4354c8c6ac1947baa4ee6462b92b67ac.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F31",
+      "run_id": "2b22b05be2664ef9b205132264bbbad1",
+      "raw_record": "raw_runs/2b22b05be2664ef9b205132264bbbad1.json",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F32",
+      "run_id": "5072eb5bf2504185bfde581c3b15517e",
+      "raw_record": "raw_runs/5072eb5bf2504185bfde581c3b15517e.json",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F33",
+      "run_id": "1ee674f26aec4a60b07958ab9f6781c0",
+      "raw_record": "raw_runs/1ee674f26aec4a60b07958ab9f6781c0.json",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F34",
+      "run_id": "b26496f507124597a1118994d00d3ffc",
+      "raw_record": "raw_runs/b26496f507124597a1118994d00d3ffc.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F35",
+      "run_id": "f2d1ed5f18724a73bb392b821f22fcc1",
+      "raw_record": "raw_runs/f2d1ed5f18724a73bb392b821f22fcc1.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F36",
+      "run_id": "137a8539318f4f59af1c6278bbcfd730",
+      "raw_record": "raw_runs/137a8539318f4f59af1c6278bbcfd730.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F37",
+      "run_id": "8d3267daa70f4a259285698eec88d20f",
+      "raw_record": "raw_runs/8d3267daa70f4a259285698eec88d20f.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F38",
+      "run_id": "f9b765657613426097259368acfd2f48",
+      "raw_record": "raw_runs/f9b765657613426097259368acfd2f48.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F39",
+      "run_id": "a47b8c6e004b4b31bad48fc5fb552ce1",
+      "raw_record": "raw_runs/a47b8c6e004b4b31bad48fc5fb552ce1.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F40",
+      "run_id": "814acb690ce545739799fc46b025109c",
+      "raw_record": "raw_runs/814acb690ce545739799fc46b025109c.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F41",
+      "run_id": "5080f85e08be414db85c63fb1a89f245",
+      "raw_record": "raw_runs/5080f85e08be414db85c63fb1a89f245.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F42",
+      "run_id": "3fb86bcbfa4b4c8190a76580d329273a",
+      "raw_record": "raw_runs/3fb86bcbfa4b4c8190a76580d329273a.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F43",
+      "run_id": "97eae9e2fb44469bab3357350d3e9ea2",
+      "raw_record": "raw_runs/97eae9e2fb44469bab3357350d3e9ea2.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F44",
+      "run_id": "30a169b3d8d74bd5b0282f1a4171e3bf",
+      "raw_record": "raw_runs/30a169b3d8d74bd5b0282f1a4171e3bf.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F45",
+      "run_id": "3f47b543b1ab4aeb941c38fb8470dd2b",
+      "raw_record": "raw_runs/3f47b543b1ab4aeb941c38fb8470dd2b.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F46",
+      "run_id": "92953d47d4bd402a84dd7629ebeb7988",
+      "raw_record": "raw_runs/92953d47d4bd402a84dd7629ebeb7988.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F47",
+      "run_id": "5c19cc24deb949828738d099cca37b61",
+      "raw_record": "raw_runs/5c19cc24deb949828738d099cca37b61.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "没有定价原因资料，尺寸、材质名称或重量差异不能证明差价的原因；可比较已知参数，不要替品牌编定价解释。",
+        "retryable": true
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F48",
+      "run_id": "1cec4523a85443a6a5eb86f5522ab622",
+      "raw_record": "raw_runs/1cec4523a85443a6a5eb86f5522ab622.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F49",
+      "run_id": "3dbc2b7430e84d62a017d071c2fddda6",
+      "raw_record": "raw_runs/3dbc2b7430e84d62a017d071c2fddda6.json",
+      "status": "success",
+      "error": null,
+      "generation_attempted": true,
+      "review_attempted": true,
+      "returned_message_count": 3,
+      "source_hashes_unchanged": true
+    },
+    {
+      "case_id": "F50",
+      "run_id": "a11c932de82243abb4007c318bf41e99",
+      "raw_record": "raw_runs/a11c932de82243abb4007c318bf41e99.json",
+      "status": "error",
+      "error": {
+        "code": "provider_error",
+        "message": "模型接口返回 HTTP 402，请核对地址、模型名及接口参数。",
+        "retryable": false
+      },
+      "generation_attempted": true,
+      "review_attempted": false,
+      "returned_message_count": 0,
+      "source_hashes_unchanged": true
+    }
+  ],
+  "automatic_retries": 0,
+  "max_parallel_cases": 2,
+  "actual_requests": 94,
+  "reported_total_tokens": 2167942,
+  "requests_with_usage": 93,
+  "requests_without_usage": 1,
+  "finished_at": "2026-11-04T12:20:28.188851+00:00",
+  "completed": true,
+  "source_hashes_unchanged": true,
+  "status_counts": {
+    "success": 34,
+    "error": 16
+  }
+}

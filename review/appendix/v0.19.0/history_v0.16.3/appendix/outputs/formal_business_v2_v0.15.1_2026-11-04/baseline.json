@@ -1,0 +1,358 @@
+{
+  "baseline_id": "formal-business-v2-baseline-0.15.1",
+  "dataset_id": "business-realistic-v2.0",
+  "app_version": "0.15.1",
+  "started_at": "2026-11-04T21:52:16.224934+00:00",
+  "first_batch": [
+    "N10",
+    "N30",
+    "N37",
+    "N50"
+  ],
+  "requests": [
+    {
+      "case_id": "N10",
+      "stage": "generation",
+      "purpose": "手机型号与斜挎：查官方型号表，区分裸机与手机壳；可斜挎、肩带可调；结合资料作通常够放的日常判断；不让客户量手机，不把到店变前提，不声称官方认证适配",
+      "started_at": "2026-11-04T21:52:16.275966+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "5a678418e9822ab7edde1080957063d85a55e1ec728fafa6b6eae579652d8f80",
+      "finished_at": "2026-11-04T21:52:19.661372+00:00",
+      "duration_ms": 3385,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25560,
+        "completion_tokens": 394,
+        "total_tokens": 25954,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 24792
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N10",
+      "stage": "review",
+      "purpose": "手机型号与斜挎：查官方型号表，区分裸机与手机壳；可斜挎、肩带可调；结合资料作通常够放的日常判断；不让客户量手机，不把到店变前提，不声称官方认证适配",
+      "started_at": "2026-11-04T21:52:19.696947+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "58e3b57b12ebf81f833f7c32f58d94b4e345bb3d58222d3eeb11e7f1a431cff0",
+      "finished_at": "2026-11-04T21:52:26.090913+00:00",
+      "duration_ms": 6393,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 27048,
+        "completion_tokens": 1533,
+        "total_tokens": 28581,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 27048
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N30",
+      "stage": "generation",
+      "purpose": "转达已评估的维修费用：转达本单450元和预计周期，帮助客户决定；不把本单报价变通用政策，不声称已同意或已开始维修",
+      "started_at": "2026-11-04T21:52:26.134274+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "81132a9b8884e5d8a368790600c7f54148aec482a68d4a7f5601bb2029e776a8",
+      "finished_at": "2026-11-04T21:52:29.091302+00:00",
+      "duration_ms": 2956,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24343,
+        "completion_tokens": 306,
+        "total_tokens": 24649,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13719
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N30",
+      "stage": "review",
+      "purpose": "转达已评估的维修费用：转达本单450元和预计周期，帮助客户决定；不把本单报价变通用政策，不声称已同意或已开始维修",
+      "started_at": "2026-11-04T21:52:29.112943+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "cb162f5e056571495cb2cab8fa372ec88dc9ec4c858de1290502b36a147125e2",
+      "finished_at": "2026-11-04T21:52:34.286164+00:00",
+      "duration_ms": 5171,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 26057,
+        "completion_tokens": 1089,
+        "total_tokens": 27146,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 15305
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N37",
+      "stage": "generation",
+      "purpose": "向有兴趣的客户发邀请：说清体验价值、时间地点，自然询问意愿；不先列没有新品优惠，不冒称已报名",
+      "started_at": "2026-11-04T21:52:34.322309+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "d4bda53c9aac406b70492ebad8af822befe3dd42677760c5a0ca1c64597f0088",
+      "finished_at": "2026-11-04T21:52:38.526518+00:00",
+      "duration_ms": 4203,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24584,
+        "completion_tokens": 539,
+        "total_tokens": 25123,
+        "prompt_tokens_details": {
+          "cached_tokens": 10496
+        },
+        "prompt_cache_hit_tokens": 10496,
+        "prompt_cache_miss_tokens": 14088
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N37",
+      "stage": "review",
+      "purpose": "向有兴趣的客户发邀请：说清体验价值、时间地点，自然询问意愿；不先列没有新品优惠，不冒称已报名",
+      "started_at": "2026-11-04T21:52:38.538551+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "8c992af4e120b8d044f790f12fa7d2356cd400d5f9861fe4b20d7e9b57edc5c1",
+      "finished_at": "2026-11-04T21:52:47.336995+00:00",
+      "duration_ms": 8797,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 28007,
+        "completion_tokens": 2188,
+        "total_tokens": 30195,
+        "prompt_tokens_details": {
+          "cached_tokens": 10752
+        },
+        "prompt_cache_hit_tokens": 10752,
+        "prompt_cache_miss_tokens": 17255
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N50",
+      "stage": "generation",
+      "purpose": "暂不买包，转问卡夹礼物：停止包袋推荐，回答卡夹礼物需求；不把整段判拒绝，不让客户再次确认自己提出的方向",
+      "started_at": "2026-11-04T21:52:47.363510+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "93522b016687c0c5769f8b4803e1709a09cf9403d9c60a474e7def0fc56c0fe5",
+      "finished_at": "2026-11-04T21:52:50.472544+00:00",
+      "duration_ms": 3108,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 24100,
+        "completion_tokens": 403,
+        "total_tokens": 24503,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624
+        },
+        "prompt_cache_hit_tokens": 10624,
+        "prompt_cache_miss_tokens": 13476
+      },
+      "provider_status": null,
+      "error": null
+    },
+    {
+      "case_id": "N50",
+      "stage": "review",
+      "purpose": "暂不买包，转问卡夹礼物：停止包袋推荐，回答卡夹礼物需求；不把整段判拒绝，不让客户再次确认自己提出的方向",
+      "started_at": "2026-11-04T21:52:50.488393+00:00",
+      "requested_model": "deepseek-flash",
+      "request_sha256": "6bd7c8e7521c825fa09c995ed0b69f3eebe2e2a34d267f86bbbe51ba11450b5b",
+      "finished_at": "2026-11-04T21:52:57.022489+00:00",
+      "duration_ms": 6533,
+      "returned_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 25797,
+        "completion_tokens": 1498,
+        "total_tokens": 27295,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880
+        },
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 14917
+      },
+      "provider_status": null,
+      "error": null
+    }
+  ],
+  "results": [
+    {
+      "case_id": "N10",
+      "phase": "first",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：轻行肩包能斜挎吗？我用的是iPhone 15 Pro Max，手机能放进去吗？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "回复她关于背法和放手机的问题。"
+      },
+      "run_id": "f119b6ae0e20432690a75416516fe621",
+      "raw_record": "raw_runs/f119b6ae0e20432690a75416516fe621.json",
+      "raw_sha256": "922b2145eb56056dc3121fa77fcab9a17344ac7f8ce2aaad205a4be7e4962151",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "轻行肩包可以斜挎，肩带长度也能调节。您这款iPhone 15 Pro Max按裸机尺寸看通常够放，普通薄壳一般也放得下。",
+        "可以的，轻行肩包支持肩背和斜挎，肩带可调节长度。iPhone 15 Pro Max放进去通常没问题，日常薄壳也一般够放；特别厚的壳或外接配件就不太好确定。",
+        "轻行肩包能斜挎，肩带可以调长短。iPhone 15 Pro Max的尺寸放进去是够的，普通薄壳通常也没问题。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N30",
+      "phase": "first",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上次你说要评估，现在费用出来了吗？",
+        "related_info": "虚构售后单CX-1030，属于本客户轻行肩包。售后2026-11-04评估可维修，报价450元，预计10个工作日；客户尚未同意维修，尚未开修。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "把这次售后的评估结果告诉她。"
+      },
+      "run_id": "06612298ba8449fab6a2bee8d94bf71d",
+      "raw_record": "raw_runs/06612298ba8449fab6a2bee8d94bf71d.json",
+      "raw_sha256": "64592c8424294a27886746c0d19c80e9ceea3b7d9c87c48f7cc2bb920c8c1a28",
+      "program_status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "messages": [
+        "您好，轻行肩包的维修评估结果已经出来了：可以维修，报价450元，预计10个工作日。您之前还没确认，所以目前还没有开修。",
+        "费用已经出来了，售后评估这只轻行肩包可以维修，报价是450元，预计需要10个工作日。是否维修您再考虑，确认后我再帮您安排。",
+        "上次的评估有结果了：轻行肩包可以修，维修费用450元，预计10个工作日。包目前还没开始修，您决定要修的话跟我说一声。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 0,
+          "domains": [
+            "service"
+          ]
+        },
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 1,
+          "domains": [
+            "service"
+          ]
+        },
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 2,
+          "domains": [
+            "service"
+          ]
+        }
+      ],
+      "policy_checks": [],
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N37",
+      "phase": "first",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "赵女士上次表示想了解包袋怎么收纳日常物品，让顾问有活动时告诉她。",
+        "conversation": "",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "邀请她来这次日常收纳小聚。"
+      },
+      "run_id": "e20d0bb432c142d7ae9e2706bb84da0a",
+      "raw_record": "raw_runs/e20d0bb432c142d7ae9e2706bb84da0a.json",
+      "raw_sha256": "55fa767048cf1be861477dfa88a9a8dac034ee385f7de936e9c5d188a431eabc",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "赵女士，之前您提到想了解包袋怎么收纳日常物品。11月14日周六14:00—16:00，澄序广场8号精品店有一场“日常收纳小聚”，现场会演示日行托特包、轻行肩包和随行卡夹怎么收纳常用物品，也可以带上您平时的东西来对照体验。活动时段内可随时来，不必全程参加，也可以带一位朋友；参加需要留一下称呼，具体安排由门店确认。您要是有兴趣，我可以先帮您把参加信息登记给门店。",
+        "赵女士，跟您说个活动：11月14日（周六）14:00—16:00，澄序广场8号精品店会有“日常收纳小聚”。正好对应您上次想了解的包袋收纳，现场会演示三款包怎么装常用物品，您也能自己试试，带上平时带的东西对照更方便。时段内短暂停留就可以，不用从头待到尾，还能带一位朋友一起，同行的也留个称呼。想来的话告诉我称呼，我帮您跟门店确认。",
+        "赵女士，您之前说想了解包袋怎么收纳日常物品，我们11月14日周六下午两点到四点在澄序广场8号精品店有一场小聚，会演示日行托特包、轻行肩包和随行卡夹的收纳方式，也可以自己上手体验。两点到四点之间来都行，待一会儿就可以，带一位朋友也可以。参加要登记称呼，具体由门店确认，您有兴趣的话把称呼告诉我，我帮您对接门店。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_requested": true,
+      "review_requested": true
+    },
+    {
+      "case_id": "N50",
+      "phase": "first",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：包我先不买了，给我看看卡夹吧，想买个不太招摇的小礼物。",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "接住她的新需求。"
+      },
+      "run_id": "c751e3259dca4b549eccd1525d2b54db",
+      "raw_record": "raw_runs/c751e3259dca4b549eccd1525d2b54db.json",
+      "raw_sha256": "cddf8bd547573ab9721b098f168facae076378258905ce0af11feb2226b2ce81",
+      "program_status": "success",
+      "error": null,
+      "messages": [
+        "好的，包的事先放一放。卡夹是2,800元，标识比较小，外观简洁，作为小礼物挺合适。",
+        "明白，那我们看卡夹。随行卡夹2,800元，哑光细纹牛皮，表面是压印的小尺寸品牌标识，不张扬；有4个独立卡位，可以放4张标准银行卡大小的卡片。",
+        "没问题，包就先不看了。随行卡夹是2,800元，外观偏简洁低调，适合当小件礼物；目录有墨黑和暖棕两个颜色，需要的话我帮您确认哪款有货。"
+      ],
+      "review_verdict": "pass",
+      "review_issues": [],
+      "review_validation_errors": [],
+      "policy_checks": [],
+      "generation_requested": true,
+      "review_requested": true
+    }
+  ],
+  "phases_started": [
+    "first"
+  ],
+  "max_generation_per_case": 1,
+  "max_review_per_case": 1,
+  "automatic_retries": 0,
+  "source_freeze_sha256": "c305cb8f6b91cff7a379e32199f3bbcb21b10e0f5807941147e9dad34a9e85a2",
+  "case_sha256": "a8ebe47eb54129c5c263d10d6393628dd8824b3d1c47e66c9fbbf7f94183148a",
+  "completed": false,
+  "request_count": 8,
+  "reported_total_tokens": 213446,
+  "requests_without_usage": 0,
+  "first_finished_at": "2026-11-04T21:52:57.047932+00:00"
+}

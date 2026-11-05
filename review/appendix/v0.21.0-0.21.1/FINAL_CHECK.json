@@ -1,0 +1,22 @@
+{
+  "generation_app_version": "0.21.0",
+  "validator_app_version": "0.21.1",
+  "core_files_unchanged_after_local_patch": 49,
+  "protected_history_files_unchanged": 843,
+  "old_workspace_rows_preserved": 227,
+  "only_workspace_updates": "explicit J01/J02 result pointers and appended runs; no original backgrounds/chats/preferences changed",
+  "n16_untouched": true,
+  "requests": 4,
+  "generations": 2,
+  "reviews": 2,
+  "retries": 0,
+  "original_messages_exact": 6,
+  "model_reviews_reused_unchanged": true,
+  "old_j01_compatibility_without_model": true,
+  "actual_generator_request_has_no_internal_facts": true,
+  "formal50_unchanged": true,
+  "ui_files_unchanged": true,
+  "new_submission_package": false,
+  "normal_app_kept_running": true,
+  "report_url": "http://127.0.0.1:8782/"
+}

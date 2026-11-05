@@ -1,0 +1,23 @@
+{
+  "app_version": "0.20.0",
+  "gen_prompt": "2.2.0",
+  "review_prompt": "1.5.0",
+  "task_materials": "2.4.0",
+  "brand": "v0.4 unchanged",
+  "ui": "ui2.0.0 unchanged",
+  "generation_calls": 3,
+  "review_calls": 4,
+  "requests": 7,
+  "total_tokens": 138453,
+  "auto_retries": 0,
+  "formal50_rerun": false,
+  "packaging_paused": true,
+  "release_ready": false,
+  "scope_corrected": true,
+  "n16_reused_original_unchanged": true,
+  "remaining": [
+    "J01生成多出target_index字段，未交付",
+    "生成仍有内部自述/无关限制/额外比较",
+    "N44入门款比较缺依据而复核只判polish"
+  ]
+}

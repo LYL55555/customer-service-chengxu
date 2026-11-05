@@ -1,0 +1,17 @@
+[
+  {
+    "file": "DEMO_saved_results_v0.21.1.mp4",
+    "sha256": "a849207be1dfec0b8cd41bef2de279f4b221d4ca1b3e4dd93b6102b57eec1869",
+    "reason": "用户要求撤下截图回放，不进入当前提交包或GitHub"
+  },
+  {
+    "file": "appendix/v0.19.0/DEMO_saved_results_v0.19.0.mp4",
+    "sha256": "f4ed8159100288d7180da6020ee691b65ef2c053f0093457d38e56f813118096",
+    "reason": "用户要求撤下截图回放，不进入当前提交包或GitHub"
+  },
+  {
+    "file": "appendix/v0.19.0/history_v0.16.3/DEMO_saved_results_v0.16.3.mp4",
+    "sha256": "fe35a7d77854f3186083361166fa3871c16d82225de76ebf72543d5f7cf83ffb",
+    "reason": "用户要求撤下截图回放，不进入当前提交包或GitHub"
+  }
+]

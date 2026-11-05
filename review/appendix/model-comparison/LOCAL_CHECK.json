@@ -1,0 +1,67 @@
+{
+  "substitute_responses": true,
+  "real_requests": 0,
+  "cases": [
+    {
+      "case_id": "J01",
+      "stage": "generation",
+      "model": "deepseek-v4-pro",
+      "config_model": "deepseek-v4-pro",
+      "only_model_changed": true,
+      "non_model_request_sha256": "62ad130b12505d3b02ba77ebaa2796156730b781696f7a85afe181b9f007a316",
+      "baseline_generation_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J01",
+      "stage": "review",
+      "model": "deepseek-flash",
+      "config_model": "deepseek-flash",
+      "review_system_prompt_unchanged": true,
+      "review_parameters_unchanged": true,
+      "candidate_messages": [
+        "您这样每天背、还要走一刻钟，日行托特包是合适的。它空包约750克，不算特别轻，但日常这个份量背在身上还能接受。按您平时装一份A4资料和一瓶500毫升水来算，空包加水差不多1.25公斤，再算上资料和水瓶本身，实际会比这稍重一些。要走一刻钟的话，这个重量属于正常范围，不至于费劲；如果资料多带了，可以先装好再试背感受一下，我也可以陪您一起装常用物品试试。",
+        "日行托特包空包大概750克，单看自重是中规中矩的水平。您每天带一份A4资料和一瓶500毫升水，空包加水的两项小计约1.25公斤，另外水瓶和资料本身的重量也要算进去。走一刻钟这段路，这个负重日常背是可以的，不会太吃力；如果哪天资料放得多，重量会明显上来，这时更要注意背的方式。方便的话可以拿着您常带的东西来试背一下，我陪您装好再走走看。",
+        "日行托特包空包约750克。您每天要装一份A4资料和一瓶500毫升水，这两项加上空包大约1.25公斤，还没算水瓶和资料本身的重量，所以总负重会比这个数略高。地铁到公司一刻钟的步行，这个量日常背问题不大，属于正常通勤负重；主要看您那天的资料带多少，带得厚一些体感就会重一些。您来店里的话，我帮您把平时带的东西装进去试背，走两步就能感受到合不合适。"
+      ],
+      "current_accepted_validator": "0.21.1"
+    },
+    {
+      "case_id": "J02",
+      "stage": "generation",
+      "model": "deepseek-v4-pro",
+      "config_model": "deepseek-v4-pro",
+      "only_model_changed": true,
+      "non_model_request_sha256": "233845f570e84803eed793806a178790d27835fd3900445a21d1ede8a30238da",
+      "baseline_generation_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J02",
+      "stage": "review",
+      "model": "deepseek-flash",
+      "config_model": "deepseek-flash",
+      "review_system_prompt_unchanged": true,
+      "review_parameters_unchanged": true,
+      "candidate_messages": [
+        "理解您的感受，12,800元确实不算低。不过按您平时出门只带手机和钥匙的用法，这只轻行肩包是放得下的——它可以放普通手机和钥匙，下班买咖啡、周末出门背它都够用，不会被闲置。外观上也符合您喜欢的低调感觉，用的是小尺寸压印标识。您先考虑，有需要随时找我。",
+        "如果只看装东西，您这个用法完全没问题：轻行肩包能放普通手机和钥匙，日常出门正好合适。价格是12,800元，比预想高的话，我理解您想再掂量一下。低调这块也在它的设计里，标识是小尺寸压印的，不张扬。不着急，您想好了随时跟我说。",
+        "您平时就手机加钥匙，这只包刚好装得下，不用为容量多花钱买更大的款；背出门也轻便。价格是12,800元，这个数我如实告诉您，不高报也不打折操作。样式偏低调，是小尺寸压印标识。要是您方便，哪天可以来上手试试，感受一下再定。"
+      ],
+      "current_accepted_validator": "0.21.1"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "J01",
+      "status": "success",
+      "error": null,
+      "record": "local_runs/0cb6e2bec0c244ef83ff9e5a54a3c017.json"
+    },
+    {
+      "case_id": "J02",
+      "status": "success",
+      "error": null,
+      "record": "local_runs/6682bd2ac73549f7ac8af6123daddfc8.json"
+    }
+  ],
+  "all_checks_passed": true
+}

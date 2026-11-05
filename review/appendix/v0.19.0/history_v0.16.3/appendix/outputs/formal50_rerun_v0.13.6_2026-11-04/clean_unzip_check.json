@@ -1,0 +1,19 @@
+{
+  "kind": "clean-unzip-startup-check-no-model-calls",
+  "source": "outputs/formal50_rerun_v0.13.6_2026-11-04/SOURCE_v0.13.6.zip",
+  "source_sha256": "5b33875b274243b8189e9d2706846c557f98664a25f53902d1132e8d5eb58e71",
+  "actual_model_calls": 0,
+  "focused_offline_checks": "19 passed, no model calls",
+  "fresh_demo": {
+    "advisors": 1,
+    "customers": 6,
+    "drafts": 6
+  },
+  "app_version": "0.13.6",
+  "scenarios": 6,
+  "products": 3,
+  "configuration_state": "unconfigured",
+  "homepage_http": 200,
+  "temporary_server_stopped": true,
+  "normal_server_8765_not_stopped": true
+}

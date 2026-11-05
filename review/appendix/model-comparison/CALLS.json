@@ -1,0 +1,132 @@
+{
+  "calls": [
+    {
+      "case_id": "J01",
+      "stage": "generation",
+      "model": "deepseek-v4-pro",
+      "purpose": "single-variable generation comparison",
+      "started_at": "2026-11-05T21:31:18.991994+00:00",
+      "state": "returned",
+      "app_version": "0.21.1",
+      "request_sha256": "1bb4d691501e4c45d536bc6197e7d5775be82ceeb1a3cf5d469234722a9df283",
+      "non_model_request_sha256": "62ad130b12505d3b02ba77ebaa2796156730b781696f7a85afe181b9f007a316",
+      "completed_at": "2026-11-05T21:31:24.258095+00:00",
+      "usage": {
+        "prompt_tokens": 3024,
+        "completion_tokens": 393,
+        "total_tokens": 3417,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 3024
+      },
+      "provider_status": null,
+      "provider_response_id": "5f2bb204-8154-4f9b-8681-5d22abaa66cb",
+      "returned_model": "deepseek-v4-pro"
+    },
+    {
+      "case_id": "J01",
+      "stage": "review",
+      "model": "deepseek-flash",
+      "purpose": "unchanged first review of alternative group",
+      "started_at": "2026-11-05T21:31:24.301881+00:00",
+      "state": "returned",
+      "app_version": "0.21.1",
+      "request_sha256": "cc462abc9c94663f4ce15de35ab9c5e7d3ffc1cc8705da7cfb8e186c6709cf8e",
+      "non_model_request_sha256": "d8b656f1afef365533d6708bde6ec8219f192a57afdfd5e2dddcf4ba4b02b84c",
+      "completed_at": "2026-11-05T21:31:31.000465+00:00",
+      "usage": {
+        "prompt_tokens": 29836,
+        "completion_tokens": 1419,
+        "total_tokens": 31255,
+        "prompt_tokens_details": {
+          "cached_tokens": 12160
+        },
+        "prompt_cache_hit_tokens": 12160,
+        "prompt_cache_miss_tokens": 17676
+      },
+      "provider_status": null,
+      "provider_response_id": "dc435b0d-0adc-402f-bc7d-08468f1a3df0",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J02",
+      "stage": "generation",
+      "model": "deepseek-v4-pro",
+      "purpose": "single-variable generation comparison",
+      "started_at": "2026-11-05T21:31:31.046143+00:00",
+      "state": "failed",
+      "app_version": "0.21.1",
+      "request_sha256": "d09eab5983aacaaaa185a82bad990ff364fc80091abc691b9f8eebd8b3f74ebf",
+      "non_model_request_sha256": "233845f570e84803eed793806a178790d27835fd3900445a21d1ede8a30238da",
+      "error_code": "invalid_output",
+      "completed_at": "2026-11-05T21:31:37.365193+00:00",
+      "usage": {
+        "prompt_tokens": 2731,
+        "completion_tokens": 497,
+        "total_tokens": 3228,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2731
+      },
+      "provider_status": null,
+      "provider_response_id": "8f947626-ebeb-4f7d-bff6-db43de48d77e",
+      "returned_model": "deepseek-v4-pro"
+    },
+    {
+      "case_id": "J02",
+      "stage": "review",
+      "model": "deepseek-flash",
+      "purpose": "planned first content review of exact three texts; invalid generation structure remains undelivered",
+      "started_at": "2026-11-05T21:32:39.021235+00:00",
+      "state": "returned",
+      "app_version": "0.21.1",
+      "request_sha256": "4d4b99a04da21576cf5a09e134716ae5e96b503ee09db58445c5c4d9bf92ddd7",
+      "completed_at": "2026-11-05T21:32:47.934822+00:00",
+      "usage": {
+        "prompt_tokens": 30311,
+        "completion_tokens": 1770,
+        "total_tokens": 32081,
+        "prompt_tokens_details": {
+          "cached_tokens": 12160
+        },
+        "prompt_cache_hit_tokens": 12160,
+        "prompt_cache_miss_tokens": 18151
+      },
+      "provider_status": null,
+      "provider_response_id": "9ab285d0-ddae-4219-b854-f528c58bfcca",
+      "returned_model": "deepseek-flash"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "J01",
+      "initial_record": "raw_runs/dbe07d6e2ff8437ab4651fd122cb2d20.json",
+      "record": "raw_runs/78940bb821924c99b2b6db8ebf681988.json",
+      "status": "error",
+      "error": {
+        "code": "policy_check",
+        "message": "当前水重、两项小计或已知重量下限与程序依据不符，后接试背建议也不能抵消错误数字。",
+        "retryable": true
+      },
+      "verdict": "needs_review",
+      "diagnostic_only": true
+    },
+    {
+      "case_id": "J02",
+      "initial_record": "raw_runs/9497bdcc3da545daa918ba40d2f89910.json",
+      "record": "raw_runs/dad5cff9bf304315a006a7e097c4df96.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（$.messages variants），不属于已定义的窄范围兼容；原响应已保留，整组未采用。",
+        "retryable": false
+      },
+      "verdict": "pass",
+      "diagnostic_only": true
+    }
+  ]
+}

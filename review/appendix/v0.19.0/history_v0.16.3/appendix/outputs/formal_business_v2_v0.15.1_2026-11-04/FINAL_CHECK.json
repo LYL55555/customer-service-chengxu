@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-11-04T22:04:10.420514+00:00",
+  "historical_files_unchanged": 888,
+  "frozen_source_unchanged": true,
+  "case_brand_products_web_unchanged": true,
+  "actual_cases": 4,
+  "actual_raw_texts": 12,
+  "html_and_csv_exact": true,
+  "planned_table_rows": 50,
+  "not_run_rows": 46,
+  "actual_requests": 8,
+  "automatic_retries": 0,
+  "first_batch_gate": false,
+  "full50_completed": false,
+  "archives_secret_scan_passed": [
+    "source_before_v0.15.0.zip",
+    "source_at_freeze.zip"
+  ],
+  "http": [
+    {
+      "url": "http://127.0.0.1:8765/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8765/api/meta",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/OUTPUTS_8_COLUMNS.xlsx",
+      "status": 200
+    }
+  ],
+  "raw_hashes": {
+    "raw_runs/f119b6ae0e20432690a75416516fe621.json": "922b2145eb56056dc3121fa77fcab9a17344ac7f8ce2aaad205a4be7e4962151",
+    "raw_runs/06612298ba8449fab6a2bee8d94bf71d.json": "64592c8424294a27886746c0d19c80e9ceea3b7d9c87c48f7cc2bb920c8c1a28",
+    "raw_runs/e20d0bb432c142d7ae9e2706bb84da0a.json": "55fa767048cf1be861477dfa88a9a8dac034ee385f7de936e9c5d188a431eabc",
+    "raw_runs/c751e3259dca4b549eccd1525d2b54db.json": "cddf8bd547573ab9721b098f168facae076378258905ce0af11feb2226b2ce81"
+  },
+  "workbook_final_sha256": "0a3ddb51a6f12badc87dc4e0c02b29d3655727470412918713d0ad35561d8a86",
+  "workbook_roundtrip": {
+    "sheets": 2,
+    "rawColumns": 8,
+    "plannedRows": 50,
+    "realGroups": 4,
+    "realTexts": 12,
+    "notRunRows": 46,
+    "allNonemptyCellsExactAfterSavedImport": true,
+    "emptyInputCells": "xlsx空单元格导入为null，与原空字符串按空白核对；候选原文不做规范化"
+  },
+  "long_text_preview_checked": true
+}

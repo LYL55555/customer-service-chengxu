@@ -1,0 +1,505 @@
+{
+  "calls": [
+    {
+      "case_id": "N16",
+      "chunk": 1,
+      "stage": "generation",
+      "purpose": "只给重量及已知通勤物品，检查能否直接帮助判断而不转为能力免责",
+      "started_at": "2026-11-05T12:21:48.105093+00:00",
+      "app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "request_sha256": "d4be4412dfbf2f52b0b30ff61ed8a010fccec94278185329e5c33f0c4eb6b09a",
+      "request_message_characters": 3014,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:21:51.655451+00:00",
+      "usage": {
+        "prompt_tokens": 2047,
+        "completion_tokens": 379,
+        "total_tokens": 2426,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2047
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "4c68dd33-66d8-4d36-b920-eab4e8f5556f"
+    },
+    {
+      "case_id": "N16",
+      "chunk": 1,
+      "stage": "review",
+      "purpose": "只给重量及已知通勤物品，检查能否直接帮助判断而不转为能力免责",
+      "started_at": "2026-11-05T12:21:51.686418+00:00",
+      "app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "request_sha256": "2ec9ebe9ee45cf619dfbeca1bc1be93733078aacfb9b2f1d83392acf91e20fc6",
+      "request_message_characters": 60117,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:21:59.585854+00:00",
+      "usage": {
+        "prompt_tokens": 28257,
+        "completion_tokens": 1507,
+        "total_tokens": 29764,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 16609
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "9fb7b8e3-6ea8-4b8a-9bb0-be246a7f5e91"
+    },
+    {
+      "case_id": "N22",
+      "chunk": 1,
+      "stage": "generation",
+      "purpose": "按新A4/水杯/预算/偏好取材，检查不追加电脑厚夹",
+      "started_at": "2026-11-05T12:21:59.619913+00:00",
+      "app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "request_sha256": "dc1684dfb07e9a13c9ca60a21ded7dbfca08c262764602f9e917c9322d712e59",
+      "request_message_characters": 4054,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:22:02.924390+00:00",
+      "usage": {
+        "prompt_tokens": 2435,
+        "completion_tokens": 385,
+        "total_tokens": 2820,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1667
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "f2046400-4e22-4ab7-b2ca-2b98d5b5c99d"
+    },
+    {
+      "case_id": "N22",
+      "chunk": 1,
+      "stage": "review",
+      "purpose": "按新A4/水杯/预算/偏好取材，检查不追加电脑厚夹",
+      "started_at": "2026-11-05T12:22:02.941757+00:00",
+      "app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "request_sha256": "6136af26892d70531027f01459ab725e1b5a2255e6831549351ae39fd74b2c19",
+      "request_message_characters": 62033,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:22:12.076981+00:00",
+      "usage": {
+        "prompt_tokens": 28882,
+        "completion_tokens": 1899,
+        "total_tokens": 30781,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 17234
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "2dfe64e9-a26e-4838-bdd2-9c94e092fccf"
+    },
+    {
+      "case_id": "N39",
+      "chunk": 1,
+      "stage": "generation",
+      "purpose": "只给活动体验，检查不追加同行登记及本场其他流程",
+      "started_at": "2026-11-05T12:22:12.110322+00:00",
+      "app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "request_sha256": "a89872e3656282a6f94d48ed8707a5e34c85847d6b509018895d569c44ee0227",
+      "request_message_characters": 2110,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:22:15.027665+00:00",
+      "usage": {
+        "prompt_tokens": 1691,
+        "completion_tokens": 341,
+        "total_tokens": 2032,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 923
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "39184e88-f430-4a9d-8569-aa06247b8a7d"
+    },
+    {
+      "case_id": "N39",
+      "chunk": 1,
+      "stage": "review",
+      "purpose": "只给活动体验，检查不追加同行登记及本场其他流程",
+      "started_at": "2026-11-05T12:22:15.079826+00:00",
+      "app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "request_sha256": "68543aa1e1088d0e246d09e2771e54a2c214cbe287b43c463f3d1e0a6190d618",
+      "request_message_characters": 59722,
+      "status": "failed",
+      "error_code": "invalid_output",
+      "completed_at": "2026-11-05T12:22:21.952696+00:00",
+      "usage": {
+        "prompt_tokens": 28099,
+        "completion_tokens": 1202,
+        "total_tokens": 29301,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 16451
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "c0aa0832-05b1-4312-abc8-b69725273a08"
+    },
+    {
+      "case_id": "N44",
+      "chunk": 1,
+      "stage": "generation",
+      "purpose": "用途与价格判断，不把嫌贵当索折扣",
+      "started_at": "2026-11-05T12:22:21.977548+00:00",
+      "app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "request_sha256": "ae3ac87e01c0f7549b31232d39d5db710005d3339f347fa000f46d67c4bb8125",
+      "request_message_characters": 2578,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:22:25.619864+00:00",
+      "usage": {
+        "prompt_tokens": 1907,
+        "completion_tokens": 424,
+        "total_tokens": 2331,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1139
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "78fa5dad-dcc9-40e2-97ff-0da23916ca29"
+    },
+    {
+      "case_id": "N44",
+      "chunk": 1,
+      "stage": "review",
+      "purpose": "用途与价格判断，不把嫌贵当索折扣",
+      "started_at": "2026-11-05T12:22:25.636751+00:00",
+      "app_version": "0.18.0",
+      "prompt_version": "2.0.0",
+      "request_sha256": "cddda470c2fc54410278ae663f205e2c4fda62c7c42bbc789946fc38f4c1fb3f",
+      "request_message_characters": 60873,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:22:35.352487+00:00",
+      "usage": {
+        "prompt_tokens": 28869,
+        "completion_tokens": 2065,
+        "total_tokens": 30934,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 17221
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "a5609861-6eb7-4bca-9b64-f23960cbc0ac"
+    },
+    {
+      "case_id": "N26",
+      "chunk": 2,
+      "stage": "generation",
+      "purpose": "保留未知清洁剂必要提醒及标签交售后，不给沾水护理",
+      "started_at": "2026-11-05T12:30:43.820845+00:00",
+      "app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "request_sha256": "e57f9fde4faf5a4bc17b24866d1135cc48a96576a26f26434f55fc11171c27d4",
+      "request_message_characters": 2346,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:30:47.287768+00:00",
+      "usage": {
+        "prompt_tokens": 1816,
+        "completion_tokens": 416,
+        "total_tokens": 2232,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1048
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "faa898e0-779d-42b7-9bba-c6342945b7d2"
+    },
+    {
+      "case_id": "N26",
+      "chunk": 2,
+      "stage": "review",
+      "purpose": "保留未知清洁剂必要提醒及标签交售后，不给沾水护理",
+      "started_at": "2026-11-05T12:30:47.320441+00:00",
+      "app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "request_sha256": "ab3647e4badf98cd1a5a5298ebef69f55fa81bb4681642e56646bb70de8de540",
+      "request_message_characters": 60855,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:30:57.642178+00:00",
+      "usage": {
+        "prompt_tokens": 28747,
+        "completion_tokens": 2148,
+        "total_tokens": 30895,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 17099
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "804cdab0-7fcf-4103-b9f1-a22ad696bfed"
+    },
+    {
+      "case_id": "N21",
+      "chunk": 2,
+      "stage": "generation",
+      "purpose": "库存与能否预留由顾问核实，不提前保证",
+      "started_at": "2026-11-05T12:30:57.677143+00:00",
+      "app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "request_sha256": "90c45ed1de382ef6e89bd0d8d5481067c350d2a6a1d6b9327df53c66dc446c52",
+      "request_message_characters": 2444,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:30:59.753034+00:00",
+      "usage": {
+        "prompt_tokens": 1817,
+        "completion_tokens": 205,
+        "total_tokens": 2022,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1049
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "5020db1f-f8ca-44ed-bcf8-5013150405ac"
+    },
+    {
+      "case_id": "X01",
+      "chunk": 2,
+      "stage": "generation",
+      "purpose": "固定未入开发示例的新卡夹价格/四卡问法",
+      "started_at": "2026-11-05T12:30:59.774667+00:00",
+      "app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "request_sha256": "e0001dbb88c49ea1b405d966ab3954c43b9b2b5206c823ec07c8af9ab22fe3ae",
+      "request_message_characters": 2691,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:31:02.225503+00:00",
+      "usage": {
+        "prompt_tokens": 1913,
+        "completion_tokens": 296,
+        "total_tokens": 2209,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1145
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "445285dd-9c25-43d5-80d8-b0c3029e466c"
+    },
+    {
+      "case_id": "X01",
+      "chunk": 2,
+      "stage": "review",
+      "purpose": "固定未入开发示例的新卡夹价格/四卡问法",
+      "started_at": "2026-11-05T12:31:02.247384+00:00",
+      "app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "request_sha256": "78e4494690b9719c2be8fb9912e37dff4ba25b3632280ac43516e3939569ed9b",
+      "request_message_characters": 58333,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:31:07.664053+00:00",
+      "usage": {
+        "prompt_tokens": 27454,
+        "completion_tokens": 1216,
+        "total_tokens": 28670,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 15806
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "a28a05e1-c414-4e87-b72c-5649652957fc"
+    },
+    {
+      "case_id": "X02",
+      "chunk": 2,
+      "stage": "generation",
+      "purpose": "固定未入开发示例的正面使用反馈，无护理资料",
+      "started_at": "2026-11-05T12:31:07.697829+00:00",
+      "app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "request_sha256": "88ad93bbfc88ad3d96933115779fc66ae2daad5e3b389d63105fc76d779633c0",
+      "request_message_characters": 1980,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:31:10.030637+00:00",
+      "usage": {
+        "prompt_tokens": 1656,
+        "completion_tokens": 238,
+        "total_tokens": 1894,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 888
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "42d549a6-29f3-4068-bd51-9f4fecfda4e6"
+    },
+    {
+      "case_id": "X02",
+      "chunk": 2,
+      "stage": "review",
+      "purpose": "固定未入开发示例的正面使用反馈，无护理资料",
+      "started_at": "2026-11-05T12:31:10.043110+00:00",
+      "app_version": "0.18.1",
+      "prompt_version": "2.0.0",
+      "request_sha256": "e6d05b94231f866657c17e054f8c5a9fce7a412e7342964a84314e67d811270b",
+      "request_message_characters": 59356,
+      "status": "returned",
+      "completed_at": "2026-11-05T12:31:15.923535+00:00",
+      "usage": {
+        "prompt_tokens": 27623,
+        "completion_tokens": 1079,
+        "total_tokens": 28702,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648
+        },
+        "prompt_cache_hit_tokens": 11648,
+        "prompt_cache_miss_tokens": 15975
+      },
+      "provider_status": null,
+      "returned_model": "deepseek-flash",
+      "provider_response_id": "8740cd01-6f24-4c52-9d19-e83f15724d43"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "N16",
+      "chunk": 1,
+      "run_id": "68302cdbb1d440478d6c65097b344660",
+      "record": "raw_runs/68302cdbb1d440478d6c65097b344660.json",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N22",
+      "chunk": 1,
+      "run_id": "6fedc44fc8554604bb36b2ab61e8a68e",
+      "record": "raw_runs/6fedc44fc8554604bb36b2ab61e8a68e.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "verdict": "pass",
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N39",
+      "chunk": 1,
+      "run_id": "d6f2854699744f35b6243b0826bcecb0",
+      "record": "raw_runs/d6f2854699744f35b6243b0826bcecb0.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核没有返回完整有效结构，原响应保留；未删减、降级或重试。",
+        "retryable": false
+      },
+      "verdict": null,
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N44",
+      "chunk": 1,
+      "run_id": "dd38cf7146f84fe4b27e5f348c197bed",
+      "record": "raw_runs/dd38cf7146f84fe4b27e5f348c197bed.json",
+      "status": "error",
+      "error": {
+        "code": "quality_review",
+        "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+        "retryable": true
+      },
+      "verdict": "needs_review",
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N26",
+      "chunk": 2,
+      "run_id": "3f7e337031a04329b18d5cc2ba1b8e84",
+      "record": "raw_runs/3f7e337031a04329b18d5cc2ba1b8e84.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "verdict": "needs_review",
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "N21",
+      "chunk": 2,
+      "run_id": "2cb8debd6133466b940a20212ed2039d",
+      "record": "raw_runs/2cb8debd6133466b940a20212ed2039d.json",
+      "status": "needs_advisor",
+      "error": {
+        "code": "advisor_input",
+        "message": "模型识别到需要顾问处理的资料缺口，未生成客户消息。",
+        "retryable": false
+      },
+      "verdict": null,
+      "generation_count": 1,
+      "review_count": 0
+    },
+    {
+      "case_id": "X01",
+      "chunk": 2,
+      "run_id": "e0912cbc33624b9585bc2b2c487078ea",
+      "record": "raw_runs/e0912cbc33624b9585bc2b2c487078ea.json",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "X02",
+      "chunk": 2,
+      "run_id": "91b3785816df437393e91c453cc5a2db",
+      "record": "raw_runs/91b3785816df437393e91c453cc5a2db.json",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "generation_count": 1,
+      "review_count": 1
+    }
+  ]
+}

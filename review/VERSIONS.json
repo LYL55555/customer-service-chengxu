@@ -1,0 +1,41 @@
+{
+  "current_app_version": "0.21.1",
+  "generation_prompt": "2.3.0",
+  "review_prompt": "review-1.6.0",
+  "task_materials": "2.5.0",
+  "output_contract": "0.11.0",
+  "brand": "v0.4 unchanged",
+  "ui": "UI2.0.0 unchanged",
+  "normal_generation_model": "deepseek-flash",
+  "normal_review_model": "deepseek-flash",
+  "alternative_pro_integrated": false,
+  "formal50_original_generators": [
+    "0.15.1",
+    "0.15.2"
+  ],
+  "formal50_original_validator": "0.15.3",
+  "source_sha256": "6f81f2d04b807ed809d54aef23e33f63aa7d580c1e3869e378d5bd9dbf21dc24",
+  "new_model_requests_this_packaging": 0,
+  "continuous_demo": {
+    "app_version": "0.21.1",
+    "kind": "continuous actual Chrome tab capture, selectively accelerated idle/wait segments",
+    "video": "DEMO_continuous_v0.21.1.mp4",
+    "video_sha256": "2496e79bcb0425ef4cfc4bb24419f3ea810a395355ee82758020e6432b190014",
+    "original_sha256": "11c8c1adc49c636b59aabb2bde94f061c651876500ac023ed8dbea919c33638f",
+    "original_duration_seconds": 104.165,
+    "output_duration_seconds": 60.791266666666665,
+    "added_text": false,
+    "added_borders": false,
+    "screenshot_slideshow": false,
+    "source_order_preserved": true,
+    "model_run_id": "b620cbb7ab6d4f3caf8b64b20cc0efb2",
+    "generation_requests": 1,
+    "review_requests": 1,
+    "automatic_retries": 0,
+    "tokens": 33444,
+    "formal50_rerun": false,
+    "selected_candidate": 3,
+    "program_status": "success",
+    "review_verdict": "pass"
+  }
+}

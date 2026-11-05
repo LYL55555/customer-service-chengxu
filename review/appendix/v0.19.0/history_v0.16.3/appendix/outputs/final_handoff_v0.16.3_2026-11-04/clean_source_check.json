@@ -1,0 +1,14 @@
+{
+  "source_sha256": "99677bf14b64ecc88175cfe55700a2cf64af74e7d1748b6a5b2d4c151e825847",
+  "new_model_requests": 0,
+  "app_version": "0.16.3",
+  "unconfigured_status": "unconfigured",
+  "six_scenarios": 6,
+  "demo_customers": 3,
+  "idempotent_demo_loader": true,
+  "valid_and_failed_records_separate": true,
+  "offline_contract_tests": "4 passed",
+  "startup_passed": true,
+  "temporary_server_stopped": true,
+  "normal_8765_kept_running": true
+}

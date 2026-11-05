@@ -1,0 +1,9 @@
+{
+  "sheets": 2,
+  "rawColumns": 8,
+  "cases": 50,
+  "realGroups": 50,
+  "realTexts": 150,
+  "allNonemptyCellsExactAfterSavedImport": true,
+  "emptyInputs": "仅空输入单元格null与空字符串按空白比较；150条非空原文逐字核对"
+}

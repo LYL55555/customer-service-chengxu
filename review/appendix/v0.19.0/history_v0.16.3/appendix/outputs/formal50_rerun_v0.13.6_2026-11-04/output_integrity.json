@@ -1,0 +1,9 @@
+{
+  "case_rows": 50,
+  "csv_columns": 8,
+  "readable_groups": 49,
+  "readable_strings": 147,
+  "all_displayed_strings_match_raw": true,
+  "all_csv_strings_match_raw": true,
+  "f50_not_filled_from_older_runs": true
+}

@@ -1,0 +1,66 @@
+{
+  "real_model_calls": 0,
+  "raw_record": "raw_runs/06612298ba8449fab6a2bee8d94bf71d.json",
+  "raw_sha256": "64592c8424294a27886746c0d19c80e9ceea3b7d9c87c48f7cc2bb920c8c1a28",
+  "source": {
+    "id": "materials.related_info",
+    "kind": "business_material",
+    "text": "虚构售后单CX-1030，属于本客户轻行肩包。售后2026-11-04评估可维修，报价450元，预计10个工作日；客户尚未同意维修，尚未开修。",
+    "authority": "business_facts_not_brand_override",
+    "domains": [
+      "action",
+      "context",
+      "event",
+      "task"
+    ]
+  },
+  "probes": [
+    {
+      "kind": "business_material",
+      "authority": "business_facts_not_brand_override",
+      "text": "虚构售后单CX-1030，属于本客户轻行肩包。售后2026-11-04评估可维修，报价450元，预计10个工作日；客户尚未同意维修，尚未开修。",
+      "source_domains": [
+        "action",
+        "context",
+        "event",
+        "task"
+      ],
+      "content_claim_domains": [
+        "context",
+        "pricing",
+        "service"
+      ]
+    },
+    {
+      "kind": "order",
+      "authority": "business_facts_not_brand_override",
+      "text": "虚构售后单CX-1030，属于本客户轻行肩包。售后2026-11-04评估可维修，报价450元，预计10个工作日；客户尚未同意维修，尚未开修。",
+      "source_domains": [
+        "action",
+        "context",
+        "event",
+        "task"
+      ],
+      "content_claim_domains": [
+        "context",
+        "pricing",
+        "service"
+      ]
+    },
+    {
+      "kind": "customer_message",
+      "authority": "context_not_authorization",
+      "text": "虚构售后单CX-1030，属于本客户轻行肩包。售后2026-11-04评估可维修，报价450元，预计10个工作日；客户尚未同意维修，尚未开修。",
+      "source_domains": [
+        "context"
+      ],
+      "content_claim_domains": [
+        "context",
+        "pricing",
+        "service"
+      ]
+    }
+  ],
+  "diagnosis": "业务资料及订单在source_domains中没有service域，真实本单售后评估被排除。复核引用正确，本次是程序误拦；不能靠补通用政策引用证明本单价格，也不能给客户来源授权。",
+  "production_code_changed": false
+}

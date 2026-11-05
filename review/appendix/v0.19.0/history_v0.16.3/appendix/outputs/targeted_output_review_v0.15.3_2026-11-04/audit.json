@@ -1,0 +1,1125 @@
+{
+  "app_version": "0.15.3",
+  "target_cases": [
+    "N09",
+    "N12",
+    "N20",
+    "N27",
+    "N28",
+    "N32",
+    "N39",
+    "N18",
+    "N19",
+    "N21",
+    "N24",
+    "N26",
+    "N29",
+    "N42",
+    "N46",
+    "N48"
+  ],
+  "case_count": 16,
+  "original_message_count": 48,
+  "real_model_calls": 0,
+  "network_attempts": [],
+  "production_code_modified": false,
+  "protected_original_files": 200,
+  "original_hashes_unchanged": true,
+  "cases": [
+    {
+      "case_id": "N09",
+      "title": "已选卡夹，问价格和四张卡",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：想给同事送个小礼物，她平时就带四张银行卡。随行卡夹多少钱？放得下吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "回复她这两个问题。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N09",
+        "conversation_id": "business-v2-chat-N09",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，随行卡夹的价格是2,800元。它有4个独立卡位，可以放4张标准银行卡大小的卡片，带四张卡是够用的。",
+        "随行卡夹2,800元，4个独立卡位正好对应四张标准银行卡，放得下。",
+        "随行卡夹是2,800元。里面是4个独立卡位，能放4张标准银行卡大小的卡片，您同事平时带四张卡正好合适。"
+      ],
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "unsupported_customer_commitment",
+          "message": "提问或条件式购买不能升级为已决定购买"
+        }
+      ],
+      "assessment": {
+        "conclusion": "三条内容可用，确定的程序误拦",
+        "cause": "unsupported_customer_commitment把复核摘要“已选定随行卡夹”理解成客户承诺购买。原客户只是在咨询这款；三条没有冒称下单或成交。",
+        "actions": "只核对真实购买承诺，不把选定咨询对象当成交。原候选及原pass可离线重验；第一、三条重复容量记polish。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N12",
+      "title": "周末轻装",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：周末出门就手机钥匙，不想背大包，有合适的吗？",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "给一个适合轻装出门的建议。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N12",
+        "conversation_id": "business-v2-chat-N12",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "按您说的轻装出门，轻行肩包更合适：包身约22 × 16 × 7 cm，日常放手机、钥匙这类随身小物刚好，可肩背也可斜挎，肩带长度能调。日行托特包更大一些，适合要带资料或水杯、伞的时候。",
+        "周末只带手机和钥匙的话，推荐轻行肩包，属于外出少带物品的尺寸，手机、钥匙都能放，拉链开合，肩带可调节，斜挎或肩背都行。轻行肩包价格是12,800元。",
+        "不想背大包的话，可以看轻行肩包，比托特包小一圈，是外出随手带小物的款式，手机、钥匙放进去没问题，肩带能调长度。您更习惯斜挎还是肩背，我可以再帮您对一下。"
+      ],
+      "original_error": {
+        "code": "policy_check",
+        "message": "日行托特包的carry_modes依据为：肩背；该断言没有同一商品资料支持，未知不能解释成没有。",
+        "retryable": true
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "policy_check",
+        "message": "日行托特包的carry_modes依据为：肩背；该断言没有同一商品资料支持，未知不能解释成没有。",
+        "retryable": false
+      },
+      "program_policy_checks": [
+        {
+          "code": "unsupported_product_fact",
+          "candidate_index": 2,
+          "product_id": "P01",
+          "field": "carry_modes",
+          "evidence": "斜挎",
+          "expected": "肩背",
+          "fact_ref": {
+            "product_id": "P01",
+            "field": "carry_modes",
+            "status": "known",
+            "value": "肩背"
+          },
+          "source_quote": "肩背",
+          "message": "日行托特包的carry_modes依据为：肩背；该断言没有同一商品资料支持，未知不能解释成没有。"
+        }
+      ],
+      "model_review_verdict": null,
+      "model_review_issues": null,
+      "review_validation_errors": null,
+      "assessment": {
+        "conclusion": "三条没有被指控的商品错误，程序误拦；第三条末问可省",
+        "cause": "第三条“轻行肩包比托特包小一圈”里的托特是比较对象，后续背法偏好问句却被当作托特的斜挎断言；无问号不等于断言。",
+        "actions": "比较对象不能抢占主商品；识别“更习惯X还是Y”偏好提问。保留对真正“托特可以斜挎”的拦截。原三条可保留，修前置后只补首次复核。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N20",
+      "title": "材质与内衬",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：这款皮看着细细的，是牛皮吗？里面是什么材质？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "回答材质和内衬。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N20",
+        "conversation_id": "business-v2-chat-N20",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "是牛皮的，这款日行托特包包身是哑光细纹牛皮，所以表面光泽低、能看到细小纹理。里面内衬是棉布。",
+        "是的，包身用哑光细纹牛皮，皮面本身就是细细的纹理。内里是棉布内衬。",
+        "这款的包身是哑光细纹牛皮，皮面偏哑光、纹路细，所以看着是细细的质感；内衬为棉布。"
+      ],
+      "original_error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": false
+      },
+      "program_policy_checks": [
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 0,
+          "evidence": "牛皮",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 1,
+          "evidence": "牛皮",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 2,
+          "evidence": "牛皮",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 2,
+          "evidence": "内衬为棉布",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        }
+      ],
+      "model_review_verdict": null,
+      "model_review_issues": null,
+      "review_validation_errors": null,
+      "assessment": {
+        "conclusion": "三条材质回答可用，确定的商品指代误拦",
+        "cause": "input.product_ids明确只有P01，但understanding.fields.product.ids为空，校验丢弃了本次选品，首句“是牛皮的”及“这款”不能对应托特。",
+        "actions": "没有最新商品转换或冲突时，当前唯一选品可支持“这款”。最新明确换款优先。修前置后复用原文、只补首次复核。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N27",
+      "title": "复用售后进度记录",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上次说帮我看拉链的事，有进展了吗？",
+        "related_info": "虚构售后记录CX-1102：轻行肩包拉链问题；门店2026-11-03已收件，目前售后检测中，尚无费用和完成时间结论。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "根据已有售后记录回她。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N27",
+        "conversation_id": "business-v2-chat-N27",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，拉链的事我这边查过了：门店11月3日已经收件，目前还在售后检测中。费用和完成时间暂时还没有结论，一有结果我就跟您说。",
+        "有进展了：您那只轻行肩包门店11月3日已经收到，现在在售后检测。检测结果、是否涉及费用和大概多久，都要等售后给出结论，我这边会替您盯着。",
+        "查到了，肩包11月3日门店已收件，现在处于售后检测环节。目前还不好说费用和完成时间，等检测那边有结论我再联系您。"
+      ],
+      "original_error": {
+        "code": "policy_check",
+        "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。",
+        "retryable": true
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "policy_check",
+        "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。",
+        "retryable": false
+      },
+      "program_policy_checks": [
+        {
+          "code": "unsupported_completed_action",
+          "candidate_index": 0,
+          "evidence": "我这边查过",
+          "message": "没有实际执行记录支持这项已查询或已完成动作；未来协助不等于已执行。"
+        },
+        {
+          "code": "invented_purchase_history",
+          "candidate_index": 1,
+          "evidence": "有进展了：您那只轻行肩包门店11月3日已经收到",
+          "product_ids": [
+            "P02"
+          ],
+          "message": "没有该商品的购买或使用依据；其他商品的已购记录不能支持这项已购预设。"
+        }
+      ],
+      "model_review_verdict": null,
+      "model_review_issues": null,
+      "review_validation_errors": null,
+      "assessment": {
+        "conclusion": "已给售后进度足以支持三条；程序对查询和物品归属的判断过严",
+        "cause": "第一条“我这边查过”被等同于发生新外部查询；第二条“您那只轻行肩包”还被要求购买记录，忽略同客户售后收件记录。",
+        "actions": "读取已选进度可支持转述现状；本客户售后物件能支持“您那只”，不能由此声称“您买过”。新致电、刷新或已修好等动作/状态仍需真实依据。原文修前置后补首次复核，不伪造查询日志。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N28",
+      "title": "未用肩包想换色",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：上周买的肩包还没用，想换成米白，能换吗？",
+        "related_info": "虚构门店订单：2026-11-01购买轻行肩包；本次业务日期2026-11-04。顾问已核对未使用、标牌和原包装齐全、有购买凭证，商品尚待门店检查。",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "根据订单和已核对情况回复。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N28",
+        "conversation_id": "business-v2-chat-N28",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，您这只轻行肩包是11月1日在门店购买的，今天是11月4日，还在自购买次日起算的7个自然日内。您已核对过商品未使用、标牌和原包装齐全，也有购买凭证，按现有信息符合换货申请条件。换成米白可以申请，最终要由门店检查确认。",
+        "您好，想换成米白是可以申请的。购买日期是11月1日，按7个自然日的未使用退换条件还在申请范围内；您这边商品未使用、标牌和原包装齐全、购买凭证也有，信息是齐的，最后以门店检查结果为准。",
+        "您好，这只肩包目前符合未使用商品的换货申请条件，米白也在轻行肩包的目录颜色里，可以申请换色。商品送到门店检查确认后即可办理，检查结果出来后我再和您说一声。"
+      ],
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 2,
+          "source_id": "product.P02.colors",
+          "claim_domains": [
+            "service"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        }
+      ],
+      "assessment": {
+        "conclusion": "主要是混合来源误拦；第二、三条可用，第一条另有轻微主体错误",
+        "cause": "第三条既讲申请规则又讲米白颜色，已分别引policy.5和P02.colors；程序按整句售后词拒掉颜色来源。第一条把“顾问已核对”改成“您已核对”。",
+        "actions": "按具体断言分别核对政策和颜色，不能要求每个来源证明整句。第一条主体问题另记，不把它当本次错误码的原因。原pass可离线重验，旧原文不改。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N32",
+      "title": "看过暖棕款的客户",
+      "input": {
+        "scenario": "沉睡客户唤回",
+        "client_info": "孙女士，上次到店看过暖棕款，后来没有继续聊。",
+        "conversation": "",
+        "related_info": "",
+        "product_ids": [],
+        "advisor_instruction": "简单问候，重新接上联系。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N32",
+        "conversation_id": "business-v2-chat-N32",
+        "profile_revision": 1,
+        "preferences": "喜欢暖棕，交流喜欢简短。",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "孙女士您好，我是澄序的顾问。上次您在店里看过暖棕款，想着跟您打个招呼。最近有需要了解随时找我。",
+        "孙女士您好，好久没联系了。上次看过的那只暖棕款还记得，您若想再看看，跟我说一声就好。",
+        "孙女士您好，打扰一下。上次您看的暖棕款一直有印象，想问问最近还好吗？有想了解的随时联系我。"
+      ],
+      "original_error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": true
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "policy_check",
+        "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。",
+        "retryable": false
+      },
+      "program_policy_checks": [
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 0,
+          "evidence": "暖棕款",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 1,
+          "evidence": "暖棕款",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        },
+        {
+          "code": "unresolved_product_fact",
+          "candidate_index": 2,
+          "evidence": "暖棕款",
+          "message": "该商品断言没有明确对应商品，请先核对当前对象；未按旧勾选猜测。"
+        }
+      ],
+      "model_review_verdict": null,
+      "model_review_issues": null,
+      "review_validation_errors": null,
+      "assessment": {
+        "conclusion": "三条问候内容可用，确定的历史背景误拦",
+        "cause": "“上次您看过暖棕款”在背景中明示，是客户看款经历；程序把“暖棕款”抽成新商品颜色断言，要求必须知道SKU。",
+        "actions": "区分历史看款/偏好与本次商品颜色、库存、购买断言。无需补SKU才能问候。原文保留，修前置后补首次复核。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N39",
+      "title": "先了解活动内容",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：活动主要看些什么？我不是很懂皮具。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "用容易懂的话介绍内容。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N39",
+        "conversation_id": "business-v2-chat-N39",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "这次活动主要看收纳：现场会演示日行托特包、轻行肩包和随行卡夹怎么装常用物品，比如资料、水杯、手机、卡片这些。不用懂皮具也能看明白，您也可以在时段内自由体验，带上平时用的东西对照着试。11月14日周六14:00—16:00在澄序广场8号精品店，短暂停留即可，不必全程参加。",
+        "活动就是看这三个包怎么用：哪种装通勤资料、哪种适合出门少带东西、卡片怎么分开放。全程是实物演示和自由体验，不讲皮具知识，不懂也没关系。时间是11月14日周六14:00—16:00，地点在澄序广场8号精品店，时段内来一会儿就行。",
+        "“日常收纳小聚”主要演示日行托特包、轻行肩包、随行卡夹的日常收纳方式，现场可以直接上手体验，也可以带自己的日常物品来对照看看合不合适。11月14日周六14:00—16:00在澄序广场8号精品店，中间停留一会儿就可以，不需要全程在场；想带一位朋友也可以，登记时提供称呼就行。"
+      ],
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 0,
+          "source_id": "product.P01.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 0,
+          "source_id": "product.P02.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 0,
+          "source_id": "product.P03.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 1,
+          "source_id": "product.P01.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 1,
+          "source_id": "product.P02.capacity",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 1,
+          "source_id": "product.P03.card_slots",
+          "claim_domains": [
+            "event"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        }
+      ],
+      "assessment": {
+        "conclusion": "程序理由确有误报，但不能全组三条直接认定通过",
+        "cause": "第一、二条的活动说明已引活动资料，容量例子又引产品资料；程序要求每个商品来源也证明活动。第二条另有“三个包”分类错误和无依据的“不讲皮具知识”。",
+        "actions": "修多来源对应；第一、三条可用但可压缩。第二条改为“主要看收纳演示，不需要先懂皮具”，不编排除项。旧pass漏检也要记录。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N18",
+      "title": "厚文件夹适配",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：我那个文件夹挺厚，日行托特装资料会不会挤？",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "先回答已知的，再说还需要什么。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N18",
+        "conversation_id": "business-v2-chat-N18",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "日行托特包能放下A4纸质资料。不过厚文件夹是否放得下，资料里没有给出内尺寸和包口尺寸，单看外尺寸34 × 28 × 12 cm我没法替您确定会不会挤，这点我不想凭估计答复您。",
+        "日行托特包放普通A4资料是够的，加厚文件夹就不好只看外尺寸了。您方便的话，把文件夹的长宽厚告诉我，我帮您对一下。",
+        "日行托特的外尺寸是34 × 28 × 12 cm，放A4纸质资料没有问题；但厚文件夹这块，品牌资料里确实没有内尺寸和包口尺寸，我不能直接说一定不挤。您把文件夹的厚度和尺寸发我，我对着看会更准确。"
+      ],
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "program_policy_checks": [],
+      "model_review_verdict": "needs_review",
+      "model_review_issues": [
+        {
+          "code": "incomplete_reply",
+          "candidate_index": 0,
+          "evidence_span_id": "reply_1.s2",
+          "message": "三条里只有第一条完全没有给下一步：客户问“会不会挤”，reply_1 只回答“不能确定”，未提示可提供文件夹尺寸或到店试放，厚文件夹这一核心疑虑停留在无结论状态，与另外两条不一致（另两条均给出请客户发尺寸的跟进）。建议补一句轻量跟进，例如请客户把文件夹厚度和尺寸发来帮对一下。",
+          "source_refs": [
+            {
+              "source_id": "product.P01.limitations"
+            },
+            {
+              "source_id": "writing.rules"
+            }
+          ]
+        }
+      ],
+      "review_validation_errors": [
+        {
+          "code": "issue_source_type",
+          "message": "漏答应指向任务或客户问题，不是任意商品字段",
+          "candidate_index": 0,
+          "source_id": "product.P01.limitations"
+        },
+        {
+          "code": "issue_source_type",
+          "message": "漏答应指向任务或客户问题，不是任意商品字段",
+          "candidate_index": 0,
+          "source_id": "writing.rules"
+        },
+        {
+          "code": "false_missing_answer",
+          "message": "不能忽略完整候选里已有的回答",
+          "candidate_index": 0
+        }
+      ],
+      "assessment": {
+        "conclusion": "第一、三条写法确需修改，第二条是正例；实际错误码还包含复核自身问题",
+        "cause": "第一条“资料里没有…我不想凭估计”只叙述能力边界，没帮助解决厚文件夹疑虑。原needs_review引用商品字段和写作规则来指控漏答，引用类型不符；程序又用容量关键词误判成已有全部答案。",
+        "actions": "本次可说A4容量，必要补充是文件夹长宽厚；缺口转成一条自然的必要问题。内部内尺寸/包口清单留顾问，不发客户。修复判错引用/帮助充分性，不能把invalid_review直接称作准确语义审核。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N19",
+      "title": "卡片和几个硬币",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：随行卡夹有零钱袋吗？我想卡和几个硬币一起放。",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "说明它的收纳结构就行。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N19",
+        "conversation_id": "business-v2-chat-N19",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "随行卡夹没有单独零钱袋，它的结构是4个独立卡位，可以放4张标准银行卡大小的卡片。",
+        "您好，随行卡夹是没有单独零钱袋的，里面是4个独立卡位，能放4张标准银行卡大小的卡片。",
+        "这款卡夹没有单独零钱袋，收纳部分是4个独立卡位，可放4张标准银行卡大小的卡片。"
+      ],
+      "original_error": null,
+      "offline_revalidated_status": "success",
+      "offline_revalidated_error": null,
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [],
+      "review_validation_errors": [],
+      "assessment": {
+        "conclusion": "三条实际均已交付，可保留",
+        "cause": "原文仅说明四卡位和无单独零钱袋，没有“我这边没有记录”；该句在N21第一条。",
+        "actions": "不加变形结论或三四枚硬币容量：现有品牌资料和实测均未支持。进一步问数量时由顾问确认真实结构/容量，不能临时补事实。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N21",
+      "title": "到店前想留黑色肩包",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "",
+        "conversation": "客户：黑色肩包能不能先给我留一个？周六想来看看。",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "接住她的到店意向，帮她安排下一步。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N21",
+        "conversation_id": "business-v2-chat-N21",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "留货我这边没有直接记录可以确认，得先帮您查一下墨黑色的库存和能不能预留。查好我回您，周六您过来就能直接看。",
+        "您好，墨黑色是轻行肩包的目录颜色之一，能不能预留我需要先和门店确认一下。有结果我尽快告诉您，不耽误您周六的安排。",
+        "轻行肩包墨黑色的库存和预留我先帮您问一下门店，确认后回您。周六想看的话，到时可以现场上手试背，看看大小和肩带长度合不合适。"
+      ],
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 0,
+          "domains": [
+            "event"
+          ]
+        },
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 1,
+          "domains": [
+            "event"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 2,
+          "source_id": "product.P02.strap_adjustable",
+          "claim_domains": [
+            "event",
+            "product"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 2,
+          "source_id": "product.P02.carry_modes",
+          "claim_domains": [
+            "event",
+            "product"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        },
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 2,
+          "domains": [
+            "event"
+          ]
+        }
+      ],
+      "assessment": {
+        "conclusion": "程序活动域误拦，同时第一条有真实的承诺和内部说明问题",
+        "cause": "客户自己的周六到店计划被识别成门店活动安排，导致缺event来源；第一条“没有直接记录”不该给客户，又在未核库存时说“周六过来就能直接看”。",
+        "actions": "生成应直接承接“墨黑库存和预留我先帮您确认，确认后回您”。客户行程与官方活动分开；不能因程序误拦就认可未核实的可看承诺。第二条“不耽误安排”可收短。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N24",
+      "title": "接住正面使用反馈",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上周在门店买过日行托特包。",
+        "conversation": "客户：托特这几天背着还不错，里面的小袋子刚好放钥匙。",
+        "related_info": "",
+        "product_ids": [
+          "P01"
+        ],
+        "advisor_instruction": "接着她的反馈回一句。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N24",
+        "conversation_id": "business-v2-chat-N24",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "听您说背得舒服就放心了，那个平口袋本来就是可以单独放钥匙这类小物的。后面用着有什么想法随时跟我说。",
+        "谢谢您回来说使用感受，钥匙放在那个内侧平口袋里确实好找。平时注意别长时间淋雨，沾到水用干软布吸干、通风处晾干就好。",
+        "托特能顺手就好，小口袋刚好派上用场。用着哪儿不顺手或者想了解怎么打理，都可以跟我说。"
+      ],
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 1,
+          "source_id": "product.P01.limitations",
+          "claim_domains": [
+            "service"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        }
+      ],
+      "assessment": {
+        "conclusion": "第一、三条可用；第二条无关保养应删，但实际程序不是因此拦截",
+        "cause": "客户只说背着不错、内袋放钥匙，任务是接反馈。第二条忽然讲淋雨吸干；模型给pass，程序因同句护理/商品多来源报域错配。",
+        "actions": "任务定为接正面反馈，不加载为客户输出用的保养步骤。可答“用着顺手就好，小口袋正好派上用场了”。保养事实是否正确与该不该此时说分开。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N26",
+      "title": "家用清洁剂咨询",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "",
+        "conversation": "客户：卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "给她安全、好操作的处理建议。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N26",
+        "conversation_id": "business-v2-chat-N26",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，家里那瓶清洁剂成分不确定的话，先不要用在卡夹上，也不建议先在角落试。皮面沾到污渍，先用干燥软布轻轻吸一吸、擦一擦，放在通风处自然晾干。",
+        "您好，成分不明的清洁剂不建议自行使用，包括只在一小块试。卡夹是哑光细纹牛皮，日常沾到污渍可以先用干软布轻轻吸干表面，再在通风处自然晾干，避免烘干和酒精擦拭。",
+        "您好，建议先别用家里那瓶清洁剂，成分不清楚的情况下不好判断对皮面的影响。先用干燥的软布轻轻吸掉、擦去表面污渍，再自然晾干就好；如果污渍比较明显或一直没淡，您可以拍张局部照片发我，我帮您看看后续怎么处理。"
+      ],
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [],
+      "review_validation_errors": [
+        {
+          "code": "source_domain_mismatch",
+          "message": "明显的来源类型不符：写作依据只能补充表达要求，商品参数不能证明售后或活动政策；未命中域词本身不是不相关证据",
+          "candidate_index": 0,
+          "source_id": "product.P03.material",
+          "claim_domains": [
+            "service"
+          ],
+          "source_domains": [
+            "product"
+          ]
+        }
+      ],
+      "assessment": {
+        "conclusion": "先停未知清洁剂正确，三条后续污渍处理不应直接照搬沾水步骤",
+        "cause": "“角落试”指卡夹不显眼处小面积试擦，措辞不清但不是房间角落。软布吸干和晾干在现有政策中针对沾水，不足以授权擦未知污渍。",
+        "actions": "正面步骤可为拍清洁剂成分标签给顾问问售后，确认前别用；需要时取污渍照片。只有相关时说明不要在卡夹隐蔽处先试擦，别默认每次解释。护理知识按适用条件提供，别套完整表。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N29",
+      "title": "拉链卡顿担心坏了",
+      "input": {
+        "scenario": "购后关怀",
+        "client_info": "上个月在门店买过轻行肩包。",
+        "conversation": "客户：这两天总觉得肩包拉链有点卡，会不会坏了？",
+        "related_info": "",
+        "product_ids": [
+          "P02"
+        ],
+        "advisor_instruction": "接住她的担心，给个能开始处理的办法。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N29",
+        "conversation_id": "business-v2-chat-N29",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，拉链有点卡不一定就是坏了，先别往卡的方向硬拉。可以看看齿槽里有没有细小杂物或线头，清理后再顺着拉几次试试。如果还是不顺，把卡顿位置拍张照片给我，我帮您看看怎么处理。",
+        "肩包拉链才用了一个月就卡，确实会让人担心。先别涂油、也别用其他清洁剂，避免留下痕迹。您方便的话，拍一段拉合时卡住的视频发我，我先按您这款包帮您核实后续怎么处理。",
+        "收到，先不用急着认定是坏了。拉链卡常见的原因可能是齿槽里进了细屑，也可以留意是不是装得比较满、拉合时有点偏。您可以先空包的情况下试拉一下；如果卡得明显或越来越紧，拍照发给我，我帮您对接售后查看。"
+      ],
+      "original_error": null,
+      "offline_revalidated_status": "success",
+      "offline_revalidated_error": null,
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [],
+      "review_validation_errors": [],
+      "assessment": {
+        "conclusion": "主要改生成：直接收视频/对接售后，去掉空泛安抚和自编排障",
+        "cause": "上月买过不等于用了一个月；“才一个月就卡”放大问题。“先不用急着认定坏了”在纠正客户判断；齿槽杂物、清理后试拉、空包试拉均无本项目依据。",
+        "actions": "可答“您方便拍一段拉合时卡住的视频发我吗？我帮您问售后怎么处理”。不要先推原因、扩写情绪或让客户自行清理反复试拉。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N42",
+      "title": "客户请帮报名两位",
+      "input": {
+        "scenario": "活动邀请",
+        "client_info": "",
+        "conversation": "客户：行，那帮我报一下名，姓陈，两位。",
+        "related_info": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+        "product_ids": [],
+        "advisor_instruction": "接住她两位报名的意向。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N42",
+        "conversation_id": "business-v2-chat-N42",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "好的陈女士，先记下您这边两位，我就按陈姓报名。活动是11月14日周六14:00—16:00，在澄序广场8号精品店，我把登记信息提交到门店，具体参加安排以门店确认为准。",
+        "收到，陈女士两位。这场“日常收纳小聚”在11月14日周六下午两点到四点，澄序广场8号精品店，时段内可以随时来，不用全程参加，也可以带上常用的小物对照体验。报名信息我提交给门店确认。",
+        "陈女士，两位的信息我记下了，稍后提交门店登记。活动当天11月14日周六14:00—16:00在澄序广场8号精品店，您可以带一位朋友一起来，参加安排等门店确认后我再回复您。"
+      ],
+      "original_error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（ready requires three fixed fields and no advisor-blocking gap），不属于可明确兼容的空内部字段；原响应已保留，整组未采用。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "missing_original_generation",
+        "message": "原记录没有可校验的生成结构；不补写或重新生成。",
+        "retryable": false
+      },
+      "program_policy_checks": null,
+      "model_review_verdict": null,
+      "model_review_issues": null,
+      "review_validation_errors": null,
+      "assessment": {
+        "conclusion": "性别评读遗漏顾问任务中的“她”；失败主因实际是生成合同矛盾",
+        "cause": "客户只给姓陈，profile无称呼，但advisor_instruction明确写“接住她两位报名的意向”，存在女性指代线索。不能只看客户正文就说“陈女士完全无来源”。真正前置失败是status=ready同时missing_information非空，模型复核未调用。",
+        "actions": "撤回将陈女士断言为完全无性别来源的评读，说明顾问女性指代与结构错误的区别。已有希望使用的称呼自动传入；没有明确称呼可中性接话，无需性别必填。同行称呼是可正常向客户补问的信息，不等于顾问缺正文；候选应自然询问并保持ready/missing字段含义一致。不事后补写历史profile。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N46",
+      "title": "买两只询问优惠",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：买两只卡夹，能优惠一点吗？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "温暖但如实回答。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N46",
+        "conversation_id": "business-v2-chat-N46",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您好，随行卡夹目前没有折扣，单只2,800元，两只就是5,600元。",
+        "您好，谢谢您想买两只随行卡夹。这款目前没有优惠，也没有议价空间，两只按目录价合计5,600元。",
+        "您好，随行卡夹目前确实没有折扣，两只的合计是5,600元。"
+      ],
+      "original_error": {
+        "code": "policy_check",
+        "message": "随行卡夹的品牌现价为2,800元，候选报价不一致。",
+        "retryable": true
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "policy_check",
+        "message": "随行卡夹的品牌现价为2,800元，候选报价不一致。",
+        "retryable": false
+      },
+      "program_policy_checks": [
+        {
+          "code": "wrong_price",
+          "candidate_index": 0,
+          "evidence": "5,600元",
+          "expected": 2800,
+          "product_id": "P03",
+          "message": "随行卡夹的品牌现价为2,800元，候选报价不一致。"
+        }
+      ],
+      "model_review_verdict": null,
+      "model_review_issues": null,
+      "review_validation_errors": null,
+      "assessment": {
+        "conclusion": "优惠与合计回答内容正确；程序把总额当单价，第二条开场需润色",
+        "cause": "“单只2800，两只就是5600”被当作两次单价报价，用5600对比2800。“谢谢您想买两只”是无必要的假定致谢。",
+        "actions": "金额绑定数量和单位；支持两只就是/两只共等正常表达，错总额仍拦。可直接“这款目前没有折扣，两只一共5600元”。原文修前置后补首次复核。"
+      },
+      "model_calls": 0
+    },
+    {
+      "case_id": "N48",
+      "title": "与更便宜的竞品比较",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：另一家的卡夹便宜不少，你们这款主要有什么不同？",
+        "related_info": "",
+        "product_ids": [
+          "P03"
+        ],
+        "advisor_instruction": "帮她从实际使用上比较。"
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N48",
+        "conversation_id": "business-v2-chat-N48",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "original_messages": [
+        "您问的这款是随行卡夹，2,800元，采用哑光细纹牛皮，表面光泽较低、能看到细小纹理，有4个独立卡位，可放4张标准银行卡大小的卡片。另一家的具体材质和卡位情况我还不了解，暂时没法替您逐一比较；如果方便，可以把对方的商品信息发我看看。",
+        "随行卡夹的价格是2,800元，材质是哑光细纹牛皮，4个独立卡位，能放4张标准银行卡大小的卡片，外观上品牌标识比较小，整体更简洁。那款便宜一些的卡夹我这边没有资料，不好直接说差别在哪里；您要是把它的信息发我，我可以帮您对照着看。",
+        "随行卡夹是2,800元，哑光细纹牛皮、无内衬，4个独立卡位正好收4张标准银行卡大小的卡片。另一个品牌那款的具体情况我不清楚，没法作对比，也不想凭印象说别家的不是；您更在意卡位数量还是皮面手感，我可以就这款再说细一点。"
+      ],
+      "original_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "offline_revalidated_status": "error",
+      "offline_revalidated_error": {
+        "code": "invalid_review",
+        "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+        "retryable": false
+      },
+      "program_policy_checks": [],
+      "model_review_verdict": "pass",
+      "model_review_issues": [
+        {
+          "code": "redundant_question",
+          "candidate_index": 2,
+          "evidence_span_id": "reply_3.s2",
+          "message": "末句追问“您更在意卡位数量还是皮面手感，我可以就这款再说细一点”在价格、材质、卡位已答清后属可省的选择追问，且“皮面手感”无目录依据；建议保留“情况不清楚、没法对比、不凭印象说别家不是”的边界，删去该追问。非阻断编辑意见。",
+          "source_refs": [
+            {
+              "source_id": "writing.rules"
+            },
+            {
+              "source_id": "policy.2"
+            }
+          ]
+        }
+      ],
+      "review_validation_errors": [
+        {
+          "code": "contradictory_review_verdict",
+          "message": "pass不能同时包含待处理问题"
+        },
+        {
+          "code": "missing_authoritative_check",
+          "message": "相关商品/价格/售后/活动断言没有对应类型的依据核对，客户原话不能授权品牌事实",
+          "candidate_index": 0,
+          "domains": [
+            "pricing"
+          ]
+        }
+      ],
+      "assessment": {
+        "conclusion": "前两条索竞品资料方向合理；第三条自述与偏好追问可改，复核自身结构矛盾应修",
+        "cause": "复核一边pass一边把自称非阻断建议放issues，还漏价格来源；“问手感偏好”不是断言本品有某手感。",
+        "actions": "比较确缺竞品信息，可先请提供对方型号/链接/商品页，再对照材质、大小、卡位。不要自述不想凭印象说别家不是；温和请求真实缺的资料即可。非阻断建议放editing，不伪造pass或直接删问题凑结构。"
+      },
+      "model_calls": 0
+    }
+  ],
+  "diagnostic_controls": [
+    {
+      "id": "N09_summary_wording_only_in_memory",
+      "status": "success",
+      "error": null,
+      "note": "只改副本的摘要措辞用于定位；不改原复核、原候选或正式结果，不是生产修复"
+    },
+    {
+      "id": "N20_current_single_product_focus",
+      "generation_validation": "accepted",
+      "note": "只证明已选P01能解决前置误拦；原记录无模型复核，不冒充完整pass"
+    },
+    {
+      "id": "N46_amount_bindings",
+      "bindings": [
+        {
+          "evidence": "2,800元",
+          "clause": "单只2,800元",
+          "value": 2800,
+          "expected": 2800,
+          "product_id": "P03",
+          "product_name": "随行卡夹",
+          "source_id": "product.P03.price"
+        },
+        {
+          "evidence": "5,600元",
+          "clause": "两只就是5,600元",
+          "value": 5600,
+          "expected": 2800,
+          "product_id": "P03",
+          "product_name": "随行卡夹",
+          "source_id": "product.P03.price"
+        }
+      ]
+    }
+  ]
+}

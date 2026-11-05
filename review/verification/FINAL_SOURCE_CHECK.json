@@ -1,0 +1,13 @@
+{
+  "source_sha256": "6f81f2d04b807ed809d54aef23e33f63aa7d580c1e3869e378d5bd9dbf21dc24",
+  "current_app_version": "0.21.1",
+  "unconfigured_status": "unconfigured",
+  "startup_passed": true,
+  "replay_permissions_passed": true,
+  "same_runtime_as_existing_smoke": true,
+  "source_changes_since_smoke": [
+    "README.md"
+  ],
+  "new_model_requests": 0,
+  "temporary_final_source_server_stopped": true
+}

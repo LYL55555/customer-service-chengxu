@@ -1,0 +1,21 @@
+{
+  "app_version": "0.21.1",
+  "kind": "real continuous tab recording, no screenshot slideshow, no added captions or borders",
+  "github_repo": "https://github.com/LYL55555/customer-service-chengxu.git",
+  "old_video_excluded": true,
+  "input": {
+    "scenario": "商品推荐",
+    "client_info": "",
+    "conversation": "客户：我想送同事一个低调的小礼物，她平时带四张银行卡。随行卡夹多少钱，四张卡放得下吗？",
+    "related_info": "",
+    "advisor_instruction": "",
+    "product_ids": [
+      "P03"
+    ]
+  },
+  "new_generation_max": 1,
+  "new_review_max": 1,
+  "automatic_retries": 0,
+  "formal50_rerun": false,
+  "production_code_changes": false
+}

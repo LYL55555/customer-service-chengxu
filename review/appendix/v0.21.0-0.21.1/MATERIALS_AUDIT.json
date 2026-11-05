@@ -1,0 +1,125 @@
+[
+  {
+    "case_id": "J01",
+    "actual_generation_fact_ids": [
+      "product.P01.empty_weight_g",
+      "computed.load.P01"
+    ],
+    "actual_generation_facts": [
+      {
+        "source_id": "product.P01.empty_weight_g",
+        "kind": "product_known",
+        "authority": "brand",
+        "status": "known",
+        "text": "约750 g",
+        "scope": {
+          "product_id": "P01",
+          "product_name": "日行托特包",
+          "field": "empty_weight_g"
+        }
+      },
+      {
+        "source_id": "computed.load.P01",
+        "kind": "derived_load",
+        "authority": "bounded_component_calculation_not_full_loaded_weight",
+        "status": "known",
+        "text": "空包约750克，加上500毫升水约500克，两项小计约1.25公斤；另加水瓶和资料等实际携带物的重量。",
+        "scope": {
+          "product_id": "P01",
+          "subtotal_g": 1250.0,
+          "parent_source_ids": [
+            "product.P01.empty_weight_g",
+            "background.client_info"
+          ]
+        }
+      }
+    ],
+    "internal_validation_facts_saved": [
+      {
+        "source_id": "product.P01.loaded_weight_g",
+        "kind": "product_unknown",
+        "authority": "brand",
+        "status": "unknown",
+        "text": "未提供，取决于实际携带物品，不能编造总重",
+        "audience": "internal_validation",
+        "scope": {
+          "product_id": "P01",
+          "product_name": "日行托特包",
+          "field": "loaded_weight_g"
+        }
+      },
+      {
+        "source_id": "product.P01.loaded_comfort",
+        "kind": "product_unknown",
+        "authority": "brand",
+        "status": "unknown",
+        "text": "未提供，不能断言有或没有",
+        "audience": "internal_validation",
+        "scope": {
+          "product_id": "P01",
+          "product_name": "日行托特包",
+          "field": "loaded_comfort"
+        }
+      },
+      {
+        "source_id": "product.P01.limitations",
+        "kind": "product_known",
+        "authority": "brand",
+        "status": "known",
+        "text": "不称为超轻",
+        "audience": "internal_validation",
+        "scope": {
+          "product_id": "P01",
+          "product_name": "日行托特包",
+          "field": "limitations"
+        }
+      }
+    ],
+    "forbidden_internal_terms_absent_from_entire_request": true,
+    "request_includes_full_catalog": false
+  },
+  {
+    "case_id": "J02",
+    "actual_generation_fact_ids": [
+      "product.P02.capacity",
+      "product.P02.price",
+      "policy.2"
+    ],
+    "actual_generation_facts": [
+      {
+        "source_id": "product.P02.capacity",
+        "kind": "product_known",
+        "authority": "brand",
+        "status": "known",
+        "text": "可放普通手机、钥匙",
+        "scope": {
+          "product_id": "P02",
+          "product_name": "轻行肩包",
+          "field": "capacity"
+        }
+      },
+      {
+        "source_id": "product.P02.price",
+        "kind": "product_known",
+        "authority": "brand",
+        "status": "known",
+        "text": "12,800元",
+        "scope": {
+          "product_id": "P02",
+          "product_name": "轻行肩包",
+          "field": "price"
+        }
+      },
+      {
+        "source_id": "policy.2",
+        "kind": "brand_policy",
+        "authority": "brand",
+        "status": "known",
+        "text": "三款均使用小尺寸压印品牌标识"
+      }
+    ],
+    "internal_validation_facts_saved": [],
+    "forbidden_internal_terms_absent_from_entire_request": true,
+    "request_includes_full_catalog": false
+  }
+]

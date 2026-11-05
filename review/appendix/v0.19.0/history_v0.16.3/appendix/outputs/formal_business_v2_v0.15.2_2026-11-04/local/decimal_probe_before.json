@@ -1,0 +1,26 @@
+{
+  "text": "维修评估报价450.4元，预计1.10个工作日。",
+  "actual": [
+    {
+      "field": "fee",
+      "value": 450,
+      "unit": "CNY",
+      "start": 6,
+      "end": 12,
+      "quote": "450.4元",
+      "estimated": false,
+      "guaranteed": false
+    },
+    {
+      "field": "duration",
+      "value": 10,
+      "unit": "workday",
+      "start": 17,
+      "end": 23,
+      "quote": "10个工作日",
+      "estimated": true,
+      "guaranteed": false
+    }
+  ],
+  "issue": "金额被money_value取整，周期正则可从小数后半截匹配；最终统一校验前需保留实际数值精度"
+}

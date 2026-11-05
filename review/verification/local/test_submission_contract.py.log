@@ -1,0 +1,9 @@
+test_protocol_constant_is_the_only_compatibility (test_submission_contract.SubmissionContractTests.test_protocol_constant_is_the_only_compatibility) ... ok
+test_saved_real_results_revalidate_without_network (test_submission_contract.SubmissionContractTests.test_saved_real_results_revalidate_without_network) ... ok
+test_single_revision_keeps_other_candidates (test_submission_contract.SubmissionContractTests.test_single_revision_keeps_other_candidates) ... ok
+test_wrong_price_and_broken_reference_still_reject (test_submission_contract.SubmissionContractTests.test_wrong_price_and_broken_reference_still_reject) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.237s
+
+OK

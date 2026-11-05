@@ -1,0 +1,1820 @@
+[
+  {
+    "case_id": "N16",
+    "plan": {
+      "mode": "usage_judgment",
+      "current_request": "我每天走路二十分钟，托特装东西会不会太沉？",
+      "scenario": "商品推荐",
+      "consulted_product_ids": [
+        "P01"
+      ],
+      "selected_product_ids": [
+        "P01"
+      ],
+      "must_answer": [
+        "结合已有用途和约束给出选择判断",
+        "当前物品容量",
+        "自重与当前负重顾虑"
+      ],
+      "necessary_next_steps": []
+    },
+    "generation_input": {
+      "task": {
+        "mode": "usage_judgment",
+        "current_request": "我每天走路二十分钟，托特装东西会不会太沉？",
+        "scenario": "商品推荐",
+        "consulted_product_ids": [
+          "P01"
+        ],
+        "selected_product_ids": [
+          "P01"
+        ],
+        "must_answer": [
+          "结合已有用途和约束给出选择判断",
+          "当前物品容量",
+          "自重与当前负重顾虑"
+        ],
+        "necessary_next_steps": []
+      },
+      "chat": [
+        {
+          "id": "t1",
+          "role": "customer",
+          "kind": "text",
+          "text": "我每天走路二十分钟，托特装东西会不会太沉？",
+          "quoted_text": ""
+        }
+      ],
+      "context": {
+        "advisor_background": {
+          "text": "平时通勤带A4资料和一瓶水。",
+          "source_id": "background.client_info"
+        }
+      },
+      "contact_constraints": {
+        "marketing_opt_out": false,
+        "communication": {
+          "mode": "responsive",
+          "historical_chat": false,
+          "latest_customer_id": "t1",
+          "message_date": null,
+          "source_ids": [
+            "chat.t1",
+            "background.client_info"
+          ]
+        },
+        "current_product_intents": [
+          {
+            "product_id": "P01",
+            "intent": "question",
+            "message_id": "t1",
+            "text": "托特装东西会不会太沉？"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "source_id": "product.P01.capacity",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放A4纸质资料、500 mL水杯",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "capacity"
+          }
+        },
+        {
+          "source_id": "product.P01.empty_weight_g",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "约750 g",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "empty_weight_g"
+          }
+        },
+        {
+          "source_id": "product.P01.loaded_weight_g",
+          "kind": "product_unknown",
+          "authority": "brand",
+          "status": "unknown",
+          "text": "未提供，取决于实际携带物品，不能编造总重",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "loaded_weight_g"
+          }
+        },
+        {
+          "source_id": "product.P01.loaded_comfort",
+          "kind": "product_unknown",
+          "authority": "brand",
+          "status": "unknown",
+          "text": "未提供，不能断言有或没有",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "loaded_comfort"
+          }
+        },
+        {
+          "source_id": "product.P01.a4_fit",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放A4纸质资料",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "a4_fit"
+          }
+        },
+        {
+          "source_id": "product.P01.limitations",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "不称为超轻",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "limitations"
+          }
+        }
+      ],
+      "advisor_instructions": {
+        "initial": "结合她的使用情况帮她判断。",
+        "revisions": []
+      },
+      "revision_context": null
+    },
+    "selection_audit": {
+      "version": "task-materials-2.1.0",
+      "selected": [
+        {
+          "source_id": "product.P01.capacity",
+          "reason": "回答当前capacity",
+          "selected_text": "可放A4纸质资料、500 mL水杯",
+          "source_text": "可放A4纸质资料、500 mL水杯、折叠伞等日常物品",
+          "start": null,
+          "end": null,
+          "transformation": "select_supported_items_matching_current_use"
+        },
+        {
+          "source_id": "product.P01.empty_weight_g",
+          "reason": "回答当前weight",
+          "selected_text": "约750 g",
+          "source_text": "约750 g",
+          "start": null,
+          "end": null,
+          "transformation": "exact_source_text"
+        },
+        {
+          "source_id": "product.P01.loaded_weight_g",
+          "reason": "回答当前weight",
+          "selected_text": "未提供，取决于实际携带物品，不能编造总重",
+          "source_text": "未提供，取决于实际携带物品，不能编造总重",
+          "start": null,
+          "end": null,
+          "transformation": "exact_source_text"
+        },
+        {
+          "source_id": "product.P01.loaded_comfort",
+          "reason": "回答当前weight",
+          "selected_text": "未提供，不能断言有或没有",
+          "source_text": "未提供，不能断言有或没有",
+          "start": null,
+          "end": null,
+          "transformation": "exact_source_text"
+        },
+        {
+          "source_id": "product.P01.a4_fit",
+          "reason": "当前用途包含A4",
+          "selected_text": "可放A4纸质资料",
+          "source_text": "可放A4纸质资料",
+          "start": null,
+          "end": null,
+          "transformation": "single_A4_proposition"
+        },
+        {
+          "source_id": "product.P01.limitations",
+          "reason": "当前重量判断需要这项真实边界",
+          "selected_text": "不称为超轻",
+          "source_text": "不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水",
+          "start": null,
+          "end": null,
+          "transformation": "weight_limit_clause_only"
+        }
+      ],
+      "selected_source_ids": [
+        "product.P01.a4_fit",
+        "product.P01.capacity",
+        "product.P01.empty_weight_g",
+        "product.P01.limitations",
+        "product.P01.loaded_comfort",
+        "product.P01.loaded_weight_g"
+      ],
+      "omitted_source_ids": [
+        "policy.1",
+        "policy.2",
+        "policy.3",
+        "policy.4",
+        "policy.5",
+        "policy.6",
+        "policy.7",
+        "product.P01.price",
+        "product.P01.material",
+        "product.P01.lining",
+        "product.P01.dimensions_cm",
+        "product.P01.colors",
+        "product.P01.carry_modes",
+        "product.P01.strap_adjustable",
+        "product.P01.closure",
+        "product.P01.inner_flat_pockets",
+        "product.P01.card_slots",
+        "product.P01.coin_pocket",
+        "product.P01.origin",
+        "product.P01.leather_grade",
+        "product.P01.craft",
+        "product.P01.resale_value",
+        "product.P01.stock",
+        "product.P01.inner_dimensions_cm",
+        "product.P01.opening_dimensions_cm",
+        "product.P02.price",
+        "product.P02.material",
+        "product.P02.lining",
+        "product.P02.dimensions_cm",
+        "product.P02.empty_weight_g",
+        "product.P02.colors",
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.closure",
+        "product.P02.inner_flat_pockets",
+        "product.P02.card_slots",
+        "product.P02.coin_pocket",
+        "product.P02.a4_fit",
+        "product.P02.capacity",
+        "product.P02.limitations",
+        "product.P02.origin",
+        "product.P02.leather_grade",
+        "product.P02.craft",
+        "product.P02.resale_value",
+        "product.P02.stock",
+        "product.P02.loaded_comfort",
+        "product.P02.loaded_weight_g",
+        "product.P02.inner_dimensions_cm",
+        "product.P02.opening_dimensions_cm",
+        "product.P03.price",
+        "product.P03.material",
+        "product.P03.lining",
+        "product.P03.dimensions_cm",
+        "product.P03.empty_weight_g",
+        "product.P03.colors",
+        "product.P03.carry_modes",
+        "product.P03.strap_adjustable",
+        "product.P03.closure",
+        "product.P03.inner_flat_pockets",
+        "product.P03.card_slots",
+        "product.P03.coin_pocket",
+        "product.P03.a4_fit",
+        "product.P03.capacity",
+        "product.P03.limitations",
+        "product.P03.origin",
+        "product.P03.leather_grade",
+        "product.P03.craft",
+        "product.P03.resale_value",
+        "product.P03.stock",
+        "product.P03.loaded_comfort",
+        "product.P03.loaded_weight_g",
+        "product.P03.inner_dimensions_cm",
+        "product.P03.opening_dimensions_cm",
+        "task.scenario",
+        "task.advisor_instruction",
+        "background.client_info",
+        "chat.t1"
+      ],
+      "full_source_count": 83,
+      "selected_fact_count": 6,
+      "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+    },
+    "generation_system_characters": 930,
+    "generation_user_characters": 2980,
+    "old_generation_message_characters": 57606,
+    "new_generation_message_characters": 3910
+  },
+  {
+    "case_id": "N22",
+    "plan": {
+      "mode": "recommendation",
+      "current_request": "A4和水杯基本天天带，包别太花。\n那还是帮我看看上班用的吧，预算两万以内。",
+      "scenario": "商品推荐",
+      "consulted_product_ids": [
+        "P02"
+      ],
+      "selected_product_ids": [
+        "P01"
+      ],
+      "must_answer": [
+        "结合已有用途和约束给出选择判断",
+        "当前物品容量",
+        "已有外观偏好",
+        "价格或当前合计"
+      ],
+      "necessary_next_steps": []
+    },
+    "generation_input": {
+      "task": {
+        "mode": "recommendation",
+        "current_request": "A4和水杯基本天天带，包别太花。\n那还是帮我看看上班用的吧，预算两万以内。",
+        "scenario": "商品推荐",
+        "consulted_product_ids": [
+          "P02"
+        ],
+        "selected_product_ids": [
+          "P01"
+        ],
+        "must_answer": [
+          "结合已有用途和约束给出选择判断",
+          "当前物品容量",
+          "已有外观偏好",
+          "价格或当前合计"
+        ],
+        "necessary_next_steps": []
+      },
+      "chat": [
+        {
+          "id": "t1",
+          "role": "advisor",
+          "kind": "text",
+          "text": "您昨天看的轻行肩包，还想了解什么？",
+          "quoted_text": ""
+        },
+        {
+          "id": "t2",
+          "role": "customer",
+          "kind": "text",
+          "text": "这两天换了项目，现在还得带文件去公司。",
+          "quoted_text": ""
+        },
+        {
+          "id": "t3",
+          "role": "advisor",
+          "kind": "text",
+          "text": "平时会带哪些东西？",
+          "quoted_text": ""
+        },
+        {
+          "id": "t4",
+          "role": "customer",
+          "kind": "text",
+          "text": "A4和水杯基本天天带，包别太花。",
+          "quoted_text": ""
+        },
+        {
+          "id": "t5",
+          "role": "customer",
+          "kind": "text",
+          "text": "那还是帮我看看上班用的吧，预算两万以内。",
+          "quoted_text": ""
+        }
+      ],
+      "context": {
+        "long_term_preferences": {
+          "text": "喜欢墨黑、小标识。",
+          "source_id": "profile.preferences"
+        },
+        "current_budget": {
+          "text": "20,000元",
+          "evidence": [
+            {
+              "field": "chat",
+              "message_id": "t5",
+              "role": "customer",
+              "text": "那还是帮我看看上班用的吧，预算两万以内。"
+            }
+          ]
+        }
+      },
+      "contact_constraints": {
+        "marketing_opt_out": false,
+        "communication": {
+          "mode": "responsive",
+          "historical_chat": false,
+          "latest_customer_id": "t5",
+          "message_date": null,
+          "source_ids": [
+            "chat.t5"
+          ]
+        },
+        "current_product_intents": []
+      },
+      "facts": [
+        {
+          "source_id": "product.P01.capacity",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放A4纸质资料、500 mL水杯",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "capacity"
+          }
+        },
+        {
+          "source_id": "product.P01.colors",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "墨黑",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "colors"
+          }
+        },
+        {
+          "source_id": "product.P01.price",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "18,800元",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "price"
+          }
+        },
+        {
+          "source_id": "product.P01.a4_fit",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放A4纸质资料",
+          "scope": {
+            "product_id": "P01",
+            "product_name": "日行托特包",
+            "field": "a4_fit"
+          }
+        },
+        {
+          "source_id": "policy.2",
+          "kind": "brand_policy",
+          "authority": "brand",
+          "status": "known",
+          "text": "三款均使用小尺寸压印品牌标识"
+        }
+      ],
+      "advisor_instructions": {
+        "initial": "按现在的需求推荐，接着聊。",
+        "revisions": []
+      },
+      "revision_context": null
+    },
+    "selection_audit": {
+      "version": "task-materials-2.1.0",
+      "selected": [
+        {
+          "source_id": "product.P01.capacity",
+          "reason": "回答当前capacity",
+          "selected_text": "可放A4纸质资料、500 mL水杯",
+          "source_text": "可放A4纸质资料、500 mL水杯、折叠伞等日常物品",
+          "start": null,
+          "end": null,
+          "transformation": "select_supported_items_matching_current_use"
+        },
+        {
+          "source_id": "product.P01.colors",
+          "reason": "回答当前design",
+          "selected_text": "墨黑",
+          "source_text": "墨黑、暖棕",
+          "start": null,
+          "end": null,
+          "transformation": "requested_catalog_color_only"
+        },
+        {
+          "source_id": "product.P01.price",
+          "reason": "回答当前price",
+          "selected_text": "18,800元",
+          "source_text": "18,800元",
+          "start": null,
+          "end": null,
+          "transformation": "exact_source_text"
+        },
+        {
+          "source_id": "product.P01.a4_fit",
+          "reason": "当前用途包含A4",
+          "selected_text": "可放A4纸质资料",
+          "source_text": "可放A4纸质资料",
+          "start": null,
+          "end": null,
+          "transformation": "single_A4_proposition"
+        },
+        {
+          "source_id": "policy.2",
+          "reason": "当前低调/小标识偏好",
+          "selected_text": "三款均使用小尺寸压印品牌标识",
+          "source_text": "## 2. 品牌设定\n\n- 名称：澄序 CHENGXU\n- 类别：虚构精品奢侈皮具品牌，低调、重视日常使用\n- 主要用途：日常通勤、轻便外出、小件礼物\n- 品牌表达：温暖、低调、具体；从客户的用途和顾虑出发，主动提供有帮助的信息\n- 顾问目标：先完成当前任务；客户已选商品只问事实，就直接答清。开放推荐或真实比较时再结合需求帮助选择；尊重预算和选择，明确拒绝后不继续劝买\n- 常见客户资料：称呼、主动表达的用途、颜色偏好、预算、购买记录和最近聊天\n- 初始资料不包含客户真实身份、联系方式或任何真实个人数据\n\n表达能一句答清就一句；必要时用一至三句短句。只有完成当前任务确实需要才提一个轻量问题，最多一个是上限，不是每条都要有问题。客户已提出的选择方向不再反问确认。不默认使用表情、亲昵称呼、夸张感叹或反复催促。已知称呼可使用；不知道称呼时使用“您好”或直接接话，不猜姓名、性别或关系。\n\n### 品牌与设计特点（全部为本项目虚构）\n\n| 特点 | 具体设定 | 顾问可以介绍的内容 | 表达边界 |\n| --- | --- | --- | --- |\n| 低调标识 | 三款均使用小尺寸压印品牌标识，没有大面积醒目标识 | “它的标识比较小，外观更简洁” | 不宣称有身份门槛、稀缺身份或比其他品牌更高级 |\n| 统一皮面 | 三款均采用哑光细纹牛皮，指表面光泽较低、能看到细小纹理 | 可以说明材质和外观，不需要堆砌皮革术语 | 细纹不等于防刮；不据此承诺耐用年限、防水或不掉色 |\n| 基础配色 | 目录仅使用墨黑、暖棕、米白三种颜色，各商品可选颜色见下表 | 结合客户已知颜色偏好介绍 | 不保证适合所有衣服或所有场合；不把目录颜色当作现货 |\n| 日常收纳 | 托特包有内侧平口袋；肩包有可调节肩带和拉链开合；卡夹有4个独立卡位 | 说明具体部件能怎样配合使用需求 | 不据此保证东西绝不会掉、背着不累、物品一定放得下 |\n\n介绍商品时挑与客户问题有关的一两点即可。这些特点为顾问提供具体信息，并不能证明商品一定“值这个价”或比客户提到的另一款更好；目前没有品牌历史、产地、成本或手工工艺资料可用于解释差价。\n\n",
+          "start": 486,
+          "end": 500,
+          "transformation": "exact_source_text"
+        }
+      ],
+      "selected_source_ids": [
+        "policy.2",
+        "product.P01.a4_fit",
+        "product.P01.capacity",
+        "product.P01.colors",
+        "product.P01.price"
+      ],
+      "omitted_source_ids": [
+        "policy.1",
+        "policy.3",
+        "policy.4",
+        "policy.5",
+        "policy.6",
+        "policy.7",
+        "product.P01.material",
+        "product.P01.lining",
+        "product.P01.dimensions_cm",
+        "product.P01.empty_weight_g",
+        "product.P01.carry_modes",
+        "product.P01.strap_adjustable",
+        "product.P01.closure",
+        "product.P01.inner_flat_pockets",
+        "product.P01.card_slots",
+        "product.P01.coin_pocket",
+        "product.P01.limitations",
+        "product.P01.origin",
+        "product.P01.leather_grade",
+        "product.P01.craft",
+        "product.P01.resale_value",
+        "product.P01.stock",
+        "product.P01.loaded_comfort",
+        "product.P01.loaded_weight_g",
+        "product.P01.inner_dimensions_cm",
+        "product.P01.opening_dimensions_cm",
+        "product.P02.price",
+        "product.P02.material",
+        "product.P02.lining",
+        "product.P02.dimensions_cm",
+        "product.P02.empty_weight_g",
+        "product.P02.colors",
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.closure",
+        "product.P02.inner_flat_pockets",
+        "product.P02.card_slots",
+        "product.P02.coin_pocket",
+        "product.P02.a4_fit",
+        "product.P02.capacity",
+        "product.P02.limitations",
+        "product.P02.origin",
+        "product.P02.leather_grade",
+        "product.P02.craft",
+        "product.P02.resale_value",
+        "product.P02.stock",
+        "product.P02.loaded_comfort",
+        "product.P02.loaded_weight_g",
+        "product.P02.inner_dimensions_cm",
+        "product.P02.opening_dimensions_cm",
+        "product.P03.price",
+        "product.P03.material",
+        "product.P03.lining",
+        "product.P03.dimensions_cm",
+        "product.P03.empty_weight_g",
+        "product.P03.colors",
+        "product.P03.carry_modes",
+        "product.P03.strap_adjustable",
+        "product.P03.closure",
+        "product.P03.inner_flat_pockets",
+        "product.P03.card_slots",
+        "product.P03.coin_pocket",
+        "product.P03.a4_fit",
+        "product.P03.capacity",
+        "product.P03.limitations",
+        "product.P03.origin",
+        "product.P03.leather_grade",
+        "product.P03.craft",
+        "product.P03.resale_value",
+        "product.P03.stock",
+        "product.P03.loaded_comfort",
+        "product.P03.loaded_weight_g",
+        "product.P03.inner_dimensions_cm",
+        "product.P03.opening_dimensions_cm",
+        "task.scenario",
+        "task.advisor_instruction",
+        "profile.preferences",
+        "chat.t1",
+        "chat.t2",
+        "chat.t3",
+        "chat.t4",
+        "chat.t5"
+      ],
+      "full_source_count": 87,
+      "selected_fact_count": 5,
+      "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+    },
+    "generation_system_characters": 930,
+    "generation_user_characters": 3124,
+    "old_generation_message_characters": 59753,
+    "new_generation_message_characters": 4054
+  },
+  {
+    "case_id": "N39",
+    "plan": {
+      "mode": "event_query",
+      "current_request": "活动主要看些什么？我不是很懂皮具。",
+      "scenario": "活动邀请",
+      "consulted_product_ids": [],
+      "selected_product_ids": [],
+      "must_answer": [
+        "本次活动可以看到或体验什么"
+      ],
+      "necessary_next_steps": []
+    },
+    "generation_input": {
+      "task": {
+        "mode": "event_query",
+        "current_request": "活动主要看些什么？我不是很懂皮具。",
+        "scenario": "活动邀请",
+        "consulted_product_ids": [],
+        "selected_product_ids": [],
+        "must_answer": [
+          "本次活动可以看到或体验什么"
+        ],
+        "necessary_next_steps": []
+      },
+      "chat": [
+        {
+          "id": "t1",
+          "role": "customer",
+          "kind": "text",
+          "text": "活动主要看些什么？我不是很懂皮具。",
+          "quoted_text": ""
+        }
+      ],
+      "context": {},
+      "contact_constraints": {
+        "marketing_opt_out": false,
+        "communication": {
+          "mode": "responsive",
+          "historical_chat": false,
+          "latest_customer_id": "t1",
+          "message_date": null,
+          "source_ids": [
+            "chat.t1"
+          ]
+        },
+        "current_product_intents": []
+      },
+      "facts": [
+        {
+          "source_id": "materials.related_info",
+          "kind": "business_material",
+          "authority": "business_facts_not_brand_override",
+          "status": "known",
+          "text": "时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。",
+          "scope": {
+            "kind": "business_material",
+            "metadata": {}
+          }
+        }
+      ],
+      "advisor_instructions": {
+        "initial": "用容易懂的话介绍内容。",
+        "revisions": []
+      },
+      "revision_context": null
+    },
+    "selection_audit": {
+      "version": "task-materials-2.1.0",
+      "selected": [
+        {
+          "source_id": "materials.related_info",
+          "reason": "本次活动问题：event_experience",
+          "selected_text": "时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。",
+          "source_text": "虚构门店活动“日常收纳小聚”：2026-11-14 14:00—16:00，澄序广场8号精品店。时段内持续演示日行托特包、轻行肩包、随行卡夹如何收纳常用物品，也可自由体验、带日常物品对照。可在时段内短暂停留，无须全程参加。可带一位朋友，参加人需要提供称呼登记，参加安排由门店确认。",
+          "start": 48,
+          "end": 94,
+          "transformation": "exact_source_text"
+        }
+      ],
+      "selected_source_ids": [
+        "materials.related_info"
+      ],
+      "omitted_source_ids": [
+        "policy.1",
+        "policy.2",
+        "policy.3",
+        "policy.4",
+        "policy.5",
+        "policy.6",
+        "policy.7",
+        "product.P01.price",
+        "product.P01.material",
+        "product.P01.lining",
+        "product.P01.dimensions_cm",
+        "product.P01.empty_weight_g",
+        "product.P01.colors",
+        "product.P01.carry_modes",
+        "product.P01.strap_adjustable",
+        "product.P01.closure",
+        "product.P01.inner_flat_pockets",
+        "product.P01.card_slots",
+        "product.P01.coin_pocket",
+        "product.P01.a4_fit",
+        "product.P01.capacity",
+        "product.P01.limitations",
+        "product.P01.origin",
+        "product.P01.leather_grade",
+        "product.P01.craft",
+        "product.P01.resale_value",
+        "product.P01.stock",
+        "product.P01.loaded_comfort",
+        "product.P01.loaded_weight_g",
+        "product.P01.inner_dimensions_cm",
+        "product.P01.opening_dimensions_cm",
+        "product.P02.price",
+        "product.P02.material",
+        "product.P02.lining",
+        "product.P02.dimensions_cm",
+        "product.P02.empty_weight_g",
+        "product.P02.colors",
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.closure",
+        "product.P02.inner_flat_pockets",
+        "product.P02.card_slots",
+        "product.P02.coin_pocket",
+        "product.P02.a4_fit",
+        "product.P02.capacity",
+        "product.P02.limitations",
+        "product.P02.origin",
+        "product.P02.leather_grade",
+        "product.P02.craft",
+        "product.P02.resale_value",
+        "product.P02.stock",
+        "product.P02.loaded_comfort",
+        "product.P02.loaded_weight_g",
+        "product.P02.inner_dimensions_cm",
+        "product.P02.opening_dimensions_cm",
+        "product.P03.price",
+        "product.P03.material",
+        "product.P03.lining",
+        "product.P03.dimensions_cm",
+        "product.P03.empty_weight_g",
+        "product.P03.colors",
+        "product.P03.carry_modes",
+        "product.P03.strap_adjustable",
+        "product.P03.closure",
+        "product.P03.inner_flat_pockets",
+        "product.P03.card_slots",
+        "product.P03.coin_pocket",
+        "product.P03.a4_fit",
+        "product.P03.capacity",
+        "product.P03.limitations",
+        "product.P03.origin",
+        "product.P03.leather_grade",
+        "product.P03.craft",
+        "product.P03.resale_value",
+        "product.P03.stock",
+        "product.P03.loaded_comfort",
+        "product.P03.loaded_weight_g",
+        "product.P03.inner_dimensions_cm",
+        "product.P03.opening_dimensions_cm",
+        "task.scenario",
+        "task.advisor_instruction",
+        "computed.calendar.1",
+        "chat.t1"
+      ],
+      "full_source_count": 84,
+      "selected_fact_count": 1,
+      "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+    },
+    "generation_system_characters": 930,
+    "generation_user_characters": 1180,
+    "old_generation_message_characters": 59581,
+    "new_generation_message_characters": 2110
+  },
+  {
+    "case_id": "N44",
+    "plan": {
+      "mode": "usage_judgment",
+      "current_request": "肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+      "scenario": "价格异议",
+      "consulted_product_ids": [
+        "P02"
+      ],
+      "selected_product_ids": [
+        "P02"
+      ],
+      "must_answer": [
+        "结合已有用途和约束给出选择判断",
+        "当前物品容量",
+        "价格或当前合计"
+      ],
+      "necessary_next_steps": []
+    },
+    "generation_input": {
+      "task": {
+        "mode": "usage_judgment",
+        "current_request": "肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+        "scenario": "价格异议",
+        "consulted_product_ids": [
+          "P02"
+        ],
+        "selected_product_ids": [
+          "P02"
+        ],
+        "must_answer": [
+          "结合已有用途和约束给出选择判断",
+          "当前物品容量",
+          "价格或当前合计"
+        ],
+        "necessary_next_steps": []
+      },
+      "chat": [
+        {
+          "id": "t1",
+          "role": "customer",
+          "kind": "text",
+          "text": "肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+          "quoted_text": ""
+        }
+      ],
+      "context": {},
+      "contact_constraints": {
+        "marketing_opt_out": false,
+        "communication": {
+          "mode": "responsive",
+          "historical_chat": false,
+          "latest_customer_id": "t1",
+          "message_date": null,
+          "source_ids": [
+            "chat.t1"
+          ]
+        },
+        "current_product_intents": [
+          {
+            "product_id": "P02",
+            "intent": "mentioned",
+            "message_id": "t1",
+            "text": "肩包比我原来想的贵一点"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "source_id": "product.P02.capacity",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "可放普通手机、钥匙",
+          "scope": {
+            "product_id": "P02",
+            "product_name": "轻行肩包",
+            "field": "capacity"
+          }
+        },
+        {
+          "source_id": "product.P02.price",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "12,800元",
+          "scope": {
+            "product_id": "P02",
+            "product_name": "轻行肩包",
+            "field": "price"
+          }
+        }
+      ],
+      "advisor_instructions": {
+        "initial": "结合她的用途帮她判断。",
+        "revisions": []
+      },
+      "revision_context": null
+    },
+    "selection_audit": {
+      "version": "task-materials-2.1.0",
+      "selected": [
+        {
+          "source_id": "product.P02.capacity",
+          "reason": "回答当前capacity",
+          "selected_text": "可放普通手机、钥匙",
+          "source_text": "可放普通手机、钥匙、口红等小物",
+          "start": null,
+          "end": null,
+          "transformation": "select_supported_items_matching_current_use"
+        },
+        {
+          "source_id": "product.P02.price",
+          "reason": "回答当前price",
+          "selected_text": "12,800元",
+          "source_text": "12,800元",
+          "start": null,
+          "end": null,
+          "transformation": "exact_source_text"
+        }
+      ],
+      "selected_source_ids": [
+        "product.P02.capacity",
+        "product.P02.price"
+      ],
+      "omitted_source_ids": [
+        "policy.1",
+        "policy.2",
+        "policy.3",
+        "policy.4",
+        "policy.5",
+        "policy.6",
+        "policy.7",
+        "product.P01.price",
+        "product.P01.material",
+        "product.P01.lining",
+        "product.P01.dimensions_cm",
+        "product.P01.empty_weight_g",
+        "product.P01.colors",
+        "product.P01.carry_modes",
+        "product.P01.strap_adjustable",
+        "product.P01.closure",
+        "product.P01.inner_flat_pockets",
+        "product.P01.card_slots",
+        "product.P01.coin_pocket",
+        "product.P01.a4_fit",
+        "product.P01.capacity",
+        "product.P01.limitations",
+        "product.P01.origin",
+        "product.P01.leather_grade",
+        "product.P01.craft",
+        "product.P01.resale_value",
+        "product.P01.stock",
+        "product.P01.loaded_comfort",
+        "product.P01.loaded_weight_g",
+        "product.P01.inner_dimensions_cm",
+        "product.P01.opening_dimensions_cm",
+        "product.P02.material",
+        "product.P02.lining",
+        "product.P02.dimensions_cm",
+        "product.P02.empty_weight_g",
+        "product.P02.colors",
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.closure",
+        "product.P02.inner_flat_pockets",
+        "product.P02.card_slots",
+        "product.P02.coin_pocket",
+        "product.P02.a4_fit",
+        "product.P02.limitations",
+        "product.P02.origin",
+        "product.P02.leather_grade",
+        "product.P02.craft",
+        "product.P02.resale_value",
+        "product.P02.stock",
+        "product.P02.loaded_comfort",
+        "product.P02.loaded_weight_g",
+        "product.P02.inner_dimensions_cm",
+        "product.P02.opening_dimensions_cm",
+        "product.P03.price",
+        "product.P03.material",
+        "product.P03.lining",
+        "product.P03.dimensions_cm",
+        "product.P03.empty_weight_g",
+        "product.P03.colors",
+        "product.P03.carry_modes",
+        "product.P03.strap_adjustable",
+        "product.P03.closure",
+        "product.P03.inner_flat_pockets",
+        "product.P03.card_slots",
+        "product.P03.coin_pocket",
+        "product.P03.a4_fit",
+        "product.P03.capacity",
+        "product.P03.limitations",
+        "product.P03.origin",
+        "product.P03.leather_grade",
+        "product.P03.craft",
+        "product.P03.resale_value",
+        "product.P03.stock",
+        "product.P03.loaded_comfort",
+        "product.P03.loaded_weight_g",
+        "product.P03.inner_dimensions_cm",
+        "product.P03.opening_dimensions_cm",
+        "task.scenario",
+        "task.advisor_instruction",
+        "chat.t1"
+      ],
+      "full_source_count": 82,
+      "selected_fact_count": 2,
+      "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+    },
+    "generation_system_characters": 930,
+    "generation_user_characters": 1648,
+    "old_generation_message_characters": 56523,
+    "new_generation_message_characters": 2578
+  },
+  {
+    "case_id": "N26",
+    "plan": {
+      "mode": "cleaner",
+      "current_request": "卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+      "scenario": "购后关怀",
+      "consulted_product_ids": [
+        "P03"
+      ],
+      "selected_product_ids": [
+        "P03"
+      ],
+      "must_answer": [
+        "能否用这瓶清洁剂",
+        "安全的下一步处理"
+      ],
+      "necessary_next_steps": [
+        {
+          "owner": "customer_then_advisor",
+          "action": "请提供瓶身标签或成分信息，顾问交售后判断处理方式。",
+          "reason": "当前清洁剂成分未知，需查看后处理",
+          "source_ids": [
+            "policy.5"
+          ]
+        }
+      ]
+    },
+    "generation_input": {
+      "task": {
+        "mode": "cleaner",
+        "current_request": "卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+        "scenario": "购后关怀",
+        "consulted_product_ids": [
+          "P03"
+        ],
+        "selected_product_ids": [
+          "P03"
+        ],
+        "must_answer": [
+          "能否用这瓶清洁剂",
+          "安全的下一步处理"
+        ],
+        "necessary_next_steps": [
+          {
+            "owner": "customer_then_advisor",
+            "action": "请提供瓶身标签或成分信息，顾问交售后判断处理方式。",
+            "reason": "当前清洁剂成分未知，需查看后处理",
+            "source_ids": [
+              "policy.5"
+            ]
+          }
+        ]
+      },
+      "chat": [
+        {
+          "id": "t1",
+          "role": "customer",
+          "kind": "text",
+          "text": "卡夹上蹭了点污渍，家里那瓶清洁剂能用吗？",
+          "quoted_text": ""
+        }
+      ],
+      "context": {},
+      "contact_constraints": {
+        "marketing_opt_out": false,
+        "communication": {
+          "mode": "responsive",
+          "historical_chat": false,
+          "latest_customer_id": "t1",
+          "message_date": null,
+          "source_ids": [
+            "chat.t1"
+          ]
+        },
+        "current_product_intents": [
+          {
+            "product_id": "P03",
+            "intent": "mentioned",
+            "message_id": "t1",
+            "text": "卡夹上蹭了点污渍"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "source_id": "policy.5",
+          "kind": "brand_policy",
+          "authority": "brand",
+          "status": "known",
+          "text": "成分未知的清洁剂先不要使用，也不要先在角落试用。"
+        }
+      ],
+      "advisor_instructions": {
+        "initial": "给她安全、好操作的处理建议。",
+        "revisions": []
+      },
+      "revision_context": null
+    },
+    "selection_audit": {
+      "version": "task-materials-2.1.0",
+      "selected": [
+        {
+          "source_id": "policy.5",
+          "reason": "回答清洁剂能否使用",
+          "selected_text": "成分未知的清洁剂先不要使用，也不要先在角落试用。",
+          "source_text": "## 5. 售后与保养\n\n为了简化评测，以下退换规则只描述本项目的虚构门店购买场景。购买渠道不明或涉及其他渠道时，先核实，不直接套用。这是本资料的覆盖范围，不代表品牌只支持门店退换或其他渠道没有售后。\n\n| 事项 | v0.4规则 | 顾问的表达边界 |\n| --- | --- | --- |\n| 未使用商品退换 | 门店购买后，自购买次日起算7个自然日内，商品未使用、标牌及原包装齐全、有购买凭证，可申请退货或换货；最终需门店检查确认 | 信息齐全时可说“按现有信息，符合申请条件”；不能保证立即批准或指定退款到账日 |\n| 条件不全或超过7日 | 不直接承诺适用上述未使用商品退换规则；可以协助核实后续处理方式 | 不说“随时可退”；也不在资料不全时直接下结论 |\n| 质量或损坏问题 | 由售后查看情况并评估处理；不能只因为超过7日就拒绝核实质量问题 | 可询问问题表现、购买记录，建议提供局部照片；不先断言是客户使用不当 |\n| 维修 | 是否能修、是否收费、费用和周期均需售后评估并告知客户，再由客户决定 | 不承诺免费维修、终身保修、修复如新或固定天数完成 |\n| 日常保养 | 避免长时间淋雨；沾水后用干燥软布轻轻吸干，在通风处自然晾干 | 不建议酒精擦拭、烘干或自行使用成分未知的清洁剂，也不建议先在角落试用未知清洁剂；不保证永不掉色、永不划伤 |\n\n例：虚构订单在2026-11-01购买，次日11-02为第1日，第7日为11-08。判断时必须有购买日期及本次评估日期；日期缺失时先核实。退换申请资格与是否存在质量问题分开判断。\n\n顾问通常只需说明与客户当前问题有关的规则，不把整张政策表发给客户。已提交售后的客户问单号或进度，先利用已有记录；工具没带入旧问题不是请客户重新描述故障的理由。缺失内部记录由顾问查询，不假称已查，也不让客户重复已给信息。轻微沾水可结合已知保养步骤作一般性安抚，不把无明显异常一律升级送修；未查看实物仍不作绝对无损或永不需修的诊断。\n\n",
+          "start": null,
+          "end": null,
+          "transformation": "negative_care_permission_from_policy"
+        }
+      ],
+      "selected_source_ids": [
+        "policy.5"
+      ],
+      "omitted_source_ids": [
+        "policy.1",
+        "policy.2",
+        "policy.3",
+        "policy.4",
+        "policy.6",
+        "policy.7",
+        "product.P01.price",
+        "product.P01.material",
+        "product.P01.lining",
+        "product.P01.dimensions_cm",
+        "product.P01.empty_weight_g",
+        "product.P01.colors",
+        "product.P01.carry_modes",
+        "product.P01.strap_adjustable",
+        "product.P01.closure",
+        "product.P01.inner_flat_pockets",
+        "product.P01.card_slots",
+        "product.P01.coin_pocket",
+        "product.P01.a4_fit",
+        "product.P01.capacity",
+        "product.P01.limitations",
+        "product.P01.origin",
+        "product.P01.leather_grade",
+        "product.P01.craft",
+        "product.P01.resale_value",
+        "product.P01.stock",
+        "product.P01.loaded_comfort",
+        "product.P01.loaded_weight_g",
+        "product.P01.inner_dimensions_cm",
+        "product.P01.opening_dimensions_cm",
+        "product.P02.price",
+        "product.P02.material",
+        "product.P02.lining",
+        "product.P02.dimensions_cm",
+        "product.P02.empty_weight_g",
+        "product.P02.colors",
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.closure",
+        "product.P02.inner_flat_pockets",
+        "product.P02.card_slots",
+        "product.P02.coin_pocket",
+        "product.P02.a4_fit",
+        "product.P02.capacity",
+        "product.P02.limitations",
+        "product.P02.origin",
+        "product.P02.leather_grade",
+        "product.P02.craft",
+        "product.P02.resale_value",
+        "product.P02.stock",
+        "product.P02.loaded_comfort",
+        "product.P02.loaded_weight_g",
+        "product.P02.inner_dimensions_cm",
+        "product.P02.opening_dimensions_cm",
+        "product.P03.price",
+        "product.P03.material",
+        "product.P03.lining",
+        "product.P03.dimensions_cm",
+        "product.P03.empty_weight_g",
+        "product.P03.colors",
+        "product.P03.carry_modes",
+        "product.P03.strap_adjustable",
+        "product.P03.closure",
+        "product.P03.inner_flat_pockets",
+        "product.P03.card_slots",
+        "product.P03.coin_pocket",
+        "product.P03.a4_fit",
+        "product.P03.capacity",
+        "product.P03.limitations",
+        "product.P03.origin",
+        "product.P03.leather_grade",
+        "product.P03.craft",
+        "product.P03.resale_value",
+        "product.P03.stock",
+        "product.P03.loaded_comfort",
+        "product.P03.loaded_weight_g",
+        "product.P03.inner_dimensions_cm",
+        "product.P03.opening_dimensions_cm",
+        "task.scenario",
+        "task.advisor_instruction",
+        "chat.t1"
+      ],
+      "full_source_count": 82,
+      "selected_fact_count": 1,
+      "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+    },
+    "generation_system_characters": 930,
+    "generation_user_characters": 1416,
+    "old_generation_message_characters": 58979,
+    "new_generation_message_characters": 2346
+  },
+  {
+    "case_id": "N21",
+    "plan": {
+      "mode": "fact_query",
+      "current_request": "黑色肩包能不能先给我留一个？周六想来看看。",
+      "scenario": "商品推荐",
+      "consulted_product_ids": [
+        "P02"
+      ],
+      "selected_product_ids": [
+        "P02"
+      ],
+      "must_answer": [
+        "承接客户所问库存和能否预留"
+      ],
+      "necessary_next_steps": [
+        {
+          "owner": "advisor",
+          "action": "核实当前所问商品颜色的库存及能否按客户到店计划预留，确认后回复。",
+          "reason": "当前选用资料尚需核对实时库存或预留状态",
+          "source_ids": [
+            "policy.4"
+          ]
+        }
+      ]
+    },
+    "generation_input": {
+      "task": {
+        "mode": "fact_query",
+        "current_request": "黑色肩包能不能先给我留一个？周六想来看看。",
+        "scenario": "商品推荐",
+        "consulted_product_ids": [
+          "P02"
+        ],
+        "selected_product_ids": [
+          "P02"
+        ],
+        "must_answer": [
+          "承接客户所问库存和能否预留"
+        ],
+        "necessary_next_steps": [
+          {
+            "owner": "advisor",
+            "action": "核实当前所问商品颜色的库存及能否按客户到店计划预留，确认后回复。",
+            "reason": "当前选用资料尚需核对实时库存或预留状态",
+            "source_ids": [
+              "policy.4"
+            ]
+          }
+        ]
+      },
+      "chat": [
+        {
+          "id": "t1",
+          "role": "customer",
+          "kind": "text",
+          "text": "黑色肩包能不能先给我留一个？周六想来看看。",
+          "quoted_text": ""
+        }
+      ],
+      "context": {},
+      "contact_constraints": {
+        "marketing_opt_out": false,
+        "communication": {
+          "mode": "responsive",
+          "historical_chat": false,
+          "latest_customer_id": "t1",
+          "message_date": null,
+          "source_ids": [
+            "chat.t1"
+          ]
+        },
+        "current_product_intents": [
+          {
+            "product_id": "P02",
+            "intent": "question",
+            "message_id": "t1",
+            "text": "黑色肩包能不能先给我留一个？"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "source_id": "product.P02.colors",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "墨黑",
+          "scope": {
+            "product_id": "P02",
+            "product_name": "轻行肩包",
+            "field": "colors"
+          }
+        }
+      ],
+      "advisor_instructions": {
+        "initial": "接住她的到店意向，帮她安排下一步。",
+        "revisions": []
+      },
+      "revision_context": null
+    },
+    "selection_audit": {
+      "version": "task-materials-2.1.0",
+      "selected": [
+        {
+          "source_id": "product.P02.colors",
+          "reason": "回答当前colors",
+          "selected_text": "墨黑",
+          "source_text": "墨黑、米白",
+          "start": null,
+          "end": null,
+          "transformation": "requested_catalog_color_only"
+        }
+      ],
+      "selected_source_ids": [
+        "product.P02.colors"
+      ],
+      "omitted_source_ids": [
+        "policy.1",
+        "policy.2",
+        "policy.3",
+        "policy.4",
+        "policy.5",
+        "policy.6",
+        "policy.7",
+        "product.P01.price",
+        "product.P01.material",
+        "product.P01.lining",
+        "product.P01.dimensions_cm",
+        "product.P01.empty_weight_g",
+        "product.P01.colors",
+        "product.P01.carry_modes",
+        "product.P01.strap_adjustable",
+        "product.P01.closure",
+        "product.P01.inner_flat_pockets",
+        "product.P01.card_slots",
+        "product.P01.coin_pocket",
+        "product.P01.a4_fit",
+        "product.P01.capacity",
+        "product.P01.limitations",
+        "product.P01.origin",
+        "product.P01.leather_grade",
+        "product.P01.craft",
+        "product.P01.resale_value",
+        "product.P01.stock",
+        "product.P01.loaded_comfort",
+        "product.P01.loaded_weight_g",
+        "product.P01.inner_dimensions_cm",
+        "product.P01.opening_dimensions_cm",
+        "product.P02.price",
+        "product.P02.material",
+        "product.P02.lining",
+        "product.P02.dimensions_cm",
+        "product.P02.empty_weight_g",
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.closure",
+        "product.P02.inner_flat_pockets",
+        "product.P02.card_slots",
+        "product.P02.coin_pocket",
+        "product.P02.a4_fit",
+        "product.P02.capacity",
+        "product.P02.limitations",
+        "product.P02.origin",
+        "product.P02.leather_grade",
+        "product.P02.craft",
+        "product.P02.resale_value",
+        "product.P02.stock",
+        "product.P02.loaded_comfort",
+        "product.P02.loaded_weight_g",
+        "product.P02.inner_dimensions_cm",
+        "product.P02.opening_dimensions_cm",
+        "product.P03.price",
+        "product.P03.material",
+        "product.P03.lining",
+        "product.P03.dimensions_cm",
+        "product.P03.empty_weight_g",
+        "product.P03.colors",
+        "product.P03.carry_modes",
+        "product.P03.strap_adjustable",
+        "product.P03.closure",
+        "product.P03.inner_flat_pockets",
+        "product.P03.card_slots",
+        "product.P03.coin_pocket",
+        "product.P03.a4_fit",
+        "product.P03.capacity",
+        "product.P03.limitations",
+        "product.P03.origin",
+        "product.P03.leather_grade",
+        "product.P03.craft",
+        "product.P03.resale_value",
+        "product.P03.stock",
+        "product.P03.loaded_comfort",
+        "product.P03.loaded_weight_g",
+        "product.P03.inner_dimensions_cm",
+        "product.P03.opening_dimensions_cm",
+        "task.scenario",
+        "task.advisor_instruction",
+        "chat.t1"
+      ],
+      "full_source_count": 82,
+      "selected_fact_count": 1,
+      "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+    },
+    "generation_system_characters": 930,
+    "generation_user_characters": 1514,
+    "old_generation_message_characters": 59515,
+    "new_generation_message_characters": 2444
+  },
+  {
+    "case_id": "X01",
+    "plan": {
+      "mode": "fact_query",
+      "current_request": "想送同事一个卡夹，她平时带四张银行卡。随行卡夹多少钱，装得下吗？",
+      "scenario": "商品推荐",
+      "consulted_product_ids": [
+        "P03"
+      ],
+      "selected_product_ids": [
+        "P03"
+      ],
+      "must_answer": [
+        "当前物品容量",
+        "价格或当前合计"
+      ],
+      "necessary_next_steps": []
+    },
+    "generation_input": {
+      "task": {
+        "mode": "fact_query",
+        "current_request": "想送同事一个卡夹，她平时带四张银行卡。随行卡夹多少钱，装得下吗？",
+        "scenario": "商品推荐",
+        "consulted_product_ids": [
+          "P03"
+        ],
+        "selected_product_ids": [
+          "P03"
+        ],
+        "must_answer": [
+          "当前物品容量",
+          "价格或当前合计"
+        ],
+        "necessary_next_steps": []
+      },
+      "chat": [
+        {
+          "id": "t1",
+          "role": "customer",
+          "kind": "text",
+          "text": "想送同事一个卡夹，她平时带四张银行卡。随行卡夹多少钱，装得下吗？",
+          "quoted_text": ""
+        }
+      ],
+      "context": {},
+      "contact_constraints": {
+        "marketing_opt_out": false,
+        "communication": {
+          "mode": "responsive",
+          "historical_chat": false,
+          "latest_customer_id": "t1",
+          "message_date": null,
+          "source_ids": [
+            "chat.t1"
+          ]
+        },
+        "current_product_intents": [
+          {
+            "product_id": "P03",
+            "intent": "mentioned",
+            "message_id": "t1",
+            "text": "想送同事一个卡夹"
+          },
+          {
+            "product_id": "P03",
+            "intent": "question",
+            "message_id": "t1",
+            "text": "随行卡夹多少钱"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "source_id": "product.P03.capacity",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "有4个独立卡位，可放4张标准银行卡大小的卡片",
+          "scope": {
+            "product_id": "P03",
+            "product_name": "随行卡夹",
+            "field": "capacity"
+          }
+        },
+        {
+          "source_id": "product.P03.price",
+          "kind": "product_known",
+          "authority": "brand",
+          "status": "known",
+          "text": "2,800元",
+          "scope": {
+            "product_id": "P03",
+            "product_name": "随行卡夹",
+            "field": "price"
+          }
+        }
+      ],
+      "advisor_instructions": {
+        "initial": "回复客户当前这句话。",
+        "revisions": []
+      },
+      "revision_context": null
+    },
+    "selection_audit": {
+      "version": "task-materials-2.1.0",
+      "selected": [
+        {
+          "source_id": "product.P03.capacity",
+          "reason": "回答当前capacity",
+          "selected_text": "有4个独立卡位，可放4张标准银行卡大小的卡片",
+          "source_text": "有4个独立卡位，可放4张标准银行卡大小的卡片；适合卡片收纳或小件礼物",
+          "start": null,
+          "end": null,
+          "transformation": "card_capacity_clause"
+        },
+        {
+          "source_id": "product.P03.price",
+          "reason": "回答当前price",
+          "selected_text": "2,800元",
+          "source_text": "2,800元",
+          "start": null,
+          "end": null,
+          "transformation": "exact_source_text"
+        }
+      ],
+      "selected_source_ids": [
+        "product.P03.capacity",
+        "product.P03.price"
+      ],
+      "omitted_source_ids": [
+        "policy.1",
+        "policy.2",
+        "policy.3",
+        "policy.4",
+        "policy.5",
+        "policy.6",
+        "policy.7",
+        "product.P01.price",
+        "product.P01.material",
+        "product.P01.lining",
+        "product.P01.dimensions_cm",
+        "product.P01.empty_weight_g",
+        "product.P01.colors",
+        "product.P01.carry_modes",
+        "product.P01.strap_adjustable",
+        "product.P01.closure",
+        "product.P01.inner_flat_pockets",
+        "product.P01.card_slots",
+        "product.P01.coin_pocket",
+        "product.P01.a4_fit",
+        "product.P01.capacity",
+        "product.P01.limitations",
+        "product.P01.origin",
+        "product.P01.leather_grade",
+        "product.P01.craft",
+        "product.P01.resale_value",
+        "product.P01.stock",
+        "product.P01.loaded_comfort",
+        "product.P01.loaded_weight_g",
+        "product.P01.inner_dimensions_cm",
+        "product.P01.opening_dimensions_cm",
+        "product.P02.price",
+        "product.P02.material",
+        "product.P02.lining",
+        "product.P02.dimensions_cm",
+        "product.P02.empty_weight_g",
+        "product.P02.colors",
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.closure",
+        "product.P02.inner_flat_pockets",
+        "product.P02.card_slots",
+        "product.P02.coin_pocket",
+        "product.P02.a4_fit",
+        "product.P02.capacity",
+        "product.P02.limitations",
+        "product.P02.origin",
+        "product.P02.leather_grade",
+        "product.P02.craft",
+        "product.P02.resale_value",
+        "product.P02.stock",
+        "product.P02.loaded_comfort",
+        "product.P02.loaded_weight_g",
+        "product.P02.inner_dimensions_cm",
+        "product.P02.opening_dimensions_cm",
+        "product.P03.material",
+        "product.P03.lining",
+        "product.P03.dimensions_cm",
+        "product.P03.empty_weight_g",
+        "product.P03.colors",
+        "product.P03.carry_modes",
+        "product.P03.strap_adjustable",
+        "product.P03.closure",
+        "product.P03.inner_flat_pockets",
+        "product.P03.card_slots",
+        "product.P03.coin_pocket",
+        "product.P03.a4_fit",
+        "product.P03.limitations",
+        "product.P03.origin",
+        "product.P03.leather_grade",
+        "product.P03.craft",
+        "product.P03.resale_value",
+        "product.P03.stock",
+        "product.P03.loaded_comfort",
+        "product.P03.loaded_weight_g",
+        "product.P03.inner_dimensions_cm",
+        "product.P03.opening_dimensions_cm",
+        "task.scenario",
+        "task.advisor_instruction",
+        "chat.t1"
+      ],
+      "full_source_count": 82,
+      "selected_fact_count": 2,
+      "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+    },
+    "generation_system_characters": 930,
+    "generation_user_characters": 1761,
+    "new_generation_message_characters": 2691
+  },
+  {
+    "case_id": "X02",
+    "plan": {
+      "mode": "positive_feedback",
+      "current_request": "这个包这阵子背着挺顺手的，谢谢你上次帮我选。",
+      "scenario": "购后关怀",
+      "consulted_product_ids": [
+        "P01"
+      ],
+      "selected_product_ids": [
+        "P01"
+      ],
+      "must_answer": [
+        "接住客户本次正面使用反馈"
+      ],
+      "necessary_next_steps": []
+    },
+    "generation_input": {
+      "task": {
+        "mode": "positive_feedback",
+        "current_request": "这个包这阵子背着挺顺手的，谢谢你上次帮我选。",
+        "scenario": "购后关怀",
+        "consulted_product_ids": [
+          "P01"
+        ],
+        "selected_product_ids": [
+          "P01"
+        ],
+        "must_answer": [
+          "接住客户本次正面使用反馈"
+        ],
+        "necessary_next_steps": []
+      },
+      "chat": [
+        {
+          "id": "t1",
+          "role": "customer",
+          "kind": "text",
+          "text": "这个包这阵子背着挺顺手的，谢谢你上次帮我选。",
+          "quoted_text": ""
+        }
+      ],
+      "context": {
+        "advisor_background": {
+          "text": "两周前在门店买了日行托特包。",
+          "source_id": "background.client_info"
+        }
+      },
+      "contact_constraints": {
+        "marketing_opt_out": false,
+        "communication": {
+          "mode": "responsive",
+          "historical_chat": false,
+          "latest_customer_id": "t1",
+          "message_date": null,
+          "source_ids": [
+            "chat.t1",
+            "background.client_info"
+          ]
+        },
+        "current_product_intents": []
+      },
+      "facts": [],
+      "advisor_instructions": {
+        "initial": "回复客户当前这句话。",
+        "revisions": []
+      },
+      "revision_context": null
+    },
+    "selection_audit": {
+      "version": "task-materials-2.1.0",
+      "selected": [],
+      "selected_source_ids": [],
+      "omitted_source_ids": [
+        "policy.1",
+        "policy.2",
+        "policy.3",
+        "policy.4",
+        "policy.5",
+        "policy.6",
+        "policy.7",
+        "product.P01.price",
+        "product.P01.material",
+        "product.P01.lining",
+        "product.P01.dimensions_cm",
+        "product.P01.empty_weight_g",
+        "product.P01.colors",
+        "product.P01.carry_modes",
+        "product.P01.strap_adjustable",
+        "product.P01.closure",
+        "product.P01.inner_flat_pockets",
+        "product.P01.card_slots",
+        "product.P01.coin_pocket",
+        "product.P01.a4_fit",
+        "product.P01.capacity",
+        "product.P01.limitations",
+        "product.P01.origin",
+        "product.P01.leather_grade",
+        "product.P01.craft",
+        "product.P01.resale_value",
+        "product.P01.stock",
+        "product.P01.loaded_comfort",
+        "product.P01.loaded_weight_g",
+        "product.P01.inner_dimensions_cm",
+        "product.P01.opening_dimensions_cm",
+        "product.P02.price",
+        "product.P02.material",
+        "product.P02.lining",
+        "product.P02.dimensions_cm",
+        "product.P02.empty_weight_g",
+        "product.P02.colors",
+        "product.P02.carry_modes",
+        "product.P02.strap_adjustable",
+        "product.P02.closure",
+        "product.P02.inner_flat_pockets",
+        "product.P02.card_slots",
+        "product.P02.coin_pocket",
+        "product.P02.a4_fit",
+        "product.P02.capacity",
+        "product.P02.limitations",
+        "product.P02.origin",
+        "product.P02.leather_grade",
+        "product.P02.craft",
+        "product.P02.resale_value",
+        "product.P02.stock",
+        "product.P02.loaded_comfort",
+        "product.P02.loaded_weight_g",
+        "product.P02.inner_dimensions_cm",
+        "product.P02.opening_dimensions_cm",
+        "product.P03.price",
+        "product.P03.material",
+        "product.P03.lining",
+        "product.P03.dimensions_cm",
+        "product.P03.empty_weight_g",
+        "product.P03.colors",
+        "product.P03.carry_modes",
+        "product.P03.strap_adjustable",
+        "product.P03.closure",
+        "product.P03.inner_flat_pockets",
+        "product.P03.card_slots",
+        "product.P03.coin_pocket",
+        "product.P03.a4_fit",
+        "product.P03.capacity",
+        "product.P03.limitations",
+        "product.P03.origin",
+        "product.P03.leather_grade",
+        "product.P03.craft",
+        "product.P03.resale_value",
+        "product.P03.stock",
+        "product.P03.loaded_comfort",
+        "product.P03.loaded_weight_g",
+        "product.P03.inner_dimensions_cm",
+        "product.P03.opening_dimensions_cm",
+        "task.scenario",
+        "task.advisor_instruction",
+        "background.client_info",
+        "chat.t1"
+      ],
+      "full_source_count": 83,
+      "selected_fact_count": 0,
+      "authority": "取材不是新业务授权；完整原来源仍用于程序和独立复核，生成只接收generation_input"
+    },
+    "generation_system_characters": 930,
+    "generation_user_characters": 1050,
+    "new_generation_message_characters": 1980
+  }
+]

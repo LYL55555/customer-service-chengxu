@@ -1,0 +1,662 @@
+[
+  {
+    "case_id": "J01",
+    "generation_materials": {
+      "version": "task-materials-2.5.0",
+      "plan": {
+        "mode": "fact_query",
+        "current_request": "从地铁站到公司得走个一刻钟，这只托特天天背会不会费劲？",
+        "scenario": "商品推荐",
+        "consulted_product_ids": [
+          "P01"
+        ],
+        "selected_product_ids": [
+          "P01"
+        ],
+        "must_answer": [
+          "空包自重，以及结合已知携带物品和步行情况的负重取舍"
+        ],
+        "necessary_next_steps": [],
+        "answer_basis": {
+          "known_fact_ids": [
+            "product.P01.empty_weight_g",
+            "product.P01.limitations",
+            "computed.load.P01"
+          ],
+          "relevant_unknown": [
+            {
+              "source_id": "product.P01.loaded_weight_g",
+              "scope": {
+                "product_id": "P01",
+                "product_name": "日行托特包",
+                "field": "loaded_weight_g"
+              }
+            },
+            {
+              "source_id": "product.P01.loaded_comfort",
+              "scope": {
+                "product_id": "P01",
+                "product_name": "日行托特包",
+                "field": "loaded_comfort"
+              }
+            }
+          ],
+          "completion": "给出使用判断并说明相关重量取舍即可；准备过程与数据缺口留advisor_note",
+          "judgment_scope": "结合已知空包重量、实际携带物和步行情境给有边界的日常负重判断，不要求实测证明；不把判断变成无条件舒适保证",
+          "ordinary_inference": {
+            "conclusion": "说明这个携带量和路程是否适合日常使用，并自然点出空包与装物后的重量取舍",
+            "basis": "已知空包重量、客户携带物和使用情境"
+          },
+          "optional_help": {
+            "action": "顾问可陪客户装入常带物品试背",
+            "usage": "相关可选帮助；三条各自独立，同一个合理建议可分别出现"
+          }
+        },
+        "reply_route": "normal"
+      },
+      "generation_input": {
+        "task": {
+          "mode": "fact_query",
+          "current_request": "从地铁站到公司得走个一刻钟，这只托特天天背会不会费劲？",
+          "scenario": "商品推荐",
+          "consulted_product_ids": [
+            "P01"
+          ],
+          "selected_product_ids": [
+            "P01"
+          ],
+          "must_answer": [
+            "空包自重，以及结合已知携带物品和步行情况的负重取舍"
+          ],
+          "necessary_next_steps": [],
+          "answer_basis": {
+            "known_fact_ids": [
+              "product.P01.empty_weight_g",
+              "computed.load.P01"
+            ],
+            "completion": "给出日常负重判断和有帮助的重量依据即可；相关试背与服务收尾可自然保留",
+            "judgment_scope": "结合空包重量、实际携带物和步行情境，说明日常适配与重量取舍",
+            "ordinary_inference": {
+              "conclusion": "说明这个携带量和路程是否适合日常使用，并自然点出空包与装物后的重量取舍",
+              "basis": "已知空包重量、客户携带物和使用情境"
+            },
+            "optional_help": {
+              "action": "顾问可陪客户装入常带物品试背",
+              "usage": "相关可选帮助；三条各自独立，同一个合理建议可分别出现"
+            }
+          },
+          "reply_route": "normal"
+        },
+        "chat": [
+          {
+            "id": "t1",
+            "role": "customer",
+            "kind": "text",
+            "text": "从地铁站到公司得走个一刻钟，这只托特天天背会不会费劲？",
+            "quoted_text": ""
+          }
+        ],
+        "context": {
+          "advisor_background": {
+            "text": "上下班坐地铁，平时包里就是一份A4资料和一瓶500毫升的水。",
+            "source_id": "background.client_info"
+          }
+        },
+        "contact_constraints": {
+          "marketing_opt_out": false,
+          "communication": {
+            "mode": "responsive",
+            "historical_chat": false,
+            "latest_customer_id": "t1",
+            "message_date": null,
+            "source_ids": [
+              "chat.t1",
+              "background.client_info"
+            ]
+          },
+          "current_product_intents": [
+            {
+              "product_id": "P01",
+              "intent": "question",
+              "message_id": "t1",
+              "text": "这只托特天天背会不会费劲？"
+            }
+          ]
+        },
+        "facts": [
+          {
+            "source_id": "product.P01.empty_weight_g",
+            "kind": "product_known",
+            "authority": "brand",
+            "status": "known",
+            "text": "约750 g",
+            "scope": {
+              "product_id": "P01",
+              "product_name": "日行托特包",
+              "field": "empty_weight_g"
+            }
+          },
+          {
+            "source_id": "computed.load.P01",
+            "kind": "derived_load",
+            "authority": "bounded_component_calculation_not_full_loaded_weight",
+            "status": "known",
+            "text": "空包约750克，加上500毫升水约500克，两项小计约1.25公斤；另加水瓶和资料等实际携带物的重量。",
+            "scope": {
+              "product_id": "P01",
+              "subtotal_g": 1250.0,
+              "parent_source_ids": [
+                "product.P01.empty_weight_g",
+                "background.client_info"
+              ]
+            }
+          }
+        ],
+        "advisor_instructions": {
+          "initial": "结合她日常携带和步行的情况回答，已经选定日行托特包。",
+          "revisions": []
+        },
+        "revision_context": null
+      },
+      "internal_validation": {
+        "facts": [
+          {
+            "source_id": "product.P01.loaded_weight_g",
+            "kind": "product_unknown",
+            "authority": "brand",
+            "status": "unknown",
+            "text": "未提供，取决于实际携带物品，不能编造总重",
+            "audience": "internal_validation",
+            "scope": {
+              "product_id": "P01",
+              "product_name": "日行托特包",
+              "field": "loaded_weight_g"
+            }
+          },
+          {
+            "source_id": "product.P01.loaded_comfort",
+            "kind": "product_unknown",
+            "authority": "brand",
+            "status": "unknown",
+            "text": "未提供，不能断言有或没有",
+            "audience": "internal_validation",
+            "scope": {
+              "product_id": "P01",
+              "product_name": "日行托特包",
+              "field": "loaded_comfort"
+            }
+          },
+          {
+            "source_id": "product.P01.limitations",
+            "kind": "product_known",
+            "authority": "brand",
+            "status": "known",
+            "text": "不称为超轻",
+            "audience": "internal_validation",
+            "scope": {
+              "product_id": "P01",
+              "product_name": "日行托特包",
+              "field": "limitations"
+            }
+          }
+        ]
+      },
+      "selection_audit": {
+        "version": "task-materials-2.5.0",
+        "selected": [
+          {
+            "source_id": "product.P01.empty_weight_g",
+            "reason": "回答当前weight",
+            "selected_text": "约750 g",
+            "source_text": "约750 g",
+            "start": null,
+            "end": null,
+            "transformation": "exact_source_text",
+            "audience": "customer"
+          },
+          {
+            "source_id": "product.P01.loaded_weight_g",
+            "reason": "回答当前weight",
+            "selected_text": "未提供，取决于实际携带物品，不能编造总重",
+            "source_text": "未提供，取决于实际携带物品，不能编造总重",
+            "start": null,
+            "end": null,
+            "transformation": "exact_source_text",
+            "audience": "internal_validation"
+          },
+          {
+            "source_id": "product.P01.loaded_comfort",
+            "reason": "回答当前weight",
+            "selected_text": "未提供，不能断言有或没有",
+            "source_text": "未提供，不能断言有或没有",
+            "start": null,
+            "end": null,
+            "transformation": "exact_source_text",
+            "audience": "internal_validation"
+          },
+          {
+            "source_id": "product.P01.limitations",
+            "reason": "只供内部检查重量分类",
+            "selected_text": "不称为超轻",
+            "source_text": "不称为超轻；电脑及厚文件夹是否放得下，需另核对尺寸；不保证防水",
+            "start": null,
+            "end": null,
+            "transformation": "weight_limit_clause_only",
+            "audience": "internal_validation"
+          },
+          {
+            "source_id": "computed.load.P01",
+            "reason": "根据当前明确水量和品牌空重计算两项小计",
+            "selected_text": "空包约750克，加上500毫升水约500克，两项小计约1.25公斤；另加水瓶和资料等实际携带物的重量。",
+            "source_text": "空包约750克，加上500毫升水约500克，两项小计约1.25公斤；另加水瓶和资料等实际携带物的重量。",
+            "start": null,
+            "end": null,
+            "transformation": "program_component_sum",
+            "audience": "customer"
+          }
+        ],
+        "selected_source_ids": [
+          "computed.load.P01",
+          "product.P01.empty_weight_g"
+        ],
+        "internal_source_ids": [
+          "product.P01.limitations",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g"
+        ],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.2",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.price",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.capacity",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "task.scenario",
+          "task.advisor_instruction",
+          "background.client_info",
+          "chat.t1"
+        ],
+        "full_source_count": 84,
+        "selected_fact_count": 2,
+        "authority": "对客事实用于生成；内部口径与unknown仅保存、校验和复核，不经工具schema回灌生成"
+      },
+      "hints": []
+    },
+    "load_reference": {
+      "version": "load-reference-1.0.0",
+      "active": true,
+      "volume_sources": [
+        {
+          "source_id": "background.client_info",
+          "source_quote": "平时包里就是一份A4资料和一瓶500毫升的水",
+          "volume_ml": 500.0,
+          "bottles": 1
+        }
+      ],
+      "records": [
+        {
+          "id": "computed.load.P01",
+          "product_id": "P01",
+          "empty_weight_g": 750.0,
+          "water_volume_ml": 500.0,
+          "water_weight_g": 500.0,
+          "subtotal_g": 1250.0,
+          "text": "空包约750克，加上500毫升水约500克，两项小计约1.25公斤；另加水瓶和资料等实际携带物的重量。",
+          "excluded_components": [
+            "水瓶",
+            "资料等其他携带物"
+          ],
+          "parent_source_ids": [
+            "product.P01.empty_weight_g",
+            "background.client_info"
+          ],
+          "volume_source_quote": "平时包里就是一份A4资料和一瓶500毫升的水",
+          "method": "水按约1克/毫升估算；空包约重+明确水量约重，只计算这两项，不含容器及其他携带物",
+          "authority": "bounded_component_calculation_not_full_loaded_weight"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "J02",
+    "generation_materials": {
+      "version": "task-materials-2.5.0",
+      "plan": {
+        "mode": "usage_judgment",
+        "current_request": "一万二千八比我预想的高。要是就装手机钥匙，平时出门背它合不合适？",
+        "scenario": "价格异议",
+        "consulted_product_ids": [
+          "P02"
+        ],
+        "selected_product_ids": [
+          "P02"
+        ],
+        "must_answer": [
+          "结合已有用途和约束给出选择判断",
+          "当前物品容量",
+          "已有外观偏好",
+          "价格或当前合计"
+        ],
+        "necessary_next_steps": [],
+        "answer_basis": {
+          "known_fact_ids": [
+            "product.P02.capacity",
+            "product.P02.price",
+            "policy.2"
+          ],
+          "relevant_unknown": [],
+          "completion": "用途适配和价格已回答就完整；不额外安排比较选款或再把价格判断交还客户",
+          "judgment_scope": "把客户已经说的用途与容量事实对照，给出日常适配判断；售价只用于报价",
+          "response_focus": "用已知携带物直接说明日常是否合适，保留正常礼貌和服务收尾"
+        },
+        "reply_route": "normal"
+      },
+      "generation_input": {
+        "task": {
+          "mode": "usage_judgment",
+          "current_request": "一万二千八比我预想的高。要是就装手机钥匙，平时出门背它合不合适？",
+          "scenario": "价格异议",
+          "consulted_product_ids": [
+            "P02"
+          ],
+          "selected_product_ids": [
+            "P02"
+          ],
+          "must_answer": [
+            "结合已有用途和约束给出选择判断",
+            "当前物品容量",
+            "已有外观偏好",
+            "价格或当前合计"
+          ],
+          "necessary_next_steps": [],
+          "answer_basis": {
+            "known_fact_ids": [
+              "product.P02.capacity",
+              "product.P02.price",
+              "policy.2"
+            ],
+            "completion": "用途适配和价格已回答就完整；不额外安排比较选款或再把价格判断交还客户",
+            "judgment_scope": "把客户已经说的用途与容量事实对照，给出日常适配判断；售价只用于报价",
+            "response_focus": "用已知携带物直接说明日常是否合适，保留正常礼貌和服务收尾"
+          },
+          "reply_route": "normal"
+        },
+        "chat": [
+          {
+            "id": "t1",
+            "role": "customer",
+            "kind": "text",
+            "text": "一万二千八比我预想的高。要是就装手机钥匙，平时出门背它合不合适？",
+            "quoted_text": ""
+          }
+        ],
+        "context": {
+          "advisor_background": {
+            "text": "想找一只下班买咖啡、周末出门时用的小包，喜欢低调。",
+            "source_id": "background.client_info"
+          }
+        },
+        "contact_constraints": {
+          "marketing_opt_out": false,
+          "communication": {
+            "mode": "responsive",
+            "historical_chat": false,
+            "latest_customer_id": "t1",
+            "message_date": null,
+            "source_ids": [
+              "chat.t1",
+              "background.client_info"
+            ]
+          },
+          "current_product_intents": []
+        },
+        "facts": [
+          {
+            "source_id": "product.P02.capacity",
+            "kind": "product_known",
+            "authority": "brand",
+            "status": "known",
+            "text": "可放普通手机、钥匙",
+            "scope": {
+              "product_id": "P02",
+              "product_name": "轻行肩包",
+              "field": "capacity"
+            }
+          },
+          {
+            "source_id": "product.P02.price",
+            "kind": "product_known",
+            "authority": "brand",
+            "status": "known",
+            "text": "12,800元",
+            "scope": {
+              "product_id": "P02",
+              "product_name": "轻行肩包",
+              "field": "price"
+            }
+          },
+          {
+            "source_id": "policy.2",
+            "kind": "brand_policy",
+            "authority": "brand",
+            "status": "known",
+            "text": "三款均使用小尺寸压印品牌标识"
+          }
+        ],
+        "advisor_instructions": {
+          "initial": "围绕她现在的日常用途帮她判断。",
+          "revisions": []
+        },
+        "revision_context": null
+      },
+      "internal_validation": {
+        "facts": []
+      },
+      "selection_audit": {
+        "version": "task-materials-2.5.0",
+        "selected": [
+          {
+            "source_id": "product.P02.capacity",
+            "reason": "回答当前capacity",
+            "selected_text": "可放普通手机、钥匙",
+            "source_text": "可放普通手机、钥匙、口红等小物",
+            "start": null,
+            "end": null,
+            "transformation": "select_supported_items_matching_current_use",
+            "audience": "customer"
+          },
+          {
+            "source_id": "product.P02.price",
+            "reason": "回答当前price",
+            "selected_text": "12,800元",
+            "source_text": "12,800元",
+            "start": null,
+            "end": null,
+            "transformation": "exact_source_text",
+            "audience": "customer"
+          },
+          {
+            "source_id": "policy.2",
+            "reason": "当前低调/小标识偏好",
+            "selected_text": "三款均使用小尺寸压印品牌标识",
+            "source_text": "## 2. 品牌设定\n\n- 名称：澄序 CHENGXU\n- 类别：虚构精品奢侈皮具品牌，低调、重视日常使用\n- 主要用途：日常通勤、轻便外出、小件礼物\n- 品牌表达：温暖、低调、具体；从客户的用途和顾虑出发，主动提供有帮助的信息\n- 顾问目标：先完成当前任务；客户已选商品只问事实，就直接答清。开放推荐或真实比较时再结合需求帮助选择；尊重预算和选择，明确拒绝后不继续劝买\n- 常见客户资料：称呼、主动表达的用途、颜色偏好、预算、购买记录和最近聊天\n- 初始资料不包含客户真实身份、联系方式或任何真实个人数据\n\n表达能一句答清就一句；必要时用一至三句短句。只有完成当前任务确实需要才提一个轻量问题，最多一个是上限，不是每条都要有问题。客户已提出的选择方向不再反问确认。不默认使用表情、亲昵称呼、夸张感叹或反复催促。已知称呼可使用；不知道称呼时使用“您好”或直接接话，不猜姓名、性别或关系。\n\n### 品牌与设计特点（全部为本项目虚构）\n\n| 特点 | 具体设定 | 顾问可以介绍的内容 | 表达边界 |\n| --- | --- | --- | --- |\n| 低调标识 | 三款均使用小尺寸压印品牌标识，没有大面积醒目标识 | “它的标识比较小，外观更简洁” | 不宣称有身份门槛、稀缺身份或比其他品牌更高级 |\n| 统一皮面 | 三款均采用哑光细纹牛皮，指表面光泽较低、能看到细小纹理 | 可以说明材质和外观，不需要堆砌皮革术语 | 细纹不等于防刮；不据此承诺耐用年限、防水或不掉色 |\n| 基础配色 | 目录仅使用墨黑、暖棕、米白三种颜色，各商品可选颜色见下表 | 结合客户已知颜色偏好介绍 | 不保证适合所有衣服或所有场合；不把目录颜色当作现货 |\n| 日常收纳 | 托特包有内侧平口袋；肩包有可调节肩带和拉链开合；卡夹有4个独立卡位 | 说明具体部件能怎样配合使用需求 | 不据此保证东西绝不会掉、背着不累、物品一定放得下 |\n\n介绍商品时挑与客户问题有关的一两点即可。这些特点为顾问提供具体信息，并不能证明商品一定“值这个价”或比客户提到的另一款更好；目前没有品牌历史、产地、成本或手工工艺资料可用于解释差价。\n\n",
+            "start": 486,
+            "end": 500,
+            "transformation": "exact_source_text",
+            "audience": "customer"
+          }
+        ],
+        "selected_source_ids": [
+          "policy.2",
+          "product.P02.capacity",
+          "product.P02.price"
+        ],
+        "internal_source_ids": [],
+        "omitted_source_ids": [
+          "policy.1",
+          "policy.3",
+          "policy.4",
+          "policy.5",
+          "policy.6",
+          "policy.7",
+          "product.P01.price",
+          "product.P01.material",
+          "product.P01.lining",
+          "product.P01.dimensions_cm",
+          "product.P01.empty_weight_g",
+          "product.P01.colors",
+          "product.P01.carry_modes",
+          "product.P01.strap_adjustable",
+          "product.P01.closure",
+          "product.P01.inner_flat_pockets",
+          "product.P01.card_slots",
+          "product.P01.coin_pocket",
+          "product.P01.a4_fit",
+          "product.P01.capacity",
+          "product.P01.limitations",
+          "product.P01.origin",
+          "product.P01.leather_grade",
+          "product.P01.craft",
+          "product.P01.resale_value",
+          "product.P01.stock",
+          "product.P01.loaded_comfort",
+          "product.P01.loaded_weight_g",
+          "product.P01.inner_dimensions_cm",
+          "product.P01.opening_dimensions_cm",
+          "product.P02.material",
+          "product.P02.lining",
+          "product.P02.dimensions_cm",
+          "product.P02.empty_weight_g",
+          "product.P02.colors",
+          "product.P02.carry_modes",
+          "product.P02.strap_adjustable",
+          "product.P02.closure",
+          "product.P02.inner_flat_pockets",
+          "product.P02.card_slots",
+          "product.P02.coin_pocket",
+          "product.P02.a4_fit",
+          "product.P02.limitations",
+          "product.P02.origin",
+          "product.P02.leather_grade",
+          "product.P02.craft",
+          "product.P02.resale_value",
+          "product.P02.stock",
+          "product.P02.loaded_comfort",
+          "product.P02.loaded_weight_g",
+          "product.P02.inner_dimensions_cm",
+          "product.P02.opening_dimensions_cm",
+          "product.P03.price",
+          "product.P03.material",
+          "product.P03.lining",
+          "product.P03.dimensions_cm",
+          "product.P03.empty_weight_g",
+          "product.P03.colors",
+          "product.P03.carry_modes",
+          "product.P03.strap_adjustable",
+          "product.P03.closure",
+          "product.P03.inner_flat_pockets",
+          "product.P03.card_slots",
+          "product.P03.coin_pocket",
+          "product.P03.a4_fit",
+          "product.P03.capacity",
+          "product.P03.limitations",
+          "product.P03.origin",
+          "product.P03.leather_grade",
+          "product.P03.craft",
+          "product.P03.resale_value",
+          "product.P03.stock",
+          "product.P03.loaded_comfort",
+          "product.P03.loaded_weight_g",
+          "product.P03.inner_dimensions_cm",
+          "product.P03.opening_dimensions_cm",
+          "task.scenario",
+          "task.advisor_instruction",
+          "background.client_info",
+          "chat.t1"
+        ],
+        "full_source_count": 83,
+        "selected_fact_count": 3,
+        "authority": "对客事实用于生成；内部口径与unknown仅保存、校验和复核，不经工具schema回灌生成"
+      },
+      "hints": []
+    },
+    "load_reference": {
+      "version": "load-reference-1.0.0",
+      "active": false,
+      "volume_sources": [],
+      "records": []
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "app_version": "0.16.2",
+  "offline_revalidation": "offline-revalidation-1.2.0",
+  "old_evidence_files": 1120,
+  "old_hashes_unchanged": true,
+  "brand_dataset_devices_web_unchanged": true,
+  "raw_records_unchanged": true,
+  "all_original_and_new_strings_exact": true,
+  "request_stage_uniqueness": true,
+  "real_requests": 23,
+  "generations": 9,
+  "reviews": 14,
+  "tokens": 647333,
+  "auto_retries": 0,
+  "key_scan_passed": true,
+  "health": {
+    "http://127.0.0.1:8765/": 200,
+    "http://127.0.0.1:8765/api/meta": 200,
+    "http://127.0.0.1:8768/": 200,
+    "http://127.0.0.1:8769/": 200
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "calls": [
+    {
+      "case_id": "N16",
+      "stage": "review",
+      "purpose": "按修正尺度复核原三条，独立处理原复核格式错误，不重新生成",
+      "app_version": "0.20.0",
+      "prompt_version": "review-1.5.0",
+      "started_at": "2026-11-05T14:52:51.326946+00:00",
+      "request_sha256": "4ce205708ee2d84d1d6cbdfa45b9d16fde75e4c3a7161b5617bbec08fe2f8343",
+      "state": "returned",
+      "completed_at": "2026-11-05T14:53:00.652740+00:00",
+      "usage": {
+        "prompt_tokens": 30166,
+        "completion_tokens": 1793,
+        "total_tokens": 31959,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 30038
+      },
+      "provider_status": null,
+      "provider_response_id": "7de5f740-1587-4a35-bbdc-d400a68aa773",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N44",
+      "stage": "generation",
+      "purpose": "验证按用途给判断，减少内部自述与额外比较任务",
+      "app_version": "0.20.0",
+      "prompt_version": "2.2.0",
+      "started_at": "2026-11-05T14:53:00.692218+00:00",
+      "request_sha256": "9db1da669b8b0fb3e2c91dbe059676fe982f467e71977c21b71f55fdaaa18c3f",
+      "state": "returned",
+      "completed_at": "2026-11-05T14:53:04.056015+00:00",
+      "usage": {
+        "prompt_tokens": 2578,
+        "completion_tokens": 387,
+        "total_tokens": 2965,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2578
+      },
+      "provider_status": null,
+      "provider_response_id": "f3e02cdb-3703-4dae-aee2-78f9b308f6a4",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "N44",
+      "stage": "review",
+      "purpose": "验证按用途给判断，减少内部自述与额外比较任务",
+      "app_version": "0.20.0",
+      "prompt_version": "review-1.5.0",
+      "started_at": "2026-11-05T14:53:04.075726+00:00",
+      "request_sha256": "6c8c76822a79db6236e75aa53944002de4c8214123db7eaa3edcceb2676e210e",
+      "state": "returned",
+      "completed_at": "2026-11-05T14:53:11.786165+00:00",
+      "usage": {
+        "prompt_tokens": 29370,
+        "completion_tokens": 1526,
+        "total_tokens": 30896,
+        "prompt_tokens_details": {
+          "cached_tokens": 11904
+        },
+        "prompt_cache_hit_tokens": 11904,
+        "prompt_cache_miss_tokens": 17466
+      },
+      "provider_status": null,
+      "provider_response_id": "58d6d5b3-3903-4f5b-9a6f-485f72d438be",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J01",
+      "stage": "generation",
+      "purpose": "未进入写作示例的新问法：负重判断",
+      "app_version": "0.20.0",
+      "prompt_version": "2.2.0",
+      "started_at": "2026-11-05T14:53:11.820394+00:00",
+      "request_sha256": "9d91bfe286d0f80c6c38c31e2a4140ec8bc5b799c6076783d00ce0d7629be77b",
+      "state": "failed",
+      "error_code": "invalid_output",
+      "completed_at": "2026-11-05T14:53:17.311039+00:00",
+      "usage": {
+        "prompt_tokens": 3718,
+        "completion_tokens": 656,
+        "total_tokens": 4374,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 2822
+      },
+      "provider_status": null,
+      "provider_response_id": "58f33a96-4a0a-4887-bdf3-4b9ebe3535cd",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J02",
+      "stage": "generation",
+      "purpose": "未进入写作示例的新问法：嫌贵但用途合适",
+      "app_version": "0.20.0",
+      "prompt_version": "2.2.0",
+      "started_at": "2026-11-05T14:53:17.335986+00:00",
+      "request_sha256": "bf17feca3d77a176a8d56549196dacfefda77eb5d6bd7bd22fca0a442dee42cc",
+      "state": "returned",
+      "completed_at": "2026-11-05T14:53:21.713461+00:00",
+      "usage": {
+        "prompt_tokens": 2436,
+        "completion_tokens": 474,
+        "total_tokens": 2910,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1540
+      },
+      "provider_status": null,
+      "provider_response_id": "4ab26e08-b853-449d-aba2-ea993fa8e01e",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J02",
+      "stage": "review",
+      "purpose": "未进入写作示例的新问法：嫌贵但用途合适",
+      "app_version": "0.20.0",
+      "prompt_version": "review-1.5.0",
+      "started_at": "2026-11-05T14:53:21.730983+00:00",
+      "request_sha256": "b2b48940d095cb846d328ea3b080761a55261656688c7726bb2efe1e6dbda96e",
+      "state": "returned",
+      "completed_at": "2026-11-05T14:53:29.176251+00:00",
+      "usage": {
+        "prompt_tokens": 29806,
+        "completion_tokens": 1705,
+        "total_tokens": 31511,
+        "prompt_tokens_details": {
+          "cached_tokens": 12032
+        },
+        "prompt_cache_hit_tokens": 12032,
+        "prompt_cache_miss_tokens": 17774
+      },
+      "provider_status": null,
+      "provider_response_id": "049ee777-73f6-4ef8-bbd7-e51351b5104d",
+      "returned_model": "deepseek-flash"
+    },
+    {
+      "case_id": "J01",
+      "stage": "review",
+      "purpose": "拒绝多余target_index后的原三段首次诊断复核；不接受结构、不再生成、不开放复制",
+      "app_version": "0.20.0",
+      "prompt_version": "review-1.5.0",
+      "started_at": "2026-11-05T14:56:13.769182+00:00",
+      "request_sha256": "3bbe1ca243b6a8436a2c2feca0ada965d98430a258013777e1fa4c574786600c",
+      "state": "returned",
+      "completed_at": "2026-11-05T14:56:24.814783+00:00",
+      "usage": {
+        "prompt_tokens": 31299,
+        "completion_tokens": 2539,
+        "total_tokens": 33838,
+        "prompt_tokens_details": {
+          "cached_tokens": 12032
+        },
+        "prompt_cache_hit_tokens": 12032,
+        "prompt_cache_miss_tokens": 19267
+      },
+      "provider_status": null,
+      "provider_response_id": "d2cd794d-8489-4026-add8-7621eb98d9b8",
+      "returned_model": "deepseek-flash"
+    }
+  ],
+  "results": [
+    {
+      "case_id": "N16",
+      "run_id": "d59d6137cbc44ae6b8ed7262e5fe4468",
+      "record": "raw_runs/d59d6137cbc44ae6b8ed7262e5fe4468.json",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "generation_count": 0,
+      "review_count": 1
+    },
+    {
+      "case_id": "N44",
+      "run_id": "d284fb9716ae44b6a6becab8cad65ba6",
+      "record": "raw_runs/d284fb9716ae44b6a6becab8cad65ba6.json",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "generation_count": 1,
+      "review_count": 1
+    },
+    {
+      "case_id": "J01",
+      "run_id": "b44b4a42463f4e57a35690e5a5ced559",
+      "record": "raw_runs/b44b4a42463f4e57a35690e5a5ced559.json",
+      "status": "error",
+      "error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（$.messages variants），不属于可明确兼容的空内部字段；原响应已保留，整组未采用。",
+        "retryable": false
+      },
+      "verdict": "pass",
+      "generation_count": 1,
+      "review_count": 1,
+      "initial_record": "raw_runs/ee63545eb5bd40c78982625072c0923f.json",
+      "diagnostic_only": true
+    },
+    {
+      "case_id": "J02",
+      "run_id": "34b48463c43e4e5abd54da67bbe92128",
+      "record": "raw_runs/34b48463c43e4e5abd54da67bbe92128.json",
+      "status": "success",
+      "error": null,
+      "verdict": "pass",
+      "generation_count": 1,
+      "review_count": 1
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "case_id": "N49",
+    "source": "outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N49_9fef96447d354b92958826bbafc74fc1.json",
+    "status": "error",
+    "error": {
+      "code": "state_mismatch",
+      "message": "独立复核与生成结果的客户状态不一致，请按完整消息核对商品范围与当前问题。",
+      "retryable": false
+    },
+    "messages": [
+      "好的，不帮您留。日行托特包的价格是18,800元，您慢慢想，有需要再找我就好。",
+      "明白，先帮您留着决定空间，不预留。托特是18,800元，想清楚价格这块随时和我说。",
+      "好的，不会帮您预留。日行托特包目前售价18,800元，价格上您再考虑看看，有想法我们再聊。"
+    ],
+    "verdict": "pass",
+    "state_comparison": {
+      "local_hint": "comparing",
+      "generator_state": "comparing",
+      "reviewer_state": "unclear",
+      "local_hint_enforced": false,
+      "local_hint_differs": true,
+      "semantically_compatible": false,
+      "compatibility_reason": "状态差异可能改变购买、暂缓或拒绝范围，必须按当前客户正文核对",
+      "source_ids": [
+        "chat.t1"
+      ]
+    }
+  },
+  {
+    "case_id": "N43",
+    "source": "outputs/formal_business_v2_v0.15.2_2026-11-04/initial_raw_runs/N43_1ebbb56f698044739e1044213a6e6a6d.json",
+    "status": "success",
+    "error": null,
+    "messages": [
+      "没关系，这周末的“日常收纳小聚”是11月14日周六14:00—16:00，在澄序广场8号精品店。之后如果有类似活动，我再跟您说一声。",
+      "这周末来不了不影响的。最近这场安排在11月14日周六下午两点到四点，澄序广场8号精品店，时段内会演示三款包怎么收纳日常物品，也可以自己带东西对照，短暂停留就行。",
+      "之后这类活动我会留意告诉您。这次的是11月14日周六14:00—16:00，澄序广场8号精品店，到场可以自由体验，带一位朋友的话，参加人的称呼需要登记一下。"
+    ],
+    "verdict": "pass",
+    "state_comparison": {
+      "local_hint": null,
+      "generator_state": "other",
+      "reviewer_state": "other",
+      "local_hint_enforced": false,
+      "local_hint_differs": false,
+      "semantically_compatible": true,
+      "compatibility_reason": "两个模型标签一致，仍需核对消息内容和来源",
+      "source_ids": [
+        "chat.t1"
+      ]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "validator_app_version": "0.21.1",
+  "j01_saved_original_copy_clicked": true,
+  "j01_copy_success_toast_observed": true,
+  "j02_saved_original_copy_buttons": 3,
+  "original_selection": {
+    "conversation": "83be6b7ba20d41b1943269c2eeed24ac",
+    "customer": "c19289b052d2449481bcd42da33c6842"
+  },
+  "restored_selection": {
+    "conversation": "83be6b7ba20d41b1943269c2eeed24ac",
+    "customer": "c19289b052d2449481bcd42da33c6842"
+  },
+  "restored_original": true,
+  "n16_not_opened_or_regenerated": true,
+  "new_model_requests": 0
+}

@@ -1,0 +1,10 @@
+{
+  "app_version": "0.19.0",
+  "ui_version": "ui-2.0.0 unchanged",
+  "source_package": "SOURCE_v0.19.0.zip",
+  "generation_prompt": "2.1.0",
+  "review_prompt": "1.4.0",
+  "brand": "v0.4 unchanged",
+  "formal50_original_unchanged": true,
+  "submission_ready": false
+}

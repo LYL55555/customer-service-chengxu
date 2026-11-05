@@ -1,0 +1,22 @@
+{
+  "app_version": "0.21.1",
+  "prompt_version": "2.3.0",
+  "review_prompt": "review-1.6.0",
+  "review_model": "deepseek-flash",
+  "baseline_model": "deepseek-flash",
+  "alternative_model": "deepseek-v4-pro",
+  "requests": 4,
+  "generations": 2,
+  "reviews": 2,
+  "total_tokens": 69981,
+  "retries": 0,
+  "baseline_new_generation_calls": 0,
+  "n16_calls": 0,
+  "production_code_changes": false,
+  "env_changes": false,
+  "ui_changes": false,
+  "formal50_rerun": false,
+  "packaging_paused": true,
+  "decision": "不接入替代模型，不自动开展下一轮模型或提示词试验",
+  "reason": "重量组成和内部口径局部改善，但两组没有正常交付，J02结构不合规且仍有额外权衡/比较；J01包含检查器误拦和复核理由偏严，不能全部归罪生成模型。两组不足以证明普遍稳定性。"
+}

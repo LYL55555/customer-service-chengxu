@@ -1,0 +1,989 @@
+{
+  "summary": {
+    "app_version": "0.20.0",
+    "gen_prompt": "2.2.0",
+    "review_prompt": "1.5.0",
+    "task_materials": "2.4.0",
+    "brand": "v0.4 unchanged",
+    "ui": "ui2.0.0 unchanged",
+    "generation_calls": 3,
+    "review_calls": 4,
+    "requests": 7,
+    "total_tokens": 138453,
+    "auto_retries": 0,
+    "formal50_rerun": false,
+    "packaging_paused": true,
+    "release_ready": false,
+    "scope_corrected": true,
+    "n16_reused_original_unchanged": true,
+    "remaining": [
+      "J01生成多出target_index字段，未交付",
+      "生成仍有内部自述/无关限制/额外比较",
+      "N44入门款比较缺依据而复核只判polish"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "N16",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "平时通勤带A4资料和一瓶水。",
+        "conversation": "客户：我每天走路二十分钟，托特装东西会不会太沉？",
+        "related_info": "",
+        "advisor_instruction": "结合她的使用情况帮她判断。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N16",
+        "conversation_id": "business-v2-chat-N16",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "messages": [
+        "日行托特包空包约750g，不算超轻的款。您平时带A4资料加一瓶水，包本身能装下，但装进去后总重量会增加，增加的多少看资料厚薄和水量。每天走二十分钟的话，这个分量多数人能接受，不过肩带压在肩上的感觉还是得您亲自试过才准，方便的话可以带常带的东西来试背走走。",
+        "先跟您交个底，日行托特空包大约750g，我们也不会说它超轻。它的好处是A4资料、500mL水杯都放得下。您每天走二十分钟，装满后重量肯定比空包多，具体多多少要看您带多少资料，这个我没法替您估准，背着舒不舒服也因人而异，您要是来店里，我可以陪您装上平时带的东西走一走看。",
+        "日行托特包空包约750g，装A4资料和一瓶水没问题。走路二十分钟带上这些东西，会比空包沉一些，实际多重取决于资料的量和水量，我这边没有装物后的总重数据，不好替您下结论。您是每天都这么通勤的话，建议先照着平时的东西装一装试背一下，再决定合不合适。"
+      ],
+      "program_status": "success",
+      "error": null,
+      "model_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "background.client_info"
+        ],
+        "current_need": "客户询问日行托特包装东西后、每天步行二十分钟通勤是否会太沉，需要结合空包约750g、已知携带A4资料和一瓶水，给出有边界的负重判断。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "日行托特包空包约750g，不算超轻的款。您平时带A4资料加一瓶水，包本身能装下，但装进去后总重量会增加，增加的多少看资料厚薄和水量。每天走二十分钟的话，这个分量多数人能接受，不过肩带压在肩上的感觉还是得您亲自试过才准，方便的话可以带常带的东西来试背走走。",
+            "answered": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_weight_g",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_comfort",
+                "candidate_span_id": "reply_1.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "空包约750g并有“不称为超轻”的目录边界，直接回答负重的起点，删掉客户就少了核心重量事实。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "把已知携带物（A4资料、一瓶水）与可放容量对上，并说明装物后总重会增加、多少取决于带多少，属有边界判断。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“这个分量多数人能接受”是规则允许的笼统日常判断，可保留；可压缩为更口语的“走二十分钟问题不大”，试背建议属相关可选帮助，可留可省。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "先跟您交个底，日行托特空包大约750g，我们也不会说它超轻。它的好处是A4资料、500mL水杯都放得下。您每天走二十分钟，装满后重量肯定比空包多，具体多多少要看您带多少资料，这个我没法替您估准，背着舒不舒服也因人而异，您要是来店里，我可以陪您装上平时带的东西走一走看。",
+            "answered": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_weight_g",
+                "candidate_span_id": "reply_2.s3"
+              },
+              {
+                "source_id": "product.P01.loaded_comfort",
+                "candidate_span_id": "reply_2.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "重量与“不建议称为超轻”有目录依据；“先跟您交个底”“我们也不会说”是向客户解释坦诚，属可省的自述，删后仍完整。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "500mL水杯与A4资料均属目录已确认容量，回应客户关心的装得下问题。"
+              },
+              {
+                "candidate_span_id": "reply_2.s3",
+                "purpose": "judgment",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "装物后必然比空包重、具体取决于携带量属实；未编总重与舒适结论，试背邀请是相关可选帮助，可从轻润色“肯定比空包多”使其更自然。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "日行托特包空包约750g，装A4资料和一瓶水没问题。走路二十分钟带上这些东西，会比空包沉一些，实际多重取决于资料的量和水量，我这边没有装物后的总重数据，不好替您下结论。您是每天都这么通勤的话，建议先照着平时的东西装一装试背一下，再决定合不合适。",
+            "answered": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.a4_fit",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P01.loaded_weight_g",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_comfort",
+                "candidate_span_id": "reply_3.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "空包重量与A4资料、一瓶水可放均有目录依据，直接回应客户问题的一半。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "会比空包重、取决于携带量属有边界推断；“我这边没有装物后的总重数据”是内部数据缺口自述，可省成“具体多重得看您带多少”。"
+              },
+              {
+                "candidate_span_id": "reply_3.s3",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "建议用平时物品试背是相关可选帮助，不构成必须到店或舒适保证，可保留。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "diagnostic_only": false,
+      "generation_count": 0,
+      "review_count": 1,
+      "record": "raw_runs/d59d6137cbc44ae6b8ed7262e5fe4468.json",
+      "generation_version": "0.19.0",
+      "review_version": "review-1.5.0",
+      "independent": {
+        "content": "日常判断可用，旧措辞保留编辑意见，不再当事实阻断",
+        "detail": "这轮不重新生成。多数人能接受只需考虑润色；相关试背出现三条不是失败。“我没法替您估准”“我这边没有装物后的总重数据”仍是可省内部自述，原文没有人工改掉。新复核对第二条后半判keep，编辑评读仍不够细，独立列出，不将其升级为整组不可用。原格式失败仍留历史；本次有效复核另存关联分支，进入当前有效回复。"
+      }
+    },
+    {
+      "case_id": "N44",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "",
+        "conversation": "客户：肩包比我原来想的贵一点，平时就带手机钥匙，日常用真的合适吗？",
+        "related_info": "",
+        "advisor_instruction": "结合她的用途帮她判断。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {
+        "advisor_id": "business-v2-advisor",
+        "customer_id": "business-v2-N44",
+        "conversation_id": "business-v2-chat-N44",
+        "profile_revision": 1,
+        "preferences": "",
+        "marketing_opt_out": false
+      },
+      "messages": [
+        "轻行肩包日常放手机和钥匙是刚好合适的，容量本身就是按这类随身小物来做的，不会太空也不会挤。价格是12,800元，确实比一些入门款高，您觉得贵也正常。如果您日常就是手机加钥匙这两样，它是够用且顺手的；有需要随时找我～",
+        "您平时只带手机和钥匙的话，轻行肩包是合适的——它能放普通手机和钥匙，日常出门这些正好装下。这款是12,800元，价格上比您预想的高一点我能理解。如果您更看重轻便和日常够用，它是合适的；要再看别的也随时和我说。",
+        "理解您觉得价格偏高，轻行肩包是12,800元。从使用上看，它能放普通手机和钥匙，您说的日常携带刚好覆盖，出门背着不累赘，日常用是合适的。您如果之后想确认手感或上身效果，随时找我～"
+      ],
+      "program_status": "success",
+      "error": null,
+      "model_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1"
+        ],
+        "current_need": "客户觉得肩包价格偏高，说明平时只带手机和钥匙，问日常使用是否合适；需结合已知容量给适配判断并说明价格12,800元。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "轻行肩包日常放手机和钥匙是刚好合适的，容量本身就是按这类随身小物来做的，不会太空也不会挤。价格是12,800元，确实比一些入门款高，您觉得贵也正常。如果您日常就是手机加钥匙这两样，它是够用且顺手的；有需要随时找我～",
+            "answered": [
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.full"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_1.s3"
+              },
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "核心适配判断有依据；“按这类随身小物来做、不会太空也不会挤”是对目录已给容量的再演绎，客户没问空挤程度，可压缩为“日常带手机和钥匙刚好合适”。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "报价是核心；“比一些入门款高”没有竞品或价格构成依据，属于自行给人的价格定位，建议只留12,800元和接住嫌贵的感受。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "已答适配后的条件复述与s1重复，可只保留“有需要随时找我”的服务收尾。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "您平时只带手机和钥匙的话，轻行肩包是合适的——它能放普通手机和钥匙，日常出门这些正好装下。这款是12,800元，价格上比您预想的高一点我能理解。如果您更看重轻便和日常够用，它是合适的；要再看别的也随时和我说。",
+            "answered": [
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.full"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "直接把客户所带手机钥匙与已确认容量对照，是核心适配回答，事实无越界。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "报出12,800元并接住客户觉得贵，符合嫌贵不等于索要折扣的处理。"
+              },
+              {
+                "candidate_span_id": "reply_2.s3",
+                "purpose": "relationship",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "前一分句把已答的适配再交回客户权衡，可省略；保留“要再看别的也随时和我说”作为正常收尾。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "理解您觉得价格偏高，轻行肩包是12,800元。从使用上看，它能放普通手机和钥匙，您说的日常携带刚好覆盖，出门背着不累赘，日常用是合适的。您如果之后想确认手感或上身效果，随时找我～",
+            "answered": [
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.full"
+              },
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "product.P02.empty_weight_g",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "报价与理解嫌贵的情绪构成核心回应，无事实越界。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "容量对照是核心；“出门背着不累赘”由空包420g和仅手机钥匙推得的日常轻便说法，边界可接受，建议口语化为“日常带着轻便”，避免像实测负重结论。"
+              },
+              {
+                "candidate_span_id": "reply_3.s3",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "“确认手感或上身效果”是可选到店体验，不是回答前提，删掉后报价与适配仍完整，可建议省略。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "diagnostic_only": false,
+      "generation_count": 1,
+      "review_count": 1,
+      "record": "raw_runs/d284fb9716ae44b6a6becab8cad65ba6.json",
+      "generation_version": "0.20.0",
+      "review_version": "review-1.5.0",
+      "independent": {
+        "content": "核心回答有帮助，第一条附加比较仍缺来源，第二条仍有多余展开",
+        "detail": "报价12,800元、手机钥匙用途适配正确；第三条最接近可选回复，末尾可选体验属于正常服务帮助。第一条“比一些入门款高”没有比较对象和来源，应省掉，不能把它当已核对的市场事实；“不会太空也不会挤”比当前任务更具体，没必要展开。复核自己写了没有依据，却将其归polish，独立记录这一尺度问题，不仅凭pass宣布所有事实已证实。第二条“要再看别的”仍是额外选款入口，非当前必要。“有需要随时找我”正常，不当防守。"
+      }
+    },
+    {
+      "case_id": "J01",
+      "input": {
+        "scenario": "商品推荐",
+        "client_info": "上下班坐地铁，平时包里就是一份A4资料和一瓶500毫升的水。",
+        "conversation": "客户：从地铁站到公司得走个一刻钟，这只托特天天背会不会费劲？",
+        "related_info": "",
+        "advisor_instruction": "结合她日常携带和步行的情况回答，已经选定日行托特包。",
+        "product_ids": [
+          "P01"
+        ]
+      },
+      "customer_context": {},
+      "messages": [
+        "日行托特包空包大概750 g，我们不对外的说法是不算超轻，所以它本身是有一定分量的。您日常是A4资料加一瓶500毫升水，加起来的实际总重得看具体装多少，我不方便替您估一个准数。按地铁加一刻钟步行这个频率，主要看装好后包包的总重量。如果每天也就是这些常带的东西，日常通勤是可以的，但空包750 g这个底子会一直背着，装得越满，肩上的取舍越明显。您方便的话，可以带着常带的东西来店里装进去试背一圈，走走看感觉？",
+        "先跟您说实底：日行托特包空包约750 g，我们也没把它叫超轻，所以它不是那种几乎感觉不到重量的包。不过您日常就一份A4资料加一瓶500毫升水，这个携带量本身不算大，地铁加一刻钟步行，日常用问题不大；真正决定费不费劲的，是装好后整只包的重量和肩带压在肩上的感觉，这两点得实际试过才准。如果您愿意，来店里把常带的东西装进去背一圈，比听我说更靠谱。",
+        "日行托特包空包约750 g，这个自重不算轻飘，所以每天背的话，是要把包本身的重量一起算进去的。您包里固定是一份A4资料和一瓶500毫升水，装好后多重得看您实际带多少，我没法给一个准确总数。以地铁加一刻钟步行来说，这个携带量在通勤里算常规，不至于因为装的东西就吃不消，但空包这750 g是每天都要背的底子——装得越多，越能感觉到。要是担心，试背时把水、资料都放进去走几步，最直观。有需要我帮您约一下。"
+      ],
+      "program_status": "error",
+      "error": {
+        "code": "invalid_output",
+        "message": "接口未满足本次约定字段（$.messages variants），不属于可明确兼容的空内部字段；原响应已保留，整组未采用。",
+        "retryable": false
+      },
+      "model_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "background.client_info"
+        ],
+        "current_need": "客户已选定日行托特包，问每天地铁加约一刻钟步行背它是否费劲；需给出空包重量事实，并结合已知携带（A4资料+500 mL水）作有边界的日常负重判断，不作实测式舒适保证。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "日行托特包空包大概750 g，我们不对外的说法是不算超轻，所以它本身是有一定分量的。您日常是A4资料加一瓶500毫升水，加起来的实际总重得看具体装多少，我不方便替您估一个准数。按地铁加一刻钟步行这个频率，主要看装好后包包的总重量。如果每天也就是这些常带的东西，日常通勤是可以的，但空包750 g这个底子会一直背着，装得越满，肩上的取舍越明显。您方便的话，可以带着常带的东西来店里装进去试背一圈，走走看感觉？",
+            "answered": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_weight_g",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s3"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_1.s4"
+              },
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_1.s4"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P01.loaded_weight_g",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s3"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_1.s4"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "空包约750 g及不算超轻是核心事实，保留；但“我们不对外的说法”是内部口径自述，应改成直接说“我们不称它为超轻”。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "复述客户携带物并说明总重依赖实际装入，是负重判断的必要前提；“我不方便替您估一个准数”略像内部交代，可简化为“总重会随实际装入变化”。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "把一刻钟步行与总重关联，铺垫判断；与前句总重说明部分重复，可压成一句“按地铁加一刻钟步行看负载是否合适”，删后仍完整。"
+              },
+              {
+                "candidate_span_id": "reply_1.s4",
+                "purpose": "judgment",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "有边界的日常负重判断（这些常带物日常通勤可以）加空包与装物量的取舍，正是客户所问，删掉就失去核心回答。"
+              },
+              {
+                "candidate_span_id": "reply_1.s5",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "optional_help",
+                "reason": "带着常带物试背是相关可选帮助，客户明显关注负重，保留合理；删掉不影响回答完整。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "先跟您说实底：日行托特包空包约750 g，我们也没把它叫超轻，所以它不是那种几乎感觉不到重量的包。不过您日常就一份A4资料加一瓶500毫升水，这个携带量本身不算大，地铁加一刻钟步行，日常用问题不大；真正决定费不费劲的，是装好后整只包的重量和肩带压在肩上的感觉，这两点得实际试过才准。如果您愿意，来店里把常带的东西装进去背一圈，比听我说更靠谱。",
+            "answered": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_comfort",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P01.capacity",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_comfort",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "空包约750 g与不称超轻是事实回答；“先跟您说实底”属自述感开场，可删去直接给事实。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "judgment",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "结合携带量与一刻钟步行给出“问题不大”的有边界判断，并说明真正舒适感需实际体验，未作无条件保证，是核心回答。"
+              },
+              {
+                "candidate_span_id": "reply_2.s3",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "optional_help",
+                "reason": "到店试背是相关可选帮助；“比听我说更靠谱”略贬低自己前文判断，可改为“当面试会更直观”，删掉不影响回答完整。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "日行托特包空包约750 g，这个自重不算轻飘，所以每天背的话，是要把包本身的重量一起算进去的。您包里固定是一份A4资料和一瓶500毫升水，装好后多重得看您实际带多少，我没法给一个准确总数。以地铁加一刻钟步行来说，这个携带量在通勤里算常规，不至于因为装的东西就吃不消，但空包这750 g是每天都要背的底子——装得越多，越能感觉到。要是担心，试背时把水、资料都放进去走几步，最直观。有需要我帮您约一下。",
+            "answered": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_weight_g",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_3.s3"
+              },
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_3.s3"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P01.empty_weight_g",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "product.P01.loaded_weight_g",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "product.P01.limitations",
+                "candidate_span_id": "reply_3.s3"
+              },
+              {
+                "source_id": "product.P01.loaded_comfort",
+                "candidate_span_id": "reply_3.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "给出空包约750 g并说明每天需计入包自身重量，直接回应是否费劲，删掉失去事实基础。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "复述已知携带物并说明总重取决于实际装入，是判断前提；“我没法给一个准确总数”可与前句合并，压缩更自然。"
+              },
+              {
+                "candidate_span_id": "reply_3.s3",
+                "purpose": "judgment",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "有边界的日常判断（通勤常规、装物不至于吃不消）加空包底子与装物量的取舍，未作无条件舒适保证，是核心回答。"
+              },
+              {
+                "candidate_span_id": "reply_3.s4",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "optional_help",
+                "reason": "把水和资料放进包内试走是相关可选帮助，与客户负重顾虑直接相关，删掉不影响回答完整。"
+              },
+              {
+                "candidate_span_id": "reply_3.s5",
+                "purpose": "help",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "“有需要我帮您约一下”是正常服务收尾，且仅为提议协助、未声称已预约，可保留；删掉也不影响回答。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "diagnostic_only": true,
+      "generation_count": 1,
+      "review_count": 1,
+      "record": "raw_runs/b44b4a42463f4e57a35690e5a5ced559.json",
+      "generation_version": "0.20.0",
+      "review_version": "review-1.5.0",
+      "independent": {
+        "content": "有日常判断但仍冗长、内部自述；格式未通过，未交付",
+        "detail": "供应商在messages里增加target_index:0，非空内部备注，含义不能静默删去；三个文本完整，不等于整个约定合规。原响应与初始失败保留，只投影reply_1/2/3原文作唯一一次诊断复核，另存分支；没有归一化成有效生成，也未开放复制。三条中通勤可以、问题不大、不至于吃不消是可接受的日常判断，相关试背可重复；“我们不对外的说法”“我不方便替您估”“比听我说更靠谱”等仍多余，不是要求实测才能回答。复核pass针对三段内容，不能修复生成格式。"
+      }
+    },
+    {
+      "case_id": "J02",
+      "input": {
+        "scenario": "价格异议",
+        "client_info": "想找一只下班买咖啡、周末出门时用的小包，喜欢低调。",
+        "conversation": "客户：一万二千八比我预想的高。要是就装手机钥匙，平时出门背它合不合适？",
+        "related_info": "",
+        "advisor_instruction": "围绕她现在的日常用途帮她判断。",
+        "product_ids": [
+          "P02"
+        ]
+      },
+      "customer_context": {},
+      "messages": [
+        "理解您觉得价格偏高，这款轻行肩包是12,800元。容量上可放普通手机和钥匙，像您说的平时出门只带这两样、下班买杯咖啡或周末轻装出门，都是合适的日常尺寸，背起来省心；如果之后要装水杯、折叠伞这类，就未必放得下了。您慢慢考虑，有想了解的随时找我。",
+        "这款轻行肩包售价12,800元，确实不算低。它可放普通手机、钥匙，和您“平时出门就带手机钥匙”的用法正好对得上，下班买咖啡、周末出门背它不会嫌累赘，属于刚好够用的轻便小包。价格上您再权衡，需要我帮您看看别的随时说。",
+        "明白，12,800元对一只小包来说需要斟酌。就您现在的用途看，轻行肩包可放普通手机和钥匙，日常出门只带这些是够用的，也符合您想要低调轻便的感觉；只是它走的就是小而精的路线，容量不做大包用。您不用急着定，有什么问题我都在。"
+      ],
+      "program_status": "success",
+      "error": null,
+      "model_review": {
+        "source_protocol": "sources-v4",
+        "verdict": "pass",
+        "client_state": "comparing",
+        "state_evidence": [
+          "chat.t1",
+          "background.client_info",
+          "task.scenario"
+        ],
+        "current_need": "客户觉得P02售价12,800元偏高，同时问只装手机和钥匙、平时出门背是否合适。需要回应价格顾虑，并结合她下班买咖啡、周末轻装出门的用途，用已知容量给出日常适配判断，不需要额外推荐或追问。",
+        "candidate_checks": {
+          "reply_1": {
+            "candidate_text": "理解您觉得价格偏高，这款轻行肩包是12,800元。容量上可放普通手机和钥匙，像您说的平时出门只带这两样、下班买杯咖啡或周末轻装出门，都是合适的日常尺寸，背起来省心；如果之后要装水杯、折叠伞这类，就未必放得下了。您慢慢考虑，有想了解的随时找我。",
+            "answered": [
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_1.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "product.P02.limitations",
+                "candidate_span_id": "reply_1.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_1.s1"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_1.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_1.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "接住“比预想高”并复述含税售价，回答问题核心。"
+              },
+              {
+                "candidate_span_id": "reply_1.s2",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“可放普通手机和钥匙、日常合适”是有据的适配判断，应保留；后半“水杯、折叠伞就未必放得下”是客户没问的额外容量限制，属可省补充，删后回答仍完整；“背起来省心”略笼统，可改为具体背法（肩背/斜挎）。"
+              },
+              {
+                "candidate_span_id": "reply_1.s3",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "正常服务收尾，不强加问题，不构成防守。"
+              }
+            ]
+          },
+          "reply_2": {
+            "candidate_text": "这款轻行肩包售价12,800元，确实不算低。它可放普通手机、钥匙，和您“平时出门就带手机钥匙”的用法正好对得上，下班买咖啡、周末出门背它不会嫌累赘，属于刚好够用的轻便小包。价格上您再权衡，需要我帮您看看别的随时说。",
+            "answered": [
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_2.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_2.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "product.P02.dimensions_cm",
+                "candidate_span_id": "reply_2.s2"
+              },
+              {
+                "source_id": "chat.t1",
+                "candidate_span_id": "reply_2.s3"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_2.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "报价并共情价格顾虑，直接回应客户核心问题。"
+              },
+              {
+                "candidate_span_id": "reply_2.s2",
+                "purpose": "judgment",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "把容量事实与客户用途对照给出合适判断；“不会嫌累赘”属轻型空包基础上的日常体感判断，非绝对保证。"
+              },
+              {
+                "candidate_span_id": "reply_2.s3",
+                "purpose": "help",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“您再权衡”把已答的价格判断交回客户，略多余；可只保留后续可选帮助或整句省略，删后回答仍完整。"
+              }
+            ]
+          },
+          "reply_3": {
+            "candidate_text": "明白，12,800元对一只小包来说需要斟酌。就您现在的用途看，轻行肩包可放普通手机和钥匙，日常出门只带这些是够用的，也符合您想要低调轻便的感觉；只是它走的就是小而精的路线，容量不做大包用。您不用急着定，有什么问题我都在。",
+            "answered": [
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_3.s2"
+              }
+            ],
+            "missing": [],
+            "source_checks": [
+              {
+                "source_id": "product.P02.price",
+                "candidate_span_id": "reply_3.s1"
+              },
+              {
+                "source_id": "product.P02.capacity",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "background.client_info",
+                "candidate_span_id": "reply_3.s2"
+              },
+              {
+                "source_id": "policy.4",
+                "candidate_span_id": "reply_3.s1"
+              }
+            ],
+            "editing": [
+              {
+                "candidate_span_id": "reply_3.s1",
+                "purpose": "answer",
+                "action": "keep",
+                "delete_effect": "loses_answer",
+                "reason": "确认价格顾虑并复述售价，回应客户第一个问题。"
+              },
+              {
+                "candidate_span_id": "reply_3.s2",
+                "purpose": "judgment",
+                "action": "polish",
+                "delete_effect": "still_complete",
+                "reason": "“可放手机钥匙、日常够用”有据；后半“小而精、容量不做大包用”是重复概括，可省以更简洁。"
+              },
+              {
+                "candidate_span_id": "reply_3.s3",
+                "purpose": "relationship",
+                "action": "keep",
+                "delete_effect": "still_complete",
+                "reason": "不催促并留服务入口，符合正常收尾。"
+              }
+            ]
+          }
+        },
+        "issues": []
+      },
+      "diagnostic_only": false,
+      "generation_count": 1,
+      "review_count": 1,
+      "record": "raw_runs/34b48463c43e4e5abd54da67bbe92128.json",
+      "generation_version": "0.20.0",
+      "review_version": "review-1.5.0",
+      "independent": {
+        "content": "用途判断可用，仍有无关假设和权衡尾句，属编辑待改",
+        "detail": "三条答价格和手机钥匙用途，没有错报价或库存承诺。第一条自行加“水杯、折叠伞…未必放得下”，是客户没有的需求，应省；第二条“价格上您再权衡…看看别的”仍多余；第三条“小而精…不做大包用”无助当前判断，可省。正常礼貌和“有想了解的随时找我”“有什么问题我都在”保留，不能一概当防守。复核指出了部分可省句，但建议“省心”改成背法会再增加未问内容，并非编辑标准答案。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "cases": 8,
+  "actual_candidate_groups": 7,
+  "actual_messages": 21,
+  "generation_requests": 8,
+  "review_requests": 7,
+  "total_tokens": 227013,
+  "auto_retries": 0,
+  "chunk1_version": "0.18.0",
+  "chunk2_version": "0.18.1",
+  "generation_prompt": "2.0.0 unchanged between chunks",
+  "current_local_version": "0.18.2",
+  "current_version_real_retested": false,
+  "formal50_untouched": true
+}

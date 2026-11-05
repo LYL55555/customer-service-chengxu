@@ -1,0 +1,170 @@
+[
+  {
+    "case_id": "N12",
+    "lane": "first_review",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N12_first_review_v0162.json"
+  },
+  {
+    "case_id": "N20",
+    "lane": "first_review",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N20_first_review_v0162.json"
+  },
+  {
+    "case_id": "N27",
+    "lane": "first_review",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N27_first_review_v0162.json"
+  },
+  {
+    "case_id": "N32",
+    "lane": "first_review",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N32_first_review_v0162.json"
+  },
+  {
+    "case_id": "N46",
+    "lane": "first_review",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N46_first_review_v0162.json"
+  },
+  {
+    "case_id": "N18",
+    "lane": "writing",
+    "original_status": "error",
+    "status": "error",
+    "error": {
+      "code": "missing_original_review",
+      "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+      "retryable": false
+    },
+    "validation_errors": null,
+    "raw_record": "local/N18_writing_v0162.json"
+  },
+  {
+    "case_id": "N21",
+    "lane": "writing",
+    "original_status": "error",
+    "status": "error",
+    "error": {
+      "code": "quality_review",
+      "message": "候选未通过上下文与商品政策复核；请查看记录中的具体问题后修改输入或重试。",
+      "retryable": false
+    },
+    "validation_errors": [],
+    "raw_record": "local/N21_writing_v0162.json"
+  },
+  {
+    "case_id": "N24",
+    "lane": "writing",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N24_writing_v0162.json"
+  },
+  {
+    "case_id": "N26",
+    "lane": "writing",
+    "original_status": "error",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N26_writing_v0162.json"
+  },
+  {
+    "case_id": "N29",
+    "lane": "writing",
+    "original_status": "error",
+    "status": "error",
+    "error": {
+      "code": "invalid_review",
+      "message": "复核结论的完整候选或事实依据未通过检查；原始复核保留，不能当作已证实的问题。",
+      "retryable": false
+    },
+    "validation_errors": [
+      {
+        "code": "source_domain_mismatch",
+        "message": "来源需支持片段中自己的断言：商品参数不能证明售后或活动政策，同句可由不同来源各自支持对应内容",
+        "candidate_index": 0,
+        "source_id": "product.P02.closure",
+        "claim_domains": [
+          "service"
+        ],
+        "source_domains": [
+          "product"
+        ]
+      },
+      {
+        "code": "source_domain_mismatch",
+        "message": "来源需支持片段中自己的断言：商品参数不能证明售后或活动政策，同句可由不同来源各自支持对应内容",
+        "candidate_index": 2,
+        "source_id": "product.P02.closure",
+        "claim_domains": [
+          "action",
+          "service"
+        ],
+        "source_domains": [
+          "product"
+        ]
+      }
+    ],
+    "raw_record": "local/N29_writing_v0162.json"
+  },
+  {
+    "case_id": "N39",
+    "lane": "writing",
+    "original_status": "error",
+    "status": "error",
+    "error": {
+      "code": "missing_original_review",
+      "message": "原记录没有完整模型复核；本地重验不能补称已复核。",
+      "retryable": false
+    },
+    "validation_errors": null,
+    "raw_record": "local/N39_writing_v0162.json"
+  },
+  {
+    "case_id": "N42",
+    "lane": "writing",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N42_writing_v0162.json"
+  },
+  {
+    "case_id": "N46",
+    "lane": "writing",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N46_writing_v0162.json"
+  },
+  {
+    "case_id": "N48",
+    "lane": "writing",
+    "original_status": "success",
+    "status": "success",
+    "error": null,
+    "validation_errors": [],
+    "raw_record": "local/N48_writing_v0162.json"
+  }
+]

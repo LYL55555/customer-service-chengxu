@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>澄序 · 顾问话术助手</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/workspace.js" defer></script>
+  <script src="/context.js" defer></script>
+  <script src="/understanding.js" defer></script>
+  <script src="/app.js" defer></script>
+  <script src="/history.js" defer></script>
+</head>
+<body data-ui-version="ui-2.0.0">
+  <header class="topbar">
+    <a class="wordmark" href="/">澄序 <span>CHENGXU</span></a>
+    <div class="topmeta"><button id="open-folders" class="secondary" type="button">顾问与客户</button><button id="open-examples" class="secondary" type="button">查看示例</button><button id="open-chats" class="secondary" type="button">聊天记录</button><span class="fiction">虚构品牌 · 本地演示</span><span id="version"></span></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">CLIENT ADVISOR ASSISTANT</p><h1>看懂客户，回好下一句。</h1></div>
+      <div class="connection-box"><span id="connection" role="status">正在读取接口状态…</span><button id="refresh" class="text-button" type="button">刷新配置</button></div>
+    </section>
+    <section class="workspace-bar" aria-label="当前客户与保存状态"><strong id="workspace-path">正在恢复会话…</strong><div><span id="save-state" role="status">读取本机资料…</span><button id="retry-save" class="text-button" hidden type="button">重试保存</button><button id="resolve-save" class="text-button" hidden type="button">比较版本</button></div></section>
+    <section class="work-start" aria-label="开始或继续客户沟通">
+      <div class="customer-start"><label for="current-customer">当前客户</label><select id="current-customer"><option value="">选择已有客户</option></select><button id="start-conversation" class="secondary" type="button" disabled>开始新沟通</button></div>
+      <form id="quick-customer-form" class="quick-customer"><label for="quick-customer-name">新客户</label><input id="quick-customer-name" maxlength="80" placeholder="只填一个称呼，例如：林女士" required><button id="quick-create-customer" class="primary" type="submit">新建客户并开始</button></form>
+      <div class="conversation-start"><label for="current-conversation">本次会话</label><select id="current-conversation" disabled><option value="">新建或选择客户后开始</option></select><span id="start-help" class="field-note">先新建或选择客户，再选场景、放聊天，生成三条。</span></div>
+      <p id="start-error" role="alert" hidden></p>
+    </section>
+    <section id="example-banner" class="policy-banner" hidden><strong id="example-title"></strong><p id="example-materials"></p><button id="return-to-work" class="secondary" type="button">返回自己的沟通</button></section>
+    <p id="contact-policy" class="policy-banner" hidden></p>
+    <div class="workspace">
+      <section class="context panel" aria-labelledby="context-title">
+        <div id="materials-panel"><div class="section-heading"><h2 id="context-title">准备聊天与资料</h2><span class="small">已有信息不用重复填</span></div>
+        <form id="context-form">
+          <label for="scenario">沟通场景</label><select id="scenario" required><option value="">选择这次沟通的场景</option></select>
+          <div id="chat-materials" class="material-group"><h3>聊天截图或文字</h3>
+          <div id="screenshot-drop" class="screenshot-drop" tabindex="0" role="group" aria-label="聊天截图导入">
+            <strong>粘贴或拖入微信聊天截图</strong>
+            <p>支持多张PNG/JPEG · 默认来自顾问自己的账号</p>
+            <label class="upload-label" for="screenshot-files">选择截图</label><input id="screenshot-files" type="file" accept="image/png,image/jpeg" multiple hidden>
+          </div>
+          <label for="conversation">客户与顾问的聊天记录 <span>已确认截图时可不填</span></label>
+          <textarea id="conversation" rows="4" placeholder="客户：12,800有点贵，能打折吗？&#10;可按时间顺序填写，并标明说话人。"></textarea>
+          <p class="field-note">按顺序标明客户或顾问；已确认的截图聊天会自动使用，不用再抄一遍。</p>
+          <details class="stitch-options"><summary>截图整理方式</summary><p class="field-note">连续截图请保留上一张末尾1—3条完整消息，方便排序和去重。</p><label class="include-label"><input id="auto-stitch" type="checkbox" checked>自动排序并合并重叠消息</label><p class="field-note">如自动整理不对，可关闭后重新识别，按每张图逐条复核。原图和旧草稿保留；重复气泡可取消纳入。</p></details>
+          <div id="screenshot-list"></div>
+          <p id="context-import-status" class="field-note" role="status">先出草稿，顾问复核并确认后才导入。</p>
+          <div class="import-actions"><button id="extract-chat" class="secondary" type="button" disabled>识别聊天草稿</button><button id="review-chat" class="secondary" type="button" disabled>复核草稿</button><button id="save-context" class="secondary" type="button" disabled>保存复核材料</button></div>
+          <p class="field-note">历史截图和已确认消息会保留，可随时从顶部“聊天记录”打开、复核或修改。</p>
+          <details class="vision-options"><summary>复杂截图：视觉补充</summary><p id="vision-state" class="field-note">图片模型尚未实测。基础OCR在本机运行。</p><button id="check-vision" class="secondary" type="button">检查图片能力</button><button id="vision-extract" class="secondary" type="button" disabled>用视觉模型补充</button></details>
+          </div>
+          <label for="client-info">补充一句背景 <span>选填：线下经历或这次要做的事</span></label>
+          <textarea id="client-info" rows="2" placeholder="例如：她上次到店说不喜欢大标识；今天想主动问候。聊天中已有的不用重填。"></textarea>
+          <label for="related-info">活动、订单或其他已确认资料 <span>选填</span></label>
+          <textarea id="related-info" rows="2" placeholder="有相关活动、订单、售后资料时补在这里。"></textarea>
+          <details id="extra-materials" class="material-group"><summary>商品、活动和给助手的要求（选填）</summary>
+          <fieldset><legend>相关商品 <span>已有聊天时可不选</span></legend><div id="products"></div></fieldset>
+          <div class="supplement-upload"><label for="supplement-kind">补充资料类型</label><select id="supplement-kind"><option value="background">顾问背景说明</option><option value="customer_record">客户记录</option><option value="order">订单资料</option><option value="event">活动资料</option></select><label class="upload-label" for="supplement-files">放入TXT / JSON资料</label><input id="supplement-files" type="file" accept=".txt,.json,text/plain,application/json" multiple hidden><div id="supplement-list"></div><p class="field-note">也可直接在上方说一句背景；生日问候无需先有聊天。</p></div>
+          <label for="advisor-instruction">顾问对助手的要求 <span>可选</span></label>
+          <textarea id="advisor-instruction" rows="2" placeholder="例如：温暖一些，主动帮客户判断，但不要催促。"></textarea>
+          </details>
+          <p id="context-notice" class="field-note">所有案例均为虚构，发送前由顾问确认。</p>
+        </form>
+      </div>
+    <details class="customer-profile"><summary>客户长期偏好与联系设置（选填）</summary><p class="field-note">在这个客户的所有会话共用。预算、这次用途和某款商品的拒绝请填在本次背景。</p><label for="customer-preferences">长期偏好</label><textarea id="customer-preferences" rows="2" placeholder="例如：偏爱低调设计；经客户明确确认的长期喜好"></textarea><label class="include-label"><input id="marketing-opt-out" type="checkbox">客户明确要求不再发送营销消息</label><div id="consent-form" hidden><label for="consent-reason">客户重新同意的原话或来源</label><input id="consent-reason" maxlength="500"><button id="restore-consent" class="secondary" type="button">记录同意并恢复营销联系</button></div></details>
+      <details class="dev-examples"><summary>其他虚构输入示例</summary>
+        <label for="example">载入虚构开发案例</label>
+        <select id="example"><option value="">选择案例，不会自动生成</option></select>
+      </details>
+      </section>
+      <section class="assistant panel" aria-labelledby="assistant-title">
+        <div class="assistant-heading"><div><p class="eyebrow">YOUR NEXT REPLY</p><h2 id="assistant-title">回复客户</h2></div><button id="download" class="secondary" disabled type="button">导出记录</button></div>
+        <section class="reply-brief" aria-label="本次回复重点">
+          <div class="brief-label"><span id="reply-question-label">客户当前的问题</span><button id="understanding-edit" class="text-button" type="button">纠正理解</button></div>
+          <p id="reply-question" class="reply-question">正在恢复客户资料…</p>
+          <p id="reply-context" class="reply-context"></p>
+          <p id="reply-background" class="reply-background" hidden></p>
+          <div class="reply-source-actions"><button id="open-chat-materials" class="text-button" type="button">截图与聊天</button><button id="open-background" class="text-button" type="button">补充本次背景</button></div>
+        <details id="understanding-details" class="secondary-section"><summary>本次理解与依据 · 展开核对</summary>
+        <section id="understanding" class="understanding" aria-labelledby="understanding-title"><div class="understanding-heading"><h3 id="understanding-title">这次的理解</h3></div><p id="understanding-status" class="field-note" role="status">确认聊天后自动整理。</p><dl id="understanding-fields"></dl><div id="understanding-notices"></div><details id="understanding-editor"><summary>修正理解或补充缺项（选填）</summary><p class="field-note">只改有误或缺少的内容；原话仍保留，这些修正只用于本次会话。</p><label for="understanding-product">当前商品修正</label><select id="understanding-product"><option value="">按原文整理</option><option value="unknown">尚不确定</option></select><label for="understanding-question">这次需要回应的问题</label><textarea id="understanding-question" rows="2" maxlength="1000"></textarea><label for="understanding-budget">本次预算修正</label><input id="understanding-budget" maxlength="500"><label for="understanding-use">用途修正</label><textarea id="understanding-use" rows="2" maxlength="1000"></textarea><button id="understanding-reset" class="text-button" type="button">清除修正，按原文恢复</button></details><button id="understanding-refresh" class="text-button" type="button">重新整理理解（本地）</button></section>
+        </details>
+          <div class="generate-row"><button id="generate" class="primary" type="submit" form="context-form">生成三条回复 ↗</button><span id="reply-status" class="reply-status" role="status" aria-live="polite"></span><button id="reply-resolve" class="text-button" type="button" hidden>去处理</button></div>
+        </section>
+        <section id="advisor-help" class="error-box" aria-label="给顾问的资料待办" hidden><strong>先补当前任务需要的原资料</strong><p>这里是给顾问的待办，不是发给客户的消息。已有资料会继续使用，无需重填客户档案。</p><div id="advisor-help-items"></div><div id="advisor-help-actions"></div></section>
+        <details id="failure-panel" class="failure-panel" hidden><summary id="failure-summary">本次未交付可用回复</summary>
+        <div id="error" class="error-box" role="alert" hidden><strong id="error-title">这次没有生成可用结果</strong><p id="error-message"></p><div id="error-issues"></div><div id="error-actions"></div><details id="error-details"><summary>查看当时输入与未通过内容</summary><div id="error-original"></div></details><div><button id="retry" class="secondary" type="button">重试原请求</button><span id="error-id" class="small"></span></div></div>
+        </details>
+        <div id="loading" class="loading" role="status" hidden><span class="spinner"></span>正在斟酌三种表达，请稍候…</div>
+        <div id="empty" class="empty-state"><div class="empty-symbol">序</div><h3 id="empty-title">先了解客户，再找到合适的话</h3><p id="empty-help">放入截图或写一句背景即可开始。生成后可以继续调整表达。</p><div class="empty-tags"><span>六种场景</span><span>三种表达</span><span>顾问自主选择</span></div></div>
+        <section id="result" hidden>
+          <div class="result-meta"><span id="result-state" class="tag"></span><span id="result-id" class="small"></span></div>
+          <p id="previous-result-note" class="policy-banner" hidden>以下是上次资料的回复，供回顾。本次背景或客户规则已变化，请重新生成后再复制发送。</p><div id="cards"></div>
+          <p class="review-note">请确认事实和语气后再发送。复制消息不会自动发送给客户。</p>
+        </section>
+        <details id="revision-panel" class="revision-panel" hidden><summary>调整这组回复</summary>
+        <form id="revision-form" class="composer">
+          <div class="composer-heading"><label for="revision">继续调整表达</label><select id="target" aria-label="修改范围"><option value="">调整整组</option><option value="0">仅调整第1条</option><option value="1">仅调整第2条</option><option value="2">仅调整第3条</option></select></div>
+          <div class="quick-actions"><button data-request="简短一点，保留关键事实和温度。" type="button">简短一点</button><button data-request="这次表达更温暖一些，主动帮客户判断，但尊重客户最新决定。" type="button">更温暖一点</button></div>
+          <textarea id="revision" rows="2" placeholder="例如：第二条太冷淡了，请选中第2条后告诉我怎么调整。" disabled></textarea>
+          <div class="composer-bottom"><span id="revision-help">先生成一组消息，再继续调整。</span><button id="revise" class="primary" disabled type="submit">调整表达 ↗</button></div>
+        </form>
+        </details>
+        <details id="result-details" class="secondary-section" hidden><summary>给顾问的提醒、修改要求与复核记录</summary><div id="advisor-note" class="advisor-note" hidden></div><div id="turns"></div><pre id="review-detail" class="review-detail"></pre></details>
+        <details id="history-details" class="secondary-section"><summary>历史生成记录</summary>
+        <div class="history-line"><label for="history">查看已保存记录</label><select id="history"><option value="">当前会话的生成记录</option></select></div>
+        </details>
+      </section>
+    </div>
+    <footer>澄序 CHENGXU · 所有品牌、商品、客户和服务政策均为虚构设定</footer>
+  </main>
+  <div class="mobile-action"><span>资料准备好后，生成三条供选择</span><button id="generate-mobile" class="primary" type="submit" form="context-form" disabled>生成三条回复</button></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="examples-dialog" aria-labelledby="examples-title"><div class="section-heading"><h2 id="examples-title">查看示例</h2><button id="close-examples" class="secondary" type="button">返回工作台</button></div><p>以下回放保存的真实生成结果，不会自动调用模型。可同时查看当时聊天、相关资料和回复。</p><div id="saved-examples"></div><p id="examples-error" role="alert"></p></dialog>
+  <dialog id="context-review" aria-labelledby="review-title">
+    <div class="review-dialog-heading"><div><p class="eyebrow">VERIFY BEFORE IMPORT</p><h2 id="review-title">对照原图，确认聊天归类</h2></div><button id="close-review" class="secondary" type="button">稍后再看</button></div>
+    <p id="review-warnings" class="field-note"></p>
+    <div class="review-columns"><section class="original-pane" aria-label="原始截图"><label for="source-page">原图保持不变</label><select id="source-page"></select><div class="source-figure"><img id="source-image" alt="导入的原始聊天截图"><svg class="source-overlay" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true"><rect id="source-box" x="0" y="0" width="0" height="0"></rect></svg></div></section><section class="draft-pane" aria-label="待确认聊天草稿"><p class="field-note">左侧先归客户，右侧先归顾问。可改发送者、正文、引用和顺序。</p><button id="add-manual-message" class="secondary" type="button">补录漏掉的消息</button><p class="field-note">只补原图可见内容，标记为人工补录；用↑↓放回原图顺序。</p><div id="draft-messages"></div></section></div>
+    <div class="review-dialog-footer"><span id="review-error" role="alert">检查无误后一次确认，无需逐条点击。</span><button id="confirm-context" class="primary" type="button">确认并导入上下文</button></div>
+  </dialog>
+  <dialog id="chat-library" aria-labelledby="chat-library-title">
+    <div class="review-dialog-heading"><div><p class="eyebrow">SAVED CONVERSATIONS</p><h2 id="chat-library-title">聊天记录</h2></div><button id="close-chats" class="secondary" type="button">返回工作台</button></div>
+    <p class="field-note">保存在本机，刷新或重启后仍可打开。查看历史不会改变当前生成资料；修改另存新版本，原图与旧版本保留。</p>
+    <div class="library-columns">
+      <aside class="chat-sidebar"><label for="chat-search">查找聊天</label><input id="chat-search" type="search" placeholder="搜索名称或历史消息"><p id="chat-count" class="field-note" role="status"></p><div id="chat-list"></div></aside>
+      <section class="chat-detail" aria-label="历史聊天内容"><p id="chat-empty" class="library-empty">选择一份聊天记录。新截图识别后会自动出现在这里。</p><div id="chat-content" hidden>
+        <div class="chat-title-row"><label for="chat-title">聊天名称</label><input id="chat-title" maxlength="80"><button id="rename-chat" class="secondary" type="button">保存名称</button></div>
+        <label for="chat-version">查看版本</label><select id="chat-version"></select><p id="chat-version-info" class="field-note"></p>
+        <div class="chat-toolbar"><button id="edit-saved-chat" class="secondary" type="button">对照原图并修改</button><button id="use-saved-chat" class="primary" type="button">用于生成</button><a id="export-saved-chat" class="text-button">下载此版本材料</a></div>
+        <p class="field-note">左侧客户 · 右侧顾问。引用单独展示，淡色消息未纳入上下文。下方为所选版本。</p><div id="saved-messages" class="saved-messages"></div>
+      </div></section>
+    </div><p id="chat-library-error" class="field-note" role="alert"></p>
+  </dialog>
+  <dialog id="folders" aria-labelledby="folders-title"><div class="review-dialog-heading"><h2 id="folders-title">顾问 / 客户 / 会话</h2><button id="close-folders" class="secondary" type="button">回到工作台</button></div><p class="field-note">本机演示：选择顾问用于区分资料，不是账号登录。新客户只需一个称呼即可开始。</p><label for="folder-advisor">顾问文件夹</label><select id="folder-advisor"></select><details><summary>新增顾问</summary><input id="new-advisor" aria-label="新顾问名称" placeholder="顾问名称"><button id="create-advisor" class="secondary" type="button">创建顾问</button></details><div class="folder-columns"><section><h3>客户</h3><div id="folder-customers"></div><input id="new-customer" aria-label="新客户称呼" placeholder="客户称呼即可"><button id="create-customer" class="secondary" type="button">新建客户</button></section><section><h3>会话</h3><div id="folder-conversations"></div><input id="new-conversation" aria-label="新会话名称" placeholder="例如：本周通勤选包"><button id="create-conversation" class="secondary" type="button">新建会话</button></section></div><button id="open-pending" class="text-button" type="button">待整理旧资料（不按名字猜归属）</button><p id="folder-error" role="alert"></p></dialog>
+  <dialog id="pending-records" aria-labelledby="pending-title"><div class="review-dialog-heading"><h2 id="pending-title">待整理的旧资料</h2><button id="close-pending" class="secondary" type="button">关闭</button></div><p id="pending-target"></p><p class="field-note">请自行确认归属。按原始编号关联的截图版本、生成和修改记录会一起归档，不覆盖当前草稿，也不改写旧文件。归档后可从聊天记录和生成历史查看。</p><div id="pending-list"></div><p id="pending-error" role="alert"></p></dialog>
+  <dialog id="save-conflict" aria-labelledby="conflict-title"><h2 id="conflict-title">保存版本冲突</h2><p>保留两份内容供比较。只有您选择后才会继续保存；旧的保存检查点仍保留。</p><div class="folder-columns"><section><h3>本页未完成内容</h3><pre id="conflict-local"></pre></section><section><h3>本机已保存内容</h3><pre id="conflict-server"></pre></section></div><button id="keep-server" class="secondary" type="button">使用已存版本，留本页副本</button><button id="keep-local" class="primary" type="button">以本页另存新检查点</button><button id="close-conflict" class="text-button" type="button">稍后处理</button></dialog>
+</body>
+</html>
