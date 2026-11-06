@@ -1,0 +1,102 @@
+{
+  "audio" : false,
+  "duration" : 55,
+  "not_demonstrated" : [
+    "截图导入与OCR复核",
+    "原生粘贴核对",
+    "清晰可辨的刷新操作"
+  ],
+  "overlays" : "后期圈线强调，不替代实际操作",
+  "segments" : [
+    {
+      "label" : "建立客户",
+      "output_end" : 4,
+      "output_start" : 0,
+      "source_end" : 10.800000000000001,
+      "source_start" : 7.5999999999999996
+    },
+    {
+      "label" : "选择场景",
+      "output_end" : 7,
+      "output_start" : 4,
+      "source_end" : 25,
+      "source_start" : 23.5
+    },
+    {
+      "label" : "选择商品",
+      "output_end" : 10,
+      "output_start" : 7,
+      "source_end" : 43.299999999999997,
+      "source_start" : 41.799999999999997
+    },
+    {
+      "label" : "填入客户消息",
+      "output_end" : 12,
+      "output_start" : 10,
+      "source_end" : 49.799999999999997,
+      "source_start" : 49.549999999999997
+    },
+    {
+      "label" : "阅读客户问题",
+      "output_end" : 19,
+      "output_start" : 12,
+      "source_end" : 55,
+      "source_start" : 49.799999999999997
+    },
+    {
+      "label" : "查看本次理解",
+      "output_end" : 25,
+      "output_start" : 19,
+      "source_end" : 58,
+      "source_start" : 55
+    },
+    {
+      "label" : "生成等待",
+      "output_end" : 27,
+      "output_start" : 25,
+      "source_end" : 60.299999999999997,
+      "source_start" : 58
+    },
+    {
+      "label" : "出现三条回复",
+      "output_end" : 30,
+      "output_start" : 27,
+      "source_end" : 61.5,
+      "source_start" : 60.299999999999997
+    },
+    {
+      "label" : "阅读三条回复",
+      "output_end" : 36,
+      "output_start" : 30,
+      "source_end" : 67.5,
+      "source_start" : 61.5
+    },
+    {
+      "label" : "查看选中回复",
+      "output_end" : 46,
+      "output_start" : 36,
+      "source_end" : 82,
+      "source_start" : 72
+    },
+    {
+      "label" : "复制与成功提示",
+      "output_end" : 50,
+      "output_start" : 46,
+      "source_end" : 90.299999999999997,
+      "source_start" : 86.299999999999997
+    },
+    {
+      "label" : "回到整体界面",
+      "output_end" : 55,
+      "output_start" : 50,
+      "source_end" : 99,
+      "source_start" : 94
+    }
+  ],
+  "size" : [
+    1920,
+    1080
+  ],
+  "source" : "\/Users\/tonylyu\/Documents\/ChatGPT\/artefact笔试\/outputs\/continuous_demo_v0.21.1_2026-11-05\/continuous_original.mp4",
+  "source_order_preserved" : true
+}

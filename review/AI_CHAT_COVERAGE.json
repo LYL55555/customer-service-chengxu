@@ -2518,5 +2518,21 @@
     "actual_ai_chat_screenshot": null,
     "status": "missing_manual_capture_required",
     "work_log_row": "| 311 | 上传指定GitHub仓库并核对最后展示入口 | 已扫描的0.21.1发布副本、658文件、新61秒连续视频；用户已有Git身份 | 首次push卡在系统osxkeychain助手，未到远端；停止仅本次上传/助手，使用用户原有store助手后成功推送main，首提交417f5c6。没有读取/打印令牌、没有新增署名或强推。视频入口改为只有原生播放器，处理说明另放MD；同期更新日志和manifest再推送，不上传旧slideshow。当前完整包据新视频重归档，源码/原50/评分不变，真实AI开发截图仍缺 | Git CLI现有凭据、本地秘密扫描及原表/链接核对；正常后台保持 | PUBLISH_CHECK、DEMO_PROVENANCE与Git远端提交；原视频/分段速度在本地存档 |"
+  },
+  {
+    "step": 312,
+    "occurrence": 1,
+    "phase": "AI30",
+    "actual_ai_chat_screenshot": null,
+    "status": "missing_manual_capture_required",
+    "work_log_row": "| 312 | 按用户要求重剪一分钟内演示 | 原104.165秒连续录屏、用户指出开头空等和滚动过快 | 另存55秒1080p成片，剪去空白停留，放慢快速滚动与填入/生成瞬间，平移放大客户问题和三条原文，后期圈线强调第三条、复制按钮及成功提示。原片、旧成片、模型原文保留；无新增模型调用，不改应用或客户库，不上传GitHub | AVFoundation本地剪辑、每秒解码画面核对和浏览器正常速度播放 | outputs/demo_recut_60s_2026-11-05；原片无截图导入/复核或原生粘贴，刷新动作不明显，已明确列为补录卡点，未假装完成原片未录到的流程 |"
+  },
+  {
+    "step": 313,
+    "occurrence": 1,
+    "phase": "AI30",
+    "actual_ai_chat_screenshot": null,
+    "status": "missing_manual_capture_required",
+    "work_log_row": "| 313 | 用户授权将55秒demo更新GitHub并复核原题 | 原题两页、当前提交材料、50例表和用户认可的新视频 | 已逐页核对中文只明确要求于候选话术，说明材料语言未规定；A项真实AI开发聊天图仍缺，B—E文件与50/150完整。新版55秒视频及说明同步发布副本，保留截图导入、粘贴和刷新展示限制；不新增模型调用，不改源码、客户库、原50或评分 | PDF阅读、表格只读计数、本地文件和Git发布准备 | 待补本轮真实开发对话截图；DEMO_PROVENANCE与逐步缺图索引 |"
   }
 ]

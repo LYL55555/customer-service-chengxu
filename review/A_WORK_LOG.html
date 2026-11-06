@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>完整实际工作日志</title><style>body{font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:#26382f;background:#f7f6f1;max-width:1100px;margin:40px auto;padding:0 24px}h1{font-size:29px}h2{font-size:22px;margin-top:32px}a{color:#24604b}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #c6cec7;padding:10px;vertical-align:top}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eeeee7;padding:15px}blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid #597968;background:white}img,video{max-width:100%;height:auto}.notice{background:#fff1d9;padding:16px}</style><nav><a href="index.html">提交阅读入口</a> · 当前工具0.21.1</nav><main><h1>Work log</h1>
-<p>记录日期：2026-11-02—04（America/New_York）</p>
-<p>当前收尾版本0.16.3。后文开头的v0.12.2摘要属于当时阶段，不是当前结论；正式业务N01—N50、后续定向修复与本轮修订分别保留，不合并通过率。真实AI开发对话截图仍未取得，覆盖表逐步标缺。</p>
+<p>记录日期：2026-11-02—05（America/New_York）</p>
+<p>当前应用版本0.21.1，演示剪辑55秒。下方v0.12.2及后续各阶段摘要属于当时记录，不是当前质量结论；正式业务N01—N50、后续定向修复与本轮修订分别保留，不合并通过率。真实AI开发对话截图仍未取得，覆盖表逐步标缺。</p>
 <p>本文件记录实际完成的工作，不将计划当成果。当前v0.12.2，205项离线方法通过；正式首轮固定v0.12.0跑50案：生成50/复核45，95请求/2,083,295 token，程序31/50交付，失败未剔除。后续v0.12.1仅F28/F47两案真实回归，4请求/91,010 token，F28改善、F47仍失败；本轮合计99请求，无自动重试。50组150条原文、原失败和各版源码全部保留，见FORMAL_EVALUATION.md；事实/语气分评，自评不冒充顾问认可。正常后台/网页保持运行，原客户草稿和截图版本保留。应用截图不替代真实AI对话截图，后者仍待手动补齐。</p>
 <h2>实际步骤</h2>
 <table>
@@ -1126,26 +1126,152 @@
 <td>本地复测装置；后续真实结果以round1/results.json为准</td>
 <td>未跑正式50例；正常工作台资料不改</td>
 </tr>
+<tr>
+<td>133</td>
+<td>完成原14例首轮真实复测并逐条检查新失败</td>
+<td>固定v0.10.0、原输入/品牌、round1调用前ZIP</td>
+<td>14例完成：生成13次、复核9次，共22请求、424876 token；EDGE06系统放行、EDGE09正确零调用停止；其余保留具体失败。新变体暴露否认报价和预算范围误伤、不能承诺防水误伤、来源ID拼正文/政策引用改写、JSON多右括号、祝福日期/关系扩写、人称错位、复核对约数比较过度解释</td>
+<td>真实DeepSeek；同一engine；独立RunStore；逐案开发评读</td>
+<td>outputs/challenging_fix_2026-11-02/round1；无自动重试</td>
+</tr>
+<tr>
+<td>134</td>
+<td>按首轮共同变体修复并固定第二轮版本</td>
+<td>首轮原文不改，原案例资料不变</td>
+<td>v0.10.1：否认报价和范围角色、否定承诺作用域；sources-v2模型选ID，程序展开准确原文，状态ID枚举/全文约束；减少抄写引用失败，未放松来源存在与候选原文核对。168项离线回归通过，远程0；祝福不猜日期/往来，活动顾客人称、保养不编机理</td>
+<td>源码/提示词编辑；本地接口替身和正反回归</td>
+<td>local_tests_v0.10.1.txt；首轮失败全部保留</td>
+</tr>
+<tr>
+<td>135</td>
+<td>完成第二轮原14案真实复测，未采用有问题的原文</td>
+<td>固定v0.10.1、sources-v2、相同case输入/品牌</td>
+<td>14案完成，13生成/8复核，21请求、404806 token；EDGE09仍正确零调用停止。来源改写减少但复核大量把来源文字填入候选引文；新变体包括能不能/否定承诺、拒绝款仍进入商品焦点、假定工艺否定和天气/邀请。前两轮共43请求，原结果均保留</td>
+<td>真实DeepSeek；独立RunStore；开发逐案核对</td>
+<td>round2/results.json与raw_runs；没有自动重试</td>
+</tr>
+<tr>
+<td>136</td>
+<td>将来源与候选引用改为双编号绑定，修正当前焦点</td>
+<td>两轮真实原文、类型混淆与位置误引；品牌无变动</td>
+<td>v0.11.0/sources-v3：来源ID+候选片段ID，程序按原文start/end展开，模型原文与resolved_review分存；严格所属候选/来源校验，不接受拼接引文或假ID。修正想看/不用推荐作用域、否定价和明确查询、未知工艺不得反推否定。171项离线回归通过</td>
+<td>源码/提示词整体整理；本地回归</td>
+<td>local_tests_v0.11.0.txt；旧数据不改</td>
+</tr>
+<tr>
+<td>137</td>
+<td>在同一v0.11.0完成原14案复测并独立读原文</td>
+<td>round3_pilot先01/05，再remaining其余12，固定源哈希不变</td>
+<td>合计22请求（13生成/9复核）、435184 token；01/05/06/07/08/14系统交付、09正确停止。02/03/13仍有否定报价/引用误报，04多问题拆漏，10旧状态不当，11复核pass带漏答issue，12真实星期错。13原文还出现没有预留记录，另记真实无依据记录否定，不能只当误报</td>
+<td>真实DeepSeek；候选/来源双编号；逐案开发核对</td>
+<td>round3_pilot与round3_remaining原文、版本/调用量完整保留</td>
+</tr>
+<tr>
+<td>138</td>
+<td>对剩余原因作共同修复，准备定向验证</td>
+<td>同一原输入/资料；第三轮原文，不改候选</td>
+<td>v0.11.1：否定报价和跨句限定/约束存在性，未知记录不是无记录；answer_context关联当前多话题和原来源，日期计算星期单列派生依据，明确整段旧聊无近期消息时状态other而非即时拒绝。175项离线方法通过，远程0。仅02/03复用原生成补复核；04/10/11/12/13有实际内容或时间问题，准备重新生成验证</td>
+<td>本地编辑、严格结构/语义正反回归；接下来每轮目的另留</td>
+<td>local_tests_v0.11.1.txt；尚未提前记真实通过</td>
+</tr>
+<tr>
+<td>139</td>
+<td>定向真实验证剩余7案，区分新误拦和真实生成问题</td>
+<td>v0.11.1；复用02/03原文各一次复核，04/10/11/12/13各一次新生成</td>
+<td>复用两案交付；10新三条交付。共11请求（5生成/6复核）、227741 token。04“不保证完全防水”中话题名词仍被误当承诺；11/12三条及复核依据通过但other/comparing重叠被硬拦；13加颜色后的“没有预留记录”是真无依据记录否定且复核语法失败，均保留原文</td>
+<td>真实DeepSeek；独立记录；开发全文评读</td>
+<td>round4_reused与round4_fresh；无自动重试</td>
+</tr>
+<tr>
+<td>140</td>
+<td>修复谓词/话题区别与服务状态含义，统一记录语气校验</td>
+<td>上轮真实原文、记录问句/引用/实际查询、当前活动服务原话</td>
+<td>v0.11.2：只有防水断言进入属性承诺检查，记录状态同样分问句/引用；服务答疑other/comparing有证据时兼容，明确拒绝差异仍拦、营销限制独立保持，原标签不改。178项本地回归通过。拟复用04/11/12各补一次真实复核；13改未知字段自然表达后重新生成验证</td>
+<td>本地源码/严格结构/正反回归；调用前固定源</td>
+<td>local_tests_v0.11.2.txt；辅助回放旧文件名曾复用，现按APP_VERSION留档，不冒充早期原报告；真实raw从未覆盖</td>
+</tr>
+<tr>
+<td>141</td>
+<td>对三组原文补真实复核，保留来源误拦证据</td>
+<td>v0.11.2复用04/11/12原生成，客户/品牌未变</td>
+<td>04/11交付；12复核pass且时间地址正确，但引用profile.preferences作为长期拒收营销的补充源被程序错拦。它同时引用当前chat.t1，不能把此合法补充源说成没依据；原失败保留，未改原复核或取前三条</td>
+<td>同一review_output；真实DeepSeek复核3次；独立读全文</td>
+<td>round5_reused；用量见逐次usage/账本</td>
+</tr>
+<tr>
+<td>142</td>
+<td>补齐长期背景源和最新消息锚点，核对实际请求schema</td>
+<td>12真实复核source IDs；当前状态/长期联系范围；供应商越出动态enum的原响应</td>
+<td>v0.11.3允许profile补充但要求最新客户正文作当前状态锚点；本地严格校验实际发送的完整schema，不只基础形状。180项离线方法通过，远程0；仍拦真正拒绝差异/错价/优惠/属性/虚构记录及已完成动作。跨日继续，本轮已至2026-11-03</td>
+<td>源码编辑、正反回归和本机接口替身</td>
+<td>local_tests_v0.11.3.txt；此前辅助旧文件名不作为原版成绩</td>
+</tr>
+<tr>
+<td>143</td>
+<td>实际约束校验后完成最后两案的真实调用</td>
+<td>v0.11.3；12复用原三条只复核，13重新生成/复核各一次</td>
+<td>12交付；13三条结构、事实、来源和独立复核内容通过，但生成comparing/复核unclear不一致仍被阻止。真实新增3请求（1生成/2复核）；具体usage在round6。尚不能说13整体通过</td>
+<td>同一engine真实DeepSeek；源profile补充与当前锚点</td>
+<td>round6_reused、round6_fresh原始记录，未改文字</td>
+</tr>
+<tr>
+<td>144</td>
+<td>将非互斥标签兼容和真正拒绝/暂缓分开并本地重验</td>
+<td>原真实13响应、旧标签约定及原话</td>
+<td>v0.11.4：other/comparing在有当前讨论、未掩盖明确停止范围时可兼容，拒绝/暂缓仍严格核对；182项本地方法通过。round7_local复用两阶段原文、云调用0，仍未通过：实际差异是comparing/unclear。此前进度把该差异误说other/comparing，已向用户纠正，不改旧失败</td>
+<td>本地回归；网页同一validate_review_result；独立核对原文</td>
+<td>round7_local保留error与原source_run；这次误诊也留档</td>
+</tr>
+<tr>
+<td>145</td>
+<td>核对unclear定义不一致并要求暂缓有当前来源</td>
+<td>原客户只要求按虚假规则回复，无“再想想/稍后考虑”；复核current_need也无暂缓理由；生成prompt有定义但复核仅列标签</td>
+<td>v0.11.5共享状态说明/schema描述：客户未知购意、业务资料未定、顾问拒绝优惠均不等于客户暂缓；无暂停依据不允许生成unsupported unclear，复核器错误另记，不放宽unclear/comparing。183项离线方法通过；拟仅对原三条再复核一次，客户和品牌不变</td>
+<td>源码/共享规则编辑；本地正反回归，未推断模型内部心理</td>
+<td>local_tests_v0.11.5.txt；原文/旧复核/误诊均保留</td>
+</tr>
+<tr>
+<td>146</td>
+<td>完成最后一案的真实复核并检查原文</td>
+<td>v0.11.5；复用22a88bb6完整原生成，客户/品牌不变</td>
+<td>round8_reused仅1次复核，22,893 token；返回other/pass，来源锚定当前原话，原三条和comparing标签不改。本轮累计83请求（45生成/38复核）、1,643,847 token；最终原14案13组安全三条、1案正确停止，非单次成功率</td>
+<td>真实DeepSeek；同一review_output；人工开发全文评读</td>
+<td>round8_reused/raw_runs/a844d0a2675e408caacd97439b460a99.json及results；0自动重试/50例</td>
+</tr>
+<tr>
+<td>147</td>
+<td>收尾补查共同语气边界并修复新漏检</td>
+<td>本地新对照“我还是可以给您九折/托特还是完全防水/还是19,800”</td>
+<td>旧代码仅因“还是”放行，v0.11.6移除通用问句捷径；待核实无宾语续句绑定原命题，不让核实库存免除肩带断言。首轮新增正例“固定还是可调，需要核实”失败，保留日志后修复作用域。184项离线方法全部通过，远程0，无云调用</td>
+<td>共享解析/本地正反对照；禁止远程的回归脚本</td>
+<td>local_tests_v0.11.6_first_failed.txt与最终日志，版本检查0.7.3</td>
+</tr>
+<tr>
+<td>148</td>
+<td>对最终整组用生产逻辑重验并整理逐案报告</td>
+<td>原14输入、各组原生成/复核、原schema和来源快照、现v0.11.6</td>
+<td>13组原三条逐字相等、schema合法、当前生成/复核检查通过；第09案patch禁止模型仍正确阻止。30份原证据/品牌/页面/截图代码及67份旧工作台原件/旧版本哈希核对通过。报告区分实际生成、复核、最终校验版本；语气/多样性仍列局限，D009/D010开放</td>
+<td>final_report.py；SHA-256；文档编辑；无云重验</td>
+<td>final_acceptance.json、逐案REPORT及CAUSE_REVIEW、CHALLENGE_REPAIR.md；README/DESIGN/VERIFICATION/DEFECTS同步</td>
+</tr>
+<tr>
+<td>149</td>
+<td>更新正常后台并核对原工作台仍可使用</td>
+<td>已核对身份的v0.11.3正常进程；本机8765；现v0.11.6</td>
+<td>正常后台更新至v0.11.6，主页200，进程不带验收限额且保持运行。重启前后SQLite逻辑内容与各表数量相同；原页面仍是小林/虚构林女士、六条聊天/两图/原背景和旧有效组三条。只刷新配置状态，显示新进程尚未验证，不为改状态追加模型调用；页面标为保留</td>
+<td>本机HTTP/进程身份核对；只读SQLite；Computer Use</td>
+<td>service_health.json、challenge_normal_workbench_v0.11.6.png；这不是重跑本轮页面复制/OCR验收</td>
+</tr>
+<tr>
+<td>150</td>
+<td>归档并在独立目录验证可运行性</td>
+<td>当前源码/冻结原输出、逐轮原始记录、哈希清单、本机.env仅内存读取密钥排除</td>
+<td>源码包和旧新证据包逐文件哈希及递归密钥排除通过，context_store仅state_evidence函数改变，截图确认函数保持。首次解包缺旧限额回归脚本导致导入失败，原日志保留；补齐依赖后临时无.env目录184项离线方法全通过，远程0、未写正常工作台。旧失败/原报告/调用前源码全部保留</td>
+<td>ZIP/SHA-256/AST；临时目录回归；无模型请求</td>
+<td>versions/app_v0.11.6.zip及manifest、证据bundle、preservation_v0.11.6.json、source_archive_local日志和首次失败；未扩大功能范围</td>
+</tr>
 </tbody>
 </table>
-<p>| 133 | 完成原14例首轮真实复测并逐条检查新失败 | 固定v0.10.0、原输入/品牌、round1调用前ZIP | 14例完成：生成13次、复核9次，共22请求、424876 token；EDGE06系统放行、EDGE09正确零调用停止；其余保留具体失败。新变体暴露否认报价和预算范围误伤、不能承诺防水误伤、来源ID拼正文/政策引用改写、JSON多右括号、祝福日期/关系扩写、人称错位、复核对约数比较过度解释 | 真实DeepSeek；同一engine；独立RunStore；逐案开发评读 | outputs/challenging_fix_2026-11-02/round1；无自动重试 |
-| 134 | 按首轮共同变体修复并固定第二轮版本 | 首轮原文不改，原案例资料不变 | v0.10.1：否认报价和范围角色、否定承诺作用域；sources-v2模型选ID，程序展开准确原文，状态ID枚举/全文约束；减少抄写引用失败，未放松来源存在与候选原文核对。168项离线回归通过，远程0；祝福不猜日期/往来，活动顾客人称、保养不编机理 | 源码/提示词编辑；本地接口替身和正反回归 | local_tests_v0.10.1.txt；首轮失败全部保留 |</p>
-<p>| 135 | 完成第二轮原14案真实复测，未采用有问题的原文 | 固定v0.10.1、sources-v2、相同case输入/品牌 | 14案完成，13生成/8复核，21请求、404806 token；EDGE09仍正确零调用停止。来源改写减少但复核大量把来源文字填入候选引文；新变体包括能不能/否定承诺、拒绝款仍进入商品焦点、假定工艺否定和天气/邀请。前两轮共43请求，原结果均保留 | 真实DeepSeek；独立RunStore；开发逐案核对 | round2/results.json与raw_runs；没有自动重试 |
-| 136 | 将来源与候选引用改为双编号绑定，修正当前焦点 | 两轮真实原文、类型混淆与位置误引；品牌无变动 | v0.11.0/sources-v3：来源ID+候选片段ID，程序按原文start/end展开，模型原文与resolved_review分存；严格所属候选/来源校验，不接受拼接引文或假ID。修正想看/不用推荐作用域、否定价和明确查询、未知工艺不得反推否定。171项离线回归通过 | 源码/提示词整体整理；本地回归 | local_tests_v0.11.0.txt；旧数据不改 |</p>
-<p>| 137 | 在同一v0.11.0完成原14案复测并独立读原文 | round3_pilot先01/05，再remaining其余12，固定源哈希不变 | 合计22请求（13生成/9复核）、435184 token；01/05/06/07/08/14系统交付、09正确停止。02/03/13仍有否定报价/引用误报，04多问题拆漏，10旧状态不当，11复核pass带漏答issue，12真实星期错。13原文还出现没有预留记录，另记真实无依据记录否定，不能只当误报 | 真实DeepSeek；候选/来源双编号；逐案开发核对 | round3_pilot与round3_remaining原文、版本/调用量完整保留 |
-| 138 | 对剩余原因作共同修复，准备定向验证 | 同一原输入/资料；第三轮原文，不改候选 | v0.11.1：否定报价和跨句限定/约束存在性，未知记录不是无记录；answer_context关联当前多话题和原来源，日期计算星期单列派生依据，明确整段旧聊无近期消息时状态other而非即时拒绝。175项离线方法通过，远程0。仅02/03复用原生成补复核；04/10/11/12/13有实际内容或时间问题，准备重新生成验证 | 本地编辑、严格结构/语义正反回归；接下来每轮目的另留 | local_tests_v0.11.1.txt；尚未提前记真实通过 |</p>
-<p>| 139 | 定向真实验证剩余7案，区分新误拦和真实生成问题 | v0.11.1；复用02/03原文各一次复核，04/10/11/12/13各一次新生成 | 复用两案交付；10新三条交付。共11请求（5生成/6复核）、227741 token。04“不保证完全防水”中话题名词仍被误当承诺；11/12三条及复核依据通过但other/comparing重叠被硬拦；13加颜色后的“没有预留记录”是真无依据记录否定且复核语法失败，均保留原文 | 真实DeepSeek；独立记录；开发全文评读 | round4_reused与round4_fresh；无自动重试 |
-| 140 | 修复谓词/话题区别与服务状态含义，统一记录语气校验 | 上轮真实原文、记录问句/引用/实际查询、当前活动服务原话 | v0.11.2：只有防水断言进入属性承诺检查，记录状态同样分问句/引用；服务答疑other/comparing有证据时兼容，明确拒绝差异仍拦、营销限制独立保持，原标签不改。178项本地回归通过。拟复用04/11/12各补一次真实复核；13改未知字段自然表达后重新生成验证 | 本地源码/严格结构/正反回归；调用前固定源 | local_tests_v0.11.2.txt；辅助回放旧文件名曾复用，现按APP_VERSION留档，不冒充早期原报告；真实raw从未覆盖 |</p>
-<p>| 141 | 对三组原文补真实复核，保留来源误拦证据 | v0.11.2复用04/11/12原生成，客户/品牌未变 | 04/11交付；12复核pass且时间地址正确，但引用profile.preferences作为长期拒收营销的补充源被程序错拦。它同时引用当前chat.t1，不能把此合法补充源说成没依据；原失败保留，未改原复核或取前三条 | 同一review_output；真实DeepSeek复核3次；独立读全文 | round5_reused；用量见逐次usage/账本 |
-| 142 | 补齐长期背景源和最新消息锚点，核对实际请求schema | 12真实复核source IDs；当前状态/长期联系范围；供应商越出动态enum的原响应 | v0.11.3允许profile补充但要求最新客户正文作当前状态锚点；本地严格校验实际发送的完整schema，不只基础形状。180项离线方法通过，远程0；仍拦真正拒绝差异/错价/优惠/属性/虚构记录及已完成动作。跨日继续，本轮已至2026-11-03 | 源码编辑、正反回归和本机接口替身 | local_tests_v0.11.3.txt；此前辅助旧文件名不作为原版成绩 |</p>
-<p>| 143 | 实际约束校验后完成最后两案的真实调用 | v0.11.3；12复用原三条只复核，13重新生成/复核各一次 | 12交付；13三条结构、事实、来源和独立复核内容通过，但生成comparing/复核unclear不一致仍被阻止。真实新增3请求（1生成/2复核）；具体usage在round6。尚不能说13整体通过 | 同一engine真实DeepSeek；源profile补充与当前锚点 | round6_reused、round6_fresh原始记录，未改文字 |
-| 144 | 将非互斥标签兼容和真正拒绝/暂缓分开并本地重验 | 原真实13响应、旧标签约定及原话 | v0.11.4：other/comparing在有当前讨论、未掩盖明确停止范围时可兼容，拒绝/暂缓仍严格核对；182项本地方法通过。round7_local复用两阶段原文、云调用0，仍未通过：实际差异是comparing/unclear。此前进度把该差异误说other/comparing，已向用户纠正，不改旧失败 | 本地回归；网页同一validate_review_result；独立核对原文 | round7_local保留error与原source_run；这次误诊也留档 |
-| 145 | 核对unclear定义不一致并要求暂缓有当前来源 | 原客户只要求按虚假规则回复，无“再想想/稍后考虑”；复核current_need也无暂缓理由；生成prompt有定义但复核仅列标签 | v0.11.5共享状态说明/schema描述：客户未知购意、业务资料未定、顾问拒绝优惠均不等于客户暂缓；无暂停依据不允许生成unsupported unclear，复核器错误另记，不放宽unclear/comparing。183项离线方法通过；拟仅对原三条再复核一次，客户和品牌不变 | 源码/共享规则编辑；本地正反回归，未推断模型内部心理 | local_tests_v0.11.5.txt；原文/旧复核/误诊均保留 |
-| 146 | 完成最后一案的真实复核并检查原文 | v0.11.5；复用22a88bb6完整原生成，客户/品牌不变 | round8_reused仅1次复核，22,893 token；返回other/pass，来源锚定当前原话，原三条和comparing标签不改。本轮累计83请求（45生成/38复核）、1,643,847 token；最终原14案13组安全三条、1案正确停止，非单次成功率 | 真实DeepSeek；同一review_output；人工开发全文评读 | round8_reused/raw_runs/a844d0a2675e408caacd97439b460a99.json及results；0自动重试/50例 |
-| 147 | 收尾补查共同语气边界并修复新漏检 | 本地新对照“我还是可以给您九折/托特还是完全防水/还是19,800” | 旧代码仅因“还是”放行，v0.11.6移除通用问句捷径；待核实无宾语续句绑定原命题，不让核实库存免除肩带断言。首轮新增正例“固定还是可调，需要核实”失败，保留日志后修复作用域。184项离线方法全部通过，远程0，无云调用 | 共享解析/本地正反对照；禁止远程的回归脚本 | local_tests_v0.11.6_first_failed.txt与最终日志，版本检查0.7.3 |
-| 148 | 对最终整组用生产逻辑重验并整理逐案报告 | 原14输入、各组原生成/复核、原schema和来源快照、现v0.11.6 | 13组原三条逐字相等、schema合法、当前生成/复核检查通过；第09案patch禁止模型仍正确阻止。30份原证据/品牌/页面/截图代码及67份旧工作台原件/旧版本哈希核对通过。报告区分实际生成、复核、最终校验版本；语气/多样性仍列局限，D009/D010开放 | final_report.py；SHA-256；文档编辑；无云重验 | final_acceptance.json、逐案REPORT及CAUSE_REVIEW、CHALLENGE_REPAIR.md；README/DESIGN/VERIFICATION/DEFECTS同步 |
-| 149 | 更新正常后台并核对原工作台仍可使用 | 已核对身份的v0.11.3正常进程；本机8765；现v0.11.6 | 正常后台更新至v0.11.6，主页200，进程不带验收限额且保持运行。重启前后SQLite逻辑内容与各表数量相同；原页面仍是小林/虚构林女士、六条聊天/两图/原背景和旧有效组三条。只刷新配置状态，显示新进程尚未验证，不为改状态追加模型调用；页面标为保留 | 本机HTTP/进程身份核对；只读SQLite；Computer Use | service_health.json、challenge_normal_workbench_v0.11.6.png；这不是重跑本轮页面复制/OCR验收 |
-| 150 | 归档并在独立目录验证可运行性 | 当前源码/冻结原输出、逐轮原始记录、哈希清单、本机.env仅内存读取密钥排除 | 源码包和旧新证据包逐文件哈希及递归密钥排除通过，context_store仅state_evidence函数改变，截图确认函数保持。首次解包缺旧限额回归脚本导致导入失败，原日志保留；补齐依赖后临时无.env目录184项离线方法全通过，远程0、未写正常工作台。旧失败/原报告/调用前源码全部保留 | ZIP/SHA-256/AST；临时目录回归；无模型请求 | versions/app_v0.11.6.zip及manifest、证据bundle、preservation_v0.11.6.json、source_archive_local日志和首次失败；未扩大功能范围 |</p>
 <h2>独立泛化审查（2026-11-03）</h2>
 <table>
 <thead>
@@ -1206,16 +1332,72 @@
 <td>本地远程禁止脚本；测试资料设计；无子agent</td>
 <td>artifacts/local_tests_v0.12.0_final.txt、extra_safety.json、development_14.json、outputs/formal50_2026-11-03/PLAN.md</td>
 </tr>
+<tr>
+<td>155</td>
+<td>固定v0.12.0跑正式五十例首轮</td>
+<td>调用前freeze.json、同版源码ZIP、固定case哈希及逐案检查点</td>
+<td>50案全部记录首次真实结果，生成50/复核45，共95请求，2,083,295 token，程序交付31/50、失败19/50。源码/品牌/提示词全程哈希不变，0自动重试、不换失败案、不改统计分母。6个主动营销安全探针不计入正式50</td>
+<td>同一engine真实DeepSeek；独立RunStore，未写原工作台</td>
+<td>outputs/formal50_2026-11-03/baseline.json与baseline_raw、baseline_console.txt；不是14案或多轮最佳拼接</td>
+</tr>
+<tr>
+<td>156</td>
+<td>开发者逐条全文评读全部150条及复核原文</td>
+<td>50案预期、每条原文、品牌/活动/客户来源、失败记录</td>
+<td>首轮AI开发评读：34/50组硬事实/上下文/独立完整接受，127/150条接受；语气和选择价值另列。识别程序域词漏识造成的误拦，也识别模型pass仍放过不反光、污渍步骤扩展、无依据联系历史、入场流程等；不把模型pass当真。F14元数据结构错误，原arguments仍有恰好三个候选字符串，原样展示但不修补成成功。初次真实记录/评分已哈希封存</td>
+<td>AI开发者全文对照，不冒充顾问试用或盲评</td>
+<td>assessment_work.json与baseline_preservation.json；边界判断理由逐案保留，用户可按原文复核</td>
+</tr>
+<tr>
+<td>157</td>
+<td>首轮结束后另版修复明确误拦</td>
+<td>原50首轮封存，原消息/复核不改</td>
+<td>v0.12.1处理价格/颜色/比较前提未命中域词不等于错来源，合法辅助背景与品牌一致的无优惠活动事实不扩授权；修话题/个人物品/多款共同属性/总额差额/口误星期范围。204项离线方法通过。50组原响应本地重验42组原复核可过，4组首轮没复核仍待复核，另有合同/JSON及真实复核阻止；不把42算新真实通过率</td>
+<td>本地正反回归；同一生产校验函数；云0</td>
+<td>local_tests_v0.12.1_initial.txt、local_replay_v0.12.1.json，首轮95调用不变</td>
+</tr>
+<tr>
+<td>158</td>
+<td>仅两案作一次新版本真实对照，保留新失败</td>
+<td>同一F28/F47输入/品牌；v0.12.1共享规则补事实归属和参数不证明原因，调用前源码冻结</td>
+<td>生成/复核各2次，共4请求/91,010 token；F28没有再编未联系历史，F47仍编尺寸/用量解释差价，复核pass漏检，程序因引用检查不交付。事实逐条独立看，不因pass签收，不重抽、不替换正式F28/F47</td>
+<td>真实DeepSeek；同一engine；开发全文评读</td>
+<td>followup_v0.12.1/results.json及raw_runs、source_before_calls.zip，哈希全程不变</td>
+</tr>
+<tr>
+<td>159</td>
+<td>对已保存新失败补精确本地因果防线</td>
+<td>F47原三条、新的参数比较/因果/金额范围问句对照</td>
+<td>v0.12.2对明确差价因果但无定价资料的断言定位unsupported_price_cause，真实F47三条均指出实际问题；正常参数/差额计算与问句不误拦。205项离线方法通过，未追加云调用；生成模型仍可能写错，此为防线不是修好生成</td>
+<td>共享事实校验、本地正反、原文复验</td>
+<td>local_tests_v0.12.2_release.txt及followup_assessment.json，首轮/后续原文保持</td>
+</tr>
+<tr>
+<td>160</td>
+<td>整理正式150条、逐案评读和版本对比</td>
+<td>冻结首轮50输入/原始响应/评分、后续两案、6额外安全探针</td>
+<td>FIRST_150_MESSAGES保留实际全部原文并给逐字符哈希；区分49/50完整合同、31/50程序交付、34/50组AI硬接受、语气及选择价值。F14不是偷偷修补为成功；另版/本地42组不混入首轮，原14不算新测试，旧失败未删除</td>
+<td>本地报表与JSON；全文AI开发评读，不冒充人类试用</td>
+<td>REPORT/INPUTS/PLAN/summary/FIRST_150_MESSAGES及FORMAL_EVALUATION.md、泛化修复REPORT</td>
+</tr>
+<tr>
+<td>161</td>
+<td>保留正常后台和原工作台</td>
+<td>正常本机进程、原小林/虚构林女士客户库、两截图/6消息/旧有效组与背景</td>
+<td>正常服务更新v0.12.2，主页200、无验收限额，重启前后SQLite逻辑哈希相同。网页实际刷新恢复原背景、6条、旧草稿与有效回复，保留页面；未为显示连通额外调用模型。日期不明提示具体来源且复用背景入口，不增加表单</td>
+<td>本机HTTP/SQLite、Computer Use</td>
+<td>service_health.json、formal50_normal_workbench_v0.12.2.png/txt；未重跑OCR或真实微信发送</td>
+</tr>
+<tr>
+<td>162</td>
+<td>核对源码与全部原文归档可复现且不含密钥</td>
+<td>最终v0.12.2源码、50组150条、首轮/后续各版原始响应、旧资料基线</td>
+<td>首轮57份封存文件与184份更早资料哈希核对通过；正式冻结源码ZIP逐项匹配freeze，OCR/确认函数未变，仅文字聊天日期解析改动。源码/证据ZIP逐文件校验与递归实际key排除通过，排除.env、题目PDF、运行数据库；源码在独立无.env临时目录205项离线方法全过、远程0。未新增模型调用，后台继续运行</td>
+<td>SHA-256/AST/ZIP；临时目录回归；本机服务</td>
+<td>versions/app_v0.12.2.zip及manifest、formal50_v0.12.2_bundle.zip、release_preservation.json、source_archive_local_v0.12.2.json/txt</td>
+</tr>
 </tbody>
 </table>
-<p>| 155 | 固定v0.12.0跑正式五十例首轮 | 调用前freeze.json、同版源码ZIP、固定case哈希及逐案检查点 | 50案全部记录首次真实结果，生成50/复核45，共95请求，2,083,295 token，程序交付31/50、失败19/50。源码/品牌/提示词全程哈希不变，0自动重试、不换失败案、不改统计分母。6个主动营销安全探针不计入正式50 | 同一engine真实DeepSeek；独立RunStore，未写原工作台 | outputs/formal50_2026-11-03/baseline.json与baseline_raw、baseline_console.txt；不是14案或多轮最佳拼接 |
-| 156 | 开发者逐条全文评读全部150条及复核原文 | 50案预期、每条原文、品牌/活动/客户来源、失败记录 | 首轮AI开发评读：34/50组硬事实/上下文/独立完整接受，127/150条接受；语气和选择价值另列。识别程序域词漏识造成的误拦，也识别模型pass仍放过不反光、污渍步骤扩展、无依据联系历史、入场流程等；不把模型pass当真。F14元数据结构错误，原arguments仍有恰好三个候选字符串，原样展示但不修补成成功。初次真实记录/评分已哈希封存 | AI开发者全文对照，不冒充顾问试用或盲评 | assessment_work.json与baseline_preservation.json；边界判断理由逐案保留，用户可按原文复核 |</p>
-<p>| 157 | 首轮结束后另版修复明确误拦 | 原50首轮封存，原消息/复核不改 | v0.12.1处理价格/颜色/比较前提未命中域词不等于错来源，合法辅助背景与品牌一致的无优惠活动事实不扩授权；修话题/个人物品/多款共同属性/总额差额/口误星期范围。204项离线方法通过。50组原响应本地重验42组原复核可过，4组首轮没复核仍待复核，另有合同/JSON及真实复核阻止；不把42算新真实通过率 | 本地正反回归；同一生产校验函数；云0 | local_tests_v0.12.1_initial.txt、local_replay_v0.12.1.json，首轮95调用不变 |
-| 158 | 仅两案作一次新版本真实对照，保留新失败 | 同一F28/F47输入/品牌；v0.12.1共享规则补事实归属和参数不证明原因，调用前源码冻结 | 生成/复核各2次，共4请求/91,010 token；F28没有再编未联系历史，F47仍编尺寸/用量解释差价，复核pass漏检，程序因引用检查不交付。事实逐条独立看，不因pass签收，不重抽、不替换正式F28/F47 | 真实DeepSeek；同一engine；开发全文评读 | followup_v0.12.1/results.json及raw_runs、source_before_calls.zip，哈希全程不变 |
-| 159 | 对已保存新失败补精确本地因果防线 | F47原三条、新的参数比较/因果/金额范围问句对照 | v0.12.2对明确差价因果但无定价资料的断言定位unsupported_price_cause，真实F47三条均指出实际问题；正常参数/差额计算与问句不误拦。205项离线方法通过，未追加云调用；生成模型仍可能写错，此为防线不是修好生成 | 共享事实校验、本地正反、原文复验 | local_tests_v0.12.2_release.txt及followup_assessment.json，首轮/后续原文保持 |
-| 160 | 整理正式150条、逐案评读和版本对比 | 冻结首轮50输入/原始响应/评分、后续两案、6额外安全探针 | FIRST_150_MESSAGES保留实际全部原文并给逐字符哈希；区分49/50完整合同、31/50程序交付、34/50组AI硬接受、语气及选择价值。F14不是偷偷修补为成功；另版/本地42组不混入首轮，原14不算新测试，旧失败未删除 | 本地报表与JSON；全文AI开发评读，不冒充人类试用 | REPORT/INPUTS/PLAN/summary/FIRST_150_MESSAGES及FORMAL_EVALUATION.md、泛化修复REPORT |
-| 161 | 保留正常后台和原工作台 | 正常本机进程、原小林/虚构林女士客户库、两截图/6消息/旧有效组与背景 | 正常服务更新v0.12.2，主页200、无验收限额，重启前后SQLite逻辑哈希相同。网页实际刷新恢复原背景、6条、旧草稿与有效回复，保留页面；未为显示连通额外调用模型。日期不明提示具体来源且复用背景入口，不增加表单 | 本机HTTP/SQLite、Computer Use | service_health.json、formal50_normal_workbench_v0.12.2.png/txt；未重跑OCR或真实微信发送 |</p>
-<p>| 162 | 核对源码与全部原文归档可复现且不含密钥 | 最终v0.12.2源码、50组150条、首轮/后续各版原始响应、旧资料基线 | 首轮57份封存文件与184份更早资料哈希核对通过；正式冻结源码ZIP逐项匹配freeze，OCR/确认函数未变，仅文字聊天日期解析改动。源码/证据ZIP逐文件校验与递归实际key排除通过，排除.env、题目PDF、运行数据库；源码在独立无.env临时目录205项离线方法全过、远程0。未新增模型调用，后台继续运行 | SHA-256/AST/ZIP；临时目录回归；本机服务 | versions/app_v0.12.2.zip及manifest、formal50_v0.12.2_bundle.zip、release_preservation.json、source_archive_local_v0.12.2.json/txt |</p>
 <h2>回复主流程界面调整（2026-11-03）</h2>
 <table>
 <thead>
@@ -1631,9 +1813,16 @@
 <td>Codex AI全文对照、仅生成独立审查资料的本地脚本与哈希校验、浏览器只读打开；无子agent</td>
 <td>outputs/formal50_rerun_v0.13.6_2026-11-04/writing_audit/index.html、REPORT.md、assessment.json、verification.json；AI聊天截图仍应按真实对话留存，不伪造</td>
 </tr>
+<tr>
+<td>202</td>
+<td>明确修改项、对应案例及最小首批复测，提供working agent执行要求</td>
+<td>用户要求具体修法、最少测试哪些案例及回复中直接分块呈现原文</td>
+<td>新增TEST_PLAN：8案优先验证防守/越位，另外6案验证已知事实与服务问题；共14案最多28请求，仅为定向回归计划，尚未执行。分4/4/6案三个test chunk直接贴原输入、三条新模型原文、状态与逐案编辑判断，不能只交链接或通过数。余额未恢复前不请求模型，旧147条继续本地回归；全部原结果保留</td>
+<td>本地审查与计划文档，无真实模型调用</td>
+<td>writing_audit/TEST_PLAN.md；不把计划当实测证据</td>
+</tr>
 </tbody>
 </table>
-<p>| 202 | 明确修改项、对应案例及最小首批复测，提供working agent执行要求 | 用户要求具体修法、最少测试哪些案例及回复中直接分块呈现原文 | 新增TEST_PLAN：8案优先验证防守/越位，另外6案验证已知事实与服务问题；共14案最多28请求，仅为定向回归计划，尚未执行。分4/4/6案三个test chunk直接贴原输入、三条新模型原文、状态与逐案编辑判断，不能只交链接或通过数。余额未恢复前不请求模型，旧147条继续本地回归；全部原结果保留 | 本地审查与计划文档，无真实模型调用 | writing_audit/TEST_PLAN.md；不把计划当实测证据 |</p>
 <h2>0.14.0：按当前问题选事实、逐句编辑，真实复测等待余额通知（2026-11-04）</h2>
 <table>
 <thead>
@@ -1812,12 +2001,40 @@
 <td>本机HTTP/局部函数与显式模型替身，测试进程禁止远程</td>
 <td>outputs/business_eval_v2_2026-11-04/local/initial与final，tests/test_business_v2</td>
 </tr>
+<tr>
+<td>218</td>
+<td>固定新业务版本后，仅三例各真实生成/复核一次</td>
+<td>N01正常生日、N09已选卡夹价格与四卡、N10报iPhone 15 Pro Max问斜挎与容量；正常DeepSeek配置</td>
+<td>0.15.0固定生成1.3/复核1.2，6请求154941 token、0重试、usage齐全。三组各恰好三条；生日/卡夹success，手机因第三条尾句needs_review未交付。设备查询在生成/复核逐值相同，完整请求/原响应/来源/版本/用量保存；未跑余47或旧50</td>
+<td>实际engine与独立RunStore；正常模型非替身；每次请求前冻结哈希核对</td>
+<td>business_eval_v2_2026-11-04/freeze、pilot/ledger与raw_runs；AI对话截图待本人按需补</td>
+</tr>
+<tr>
+<td>219</td>
+<td>逐条独立对照任务、原文与复核，不将pass当标准答案</td>
+<td>上述九条原文与逐句评读、商品与官方设备来源</td>
+<td>生日三条合用，第三条重复仅轻微；卡夹答对但都重复四卡容量，复核句内keep过粗，选择价值仍偏弱。手机事实三条有据，第一条最直接；第三条可省厚壳/外接配件尾句，但可选到店不是必须到店，整组阻断尺度偏重。保留原error和三原文，不修原文凑success；编辑判断单独保存，无追加真实调用</td>
+<td>开发者逐字评读，非真人顾问认可，不修改旧评分</td>
+<td>pilot/EDITORIAL.json、RESULTS_WITH_EDITORIAL.md、REPORT.md；最终回复直接列50输入与九原文</td>
+</tr>
+<tr>
+<td>220</td>
+<td>核对当前演示初始化，修新旧格式接合并改阅读入口</td>
+<td>新walkthrough八例、原准备脚本与启动说明</td>
+<td>发现旧脚本仍依赖customer_name、清空W02聊天且丢偏好；仅演示准备标demo-v2.0.1，按新案例题目显示，已有聊天偏好原样存，另建v2文件夹不碰旧。隔离临时库8份输入与偏好逐值一致、再次运行幂等；初次校验错读scope嵌套后按真实open顶层字段修装置。未改已实测生成/复核/规则哈希，原freeze不覆盖。当前README/启动/商品索引标版本与真实局限，不称新截图/录像已验证</td>
+<td>本地临时SQLite，0模型调用；文档更新</td>
+<td>demo_preparation_check.json、RUN_THIS_FIRST、README、PRODUCT_EVIDENCE；旧W02截图仍历史</td>
+</tr>
+<tr>
+<td>221</td>
+<td>收尾核对证据与正常服务，不扩大测试</td>
+<td>221旧证据哈希、三份新原始记录、冻结生成源码、正常8765服务</td>
+<td>221份历史未变，唯一冻结后脚本差异为演示准备，不改生成配置；三份新raw留哈希。首页/meta/status均200、app0.15.0，正常后台保持运行；第一次只读HTTP因执行环境网络权限限制未连，获工具自动批准后仅重做本机GET，无模型调用。不跑其他47、不重试三例、不封版；没有真人愿发/节时结论</td>
+<td>哈希比对、本机只读HTTP；无子agent</td>
+<td>preservation_check.json、data/local_service.json、artifacts/normal_service_v0.15.0.log</td>
+</tr>
 </tbody>
 </table>
-<p>| 218 | 固定新业务版本后，仅三例各真实生成/复核一次 | N01正常生日、N09已选卡夹价格与四卡、N10报iPhone 15 Pro Max问斜挎与容量；正常DeepSeek配置 | 0.15.0固定生成1.3/复核1.2，6请求154941 token、0重试、usage齐全。三组各恰好三条；生日/卡夹success，手机因第三条尾句needs_review未交付。设备查询在生成/复核逐值相同，完整请求/原响应/来源/版本/用量保存；未跑余47或旧50 | 实际engine与独立RunStore；正常模型非替身；每次请求前冻结哈希核对 | business_eval_v2_2026-11-04/freeze、pilot/ledger与raw_runs；AI对话截图待本人按需补 |
-| 219 | 逐条独立对照任务、原文与复核，不将pass当标准答案 | 上述九条原文与逐句评读、商品与官方设备来源 | 生日三条合用，第三条重复仅轻微；卡夹答对但都重复四卡容量，复核句内keep过粗，选择价值仍偏弱。手机事实三条有据，第一条最直接；第三条可省厚壳/外接配件尾句，但可选到店不是必须到店，整组阻断尺度偏重。保留原error和三原文，不修原文凑success；编辑判断单独保存，无追加真实调用 | 开发者逐字评读，非真人顾问认可，不修改旧评分 | pilot/EDITORIAL.json、RESULTS_WITH_EDITORIAL.md、REPORT.md；最终回复直接列50输入与九原文 |
-| 220 | 核对当前演示初始化，修新旧格式接合并改阅读入口 | 新walkthrough八例、原准备脚本与启动说明 | 发现旧脚本仍依赖customer_name、清空W02聊天且丢偏好；仅演示准备标demo-v2.0.1，按新案例题目显示，已有聊天偏好原样存，另建v2文件夹不碰旧。隔离临时库8份输入与偏好逐值一致、再次运行幂等；初次校验错读scope嵌套后按真实open顶层字段修装置。未改已实测生成/复核/规则哈希，原freeze不覆盖。当前README/启动/商品索引标版本与真实局限，不称新截图/录像已验证 | 本地临时SQLite，0模型调用；文档更新 | demo_preparation_check.json、RUN_THIS_FIRST、README、PRODUCT_EVIDENCE；旧W02截图仍历史 |
-| 221 | 收尾核对证据与正常服务，不扩大测试 | 221旧证据哈希、三份新原始记录、冻结生成源码、正常8765服务 | 221份历史未变，唯一冻结后脚本差异为演示准备，不改生成配置；三份新raw留哈希。首页/meta/status均200、app0.15.0，正常后台保持运行；第一次只读HTTP因执行环境网络权限限制未连，获工具自动批准后仅重做本机GET，无模型调用。不跑其他47、不重试三例、不封版；没有真人愿发/节时结论 | 哈希比对、本机只读HTTP；无子agent | preservation_check.json、data/local_service.json、artifacts/normal_service_v0.15.0.log |</p>
 <h2>新业务集v2与0.15.0独立审查（2026-11-04）</h2>
 <table>
 <thead>
@@ -1839,15 +2056,64 @@
 <td>本地源码/原文核对、显式人工对照、unittest、官方Apple页面浏览；无子agent</td>
 <td>outputs/independent_review_v0.15.0_2026-11-04/REPORT.md、audit.json、local_tests.log；work/review_v0150.py</td>
 </tr>
+<tr>
+<td>222</td>
+<td>保留新50与页面，定点修复polish尺度和设备舍入</td>
+<td>用户确认保留v2输入；旧N10原三条/原复核、约16×7.7×1.2及1.3反例</td>
+<td>已先存888份历史证据哈希和0.15.0源码。0.15.1仅编辑分类及手机校验：可省建议/重复/略书面归非阻断polish，remove/revise仍用于实质问题；不在程序把旧needs_review偷偷改成pass。每维Decimal数值/独立单位/半个末位容差一起排序，不共享最大容差；错误厚度阻止，合理近似允许</td>
+<td>本地归档、代码/共享规则/复核/字段说明小改；不改品牌、商品、50输入或web</td>
+<td>source_before_v0.15.0、protected_history、local/phone_before_after；无新真实调用</td>
+</tr>
+<tr>
+<td>223</td>
+<td>本地正反及实际生成/交付守门回归后准备冻结</td>
+<td>原N10候选逐字复用、显式polish本地复核替身、原needs_review对照、混合单位/重排/厚度、错价/九折、旧拒绝漏答及来源护栏</td>
+<td>187项通过，远程尝试0，模型0。新polish替身可交付并保留全部原文，旧原复核仍error；错误设备数字/有单位错价/折扣在生成本地检查停止。初始测试误把所有中文省略报价都当作必定在生成前拦且重复导入10项，调整装置使用现有可解析报价并去重；日志保留，不宣称穷尽中文数字解析。旧实质护栏未关闭。新增正式计划首四N10/30/37/50后条件继续46，旧试跑与本轮成绩分开</td>
+<td>同一engine/guard本地替身与本机HTTP测试；Spreadsheets技能用于最终八列表</td>
+<td>local/first与final、tests/test_formal_v2_fixes、FORMAL_PLAN_v0.15.1；真实首批尚未执行</td>
+</tr>
+<tr>
+<td>224</td>
+<td>固定0.15.1后执行正式首批四案，每案各生成/复核一次</td>
+<td>原样N10/30/37/50、品牌商品/官方设备表未改，首批闸门计划</td>
+<td>8请求213446 token，usage齐全、0自动重试；四组均恰好三条原文。N10/37/50 success，N30 invalid_review，四复核均pass。每次调用前核源码哈希，完整请求/原响应/用量/版本保留，未复用旧试跑或人工改句</td>
+<td>正常配置deepseek-flash，同一engine、独立RunStore；无子agent</td>
+<td>freeze/source_at_freeze、baseline、raw_runs；不是正式50完成</td>
+</tr>
+<tr>
+<td>225</td>
+<td>对照首四原文与依据，判断是否继续46</td>
+<td>N30售后单、三条原文、复核引用、实际程序错误；其余三案完整原文</td>
+<td>定位N30共同来源权限误拦：业务/订单源无service域，具体450元和预计10日正确，复核引用正确。不是客户没给或生成编造；按用户预设停止条件关闸，不调46、不改冻版或重抽。N37第二条三款包统称有轻微事实分类错，复核漏判；重复/长邀请/索已知称呼/N50书面仅记编辑。N10已正常交付，候选2必要边界理由仍过度，候选3polish不阻断</td>
+<td>开发者逐字和source_domains无云重现；不默认模型pass即正确</td>
+<td>FIRST_BATCH_GATE、local/N30_source_diagnosis、ASSESSMENT；其余46未调用</td>
+</tr>
+<tr>
+<td>226</td>
+<td>整理首批原文入口与规定八列表，分别展示判断</td>
+<td>固定首个4结果/12字串、全部50计划输入、逐案事实与编辑判断</td>
+<td>HTML/Markdown/JSON保留全部原文及完整复核，失败同样展示。八列Excel与CSV保留50计划行，仅4真实结果，其余46明示未执行；第二张表分程序交付、事实/编辑、复核误判/程序误拦。Artifact Tool创建并重算、无公式错误，保存后导入比对；初次仅空字符串导入null的装置差异，按空白核对，所有非空内容与12候选精确一致，未改输出。预览检查当前售后及最长邀请</td>
+<td>Spreadsheets技能、bundled Artifact Tool，本地导出/只读回读，无额外模型</td>
+<td>index/OUTPUTS、OUTPUTS_8_COLUMNS.xlsx/.csv、workbook_inspection/roundtrip；不称50组实际生成</td>
+</tr>
+<tr>
+<td>227</td>
+<td>保持正常工具与本轮只读审阅入口运行</td>
+<td>正常8765旧进程、冻结0.15.1、原客户数据库、首批报告</td>
+<td>正常后台更新0.15.1，首页200，SQLite逻辑哈希重启前后相同；web源未改、旧截图/背景/草稿未重建。审阅另开8767只读服务，不改8766旧49组入口，不补模型连接探针。初次服务辅助脚本搬目录后ROOT错一层，修脚本定位即启动成功，未改产品。正文/原文/版本入口标本轮4而非50完成；封版仍暂停</td>
+<td>受限本机服务启动与GET核对，不发模型；正常配置无验收次数上限</td>
+<td>service_health、review_service、README/RUN_THIS_FIRST；WORK_LOG继续追加</td>
+</tr>
+<tr>
+<td>228</td>
+<td>最终逐字、导出与证据核对，保持停止条件</td>
+<td>当前冻结源码、888旧证据、四份新raw、HTML/CSV/Excel、两个本机入口</td>
+<td>888份旧文件与冻结源码哈希均未变；50输入/品牌/商品/web不变，实际仅4案8请求。HTML与CSV12原文精确一致，Excel保存后所有非空值及12原文一致，46未执行明确。检查最长邀请预览后只增加表格行内留白，回读复核不改内容；静态表无公式错误。归档及raw密钥扫描通过。8765正常工具/meta为0.15.1、8767报告/Excel均200；后台保持，未追加模型探针。首批关闸、未封版、未称50完成</td>
+<td>文件哈希、HTML解析、CSV解析、Artifact Tool回读/预览、本机只读GET</td>
+<td>FINAL_CHECK、workbook_roundtrip、SUMMARY、REPORT；模型总用量仍213446 token</td>
+</tr>
 </tbody>
 </table>
-<p>| 222 | 保留新50与页面，定点修复polish尺度和设备舍入 | 用户确认保留v2输入；旧N10原三条/原复核、约16×7.7×1.2及1.3反例 | 已先存888份历史证据哈希和0.15.0源码。0.15.1仅编辑分类及手机校验：可省建议/重复/略书面归非阻断polish，remove/revise仍用于实质问题；不在程序把旧needs_review偷偷改成pass。每维Decimal数值/独立单位/半个末位容差一起排序，不共享最大容差；错误厚度阻止，合理近似允许 | 本地归档、代码/共享规则/复核/字段说明小改；不改品牌、商品、50输入或web | source_before_v0.15.0、protected_history、local/phone_before_after；无新真实调用 |
-| 223 | 本地正反及实际生成/交付守门回归后准备冻结 | 原N10候选逐字复用、显式polish本地复核替身、原needs_review对照、混合单位/重排/厚度、错价/九折、旧拒绝漏答及来源护栏 | 187项通过，远程尝试0，模型0。新polish替身可交付并保留全部原文，旧原复核仍error；错误设备数字/有单位错价/折扣在生成本地检查停止。初始测试误把所有中文省略报价都当作必定在生成前拦且重复导入10项，调整装置使用现有可解析报价并去重；日志保留，不宣称穷尽中文数字解析。旧实质护栏未关闭。新增正式计划首四N10/30/37/50后条件继续46，旧试跑与本轮成绩分开 | 同一engine/guard本地替身与本机HTTP测试；Spreadsheets技能用于最终八列表 | local/first与final、tests/test_formal_v2_fixes、FORMAL_PLAN_v0.15.1；真实首批尚未执行 |</p>
-<p>| 224 | 固定0.15.1后执行正式首批四案，每案各生成/复核一次 | 原样N10/30/37/50、品牌商品/官方设备表未改，首批闸门计划 | 8请求213446 token，usage齐全、0自动重试；四组均恰好三条原文。N10/37/50 success，N30 invalid_review，四复核均pass。每次调用前核源码哈希，完整请求/原响应/用量/版本保留，未复用旧试跑或人工改句 | 正常配置deepseek-flash，同一engine、独立RunStore；无子agent | freeze/source_at_freeze、baseline、raw_runs；不是正式50完成 |
-| 225 | 对照首四原文与依据，判断是否继续46 | N30售后单、三条原文、复核引用、实际程序错误；其余三案完整原文 | 定位N30共同来源权限误拦：业务/订单源无service域，具体450元和预计10日正确，复核引用正确。不是客户没给或生成编造；按用户预设停止条件关闸，不调46、不改冻版或重抽。N37第二条三款包统称有轻微事实分类错，复核漏判；重复/长邀请/索已知称呼/N50书面仅记编辑。N10已正常交付，候选2必要边界理由仍过度，候选3polish不阻断 | 开发者逐字和source_domains无云重现；不默认模型pass即正确 | FIRST_BATCH_GATE、local/N30_source_diagnosis、ASSESSMENT；其余46未调用 |
-| 226 | 整理首批原文入口与规定八列表，分别展示判断 | 固定首个4结果/12字串、全部50计划输入、逐案事实与编辑判断 | HTML/Markdown/JSON保留全部原文及完整复核，失败同样展示。八列Excel与CSV保留50计划行，仅4真实结果，其余46明示未执行；第二张表分程序交付、事实/编辑、复核误判/程序误拦。Artifact Tool创建并重算、无公式错误，保存后导入比对；初次仅空字符串导入null的装置差异，按空白核对，所有非空内容与12候选精确一致，未改输出。预览检查当前售后及最长邀请 | Spreadsheets技能、bundled Artifact Tool，本地导出/只读回读，无额外模型 | index/OUTPUTS、OUTPUTS_8_COLUMNS.xlsx/.csv、workbook_inspection/roundtrip；不称50组实际生成 |
-| 227 | 保持正常工具与本轮只读审阅入口运行 | 正常8765旧进程、冻结0.15.1、原客户数据库、首批报告 | 正常后台更新0.15.1，首页200，SQLite逻辑哈希重启前后相同；web源未改、旧截图/背景/草稿未重建。审阅另开8767只读服务，不改8766旧49组入口，不补模型连接探针。初次服务辅助脚本搬目录后ROOT错一层，修脚本定位即启动成功，未改产品。正文/原文/版本入口标本轮4而非50完成；封版仍暂停 | 受限本机服务启动与GET核对，不发模型；正常配置无验收次数上限 | service_health、review_service、README/RUN_THIS_FIRST；WORK_LOG继续追加 |</p>
-<p>| 228 | 最终逐字、导出与证据核对，保持停止条件 | 当前冻结源码、888旧证据、四份新raw、HTML/CSV/Excel、两个本机入口 | 888份旧文件与冻结源码哈希均未变；50输入/品牌/商品/web不变，实际仅4案8请求。HTML与CSV12原文精确一致，Excel保存后所有非空值及12原文一致，46未执行明确。检查最长邀请预览后只增加表格行内留白，回读复核不改内容；静态表无公式错误。归档及raw密钥扫描通过。8765正常工具/meta为0.15.1、8767报告/Excel均200；后台保持，未追加模型探针。首批关闸、未封版、未称50完成 | 文件哈希、HTML解析、CSV解析、Artifact Tool回读/预览、本机只读GET | FINAL_CHECK、workbook_roundtrip、SUMMARY、REPORT；模型总用量仍213446 token |</p>
 <h2>0.15.1首批原文及N30独立重验（2026-11-04）</h2>
 <table>
 <thead>
@@ -1869,17 +2135,80 @@
 <td>本地源码/真实原记录读取、生产校验函数、纯内存诊断控制；无子agent</td>
 <td>outputs/independent_review_v0.15.1_2026-11-04/REPORT.md、audit.json；work/review_n30_v0151.py</td>
 </tr>
+<tr>
+<td>230</td>
+<td>按新授权仅修售后评估记录权限，先保存旧证据</td>
+<td>N30原输入/三候选/原pass/原引用、独立重验报告及反向通用政策控制</td>
+<td>0.15.2增加当前客户/商品/售后单及关联购买订单绑定，只有当前选用且范围一致的评估/进度记录获得该单事实权限；费用/工期/开修等逐项核对，复核须引用实际记录所在片段，通用policy.5不能证明450元或10工作日。不改生成/复核提示、写作/品牌/商品/设备/50输入/web。前置存924旧文件哈希与0.15.1源码</td>
+<td>共同source/quality/review校验、offline revalidation；未调用模型</td>
+<td>source_before_v0.15.1、protected_history、aftersales_evidence/revalidation</td>
+</tr>
+<tr>
+<td>231</td>
+<td>完整复核阶段正反与旧四组离线重验</td>
+<td>原N30 pass及精确引用；客户转述、异客户/商品/售后/购买订单、金额/工期/日单位、未开修称已开修、仅通用政策</td>
+<td>195项本地检查通过、远程尝试0。完整validate_review_result反例均拒绝，原N30完整validate_output→validate_review_result→guard可交付；没有只测生成文字。原四组均按0.15.2离线通过，三原文及原复核逐字不变，旧0.15.1 N30 error保留，派生结果另存且model_requests=0。开发初始发现7日申请期误当维修周期、订单凭证收到误当实物收件，按事实所指修复，旧日志留存；未放松检查或改旧候选</td>
+<td>同一生产函数、本地故障注入/替身与本机HTTP；纯离线重验</td>
+<td>local/first/final/final_scoped/final_boundary、post_review_contrasts、FIRST4_REVALIDATION、first4_revalidated</td>
+</tr>
+<tr>
+<td>232</td>
+<td>原46例固定0.15.2执行完毕，首四不新增调用</td>
+<td>原N01—N50去除已完成首四、相同生成/复核提示与品牌/商品/写作/设备/输入</td>
+<td>46案均首个实际生成，各三条；生成46/复核40共86请求、2228511 token。6组在复核前被程序/输出合同拦，无补抽/补假pass。连同原首四8请求共94请求、50组150原文，旧四原始状态和原文不变。先用0.15.2统一离线重验仅N30改变，旧初始34组交付、重验35组；不是文案质量通过率</td>
+<td>正常deepseek-flash、同一engine、逐请求冻结哈希，无自动重试；正常服务切0.15.2且数据库不变</td>
+<td>continuation/raw_runs、ALL_REQUESTS、UNIFIED_REVALIDATION_v0.15.2、SUMMARY；非全50同一生成程序版</td>
+</tr>
+<tr>
+<td>233</td>
+<td>最终金额/工期精度对照发现局部漏洞，另标仅校验补丁</td>
+<td>原单450元/预计10工作日、450.4元与1.10工作日的离线反例</td>
+<td>金额复用原money helper会取整，小数工期正则会截后半。仅最终校验器0.15.3/aftersales1.0.1改精确十进制规范值与完整小数；195项本地通过、远程0，不改变生成/复核提示、品牌商品、50输入、web或任何模型原文。保留0.15.2调用冻结与统一重验，另存最终源码/哈希。模型0新增</td>
+<td>本地纯函数反例及完整校验回归；不是重新生成或复核</td>
+<td>local/decimal_probe_before、final_decimal、source_before_final_validator_v0.15.2、FINAL_VALIDATOR_FREEZE、source_final_validator_v0.15.3</td>
+</tr>
+<tr>
+<td>234</td>
+<td>统一0.15.3重验全50，初始与重验分列</td>
+<td>50份首次原始响应、原三条与原复核/引用，不调用模型</td>
+<td>全150原文保留；初始34组程序交付，统一重验35组，唯一变化N30 error→success，原error仍在旧raw和初始列。其余15失败不摘除，N42虽有三原文但ready与missing字段矛盾仍不交付；未复核组不补称通过。首四G/R于0.15.1、余46于0.15.2、最终校验0.15.3逐组列明，没跨轮选最佳。剩余事实/编辑/复核/程序问题另评</td>
+<td>同一validate_output→validate_review_result→guard，model_call禁用</td>
+<td>UNIFIED_REVALIDATION、initial_raw_runs逐字副本、revalidated_runs、ALL_REQUESTS</td>
+</tr>
+<tr>
+<td>235</td>
+<td>全150原文逐条对照，事实/编辑/复核/程序分开，不随pass打分</td>
+<td>原50背景/顾问任务/商品政策/活动、150首次原文和44原复核</td>
+<td>每案具体评读保存。N37分类、长邀请/索称呼不重抽；N29具体排障建议及N43漏答在程序放行中仍指出。N09选定对象≠购买承诺、N12背法提问归错商品、N46总计当单价等程序问题保留。N27初稿按动作规则，细读后确认查到也可能读已有记录，改列程序尺度争议；初稿另存，非偷改模型结果。N26/29无依据操作列待核实，不证明必然损坏；轻微分类、措辞与实质问题分级</td>
+<td>AI开发者逐字评读，非真人顾问/独立盲评；0模型</td>
+<td>EDITORIAL_WORK、ASSESSMENT_DECISIONS、ASSESSMENT、OUTPUTS；50案均有具体意见</td>
+</tr>
+<tr>
+<td>236</td>
+<td>整理全部50组150原文与规定八列，状态/版本并列</td>
+<td>首批4+剩46的首次原始响应与统一153派生校验，94请求用量</td>
+<td>原文HTML/Markdown/JSON全量；八列Excel/CSV50行150原文，第二表初始/重验、事实业务、编辑、复核和程序问题。生成151/152及统一校验153逐行列，94请求逐阶段补源ledger版本但原ledger不改。Artifact Tool重算/错误扫描、保存回读所有非空内容精确；N30初始error/重验success并排，其他失败不换掉。另一个客户/商品/SC2088/680元/12日的明确本地模拟正例完整校验通过，证明非N30/450白名单，模型0</td>
+<td>Spreadsheets技能、bundled Artifact Tool、原文精确序列比对</td>
+<td>OUTPUTS_8_COLUMNS.xlsx/.csv、workbook_inspection/roundtrip/previews、local/generic_other_case_positive、ALL_REQUESTS</td>
+</tr>
+<tr>
+<td>237</td>
+<td>正常服务更新到最终153，打开全150原文独立入口</td>
+<td>原客户数据库、当前153校验器、50案全量报告/Excel/CSV</td>
+<td>正常8765后台153保持运行，重启前后SQLite逻辑哈希一致；页面源未改。只读8768展示150原文与可展开输入/完整复核/初始和重验错误，旧8766/8767不替换。正文当前入口已标完整50但非全部通过；本次新增86请求，整轮含原8共94，没有为更新连接缓存追加探针</td>
+<td>本机服务启动与只读GET，无模型新增</td>
+<td>service_health、review_service、README、RUN_THIS_FIRST、evaluation/RESULTS_CURRENT</td>
+</tr>
+<tr>
+<td>238</td>
+<td>最后全量精确核对与归档排除检查</td>
+<td>924旧文件、各阶段freeze、50原始/派生记录、HTML/CSV/Excel、请求ledger和两个入口</td>
+<td>924旧证据不变，原50/品牌商品/写作/生成和复核提示/web哈希不变；实际50生成系统提示和44复核系统提示分别各只有一个哈希。150原文在HTML/CSV逐字一致、Excel回读所有非空值一致。原N30 error及原pass/引用仍在原raw，统一重验只有N30变success。94请求按case/stage唯一，43pass/1needs_review/6未调用如实列，零自动重试；源码归档不含.env/真实key/原题PDF。8765/meta与8768页面/下载均200，服务继续运行。不改其余15失败、不封版，不把程序交付数当质量成绩</td>
+<td>哈希/HTML与CSV解析、Artifact Tool保存回读/预览、本机只读HTTP；不再请求模型</td>
+<td>FINAL_CHECK、workbook_roundtrip、ALL_REQUESTS、SUMMARY；50组150条供用户完整审阅</td>
+</tr>
 </tbody>
 </table>
-<p>| 230 | 按新授权仅修售后评估记录权限，先保存旧证据 | N30原输入/三候选/原pass/原引用、独立重验报告及反向通用政策控制 | 0.15.2增加当前客户/商品/售后单及关联购买订单绑定，只有当前选用且范围一致的评估/进度记录获得该单事实权限；费用/工期/开修等逐项核对，复核须引用实际记录所在片段，通用policy.5不能证明450元或10工作日。不改生成/复核提示、写作/品牌/商品/设备/50输入/web。前置存924旧文件哈希与0.15.1源码 | 共同source/quality/review校验、offline revalidation；未调用模型 | source_before_v0.15.1、protected_history、aftersales_evidence/revalidation |
-| 231 | 完整复核阶段正反与旧四组离线重验 | 原N30 pass及精确引用；客户转述、异客户/商品/售后/购买订单、金额/工期/日单位、未开修称已开修、仅通用政策 | 195项本地检查通过、远程尝试0。完整validate_review_result反例均拒绝，原N30完整validate_output→validate_review_result→guard可交付；没有只测生成文字。原四组均按0.15.2离线通过，三原文及原复核逐字不变，旧0.15.1 N30 error保留，派生结果另存且model_requests=0。开发初始发现7日申请期误当维修周期、订单凭证收到误当实物收件，按事实所指修复，旧日志留存；未放松检查或改旧候选 | 同一生产函数、本地故障注入/替身与本机HTTP；纯离线重验 | local/first/final/final_scoped/final_boundary、post_review_contrasts、FIRST4_REVALIDATION、first4_revalidated |</p>
-<p>| 232 | 原46例固定0.15.2执行完毕，首四不新增调用 | 原N01—N50去除已完成首四、相同生成/复核提示与品牌/商品/写作/设备/输入 | 46案均首个实际生成，各三条；生成46/复核40共86请求、2228511 token。6组在复核前被程序/输出合同拦，无补抽/补假pass。连同原首四8请求共94请求、50组150原文，旧四原始状态和原文不变。先用0.15.2统一离线重验仅N30改变，旧初始34组交付、重验35组；不是文案质量通过率 | 正常deepseek-flash、同一engine、逐请求冻结哈希，无自动重试；正常服务切0.15.2且数据库不变 | continuation/raw_runs、ALL_REQUESTS、UNIFIED_REVALIDATION_v0.15.2、SUMMARY；非全50同一生成程序版 |
-| 233 | 最终金额/工期精度对照发现局部漏洞，另标仅校验补丁 | 原单450元/预计10工作日、450.4元与1.10工作日的离线反例 | 金额复用原money helper会取整，小数工期正则会截后半。仅最终校验器0.15.3/aftersales1.0.1改精确十进制规范值与完整小数；195项本地通过、远程0，不改变生成/复核提示、品牌商品、50输入、web或任何模型原文。保留0.15.2调用冻结与统一重验，另存最终源码/哈希。模型0新增 | 本地纯函数反例及完整校验回归；不是重新生成或复核 | local/decimal_probe_before、final_decimal、source_before_final_validator_v0.15.2、FINAL_VALIDATOR_FREEZE、source_final_validator_v0.15.3 |
-| 234 | 统一0.15.3重验全50，初始与重验分列 | 50份首次原始响应、原三条与原复核/引用，不调用模型 | 全150原文保留；初始34组程序交付，统一重验35组，唯一变化N30 error→success，原error仍在旧raw和初始列。其余15失败不摘除，N42虽有三原文但ready与missing字段矛盾仍不交付；未复核组不补称通过。首四G/R于0.15.1、余46于0.15.2、最终校验0.15.3逐组列明，没跨轮选最佳。剩余事实/编辑/复核/程序问题另评 | 同一validate_output→validate_review_result→guard，model_call禁用 | UNIFIED_REVALIDATION、initial_raw_runs逐字副本、revalidated_runs、ALL_REQUESTS |</p>
-<p>| 235 | 全150原文逐条对照，事实/编辑/复核/程序分开，不随pass打分 | 原50背景/顾问任务/商品政策/活动、150首次原文和44原复核 | 每案具体评读保存。N37分类、长邀请/索称呼不重抽；N29具体排障建议及N43漏答在程序放行中仍指出。N09选定对象≠购买承诺、N12背法提问归错商品、N46总计当单价等程序问题保留。N27初稿按动作规则，细读后确认查到也可能读已有记录，改列程序尺度争议；初稿另存，非偷改模型结果。N26/29无依据操作列待核实，不证明必然损坏；轻微分类、措辞与实质问题分级 | AI开发者逐字评读，非真人顾问/独立盲评；0模型 | EDITORIAL_WORK、ASSESSMENT_DECISIONS、ASSESSMENT、OUTPUTS；50案均有具体意见 |
-| 236 | 整理全部50组150原文与规定八列，状态/版本并列 | 首批4+剩46的首次原始响应与统一153派生校验，94请求用量 | 原文HTML/Markdown/JSON全量；八列Excel/CSV50行150原文，第二表初始/重验、事实业务、编辑、复核和程序问题。生成151/152及统一校验153逐行列，94请求逐阶段补源ledger版本但原ledger不改。Artifact Tool重算/错误扫描、保存回读所有非空内容精确；N30初始error/重验success并排，其他失败不换掉。另一个客户/商品/SC2088/680元/12日的明确本地模拟正例完整校验通过，证明非N30/450白名单，模型0 | Spreadsheets技能、bundled Artifact Tool、原文精确序列比对 | OUTPUTS_8_COLUMNS.xlsx/.csv、workbook_inspection/roundtrip/previews、local/generic_other_case_positive、ALL_REQUESTS |</p>
-<p>| 237 | 正常服务更新到最终153，打开全150原文独立入口 | 原客户数据库、当前153校验器、50案全量报告/Excel/CSV | 正常8765后台153保持运行，重启前后SQLite逻辑哈希一致；页面源未改。只读8768展示150原文与可展开输入/完整复核/初始和重验错误，旧8766/8767不替换。正文当前入口已标完整50但非全部通过；本次新增86请求，整轮含原8共94，没有为更新连接缓存追加探针 | 本机服务启动与只读GET，无模型新增 | service_health、review_service、README、RUN_THIS_FIRST、evaluation/RESULTS_CURRENT |
-| 238 | 最后全量精确核对与归档排除检查 | 924旧文件、各阶段freeze、50原始/派生记录、HTML/CSV/Excel、请求ledger和两个入口 | 924旧证据不变，原50/品牌商品/写作/生成和复核提示/web哈希不变；实际50生成系统提示和44复核系统提示分别各只有一个哈希。150原文在HTML/CSV逐字一致、Excel回读所有非空值一致。原N30 error及原pass/引用仍在原raw，统一重验只有N30变success。94请求按case/stage唯一，43pass/1needs_review/6未调用如实列，零自动重试；源码归档不含.env/真实key/原题PDF。8765/meta与8768页面/下载均200，服务继续运行。不改其余15失败、不封版，不把程序交付数当质量成绩 | 哈希/HTML与CSV解析、Artifact Tool保存回读/预览、本机只读HTTP；不再请求模型 | FINAL_CHECK、workbook_roundtrip、ALL_REQUESTS、SUMMARY；50组150条供用户完整审阅 |</p>
 <h2>用户点名16案独立复查（2026-11-04）</h2>
 <table>
 <thead>
@@ -2710,6 +3039,22 @@
 <td>首次push卡在系统osxkeychain助手，未到远端；停止仅本次上传/助手，使用用户原有store助手后成功推送main，首提交417f5c6。没有读取/打印令牌、没有新增署名或强推。视频入口改为只有原生播放器，处理说明另放MD；同期更新日志和manifest再推送，不上传旧slideshow。当前完整包据新视频重归档，源码/原50/评分不变，真实AI开发截图仍缺</td>
 <td>Git CLI现有凭据、本地秘密扫描及原表/链接核对；正常后台保持</td>
 <td>PUBLISH_CHECK、DEMO_PROVENANCE与Git远端提交；原视频/分段速度在本地存档</td>
+</tr>
+<tr>
+<td>312</td>
+<td>按用户要求重剪一分钟内演示</td>
+<td>原104.165秒连续录屏、用户指出开头空等和滚动过快</td>
+<td>另存55秒1080p成片，剪去空白停留，放慢快速滚动与填入/生成瞬间，平移放大客户问题和三条原文，后期圈线强调第三条、复制按钮及成功提示。原片、旧成片、模型原文保留；无新增模型调用，不改应用或客户库，不上传GitHub</td>
+<td>AVFoundation本地剪辑、每秒解码画面核对和浏览器正常速度播放</td>
+<td>outputs/demo_recut_60s_2026-11-05；原片无截图导入/复核或原生粘贴，刷新动作不明显，已明确列为补录卡点，未假装完成原片未录到的流程</td>
+</tr>
+<tr>
+<td>313</td>
+<td>用户授权将55秒demo更新GitHub并复核原题</td>
+<td>原题两页、当前提交材料、50例表和用户认可的新视频</td>
+<td>已逐页核对中文只明确要求于候选话术，说明材料语言未规定；A项真实AI开发聊天图仍缺，B—E文件与50/150完整。新版55秒视频及说明同步发布副本，保留截图导入、粘贴和刷新展示限制；不新增模型调用，不改源码、客户库、原50或评分</td>
+<td>PDF阅读、表格只读计数、本地文件和Git发布准备</td>
+<td>待补本轮真实开发对话截图；DEMO_PROVENANCE与逐步缺图索引</td>
 </tr>
 </tbody>
 </table></main></html>
